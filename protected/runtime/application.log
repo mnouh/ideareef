@@ -1,0 +1,71 @@
+2012/07/01 10:05:23 [error] [php] date(): It is not safe to rely on the system's timezone settings. You are *required* to use the date.timezone setting or the date_default_timezone_set() function. In case you used any of those methods and you are still getting this warning, you most likely misspelled the timezone identifier. We selected 'Asia/Tokyo' for 'JST/9.0/no DST' instead (/home/main/public_html/protected/views/layouts/main.php:50)
+Stack trace:
+#0 /home/main/public_html/framework/web/CBaseController.php(96): SiteController->renderInternal()
+#1 /home/main/public_html/framework/web/widgets/CContentDecorator.php(77): SiteController->renderFile()
+#2 /home/main/public_html/framework/web/widgets/CContentDecorator.php(55): CContentDecorator->decorate()
+#3 /home/main/public_html/framework/web/widgets/COutputProcessor.php(45): CContentDecorator->processOutput()
+#4 /home/main/public_html/framework/web/CBaseController.php(207): CContentDecorator->run()
+#5 /home/main/public_html/framework/web/CBaseController.php(301): SiteController->endWidget()
+#6 /home/main/public_html/protected/views/layouts/column1.php(5): SiteController->endContent()
+#7 /home/main/public_html/framework/web/CBaseController.php(127): require()
+#8 /home/main/public_html/framework/web/CBaseController.php(96): SiteController->renderInternal()
+#9 /home/main/public_html/framework/web/CController.php(785): SiteController->renderFile()
+#10 /home/main/public_html/protected/controllers/SiteController.php(32): SiteController->render()
+#11 /home/main/public_html/framework/web/actions/CInlineAction.php(50): SiteController->actionIndex()
+#12 /home/main/public_html/framework/web/CController.php(309): CInlineAction->runWithParams()
+#13 /home/main/public_html/framework/web/CController.php(287): SiteController->runAction()
+#14 /home/main/public_html/framework/web/CController.php(266): SiteController->runActionWithFilters()
+#15 /home/main/public_html/framework/web/CWebApplication.php(276): SiteController->run()
+#16 /home/main/public_html/framework/web/CWebApplication.php(135): CWebApplication->runController()
+#17 /home/main/public_html/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#18 /home/main/public_html/index.php(13): CWebApplication->run()
+REQUEST_URI=/
+in /home/main/public_html/protected/views/layouts/main.php (50)
+in /home/main/public_html/protected/views/layouts/column1.php (5)
+in /home/main/public_html/protected/controllers/SiteController.php (32)
+2012/06/30 21:20:38 [error] [exception.CException] exception 'CException' with message 'CAssetManager.basePath "/home/main/public_html/assets" is invalid. Please make sure the directory exists and is writable by the Web server process.' in /home/main/public_html/framework/web/CAssetManager.php:116
+Stack trace:
+#0 /home/main/public_html/framework/web/CAssetManager.php(101): CAssetManager->setBasePath('/home/main/publ...')
+#1 /home/main/public_html/framework/web/CAssetManager.php(219): CAssetManager->getBasePath()
+#2 /home/main/public_html/framework/web/CClientScript.php(449): CAssetManager->publish('/home/main/publ...')
+#3 /home/main/public_html/framework/web/CClientScript.php(486): CClientScript->getCoreScriptUrl()
+#4 /home/main/public_html/framework/web/CClientScript.php(302): CClientScript->getPackageBaseUrl('jquery')
+#5 /home/main/public_html/framework/web/CClientScript.php(195): CClientScript->renderCoreScripts()
+#6 /home/main/public_html/framework/web/CController.php(352): CClientScript->render('<!DOCTYPE html ...')
+#7 /home/main/public_html/framework/web/CController.php(789): CController->processOutput('<!DOCTYPE html ...')
+#8 /home/main/public_html/protected/controllers/SiteController.php(66): CController->render('contact', Array)
+#9 /home/main/public_html/framework/web/actions/CInlineAction.php(50): SiteController->actionContact()
+#10 /home/main/public_html/framework/web/CController.php(309): CInlineAction->runWithParams(Array)
+#11 /home/main/public_html/framework/web/CController.php(287): CController->runAction(Object(CInlineAction))
+#12 /home/main/public_html/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#13 /home/main/public_html/framework/web/CWebApplication.php(276): CController->run('contact')
+#14 /home/main/public_html/framework/web/CWebApplication.php(135): CWebApplication->runController('site/contact')
+#15 /home/main/public_html/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#16 /home/main/public_html/index.php(13): CApplication->run()
+#17 {main}
+REQUEST_URI=/index.php?r=site/contact
+HTTP_REFERER=http://ec2-50-19-22-74.compute-1.amazonaws.com/
+---
+2012/06/30 21:20:56 [error] [exception.CException] exception 'CException' with message 'CAssetManager.basePath "/home/main/public_html/assets" is invalid. Please make sure the directory exists and is writable by the Web server process.' in /home/main/public_html/framework/web/CAssetManager.php:116
+Stack trace:
+#0 /home/main/public_html/framework/web/CAssetManager.php(101): CAssetManager->setBasePath('/home/main/publ...')
+#1 /home/main/public_html/framework/web/CAssetManager.php(219): CAssetManager->getBasePath()
+#2 /home/main/public_html/framework/web/CClientScript.php(449): CAssetManager->publish('/home/main/publ...')
+#3 /home/main/public_html/framework/web/CClientScript.php(486): CClientScript->getCoreScriptUrl()
+#4 /home/main/public_html/framework/web/CClientScript.php(302): CClientScript->getPackageBaseUrl('jquery')
+#5 /home/main/public_html/framework/web/CClientScript.php(195): CClientScript->renderCoreScripts()
+#6 /home/main/public_html/framework/web/CController.php(352): CClientScript->render('<!DOCTYPE html ...')
+#7 /home/main/public_html/framework/web/CController.php(789): CController->processOutput('<!DOCTYPE html ...')
+#8 /home/main/public_html/protected/controllers/SiteController.php(92): CController->render('login', Array)
+#9 /home/main/public_html/framework/web/actions/CInlineAction.php(50): SiteController->actionLogin()
+#10 /home/main/public_html/framework/web/CController.php(309): CInlineAction->runWithParams(Array)
+#11 /home/main/public_html/framework/web/CController.php(287): CController->runAction(Object(CInlineAction))
+#12 /home/main/public_html/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#13 /home/main/public_html/framework/web/CWebApplication.php(276): CController->run('login')
+#14 /home/main/public_html/framework/web/CWebApplication.php(135): CWebApplication->runController('site/login')
+#15 /home/main/public_html/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#16 /home/main/public_html/index.php(13): CApplication->run()
+#17 {main}
+REQUEST_URI=/index.php?r=site/login
+HTTP_REFERER=http://ec2-50-19-22-74.compute-1.amazonaws.com/
+---
