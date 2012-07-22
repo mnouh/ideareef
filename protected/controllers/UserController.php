@@ -15,7 +15,7 @@ class UserController extends Controller {
                 'users' => array('*'),
             ),*/
             array('allow', // allow authenticated user to perform 'create' and 'update' actions
-                'actions' => array('index', 'changeUsername', 'changepassword', 'create', 'update'),
+                'actions' => array('index', 'changeUsername', 'changepassword', 'changeZipCode', 'create', 'update'),
                 'users' => array('@'),
             ),
             /*array('allow', // allow admin user to perform 'admin' and 'delete' actions
@@ -48,7 +48,32 @@ class UserController extends Controller {
 
       $this->renderPartial('changeUsername', array('model' => $model), false, true);
     }
-
+    
+    
+    public function actionChangeZipCode()
+    {
+        $model = User::model()->findByPk(Yii::app()->user->id);
+        $model->setScenario('changeZipCode');
+        
+        $this->performAjaxValidation($model, 'changeZipCode-form');
+        
+        if (isset($_POST['User'])) {
+            
+            $model->attributes = $_POST['User'];
+            
+            if($model->validate() && $model->update())
+            {
+                
+                Yii::app()->user->setFlash('success', "Your zipcode was sucessfully changed");
+                
+            }
+            
+        }
+        
+        $this->render('changeZipCode', array('model' => $model));
+    }
+    
+    
     /**
      *Change Password 
      */

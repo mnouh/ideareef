@@ -54,6 +54,8 @@ class User extends CActiveRecord
                         array('confirmPassword', 'compare', 'compareAttribute'=>'password', 'on' => 'signup'),
                         array('username', 'checkUser', 'on' => array('signup', 'changeUsername')),
 			array('username', 'email', 'on'=>array('signup', 'changeUsername')),
+                        array('zipcode', 'required', 'on' => 'changeZipCode'),
+                        array('zipcode', 'length', 'min' => 5, 'on' => 'changeZipCode'),
                         array('oldPassword, newPassword, confirmPassword', 'required', 'on' =>'changePassword'),
                         array('firstName, lastName', 'required', 'on' => 'changeName'),
                         //array('password, newPassword','ext.validators.EPasswordStrength', 'min'=>7),

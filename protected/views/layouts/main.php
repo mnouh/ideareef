@@ -4,7 +4,6 @@
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 	<meta name="language" content="en" />
         
-        <link href="http://fonts.googleapis.com/css?family=Muli" rel="stylesheet" type="text/css" />
         <link rel="stylesheet" type="text/css" href="<?php echo Yii::app()->request->baseUrl; ?>/css/css_public.css" />
         <?php Yii::app()->clientScript->registerCoreScript('jquery'); ?>
         
