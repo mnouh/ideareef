@@ -69,8 +69,6 @@ return array(
             'errorAction'=>'account/error',
         ),
             
-        
-            
 		'log'=>array(
 			'class'=>'CLogRouter',
 			'routes'=>array(
