@@ -10,7 +10,7 @@ $this->pageTitle=Yii::app()->name . ' - Sign Up';
     <div id="content-container">
         <h2>Sign Up</h2>
       
-    <h3><p class="description"><span class="disclaimer">* Not available in all locations</span>Please sign up with your email address.*</p></h3>
+    <h3><p class="description"><span class="disclaimer">* Not available in all locations</span>Please sign up with your email address.*ANDREW</p></h3>
     <?php if(Yii::app()->user->hasFlash('success')): ?>
     
 <div class="flash-success">
@@ -60,6 +60,13 @@ $this->pageTitle=Yii::app()->name . ' - Sign Up';
 		<?php echo $form->error($model,'confirmPassword'); ?>
 		<span id="nameInfo">At least 5 characters.</span>    
 	</div>
+        
+        <div>
+            <?php echo $form->label($model,'Business Type'); ?>
+            <?php $list = CHtml::listData(Business::model()->findAll(), 'id', 'businessType'); ?>
+            <?php echo CHtml::dropDownList('Business Type', null, $list, array('empty'=>('Select Business Type'), 'submit' => 'btn primary')); ?>
+            <span id="nameInfo">What type of business are you?</span>
+        </div>
         
 	<div>
 		<?php echo CHtml::submitButton('  Sign Up  ', array('name' => 'Submit', 'class' => 'btn primary'));  ?>
