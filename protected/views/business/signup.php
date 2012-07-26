@@ -64,7 +64,7 @@ $this->pageTitle=Yii::app()->name . ' - Sign Up';
         <div>
             <?php echo $form->label($model,'businessType'); ?>
             <?php $list = CHtml::listData($businessType, 'id', 'name'); ?>
-            <?php echo CHtml::dropDownList($model->businessType, 'none', $list, array('empty'=>'Select Business Type')); ?>
+            <?php echo $form->dropDownList($model, 'businessType', $list, array('empty'=>'Select Business Type')); ?>
             <?php echo $form->error($model,'businessType'); ?>
             <span id="nameInfo">What type of business are you?</span>
         </div>
