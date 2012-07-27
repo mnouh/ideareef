@@ -5,8 +5,14 @@
  * and open the template in the editor.
  */
 
+
+
+
+
 if(Yii::app()->user->isBusiness)
-    echo Yii::app()->user->getUser()->businessType;
+    echo $model->type->name;
 else
     echo Yii::app()->user->getUser()->firstName;
 ?>
+
+

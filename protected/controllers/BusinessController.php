@@ -151,6 +151,8 @@ class BusinessController extends Controller {
     public function actionSettings()
     {
         $model = Business::model()->findByPk(Yii::app()->user->id);
+        
+        
         $this->render('settings', array('model' => $model));
         
     }
