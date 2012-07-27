@@ -10,12 +10,6 @@
 	<?php echo $form->errorSummary($model); ?>
 
 	<div class="row">
-		<?php echo $form->labelEx($model,'businessId'); ?>
-		<?php echo $form->textField($model,'businessId'); ?>
-		<?php echo $form->error($model,'businessId'); ?>
-	</div>
-
-	<div class="row">
 		<?php echo $form->labelEx($model,'type'); ?>
 		<?php echo $form->textField($model,'type'); ?>
 		<?php echo $form->error($model,'type'); ?>

@@ -46,12 +46,12 @@ class Competition extends CActiveRecord
 		// NOTE: you should only define rules for those attributes that
 		// will receive user inputs.
 		return array(
-			array('id, businessId, type, startDate, endDate, description, solutionDescription, publicVoting', 'required'),
-			array('id, businessId, type, anonymous, openSolutions, publicVoting, commentsEnabled, acceptMultipleSolutions', 'numerical', 'integerOnly'=>true),
+			array('type, startDate, endDate, description, solutionDescription, publicVoting', 'required'),
+			array('type, anonymous, openSolutions, publicVoting, commentsEnabled, acceptMultipleSolutions', 'numerical', 'integerOnly'=>true),
 			array('amount', 'numerical'),
 			// The following rule is used by search().
 			// Please remove those attributes that should not be searched.
-			array('id, businessId, type, startDate, endDate, description, solutionDescription, amount, anonymous, openSolutions, publicVoting, commentsEnabled, acceptMultipleSolutions', 'safe', 'on'=>'search'),
+			array('type, startDate, endDate, description, solutionDescription, amount, anonymous, openSolutions, publicVoting, commentsEnabled, acceptMultipleSolutions', 'safe', 'on'=>'search'),
 		);
 	}
 
@@ -87,6 +87,20 @@ class Competition extends CActiveRecord
 			'acceptMultipleSolutions' => 'Accept Multiple Solutions',
 		);
 	}
+        
+        protected function beforeSave() {
+
+        if ($this->isNewRecord) {
+
+            $this->businessId = Yii::app()->user->id;
+            
+            
+            
+        }
+
+
+        return parent::beforeSave();
+    }
 
 	/**
 	 * Retrieves a list of models based on the current search/filter conditions.
