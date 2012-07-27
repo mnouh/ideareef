@@ -161,6 +161,10 @@ class BusinessController extends Controller {
         $this->render('index');
     }
     
+    public function actionHomepage() {
+            $model = Business::model()->findByPk(Yii::app()->user->id);
+        $this->render('homepage', array('model' => $model));
+    } 
     /**
          * Custom function allow validation of forms. Pass the model and the form id and then
          * it will validate via ajax.
