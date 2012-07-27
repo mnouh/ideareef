@@ -33,7 +33,7 @@ class UserController extends Controller {
      */
     public function actionChangeUsername() {
       
-        $model = User::model()->findByPk(Yii::app()->user->id);
+      $model = User::model()->findByPk(Yii::app()->user->id);
       $model->setScenario('changeUsername');
 
       $this->performAjaxValidation($model, 'changeUsername-form');
