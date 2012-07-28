@@ -7,17 +7,8 @@
 
 <?php
 
-
-$this->widget('zii.widgets.jui.CJuiTabs', array(
-        'tabs'=>array(
-                'Name'=>$this->renderPartial('changeName', array('model' => $model), true, true ),
-                'Password'=>$this->renderPartial('changePassword',array('model' => $model), true, true ),
-        ),
-        'options'=>array(
-                'collapsible'=>false,
-        ),
-));
-
+             $this->renderPartial('changePassword',array('model' => $model), false, true );
+             $this->renderPartial('changeName', array('model' => $model), false, true );
 
 //$this->renderPartial('changeName', array('model' => $model), false, false);
 

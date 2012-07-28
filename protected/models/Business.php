@@ -44,15 +44,15 @@ class Business extends CActiveRecord
 		// NOTE: you should only define rules for those attributes that
 		// will receive user inputs.
 		return array(
-			array('username, password, name, confirmPassword, businessType', 'required', 'on' => 'signup'),
+			array('email, password, name, confirmPassword, businessType', 'required', 'on' => 'signup'),
                         array('confirmPassword', 'compare', 'compareAttribute'=>'password', 'on' => 'signup'),
-                        array('username', 'email', 'on' => 'signup'),
-                        array('username', 'checkBusiness', 'on' => 'signup'),
-			array('username, password, address', 'length', 'max'=>64, 'on' => 'signup'),
+                        array('email', 'email', 'on' => 'signup'),
+                        array('email', 'checkBusiness', 'on' => 'signup'),
+			array('email, password, address', 'length', 'max'=>64, 'on' => 'signup'),
 			array('name', 'length', 'max'=>32, 'on' => 'signup'),
 			// The following rule is used by search().
 			// Please remove those attributes that should not be searched.
-			array('id, username, password, name, address', 'safe', 'on'=>'search'),
+			array('id, email, password, name, address', 'safe', 'on'=>'search'),
 		);
 	}
         
@@ -63,20 +63,20 @@ class Business extends CActiveRecord
          */
         public function checkBusiness($attribute, $params) {
             
-            $user=$this->find('LOWER(username)=?',array(strtolower($this->username)));
+            $user=$this->find('LOWER(email)=?',array(strtolower($this->email)));
 		
                 if($user!=null) {
                     
-                    $this->addError('username', '<b>&#10006;</b> &nbsp; This email already exists.');
+                    $this->addError('email', '<b>&#10006;</b> &nbsp; This email already exists.');
                     //$this->addError('confirmEmail', '<b>&#10006;</b> &nbsp; This email already exists.');
     
                 }
                 else {
                     
-                    $business= User::model()->find('LOWER(username)=?',array(strtolower($this->username)));
+                    $business= User::model()->find('LOWER(email)=?',array(strtolower($this->email)));
                     if($business != null)
                     {
-                        $this->addError('username', '<b>&#10006;</b> &nbsp; This email already exists.');
+                        $this->addError('email', '<b>&#10006;</b> &nbsp; This email already exists.');
                         
                     }
                     
@@ -136,10 +136,10 @@ class Business extends CActiveRecord
      * Generates the verification code for the user
      */
 
-    public function verifyCode($username, $firstName) {
+    public function verifyCode($email, $firstName) {
 
 
-        return md5($username . $firstName); //Will Change this to incorporate time.
+        return md5($email . $firstName); //Will Change this to incorporate time.
     }
 
     /**
@@ -157,7 +157,7 @@ class Business extends CActiveRecord
             $this->salt = $this->generateSalt();
              
             $this->password = $this->hashPassword($this->password, $this->salt);
-            $this->verifyCode = $this->verifyCode($this->username, $this->name);
+            $this->verifyCode = $this->verifyCode($this->email, $this->name);
     /*        
             $user = str_shuffle(uniqid());
             $user = $user.'_'.uniqid();
@@ -209,7 +209,7 @@ class Business extends CActiveRecord
 	{
 		return array(
 			'id' => 'ID',
-			'username' => 'Email',
+			'email' => 'Email',
 			'password' => 'Password',
 			'salt' => 'Salt',
 			'name' => 'Business Name',
@@ -230,7 +230,7 @@ class Business extends CActiveRecord
 		$criteria=new CDbCriteria;
 
 		$criteria->compare('id',$this->id);
-		$criteria->compare('username',$this->username,true);
+		$criteria->compare('email',$this->email,true);
 		$criteria->compare('name',$this->name,true);
 		$criteria->compare('businessType',$this->businessType,true);
 		$criteria->compare('address',$this->address,true);

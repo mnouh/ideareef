@@ -44,9 +44,9 @@ $this->pageTitle=Yii::app()->name . ' - Sign Up';
 	</div>
         
 	<div>
-		<?php echo $form->label($model,'username', array ('for'=> 'name')); ?>
-		<?php echo $form->textField($model,'username', array ('class' => 'sync')); ?>
-		<?php echo $form->error($model,'username'); ?>
+		<?php echo $form->label($model,'email', array ('for'=> 'name')); ?>
+		<?php echo $form->textField($model,'email', array ('class' => 'sync')); ?>
+		<?php echo $form->error($model,'email'); ?>
             
                 <span id="nameInfo">What's your email address?</span>    
 	</div>

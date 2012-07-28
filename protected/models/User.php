@@ -50,20 +50,20 @@ class User extends CActiveRecord
 		// NOTE: you should only define rules for those attributes that
 		// will receive user inputs.
 		return array(
-			array('username, password, confirmPassword, firstName, lastName', 'required', 'on' =>'signup'),
+			array('email, password, confirmPassword, firstName, lastName', 'required', 'on' =>'signup'),
                         array('confirmPassword', 'compare', 'compareAttribute'=>'password', 'on' => 'signup'),
-                        array('username', 'checkUser', 'on' => array('signup', 'changeUsername')),
-			array('username', 'email', 'on'=>array('signup', 'changeUsername')),
+                        array('email', 'checkUser', 'on' => array('signup', 'changeUsername')),
+			array('email', 'email', 'on'=>array('signup', 'changeUsername')),
                         array('zipcode', 'required', 'on' => 'changeZipCode'),
                         array('zipcode', 'length', 'min' => 5, 'on' => 'changeZipCode'),
                         array('oldPassword, newPassword, confirmPassword', 'required', 'on' =>'changePassword'),
                         array('firstName, lastName', 'required', 'on' => 'changeName'),
                         //array('password, newPassword','ext.validators.EPasswordStrength', 'min'=>7),
                         array('confirmPassword', 'compare', 'compareAttribute'=>'newPassword', 'on' => 'changePassword'),
-			array('username, password, firstName, lastName, lookup, city, state', 'length', 'max'=>128),
+			array('email, password, firstName, lastName, lookup, city, state', 'length', 'max'=>128),
 			// The following rule is used by search().
 			// Please remove those attributes that should not be searched.
-			array('id, username, password, firstName, lastName, verified, lookup, joinedDate, city, state', 'safe', 'on'=>'search'),
+			array('id, email, password, firstName, lastName, verified, lookup, joinedDate, city, state', 'safe', 'on'=>'search'),
 		);
 	}
 
@@ -85,7 +85,7 @@ class User extends CActiveRecord
 	{
 		return array(
 			'id' => 'ID',
-			'username' => 'Username',
+			'email' => 'email',
 			'password' => 'Password',
 			'salt' => 'Salt',
 			'firstName' => 'First Name',
@@ -106,20 +106,20 @@ class User extends CActiveRecord
          */
         public function checkUser($attribute, $params) {
             
-            $user=$this->find('LOWER(username)=?',array(strtolower($this->username)));
+            $user=$this->find('LOWER(email)=?',array(strtolower($this->email)));
 		
                 if($user!=null) {
                     
-                    $this->addError('username', '<b>&#10006;</b> &nbsp; This email already exists.');
+                    $this->addError('email', '<b>&#10006;</b> &nbsp; This email already exists.');
                     //$this->addError('confirmEmail', '<b>&#10006;</b> &nbsp; This email already exists.');
     
                 }
                 else {
                     
-                    $business= Business::model()->find('LOWER(username)=?',array(strtolower($this->username)));
+                    $business= Business::model()->find('LOWER(email)=?',array(strtolower($this->email)));
                     if($business != null)
                     {
-                        $this->addError('username', '<b>&#10006;</b> &nbsp; This email already exists.');
+                        $this->addError('email', '<b>&#10006;</b> &nbsp; This email already exists.');
                         
                     }
                     
@@ -179,10 +179,10 @@ class User extends CActiveRecord
      * Generates the verification code for the user
      */
 
-    public function verifyCode($username, $firstName) {
+    public function verifyCode($email, $firstName) {
 
 
-        return md5($username . $firstName); //Will Change this to incorporate time.
+        return md5($email . $firstName); //Will Change this to incorporate time.
     }
 
     /**
@@ -200,7 +200,7 @@ class User extends CActiveRecord
             $this->salt = $this->generateSalt();
              
             $this->password = $this->hashPassword($this->password, $this->salt);
-            $this->verifyCode = $this->verifyCode($this->username, $this->firstName);
+            $this->verifyCode = $this->verifyCode($this->email, $this->firstName);
             
             $user = str_shuffle(uniqid());
             $user = $user.'_'.uniqid();
@@ -242,7 +242,7 @@ class User extends CActiveRecord
 		$criteria=new CDbCriteria;
 
 		$criteria->compare('id',$this->id);
-		$criteria->compare('username',$this->username,true);
+		$criteria->compare('email',$this->email,true);
 		$criteria->compare('password',$this->password,true);
 		$criteria->compare('salt',$this->salt,true);
 		$criteria->compare('firstName',$this->firstName,true);

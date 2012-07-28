@@ -15,10 +15,10 @@ class UserIdentity extends CUserIdentity {
      * @return boolean whether authentication succeeds.
      */
     public function authenticate() {
-        $user = User::model()->find('LOWER(username)=?', array(strtolower($this->username)));
+        $user = User::model()->find('LOWER(email)=?', array(strtolower($this->email)));
         if ($user === null) {
             
-            $business = Business::model()->find('LOWER(username)=?', array(strtolower($this->username)));
+            $business = Business::model()->find('LOWER(email)=?', array(strtolower($this->email)));
             
             if($business === null)
             $this->errorCode = self::ERROR_USERNAME_INVALID;
@@ -27,7 +27,7 @@ class UserIdentity extends CUserIdentity {
             }
             else {    
             $this->_id = $business->id;
-            $this->username = $business->username;
+            $this->email = $business->email;
             $this->setUser($business);
             $this->setState('isBusiness', true);
             $this->errorCode = self::ERROR_NONE;
@@ -39,7 +39,7 @@ class UserIdentity extends CUserIdentity {
             $this->errorCode = self::ERROR_PASSWORD_INVALID;
         else {
             $this->_id = $user->id;
-            $this->username = $user->username;
+            $this->email = $user->email;
             $this->setUser($user);
             $this->setState('isBusiness', false);
             $this->errorCode = self::ERROR_NONE;
