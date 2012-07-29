@@ -92,7 +92,31 @@ class Competition extends CActiveRecord
 
         if ($this->isNewRecord) {
 
+            
+            $parseDate = array();
+            
+            $parseDate = explode("-", $this->startDate);
+            
+            $this->startDate = $parseDate[2].'-'.$parseDate[0].'-'.$parseDate[1];
+            
+            
+            //$this->start_date = strtotime($this->start_date);
+                
+                //$myDate = "".$this->start_date;
+                $date = new DateTime($this->startDate);
+                $this->startDate = $date->format('Y-m-d H:i:s');
+                
+            $parseEndDate = array();
+            
+            $parseEndDate = explode("-", $this->endDate);
+            
+            $this->endDate = $parseEndDate[2].'-'.$parseEndDate[0].'-'.$parseEndDate[1];
+            
+            $endDate = new DateTime($this->endDate);
+            $this->endDate = $endDate->format('Y-m-d H:i:s');
+            
             $this->businessId = Yii::app()->user->id;
+            
             
             
             

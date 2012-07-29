@@ -7,7 +7,7 @@
 
 <?php
 
-             $this->renderPartial('changePassword',array('model' => $model), false, true );
+             //$this->renderPartial('changePassword',array('model' => $model), false, true );
              $this->renderPartial('changeName', array('model' => $model), false, true );
 
 //$this->renderPartial('changeName', array('model' => $model), false, false);

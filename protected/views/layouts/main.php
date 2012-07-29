@@ -15,7 +15,7 @@
 <body>
 <div id="Header">
 <div class="holder">
-<h2 class="floatLeft"><a href="<?php echo Yii::app()->request->baseUrl; ?>">Insite </a></h2>
+<h2 class="floatLeft"><a href="<?php echo Yii::app()->request->baseUrl; ?>">IdeaReef</a></h2>
 <div id="mainmenu">
     <?php $this->widget('zii.widgets.CMenu',array(
 			'items'=>array(
@@ -26,6 +26,7 @@
                                 array('label'=>'Change Username', 'url'=>array('/user/changeUsername'), 'visible'=>!Yii::app()->user->isGuest),
                                 array('label'=>'User Settings', 'url'=>array('/user/settings'), 'visible'=>!Yii::app()->user->isGuest),
                                 array('label'=>'Change Password', 'url'=>array('/user/changePassword'), 'visible'=>!Yii::app()->user->isGuest),
+                                array('label'=>'Create Competition', 'url'=>array('/competition/create'), 'visible'=>!Yii::app()->user->isGuest),
                                 array('label'=>'Signup', 'url'=>array('/account/signup'), 'visible'=>Yii::app()->user->isGuest),
                                 array('label'=>'Home', 'url'=>array('/account/index')),
 			)
