@@ -7,7 +7,7 @@
 // CWebApplication properties can be configured here.
 return array(
 	'basePath'=>dirname(__FILE__).DIRECTORY_SEPARATOR.'..',
-	'name'=>'Insite',
+	'name'=>'IdeaReef',
 
 	// preloading 'log' component
 	'preload'=>array('log'),
@@ -47,6 +47,7 @@ return array(
 				'<controller:\w+>/<id:\d+>'=>'<controller>/view',
 				'<controller:\w+>/<action:\w+>/<id:\d+>'=>'<controller>/<action>',
 				'<controller:\w+>/<action:\w+>'=>'<controller>/<action>',
+                                '<username>'=>'user/view',
 			),
 		),
 		
@@ -90,6 +91,7 @@ return array(
 	// using Yii::app()->params['paramName']
 	'params'=>array(
 		// this is used in contact page
-		'adminEmail'=>'webmaster@example.com',
+		'adminEmail'=>'mnouh@ideareef.com',
+                'siteUrl'=>'www.ideareef.com',
 	),
 );

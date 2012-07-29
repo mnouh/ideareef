@@ -24,6 +24,7 @@ class User extends CActiveRecord
         var $oldPassword;
         var $confirmPassword;
         var $newPassword;
+        var $profileUser;
 	/**
 	 * Returns the static model of the specified AR class.
 	 * @param string $className active record class name.
@@ -52,8 +53,10 @@ class User extends CActiveRecord
 		return array(
 			array('email, password, confirmPassword, firstName, lastName', 'required', 'on' =>'signup'),
                         array('confirmPassword', 'compare', 'compareAttribute'=>'password', 'on' => 'signup'),
-                        array('email', 'checkUser', 'on' => array('signup', 'changeUsername')),
-			array('email', 'email', 'on'=>array('signup', 'changeUsername')),
+                        array('email', 'checkEmail', 'on' => 'signup'),
+			array('email', 'email', 'on'=>'signup'),
+                        array('profileUser', 'required', 'on' => 'changeUsername'),
+                        array('profileUser', 'checkUserName', 'on' => 'changeUsername'),
                         array('zipcode', 'required', 'on' => 'changeZipCode'),
                         array('zipcode', 'length', 'min' => 5, 'on' => 'changeZipCode'),
                         array('oldPassword, newPassword, confirmPassword', 'required', 'on' =>'changePassword'),
@@ -85,7 +88,9 @@ class User extends CActiveRecord
 	{
 		return array(
 			'id' => 'ID',
-			'email' => 'email',
+                        'username' => 'Username',
+                        'profileUser' => 'Username',
+			'email' => 'Email',
 			'password' => 'Password',
 			'salt' => 'Salt',
 			'firstName' => 'First Name',
@@ -104,7 +109,7 @@ class User extends CActiveRecord
          * @param type $attribute
          * @param type $params 
          */
-        public function checkUser($attribute, $params) {
+        public function checkEmail($attribute, $params) {
             
             $user=$this->find('LOWER(email)=?',array(strtolower($this->email)));
 		
@@ -126,6 +131,39 @@ class User extends CActiveRecord
                 }
                 
                 
+            
+            
+        }
+        
+        /**
+         * Check if User already exists in the database.
+         * @param type $attribute
+         * @param type $params 
+         */
+        public function checkUserName($attribute, $params) {
+            
+            
+            if($this->username != $this->profileUser) {
+            $user=$this->find('LOWER(username)=?',array(strtolower($this->profileUser)));
+		
+                if($user!=null) {
+                    
+                    $this->addError('profileUser', '<b>&#10006;</b> &nbsp; This username already exists.');
+                }
+                else {
+                    
+                    $business= Business::model()->find('LOWER(username)=?',array(strtolower($this->profileUser)));
+                    if($business != null)
+                    {
+                        $this->addError('profileUser', '<b>&#10006;</b> &nbsp; This username already exists.');
+                        
+                    }
+                    
+                }
+                
+            }
+            
+            
             
             
         }

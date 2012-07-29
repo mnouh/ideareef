@@ -34,6 +34,8 @@ class UserController extends Controller {
     public function actionChangeUsername() {
       
       $model = User::model()->findByPk(Yii::app()->user->id);
+      $profileLink = Yii::app()->params['siteUrl'].'/'.$model->username;
+      $model->profileUser = $model->username;
       $model->setScenario('changeUsername');
 
       $this->performAjaxValidation($model, 'changeUsername-form');
@@ -41,12 +43,27 @@ class UserController extends Controller {
       if (isset($_POST['User'])) {
         $model->attributes = $_POST['User'];
 
-        if ($model->validate() && $model->update()) {
+        if ($model->validate()) {
+            $model->username = $model->profileUser;
+            if($model->update()) {
           Yii::app()->user->setFlash('success', "Successfully updated username.");
+        }
         }
       }
 
-      $this->renderPartial('changeUsername', array('model' => $model), false, true);
+      $this->renderPartial('changeUsername', array('model' => $model, 'profileLink' => $profileLink), false, true);
+    }
+    
+    public function actionView()
+    {
+        
+        $username = Yii::app()->request->getQuery('username');
+        $model = User::model()->find("username='" . $username . "'");
+        if ($model === null)
+            throw new CHttpException(404, 'The requested page does not exist.');
+
+        
+        $this->render('view', array('model' => $model));
     }
     
     
