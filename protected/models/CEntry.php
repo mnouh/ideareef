@@ -38,11 +38,11 @@ class CEntry extends CActiveRecord
 		// NOTE: you should only define rules for those attributes that
 		// will receive user inputs.
 		return array(
-			array('id, competitionId, userId, businessId, submit_time', 'required'),
+			array('id, competitionId, userId, businessId, submitTime', 'required'),
 			array('id, competitionId, userId, businessId', 'numerical', 'integerOnly'=>true),
 			// The following rule is used by search().
 			// Please remove those attributes that should not be searched.
-			array('id, competitionId, userId, businessId, submit_time', 'safe', 'on'=>'search'),
+			array('id, competitionId, userId, businessId, submitTime', 'safe', 'on'=>'search'),
 		);
 	}
 
@@ -67,7 +67,7 @@ class CEntry extends CActiveRecord
 			'competitionId' => 'Competition',
 			'userId' => 'User',
 			'businessId' => 'Business',
-			'submit_time' => 'Submit Time',
+			'submitTime' => 'Submit Time',
 		);
 	}
 
@@ -86,7 +86,7 @@ class CEntry extends CActiveRecord
 		$criteria->compare('competitionId',$this->competitionId);
 		$criteria->compare('userId',$this->userId);
 		$criteria->compare('businessId',$this->businessId);
-		$criteria->compare('submit_time',$this->submit_time,true);
+		$criteria->compare('submitTime',$this->submit_time,true);
 
 		return new CActiveDataProvider($this, array(
 			'criteria'=>$criteria,
