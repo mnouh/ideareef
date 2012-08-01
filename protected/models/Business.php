@@ -199,6 +199,7 @@ class Business extends CActiveRecord
 		// class name for the relations automatically generated below.
 		return array(
                     'type' => array(self::HAS_ONE, 'BusinessType', array('id' => 'businessType')),
+                    'competition' => array(self::HAS_MANY, )
 		);
 	}
 
