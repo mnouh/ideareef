@@ -956,3 +956,46 @@ Stack trace:
 REQUEST_URI=/ideareef/images/icons_sprite_front.png
 HTTP_REFERER=http://localhost/ideareef/
 ---
+2012/07/27 02:08:20 [warning] [application] Failed to set unsafe attribute "businessId" of "Competition".
+in C:\wamp\www\ideareef\protected\controllers\CompetitionController.php (71)
+in C:\wamp\www\ideareef\index.php (13)
+2012/07/27 02:17:36 [error] [php] include(Competitions.php) [<a href='function.include'>function.include</a>]: failed to open stream: No such file or directory (C:\wamp\www\ideareef\framework\YiiBase.php:419)
+Stack trace:
+#0 C:\wamp\www\ideareef\framework\db\ar\CActiveRecord.php(378): spl_autoload_call()
+#1 C:\wamp\www\ideareef\framework\db\ar\CActiveFinder.php(219): model()
+#2 C:\wamp\www\ideareef\framework\db\ar\CActiveFinder.php(49): CActiveFinder->buildJoinTree()
+#3 C:\wamp\www\ideareef\framework\db\ar\CActiveRecord.php(268): CActiveFinder->__construct()
+#4 C:\wamp\www\ideareef\framework\db\ar\CActiveRecord.php(142): Business->getRelated()
+#5 C:\wamp\www\ideareef\protected\views\business\homepage.php(3): Business->__get()
+#6 C:\wamp\www\ideareef\framework\web\CBaseController.php(127): require()
+#7 C:\wamp\www\ideareef\framework\web\CBaseController.php(96): BusinessController->renderInternal()
+#8 C:\wamp\www\ideareef\framework\web\CController.php(870): BusinessController->renderFile()
+#9 C:\wamp\www\ideareef\framework\web\CController.php(783): BusinessController->renderPartial()
+#10 C:\wamp\www\ideareef\protected\controllers\BusinessController.php(167): BusinessController->render()
+#11 C:\wamp\www\ideareef\framework\web\actions\CInlineAction.php(50): BusinessController->actionHomepage()
+#12 C:\wamp\www\ideareef\framework\web\CController.php(309): CInlineAction->runWithParams()
+#13 C:\wamp\www\ideareef\framework\web\CController.php(287): BusinessController->runAction()
+#14 C:\wamp\www\ideareef\framework\web\CController.php(266): BusinessController->runActionWithFilters()
+#15 C:\wamp\www\ideareef\framework\web\CWebApplication.php(276): BusinessController->run()
+#16 C:\wamp\www\ideareef\framework\web\CWebApplication.php(135): CWebApplication->runController()
+#17 C:\wamp\www\ideareef\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#18 C:\wamp\www\ideareef\index.php(13): CWebApplication->run()
+REQUEST_URI=/ideareef/business/homepage
+in C:\wamp\www\ideareef\protected\views\business\homepage.php (3)
+in C:\wamp\www\ideareef\protected\controllers\BusinessController.php (167)
+in C:\wamp\www\ideareef\index.php (13)
+2012/07/30 16:41:11 [error] [exception.CException] exception 'CException' with message 'Property "WebUser.isBusiness" is not defined.' in C:\wamp\www\ideareef\framework\base\CComponent.php:131
+Stack trace:
+#0 C:\wamp\www\ideareef\framework\web\auth\CWebUser.php(142): CComponent->__get('isBusiness')
+#1 C:\wamp\www\ideareef\protected\controllers\BusinessController.php(165): CWebUser->__get('isBusiness')
+#2 C:\wamp\www\ideareef\framework\web\actions\CInlineAction.php(50): BusinessController->actionHomepage()
+#3 C:\wamp\www\ideareef\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#4 C:\wamp\www\ideareef\framework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#5 C:\wamp\www\ideareef\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 C:\wamp\www\ideareef\framework\web\CWebApplication.php(276): CController->run('homepage')
+#7 C:\wamp\www\ideareef\framework\web\CWebApplication.php(135): CWebApplication->runController('business/homepa...')
+#8 C:\wamp\www\ideareef\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#9 C:\wamp\www\ideareef\index.php(13): CApplication->run()
+#10 {main}
+REQUEST_URI=/ideareef/business/homepage
+---
