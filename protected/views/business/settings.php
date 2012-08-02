@@ -5,10 +5,6 @@
  * and open the template in the editor.
  */
 
-
-
-
-
 if(Yii::app()->user->isBusiness)
     echo $model->type->name;
 else
