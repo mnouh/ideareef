@@ -15,7 +15,7 @@ class BusinessController extends Controller {
                 'users' => array('*'),
             ),
             array('allow', // allow authenticated user to perform 'create' and 'update' actions
-                'actions' => array('index', 'changeUsername', 'changepassword', 'create', 'update', 'homepage'),
+                'actions' => array('index', 'changeUsername', 'changepassword', 'create', 'update', 'homepage','pavilion'),
                 'users' => array('@'),
             ),
             /*array('allow', // allow admin user to perform 'admin' and 'delete' actions
@@ -151,8 +151,6 @@ class BusinessController extends Controller {
     public function actionSettings()
     {
         $model = Business::model()->findByPk(Yii::app()->user->id);
-        
-        
         $this->render('settings', array('model' => $model));
         
     }
@@ -166,7 +164,19 @@ class BusinessController extends Controller {
             $model = Business::model()->findByPk(Yii::app()->user->id);
             $this->render('homepage', array('model' => $model));
         }
-    } 
+    }
+     public function actionPavilion() {
+        if(Yii::app()->user->isBusiness){
+            $model = Business::model()->findByPk(Yii::app()->user->id);
+            $this->render('pavilion', array('model' => $model));
+        }
+    }
+    public function actionpavilionEdit() {
+        if(Yii::app()->user->isBusiness){
+            $model = Business::model()->findByPk(Yii::app()->user->id);
+            $this->render('pavilionEdit', array('model' => $model));
+        }
+    }
     /**
          * Custom function allow validation of forms. Pass the model and the form id and then
          * it will validate via ajax.
