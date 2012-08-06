@@ -999,3 +999,459 @@ Stack trace:
 #10 {main}
 REQUEST_URI=/ideareef/business/homepage
 ---
+2012/08/01 02:54:12 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "images/icons_sprite_front.png".' in C:\wamp\www\ideareef\framework\web\CWebApplication.php:280
+Stack trace:
+#0 C:\wamp\www\ideareef\framework\web\CWebApplication.php(135): CWebApplication->runController('images/icons_sp...')
+#1 C:\wamp\www\ideareef\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\wamp\www\ideareef\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/ideareef/images/icons_sprite_front.png
+HTTP_REFERER=http://localhost/ideareef/
+---
+2012/08/01 12:48:05 [error] [exception.CException] exception 'CException' with message 'Property "WebUser.isBusiness" is not defined.' in C:\wamp\www\ideareef\framework\base\CComponent.php:131
+Stack trace:
+#0 C:\wamp\www\ideareef\framework\web\auth\CWebUser.php(142): CComponent->__get('isBusiness')
+#1 C:\wamp\www\ideareef\protected\controllers\BusinessController.php(165): CWebUser->__get('isBusiness')
+#2 C:\wamp\www\ideareef\framework\web\actions\CInlineAction.php(50): BusinessController->actionHomepage()
+#3 C:\wamp\www\ideareef\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#4 C:\wamp\www\ideareef\framework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#5 C:\wamp\www\ideareef\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 C:\wamp\www\ideareef\framework\web\CWebApplication.php(276): CController->run('homepage')
+#7 C:\wamp\www\ideareef\framework\web\CWebApplication.php(135): CWebApplication->runController('business/homepa...')
+#8 C:\wamp\www\ideareef\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#9 C:\wamp\www\ideareef\index.php(13): CApplication->run()
+#10 {main}
+REQUEST_URI=/ideareef/business/homepage
+---
+2012/08/01 12:48:46 [error] [exception.CException] exception 'CException' with message 'Property "WebUser.isBusiness" is not defined.' in C:\wamp\www\ideareef\framework\base\CComponent.php:131
+Stack trace:
+#0 C:\wamp\www\ideareef\framework\web\auth\CWebUser.php(142): CComponent->__get('isBusiness')
+#1 C:\wamp\www\ideareef\protected\controllers\BusinessController.php(165): CWebUser->__get('isBusiness')
+#2 C:\wamp\www\ideareef\framework\web\actions\CInlineAction.php(50): BusinessController->actionHomepage()
+#3 C:\wamp\www\ideareef\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#4 C:\wamp\www\ideareef\framework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#5 C:\wamp\www\ideareef\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 C:\wamp\www\ideareef\framework\web\CWebApplication.php(276): CController->run('homepage')
+#7 C:\wamp\www\ideareef\framework\web\CWebApplication.php(135): CWebApplication->runController('business/homepa...')
+#8 C:\wamp\www\ideareef\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#9 C:\wamp\www\ideareef\index.php(13): CApplication->run()
+#10 {main}
+REQUEST_URI=/ideareef/business/homepage
+---
+2012/08/01 12:53:00 [error] [exception.CException] exception 'CException' with message 'Property "WebUser.isBusiness" is not defined.' in C:\wamp\www\ideareef\framework\base\CComponent.php:131
+Stack trace:
+#0 C:\wamp\www\ideareef\framework\web\auth\CWebUser.php(142): CComponent->__get('isBusiness')
+#1 C:\wamp\www\ideareef\protected\controllers\BusinessController.php(171): CWebUser->__get('isBusiness')
+#2 C:\wamp\www\ideareef\framework\web\actions\CInlineAction.php(50): BusinessController->actionPavilion()
+#3 C:\wamp\www\ideareef\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#4 C:\wamp\www\ideareef\framework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#5 C:\wamp\www\ideareef\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 C:\wamp\www\ideareef\framework\web\CWebApplication.php(276): CController->run('pavilion')
+#7 C:\wamp\www\ideareef\framework\web\CWebApplication.php(135): CWebApplication->runController('business/pavili...')
+#8 C:\wamp\www\ideareef\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#9 C:\wamp\www\ideareef\index.php(13): CApplication->run()
+#10 {main}
+REQUEST_URI=/ideareef/business/pavilion
+---
+2012/08/01 12:53:03 [error] [exception.CException] exception 'CException' with message 'Property "WebUser.isBusiness" is not defined.' in C:\wamp\www\ideareef\framework\base\CComponent.php:131
+Stack trace:
+#0 C:\wamp\www\ideareef\framework\web\auth\CWebUser.php(142): CComponent->__get('isBusiness')
+#1 C:\wamp\www\ideareef\protected\controllers\BusinessController.php(171): CWebUser->__get('isBusiness')
+#2 C:\wamp\www\ideareef\framework\web\actions\CInlineAction.php(50): BusinessController->actionPavilion()
+#3 C:\wamp\www\ideareef\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#4 C:\wamp\www\ideareef\framework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#5 C:\wamp\www\ideareef\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 C:\wamp\www\ideareef\framework\web\CWebApplication.php(276): CController->run('pavilion')
+#7 C:\wamp\www\ideareef\framework\web\CWebApplication.php(135): CWebApplication->runController('business/pavili...')
+#8 C:\wamp\www\ideareef\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#9 C:\wamp\www\ideareef\index.php(13): CApplication->run()
+#10 {main}
+REQUEST_URI=/ideareef/business/pavilion
+---
+2012/08/01 12:53:34 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The requested page does not exist.' in C:\wamp\www\ideareef\protected\controllers\UserController.php:63
+Stack trace:
+#0 C:\wamp\www\ideareef\framework\web\actions\CInlineAction.php(50): UserController->actionView()
+#1 C:\wamp\www\ideareef\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#2 C:\wamp\www\ideareef\framework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#3 C:\wamp\www\ideareef\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#4 C:\wamp\www\ideareef\framework\web\CWebApplication.php(276): CController->run('view')
+#5 C:\wamp\www\ideareef\framework\web\CWebApplication.php(135): CWebApplication->runController('user/view')
+#6 C:\wamp\www\ideareef\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#7 C:\wamp\www\ideareef\index.php(13): CApplication->run()
+#8 {main}
+REQUEST_URI=/ideareef/business/
+---
+2012/08/01 12:55:18 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The requested page does not exist.' in C:\wamp\www\ideareef\protected\controllers\UserController.php:63
+Stack trace:
+#0 C:\wamp\www\ideareef\framework\web\actions\CInlineAction.php(50): UserController->actionView()
+#1 C:\wamp\www\ideareef\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#2 C:\wamp\www\ideareef\framework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#3 C:\wamp\www\ideareef\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#4 C:\wamp\www\ideareef\framework\web\CWebApplication.php(276): CController->run('view')
+#5 C:\wamp\www\ideareef\framework\web\CWebApplication.php(135): CWebApplication->runController('user/view')
+#6 C:\wamp\www\ideareef\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#7 C:\wamp\www\ideareef\index.php(13): CApplication->run()
+#8 {main}
+REQUEST_URI=/ideareef/business/
+---
+2012/08/01 12:57:25 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "login".' in C:\wamp\www\ideareef\framework\web\CController.php:484
+Stack trace:
+#0 C:\wamp\www\ideareef\framework\web\CController.php(271): CController->missingAction('login')
+#1 C:\wamp\www\ideareef\framework\web\CWebApplication.php(276): CController->run('login')
+#2 C:\wamp\www\ideareef\framework\web\CWebApplication.php(135): CWebApplication->runController('business/login')
+#3 C:\wamp\www\ideareef\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#4 C:\wamp\www\ideareef\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/ideareef/business/login
+---
+2012/08/01 12:57:29 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The requested page does not exist.' in C:\wamp\www\ideareef\protected\controllers\UserController.php:63
+Stack trace:
+#0 C:\wamp\www\ideareef\framework\web\actions\CInlineAction.php(50): UserController->actionView()
+#1 C:\wamp\www\ideareef\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#2 C:\wamp\www\ideareef\framework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#3 C:\wamp\www\ideareef\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#4 C:\wamp\www\ideareef\framework\web\CWebApplication.php(276): CController->run('view')
+#5 C:\wamp\www\ideareef\framework\web\CWebApplication.php(135): CWebApplication->runController('user/view')
+#6 C:\wamp\www\ideareef\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#7 C:\wamp\www\ideareef\index.php(13): CApplication->run()
+#8 {main}
+REQUEST_URI=/ideareef/business
+---
+2012/08/01 12:58:29 [error] [exception.CException] exception 'CException' with message 'BusinessController cannot find the requested view "index".' in C:\wamp\www\ideareef\framework\web\CController.php:879
+Stack trace:
+#0 C:\wamp\www\ideareef\framework\web\CController.php(783): CController->renderPartial('index', NULL, true)
+#1 C:\wamp\www\ideareef\protected\controllers\BusinessController.php(161): CController->render('index')
+#2 C:\wamp\www\ideareef\framework\web\actions\CInlineAction.php(50): BusinessController->actionIndex()
+#3 C:\wamp\www\ideareef\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#4 C:\wamp\www\ideareef\framework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#5 C:\wamp\www\ideareef\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 C:\wamp\www\ideareef\framework\web\CWebApplication.php(276): CController->run('index')
+#7 C:\wamp\www\ideareef\framework\web\CWebApplication.php(135): CWebApplication->runController('business/index')
+#8 C:\wamp\www\ideareef\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#9 C:\wamp\www\ideareef\index.php(13): CApplication->run()
+#10 {main}
+REQUEST_URI=/ideareef/business/index
+---
+2012/08/01 12:59:24 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "images/icons_sprite_front.png".' in C:\wamp\www\ideareef\framework\web\CWebApplication.php:280
+Stack trace:
+#0 C:\wamp\www\ideareef\framework\web\CWebApplication.php(135): CWebApplication->runController('images/icons_sp...')
+#1 C:\wamp\www\ideareef\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\wamp\www\ideareef\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/ideareef/images/icons_sprite_front.png
+HTTP_REFERER=http://localhost/ideareef/account/index
+---
+2012/08/01 13:08:57 [error] [exception.CException] exception 'CException' with message 'Property "WebUser.isBusiness" is not defined.' in C:\wamp\www\ideareef\framework\base\CComponent.php:131
+Stack trace:
+#0 C:\wamp\www\ideareef\framework\web\auth\CWebUser.php(142): CComponent->__get('isBusiness')
+#1 C:\wamp\www\ideareef\protected\controllers\BusinessController.php(165): CWebUser->__get('isBusiness')
+#2 C:\wamp\www\ideareef\framework\web\actions\CInlineAction.php(50): BusinessController->actionHomepage()
+#3 C:\wamp\www\ideareef\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#4 C:\wamp\www\ideareef\framework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#5 C:\wamp\www\ideareef\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 C:\wamp\www\ideareef\framework\web\CWebApplication.php(276): CController->run('homepage')
+#7 C:\wamp\www\ideareef\framework\web\CWebApplication.php(135): CWebApplication->runController('business/homepa...')
+#8 C:\wamp\www\ideareef\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#9 C:\wamp\www\ideareef\index.php(13): CApplication->run()
+#10 {main}
+REQUEST_URI=/ideareef/business/homepage
+---
+2012/08/02 01:11:28 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "images/icons_sprite_front.png".' in C:\wamp\www\ideareef\framework\web\CWebApplication.php:280
+Stack trace:
+#0 C:\wamp\www\ideareef\framework\web\CWebApplication.php(135): CWebApplication->runController('images/icons_sp...')
+#1 C:\wamp\www\ideareef\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\wamp\www\ideareef\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/ideareef/images/icons_sprite_front.png
+HTTP_REFERER=http://localhost/ideareef/
+---
+2012/08/02 01:14:12 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "homepage.php".' in C:\wamp\www\ideareef\framework\web\CController.php:484
+Stack trace:
+#0 C:\wamp\www\ideareef\framework\web\CController.php(271): CController->missingAction('homepage.php')
+#1 C:\wamp\www\ideareef\framework\web\CWebApplication.php(276): CController->run('homepage.php')
+#2 C:\wamp\www\ideareef\framework\web\CWebApplication.php(135): CWebApplication->runController('business/homepa...')
+#3 C:\wamp\www\ideareef\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#4 C:\wamp\www\ideareef\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/ideareef/business/homepage.php
+---
+2012/08/02 12:48:00 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "images/icons_sprite_front.png".' in C:\wamp\www\ideareef\framework\web\CWebApplication.php:280
+Stack trace:
+#0 C:\wamp\www\ideareef\framework\web\CWebApplication.php(135): CWebApplication->runController('images/icons_sp...')
+#1 C:\wamp\www\ideareef\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\wamp\www\ideareef\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/ideareef/images/icons_sprite_front.png
+HTTP_REFERER=http://localhost/ideareef/
+---
+2012/08/02 13:02:26 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "pavilionEdit".' in C:\wamp\www\ideareef\framework\web\CController.php:484
+Stack trace:
+#0 C:\wamp\www\ideareef\framework\web\CController.php(271): CController->missingAction('pavilionEdit')
+#1 C:\wamp\www\ideareef\framework\web\CWebApplication.php(276): CController->run('pavilionEdit')
+#2 C:\wamp\www\ideareef\framework\web\CWebApplication.php(135): CWebApplication->runController('business/pavili...')
+#3 C:\wamp\www\ideareef\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#4 C:\wamp\www\ideareef\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/ideareef/business/pavilionEdit
+---
+2012/08/02 13:04:57 [error] [exception.CException] exception 'CException' with message 'Property "Business.description" is not defined.' in C:\wamp\www\ideareef\framework\base\CComponent.php:131
+Stack trace:
+#0 C:\wamp\www\ideareef\framework\db\ar\CActiveRecord.php(144): CComponent->__get('description')
+#1 C:\wamp\www\ideareef\framework\web\helpers\CHtml.php(2044): CActiveRecord->__get('description')
+#2 C:\wamp\www\ideareef\framework\web\helpers\CHtml.php(1258): CHtml::resolveValue(Object(Business), 'description')
+#3 C:\wamp\www\ideareef\framework\web\widgets\CActiveForm.php(620): CHtml::activeTextArea(Object(Business), 'description', Array)
+#4 C:\wamp\www\ideareef\protected\views\business\pavilionEdit.php(8): CActiveForm->textArea(Object(Business), 'description')
+#5 C:\wamp\www\ideareef\framework\web\CBaseController.php(127): require('C:\wamp\www\ide...')
+#6 C:\wamp\www\ideareef\framework\web\CBaseController.php(96): CBaseController->renderInternal('C:\wamp\www\ide...', Array, true)
+#7 C:\wamp\www\ideareef\framework\web\CController.php(870): CBaseController->renderFile('C:\wamp\www\ide...', Array, true)
+#8 C:\wamp\www\ideareef\framework\web\CController.php(783): CController->renderPartial('pavilionEdit', Array, true)
+#9 C:\wamp\www\ideareef\protected\controllers\BusinessController.php(177): CController->render('pavilionEdit', Array)
+#10 C:\wamp\www\ideareef\framework\web\actions\CInlineAction.php(50): BusinessController->actionpavilionEdit()
+#11 C:\wamp\www\ideareef\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#12 C:\wamp\www\ideareef\framework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#13 C:\wamp\www\ideareef\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#14 C:\wamp\www\ideareef\framework\web\CWebApplication.php(276): CController->run('pavilionEdit')
+#15 C:\wamp\www\ideareef\framework\web\CWebApplication.php(135): CWebApplication->runController('business/pavili...')
+#16 C:\wamp\www\ideareef\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#17 C:\wamp\www\ideareef\index.php(13): CApplication->run()
+#18 {main}
+REQUEST_URI=/ideareef/business/pavilionEdit
+---
+2012/08/02 13:05:36 [error] [exception.CException] exception 'CException' with message 'BusinessController contains improperly nested widget tags in its view "C:\wamp\www\ideareef\protected\views\business\pavilionEdit.php". A CActiveForm widget does not have an endWidget() call.' in C:\wamp\www\ideareef\framework\web\CBaseController.php:102
+Stack trace:
+#0 C:\wamp\www\ideareef\framework\web\CController.php(870): CBaseController->renderFile('C:\wamp\www\ide...', Array, true)
+#1 C:\wamp\www\ideareef\framework\web\CController.php(783): CController->renderPartial('pavilionEdit', Array, true)
+#2 C:\wamp\www\ideareef\protected\controllers\BusinessController.php(177): CController->render('pavilionEdit', Array)
+#3 C:\wamp\www\ideareef\framework\web\actions\CInlineAction.php(50): BusinessController->actionpavilionEdit()
+#4 C:\wamp\www\ideareef\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#5 C:\wamp\www\ideareef\framework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#6 C:\wamp\www\ideareef\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 C:\wamp\www\ideareef\framework\web\CWebApplication.php(276): CController->run('pavilionEdit')
+#8 C:\wamp\www\ideareef\framework\web\CWebApplication.php(135): CWebApplication->runController('business/pavili...')
+#9 C:\wamp\www\ideareef\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#10 C:\wamp\www\ideareef\index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/ideareef/business/pavilionEdit
+---
+2012/08/02 13:09:01 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "form".' in C:\wamp\www\ideareef\framework\web\CController.php:484
+Stack trace:
+#0 C:\wamp\www\ideareef\framework\web\CController.php(271): CController->missingAction('form')
+#1 C:\wamp\www\ideareef\framework\web\CWebApplication.php(276): CController->run('form')
+#2 C:\wamp\www\ideareef\framework\web\CWebApplication.php(135): CWebApplication->runController('competition/for...')
+#3 C:\wamp\www\ideareef\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#4 C:\wamp\www\ideareef\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/ideareef/competition/form
+---
+2012/08/02 13:09:06 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "signup".' in C:\wamp\www\ideareef\framework\web\CController.php:484
+Stack trace:
+#0 C:\wamp\www\ideareef\framework\web\CController.php(271): CController->missingAction('signup')
+#1 C:\wamp\www\ideareef\framework\web\CWebApplication.php(276): CController->run('signup')
+#2 C:\wamp\www\ideareef\framework\web\CWebApplication.php(135): CWebApplication->runController('competition/sig...')
+#3 C:\wamp\www\ideareef\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#4 C:\wamp\www\ideareef\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/ideareef/competition/signup
+---
+2012/08/02 13:09:12 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The requested page does not exist.' in C:\wamp\www\ideareef\protected\controllers\UserController.php:63
+Stack trace:
+#0 C:\wamp\www\ideareef\framework\web\actions\CInlineAction.php(50): UserController->actionView()
+#1 C:\wamp\www\ideareef\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#2 C:\wamp\www\ideareef\framework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#3 C:\wamp\www\ideareef\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#4 C:\wamp\www\ideareef\framework\web\CWebApplication.php(276): CController->run('view')
+#5 C:\wamp\www\ideareef\framework\web\CWebApplication.php(135): CWebApplication->runController('user/view')
+#6 C:\wamp\www\ideareef\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#7 C:\wamp\www\ideareef\index.php(13): CApplication->run()
+#8 {main}
+REQUEST_URI=/ideareef/competition
+---
+2012/08/02 13:09:26 [warning] [application] Failed to set unsafe attribute "name" of "Competition".
+in C:\wamp\www\ideareef\protected\controllers\CompetitionController.php (176)
+in C:\wamp\www\ideareef\protected\controllers\CompetitionController.php (67)
+in C:\wamp\www\ideareef\index.php (13)
+2012/08/06 12:15:23 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "images/icons_sprite_front.png".' in C:\wamp\www\ideareef\framework\web\CWebApplication.php:280
+Stack trace:
+#0 C:\wamp\www\ideareef\framework\web\CWebApplication.php(135): CWebApplication->runController('images/icons_sp...')
+#1 C:\wamp\www\ideareef\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\wamp\www\ideareef\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/ideareef/images/icons_sprite_front.png
+HTTP_REFERER=http://localhost/ideareef/
+---
+2012/08/06 12:32:13 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "images/icons_sprite_front.png".' in C:\wamp\www\ideareef\framework\web\CWebApplication.php:280
+Stack trace:
+#0 C:\wamp\www\ideareef\framework\web\CWebApplication.php(135): CWebApplication->runController('images/icons_sp...')
+#1 C:\wamp\www\ideareef\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\wamp\www\ideareef\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/ideareef/images/icons_sprite_front.png
+HTTP_REFERER=http://localhost/ideareef/account/index
+---
+2012/08/06 12:35:02 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "images/icons_sprite_front.png".' in C:\wamp\www\ideareef\framework\web\CWebApplication.php:280
+Stack trace:
+#0 C:\wamp\www\ideareef\framework\web\CWebApplication.php(135): CWebApplication->runController('images/icons_sp...')
+#1 C:\wamp\www\ideareef\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\wamp\www\ideareef\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/ideareef/images/icons_sprite_front.png
+HTTP_REFERER=http://localhost/ideareef/account/index
+---
+2012/08/06 12:36:43 [error] [exception.CException] exception 'CException' with message 'Business and its behaviors do not have a method or closure named "labelEx".' in C:\wamp\www\ideareef\framework\base\CComponent.php:266
+Stack trace:
+#0 C:\wamp\www\ideareef\framework\db\ar\CActiveRecord.php(226): CComponent->__call('labelEx', Array)
+#1 C:\wamp\www\ideareef\protected\views\business\pavilion.php(6): CActiveRecord->__call('labelEx', Array)
+#2 C:\wamp\www\ideareef\protected\views\business\pavilion.php(6): Business->labelEx(Object(Business), 'aboutUs')
+#3 C:\wamp\www\ideareef\framework\web\CBaseController.php(127): require('C:\wamp\www\ide...')
+#4 C:\wamp\www\ideareef\framework\web\CBaseController.php(96): CBaseController->renderInternal('C:\wamp\www\ide...', Array, true)
+#5 C:\wamp\www\ideareef\framework\web\CController.php(870): CBaseController->renderFile('C:\wamp\www\ide...', Array, true)
+#6 C:\wamp\www\ideareef\framework\web\CController.php(783): CController->renderPartial('pavilion', Array, true)
+#7 C:\wamp\www\ideareef\protected\controllers\BusinessController.php(171): CController->render('pavilion', Array)
+#8 C:\wamp\www\ideareef\framework\web\actions\CInlineAction.php(50): BusinessController->actionPavilion()
+#9 C:\wamp\www\ideareef\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#10 C:\wamp\www\ideareef\framework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#11 C:\wamp\www\ideareef\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 C:\wamp\www\ideareef\framework\web\CWebApplication.php(276): CController->run('pavilion')
+#13 C:\wamp\www\ideareef\framework\web\CWebApplication.php(135): CWebApplication->runController('business/pavili...')
+#14 C:\wamp\www\ideareef\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#15 C:\wamp\www\ideareef\index.php(13): CApplication->run()
+#16 {main}
+REQUEST_URI=/ideareef/business/pavilion
+---
+2012/08/06 12:47:28 [error] [exception.CException] exception 'CException' with message 'Property "CWebApplication.use" is not defined.' in C:\wamp\www\ideareef\framework\base\CComponent.php:131
+Stack trace:
+#0 C:\wamp\www\ideareef\framework\base\CModule.php(106): CComponent->__get('use')
+#1 C:\wamp\www\ideareef\protected\views\business\pavilionEdit.php(13): CModule->__get('use')
+#2 C:\wamp\www\ideareef\framework\web\CBaseController.php(127): require('C:\wamp\www\ide...')
+#3 C:\wamp\www\ideareef\framework\web\CBaseController.php(96): CBaseController->renderInternal('C:\wamp\www\ide...', Array, true)
+#4 C:\wamp\www\ideareef\framework\web\CController.php(870): CBaseController->renderFile('C:\wamp\www\ide...', Array, true)
+#5 C:\wamp\www\ideareef\framework\web\CController.php(783): CController->renderPartial('pavilionEdit', Array, true)
+#6 C:\wamp\www\ideareef\protected\controllers\BusinessController.php(177): CController->render('pavilionEdit', Array)
+#7 C:\wamp\www\ideareef\framework\web\actions\CInlineAction.php(50): BusinessController->actionPavilionEdit()
+#8 C:\wamp\www\ideareef\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#9 C:\wamp\www\ideareef\framework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#10 C:\wamp\www\ideareef\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 C:\wamp\www\ideareef\framework\web\CWebApplication.php(276): CController->run('pavilionEdit')
+#12 C:\wamp\www\ideareef\framework\web\CWebApplication.php(135): CWebApplication->runController('business/pavili...')
+#13 C:\wamp\www\ideareef\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#14 C:\wamp\www\ideareef\index.php(13): CApplication->run()
+#15 {main}
+REQUEST_URI=/ideareef/business/pavilionEdit
+---
+2012/08/06 12:47:51 [error] [exception.CException] exception 'CException' with message 'Property "CWebApplication.use" is not defined.' in C:\wamp\www\ideareef\framework\base\CComponent.php:131
+Stack trace:
+#0 C:\wamp\www\ideareef\framework\base\CModule.php(106): CComponent->__get('use')
+#1 C:\wamp\www\ideareef\protected\views\business\pavilionEdit.php(7): CModule->__get('use')
+#2 C:\wamp\www\ideareef\framework\web\CBaseController.php(127): require('C:\wamp\www\ide...')
+#3 C:\wamp\www\ideareef\framework\web\CBaseController.php(96): CBaseController->renderInternal('C:\wamp\www\ide...', Array, true)
+#4 C:\wamp\www\ideareef\framework\web\CController.php(870): CBaseController->renderFile('C:\wamp\www\ide...', Array, true)
+#5 C:\wamp\www\ideareef\framework\web\CController.php(783): CController->renderPartial('pavilionEdit', Array, true)
+#6 C:\wamp\www\ideareef\protected\controllers\BusinessController.php(177): CController->render('pavilionEdit', Array)
+#7 C:\wamp\www\ideareef\framework\web\actions\CInlineAction.php(50): BusinessController->actionPavilionEdit()
+#8 C:\wamp\www\ideareef\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#9 C:\wamp\www\ideareef\framework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#10 C:\wamp\www\ideareef\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 C:\wamp\www\ideareef\framework\web\CWebApplication.php(276): CController->run('pavilionEdit')
+#12 C:\wamp\www\ideareef\framework\web\CWebApplication.php(135): CWebApplication->runController('business/pavili...')
+#13 C:\wamp\www\ideareef\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#14 C:\wamp\www\ideareef\index.php(13): CApplication->run()
+#15 {main}
+REQUEST_URI=/ideareef/business/pavilionEdit
+---
+2012/08/06 12:47:59 [error] [exception.CException] exception 'CException' with message 'Property "CWebApplication.use" is not defined.' in C:\wamp\www\ideareef\framework\base\CComponent.php:131
+Stack trace:
+#0 C:\wamp\www\ideareef\framework\base\CModule.php(106): CComponent->__get('use')
+#1 C:\wamp\www\ideareef\protected\views\business\pavilionEdit.php(13): CModule->__get('use')
+#2 C:\wamp\www\ideareef\framework\web\CBaseController.php(127): require('C:\wamp\www\ide...')
+#3 C:\wamp\www\ideareef\framework\web\CBaseController.php(96): CBaseController->renderInternal('C:\wamp\www\ide...', Array, true)
+#4 C:\wamp\www\ideareef\framework\web\CController.php(870): CBaseController->renderFile('C:\wamp\www\ide...', Array, true)
+#5 C:\wamp\www\ideareef\framework\web\CController.php(783): CController->renderPartial('pavilionEdit', Array, true)
+#6 C:\wamp\www\ideareef\protected\controllers\BusinessController.php(177): CController->render('pavilionEdit', Array)
+#7 C:\wamp\www\ideareef\framework\web\actions\CInlineAction.php(50): BusinessController->actionPavilionEdit()
+#8 C:\wamp\www\ideareef\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#9 C:\wamp\www\ideareef\framework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#10 C:\wamp\www\ideareef\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 C:\wamp\www\ideareef\framework\web\CWebApplication.php(276): CController->run('pavilionEdit')
+#12 C:\wamp\www\ideareef\framework\web\CWebApplication.php(135): CWebApplication->runController('business/pavili...')
+#13 C:\wamp\www\ideareef\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#14 C:\wamp\www\ideareef\index.php(13): CApplication->run()
+#15 {main}
+REQUEST_URI=/ideareef/business/pavilionEdit
+---
+2012/08/06 12:48:00 [error] [exception.CException] exception 'CException' with message 'Property "CWebApplication.use" is not defined.' in C:\wamp\www\ideareef\framework\base\CComponent.php:131
+Stack trace:
+#0 C:\wamp\www\ideareef\framework\base\CModule.php(106): CComponent->__get('use')
+#1 C:\wamp\www\ideareef\protected\views\business\pavilionEdit.php(13): CModule->__get('use')
+#2 C:\wamp\www\ideareef\framework\web\CBaseController.php(127): require('C:\wamp\www\ide...')
+#3 C:\wamp\www\ideareef\framework\web\CBaseController.php(96): CBaseController->renderInternal('C:\wamp\www\ide...', Array, true)
+#4 C:\wamp\www\ideareef\framework\web\CController.php(870): CBaseController->renderFile('C:\wamp\www\ide...', Array, true)
+#5 C:\wamp\www\ideareef\framework\web\CController.php(783): CController->renderPartial('pavilionEdit', Array, true)
+#6 C:\wamp\www\ideareef\protected\controllers\BusinessController.php(177): CController->render('pavilionEdit', Array)
+#7 C:\wamp\www\ideareef\framework\web\actions\CInlineAction.php(50): BusinessController->actionPavilionEdit()
+#8 C:\wamp\www\ideareef\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#9 C:\wamp\www\ideareef\framework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#10 C:\wamp\www\ideareef\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 C:\wamp\www\ideareef\framework\web\CWebApplication.php(276): CController->run('pavilionEdit')
+#12 C:\wamp\www\ideareef\framework\web\CWebApplication.php(135): CWebApplication->runController('business/pavili...')
+#13 C:\wamp\www\ideareef\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#14 C:\wamp\www\ideareef\index.php(13): CApplication->run()
+#15 {main}
+REQUEST_URI=/ideareef/business/pavilionEdit
+---
+2012/08/06 12:48:08 [error] [exception.CException] exception 'CException' with message 'Property "CWebApplication.use" is not defined.' in C:\wamp\www\ideareef\framework\base\CComponent.php:131
+Stack trace:
+#0 C:\wamp\www\ideareef\framework\base\CModule.php(106): CComponent->__get('use')
+#1 C:\wamp\www\ideareef\protected\views\business\pavilionEdit.php(14): CModule->__get('use')
+#2 C:\wamp\www\ideareef\framework\web\CBaseController.php(127): require('C:\wamp\www\ide...')
+#3 C:\wamp\www\ideareef\framework\web\CBaseController.php(96): CBaseController->renderInternal('C:\wamp\www\ide...', Array, true)
+#4 C:\wamp\www\ideareef\framework\web\CController.php(870): CBaseController->renderFile('C:\wamp\www\ide...', Array, true)
+#5 C:\wamp\www\ideareef\framework\web\CController.php(783): CController->renderPartial('pavilionEdit', Array, true)
+#6 C:\wamp\www\ideareef\protected\controllers\BusinessController.php(177): CController->render('pavilionEdit', Array)
+#7 C:\wamp\www\ideareef\framework\web\actions\CInlineAction.php(50): BusinessController->actionPavilionEdit()
+#8 C:\wamp\www\ideareef\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#9 C:\wamp\www\ideareef\framework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#10 C:\wamp\www\ideareef\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 C:\wamp\www\ideareef\framework\web\CWebApplication.php(276): CController->run('pavilionEdit')
+#12 C:\wamp\www\ideareef\framework\web\CWebApplication.php(135): CWebApplication->runController('business/pavili...')
+#13 C:\wamp\www\ideareef\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#14 C:\wamp\www\ideareef\index.php(13): CApplication->run()
+#15 {main}
+REQUEST_URI=/ideareef/business/pavilionEdit
+---
+2012/08/06 12:59:10 [error] [exception.CException] exception 'CException' with message 'BusinessController has an extra endWidget() call in its view.' in C:\wamp\www\ideareef\framework\web\CBaseController.php:211
+Stack trace:
+#0 C:\wamp\www\ideareef\protected\views\business\pavilionEdit.php(32): CBaseController->endWidget()
+#1 C:\wamp\www\ideareef\framework\web\CBaseController.php(127): require('C:\wamp\www\ide...')
+#2 C:\wamp\www\ideareef\framework\web\CBaseController.php(96): CBaseController->renderInternal('C:\wamp\www\ide...', Array, true)
+#3 C:\wamp\www\ideareef\framework\web\CController.php(870): CBaseController->renderFile('C:\wamp\www\ide...', Array, true)
+#4 C:\wamp\www\ideareef\framework\web\CController.php(783): CController->renderPartial('pavilionEdit', Array, true)
+#5 C:\wamp\www\ideareef\protected\controllers\BusinessController.php(177): CController->render('pavilionEdit', Array)
+#6 C:\wamp\www\ideareef\framework\web\actions\CInlineAction.php(50): BusinessController->actionPavilionEdit()
+#7 C:\wamp\www\ideareef\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#8 C:\wamp\www\ideareef\framework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#9 C:\wamp\www\ideareef\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#10 C:\wamp\www\ideareef\framework\web\CWebApplication.php(276): CController->run('pavilionEdit')
+#11 C:\wamp\www\ideareef\framework\web\CWebApplication.php(135): CWebApplication->runController('business/pavili...')
+#12 C:\wamp\www\ideareef\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#13 C:\wamp\www\ideareef\index.php(13): CApplication->run()
+#14 {main}
+REQUEST_URI=/ideareef/business/pavilionEdit
+HTTP_REFERER=http://localhost/ideareef/business/pavilionEdit
+---
+2012/08/06 13:01:03 [error] [exception.CException] exception 'CException' with message 'BusinessController contains improperly nested widget tags in its view "C:\wamp\www\ideareef\protected\views\business\pavilionEdit.php". A CActiveForm widget does not have an endWidget() call.' in C:\wamp\www\ideareef\framework\web\CBaseController.php:102
+Stack trace:
+#0 C:\wamp\www\ideareef\framework\web\CController.php(870): CBaseController->renderFile('C:\wamp\www\ide...', Array, true)
+#1 C:\wamp\www\ideareef\framework\web\CController.php(783): CController->renderPartial('pavilionEdit', Array, true)
+#2 C:\wamp\www\ideareef\protected\controllers\BusinessController.php(177): CController->render('pavilionEdit', Array)
+#3 C:\wamp\www\ideareef\framework\web\actions\CInlineAction.php(50): BusinessController->actionPavilionEdit()
+#4 C:\wamp\www\ideareef\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#5 C:\wamp\www\ideareef\framework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#6 C:\wamp\www\ideareef\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 C:\wamp\www\ideareef\framework\web\CWebApplication.php(276): CController->run('pavilionEdit')
+#8 C:\wamp\www\ideareef\framework\web\CWebApplication.php(135): CWebApplication->runController('business/pavili...')
+#9 C:\wamp\www\ideareef\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#10 C:\wamp\www\ideareef\index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/ideareef/business/pavilionEdit
+HTTP_REFERER=http://localhost/ideareef/business/pavilionEdit
+---

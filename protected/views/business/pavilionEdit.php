@@ -1,24 +1,23 @@
-<div class="form">
-
+<h1> Edit Pavilion </h1>
+<div class="form" id="customForm" class="sync">
 <?php 
-    $form = $this->beginWidget('CActiveForm', array(
-    'id' => 'pavilionEdit-form',
-    'enableAjaxValidation' => true,)); 
+    $form=$this->beginWidget('CActiveForm', array(
+    'id'=>'pavilionEdit-form',
+    'enableAjaxValidation'=>true,
+    'clientOptions'=>array('validateOnSubmit'=>true, 'validationDelay' => 100),   
+    ));
 ?>
     
-<div class="row">    
-<?php 
-    echo $form->labelEx($model,'aboutUs');
-    echo $form->textArea($model,'aboutUs');
-    echo $form->error($model,'aboutUs'); 
-?>
+<div>    
+    <?php 
+        echo $form->labelEx($model,'aboutUs');
+        echo $form->textArea($model,'aboutUs', array ('class' => 'sync'));
+        echo $form->error($model,'aboutUs'); 
+    ?>
 </div>
     
-<div class="row buttons">
-    <?php echo CHtml::submitButton($model->isNewRecord ? 'Create' : 'Save', array('class' => 'btn primary')); ?>
+<div>
+    <?php echo CHtml::submitButton('  Save  ', array('name' => 'Submit', 'class' => 'btn primary'));  ?>
 </div>
-    
-<?php $this->endWidget(); ?>
-    
+<?php $this->endWidget(); ?>    
 </div>
-

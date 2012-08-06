@@ -1,5 +1,7 @@
-<?php
+<h1> Pavilion </h1>
 
-echo "Hello World";
-
-?>
+<div class='row'>
+    <?php echo '</br>'; ?>
+    <legend> About Us </legend>
+    <?php echo $model->aboutUs; ?>
+</div>
