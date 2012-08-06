@@ -1455,3 +1455,77 @@ Stack trace:
 REQUEST_URI=/ideareef/business/pavilionEdit
 HTTP_REFERER=http://localhost/ideareef/business/pavilionEdit
 ---
+2012/08/06 15:05:36 [error] [exception.CException] exception 'CException' with message 'Property "Business.business" is not defined.' in C:\wamp\www\ideareef\framework\base\CComponent.php:131
+Stack trace:
+#0 C:\wamp\www\ideareef\framework\db\ar\CActiveRecord.php(144): CComponent->__get('business')
+#1 C:\wamp\www\ideareef\protected\views\business\pavilion.php(2): CActiveRecord->__get('business')
+#2 C:\wamp\www\ideareef\framework\web\CBaseController.php(127): require('C:\wamp\www\ide...')
+#3 C:\wamp\www\ideareef\framework\web\CBaseController.php(96): CBaseController->renderInternal('C:\wamp\www\ide...', Array, true)
+#4 C:\wamp\www\ideareef\framework\web\CController.php(870): CBaseController->renderFile('C:\wamp\www\ide...', Array, true)
+#5 C:\wamp\www\ideareef\framework\web\CController.php(783): CController->renderPartial('pavilion', Array, true)
+#6 C:\wamp\www\ideareef\protected\controllers\BusinessController.php(171): CController->render('pavilion', Array)
+#7 C:\wamp\www\ideareef\framework\web\actions\CInlineAction.php(50): BusinessController->actionPavilion()
+#8 C:\wamp\www\ideareef\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#9 C:\wamp\www\ideareef\framework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#10 C:\wamp\www\ideareef\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 C:\wamp\www\ideareef\framework\web\CWebApplication.php(276): CController->run('pavilion')
+#12 C:\wamp\www\ideareef\framework\web\CWebApplication.php(135): CWebApplication->runController('business/pavili...')
+#13 C:\wamp\www\ideareef\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#14 C:\wamp\www\ideareef\index.php(13): CApplication->run()
+#15 {main}
+REQUEST_URI=/ideareef/business/pavilion
+---
+2012/08/06 15:05:47 [error] [php] Invalid argument supplied for foreach() (C:\wamp\www\ideareef\protected\views\business\pavilion.php:2)
+Stack trace:
+#0 C:\wamp\www\ideareef\framework\web\CController.php(870): BusinessController->renderFile()
+#1 C:\wamp\www\ideareef\framework\web\CController.php(783): BusinessController->renderPartial()
+#2 C:\wamp\www\ideareef\protected\controllers\BusinessController.php(171): BusinessController->render()
+#3 C:\wamp\www\ideareef\framework\web\actions\CInlineAction.php(50): BusinessController->actionPavilion()
+#4 C:\wamp\www\ideareef\framework\web\CController.php(309): CInlineAction->runWithParams()
+#5 C:\wamp\www\ideareef\framework\web\CController.php(287): BusinessController->runAction()
+#6 C:\wamp\www\ideareef\framework\web\CController.php(266): BusinessController->runActionWithFilters()
+#7 C:\wamp\www\ideareef\framework\web\CWebApplication.php(276): BusinessController->run()
+#8 C:\wamp\www\ideareef\framework\web\CWebApplication.php(135): CWebApplication->runController()
+#9 C:\wamp\www\ideareef\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#10 C:\wamp\www\ideareef\index.php(13): CWebApplication->run()
+REQUEST_URI=/ideareef/business/pavilion
+in C:\wamp\www\ideareef\protected\views\business\pavilion.php (2)
+in C:\wamp\www\ideareef\protected\controllers\BusinessController.php (171)
+in C:\wamp\www\ideareef\index.php (13)
+2012/08/06 15:06:43 [error] [exception.CException] exception 'CException' with message 'Property "Business.business" is not defined.' in C:\wamp\www\ideareef\framework\base\CComponent.php:131
+Stack trace:
+#0 C:\wamp\www\ideareef\framework\db\ar\CActiveRecord.php(144): CComponent->__get('business')
+#1 C:\wamp\www\ideareef\protected\views\business\pavilion.php(2): CActiveRecord->__get('business')
+#2 C:\wamp\www\ideareef\framework\web\CBaseController.php(127): require('C:\wamp\www\ide...')
+#3 C:\wamp\www\ideareef\framework\web\CBaseController.php(96): CBaseController->renderInternal('C:\wamp\www\ide...', Array, true)
+#4 C:\wamp\www\ideareef\framework\web\CController.php(870): CBaseController->renderFile('C:\wamp\www\ide...', Array, true)
+#5 C:\wamp\www\ideareef\framework\web\CController.php(783): CController->renderPartial('pavilion', Array, true)
+#6 C:\wamp\www\ideareef\protected\controllers\BusinessController.php(171): CController->render('pavilion', Array)
+#7 C:\wamp\www\ideareef\framework\web\actions\CInlineAction.php(50): BusinessController->actionPavilion()
+#8 C:\wamp\www\ideareef\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#9 C:\wamp\www\ideareef\framework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#10 C:\wamp\www\ideareef\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 C:\wamp\www\ideareef\framework\web\CWebApplication.php(276): CController->run('pavilion')
+#12 C:\wamp\www\ideareef\framework\web\CWebApplication.php(135): CWebApplication->runController('business/pavili...')
+#13 C:\wamp\www\ideareef\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#14 C:\wamp\www\ideareef\index.php(13): CApplication->run()
+#15 {main}
+REQUEST_URI=/ideareef/business/pavilion
+---
+2012/08/06 15:08:21 [error] [php] Trying to get property of non-object (C:\wamp\www\ideareef\protected\views\business\pavilion.php:4)
+Stack trace:
+#0 C:\wamp\www\ideareef\framework\web\CController.php(870): BusinessController->renderFile()
+#1 C:\wamp\www\ideareef\framework\web\CController.php(783): BusinessController->renderPartial()
+#2 C:\wamp\www\ideareef\protected\controllers\BusinessController.php(171): BusinessController->render()
+#3 C:\wamp\www\ideareef\framework\web\actions\CInlineAction.php(50): BusinessController->actionPavilion()
+#4 C:\wamp\www\ideareef\framework\web\CController.php(309): CInlineAction->runWithParams()
+#5 C:\wamp\www\ideareef\framework\web\CController.php(287): BusinessController->runAction()
+#6 C:\wamp\www\ideareef\framework\web\CController.php(266): BusinessController->runActionWithFilters()
+#7 C:\wamp\www\ideareef\framework\web\CWebApplication.php(276): BusinessController->run()
+#8 C:\wamp\www\ideareef\framework\web\CWebApplication.php(135): CWebApplication->runController()
+#9 C:\wamp\www\ideareef\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#10 C:\wamp\www\ideareef\index.php(13): CWebApplication->run()
+REQUEST_URI=/ideareef/business/pavilion
+in C:\wamp\www\ideareef\protected\views\business\pavilion.php (4)
+in C:\wamp\www\ideareef\protected\controllers\BusinessController.php (171)
+in C:\wamp\www\ideareef\index.php (13)
