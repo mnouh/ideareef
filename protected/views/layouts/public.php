@@ -21,6 +21,10 @@
 <div class="holder">
 <div id="Header">
   <h1 class="logo"><a href="#">IdeaReef</a></h1>
+  <?php
+  if(Yii::app()->user->isGuest):
+  echo CHtml::beginForm(array('account/login'));
+  ?>
   <div class="floatRight">
   <div class="topArea">
   <div class="fL">Email</div>
@@ -29,11 +33,12 @@
   </div>
   <div class="inputArea">
   <div class="fL">
-    <input name="email" type="text" class="inputBox" id="email" />
+      <?php echo CHtml::textField('LoginForm[email]', '',  array ('id' => 'email','class' => 'inputBox')); ?>
   </div>
   <div class="fL">
-    <input name="password" type="password" class="inputBox" id="password" />
-  </div><input type="button" class="btn" value="Login" />
+    <?php echo CHtml::passwordField('LoginForm[password]', '', array ('id' => 'password', 'class' => 'inputBox')); ?>
+  </div>
+      <?php echo CHtml::submitButton('Login', array('name' => 'Submit', 'class' => 'btn'));  ?>
   <div class="clear"></div>
   </div>
   <div class="linksArea">
@@ -45,6 +50,31 @@
   <div class="clear"></div>
   </div>
   </div>
+  <?php echo CHtml::endForm();?>
+  <?php else:?>
+  <div class="floatRight">
+  <div class="topArea">
+  <div class="fL"><a href="<?php echo Yii::app()->createUrl('user/changeUsername')?>">Change Username</a></div>
+  <div class="fL"><a href="<?php echo Yii::app()->createUrl('user/settings')?>">Account Settings</a></div>
+  <div class="fL"><a href="<?php echo Yii::app()->createUrl('user/changePassword')?>">Change Password</a></div>
+  <div class="fL"><a href="<?php echo Yii::app()->createUrl('business/pavilionEdit')?>">Edit Pavilion</a></div>
+  <div class="fL"><a href="<?php echo Yii::app()->createUrl('competition/create')?>">Create Competition</a></div>
+  <div class="fL"><a href="<?php echo Yii::app()->createUrl('account/logout')?>">Logout</a></div>
+  
+  <div class="clear"></div>
+  </div>
+  
+  <div class="linksArea">
+  <div class="fL">
+  </div>
+  <div class="clear"></div>
+  </div>
+  </div>
+  
+ 
+  <?php endif; ?>
+  
+  
   <div class="clear"></div>
 </div>
 <div id="Banner">
