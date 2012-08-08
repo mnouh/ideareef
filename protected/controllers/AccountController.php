@@ -2,6 +2,8 @@
 
 class AccountController extends Controller
 {
+    
+    public $layout = 'public';
 	/**
 	 * Declares class-based actions.
 	 */
