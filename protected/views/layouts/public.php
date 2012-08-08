@@ -5,45 +5,15 @@
 	<meta name="language" content="en" />
         
         <link rel="stylesheet" type="text/css" href="<?php echo Yii::app()->request->baseUrl; ?>/css/css.css" />
-        <?php Yii::app()->clientScript->registerCoreScript('jquery'); ?>
-<script language="javascript">
+        <?php //Yii::app()->clientScript->registerCoreScript('jquery'); ?>
+        <?php
+         $baseUrl = Yii::app()->baseUrl; 
+ $cs = Yii::app()->getClientScript();
+ $cs->registerScriptFile($baseUrl.'/js/jquery.tools.min.js');
+ $cs->registerScriptFile($baseUrl.'/js/home.js');
+ $cs->registerScriptFile($baseUrl.'/js/social.js');
+        ?>
 
-	$(function(){
-
-		$("div#myController").tabs("#mySlides > div", { 
-
- 
-
-        // enable "cross-fading" effect 
-
-        effect: 'fade', 
-
-        fadeOutSpeed: "slow", 
-
- 
-
-        // start from the beginning after the last tab 
-
-        rotate: true 
-
- 
-
-    // use the slideshow plugin. It accepts its own configuration 
-
-    }).slideshow({autoplay:false});
-
-	});
-
-</script>
-<script type="text/javascript" src="js/social.js"></script>
-<script type="text/javascript">
-ddtabmenu.definemenu("ddtabs1", 0)
-</script>
-<link href="styles/css.css" rel="stylesheet" type="text/css" />
-<meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
-
-	<!-- blueprint CSS framework -->
-	
 	<title><?php echo CHtml::encode($this->pageTitle); ?></title>
 </head>
 <body>

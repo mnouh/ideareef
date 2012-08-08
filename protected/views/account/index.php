@@ -1,6 +1,6 @@
 <div id="HomeLaderBoard">
 <div class="floatLeft">
-<div class="top">Laderboard</div>
+<div class="top">Leaderboard</div>
 <div class="bottom">
   <table>
     <tr>
