@@ -1553,3 +1553,228 @@ Stack trace:
 REQUEST_URI=/ideareef/images/icons_sprite_front.png
 HTTP_REFERER=http://localhost/ideareef/
 ---
+2012/08/08 00:02:38 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "images/icons_sprite_front.png".' in C:\wamp\www\ideareef\framework\web\CWebApplication.php:280
+Stack trace:
+#0 C:\wamp\www\ideareef\framework\web\CWebApplication.php(135): CWebApplication->runController('images/icons_sp...')
+#1 C:\wamp\www\ideareef\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\wamp\www\ideareef\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/ideareef/images/icons_sprite_front.png
+HTTP_REFERER=http://localhost/ideareef/
+---
+2012/08/08 00:21:10 [warning] [application] Failed to set unsafe attribute "address" of "Business".
+in C:\wamp\www\ideareef\protected\controllers\BusinessController.php (180)
+in C:\wamp\www\ideareef\index.php (13)
+2012/08/08 00:21:10 [warning] [application] Failed to set unsafe attribute "aboutUs" of "Business".
+in C:\wamp\www\ideareef\protected\controllers\BusinessController.php (180)
+in C:\wamp\www\ideareef\index.php (13)
+2012/08/08 00:21:10 [warning] [application] Failed to set unsafe attribute "companyHistory" of "Business".
+in C:\wamp\www\ideareef\protected\controllers\BusinessController.php (180)
+in C:\wamp\www\ideareef\index.php (13)
+2012/08/08 00:21:10 [warning] [application] Failed to set unsafe attribute "companyMission" of "Business".
+in C:\wamp\www\ideareef\protected\controllers\BusinessController.php (180)
+in C:\wamp\www\ideareef\index.php (13)
+2012/08/08 00:21:11 [warning] [application] Failed to set unsafe attribute "address" of "Business".
+in C:\wamp\www\ideareef\protected\controllers\BusinessController.php (180)
+in C:\wamp\www\ideareef\index.php (13)
+2012/08/08 00:21:11 [warning] [application] Failed to set unsafe attribute "aboutUs" of "Business".
+in C:\wamp\www\ideareef\protected\controllers\BusinessController.php (180)
+in C:\wamp\www\ideareef\index.php (13)
+2012/08/08 00:21:11 [warning] [application] Failed to set unsafe attribute "companyHistory" of "Business".
+in C:\wamp\www\ideareef\protected\controllers\BusinessController.php (180)
+in C:\wamp\www\ideareef\index.php (13)
+2012/08/08 00:21:11 [warning] [application] Failed to set unsafe attribute "companyMission" of "Business".
+in C:\wamp\www\ideareef\protected\controllers\BusinessController.php (180)
+in C:\wamp\www\ideareef\index.php (13)
+2012/08/08 00:21:11 [warning] [application] Failed to set unsafe attribute "address" of "Business".
+in C:\wamp\www\ideareef\protected\controllers\BusinessController.php (180)
+in C:\wamp\www\ideareef\index.php (13)
+2012/08/08 00:21:11 [warning] [application] Failed to set unsafe attribute "aboutUs" of "Business".
+in C:\wamp\www\ideareef\protected\controllers\BusinessController.php (180)
+in C:\wamp\www\ideareef\index.php (13)
+2012/08/08 00:21:11 [warning] [application] Failed to set unsafe attribute "companyHistory" of "Business".
+in C:\wamp\www\ideareef\protected\controllers\BusinessController.php (180)
+in C:\wamp\www\ideareef\index.php (13)
+2012/08/08 00:21:11 [warning] [application] Failed to set unsafe attribute "companyMission" of "Business".
+in C:\wamp\www\ideareef\protected\controllers\BusinessController.php (180)
+in C:\wamp\www\ideareef\index.php (13)
+2012/08/08 00:21:12 [warning] [application] Failed to set unsafe attribute "address" of "Business".
+in C:\wamp\www\ideareef\protected\controllers\BusinessController.php (180)
+in C:\wamp\www\ideareef\index.php (13)
+2012/08/08 00:21:12 [warning] [application] Failed to set unsafe attribute "aboutUs" of "Business".
+in C:\wamp\www\ideareef\protected\controllers\BusinessController.php (180)
+in C:\wamp\www\ideareef\index.php (13)
+2012/08/08 00:21:12 [warning] [application] Failed to set unsafe attribute "companyHistory" of "Business".
+in C:\wamp\www\ideareef\protected\controllers\BusinessController.php (180)
+in C:\wamp\www\ideareef\index.php (13)
+2012/08/08 00:21:12 [warning] [application] Failed to set unsafe attribute "companyMission" of "Business".
+in C:\wamp\www\ideareef\protected\controllers\BusinessController.php (180)
+in C:\wamp\www\ideareef\index.php (13)
+2012/08/08 00:21:12 [warning] [application] Failed to set unsafe attribute "address" of "Business".
+in C:\wamp\www\ideareef\protected\controllers\BusinessController.php (180)
+in C:\wamp\www\ideareef\index.php (13)
+2012/08/08 00:21:12 [warning] [application] Failed to set unsafe attribute "aboutUs" of "Business".
+in C:\wamp\www\ideareef\protected\controllers\BusinessController.php (180)
+in C:\wamp\www\ideareef\index.php (13)
+2012/08/08 00:21:12 [warning] [application] Failed to set unsafe attribute "companyHistory" of "Business".
+in C:\wamp\www\ideareef\protected\controllers\BusinessController.php (180)
+in C:\wamp\www\ideareef\index.php (13)
+2012/08/08 00:21:12 [warning] [application] Failed to set unsafe attribute "companyMission" of "Business".
+in C:\wamp\www\ideareef\protected\controllers\BusinessController.php (180)
+in C:\wamp\www\ideareef\index.php (13)
+2012/08/08 00:21:13 [warning] [application] Failed to set unsafe attribute "address" of "Business".
+in C:\wamp\www\ideareef\protected\controllers\BusinessController.php (180)
+in C:\wamp\www\ideareef\index.php (13)
+2012/08/08 00:21:13 [warning] [application] Failed to set unsafe attribute "aboutUs" of "Business".
+in C:\wamp\www\ideareef\protected\controllers\BusinessController.php (180)
+in C:\wamp\www\ideareef\index.php (13)
+2012/08/08 00:21:13 [warning] [application] Failed to set unsafe attribute "companyHistory" of "Business".
+in C:\wamp\www\ideareef\protected\controllers\BusinessController.php (180)
+in C:\wamp\www\ideareef\index.php (13)
+2012/08/08 00:21:13 [warning] [application] Failed to set unsafe attribute "companyMission" of "Business".
+in C:\wamp\www\ideareef\protected\controllers\BusinessController.php (180)
+in C:\wamp\www\ideareef\index.php (13)
+2012/08/08 00:21:14 [warning] [application] Failed to set unsafe attribute "address" of "Business".
+in C:\wamp\www\ideareef\protected\controllers\BusinessController.php (180)
+in C:\wamp\www\ideareef\index.php (13)
+2012/08/08 00:21:14 [warning] [application] Failed to set unsafe attribute "aboutUs" of "Business".
+in C:\wamp\www\ideareef\protected\controllers\BusinessController.php (180)
+in C:\wamp\www\ideareef\index.php (13)
+2012/08/08 00:21:14 [warning] [application] Failed to set unsafe attribute "companyHistory" of "Business".
+in C:\wamp\www\ideareef\protected\controllers\BusinessController.php (180)
+in C:\wamp\www\ideareef\index.php (13)
+2012/08/08 00:21:14 [warning] [application] Failed to set unsafe attribute "companyMission" of "Business".
+in C:\wamp\www\ideareef\protected\controllers\BusinessController.php (180)
+in C:\wamp\www\ideareef\index.php (13)
+2012/08/08 00:21:15 [warning] [application] Failed to set unsafe attribute "address" of "Business".
+in C:\wamp\www\ideareef\protected\controllers\BusinessController.php (180)
+in C:\wamp\www\ideareef\index.php (13)
+2012/08/08 00:21:15 [warning] [application] Failed to set unsafe attribute "aboutUs" of "Business".
+in C:\wamp\www\ideareef\protected\controllers\BusinessController.php (180)
+in C:\wamp\www\ideareef\index.php (13)
+2012/08/08 00:21:15 [warning] [application] Failed to set unsafe attribute "companyHistory" of "Business".
+in C:\wamp\www\ideareef\protected\controllers\BusinessController.php (180)
+in C:\wamp\www\ideareef\index.php (13)
+2012/08/08 00:21:15 [warning] [application] Failed to set unsafe attribute "companyMission" of "Business".
+in C:\wamp\www\ideareef\protected\controllers\BusinessController.php (180)
+in C:\wamp\www\ideareef\index.php (13)
+2012/08/08 00:21:15 [warning] [application] Failed to set unsafe attribute "address" of "Business".
+in C:\wamp\www\ideareef\protected\controllers\BusinessController.php (180)
+in C:\wamp\www\ideareef\index.php (13)
+2012/08/08 00:21:15 [warning] [application] Failed to set unsafe attribute "aboutUs" of "Business".
+in C:\wamp\www\ideareef\protected\controllers\BusinessController.php (180)
+in C:\wamp\www\ideareef\index.php (13)
+2012/08/08 00:21:15 [warning] [application] Failed to set unsafe attribute "companyHistory" of "Business".
+in C:\wamp\www\ideareef\protected\controllers\BusinessController.php (180)
+in C:\wamp\www\ideareef\index.php (13)
+2012/08/08 00:21:15 [warning] [application] Failed to set unsafe attribute "companyMission" of "Business".
+in C:\wamp\www\ideareef\protected\controllers\BusinessController.php (180)
+in C:\wamp\www\ideareef\index.php (13)
+2012/08/08 00:21:16 [warning] [application] Failed to set unsafe attribute "address" of "Business".
+in C:\wamp\www\ideareef\protected\controllers\BusinessController.php (180)
+in C:\wamp\www\ideareef\index.php (13)
+2012/08/08 00:21:16 [warning] [application] Failed to set unsafe attribute "aboutUs" of "Business".
+in C:\wamp\www\ideareef\protected\controllers\BusinessController.php (180)
+in C:\wamp\www\ideareef\index.php (13)
+2012/08/08 00:21:16 [warning] [application] Failed to set unsafe attribute "companyHistory" of "Business".
+in C:\wamp\www\ideareef\protected\controllers\BusinessController.php (180)
+in C:\wamp\www\ideareef\index.php (13)
+2012/08/08 00:21:16 [warning] [application] Failed to set unsafe attribute "companyMission" of "Business".
+in C:\wamp\www\ideareef\protected\controllers\BusinessController.php (180)
+in C:\wamp\www\ideareef\index.php (13)
+2012/08/08 00:23:40 [warning] [application] Failed to set unsafe attribute "address" of "Business".
+in C:\wamp\www\ideareef\protected\controllers\BusinessController.php (181)
+in C:\wamp\www\ideareef\index.php (13)
+2012/08/08 00:23:40 [warning] [application] Failed to set unsafe attribute "aboutUs" of "Business".
+in C:\wamp\www\ideareef\protected\controllers\BusinessController.php (181)
+in C:\wamp\www\ideareef\index.php (13)
+2012/08/08 00:23:40 [warning] [application] Failed to set unsafe attribute "companyHistory" of "Business".
+in C:\wamp\www\ideareef\protected\controllers\BusinessController.php (181)
+in C:\wamp\www\ideareef\index.php (13)
+2012/08/08 00:23:40 [warning] [application] Failed to set unsafe attribute "companyMission" of "Business".
+in C:\wamp\www\ideareef\protected\controllers\BusinessController.php (181)
+in C:\wamp\www\ideareef\index.php (13)
+2012/08/08 00:23:40 [warning] [application] Failed to set unsafe attribute "address" of "Business".
+in C:\wamp\www\ideareef\protected\controllers\BusinessController.php (181)
+in C:\wamp\www\ideareef\index.php (13)
+2012/08/08 00:23:40 [warning] [application] Failed to set unsafe attribute "aboutUs" of "Business".
+in C:\wamp\www\ideareef\protected\controllers\BusinessController.php (181)
+in C:\wamp\www\ideareef\index.php (13)
+2012/08/08 00:23:40 [warning] [application] Failed to set unsafe attribute "companyHistory" of "Business".
+in C:\wamp\www\ideareef\protected\controllers\BusinessController.php (181)
+in C:\wamp\www\ideareef\index.php (13)
+2012/08/08 00:23:40 [warning] [application] Failed to set unsafe attribute "companyMission" of "Business".
+in C:\wamp\www\ideareef\protected\controllers\BusinessController.php (181)
+in C:\wamp\www\ideareef\index.php (13)
+2012/08/08 00:23:42 [warning] [application] Failed to set unsafe attribute "address" of "Business".
+in C:\wamp\www\ideareef\protected\controllers\BusinessController.php (181)
+in C:\wamp\www\ideareef\index.php (13)
+2012/08/08 00:23:42 [warning] [application] Failed to set unsafe attribute "aboutUs" of "Business".
+in C:\wamp\www\ideareef\protected\controllers\BusinessController.php (181)
+in C:\wamp\www\ideareef\index.php (13)
+2012/08/08 00:23:42 [warning] [application] Failed to set unsafe attribute "companyHistory" of "Business".
+in C:\wamp\www\ideareef\protected\controllers\BusinessController.php (181)
+in C:\wamp\www\ideareef\index.php (13)
+2012/08/08 00:23:42 [warning] [application] Failed to set unsafe attribute "companyMission" of "Business".
+in C:\wamp\www\ideareef\protected\controllers\BusinessController.php (181)
+in C:\wamp\www\ideareef\index.php (13)
+2012/08/08 00:23:42 [warning] [application] Failed to set unsafe attribute "address" of "Business".
+in C:\wamp\www\ideareef\protected\controllers\BusinessController.php (181)
+in C:\wamp\www\ideareef\index.php (13)
+2012/08/08 00:23:42 [warning] [application] Failed to set unsafe attribute "aboutUs" of "Business".
+in C:\wamp\www\ideareef\protected\controllers\BusinessController.php (181)
+in C:\wamp\www\ideareef\index.php (13)
+2012/08/08 00:23:42 [warning] [application] Failed to set unsafe attribute "companyHistory" of "Business".
+in C:\wamp\www\ideareef\protected\controllers\BusinessController.php (181)
+in C:\wamp\www\ideareef\index.php (13)
+2012/08/08 00:23:42 [warning] [application] Failed to set unsafe attribute "companyMission" of "Business".
+in C:\wamp\www\ideareef\protected\controllers\BusinessController.php (181)
+in C:\wamp\www\ideareef\index.php (13)
+2012/08/08 00:23:43 [warning] [application] Failed to set unsafe attribute "address" of "Business".
+in C:\wamp\www\ideareef\protected\controllers\BusinessController.php (181)
+in C:\wamp\www\ideareef\index.php (13)
+2012/08/08 00:23:43 [warning] [application] Failed to set unsafe attribute "aboutUs" of "Business".
+in C:\wamp\www\ideareef\protected\controllers\BusinessController.php (181)
+in C:\wamp\www\ideareef\index.php (13)
+2012/08/08 00:23:43 [warning] [application] Failed to set unsafe attribute "companyHistory" of "Business".
+in C:\wamp\www\ideareef\protected\controllers\BusinessController.php (181)
+in C:\wamp\www\ideareef\index.php (13)
+2012/08/08 00:23:43 [warning] [application] Failed to set unsafe attribute "companyMission" of "Business".
+in C:\wamp\www\ideareef\protected\controllers\BusinessController.php (181)
+in C:\wamp\www\ideareef\index.php (13)
+2012/08/08 00:23:43 [warning] [application] Failed to set unsafe attribute "address" of "Business".
+in C:\wamp\www\ideareef\protected\controllers\BusinessController.php (181)
+in C:\wamp\www\ideareef\index.php (13)
+2012/08/08 00:23:43 [warning] [application] Failed to set unsafe attribute "aboutUs" of "Business".
+in C:\wamp\www\ideareef\protected\controllers\BusinessController.php (181)
+in C:\wamp\www\ideareef\index.php (13)
+2012/08/08 00:23:43 [warning] [application] Failed to set unsafe attribute "companyHistory" of "Business".
+in C:\wamp\www\ideareef\protected\controllers\BusinessController.php (181)
+in C:\wamp\www\ideareef\index.php (13)
+2012/08/08 00:23:43 [warning] [application] Failed to set unsafe attribute "companyMission" of "Business".
+in C:\wamp\www\ideareef\protected\controllers\BusinessController.php (181)
+in C:\wamp\www\ideareef\index.php (13)
+2012/08/08 00:23:44 [warning] [application] Failed to set unsafe attribute "address" of "Business".
+in C:\wamp\www\ideareef\protected\controllers\BusinessController.php (181)
+in C:\wamp\www\ideareef\index.php (13)
+2012/08/08 00:23:44 [warning] [application] Failed to set unsafe attribute "aboutUs" of "Business".
+in C:\wamp\www\ideareef\protected\controllers\BusinessController.php (181)
+in C:\wamp\www\ideareef\index.php (13)
+2012/08/08 00:23:44 [warning] [application] Failed to set unsafe attribute "companyHistory" of "Business".
+in C:\wamp\www\ideareef\protected\controllers\BusinessController.php (181)
+in C:\wamp\www\ideareef\index.php (13)
+2012/08/08 00:23:44 [warning] [application] Failed to set unsafe attribute "companyMission" of "Business".
+in C:\wamp\www\ideareef\protected\controllers\BusinessController.php (181)
+in C:\wamp\www\ideareef\index.php (13)
+2012/08/08 00:23:44 [warning] [application] Failed to set unsafe attribute "address" of "Business".
+in C:\wamp\www\ideareef\protected\controllers\BusinessController.php (181)
+in C:\wamp\www\ideareef\index.php (13)
+2012/08/08 00:23:44 [warning] [application] Failed to set unsafe attribute "aboutUs" of "Business".
+in C:\wamp\www\ideareef\protected\controllers\BusinessController.php (181)
+in C:\wamp\www\ideareef\index.php (13)
+2012/08/08 00:23:44 [warning] [application] Failed to set unsafe attribute "companyHistory" of "Business".
+in C:\wamp\www\ideareef\protected\controllers\BusinessController.php (181)
+in C:\wamp\www\ideareef\index.php (13)
+2012/08/08 00:23:44 [warning] [application] Failed to set unsafe attribute "companyMission" of "Business".
+in C:\wamp\www\ideareef\protected\controllers\BusinessController.php (181)
+in C:\wamp\www\ideareef\index.php (13)

@@ -77,7 +77,7 @@ class BusinessController extends Controller {
      */
     public function actionChangeUsername() {
       
-        $model = Business::model()->findByPk(Yii::app()->user->id);
+      $model = Business::model()->findByPk(Yii::app()->user->id);
       $model->setScenario('changeUsername');
 
       $this->performAjaxValidation($model, 'changeUsername-form');
@@ -171,9 +171,22 @@ class BusinessController extends Controller {
             $this->render('pavilion', array('model' => $model));
         }
     }
+    
     public function actionPavilionEdit() {
         if(Yii::app()->user->isBusiness){
             $model = Business::model()->findByPk(Yii::app()->user->id);
+            $model->setScenario('pavilionEdit');
+            
+            if (isset($_POST['Business'])) {
+            $model->attributes = $_POST['Business'];
+
+            if ($model->validate()) {
+                if($model->update())
+                    Yii::app()->user->setFlash('success', "Information Successfully Changed");
+                }
+            
+            }
+            
             $this->render('pavilionEdit', array('model' => $model));
         }
     }
