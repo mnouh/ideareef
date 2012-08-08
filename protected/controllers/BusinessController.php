@@ -174,9 +174,10 @@ class BusinessController extends Controller {
     
     public function actionPavilionEdit() {
         if(Yii::app()->user->isBusiness){
+            
             $model = Business::model()->findByPk(Yii::app()->user->id);
             $model->setScenario('pavilionEdit');
-            
+            $this->performAjaxValidation($model, 'pavilionEdit-form');
             if (isset($_POST['Business'])) {
             $model->attributes = $_POST['Business'];
 
@@ -186,7 +187,6 @@ class BusinessController extends Controller {
                 }
             
             }
-            
             $this->render('pavilionEdit', array('model' => $model));
         }
     }

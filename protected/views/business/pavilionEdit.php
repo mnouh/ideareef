@@ -2,7 +2,13 @@
     <div class="form" id="customForm" class="sync">
         <div id="content-container">
             <h1> Edit Pavilion </h1>
+ <?php if(Yii::app()->user->hasFlash('success')): ?>
+    
+<div class="flash-success">
+	<?php echo Yii::app()->user->getFlash('success'); ?>
 
+</div>
+    <?php else: ?>
             <?php 
                 $form=$this->beginWidget('CActiveForm', array(
                 'id'=>'pavilionEdit-form',
@@ -54,3 +60,4 @@
         </div>
     </div>
 </div>
+<?php endif; ?>

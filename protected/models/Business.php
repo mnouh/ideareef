@@ -50,6 +50,7 @@ class Business extends CActiveRecord
                         array('email', 'checkBusiness', 'on' => 'signup'),
 			array('email, password, address', 'length', 'max'=>64, 'on' => 'signup'),
 			array('name', 'length', 'max'=>32, 'on' => 'signup'),
+                        array('address, aboutUs, companyHistory, companyMission', 'required', 'on' => 'pavilionEdit'),
 			// The following rule is used by search().
 			// Please remove those attributes that should not be searched.
 			array('id, email, password, name, address', 'safe', 'on'=>'search'),
