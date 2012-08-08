@@ -25,7 +25,7 @@
             <div>    
                 <?php 
                     echo $form->labelEx($model,'aboutUs');
-                    echo $form->textArea($model,'aboutUs', array ('class' => 'sync'));
+                    echo $form->textArea($model,'aboutUs', array ('class' => 'sync', 'style' => 'resize:none'));
                     echo $form->error($model,'aboutUs'); 
                 ?>
             </div>
@@ -33,7 +33,7 @@
             <div>    
                 <?php 
                     echo $form->labelEx($model,'companyHistory');
-                    echo $form->textArea($model,'companyHistory', array ('class' => 'sync'));
+                    echo $form->textArea($model,'companyHistory', array ('class' => 'sync', 'style' => 'resize:none'));
                     echo $form->error($model,'companyHistory'); 
                 ?>
             </div>
@@ -41,7 +41,7 @@
             <div>    
                 <?php 
                     echo $form->labelEx($model,'companyMission');
-                    echo $form->textArea($model,'companyMission', array ('class' => 'sync'));
+                    echo $form->textArea($model,'companyMission', array ('class' => 'sync', 'style' => 'resize:none'));
                     echo $form->error($model,'companyMission'); 
                 ?>
             </div>
