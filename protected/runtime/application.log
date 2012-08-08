@@ -1529,3 +1529,27 @@ REQUEST_URI=/ideareef/business/pavilion
 in C:\wamp\www\ideareef\protected\views\business\pavilion.php (4)
 in C:\wamp\www\ideareef\protected\controllers\BusinessController.php (171)
 in C:\wamp\www\ideareef\index.php (13)
+2012/08/06 17:50:18 [error] [exception.CException] exception 'CException' with message 'Property "WebUser.isBusiness" is not defined.' in C:\wamp\www\ideareef\framework\base\CComponent.php:131
+Stack trace:
+#0 C:\wamp\www\ideareef\framework\web\auth\CWebUser.php(142): CComponent->__get('isBusiness')
+#1 C:\wamp\www\ideareef\protected\controllers\BusinessController.php(169): CWebUser->__get('isBusiness')
+#2 C:\wamp\www\ideareef\framework\web\actions\CInlineAction.php(50): BusinessController->actionPavilion()
+#3 C:\wamp\www\ideareef\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#4 C:\wamp\www\ideareef\framework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#5 C:\wamp\www\ideareef\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 C:\wamp\www\ideareef\framework\web\CWebApplication.php(276): CController->run('pavilion')
+#7 C:\wamp\www\ideareef\framework\web\CWebApplication.php(135): CWebApplication->runController('business/pavili...')
+#8 C:\wamp\www\ideareef\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#9 C:\wamp\www\ideareef\index.php(13): CApplication->run()
+#10 {main}
+REQUEST_URI=/ideareef/business/pavilion
+---
+2012/08/06 17:50:37 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "images/icons_sprite_front.png".' in C:\wamp\www\ideareef\framework\web\CWebApplication.php:280
+Stack trace:
+#0 C:\wamp\www\ideareef\framework\web\CWebApplication.php(135): CWebApplication->runController('images/icons_sp...')
+#1 C:\wamp\www\ideareef\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\wamp\www\ideareef\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/ideareef/images/icons_sprite_front.png
+HTTP_REFERER=http://localhost/ideareef/
+---
