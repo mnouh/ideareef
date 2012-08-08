@@ -20,7 +20,7 @@
 <div id="Wrapper">
 <div class="holder">
 <div id="Header">
-  <h1 class="logo"><a href="#">IdeaReef</a></h1>
+  <h1 class="logo"><a href="<?php echo Yii::app()->request->baseUrl; ?>">IdeaReef</a></h1>
   <?php
   if(Yii::app()->user->isGuest):
   echo CHtml::beginForm(array('account/login'));
