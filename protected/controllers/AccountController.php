@@ -34,6 +34,28 @@ class AccountController extends Controller
 		$this->render('index');
                 
 	}
+        
+        
+        /**
+	 * This is the default 'index' action that is invoked
+	 * when an action is not explicitly requested by users.
+	 */
+	public function actionAboutUs()
+	{
+		// renders the view file 'protected/views/site/index.php'
+		// using the default layout 'protected/views/layouts/main.php'
+		$this->render('aboutus');
+                
+	}
+        
+        public function actionCompanies()
+	{
+		// renders the view file 'protected/views/site/index.php'
+		// using the default layout 'protected/views/layouts/main.php'
+		$this->render('companies');
+                
+	}
+        
 
 	/**
 	 * This is the action to handle external exceptions.

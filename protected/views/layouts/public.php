@@ -16,87 +16,44 @@
 
 	<title><?php echo CHtml::encode($this->pageTitle); ?></title>
 </head>
-<body>
+    
+    <body>
 <div id="Wrapper">
-<div class="holder">
+<div class="HomeHolder">
 <div id="Header">
-  <h1 class="logo"><a href="<?php echo Yii::app()->request->baseUrl; ?>">IdeaReef</a></h1>
-  <?php
-  if(Yii::app()->user->isGuest):
-  echo CHtml::beginForm(array('account/login'));
-  ?>
+  <h1 class="logo"><a href="#">IdeaReef</a></h1>
   <div class="floatRight">
-  <div class="topArea">
-  <div class="fL">Email</div>
-  <div class="fL">Password</div>
-  <div class="clear"></div>
+    <ul>
+        <li><?php echo CHtml::link('About Us', Yii::app()->request->baseUrl.'/aboutus'); ?></li>
+      <li><?php echo CHtml::link('Companies', Yii::app()->request->baseUrl.'/companies'); ?></li>
+      <li><a href="competitions.html" class="last">Competitions</a></li>
+      <li><a href="sign-up.html" class="special">Join</a></li>
+      <li><a href="javascript: toggle1()" class="last loginBtn">Login</a></li>
+    </ul>
+    <fieldset id="signin_menu" style="display:none;">
+	<div class="arrow"></div>
+				               <form action="" method="post">
+				                 <div style="margin:0;padding:0;display:inline"></div>
+				                  <label for="username"><strong>Username or email</strong></label>
+								  <input id="user_email" name="user[email]" size="30" type="text">
+								  <div class="error">* Wrong Username</div>
+								   <label for="password"><strong>Password</strong></label>
+								  <input id="user_password" name="user[password]" size="30" type="password">
+								  <div class="error">* Password Mismatch</div>  
+					              <p class="remember">
+					                <input id="signin_submit" value="Sign in" tabindex="6" type="submit">
+					                <input id="remember" name="remember_me" value="1" tabindex="7" type="checkbox">
+					                <label for="remember">Remember me</label>
+					              </p>
+					              
+					              <p class="forgot"> <a href="#">Forgot your password?</a></p>
+        </form>							  </fieldset>
   </div>
-  <div class="inputArea">
-  <div class="fL">
-      <?php echo CHtml::textField('LoginForm[email]', '',  array ('id' => 'email','class' => 'inputBox')); ?>
-  </div>
-  <div class="fL">
-    <?php echo CHtml::passwordField('LoginForm[password]', '', array ('id' => 'password', 'class' => 'inputBox')); ?>
-  </div>
-      <?php echo CHtml::submitButton('Login', array('name' => 'Submit', 'class' => 'btn'));  ?>
-  <div class="clear"></div>
-  </div>
-  <div class="linksArea">
-  <div class="fL">
-<input name="remember" type="checkbox" class="checkbox" id="field_remember" tabindex="10" value="T" />
-    <label id="label_remember" for="field_remember">Remember me </label>
-  </div>
-  <div class="fL"><a href="#">Forgot password</a> </div>
-  <div class="clear"></div>
-  </div>
-  </div>
-  <?php echo CHtml::endForm();?>
-  <?php else:?>
-  <div class="floatRight">
-  <div class="topArea">
-  <div class="fL"><a href="<?php echo Yii::app()->createUrl('user/changeUsername')?>">Change Username</a></div>
-  <div class="fL"><a href="<?php echo Yii::app()->createUrl('user/settings')?>">Account Settings</a></div>
-  <div class="fL"><a href="<?php echo Yii::app()->createUrl('user/changePassword')?>">Change Password</a></div>
-  <div class="fL"><a href="<?php echo Yii::app()->createUrl('business/pavilionEdit')?>">Edit Pavilion</a></div>
-  <div class="fL"><a href="<?php echo Yii::app()->createUrl('competition/create')?>">Create Competition</a></div>
-  <div class="fL"><a href="<?php echo Yii::app()->createUrl('account/logout')?>">Logout</a></div>
-  
-  <div class="clear"></div>
-  </div>
-  
-  <div class="linksArea">
-  <div class="fL">
-  </div>
-  <div class="clear"></div>
-  </div>
-  </div>
-  
- 
-  <?php endif; ?>
-  
-  
   <div class="clear"></div>
 </div>
-<div id="Banner">
-<div class="floatLeft">
-  <h2>Connect - Complete - Win</h2>
-  <ul>
-    <li><span>Join your friends from home and school in creating new ideas for your favorite businesses</span></li>
-    <li><span>Win money, discounts, coupons and even jobs and internships</span></li>
-    <li class="last"><span>Earn money for referring your friends to go to your favorite jobs</span></li>
-  </ul>
-  <div class="bottom"><a href="#"><img src="images/sign-up-for-ideareef.png" alt="" width="297" height="62"  /></a></div>
-</div>
-<div class="floatRight"><img src="images/banner-video.png" alt="" width="313" height="240" /></div>
-<div class="rightBottom">
-<div class="fL"><img src="images/like-button.png" alt="" width="44" height="62" /></div>
-<div class="fR"><strong>Companies:</strong> Use competitions and our 
-  viral referral system to get new ideas and
-  market your business. <a href="#">Learn More</a></div>
-<div class="clear"></div>
-</div>
-<div class="clear"></div>
-</div>
+
+    
+    
 <?php echo $content; ?>
 </div>
 </div>
