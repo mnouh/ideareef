@@ -21,7 +21,7 @@
 <div id="Wrapper">
 <div class="HomeHolder">
 <div id="Header">
-  <h1 class="logo"><a href="#">IdeaReef</a></h1>
+  <h1 class="logo"><a href="<?php echo Yii::app()->request->baseUrl; ?>"IdeaReef</a></h1>
   <div class="floatRight">
     <ul>
         <li><?php echo CHtml::link('About Us', Yii::app()->request->baseUrl.'/aboutus'); ?></li>
@@ -32,13 +32,15 @@
     </ul>
     <fieldset id="signin_menu" style="display:none;">
 	<div class="arrow"></div>
-				               <form action="" method="post">
+<?php				 
+  echo CHtml::beginForm(array('account/login'));
+  ?>
 				                 <div style="margin:0;padding:0;display:inline"></div>
 				                  <label for="username"><strong>Username or email</strong></label>
-								  <input id="user_email" name="user[email]" size="30" type="text">
+						<?php echo CHtml::textField('LoginForm[email]', '',  array ('id' => 'email')); ?>		  
 								  <div class="error">* Wrong Username</div>
 								   <label for="password"><strong>Password</strong></label>
-								  <input id="user_password" name="user[password]" size="30" type="password">
+                                                                   <?php echo CHtml::passwordField('LoginForm[password]', '', array ('id' => 'password')); ?>
 								  <div class="error">* Password Mismatch</div>  
 					              <p class="remember">
 					                <input id="signin_submit" value="Sign in" tabindex="6" type="submit">
@@ -47,7 +49,8 @@
 					              </p>
 					              
 					              <p class="forgot"> <a href="#">Forgot your password?</a></p>
-        </form>							  </fieldset>
+          <?php echo CHtml::endForm();?>
+    </fieldset>
   </div>
   <div class="clear"></div>
 </div>

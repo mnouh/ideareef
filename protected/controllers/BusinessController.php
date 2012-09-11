@@ -2,6 +2,7 @@
 
 class BusinessController extends Controller {
 
+    public $layout = 'privateBusiness';
     /**
      * Specifies the access control rules.
      * This method is used by the 'accessControl' filter.
