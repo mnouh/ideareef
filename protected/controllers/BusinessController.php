@@ -178,6 +178,7 @@ class BusinessController extends Controller {
             $model = Business::model()->findByPk(Yii::app()->user->id);
             $model->setScenario('pavilionEdit');
             $this->performAjaxValidation($model, 'pavilionEdit-form');
+            
             if (isset($_POST['Business'])) {
             $model->attributes = $_POST['Business'];
 
