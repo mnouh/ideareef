@@ -21,6 +21,6 @@ $(document).ready(function() {
 
     // use the slideshow plugin. It accepts its own configuration 
 
-    }).slideshow({autoplay:false});
+    }).slideshow({autoplay:true});
 ddtabmenu.definemenu("ddtabs1", 0);
 	});
