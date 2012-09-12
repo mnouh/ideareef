@@ -52,6 +52,8 @@ return array(
                                 'login' => 'account/login',
                                 'signup' => 'account/signup',
                                 'logout' => 'account/logout',
+                                'business' => 'business/index', 
+                                'business/<bizurl>'=>'business/view',
                                 '<username>'=>'user/view',
 			),
 		),

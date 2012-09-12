@@ -3,6 +3,18 @@
 class BusinessController extends Controller {
 
     public $layout = 'privateBusiness';
+    
+    /**
+	 * @return array action filters
+	 */
+	public function filters()
+	{
+		return array(
+			'accessControl', // perform access control for CRUD operations
+		);
+	}
+        
+        
     /**
      * Specifies the access control rules.
      * This method is used by the 'accessControl' filter.
@@ -16,7 +28,7 @@ class BusinessController extends Controller {
                 'users' => array('*'),
             ),
             array('allow', // allow authenticated user to perform 'create' and 'update' actions
-                'actions' => array('index', 'changeUsername', 'changepassword', 'create', 'update', 'homepage', 'pavilion', 'pavilionEdit'),
+                'actions' => array('index', 'changeUsername', 'changepassword', 'create', 'update', 'pavilion', 'pavilionEdit'),
                 'users' => array('@'),
             ),
             /*array('allow', // allow admin user to perform 'admin' and 'delete' actions
@@ -29,6 +41,12 @@ class BusinessController extends Controller {
         );
     }
     
+    public function actionIndex() {
+        if(Yii::app()->user->isBusiness){
+            $model = Business::model()->findByPk(Yii::app()->user->id);
+            $this->render('index', array('model' => $model));
+        }
+    }
     
     
         /**
@@ -156,16 +174,7 @@ class BusinessController extends Controller {
         
     }
 
-    public function actionIndex() {
-        $this->render('index');
-    }
     
-    public function actionHomepage() {
-        if(Yii::app()->user->isBusiness){
-            $model = Business::model()->findByPk(Yii::app()->user->id);
-            $this->render('homepage', array('model' => $model));
-        }
-    }
      public function actionPavilion() {
         if(Yii::app()->user->isBusiness){
             $model = Business::model()->findByPk(Yii::app()->user->id);
