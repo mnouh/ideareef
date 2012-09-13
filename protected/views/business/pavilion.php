@@ -359,8 +359,8 @@ function showonlyone(thechosenone) {
 <div id="newboxes2"class="newboxes"  style="display:none;">
     <div class="inside">
         
-      <h6>SOMETIHNG ELSE HERE</h6>
-      
+      <h6>PUT SOMETHING ELSE HERE</h6>
+      <p>Already another place for recent activity. No need to put it here.</p>
     </div>
 </div>
 
