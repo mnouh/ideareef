@@ -4676,3 +4676,319 @@ Stack trace:
 #11 {main}
 REQUEST_URI=/ideareef/business/settings
 ---
+2012/09/12 17:47:26 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not authorized to perform this action.' in C:\wamp\www\ideareef\framework\web\auth\CAccessControlFilter.php:157
+Stack trace:
+#0 C:\wamp\www\ideareef\framework\web\auth\CAccessControlFilter.php(120): CAccessControlFilter->accessDenied(Object(WebUser), 'You are not aut...')
+#1 C:\wamp\www\ideareef\framework\web\filters\CFilter.php(39): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 C:\wamp\www\ideareef\framework\web\CController.php(1146): CFilter->filter(Object(CFilterChain))
+#3 C:\wamp\www\ideareef\framework\web\filters\CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#4 C:\wamp\www\ideareef\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#5 C:\wamp\www\ideareef\framework\web\CController.php(292): CFilterChain->run()
+#6 C:\wamp\www\ideareef\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 C:\wamp\www\ideareef\framework\web\CWebApplication.php(276): CController->run('view')
+#8 C:\wamp\www\ideareef\framework\web\CWebApplication.php(135): CWebApplication->runController('user/view')
+#9 C:\wamp\www\ideareef\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#10 C:\wamp\www\ideareef\index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/ideareef/user
+---
+2012/09/12 17:49:19 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not authorized to perform this action.' in C:\wamp\www\ideareef\framework\web\auth\CAccessControlFilter.php:157
+Stack trace:
+#0 C:\wamp\www\ideareef\framework\web\auth\CAccessControlFilter.php(120): CAccessControlFilter->accessDenied(Object(WebUser), 'You are not aut...')
+#1 C:\wamp\www\ideareef\framework\web\filters\CFilter.php(39): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 C:\wamp\www\ideareef\framework\web\CController.php(1146): CFilter->filter(Object(CFilterChain))
+#3 C:\wamp\www\ideareef\framework\web\filters\CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#4 C:\wamp\www\ideareef\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#5 C:\wamp\www\ideareef\framework\web\CController.php(292): CFilterChain->run()
+#6 C:\wamp\www\ideareef\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 C:\wamp\www\ideareef\framework\web\CWebApplication.php(276): CController->run('view')
+#8 C:\wamp\www\ideareef\framework\web\CWebApplication.php(135): CWebApplication->runController('user/view')
+#9 C:\wamp\www\ideareef\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#10 C:\wamp\www\ideareef\index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/ideareef/competitions
+---
+2012/09/12 17:49:21 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not authorized to perform this action.' in C:\wamp\www\ideareef\framework\web\auth\CAccessControlFilter.php:157
+Stack trace:
+#0 C:\wamp\www\ideareef\framework\web\auth\CAccessControlFilter.php(120): CAccessControlFilter->accessDenied(Object(WebUser), 'You are not aut...')
+#1 C:\wamp\www\ideareef\framework\web\filters\CFilter.php(39): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 C:\wamp\www\ideareef\framework\web\CController.php(1146): CFilter->filter(Object(CFilterChain))
+#3 C:\wamp\www\ideareef\framework\web\filters\CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#4 C:\wamp\www\ideareef\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#5 C:\wamp\www\ideareef\framework\web\CController.php(292): CFilterChain->run()
+#6 C:\wamp\www\ideareef\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 C:\wamp\www\ideareef\framework\web\CWebApplication.php(276): CController->run('view')
+#8 C:\wamp\www\ideareef\framework\web\CWebApplication.php(135): CWebApplication->runController('user/view')
+#9 C:\wamp\www\ideareef\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#10 C:\wamp\www\ideareef\index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/ideareef/competition
+---
+2012/09/12 17:49:39 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "index.php".' in C:\wamp\www\ideareef\framework\web\CController.php:484
+Stack trace:
+#0 C:\wamp\www\ideareef\framework\web\CController.php(271): CController->missingAction('index.php')
+#1 C:\wamp\www\ideareef\framework\web\CWebApplication.php(276): CController->run('index.php')
+#2 C:\wamp\www\ideareef\framework\web\CWebApplication.php(135): CWebApplication->runController('competition/ind...')
+#3 C:\wamp\www\ideareef\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#4 C:\wamp\www\ideareef\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/ideareef/competition/index.php
+---
+2012/09/12 17:50:37 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not authorized to perform this action.' in C:\wamp\www\ideareef\framework\web\auth\CAccessControlFilter.php:157
+Stack trace:
+#0 C:\wamp\www\ideareef\framework\web\auth\CAccessControlFilter.php(120): CAccessControlFilter->accessDenied(Object(WebUser), 'You are not aut...')
+#1 C:\wamp\www\ideareef\framework\web\filters\CFilter.php(39): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 C:\wamp\www\ideareef\framework\web\CController.php(1146): CFilter->filter(Object(CFilterChain))
+#3 C:\wamp\www\ideareef\framework\web\filters\CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#4 C:\wamp\www\ideareef\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#5 C:\wamp\www\ideareef\framework\web\CController.php(292): CFilterChain->run()
+#6 C:\wamp\www\ideareef\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 C:\wamp\www\ideareef\framework\web\CWebApplication.php(276): CController->run('view')
+#8 C:\wamp\www\ideareef\framework\web\CWebApplication.php(135): CWebApplication->runController('user/view')
+#9 C:\wamp\www\ideareef\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#10 C:\wamp\www\ideareef\index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/ideareef/competition
+---
+2012/09/12 17:50:37 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not authorized to perform this action.' in C:\wamp\www\ideareef\framework\web\auth\CAccessControlFilter.php:157
+Stack trace:
+#0 C:\wamp\www\ideareef\framework\web\auth\CAccessControlFilter.php(120): CAccessControlFilter->accessDenied(Object(WebUser), 'You are not aut...')
+#1 C:\wamp\www\ideareef\framework\web\filters\CFilter.php(39): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 C:\wamp\www\ideareef\framework\web\CController.php(1146): CFilter->filter(Object(CFilterChain))
+#3 C:\wamp\www\ideareef\framework\web\filters\CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#4 C:\wamp\www\ideareef\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#5 C:\wamp\www\ideareef\framework\web\CController.php(292): CFilterChain->run()
+#6 C:\wamp\www\ideareef\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 C:\wamp\www\ideareef\framework\web\CWebApplication.php(276): CController->run('view')
+#8 C:\wamp\www\ideareef\framework\web\CWebApplication.php(135): CWebApplication->runController('user/view')
+#9 C:\wamp\www\ideareef\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#10 C:\wamp\www\ideareef\index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/ideareef/competitions
+---
+2012/09/13 02:11:38 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not authorized to perform this action.' in C:\wamp\www\ideareef\framework\web\auth\CAccessControlFilter.php:157
+Stack trace:
+#0 C:\wamp\www\ideareef\framework\web\auth\CAccessControlFilter.php(120): CAccessControlFilter->accessDenied(Object(WebUser), 'You are not aut...')
+#1 C:\wamp\www\ideareef\framework\web\filters\CFilter.php(39): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 C:\wamp\www\ideareef\framework\web\CController.php(1146): CFilter->filter(Object(CFilterChain))
+#3 C:\wamp\www\ideareef\framework\web\filters\CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#4 C:\wamp\www\ideareef\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#5 C:\wamp\www\ideareef\framework\web\CController.php(292): CFilterChain->run()
+#6 C:\wamp\www\ideareef\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 C:\wamp\www\ideareef\framework\web\CWebApplication.php(276): CController->run('view')
+#8 C:\wamp\www\ideareef\framework\web\CWebApplication.php(135): CWebApplication->runController('user/view')
+#9 C:\wamp\www\ideareef\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#10 C:\wamp\www\ideareef\index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/ideareef/competitions.html
+HTTP_REFERER=http://localhost/ideareef/aboutus
+---
+2012/09/13 12:57:25 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "images".' in C:\wamp\www\ideareef\framework\web\CController.php:484
+Stack trace:
+#0 C:\wamp\www\ideareef\framework\web\CController.php(271): CController->missingAction('images')
+#1 C:\wamp\www\ideareef\framework\web\CWebApplication.php(276): CController->run('images')
+#2 C:\wamp\www\ideareef\framework\web\CWebApplication.php(135): CWebApplication->runController('business/images...')
+#3 C:\wamp\www\ideareef\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#4 C:\wamp\www\ideareef\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/ideareef/business/images/profile-picture.jpg
+HTTP_REFERER=http://localhost/ideareef/business/pavilion
+---
+2012/09/13 12:57:25 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "styles".' in C:\wamp\www\ideareef\framework\web\CController.php:484
+Stack trace:
+#0 C:\wamp\www\ideareef\framework\web\CController.php(271): CController->missingAction('styles')
+#1 C:\wamp\www\ideareef\framework\web\CWebApplication.php(276): CController->run('styles')
+#2 C:\wamp\www\ideareef\framework\web\CWebApplication.php(135): CWebApplication->runController('business/styles...')
+#3 C:\wamp\www\ideareef\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#4 C:\wamp\www\ideareef\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/ideareef/business/styles/css.css
+HTTP_REFERER=http://localhost/ideareef/business/pavilion
+---
+2012/09/13 12:57:25 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "images".' in C:\wamp\www\ideareef\framework\web\CController.php:484
+Stack trace:
+#0 C:\wamp\www\ideareef\framework\web\CController.php(271): CController->missingAction('images')
+#1 C:\wamp\www\ideareef\framework\web\CWebApplication.php(276): CController->run('images')
+#2 C:\wamp\www\ideareef\framework\web\CWebApplication.php(135): CWebApplication->runController('business/images...')
+#3 C:\wamp\www\ideareef\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#4 C:\wamp\www\ideareef\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/ideareef/business/images/no-image-male.gif
+HTTP_REFERER=http://localhost/ideareef/business/pavilion
+---
+2012/09/13 12:57:25 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "js".' in C:\wamp\www\ideareef\framework\web\CController.php:484
+Stack trace:
+#0 C:\wamp\www\ideareef\framework\web\CController.php(271): CController->missingAction('js')
+#1 C:\wamp\www\ideareef\framework\web\CWebApplication.php(276): CController->run('js')
+#2 C:\wamp\www\ideareef\framework\web\CWebApplication.php(135): CWebApplication->runController('business/js/any...')
+#3 C:\wamp\www\ideareef\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#4 C:\wamp\www\ideareef\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/ideareef/business/js/anylinkcssmenu.js
+HTTP_REFERER=http://localhost/ideareef/business/pavilion
+---
+2012/09/13 12:57:25 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "images".' in C:\wamp\www\ideareef\framework\web\CController.php:484
+Stack trace:
+#0 C:\wamp\www\ideareef\framework\web\CController.php(271): CController->missingAction('images')
+#1 C:\wamp\www\ideareef\framework\web\CWebApplication.php(276): CController->run('images')
+#2 C:\wamp\www\ideareef\framework\web\CWebApplication.php(135): CWebApplication->runController('business/images...')
+#3 C:\wamp\www\ideareef\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#4 C:\wamp\www\ideareef\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/ideareef/business/images/bronze-profile.png
+HTTP_REFERER=http://localhost/ideareef/business/pavilion
+---
+2012/09/13 12:57:25 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "images".' in C:\wamp\www\ideareef\framework\web\CController.php:484
+Stack trace:
+#0 C:\wamp\www\ideareef\framework\web\CController.php(271): CController->missingAction('images')
+#1 C:\wamp\www\ideareef\framework\web\CWebApplication.php(276): CController->run('images')
+#2 C:\wamp\www\ideareef\framework\web\CWebApplication.php(135): CWebApplication->runController('business/images...')
+#3 C:\wamp\www\ideareef\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#4 C:\wamp\www\ideareef\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/ideareef/business/images/no-image-female.gif
+HTTP_REFERER=http://localhost/ideareef/business/pavilion
+---
+2012/09/13 12:57:25 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "styles".' in C:\wamp\www\ideareef\framework\web\CController.php:484
+Stack trace:
+#0 C:\wamp\www\ideareef\framework\web\CController.php(271): CController->missingAction('styles')
+#1 C:\wamp\www\ideareef\framework\web\CWebApplication.php(276): CController->run('styles')
+#2 C:\wamp\www\ideareef\framework\web\CWebApplication.php(135): CWebApplication->runController('business/styles...')
+#3 C:\wamp\www\ideareef\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#4 C:\wamp\www\ideareef\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/ideareef/business/styles/css.css
+HTTP_REFERER=http://localhost/ideareef/business/pavilion
+---
+2012/09/13 12:57:25 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "images".' in C:\wamp\www\ideareef\framework\web\CController.php:484
+Stack trace:
+#0 C:\wamp\www\ideareef\framework\web\CController.php(271): CController->missingAction('images')
+#1 C:\wamp\www\ideareef\framework\web\CWebApplication.php(276): CController->run('images')
+#2 C:\wamp\www\ideareef\framework\web\CWebApplication.php(135): CWebApplication->runController('business/images...')
+#3 C:\wamp\www\ideareef\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#4 C:\wamp\www\ideareef\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/ideareef/business/images/bronze-profile.png
+HTTP_REFERER=http://localhost/ideareef/business/pavilion
+---
+2012/09/13 12:57:25 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "images".' in C:\wamp\www\ideareef\framework\web\CController.php:484
+Stack trace:
+#0 C:\wamp\www\ideareef\framework\web\CController.php(271): CController->missingAction('images')
+#1 C:\wamp\www\ideareef\framework\web\CWebApplication.php(276): CController->run('images')
+#2 C:\wamp\www\ideareef\framework\web\CWebApplication.php(135): CWebApplication->runController('business/images...')
+#3 C:\wamp\www\ideareef\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#4 C:\wamp\www\ideareef\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/ideareef/business/images/profile-picture.jpg
+HTTP_REFERER=http://localhost/ideareef/business/pavilion
+---
+2012/09/13 12:57:25 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "images".' in C:\wamp\www\ideareef\framework\web\CController.php:484
+Stack trace:
+#0 C:\wamp\www\ideareef\framework\web\CController.php(271): CController->missingAction('images')
+#1 C:\wamp\www\ideareef\framework\web\CWebApplication.php(276): CController->run('images')
+#2 C:\wamp\www\ideareef\framework\web\CWebApplication.php(135): CWebApplication->runController('business/images...')
+#3 C:\wamp\www\ideareef\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#4 C:\wamp\www\ideareef\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/ideareef/business/images/no-image-male.gif
+HTTP_REFERER=http://localhost/ideareef/business/pavilion
+---
+2012/09/13 12:57:25 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "images".' in C:\wamp\www\ideareef\framework\web\CController.php:484
+Stack trace:
+#0 C:\wamp\www\ideareef\framework\web\CController.php(271): CController->missingAction('images')
+#1 C:\wamp\www\ideareef\framework\web\CWebApplication.php(276): CController->run('images')
+#2 C:\wamp\www\ideareef\framework\web\CWebApplication.php(135): CWebApplication->runController('business/images...')
+#3 C:\wamp\www\ideareef\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#4 C:\wamp\www\ideareef\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/ideareef/business/images/no-image-female.gif
+HTTP_REFERER=http://localhost/ideareef/business/pavilion
+---
+2012/09/13 13:00:01 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "images".' in C:\wamp\www\ideareef\framework\web\CController.php:484
+Stack trace:
+#0 C:\wamp\www\ideareef\framework\web\CController.php(271): CController->missingAction('images')
+#1 C:\wamp\www\ideareef\framework\web\CWebApplication.php(276): CController->run('images')
+#2 C:\wamp\www\ideareef\framework\web\CWebApplication.php(135): CWebApplication->runController('business/images...')
+#3 C:\wamp\www\ideareef\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#4 C:\wamp\www\ideareef\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/ideareef/business/images/no-image-female.gif
+HTTP_REFERER=http://localhost/ideareef/business/pavilion
+---
+2012/09/13 13:00:01 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "images".' in C:\wamp\www\ideareef\framework\web\CController.php:484
+Stack trace:
+#0 C:\wamp\www\ideareef\framework\web\CController.php(271): CController->missingAction('images')
+#1 C:\wamp\www\ideareef\framework\web\CWebApplication.php(276): CController->run('images')
+#2 C:\wamp\www\ideareef\framework\web\CWebApplication.php(135): CWebApplication->runController('business/images...')
+#3 C:\wamp\www\ideareef\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#4 C:\wamp\www\ideareef\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/ideareef/business/images/no-image-male.gif
+HTTP_REFERER=http://localhost/ideareef/business/pavilion
+---
+2012/09/13 13:00:01 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "images".' in C:\wamp\www\ideareef\framework\web\CController.php:484
+Stack trace:
+#0 C:\wamp\www\ideareef\framework\web\CController.php(271): CController->missingAction('images')
+#1 C:\wamp\www\ideareef\framework\web\CWebApplication.php(276): CController->run('images')
+#2 C:\wamp\www\ideareef\framework\web\CWebApplication.php(135): CWebApplication->runController('business/images...')
+#3 C:\wamp\www\ideareef\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#4 C:\wamp\www\ideareef\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/ideareef/business/images/bronze-profile.png
+HTTP_REFERER=http://localhost/ideareef/business/pavilion
+---
+2012/09/13 13:00:01 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "images".' in C:\wamp\www\ideareef\framework\web\CController.php:484
+Stack trace:
+#0 C:\wamp\www\ideareef\framework\web\CController.php(271): CController->missingAction('images')
+#1 C:\wamp\www\ideareef\framework\web\CWebApplication.php(276): CController->run('images')
+#2 C:\wamp\www\ideareef\framework\web\CWebApplication.php(135): CWebApplication->runController('business/images...')
+#3 C:\wamp\www\ideareef\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#4 C:\wamp\www\ideareef\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/ideareef/business/images/profile-picture.jpg
+HTTP_REFERER=http://localhost/ideareef/business/pavilion
+---
+2012/09/13 13:21:32 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "images".' in C:\wamp\www\ideareef\framework\web\CController.php:484
+Stack trace:
+#0 C:\wamp\www\ideareef\framework\web\CController.php(271): CController->missingAction('images')
+#1 C:\wamp\www\ideareef\framework\web\CWebApplication.php(276): CController->run('images')
+#2 C:\wamp\www\ideareef\framework\web\CWebApplication.php(135): CWebApplication->runController('business/images...')
+#3 C:\wamp\www\ideareef\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#4 C:\wamp\www\ideareef\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/ideareef/business/images/no-image.png
+HTTP_REFERER=http://localhost/ideareef/business/pavilion
+---
+2012/09/13 13:22:08 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "images".' in C:\wamp\www\ideareef\framework\web\CController.php:484
+Stack trace:
+#0 C:\wamp\www\ideareef\framework\web\CController.php(271): CController->missingAction('images')
+#1 C:\wamp\www\ideareef\framework\web\CWebApplication.php(276): CController->run('images')
+#2 C:\wamp\www\ideareef\framework\web\CWebApplication.php(135): CWebApplication->runController('business/images...')
+#3 C:\wamp\www\ideareef\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#4 C:\wamp\www\ideareef\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/ideareef/business/images/no-image.png
+HTTP_REFERER=http://localhost/ideareef/business/pavilion
+---
+2012/09/13 13:24:45 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "images".' in C:\wamp\www\ideareef\framework\web\CController.php:484
+Stack trace:
+#0 C:\wamp\www\ideareef\framework\web\CController.php(271): CController->missingAction('images')
+#1 C:\wamp\www\ideareef\framework\web\CWebApplication.php(276): CController->run('images')
+#2 C:\wamp\www\ideareef\framework\web\CWebApplication.php(135): CWebApplication->runController('business/images...')
+#3 C:\wamp\www\ideareef\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#4 C:\wamp\www\ideareef\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/ideareef/business/images/no-image.png
+HTTP_REFERER=http://localhost/ideareef/business/pavilion
+---
+2012/09/13 13:26:17 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "images".' in C:\wamp\www\ideareef\framework\web\CController.php:484
+Stack trace:
+#0 C:\wamp\www\ideareef\framework\web\CController.php(271): CController->missingAction('images')
+#1 C:\wamp\www\ideareef\framework\web\CWebApplication.php(276): CController->run('images')
+#2 C:\wamp\www\ideareef\framework\web\CWebApplication.php(135): CWebApplication->runController('business/images...')
+#3 C:\wamp\www\ideareef\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#4 C:\wamp\www\ideareef\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/ideareef/business/images/no-image.png
+HTTP_REFERER=http://localhost/ideareef/business/pavilion
+---

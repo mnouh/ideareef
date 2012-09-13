@@ -53,3 +53,22 @@ $this->breadcrumbs=array(
     </div>
 </div>
 </div>
+
+<div class="loginPage" id="Content">
+  <div class="login">
+    <div class="inside">
+    <h3>Email</h3>
+      <p>
+        <input name="textfield" type="text" class="inputBox">
+  </p>
+      <h3>Password</h3>
+      <p>
+        <input name="textfield2" type="password" class="inputBox">
+        </p>
+      <p>
+        <input name="Submit" type="submit" class="btn" value="Login">
+        </p>
+      <p><a href="#">Forgot Password</a> &nbsp;|&nbsp; <a href="#">Recover User e-mail</a></p>
+      </div>
+  </div><div class="clear"></div>
+</div>
