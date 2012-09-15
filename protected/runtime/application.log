@@ -4992,3 +4992,133 @@ Stack trace:
 REQUEST_URI=/ideareef/business/images/no-image.png
 HTTP_REFERER=http://localhost/ideareef/business/pavilion
 ---
+2012/09/15 18:10:48 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not authorized to perform this action.' in C:\wamp\www\ideareef\framework\web\auth\CAccessControlFilter.php:157
+Stack trace:
+#0 C:\wamp\www\ideareef\framework\web\auth\CAccessControlFilter.php(120): CAccessControlFilter->accessDenied(Object(WebUser), 'You are not aut...')
+#1 C:\wamp\www\ideareef\framework\web\filters\CFilter.php(39): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 C:\wamp\www\ideareef\framework\web\CController.php(1146): CFilter->filter(Object(CFilterChain))
+#3 C:\wamp\www\ideareef\framework\web\filters\CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#4 C:\wamp\www\ideareef\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#5 C:\wamp\www\ideareef\framework\web\CController.php(292): CFilterChain->run()
+#6 C:\wamp\www\ideareef\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 C:\wamp\www\ideareef\framework\web\CWebApplication.php(276): CController->run('view')
+#8 C:\wamp\www\ideareef\framework\web\CWebApplication.php(135): CWebApplication->runController('user/view')
+#9 C:\wamp\www\ideareef\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#10 C:\wamp\www\ideareef\index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/ideareef/pavilion
+HTTP_REFERER=http://localhost/ideareef/account/login
+---
+2012/09/15 19:16:50 [error] [exception.CException] exception 'CException' with message 'Property "User.zipCode" is not defined.' in C:\wamp\www\ideareef\framework\base\CComponent.php:131
+Stack trace:
+#0 C:\wamp\www\ideareef\framework\db\ar\CActiveRecord.php(144): CComponent->__get('zipCode')
+#1 C:\wamp\www\ideareef\framework\web\helpers\CHtml.php(2044): CActiveRecord->__get('zipCode')
+#2 C:\wamp\www\ideareef\framework\web\helpers\CHtml.php(1774): CHtml::resolveValue(Object(User), 'zipCode')
+#3 C:\wamp\www\ideareef\framework\web\helpers\CHtml.php(1205): CHtml::activeInputField('text', Object(User), 'zipCode', Array)
+#4 C:\wamp\www\ideareef\framework\web\widgets\CActiveForm.php(575): CHtml::activeTextField(Object(User), 'zipCode', Array)
+#5 C:\wamp\www\ideareef\protected\views\account\signup.php(141): CActiveForm->textField(Object(User), 'zipCode', Array)
+#6 C:\wamp\www\ideareef\framework\web\CBaseController.php(127): require('C:\wamp\www\ide...')
+#7 C:\wamp\www\ideareef\framework\web\CBaseController.php(96): CBaseController->renderInternal('C:\wamp\www\ide...', Array, true)
+#8 C:\wamp\www\ideareef\framework\web\CController.php(870): CBaseController->renderFile('C:\wamp\www\ide...', Array, true)
+#9 C:\wamp\www\ideareef\framework\web\CController.php(783): CController->renderPartial('signup', Array, true)
+#10 C:\wamp\www\ideareef\protected\controllers\AccountController.php(156): CController->render('signup', Array)
+#11 C:\wamp\www\ideareef\framework\web\actions\CInlineAction.php(50): AccountController->actionSignUp()
+#12 C:\wamp\www\ideareef\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#13 C:\wamp\www\ideareef\framework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#14 C:\wamp\www\ideareef\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#15 C:\wamp\www\ideareef\framework\web\CWebApplication.php(276): CController->run('signup')
+#16 C:\wamp\www\ideareef\framework\web\CWebApplication.php(135): CWebApplication->runController('account/signup')
+#17 C:\wamp\www\ideareef\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#18 C:\wamp\www\ideareef\index.php(13): CApplication->run()
+#19 {main}
+REQUEST_URI=/ideareef/signup
+---
+2012/09/15 19:23:57 [error] [exception.CException] exception 'CException' with message 'Property "User.name" is not defined.' in C:\wamp\www\ideareef\framework\base\CComponent.php:131
+Stack trace:
+#0 C:\wamp\www\ideareef\framework\db\ar\CActiveRecord.php(144): CComponent->__get('name')
+#1 C:\wamp\www\ideareef\framework\web\helpers\CHtml.php(2044): CActiveRecord->__get('name')
+#2 C:\wamp\www\ideareef\framework\web\helpers\CHtml.php(1774): CHtml::resolveValue(Object(User), 'name')
+#3 C:\wamp\www\ideareef\framework\web\helpers\CHtml.php(1205): CHtml::activeInputField('text', Object(User), 'name', Array)
+#4 C:\wamp\www\ideareef\framework\web\widgets\CActiveForm.php(575): CHtml::activeTextField(Object(User), 'name', Array)
+#5 C:\wamp\www\ideareef\protected\views\account\signup.php(111): CActiveForm->textField(Object(User), 'name', Array)
+#6 C:\wamp\www\ideareef\framework\web\CBaseController.php(127): require('C:\wamp\www\ide...')
+#7 C:\wamp\www\ideareef\framework\web\CBaseController.php(96): CBaseController->renderInternal('C:\wamp\www\ide...', Array, true)
+#8 C:\wamp\www\ideareef\framework\web\CController.php(870): CBaseController->renderFile('C:\wamp\www\ide...', Array, true)
+#9 C:\wamp\www\ideareef\framework\web\CController.php(783): CController->renderPartial('signup', Array, true)
+#10 C:\wamp\www\ideareef\protected\controllers\AccountController.php(156): CController->render('signup', Array)
+#11 C:\wamp\www\ideareef\framework\web\actions\CInlineAction.php(50): AccountController->actionSignUp()
+#12 C:\wamp\www\ideareef\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#13 C:\wamp\www\ideareef\framework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#14 C:\wamp\www\ideareef\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#15 C:\wamp\www\ideareef\framework\web\CWebApplication.php(276): CController->run('signup')
+#16 C:\wamp\www\ideareef\framework\web\CWebApplication.php(135): CWebApplication->runController('account/signup')
+#17 C:\wamp\www\ideareef\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#18 C:\wamp\www\ideareef\index.php(13): CApplication->run()
+#19 {main}
+REQUEST_URI=/ideareef/signup
+---
+2012/09/15 19:26:29 [error] [exception.CException] exception 'CException' with message 'Property "User.name" is not defined.' in C:\wamp\www\ideareef\framework\base\CComponent.php:131
+Stack trace:
+#0 C:\wamp\www\ideareef\framework\db\ar\CActiveRecord.php(144): CComponent->__get('name')
+#1 C:\wamp\www\ideareef\framework\web\helpers\CHtml.php(2044): CActiveRecord->__get('name')
+#2 C:\wamp\www\ideareef\framework\web\helpers\CHtml.php(1774): CHtml::resolveValue(Object(User), 'name')
+#3 C:\wamp\www\ideareef\framework\web\helpers\CHtml.php(1205): CHtml::activeInputField('text', Object(User), 'name', Array)
+#4 C:\wamp\www\ideareef\framework\web\widgets\CActiveForm.php(575): CHtml::activeTextField(Object(User), 'name', Array)
+#5 C:\wamp\www\ideareef\protected\views\account\signup.php(111): CActiveForm->textField(Object(User), 'name', Array)
+#6 C:\wamp\www\ideareef\framework\web\CBaseController.php(127): require('C:\wamp\www\ide...')
+#7 C:\wamp\www\ideareef\framework\web\CBaseController.php(96): CBaseController->renderInternal('C:\wamp\www\ide...', Array, true)
+#8 C:\wamp\www\ideareef\framework\web\CController.php(870): CBaseController->renderFile('C:\wamp\www\ide...', Array, true)
+#9 C:\wamp\www\ideareef\framework\web\CController.php(783): CController->renderPartial('signup', Array, true)
+#10 C:\wamp\www\ideareef\protected\controllers\AccountController.php(156): CController->render('signup', Array)
+#11 C:\wamp\www\ideareef\framework\web\actions\CInlineAction.php(50): AccountController->actionSignUp()
+#12 C:\wamp\www\ideareef\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#13 C:\wamp\www\ideareef\framework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#14 C:\wamp\www\ideareef\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#15 C:\wamp\www\ideareef\framework\web\CWebApplication.php(276): CController->run('signup')
+#16 C:\wamp\www\ideareef\framework\web\CWebApplication.php(135): CWebApplication->runController('account/signup')
+#17 C:\wamp\www\ideareef\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#18 C:\wamp\www\ideareef\index.php(13): CApplication->run()
+#19 {main}
+REQUEST_URI=/ideareef/signup
+---
+2012/09/15 19:26:32 [error] [exception.CException] exception 'CException' with message 'Property "User.name" is not defined.' in C:\wamp\www\ideareef\framework\base\CComponent.php:131
+Stack trace:
+#0 C:\wamp\www\ideareef\framework\db\ar\CActiveRecord.php(144): CComponent->__get('name')
+#1 C:\wamp\www\ideareef\framework\web\helpers\CHtml.php(2044): CActiveRecord->__get('name')
+#2 C:\wamp\www\ideareef\framework\web\helpers\CHtml.php(1774): CHtml::resolveValue(Object(User), 'name')
+#3 C:\wamp\www\ideareef\framework\web\helpers\CHtml.php(1205): CHtml::activeInputField('text', Object(User), 'name', Array)
+#4 C:\wamp\www\ideareef\framework\web\widgets\CActiveForm.php(575): CHtml::activeTextField(Object(User), 'name', Array)
+#5 C:\wamp\www\ideareef\protected\views\account\signup.php(111): CActiveForm->textField(Object(User), 'name', Array)
+#6 C:\wamp\www\ideareef\framework\web\CBaseController.php(127): require('C:\wamp\www\ide...')
+#7 C:\wamp\www\ideareef\framework\web\CBaseController.php(96): CBaseController->renderInternal('C:\wamp\www\ide...', Array, true)
+#8 C:\wamp\www\ideareef\framework\web\CController.php(870): CBaseController->renderFile('C:\wamp\www\ide...', Array, true)
+#9 C:\wamp\www\ideareef\framework\web\CController.php(783): CController->renderPartial('signup', Array, true)
+#10 C:\wamp\www\ideareef\protected\controllers\AccountController.php(156): CController->render('signup', Array)
+#11 C:\wamp\www\ideareef\framework\web\actions\CInlineAction.php(50): AccountController->actionSignUp()
+#12 C:\wamp\www\ideareef\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#13 C:\wamp\www\ideareef\framework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#14 C:\wamp\www\ideareef\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#15 C:\wamp\www\ideareef\framework\web\CWebApplication.php(276): CController->run('signup')
+#16 C:\wamp\www\ideareef\framework\web\CWebApplication.php(135): CWebApplication->runController('account/signup')
+#17 C:\wamp\www\ideareef\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#18 C:\wamp\www\ideareef\index.php(13): CApplication->run()
+#19 {main}
+REQUEST_URI=/ideareef/signup
+---
+2012/09/15 19:27:08 [error] [php] Undefined variable: businessType (C:\wamp\www\ideareef\protected\views\account\signup.php:124)
+Stack trace:
+#0 C:\wamp\www\ideareef\framework\web\CController.php(870): AccountController->renderFile()
+#1 C:\wamp\www\ideareef\framework\web\CController.php(783): AccountController->renderPartial()
+#2 C:\wamp\www\ideareef\protected\controllers\AccountController.php(156): AccountController->render()
+#3 C:\wamp\www\ideareef\framework\web\actions\CInlineAction.php(50): AccountController->actionSignUp()
+#4 C:\wamp\www\ideareef\framework\web\CController.php(309): CInlineAction->runWithParams()
+#5 C:\wamp\www\ideareef\framework\web\CController.php(287): AccountController->runAction()
+#6 C:\wamp\www\ideareef\framework\web\CController.php(266): AccountController->runActionWithFilters()
+#7 C:\wamp\www\ideareef\framework\web\CWebApplication.php(276): AccountController->run()
+#8 C:\wamp\www\ideareef\framework\web\CWebApplication.php(135): CWebApplication->runController()
+#9 C:\wamp\www\ideareef\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#10 C:\wamp\www\ideareef\index.php(13): CWebApplication->run()
+REQUEST_URI=/ideareef/signup
+in C:\wamp\www\ideareef\protected\views\account\signup.php (124)
+in C:\wamp\www\ideareef\protected\controllers\AccountController.php (156)
+in C:\wamp\www\ideareef\index.php (13)
