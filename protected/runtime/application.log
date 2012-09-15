@@ -5122,3 +5122,27 @@ REQUEST_URI=/ideareef/signup
 in C:\wamp\www\ideareef\protected\views\account\signup.php (124)
 in C:\wamp\www\ideareef\protected\controllers\AccountController.php (156)
 in C:\wamp\www\ideareef\index.php (13)
+2012/09/15 20:31:30 [error] [exception.CException] exception 'CException' with message 'Property "User.name" is not defined.' in C:\wamp\www\ideareef\framework\base\CComponent.php:131
+Stack trace:
+#0 C:\wamp\www\ideareef\framework\db\ar\CActiveRecord.php(144): CComponent->__get('name')
+#1 C:\wamp\www\ideareef\framework\web\helpers\CHtml.php(2044): CActiveRecord->__get('name')
+#2 C:\wamp\www\ideareef\framework\web\helpers\CHtml.php(1774): CHtml::resolveValue(Object(User), 'name')
+#3 C:\wamp\www\ideareef\framework\web\helpers\CHtml.php(1205): CHtml::activeInputField('text', Object(User), 'name', Array)
+#4 C:\wamp\www\ideareef\framework\web\widgets\CActiveForm.php(575): CHtml::activeTextField(Object(User), 'name', Array)
+#5 C:\wamp\www\ideareef\protected\views\account\signup.php(110): CActiveForm->textField(Object(User), 'name', Array)
+#6 C:\wamp\www\ideareef\framework\web\CBaseController.php(127): require('C:\wamp\www\ide...')
+#7 C:\wamp\www\ideareef\framework\web\CBaseController.php(96): CBaseController->renderInternal('C:\wamp\www\ide...', Array, true)
+#8 C:\wamp\www\ideareef\framework\web\CController.php(870): CBaseController->renderFile('C:\wamp\www\ide...', Array, true)
+#9 C:\wamp\www\ideareef\framework\web\CController.php(783): CController->renderPartial('signup', Array, true)
+#10 C:\wamp\www\ideareef\protected\controllers\AccountController.php(160): CController->render('signup', Array)
+#11 C:\wamp\www\ideareef\framework\web\actions\CInlineAction.php(50): AccountController->actionSignUp()
+#12 C:\wamp\www\ideareef\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#13 C:\wamp\www\ideareef\framework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#14 C:\wamp\www\ideareef\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#15 C:\wamp\www\ideareef\framework\web\CWebApplication.php(276): CController->run('signup')
+#16 C:\wamp\www\ideareef\framework\web\CWebApplication.php(135): CWebApplication->runController('account/signup')
+#17 C:\wamp\www\ideareef\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#18 C:\wamp\www\ideareef\index.php(13): CApplication->run()
+#19 {main}
+REQUEST_URI=/ideareef/signup
+---
