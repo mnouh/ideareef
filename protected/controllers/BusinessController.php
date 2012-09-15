@@ -81,7 +81,7 @@ class BusinessController extends Controller {
             
             }
                         
-            $this->render('signup', array('model' => $model, 'businessType' => $businessType));
+            $this->renderPartial('signup', array('model' => $model, 'businessType' => $businessType));
         }
         
         

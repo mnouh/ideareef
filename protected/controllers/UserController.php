@@ -19,13 +19,13 @@ class UserController extends Controller {
      */
     public function accessRules() {
         return array(
-            /*
+            
             array('allow', // allow all users to perform 'index' and 'view' actions
-                'actions' => array('index', 'view', 'locate', 'search', 'likebiz', '*'),
+                'actions' => array('signup'),
                 'users' => array('*'),
-            ),*/
+            ),
             array('allow', // allow authenticated user to perform 'create' and 'update' actions
-                'actions' => array('index', 'changeUsername', 'changepassword', 'changeZipCode', 'create', 'update'),
+                'actions' => array('index', 'changeName', 'changeUsername', 'changepassword', 'changeZipCode', 'create', 'update'),
                 'users' => array('@'),
             ),
             /*array('allow', // allow admin user to perform 'admin' and 'delete' actions
@@ -62,6 +62,13 @@ class UserController extends Controller {
       }
 
       $this->renderPartial('changeUsername', array('model' => $model, 'profileLink' => $profileLink), false, true);
+    }
+    
+    public function actionSignUp()
+    {
+        $model = new User();
+            $model->setScenario('signup');
+        $this->renderPartial('signup', array('model' => $model), false, false);
     }
     
     public function actionView()

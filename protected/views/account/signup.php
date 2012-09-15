@@ -1,3 +1,4 @@
+<?php Yii::app()->clientScript->registerCoreScript('jquery'); ?>
 <?php
 $this->pageTitle = Yii::app()->name . ' - Sign Up';
 /*
@@ -20,14 +21,6 @@ $this->pageTitle = Yii::app()->name . ' - Sign Up';
             <?php else: ?>
 
 
-                <?php
-                $form = $this->beginWidget('CActiveForm', array(
-                    'id' => 'user-form',
-                    //'focus' => array($model,'firstName'),
-                    'enableAjaxValidation' => true,
-                    'clientOptions' => array('validateOnSubmit' => true, 'validationDelay' => 100),
-                        ));
-                ?>
 
                 <div id="Content">
 
@@ -39,113 +32,54 @@ $this->pageTitle = Yii::app()->name . ' - Sign Up';
                                 <div class="top">
 
                                     <ul>
-                                        <li><a id="myHeader1" href="javascript:showonlyone('newboxes1');">User</a></li>
-                                        <li><a id="myHeader2" href="javascript:showonlyone('newboxes2');">Business</a></li>
+                                        <li><?php 
+              echo CHtml::ajaxLink(
+                                        'User',
+                                        array('user/signup'),
+                                        array('success'=>'js:function(data) {
+                                                    jQuery("div#form-data").html(data);}',
+                                                //'update'=>'#successMessage',
+                                                //'beforeSend' => 'function() {alert("testing");}',
+                                                //'validated' => 'function() {$("div#load").removeClass("loading");}',
+                                                //'complete' => 'function() {$("div#load").removeClass("loading");}',
+                                                'type' => 'POST'
+                                        )
+                                );
+      
+      ?></li>
+                                        <li>
+                                            
+                                            <?php 
+              echo CHtml::ajaxLink(
+                                        'Business',
+                                        array('business/signup'),
+                                        array('success'=>'js:function(data) {
+                                                    jQuery("div#form-data").html(data);}',
+                                                //'update'=>'#successMessage',
+                                                //'beforeSend' => 'function() {alert("testing");}',
+                                                //'validated' => 'function() {$("div#load").removeClass("loading");}',
+                                                //'complete' => 'function() {$("div#load").removeClass("loading");}',
+                                                'type' => 'POST'
+                                        )
+                                );
+      
+      ?>
+                                            
+                                            
+                                    </li>
                                         <li class="other">&larr; Be sure to select the correct account type		      </li>
                                     </ul>
 
                                     <div class="clear"></div>
                                 </div>
 
-                                <div id="newboxes1" class="newboxes">
-                                    <div class="bottom">
-                                        <div class="boxLeft"> 
-                                            <div class="fLeft">
-
-                                                <h3>USER SIGNUP</h3>
-
-                                                <p><strong>First Name </strong> <span class="errorTxt">*</span> </p>
-                                                <p>
-                                                    <?php echo $form->textField($model, 'firstName', array('class' => 'inputBox')); ?>
-                                                    <?php echo $form->error($model, 'firstName'); ?>
-                                                </p>
-
-                                                <p><strong>Last Name </strong> <span class="errorTxt">*</span> </p>
-                                                <p>
-                                                    <?php echo $form->textField($model, 'lastName', array('class' => 'inputBox')); ?>
-                                                    <?php echo $form->error($model, 'lastName'); ?>
-                                                </p>
-
-                                                <p><strong>Email</strong> <span class="errorTxt">*</span></p>
-                                                <p>
-                                                    <?php echo $form->textField($model, 'email', array('class' => 'inputBox')); ?>
-                                                    <?php echo $form->error($model, 'email'); ?>
-                                                </p>
-
-                                                <p><strong>Password</strong> <span class="errorTxt">*</span></p>
-                                                <p>
-                                                    <?php echo $form->textField($model, 'password', array('class' => 'inputBox')); ?>
-                                                    <?php echo $form->error($model, 'password'); ?>
-                                                </p>
-                                                <p><strong>Zip Code </strong><span class="errorTxt">*</span></p>
-                                                <p>
-                                                    <?php echo $form->textField($model, 'zipcode', array('class' => 'inputBox')); ?>
-                                                    <?php echo $form->error($model, 'zipcode'); ?>
-                                                </p>
-                                                <p>
-                                                    <input name="Submit2" type="submit" class="blueButton" value="Join!">
-                                                </p>
-                                            </div>
-                                            <div class="fRight">
-                                                <p>space for more things </p>
-                                            </div>
-                                            <div class="clear"></div>
-                                            <div>
-                                                <p>By Clicking the &quot;Join!&quot;, you agree to our  <a href="#">privacy policy</a> </p>
-                                            </div>
-                                        </div>
-                                        <div class="clear"></div>
-                                    </div>
+                                
+                                <div id="form-data">
+                                <?php
+                                $this->renderPartial('/user/signup', array('model' => $model), false, false);
+                                ?>
                                 </div>
-
-                                <div id="newboxes2" class="newboxes" style="display:none;">
-                                    <div class="bottom">
-                                        <div class="boxLeft"> 
-                                            <div class="fLeft">
-
-                                                <h3>BUSINESS SIGNUP</h3>
-
-                                                <p><strong>Company Name </strong>  <span class="errorTxt">*</span> </p>
-                                                <p>
-                                                    <?php echo $form->textField($model, 'name', array('class' => 'inputBox')); ?>
-                                                    <?php echo $form->error($model, 'name'); ?>
-                                                </p>
-                                                <p><strong>Email</strong>  <span class="errorTxt">*</span></p>
-                                                <p>
-                                                    <?php echo $form->textField($model, 'email', array('class' => 'inputBox')); ?>
-                                                    <?php echo $form->error($model, 'email'); ?>
-                                                </p>
-                                                <p><strong>Password</strong>  <span class="errorTxt">*</span></p>
-                                                <p>
-                                                    <?php echo $form->textField($model, 'password', array('class' => 'inputBox')); ?>
-                                                    <?php echo $form->error($model, 'password'); ?>
-                                                </p>
-                                                <p><strong>Type of Business </strong> <span class="errorTxt">*</span></p>
-                                                <p>
-                                                    <?php $list = CHtml::listData($businessType, 'id', 'name'); ?>
-                                                    <?php echo $form->dropDownList($model, 'businessType', $list, array('empty' => 'Select Business Type')); ?>
-                                                    <?php echo $form->error($model, 'businessType'); ?>
-                                                </p>
-                                                <p><strong>Zip Code </strong><span class="errorTxt">*</span></p>
-                                                <p>
-                                                    <?php echo $form->textField($model, 'zipcode', array('class' => 'inputBox')); ?>
-                                                    <?php echo $form->error($model, 'zipcode'); ?>
-                                                </p>
-                                                <p>
-                                                    <input name="Submit2" type="submit" class="blueButton" value="Join!">
-                                                </p>
-                                            </div>
-                                            <div class="fRight">
-                                                <p>space for more things </p>
-                                            </div>
-                                            <div class="clear"></div>
-                                            <div>
-                                                <p>By Clicking the &quot;Join!&quot;, you agree to our  <a href="#">privacy policy</a> </p>
-                                            </div>
-                                        </div>
-                                        <div class="clear"></div>
-                                    </div>
-                                </div>
+                               
                             </div>
                         </div>
                         <div class="floatRight">
@@ -163,7 +97,6 @@ $this->pageTitle = Yii::app()->name . ' - Sign Up';
                     </div>
                 </div>
 
-                <?php $this->endWidget(); ?>
             <?php endif; ?>
         </div>
     </div>

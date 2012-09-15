@@ -134,6 +134,7 @@ class AccountController extends Controller
             
             
             
+            
         // Uncomment the following line if AJAX validation is needed
         $this->performAjaxValidation($model, 'user-form');
 

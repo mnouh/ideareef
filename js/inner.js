@@ -1,5 +1,5 @@
 anylinkcssmenu.init("anchorclass");
-
+/*
 function showonlyone(thechosenone) {
       var newboxes = document.getElementsByTagName("div");
             for(var x=0; x<newboxes.length; x++) {
@@ -13,4 +13,13 @@ function showonlyone(thechosenone) {
                   }
             }
       }
-}
+}*/
+
+function toggle1(){
+  	var signin_menu = document.getElementById('signin_menu')
+  	if (signin_menu.style.display == 'none') {
+  		signin_menu.style.display = 'block'
+  	} else {
+  		signin_menu.style.display = 'none'
+  	}
+  }

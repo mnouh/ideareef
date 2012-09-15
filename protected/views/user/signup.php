@@ -1,38 +1,40 @@
 <?php
                 $form = $this->beginWidget('CActiveForm', array(
-                    'id' => 'business-form',
+                    'id' => 'user-form',
                     //'focus' => array($model,'firstName'),
                     'enableAjaxValidation' => true,
                     'clientOptions' => array('validateOnSubmit' => true, 'validationDelay' => 100),
                         ));
                 ?>
-
+<div id="newboxes1" class="newboxes">
                                     <div class="bottom">
                                         <div class="boxLeft"> 
                                             <div class="fLeft">
 
-                                                <h3>BUSINESS SIGNUP</h3>
+                                                <h3>USER SIGNUP</h3>
 
-                                                <p><strong>Company Name </strong>  <span class="errorTxt">*</span> </p>
+                                                <p><strong>First Name </strong> <span class="errorTxt">*</span> </p>
                                                 <p>
-                                                    <?php echo $form->textField($model, 'name', array('class' => 'inputBox')); ?>
-                                                    <?php echo $form->error($model, 'name'); ?>
+                                                    <?php echo $form->textField($model, 'firstName', array('class' => 'inputBox')); ?>
+                                                    <?php echo $form->error($model, 'firstName'); ?>
                                                 </p>
-                                                <p><strong>Email</strong>  <span class="errorTxt">*</span></p>
+
+                                                <p><strong>Last Name </strong> <span class="errorTxt">*</span> </p>
+                                                <p>
+                                                    <?php echo $form->textField($model, 'lastName', array('class' => 'inputBox')); ?>
+                                                    <?php echo $form->error($model, 'lastName'); ?>
+                                                </p>
+
+                                                <p><strong>Email</strong> <span class="errorTxt">*</span></p>
                                                 <p>
                                                     <?php echo $form->textField($model, 'email', array('class' => 'inputBox')); ?>
                                                     <?php echo $form->error($model, 'email'); ?>
                                                 </p>
-                                                <p><strong>Password</strong>  <span class="errorTxt">*</span></p>
+
+                                                <p><strong>Password</strong> <span class="errorTxt">*</span></p>
                                                 <p>
                                                     <?php echo $form->textField($model, 'password', array('class' => 'inputBox')); ?>
                                                     <?php echo $form->error($model, 'password'); ?>
-                                                </p>
-                                                <p><strong>Type of Business </strong> <span class="errorTxt">*</span></p>
-                                                <p>
-                                                    <?php $list = CHtml::listData($businessType, 'id', 'name'); ?>
-                                                    <?php echo $form->dropDownList($model, 'businessType', $list, array('empty' => 'Select Business Type')); ?>
-                                                    <?php echo $form->error($model, 'businessType'); ?>
                                                 </p>
                                                 <p><strong>Zip Code </strong><span class="errorTxt">*</span></p>
                                                 <p>
@@ -53,5 +55,5 @@
                                         </div>
                                         <div class="clear"></div>
                                     </div>
-
+                                </div>
 <?php $this->endWidget(); ?>

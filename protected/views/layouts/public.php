@@ -9,11 +9,9 @@
         <?php
          $baseUrl = Yii::app()->baseUrl; 
  $cs = Yii::app()->getClientScript();
- $cs->registerScriptFile($baseUrl.'/js/jquery.tools.min.js');
  $cs->registerScriptFile($baseUrl.'/js/anylinkcssmenu.js');
  $cs->registerScriptFile($baseUrl.'/js/inner.js');
- $cs->registerScriptFile($baseUrl.'/js/home.js');
- $cs->registerScriptFile($baseUrl.'/js/social.js');
+         
         ?>
 
 	<title><?php echo CHtml::encode($this->pageTitle); ?></title>
