@@ -6,12 +6,7 @@ $this->pageTitle = Yii::app()->name . ' - Sign Up';
  * and open the template in the editor.
  */
 ?>
-<div id="main-content" class="clearfix">
-    <div class="form" id="customForm" class="sync">
-        <div id="content-container">
-            <h2>Sign Up</h2>
 
-            <h3><p class="description"><span class="disclaimer">* Not available in all locations</span>Please sign up with your email address.*</p></h3>
             <?php if (Yii::app()->user->hasFlash('success')): ?>
 
                 <div class="flash-success">
@@ -98,9 +93,7 @@ $this->pageTitle = Yii::app()->name . ' - Sign Up';
                 </div>
 
             <?php endif; ?>
-        </div>
-    </div>
-</div><!-- form -->
+
 
 
 

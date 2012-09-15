@@ -44,7 +44,7 @@ class Business extends CActiveRecord
 		// NOTE: you should only define rules for those attributes that
 		// will receive user inputs.
 		return array(
-			array('aboutUs, companyHistory, companyMission, email, password, name, confirmPassword, businessType', 'required', 'on' => 'signup'),
+			array('email, password, name, confirmPassword, businessType, zipcode', 'required', 'on' => 'signup'),
                         array('confirmPassword', 'compare', 'compareAttribute'=>'password', 'on' => 'signup'),
                         array('email', 'email', 'on' => 'signup'),
                         array('email', 'checkBusiness', 'on' => 'signup'),

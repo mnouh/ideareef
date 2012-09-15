@@ -68,7 +68,30 @@ class UserController extends Controller {
     {
         $model = new User();
             $model->setScenario('signup');
-        $this->renderPartial('signup', array('model' => $model), false, false);
+            
+             // Uncomment the following line if AJAX validation is needed
+        $this->performAjaxValidation($model, 'user-form');
+
+        /*
+          if(!$model->hasErrors('firstName')) {
+          Yii::app()->user->setFlash('success','<b>&#10004;</b> &nbsp First name looks great!');
+          }
+         */
+        if (isset($_POST['User'])) {
+            $model->attributes = $_POST['User'];
+
+            if ($model->validate()) {
+                
+                if($model->save())
+                {
+                    Yii::app()->user->setFlash('success', "Successfully Registered");
+                }
+                
+            }
+            
+            }
+            
+        $this->renderPartial('signup', array('model' => $model), false, true);
     }
     
     public function actionView()

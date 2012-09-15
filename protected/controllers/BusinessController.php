@@ -60,7 +60,7 @@ class BusinessController extends Controller {
             $businessType = BusinessType::model()->findAll();
     
         // Uncomment the following line if AJAX validation is needed
-        $this->performAjaxValidation($model, 'businessSignup-form');
+        $this->performAjaxValidation($model, 'business-form');
 
         /*
           if(!$model->hasErrors('firstName')) {
@@ -81,7 +81,7 @@ class BusinessController extends Controller {
             
             }
                         
-            $this->renderPartial('signup', array('model' => $model, 'businessType' => $businessType));
+            $this->renderPartial('signup', array('model' => $model, 'businessType' => $businessType), false, true);
         }
         
         
