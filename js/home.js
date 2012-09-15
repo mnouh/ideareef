@@ -32,4 +32,5 @@ $(document).ready(function() {
 
     }).slideshow({autoplay:true});
 ddtabmenu.definemenu("ddtabs1", 0);
+
 	});

@@ -10,6 +10,8 @@
          $baseUrl = Yii::app()->baseUrl; 
  $cs = Yii::app()->getClientScript();
  $cs->registerScriptFile($baseUrl.'/js/jquery.tools.min.js');
+ $cs->registerScriptFile($baseUrl.'/js/anylinkcssmenu.js');
+ $cs->registerScriptFile($baseUrl.'/js/inner.js');
  $cs->registerScriptFile($baseUrl.'/js/home.js');
  $cs->registerScriptFile($baseUrl.'/js/social.js');
         ?>
@@ -22,13 +24,19 @@
 <div class="HomeHolder">
 <div id="Header">
   <h1 class="logo"><a href="<?php echo Yii::app()->request->baseUrl; ?>"IdeaReef</a></h1>
+  <?php
+        if(Yii::app()->user->isGuest) {
+        ?>
   <div class="floatRight">
-    <ul>
+    
+      <ul>
+        
         <li><?php echo CHtml::link('About Us', Yii::app()->request->baseUrl.'/aboutus'); ?></li>
       <li><?php echo CHtml::link('Companies', Yii::app()->request->baseUrl.'/companies'); ?></li>
       <li><a href="competitions.html" class="last">Competitions</a></li>
       <li><a href="sign-up.html" class="special">Join</a></li>
       <li><a href="javascript: toggle1()" class="last loginBtn">Login</a></li>
+        
     </ul>
     <fieldset id="signin_menu" style="display:none;">
 	<div class="arrow"></div>
@@ -52,6 +60,42 @@
           <?php echo CHtml::endForm();?>
     </fieldset>
   </div>
+  <?php
+        }
+        else {
+      ?>      
+        <div class="floatRight">
+      <ul>
+        <li><a href="#"><?php echo CHtml::link('Home', Yii::app()->request->baseUrl.'/business'); ?></a></li>
+        <li><a href="#"><?php echo CHtml::link('Pavilion', Yii::app()->request->baseUrl.'/business/pavilion'); ?></a></li>
+        <li>
+            <?php echo CHtml::link('Treasurey <span>1</span>', Yii::app()->request->baseUrl.'/aboutus', array('class' => 'last')); ?>
+            
+        </li>
+		<li><a rel="submenu1" class="anchorclass settings" href="#">Settings</a>
+		
+<ul id="submenu1" class="anylinkcss">
+<li><a href="#">Account Settings</a></li>
+<li><a href="#">Settings Links</a></li>
+<li><a href="#" class="last">Other Settings</a></li>
+
+</ul>
+
+		</li>
+        <li>
+            <?php echo CHtml::link('Log Out', Yii::app()->request->baseUrl.'/logout', array('class' => 'special')); ?> </li>
+      </ul>
+      
+    </div>
+      <div class="search">
+	  <input name="textfield" type="text" class="inputBox">
+	</div>
+      
+            
+        <?php    
+        }
+        
+      ?>
   <div class="clear"></div>
 </div>
 
