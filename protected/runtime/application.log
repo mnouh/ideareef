@@ -5146,3 +5146,23 @@ Stack trace:
 #19 {main}
 REQUEST_URI=/ideareef/signup
 ---
+2012/09/15 21:27:17 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "profileComplete".' in C:\wamp\www\ideareef\framework\web\CController.php:484
+Stack trace:
+#0 C:\wamp\www\ideareef\framework\web\CController.php(271): CController->missingAction('profileComplete')
+#1 C:\wamp\www\ideareef\framework\web\CWebApplication.php(276): CController->run('profileComplete')
+#2 C:\wamp\www\ideareef\framework\web\CWebApplication.php(135): CWebApplication->runController('user/profileCom...')
+#3 C:\wamp\www\ideareef\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#4 C:\wamp\www\ideareef\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/ideareef/user/profileComplete
+---
+2012/09/15 21:28:22 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "profileComplete".' in C:\wamp\www\ideareef\framework\web\CController.php:484
+Stack trace:
+#0 C:\wamp\www\ideareef\framework\web\CController.php(271): CController->missingAction('profileComplete')
+#1 C:\wamp\www\ideareef\framework\web\CWebApplication.php(276): CController->run('profileComplete')
+#2 C:\wamp\www\ideareef\framework\web\CWebApplication.php(135): CWebApplication->runController('user/profileCom...')
+#3 C:\wamp\www\ideareef\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#4 C:\wamp\www\ideareef\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/ideareef/user/profileComplete
+---
