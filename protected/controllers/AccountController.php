@@ -48,11 +48,19 @@ class AccountController extends Controller
                 
 	}
         
-        public function actionCompanies()
+        public function actionBusiness()
 	{
 		// renders the view file 'protected/views/site/index.php'
 		// using the default layout 'protected/views/layouts/main.php'
-		$this->render('companies');
+		$this->render('business');
+                
+	}
+        
+        public function actionCompetitions()
+	{
+		// renders the view file 'protected/views/site/index.php'
+		// using the default layout 'protected/views/layouts/main.php'
+		$this->render('competitions');
                 
 	}
         
@@ -96,14 +104,10 @@ class AccountController extends Controller
 	 */
 	public function actionLogin()
 	{
-		$model=new LoginForm;
+		$model = new LoginForm;
 
-		// if it is ajax validation request
-		if(isset($_POST['ajax']) && $_POST['ajax']==='login-form')
-		{
-			echo CActiveForm::validate($model);
-			Yii::app()->end();
-		}
+        // if it is ajax validation request
+       $this->performAjaxValidation($model, 'login-form');
 
 		// collect user input data
 		if(isset($_POST['LoginForm']))
