@@ -5,12 +5,11 @@
         <meta name="language" content="en" />
 
         <link rel="stylesheet" type="text/css" href="<?php echo Yii::app()->request->baseUrl; ?>/css/css.css" />
-        <link rel="stylesheet" type="text/css" href="<?php echo Yii::app()->request->baseUrl; ?>/css/styles.css" />
+        
         <?php //Yii::app()->clientScript->registerCoreScript('jquery'); ?>
         <?php
         $baseUrl = Yii::app()->baseUrl;
         $cs = Yii::app()->getClientScript();
-        //$cs->registerScriptFile($baseUrl.'/js/jquery.tools.min.js');
         $cs->registerScriptFile($baseUrl . '/js/anylinkcssmenu.js');
         $cs->registerScriptFile($baseUrl . '/js/inner.js');
         ?>
