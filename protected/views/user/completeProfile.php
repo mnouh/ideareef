@@ -1,5 +1,5 @@
  <div id="Content">
-    <h4>Welcome to IdeaReef, Chris Plaquette! </h4>
+    <h4>Welcome to IdeaReef, <?php echo $model->firstName . ' ' . $model->lastName; ?>! </h4>
     <p>A confirmation e-mail will be sent to your address shortly.</p>
     <div class="bottom">
       <div class="floatLeft">
@@ -18,7 +18,7 @@
               <div class="fLeft" style="width:400px;">
                 <h6>Next, let's find your friends and favorite companies </h6>
                 <p>Connecting to 3 or more companies will earn you a second badge and allow you to start making money by referring friends to go to your favorite businesses</p>
-                <p class="imgNxt"><img src="images/no-image.png" alt=""><img src="images/no-image.png" alt=""><img src="images/no-image.png" alt=""><img src="images/no-image.png" alt=""><img src="images/no-image.png" alt=""></p>
+                <p class="imgNxt"><img src="<?php echo Yii::app()->request->baseUrl; ?>/images/no-image.png" alt=""><img src="<?php echo Yii::app()->request->baseUrl; ?>/images/no-image.png" alt=""><img src="<?php echo Yii::app()->request->baseUrl; ?>/images/no-image.png" alt=""><img src="<?php echo Yii::app()->request->baseUrl; ?>/images/no-image.png" alt=""><img src="<?php echo Yii::app()->request->baseUrl; ?>/images/no-image.png" alt=""></p>
               </div>
               <div class="fRight">
                 <input name="Submit2" type="submit" class="smBlueBtn" value="Search for friends &amp; companies">

@@ -2,6 +2,7 @@
 
 class UserController extends Controller {
 
+    public $layout = 'privateUser';
     /**
 	 * @return array action filters
 	 */
@@ -25,7 +26,7 @@ class UserController extends Controller {
                 'users' => array('*'),
             ),
             array('allow', // allow authenticated user to perform 'create' and 'update' actions
-                'actions' => array('index', 'changeName', 'changeUsername', 'changepassword', 'changeZipCode', 'create', 'update', 'profileComplete'),
+                'actions' => array('index', 'changeName', 'changeUsername', 'changepassword', 'changeZipCode', 'create', 'update', 'completeProfile'),
                 'users' => array('@'),
             ),
             /*array('allow', // allow admin user to perform 'admin' and 'delete' actions

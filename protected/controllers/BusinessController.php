@@ -28,7 +28,7 @@ class BusinessController extends Controller {
                 'users' => array('*'),
             ),
             array('allow', // allow authenticated user to perform 'create' and 'update' actions
-                'actions' => array('index', 'changeUsername', 'changepassword', 'create', 'update', 'pavilion', 'pavilionEdit'),
+                'actions' => array('index', 'changeUsername', 'changepassword', 'create', 'update', 'pavilion', 'pavilionEdit', 'completeProfile'),
                 'users' => array('@'),
             ),
             /*array('allow', // allow admin user to perform 'admin' and 'delete' actions
@@ -46,6 +46,17 @@ class BusinessController extends Controller {
             $model = Business::model()->findByPk(Yii::app()->user->id);
             $this->render('index', array('model' => $model));
         }
+    }
+    
+    public function actionCompleteProfile()
+    {
+        
+        if(Yii::app()->user->isBusiness) {
+            
+            $model = Business::model()->findByPK(Yii::app()->user->id);
+            $this->render('completeProfile', array('model' => $model));
+        }
+        
     }
     
     

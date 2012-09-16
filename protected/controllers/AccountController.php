@@ -116,6 +116,27 @@ class AccountController extends Controller
 			// validate user input and redirect to the previous page if valid'
 			if($model->validate() && $model->login()) {    
                            
+                                if(Yii::app()->user->isBusiness){
+                                    
+                                    $model = Business::model()->findByPk(Yii::app()->user->id);
+                                    if($model->profileComplete == 0)
+                                    {
+                                        
+                                        $this->redirect(array('/business/completeProfile'));
+                                    }
+                                    
+                                    
+                                }
+                                else {
+                                    $model = User::model()->findByPk(Yii::app()->user->id);
+                                    if($model->profileComplete == 0)
+                                    {
+                                        $this->redirect(array('/user/completeProfile'));
+                                        
+                                    }
+                                    
+                                    
+                                }
                                 $this->redirect(Yii::app()->user->returnUrl);
                            
                         }
