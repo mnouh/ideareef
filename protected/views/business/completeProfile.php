@@ -1,12 +1,20 @@
 <div id="Content">
 
       <h4>Welcome to IdeaReef, <?php echo $model->name; ?>! </h4>
-      <p>A confirmation e-mail will be sent to your address shortly, please</p><a href="#" class="smbtnorange">Verify your email </a>
       
       <div class="bottom">
         <div class="floatLeft">
           <div class="inside">
             <div class="bottom">
+                <div class="bk">
+			  <div class="fLeft">
+                <h6>Verify your account</h6>
+                A confirmation e-mail will be sent to your address shortly, please </div>
+				<div class="fRight">
+                  <input name="Submit" type="submit" class="lgbtnorange" value="Verify your email">
+                </div>
+				<div class="clear"></div>
+              </div>
               <div class="bk">
 			  <div class="fLeft">
                 <h6>Lets begin by building your company pavillion</h6>
