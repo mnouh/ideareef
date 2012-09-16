@@ -1,3 +1,13 @@
+<?php
+    Yii::app()->getClientScript()->registerCoreScript('jquery');
+    Yii::app()->getClientScript()->registerCoreScript('jquery.ui');
+         $baseUrl = Yii::app()->baseUrl;
+ $cs = Yii::app()->getClientScript();
+ $cs->registerScriptFile($baseUrl.'/js/jquery.jeditable.js');
+ $cs->registerScriptFile($baseUrl.'/js/businessInfo.js');
+
+ 
+ ?>
 <div id="InnerContent">
     <div class="floatLeft">
         <div class="up">
@@ -248,7 +258,8 @@
                     </div>
                     <div class="boxes">
                         <h3>About Us </h3>
-                        <p><?php echo $model->aboutUs; ?></p>
+                        <div class="aboutus" id ="aboutus"> <?php echo $model->aboutUs;?> </div>
+                        
 
                     </div>
 
