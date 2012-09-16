@@ -16,6 +16,7 @@ return array(
 	'import'=>array(
 		'application.models.*',
 		'application.components.*',
+                'application.extensions.yii-mail.*',
 	),
 
 	'modules'=>array(
@@ -29,6 +30,7 @@ return array(
 		),
 	
 	),
+    
         'defaultController' => 'account',
 
 	// application components
@@ -58,6 +60,21 @@ return array(
                                 '<username>'=>'user/view',
 			),
 		),
+            
+                'mail' => array(
+                    'class' => 'application.extensions.yii-mail.YiiMail',
+                    'transportType' => 'smtp',
+                    'transportOptions' => array(
+                        'host' => 'smtp.gmail.com',
+                        'username' => 'admin@ideareef.com',
+                        'password' => 'ideareef4625',
+                        'encryption' => 'tls',
+                        'port' => '465',
+                ),
+            'viewPath' => 'application.views.mail',
+            'logging' => true,
+            'dryRun' => false,
+        ),
 		
 		'db'=>array(
 			'connectionString' => 'sqlite:'.dirname(__FILE__).'/../data/testdrive.db',

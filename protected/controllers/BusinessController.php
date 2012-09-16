@@ -73,26 +73,40 @@ class BusinessController extends Controller {
         // Uncomment the following line if AJAX validation is needed
         $this->performAjaxValidation($model, 'business-form');
 
-        /*
-          if(!$model->hasErrors('firstName')) {
-          Yii::app()->user->setFlash('success','<b>&#10004;</b> &nbsp First name looks great!');
-          }
-         */
         if (isset($_POST['Business'])) {
             $model->attributes = $_POST['Business'];
+            $decryptedPassword = $model->password;
 
             if ($model->validate()) {
                 
                 if($model->save())
                 {
-                    Yii::app()->user->setFlash('success', "Successfully Registered");
+                    $this->sendConfirmation($model);
+                    $loginUser = new LoginForm();
+                    $loginUser->email = $model->email;
+                    $loginUser->password = $decryptedPassword;
+                    $loginUser->rememberMe = false;
+                    
+                    if($loginUser->validate() && $loginUser->login())
+                    {
+                        
+                        $this->redirect(array('/business/completeProfile'));
+                        
+                    }
+                    else {
+                        
+                        throw new CHttpException(404, 'The system had some difficulties processing your request.');
+                    }
+                    
+                    
                 }
                 
             }
             
             }
-                        
+            
             $this->renderPartial('signup', array('model' => $model, 'businessType' => $businessType), false, true);
+            
         }
         
         
@@ -210,6 +224,23 @@ class BusinessController extends Controller {
             $this->render('pavilionEdit', array('model' => $model));
         }
     }
+    
+    /**
+     * This will email the user, the confirmation code.
+     * @param type $model 
+     */
+    protected function sendConfirmation(&$model) {
+
+        $signUpEmail = New YiiMailMessage;
+        $signUpEmail->view = 'businessSignup';
+        $signUpEmail->setBody(array('model' => $model), 'text/html');
+        $signUpEmail->setFrom(array('welcome@ideareef.com' => 'IdeaReef'));
+        $signUpEmail->setSubject('Welcome - IdeaReef');
+        $signUpEmail->addTo($model->email);
+        Yii::app()->mail->send($signUpEmail);
+    }
+    
+    
     /**
          * Custom function allow validation of forms. Pass the model and the form id and then
          * it will validate via ajax.
@@ -222,6 +253,8 @@ class BusinessController extends Controller {
             Yii::app()->end();
         }
     }
+    
+    
 
     // Uncomment the following methods and override them if needed
     /*

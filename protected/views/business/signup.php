@@ -6,7 +6,7 @@ $form = $this->beginWidget('CActiveForm', array(
     'clientOptions' => array('validateOnSubmit' => true, 'validationDelay' => 100),
         ));
 ?>
-<?php echo $form->errorSummary($model); ?>
+<?php //echo $form->errorSummary($model); ?>
 
 <div class="bottom">
     <div class="boxLeft"> 

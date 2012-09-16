@@ -196,6 +196,8 @@ class AccountController extends Controller
 		Yii::app()->user->logout();
 		$this->redirect(Yii::app()->homeUrl);
 	}
+        
+        
      
         /**
          * Custom function allow validation of forms. Pass the model and the form id and then

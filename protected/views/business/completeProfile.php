@@ -1,7 +1,7 @@
 <div id="Content">
 
       <h4>Welcome to IdeaReef, <?php echo $model->name; ?>! </h4>
-      <p>A confirmation e-mail will be sent to your address shortly.</p>
+      <p>A confirmation e-mail will be sent to your address shortly, please</p><a href="#" class="smbtnorange">Verify your email </a>
       
       <div class="bottom">
         <div class="floatLeft">
