@@ -28,7 +28,7 @@ class BusinessController extends Controller {
                 'users' => array('*'),
             ),
             array('allow', // allow authenticated user to perform 'create' and 'update' actions
-                'actions' => array('index', 'changeUsername', 'changepassword', 'create', 'update', 'pavilion', 'pavilionEdit', 'completeProfile'),
+                'actions' => array('index', 'changeUsername', 'changepassword', 'create', 'update', 'pavilion', 'pavilionEdit', 'completeProfile', 'edittext'),
                 'users' => array('@'),
             ),
             /*array('allow', // allow admin user to perform 'admin' and 'delete' actions
@@ -224,6 +224,25 @@ class BusinessController extends Controller {
             $this->render('pavilionEdit', array('model' => $model));
         }
     }
+    
+     public function actioneditText() {
+        if(Yii::app()->user->isBusiness){
+            
+            $model = Business::model()->findByPk(Yii::app()->user->id);
+            
+            if (isset($_POST['Business'])) {
+            $model->attributes = $_POST['Business'];
+
+            if ($model->validate()) {
+                if($model->update())
+                    Yii::app()->user->setFlash('success', "Information Successfully Changed");
+                }
+            
+            }
+            $this->render('edittext', array('model' => $model));
+        }
+    }
+    
     
     /**
      * This will email the user, the confirmation code.

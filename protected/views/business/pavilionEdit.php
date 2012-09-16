@@ -1,3 +1,6 @@
+<script type="text/javascript" src="../lib/jquery.editinplace.js"></script>
+
+
 <div id="main-content" class="clearfix">
     <div class="form" id="customForm" class="sync">
         <div id="content-container">
@@ -201,7 +204,12 @@
     <div class="inside">
       <div class="boxes">
         <h3>About us  <a href="#" class="smallTxt">(Edit)</a> </h3>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas ultricies ligula vel orci rhoncus luctus. Duis mattis ornare sodales. Morbi hendrerit ligula quis justo convallis fermentum. Etiam vestibulum euismod libero, vitae cursus neque egestas id. Curabitur lobortis diam eu dui rhoncus sed mattis ipsum mollis. Nam vel ipsum in magna blandit bibendum eu vel lacus. Phasellus nec metus erat, quis adipiscing est. Quisque eleifend eros et lacus laoreet fringilla lobortis dolor condimentum. Quisque tempor dolor sit amet velit imperdiet vitae egestas leo varius.        </p>
+         <?php 
+ 
+                    echo $form->textArea($model,'aboutUs', array ('class' => 'sync', 'style' => 'resize:none'));
+                    echo $form->error($model,'aboutUs'); 
+        ?>
+        
         <h3>Company History <a href="#" class="smallTxt">(Edit)</a></h3>
         <p>Aenean vel adipiscing nisl. Sed nibh enim, tempus eu lacinia eu, posuere et eros. Fusce euismod placerat mauris, dignissim convallis sapien adipiscing ac. Vivamus quis leo sem, eget semper orci. Quisque mattis augue vel purus volutpat volutpat. Cras ornare diam vel arcu tristique bibendum. Maecenas ac lorem in tellus blandit feugiat in ut metus. Suspendisse et metus sed leo imperdiet semper id vel mauris. Quisque vestibulum, dolor sed semper egestas, arcu mauris gravida elit, sed egestas sapien velit sit amet dui.</p>
         <h3>Company Vision &amp; Mission <a href="#" class="smallTxt">(Edit)</a></h3>

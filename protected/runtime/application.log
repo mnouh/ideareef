@@ -5166,3 +5166,150 @@ Stack trace:
 #5 {main}
 REQUEST_URI=/ideareef/user/profileComplete
 ---
+2012/09/16 21:10:50 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "js".' in C:\wamp\www\ideareef\framework\web\CController.php:484
+Stack trace:
+#0 C:\wamp\www\ideareef\framework\web\CController.php(271): CController->missingAction('js')
+#1 C:\wamp\www\ideareef\framework\web\CWebApplication.php(276): CController->run('js')
+#2 C:\wamp\www\ideareef\framework\web\CWebApplication.php(135): CWebApplication->runController('business/js/dem...')
+#3 C:\wamp\www\ideareef\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#4 C:\wamp\www\ideareef\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/ideareef/business/js/demo.js
+HTTP_REFERER=http://localhost/ideareef/business/pavilionEdit
+---
+2012/09/16 21:19:31 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not authorized to perform this action.' in C:\wamp\www\ideareef\framework\web\auth\CAccessControlFilter.php:157
+Stack trace:
+#0 C:\wamp\www\ideareef\framework\web\auth\CAccessControlFilter.php(120): CAccessControlFilter->accessDenied(Object(WebUser), 'You are not aut...')
+#1 C:\wamp\www\ideareef\framework\web\filters\CFilter.php(39): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 C:\wamp\www\ideareef\framework\web\CController.php(1146): CFilter->filter(Object(CFilterChain))
+#3 C:\wamp\www\ideareef\framework\web\filters\CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#4 C:\wamp\www\ideareef\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#5 C:\wamp\www\ideareef\framework\web\CController.php(292): CFilterChain->run()
+#6 C:\wamp\www\ideareef\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 C:\wamp\www\ideareef\framework\web\CWebApplication.php(276): CController->run('edittext')
+#8 C:\wamp\www\ideareef\framework\web\CWebApplication.php(135): CWebApplication->runController('business/editte...')
+#9 C:\wamp\www\ideareef\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#10 C:\wamp\www\ideareef\index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/ideareef/business/edittext
+---
+2012/09/16 21:19:49 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not authorized to perform this action.' in C:\wamp\www\ideareef\framework\web\auth\CAccessControlFilter.php:157
+Stack trace:
+#0 C:\wamp\www\ideareef\framework\web\auth\CAccessControlFilter.php(120): CAccessControlFilter->accessDenied(Object(WebUser), 'You are not aut...')
+#1 C:\wamp\www\ideareef\framework\web\filters\CFilter.php(39): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 C:\wamp\www\ideareef\framework\web\CController.php(1146): CFilter->filter(Object(CFilterChain))
+#3 C:\wamp\www\ideareef\framework\web\filters\CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#4 C:\wamp\www\ideareef\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#5 C:\wamp\www\ideareef\framework\web\CController.php(292): CFilterChain->run()
+#6 C:\wamp\www\ideareef\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 C:\wamp\www\ideareef\framework\web\CWebApplication.php(276): CController->run('edittext')
+#8 C:\wamp\www\ideareef\framework\web\CWebApplication.php(135): CWebApplication->runController('business/editte...')
+#9 C:\wamp\www\ideareef\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#10 C:\wamp\www\ideareef\index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/ideareef/business/edittext
+---
+2012/09/16 21:20:15 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "spec/support/jquery.js".' in C:\wamp\www\ideareef\framework\web\CWebApplication.php:280
+Stack trace:
+#0 C:\wamp\www\ideareef\framework\web\CWebApplication.php(135): CWebApplication->runController('spec/support/jq...')
+#1 C:\wamp\www\ideareef\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\wamp\www\ideareef\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/ideareef/spec/support/jquery.js
+HTTP_REFERER=http://localhost/ideareef/business/edittext
+---
+2012/09/16 21:20:15 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "spec/support/jquery.ui.js".' in C:\wamp\www\ideareef\framework\web\CWebApplication.php:280
+Stack trace:
+#0 C:\wamp\www\ideareef\framework\web\CWebApplication.php(135): CWebApplication->runController('spec/support/jq...')
+#1 C:\wamp\www\ideareef\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\wamp\www\ideareef\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/ideareef/spec/support/jquery.ui.js
+HTTP_REFERER=http://localhost/ideareef/business/edittext
+---
+2012/09/16 21:20:15 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "lib/jquery.editinplace.js".' in C:\wamp\www\ideareef\framework\web\CWebApplication.php:280
+Stack trace:
+#0 C:\wamp\www\ideareef\framework\web\CWebApplication.php(135): CWebApplication->runController('lib/jquery.edit...')
+#1 C:\wamp\www\ideareef\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\wamp\www\ideareef\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/ideareef/lib/jquery.editinplace.js
+HTTP_REFERER=http://localhost/ideareef/business/edittext
+---
+2012/09/16 21:20:15 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "css".' in C:\wamp\www\ideareef\framework\web\CController.php:484
+Stack trace:
+#0 C:\wamp\www\ideareef\framework\web\CController.php(271): CController->missingAction('css')
+#1 C:\wamp\www\ideareef\framework\web\CWebApplication.php(276): CController->run('css')
+#2 C:\wamp\www\ideareef\framework\web\CWebApplication.php(135): CWebApplication->runController('business/css/st...')
+#3 C:\wamp\www\ideareef\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#4 C:\wamp\www\ideareef\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/ideareef/business/css/styles.css
+HTTP_REFERER=http://localhost/ideareef/business/edittext
+---
+2012/09/16 21:20:15 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "js".' in C:\wamp\www\ideareef\framework\web\CController.php:484
+Stack trace:
+#0 C:\wamp\www\ideareef\framework\web\CController.php(271): CController->missingAction('js')
+#1 C:\wamp\www\ideareef\framework\web\CWebApplication.php(276): CController->run('js')
+#2 C:\wamp\www\ideareef\framework\web\CWebApplication.php(135): CWebApplication->runController('business/js/dem...')
+#3 C:\wamp\www\ideareef\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#4 C:\wamp\www\ideareef\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/ideareef/business/js/demo.js
+HTTP_REFERER=http://localhost/ideareef/business/edittext
+---
+2012/09/16 21:28:28 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "images".' in C:\wamp\www\ideareef\framework\web\CController.php:484
+Stack trace:
+#0 C:\wamp\www\ideareef\framework\web\CController.php(271): CController->missingAction('images')
+#1 C:\wamp\www\ideareef\framework\web\CWebApplication.php(276): CController->run('images')
+#2 C:\wamp\www\ideareef\framework\web\CWebApplication.php(135): CWebApplication->runController('business/images...')
+#3 C:\wamp\www\ideareef\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#4 C:\wamp\www\ideareef\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/ideareef/business/images/ajax-loader.gif
+HTTP_REFERER=http://localhost/ideareef/business/edittext
+---
+2012/09/16 21:29:10 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "images".' in C:\wamp\www\ideareef\framework\web\CController.php:484
+Stack trace:
+#0 C:\wamp\www\ideareef\framework\web\CController.php(271): CController->missingAction('images')
+#1 C:\wamp\www\ideareef\framework\web\CWebApplication.php(276): CController->run('images')
+#2 C:\wamp\www\ideareef\framework\web\CWebApplication.php(135): CWebApplication->runController('business/images...')
+#3 C:\wamp\www\ideareef\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#4 C:\wamp\www\ideareef\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/ideareef/business/images/ajax-loader.gif
+HTTP_REFERER=http://localhost/ideareef/business/edittext
+---
+2012/09/16 21:29:16 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "images".' in C:\wamp\www\ideareef\framework\web\CController.php:484
+Stack trace:
+#0 C:\wamp\www\ideareef\framework\web\CController.php(271): CController->missingAction('images')
+#1 C:\wamp\www\ideareef\framework\web\CWebApplication.php(276): CController->run('images')
+#2 C:\wamp\www\ideareef\framework\web\CWebApplication.php(135): CWebApplication->runController('business/images...')
+#3 C:\wamp\www\ideareef\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#4 C:\wamp\www\ideareef\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/ideareef/business/images/ajax-loader.gif
+HTTP_REFERER=http://localhost/ideareef/business/edittext
+---
+2012/09/16 21:30:00 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "images".' in C:\wamp\www\ideareef\framework\web\CController.php:484
+Stack trace:
+#0 C:\wamp\www\ideareef\framework\web\CController.php(271): CController->missingAction('images')
+#1 C:\wamp\www\ideareef\framework\web\CWebApplication.php(276): CController->run('images')
+#2 C:\wamp\www\ideareef\framework\web\CWebApplication.php(135): CWebApplication->runController('business/images...')
+#3 C:\wamp\www\ideareef\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#4 C:\wamp\www\ideareef\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/ideareef/business/images/ajax-loader.gif
+HTTP_REFERER=http://localhost/ideareef/business/edittext
+---
+2012/09/16 21:30:24 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "images".' in C:\wamp\www\ideareef\framework\web\CController.php:484
+Stack trace:
+#0 C:\wamp\www\ideareef\framework\web\CController.php(271): CController->missingAction('images')
+#1 C:\wamp\www\ideareef\framework\web\CWebApplication.php(276): CController->run('images')
+#2 C:\wamp\www\ideareef\framework\web\CWebApplication.php(135): CWebApplication->runController('business/images...')
+#3 C:\wamp\www\ideareef\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#4 C:\wamp\www\ideareef\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/ideareef/business/images/ajax-loader.gif
+HTTP_REFERER=http://localhost/ideareef/business/edittext
+---
