@@ -59,7 +59,7 @@ class BusinessController extends Controller {
         
     }
     
-    public function actionAboutUs()
+    public function actionEditAboutUs()
     {
         if(Yii::app()->user->isBusiness) {
             if(isset($_POST['id']) && isset($_POST['value']) && !empty($_POST['value']))

@@ -5,7 +5,6 @@
  $cs = Yii::app()->getClientScript();
  $cs->registerScriptFile($baseUrl.'/js/jquery.jeditable.js');
  $cs->registerScriptFile($baseUrl.'/js/businessInfo.js');
-
  
  ?>
 <div id="InnerContent">
