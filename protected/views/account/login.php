@@ -20,9 +20,12 @@ $this->pageTitle = Yii::app()->name . ' - Login';
                 &nbsp;
             </div>
             <h3>Password</h3>
-            <p>
+            
 <?php echo $form->passwordField($model, 'password', array('class' => 'inputBox')); ?>
-                <?php echo $form->error($model, 'password'); ?>
+                <?php echo $form->error($model, 'password', array('class' => 'error')); ?>
+            
+            <p>
+                &nbsp;
             </p>
             <p>
 <?php echo CHtml::submitButton('Login', array('name' => 'Submit', 'class' => 'btn')); ?>

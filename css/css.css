@@ -161,7 +161,7 @@ border-radius:5px;
   font:12px Arial, sans-serif;
 }
 #signin_menu label.password { margin-top:4px; }
-#signin_menu .error, .error  { margin-bottom:5px; font-size:11px; color:#FF0000; text-align:left; padding-top:4px; background:url(../images/arrow-down.png) 15px top no-repeat; }
+#signin_menu .error, .error  { margin-bottom:5px; font-size:14px; color:#FF0000; text-align:left; padding-top:4px; background:url(../images/arrow-down.png) 15px top no-repeat; }
 
 
 #signin_menu a {
@@ -289,7 +289,7 @@ border-radius:5px;
 #Content p.imgNxt { margin-bottom:0px; }
 #Content p.imgNxt img { width:50px; margin-right:1px; }
 #Content .noMargins { margin-bottom:0px !important; }	
-#Content .login .error { width:300px; margin:auto; text-align:left;background:url(../images/arrow-down.png) left top no-repeat;  }
+#Content .login .error { width:300px; margin:auto; text-align:left; background:url(../images/arrow-down.png) left top no-repeat;  }
 
 
 /*---InnerContent---*/
