@@ -48,10 +48,10 @@ class Competition extends CActiveRecord
 		// NOTE: you should only define rules for those attributes that
 		// will receive user inputs.
 		return array(
-			array('name, type, startDate, endDate, description, solutionDescription, publicVoting', 'required',),
+			array('name, type, startDate, endDate, description, solutionDescription, publicVoting', 'required'),
 			array('type, anonymous, openSolutions, publicVoting, commentsEnabled, acceptMultipleSolutions', 'numerical', 'integerOnly'=>true),
 			array('amount', 'numerical'),
-                        array('awardMonetary', 'numerical'),
+                        array('awardMonetary', 'in','range'=>array('0','1')),
                         array('amount', 'monetaryAward'),
 			// The following rule is used by search().
 			// Please remove those attributes that should not be searched.
@@ -61,7 +61,7 @@ class Competition extends CActiveRecord
         
         public function monetaryAward($attributes, $params) {
             
-            if($this->awardMonetary) {
+            if($this->awardMonetary == 1) {
                 
                 if($this->amount == NULL)
                     $this->addError($this->amount, 'A dollar amount is required');

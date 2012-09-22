@@ -161,7 +161,8 @@ border-radius:5px;
   font:12px Arial, sans-serif;
 }
 #signin_menu label.password { margin-top:4px; }
-#signin_menu .error, .error  { margin-bottom:5px; font-size:14px; color:#FF0000; text-align:left; padding-top:4px; background:url(../images/arrow-down.png) 15px top no-repeat; }
+
+.formError  { font-size:14px; color:#FF0000; text-align:left; padding-top:4px; background:url(../images/arrow-down.png) 15px top no-repeat; }
 
 
 #signin_menu a {

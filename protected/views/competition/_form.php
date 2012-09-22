@@ -39,7 +39,7 @@ $form = $this->beginWidget('CActiveForm', array(
     <p><strong> <?php echo $form->labelEx($model, 'name'); ?> </strong></p>
     <p>
         <?php echo $form->textField($model, 'name', array('class' => 'inputBoxBig')); ?>
-        <?php echo $form->error($model, 'name'); ?>
+        <?php echo $form->error($model, 'name', array('class' => 'formError')); ?>
     </p>
 
     <div class="competitionDateArea">

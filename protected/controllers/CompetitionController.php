@@ -71,11 +71,6 @@ class CompetitionController extends Controller
 		if(isset($_POST['Competition']))
 		{
 			$model->attributes=$_POST['Competition'];
-                    if($model->awardMonetary == 0)
-                            $model->awardMonetary = false;
-                    if($model->awardMonetary == 1)
-                            $model->awardMonetary = true;
-                        
                         
 			if($model->save())
 				$this->redirect(array('view','id'=>$model->id));
@@ -135,6 +130,8 @@ class CompetitionController extends Controller
 	 */
 	public function actionIndex()
 	{
+                $this->layout = 'privateBusiness';
+                
 		$dataProvider=new CActiveDataProvider('Competition');
 		$this->render('index',array(
 			'dataProvider'=>$dataProvider,

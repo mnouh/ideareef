@@ -51,7 +51,7 @@ return array(
 				'<controller:\w+>/<action:\w+>'=>'<controller>/<action>',
                                 'aboutus' => 'account/aboutus',
                                 'companies' => 'account/business',
-                                'competitions' => 'account/competitions',
+                                'competition' => 'competition/index',
                                 'login' => 'account/login',
                                 'signup' => 'account/signup',
                                 'logout' => 'account/logout',
