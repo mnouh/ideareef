@@ -7,7 +7,7 @@ $(document).ready(function() {
          //cssclass  : 'txtArea',
          cancel    : 'Cancel',
          submit    : 'Update',
-         indicator : '<img src="img/indicator.gif">',
+         indicator : '<center><img src="../images/ajax-loader.gif"></center>',
          tooltip   : 'Click to edit...'
      });
      
