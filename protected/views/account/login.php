@@ -13,10 +13,12 @@ $this->pageTitle = Yii::app()->name . ' - Login';
     <div class="login">
         <div class="inside">
             <h3>Email</h3>
-            <p>
+            
 <?php echo $form->textField($model, 'email', array('class' => 'inputBox')); ?>
-<?php echo $form->error($model, 'email'); ?>
-            </p>
+<?php echo $form->error($model, 'email', array('class' => 'error')); ?>
+            <div>
+                &nbsp;
+            </div>
             <h3>Password</h3>
             <p>
 <?php echo $form->passwordField($model, 'password', array('class' => 'inputBox')); ?>

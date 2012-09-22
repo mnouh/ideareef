@@ -187,6 +187,16 @@ class AccountController extends Controller
             
             $this->render('settings');
         }
+        
+        /**
+         * Recover your account, password and etc. 
+         */
+        public function actionRecover()
+        {
+            
+            $this->render('recover');
+            
+        }
 
 	/**
 	 * Logs out the current user and redirect to homepage.

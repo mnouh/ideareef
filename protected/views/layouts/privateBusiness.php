@@ -5,7 +5,7 @@
         <meta name="language" content="en" />
 
         <link rel="stylesheet" type="text/css" href="<?php echo Yii::app()->request->baseUrl; ?>/css/css.css" />
-        
+        <link rel="shortcut icon" type="image/x-icon" href="<?php echo Yii::app()->request->baseUrl; ?>/images/favicon.ico"></link>
         <?php //Yii::app()->clientScript->registerCoreScript('jquery'); ?>
         <?php
         $baseUrl = Yii::app()->baseUrl;
