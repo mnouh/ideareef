@@ -135,32 +135,48 @@ $form = $this->beginWidget('CActiveForm', array(
     <p><strong>Competition Settings</strong></p>
     <table cellspacing="0" cellpadding="0">
         <tr>
-            <td><input type="checkbox" name="checkbox2" value="checkbox"></td>
-            <td>Annonymous hosting hompetition (<a href="#">Remove name</a>) </td>
+            <td> 
+                <?php echo $form->checkBox($model, 'anonymous'); ?>
+                <?php echo $form->error($model, 'anonymous'); ?>
+            </td>
+            <td>Anonymous hosting Competition (<a href="#">Remove name</a>) </td>
         </tr>
         <tr>
-            <td><input type="checkbox" name="checkbox4" value="checkbox"></td>
+            <td> 
+                <?php echo $form->checkBox($model, 'openSolutions'); ?>
+                <?php echo $form->error($model, 'openSolutions'); ?>
+            </td>
             <td>Open solutions for public viewing </td>
         </tr>
         <tr>
             <td>&nbsp;</td>
-            <td><table cellspacing="0" cellpadding="0">
+            <td>
+                <table cellspacing="0" cellpadding="0">
                     <tr>
-                        <td><input type="checkbox" name="checkbox22" value="checkbox"></td>
+                        <td> 
+                            <?php echo $form->checkBox($model, 'publicVoting'); ?>
+                            <?php echo $form->error($model, 'publicVoting'); ?>
+                        </td>
                         <td>Enable public voting (Recommended for small competitions) </td>
                     </tr>
                     <tr>
-                        <td><input type="checkbox" name="checkbox42" value="checkbox"></td>
+                        <td> 
+                            <?php echo $form->checkBox($model, 'commentsEnabled'); ?>
+                            <?php echo $form->error($model, 'commentsEnabled'); ?>
+                        </td>
                         <td>Enable comments </td>
                     </tr>
-
-                </table></td>
+                </table>
+            </td>
         </tr>
         <tr>
-            <td><input type="checkbox" name="checkbox3" value="checkbox"></td>
+            <td> 
+                <?php echo $form->checkBox($model, 'acceptMultipleSolutions'); ?>
+                <?php echo $form->error($model, 'acceptMultipleSolutions'); ?>
+            </td>
             <td>User can submit multiple solutions </td>
         </tr>
-        <tr>
+        <!--<tr>
             <td><input type="checkbox" name="checkbox5" value="checkbox"></td>
             <td>Recurring competitions (4 Left) </td>
         </tr>
@@ -176,15 +192,13 @@ $form = $this->beginWidget('CActiveForm', array(
                     </tr>
 
                 </table></td>
-        </tr>
+        </tr>-->
     </table>
-    <p><strong>Target Neworks</strong></p>
+    <!--<p><strong>Target Neworks</strong></p>
 
-    <p>
-        <input name="textfield3" type="text" class="inputBoxMid">
-    <div class="fLeft"><a href="#">Global (All)</a> </div>
+    <p><input name="textfield3" type="text" class="inputBoxMid"></p>
+    <div class="fLeft"><a href="#">Global (All)</a></div>-->
     <div class="clear"></div>
-    <p>&nbsp;</p>
     <p><strong>Terms &amp; Agreements </strong>  </p>
 
     <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi turpis nisi, sodales ut ornare non, dictum feugiat sapien. Vestibulum cursus vehicula mattis. Integer iaculis convallis massa, non elementum felis mattis ut. Phasellus porttitor, nibh eget eleifend dapibus, turpis leo condimentum dolor, vel feugiat elit risus eget neque.   </p>
