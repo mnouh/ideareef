@@ -7,6 +7,11 @@
  $cs->registerScriptFile($baseUrl.'/js/businessInfo.js');
  
  ?>
+
+<?php
+    echo $model->name;
+?>
+
 <div id="InnerContent">
     <div class="floatLeft">
         <div class="up">
