@@ -20,6 +20,8 @@
  */
 class Competition extends CActiveRecord
 {
+    
+        public $awardMonetary;
 	/**
 	 * Returns the static model of the specified AR class.
 	 * @param string $className active record class name.
@@ -46,14 +48,25 @@ class Competition extends CActiveRecord
 		// NOTE: you should only define rules for those attributes that
 		// will receive user inputs.
 		return array(
-			array('type, startDate, endDate, description, solutionDescription, publicVoting', 'required'),
+			array('name, type, startDate, endDate, description, solutionDescription, publicVoting', 'required',),
 			array('type, anonymous, openSolutions, publicVoting, commentsEnabled, acceptMultipleSolutions', 'numerical', 'integerOnly'=>true),
 			array('amount', 'numerical'),
+                        array('awardMonetary', 'numerical'),
+                        array('amount', 'monetaryAward'),
 			// The following rule is used by search().
 			// Please remove those attributes that should not be searched.
 			array('type, startDate, endDate, description, solutionDescription, amount, anonymous, openSolutions, publicVoting, commentsEnabled, acceptMultipleSolutions', 'safe', 'on'=>'search'),
-		);
+		);      
 	}
+        
+        public function monetaryAward($attributes, $params) {
+            
+            if($this->awardMonetary) {
+                
+                if($this->amount == NULL)
+                    $this->addError($this->amount, 'A dollar amount is required');
+            }
+        }
 
 	/**
 	 * @return array relational rules.
@@ -73,13 +86,14 @@ class Competition extends CActiveRecord
 	{
 		return array(
 			'id' => 'ID',
+                        'name' => 'Competition Name',
 			'businessId' => 'Business',
 			'type' => 'Type',
 			'startDate' => 'Start Date',
 			'endDate' => 'End Date',
 			'description' => 'Description',
 			'solutionDescription' => 'Solution Description',
-			'amount' => 'Amount',
+			'amount' => 'Monetary Amount',
 			'anonymous' => 'Anonymous',
 			'openSolutions' => 'Open Solutions',
 			'publicVoting' => 'Public Voting',

@@ -61,7 +61,9 @@ class CompetitionController extends Controller
 	 */
 	public function actionCreate()
 	{
+                $this->layout = 'privateBusiness';
 		$model=new Competition;
+                $model->awardMonetary = 0;
 
 		// Uncomment the following line if AJAX validation is needed
 		 $this->performAjaxValidation($model, 'competition-form');
@@ -69,6 +71,12 @@ class CompetitionController extends Controller
 		if(isset($_POST['Competition']))
 		{
 			$model->attributes=$_POST['Competition'];
+                    if($model->awardMonetary == 0)
+                            $model->awardMonetary = false;
+                    if($model->awardMonetary == 1)
+                            $model->awardMonetary = true;
+                        
+                        
 			if($model->save())
 				$this->redirect(array('view','id'=>$model->id));
 		}

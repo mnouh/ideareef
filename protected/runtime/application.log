@@ -5575,3 +5575,609 @@ Stack trace:
 REQUEST_URI=/ideareef/images/gplus.png
 HTTP_REFERER=http://localhost/ideareef/competition/create
 ---
+2012/09/22 20:53:15 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "images".' in C:\wamp\www\ideareef\framework\web\CController.php:484
+Stack trace:
+#0 C:\wamp\www\ideareef\framework\web\CController.php(271): CController->missingAction('images')
+#1 C:\wamp\www\ideareef\framework\web\CWebApplication.php(276): CController->run('images')
+#2 C:\wamp\www\ideareef\framework\web\CWebApplication.php(135): CWebApplication->runController('competition/ima...')
+#3 C:\wamp\www\ideareef\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#4 C:\wamp\www\ideareef\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/ideareef/competition/images/gold-profile.png
+HTTP_REFERER=http://localhost/ideareef/competition/create
+---
+2012/09/22 20:53:15 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "images".' in C:\wamp\www\ideareef\framework\web\CController.php:484
+Stack trace:
+#0 C:\wamp\www\ideareef\framework\web\CController.php(271): CController->missingAction('images')
+#1 C:\wamp\www\ideareef\framework\web\CWebApplication.php(276): CController->run('images')
+#2 C:\wamp\www\ideareef\framework\web\CWebApplication.php(135): CWebApplication->runController('competition/ima...')
+#3 C:\wamp\www\ideareef\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#4 C:\wamp\www\ideareef\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/ideareef/competition/images/profile-picture.jpg
+HTTP_REFERER=http://localhost/ideareef/competition/create
+---
+2012/09/22 20:53:15 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "images".' in C:\wamp\www\ideareef\framework\web\CController.php:484
+Stack trace:
+#0 C:\wamp\www\ideareef\framework\web\CController.php(271): CController->missingAction('images')
+#1 C:\wamp\www\ideareef\framework\web\CWebApplication.php(276): CController->run('images')
+#2 C:\wamp\www\ideareef\framework\web\CWebApplication.php(135): CWebApplication->runController('competition/ima...')
+#3 C:\wamp\www\ideareef\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#4 C:\wamp\www\ideareef\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/ideareef/competition/images/no-image-male.gif
+HTTP_REFERER=http://localhost/ideareef/competition/create
+---
+2012/09/22 20:53:15 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "images".' in C:\wamp\www\ideareef\framework\web\CController.php:484
+Stack trace:
+#0 C:\wamp\www\ideareef\framework\web\CController.php(271): CController->missingAction('images')
+#1 C:\wamp\www\ideareef\framework\web\CWebApplication.php(276): CController->run('images')
+#2 C:\wamp\www\ideareef\framework\web\CWebApplication.php(135): CWebApplication->runController('competition/ima...')
+#3 C:\wamp\www\ideareef\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#4 C:\wamp\www\ideareef\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/ideareef/competition/images/red-badge.png
+HTTP_REFERER=http://localhost/ideareef/competition/create
+---
+2012/09/22 20:53:15 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "images".' in C:\wamp\www\ideareef\framework\web\CController.php:484
+Stack trace:
+#0 C:\wamp\www\ideareef\framework\web\CController.php(271): CController->missingAction('images')
+#1 C:\wamp\www\ideareef\framework\web\CWebApplication.php(276): CController->run('images')
+#2 C:\wamp\www\ideareef\framework\web\CWebApplication.php(135): CWebApplication->runController('competition/ima...')
+#3 C:\wamp\www\ideareef\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#4 C:\wamp\www\ideareef\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/ideareef/competition/images/res.png
+HTTP_REFERER=http://localhost/ideareef/competition/create
+---
+2012/09/22 20:53:15 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "images".' in C:\wamp\www\ideareef\framework\web\CController.php:484
+Stack trace:
+#0 C:\wamp\www\ideareef\framework\web\CController.php(271): CController->missingAction('images')
+#1 C:\wamp\www\ideareef\framework\web\CWebApplication.php(276): CController->run('images')
+#2 C:\wamp\www\ideareef\framework\web\CWebApplication.php(135): CWebApplication->runController('competition/ima...')
+#3 C:\wamp\www\ideareef\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#4 C:\wamp\www\ideareef\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/ideareef/competition/images/verified.png
+HTTP_REFERER=http://localhost/ideareef/competition/create
+---
+2012/09/22 20:53:15 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "images".' in C:\wamp\www\ideareef\framework\web\CController.php:484
+Stack trace:
+#0 C:\wamp\www\ideareef\framework\web\CController.php(271): CController->missingAction('images')
+#1 C:\wamp\www\ideareef\framework\web\CWebApplication.php(276): CController->run('images')
+#2 C:\wamp\www\ideareef\framework\web\CWebApplication.php(135): CWebApplication->runController('competition/ima...')
+#3 C:\wamp\www\ideareef\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#4 C:\wamp\www\ideareef\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/ideareef/competition/images/calendar.png
+HTTP_REFERER=http://localhost/ideareef/competition/create
+---
+2012/09/22 20:53:15 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "images".' in C:\wamp\www\ideareef\framework\web\CController.php:484
+Stack trace:
+#0 C:\wamp\www\ideareef\framework\web\CController.php(271): CController->missingAction('images')
+#1 C:\wamp\www\ideareef\framework\web\CWebApplication.php(276): CController->run('images')
+#2 C:\wamp\www\ideareef\framework\web\CWebApplication.php(135): CWebApplication->runController('competition/ima...')
+#3 C:\wamp\www\ideareef\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#4 C:\wamp\www\ideareef\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/ideareef/competition/images/no-image-female.gif
+HTTP_REFERER=http://localhost/ideareef/competition/create
+---
+2012/09/22 21:05:50 [error] [exception.CException] exception 'CException' with message 'CompetitionController contains improperly nested widget tags in its view "C:\wamp\www\ideareef\protected\views\competition\create.php". A CActiveForm widget does not have an endWidget() call.' in C:\wamp\www\ideareef\framework\web\CBaseController.php:102
+Stack trace:
+#0 C:\wamp\www\ideareef\framework\web\CController.php(870): CBaseController->renderFile('C:\wamp\www\ide...', Array, true)
+#1 C:\wamp\www\ideareef\framework\web\CController.php(783): CController->renderPartial('create', Array, true)
+#2 C:\wamp\www\ideareef\protected\controllers\CompetitionController.php(79): CController->render('create', Array)
+#3 C:\wamp\www\ideareef\framework\web\actions\CInlineAction.php(50): CompetitionController->actionCreate()
+#4 C:\wamp\www\ideareef\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#5 C:\wamp\www\ideareef\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#6 C:\wamp\www\ideareef\framework\web\filters\CFilter.php(41): CFilterChain->run()
+#7 C:\wamp\www\ideareef\framework\web\CController.php(1146): CFilter->filter(Object(CFilterChain))
+#8 C:\wamp\www\ideareef\framework\web\filters\CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#9 C:\wamp\www\ideareef\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#10 C:\wamp\www\ideareef\framework\web\CController.php(292): CFilterChain->run()
+#11 C:\wamp\www\ideareef\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 C:\wamp\www\ideareef\framework\web\CWebApplication.php(276): CController->run('create')
+#13 C:\wamp\www\ideareef\framework\web\CWebApplication.php(135): CWebApplication->runController('competition/cre...')
+#14 C:\wamp\www\ideareef\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#15 C:\wamp\www\ideareef\index.php(13): CApplication->run()
+#16 {main}
+REQUEST_URI=/ideareef/competition/create
+---
+2012/09/22 21:06:21 [warning] [application] Failed to set unsafe attribute "name" of "Competition".
+in C:\wamp\www\ideareef\protected\controllers\CompetitionController.php (72)
+in C:\wamp\www\ideareef\index.php (13)
+2012/09/22 21:16:33 [error] [exception.CException] exception 'CException' with message 'CompetitionController has an extra endWidget() call in its view.' in C:\wamp\www\ideareef\framework\web\CBaseController.php:211
+Stack trace:
+#0 C:\wamp\www\ideareef\protected\views\competition\create.php(191): CBaseController->endWidget()
+#1 C:\wamp\www\ideareef\framework\web\CBaseController.php(127): require('C:\wamp\www\ide...')
+#2 C:\wamp\www\ideareef\framework\web\CBaseController.php(96): CBaseController->renderInternal('C:\wamp\www\ide...', Array, true)
+#3 C:\wamp\www\ideareef\framework\web\CController.php(870): CBaseController->renderFile('C:\wamp\www\ide...', Array, true)
+#4 C:\wamp\www\ideareef\framework\web\CController.php(783): CController->renderPartial('create', Array, true)
+#5 C:\wamp\www\ideareef\protected\controllers\CompetitionController.php(79): CController->render('create', Array)
+#6 C:\wamp\www\ideareef\framework\web\actions\CInlineAction.php(50): CompetitionController->actionCreate()
+#7 C:\wamp\www\ideareef\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#8 C:\wamp\www\ideareef\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#9 C:\wamp\www\ideareef\framework\web\filters\CFilter.php(41): CFilterChain->run()
+#10 C:\wamp\www\ideareef\framework\web\CController.php(1146): CFilter->filter(Object(CFilterChain))
+#11 C:\wamp\www\ideareef\framework\web\filters\CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#12 C:\wamp\www\ideareef\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#13 C:\wamp\www\ideareef\framework\web\CController.php(292): CFilterChain->run()
+#14 C:\wamp\www\ideareef\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#15 C:\wamp\www\ideareef\framework\web\CWebApplication.php(276): CController->run('create')
+#16 C:\wamp\www\ideareef\framework\web\CWebApplication.php(135): CWebApplication->runController('competition/cre...')
+#17 C:\wamp\www\ideareef\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#18 C:\wamp\www\ideareef\index.php(13): CApplication->run()
+#19 {main}
+REQUEST_URI=/ideareef/competition/create
+---
+2012/09/22 21:17:21 [error] [exception.CException] exception 'CException' with message 'CompetitionController has an extra endWidget() call in its view.' in C:\wamp\www\ideareef\framework\web\CBaseController.php:211
+Stack trace:
+#0 C:\wamp\www\ideareef\protected\views\competition\create.php(191): CBaseController->endWidget()
+#1 C:\wamp\www\ideareef\framework\web\CBaseController.php(127): require('C:\wamp\www\ide...')
+#2 C:\wamp\www\ideareef\framework\web\CBaseController.php(96): CBaseController->renderInternal('C:\wamp\www\ide...', Array, true)
+#3 C:\wamp\www\ideareef\framework\web\CController.php(870): CBaseController->renderFile('C:\wamp\www\ide...', Array, true)
+#4 C:\wamp\www\ideareef\framework\web\CController.php(783): CController->renderPartial('create', Array, true)
+#5 C:\wamp\www\ideareef\protected\controllers\CompetitionController.php(79): CController->render('create', Array)
+#6 C:\wamp\www\ideareef\framework\web\actions\CInlineAction.php(50): CompetitionController->actionCreate()
+#7 C:\wamp\www\ideareef\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#8 C:\wamp\www\ideareef\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#9 C:\wamp\www\ideareef\framework\web\filters\CFilter.php(41): CFilterChain->run()
+#10 C:\wamp\www\ideareef\framework\web\CController.php(1146): CFilter->filter(Object(CFilterChain))
+#11 C:\wamp\www\ideareef\framework\web\filters\CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#12 C:\wamp\www\ideareef\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#13 C:\wamp\www\ideareef\framework\web\CController.php(292): CFilterChain->run()
+#14 C:\wamp\www\ideareef\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#15 C:\wamp\www\ideareef\framework\web\CWebApplication.php(276): CController->run('create')
+#16 C:\wamp\www\ideareef\framework\web\CWebApplication.php(135): CWebApplication->runController('competition/cre...')
+#17 C:\wamp\www\ideareef\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#18 C:\wamp\www\ideareef\index.php(13): CApplication->run()
+#19 {main}
+REQUEST_URI=/ideareef/competition/create
+---
+2012/09/22 21:21:01 [error] [exception.CException] exception 'CException' with message 'Property "CJuiDatePicker.0" is not defined.' in C:\wamp\www\ideareef\framework\base\CComponent.php:174
+Stack trace:
+#0 C:\wamp\www\ideareef\framework\web\CWidgetFactory.php(162): CComponent->__set('0', Array)
+#1 C:\wamp\www\ideareef\framework\web\CBaseController.php(147): CWidgetFactory->createWidget(Object(CompetitionController), 'zii.widgets.jui...', Array)
+#2 C:\wamp\www\ideareef\framework\web\CBaseController.php(173): CBaseController->createWidget('zii.widgets.jui...', Array)
+#3 C:\wamp\www\ideareef\protected\views\competition\_form.php(42): CBaseController->widget('zii.widgets.jui...', Array)
+#4 C:\wamp\www\ideareef\framework\web\CBaseController.php(127): require('C:\wamp\www\ide...')
+#5 C:\wamp\www\ideareef\framework\web\CBaseController.php(96): CBaseController->renderInternal('C:\wamp\www\ide...', Array, true)
+#6 C:\wamp\www\ideareef\framework\web\CController.php(870): CBaseController->renderFile('C:\wamp\www\ide...', Array, true)
+#7 C:\wamp\www\ideareef\protected\views\competition\create.php(132): CController->renderPartial('_form', Array)
+#8 C:\wamp\www\ideareef\framework\web\CBaseController.php(127): require('C:\wamp\www\ide...')
+#9 C:\wamp\www\ideareef\framework\web\CBaseController.php(96): CBaseController->renderInternal('C:\wamp\www\ide...', Array, true)
+#10 C:\wamp\www\ideareef\framework\web\CController.php(870): CBaseController->renderFile('C:\wamp\www\ide...', Array, true)
+#11 C:\wamp\www\ideareef\framework\web\CController.php(783): CController->renderPartial('create', Array, true)
+#12 C:\wamp\www\ideareef\protected\controllers\CompetitionController.php(79): CController->render('create', Array)
+#13 C:\wamp\www\ideareef\framework\web\actions\CInlineAction.php(50): CompetitionController->actionCreate()
+#14 C:\wamp\www\ideareef\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#15 C:\wamp\www\ideareef\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#16 C:\wamp\www\ideareef\framework\web\filters\CFilter.php(41): CFilterChain->run()
+#17 C:\wamp\www\ideareef\framework\web\CController.php(1146): CFilter->filter(Object(CFilterChain))
+#18 C:\wamp\www\ideareef\framework\web\filters\CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#19 C:\wamp\www\ideareef\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#20 C:\wamp\www\ideareef\framework\web\CController.php(292): CFilterChain->run()
+#21 C:\wamp\www\ideareef\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#22 C:\wamp\www\ideareef\framework\web\CWebApplication.php(276): CController->run('create')
+#23 C:\wamp\www\ideareef\framework\web\CWebApplication.php(135): CWebApplication->runController('competition/cre...')
+#24 C:\wamp\www\ideareef\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#25 C:\wamp\www\ideareef\index.php(13): CApplication->run()
+#26 {main}
+REQUEST_URI=/ideareef/competition/create
+---
+2012/09/22 21:21:51 [warning] [application] Failed to set unsafe attribute "name" of "Competition".
+in C:\wamp\www\ideareef\protected\controllers\CompetitionController.php (177)
+in C:\wamp\www\ideareef\protected\controllers\CompetitionController.php (68)
+in C:\wamp\www\ideareef\index.php (13)
+2012/09/22 21:31:22 [warning] [application] Failed to set unsafe attribute "name" of "Competition".
+in C:\wamp\www\ideareef\protected\controllers\CompetitionController.php (177)
+in C:\wamp\www\ideareef\protected\controllers\CompetitionController.php (68)
+in C:\wamp\www\ideareef\index.php (13)
+2012/09/22 21:35:08 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "pa".' in C:\wamp\www\ideareef\framework\web\CController.php:484
+Stack trace:
+#0 C:\wamp\www\ideareef\framework\web\CController.php(271): CController->missingAction('pa')
+#1 C:\wamp\www\ideareef\framework\web\CWebApplication.php(276): CController->run('pa')
+#2 C:\wamp\www\ideareef\framework\web\CWebApplication.php(135): CWebApplication->runController('business/pa')
+#3 C:\wamp\www\ideareef\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#4 C:\wamp\www\ideareef\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/ideareef/business/pa/
+---
+2012/09/22 21:37:00 [warning] [application] Failed to set unsafe attribute "name" of "Competition".
+in C:\wamp\www\ideareef\protected\controllers\CompetitionController.php (177)
+in C:\wamp\www\ideareef\protected\controllers\CompetitionController.php (68)
+in C:\wamp\www\ideareef\index.php (13)
+2012/09/22 21:39:33 [warning] [application] Failed to set unsafe attribute "name" of "Competition".
+in C:\wamp\www\ideareef\protected\controllers\CompetitionController.php (177)
+in C:\wamp\www\ideareef\protected\controllers\CompetitionController.php (68)
+in C:\wamp\www\ideareef\index.php (13)
+2012/09/22 22:04:02 [warning] [application] Failed to set unsafe attribute "name" of "Competition".
+in C:\wamp\www\ideareef\protected\controllers\CompetitionController.php (177)
+in C:\wamp\www\ideareef\protected\controllers\CompetitionController.php (68)
+in C:\wamp\www\ideareef\index.php (13)
+2012/09/22 22:04:02 [warning] [application] Failed to set unsafe attribute "awardMonetary" of "Competition".
+in C:\wamp\www\ideareef\protected\controllers\CompetitionController.php (177)
+in C:\wamp\www\ideareef\protected\controllers\CompetitionController.php (68)
+in C:\wamp\www\ideareef\index.php (13)
+2012/09/22 22:04:05 [warning] [application] Failed to set unsafe attribute "name" of "Competition".
+in C:\wamp\www\ideareef\protected\controllers\CompetitionController.php (177)
+in C:\wamp\www\ideareef\protected\controllers\CompetitionController.php (68)
+in C:\wamp\www\ideareef\index.php (13)
+2012/09/22 22:04:05 [warning] [application] Failed to set unsafe attribute "awardMonetary" of "Competition".
+in C:\wamp\www\ideareef\protected\controllers\CompetitionController.php (177)
+in C:\wamp\www\ideareef\protected\controllers\CompetitionController.php (68)
+in C:\wamp\www\ideareef\index.php (13)
+2012/09/22 22:04:08 [warning] [application] Failed to set unsafe attribute "name" of "Competition".
+in C:\wamp\www\ideareef\protected\controllers\CompetitionController.php (177)
+in C:\wamp\www\ideareef\protected\controllers\CompetitionController.php (68)
+in C:\wamp\www\ideareef\index.php (13)
+2012/09/22 22:04:08 [warning] [application] Failed to set unsafe attribute "awardMonetary" of "Competition".
+in C:\wamp\www\ideareef\protected\controllers\CompetitionController.php (177)
+in C:\wamp\www\ideareef\protected\controllers\CompetitionController.php (68)
+in C:\wamp\www\ideareef\index.php (13)
+2012/09/22 22:04:13 [warning] [application] Failed to set unsafe attribute "name" of "Competition".
+in C:\wamp\www\ideareef\protected\controllers\CompetitionController.php (177)
+in C:\wamp\www\ideareef\protected\controllers\CompetitionController.php (68)
+in C:\wamp\www\ideareef\index.php (13)
+2012/09/22 22:04:13 [warning] [application] Failed to set unsafe attribute "awardMonetary" of "Competition".
+in C:\wamp\www\ideareef\protected\controllers\CompetitionController.php (177)
+in C:\wamp\www\ideareef\protected\controllers\CompetitionController.php (68)
+in C:\wamp\www\ideareef\index.php (13)
+2012/09/22 22:04:14 [warning] [application] Failed to set unsafe attribute "name" of "Competition".
+in C:\wamp\www\ideareef\protected\controllers\CompetitionController.php (177)
+in C:\wamp\www\ideareef\protected\controllers\CompetitionController.php (68)
+in C:\wamp\www\ideareef\index.php (13)
+2012/09/22 22:04:14 [warning] [application] Failed to set unsafe attribute "awardMonetary" of "Competition".
+in C:\wamp\www\ideareef\protected\controllers\CompetitionController.php (177)
+in C:\wamp\www\ideareef\protected\controllers\CompetitionController.php (68)
+in C:\wamp\www\ideareef\index.php (13)
+2012/09/22 22:04:15 [warning] [application] Failed to set unsafe attribute "name" of "Competition".
+in C:\wamp\www\ideareef\protected\controllers\CompetitionController.php (177)
+in C:\wamp\www\ideareef\protected\controllers\CompetitionController.php (68)
+in C:\wamp\www\ideareef\index.php (13)
+2012/09/22 22:04:15 [warning] [application] Failed to set unsafe attribute "awardMonetary" of "Competition".
+in C:\wamp\www\ideareef\protected\controllers\CompetitionController.php (177)
+in C:\wamp\www\ideareef\protected\controllers\CompetitionController.php (68)
+in C:\wamp\www\ideareef\index.php (13)
+2012/09/22 22:06:09 [warning] [application] Failed to set unsafe attribute "name" of "Competition".
+in C:\wamp\www\ideareef\protected\controllers\CompetitionController.php (177)
+in C:\wamp\www\ideareef\protected\controllers\CompetitionController.php (68)
+in C:\wamp\www\ideareef\index.php (13)
+2012/09/22 22:06:09 [warning] [application] Failed to set unsafe attribute "awardMonetary" of "Competition".
+in C:\wamp\www\ideareef\protected\controllers\CompetitionController.php (177)
+in C:\wamp\www\ideareef\protected\controllers\CompetitionController.php (68)
+in C:\wamp\www\ideareef\index.php (13)
+2012/09/22 22:06:10 [warning] [application] Failed to set unsafe attribute "name" of "Competition".
+in C:\wamp\www\ideareef\protected\controllers\CompetitionController.php (177)
+in C:\wamp\www\ideareef\protected\controllers\CompetitionController.php (68)
+in C:\wamp\www\ideareef\index.php (13)
+2012/09/22 22:06:10 [warning] [application] Failed to set unsafe attribute "awardMonetary" of "Competition".
+in C:\wamp\www\ideareef\protected\controllers\CompetitionController.php (177)
+in C:\wamp\www\ideareef\protected\controllers\CompetitionController.php (68)
+in C:\wamp\www\ideareef\index.php (13)
+2012/09/22 22:06:11 [warning] [application] Failed to set unsafe attribute "name" of "Competition".
+in C:\wamp\www\ideareef\protected\controllers\CompetitionController.php (177)
+in C:\wamp\www\ideareef\protected\controllers\CompetitionController.php (68)
+in C:\wamp\www\ideareef\index.php (13)
+2012/09/22 22:06:11 [warning] [application] Failed to set unsafe attribute "awardMonetary" of "Competition".
+in C:\wamp\www\ideareef\protected\controllers\CompetitionController.php (177)
+in C:\wamp\www\ideareef\protected\controllers\CompetitionController.php (68)
+in C:\wamp\www\ideareef\index.php (13)
+2012/09/22 22:06:12 [warning] [application] Failed to set unsafe attribute "name" of "Competition".
+in C:\wamp\www\ideareef\protected\controllers\CompetitionController.php (177)
+in C:\wamp\www\ideareef\protected\controllers\CompetitionController.php (68)
+in C:\wamp\www\ideareef\index.php (13)
+2012/09/22 22:06:12 [warning] [application] Failed to set unsafe attribute "awardMonetary" of "Competition".
+in C:\wamp\www\ideareef\protected\controllers\CompetitionController.php (177)
+in C:\wamp\www\ideareef\protected\controllers\CompetitionController.php (68)
+in C:\wamp\www\ideareef\index.php (13)
+2012/09/22 22:06:57 [warning] [application] Failed to set unsafe attribute "name" of "Competition".
+in C:\wamp\www\ideareef\protected\controllers\CompetitionController.php (177)
+in C:\wamp\www\ideareef\protected\controllers\CompetitionController.php (68)
+in C:\wamp\www\ideareef\index.php (13)
+2012/09/22 22:06:57 [warning] [application] Failed to set unsafe attribute "awardMonetary" of "Competition".
+in C:\wamp\www\ideareef\protected\controllers\CompetitionController.php (177)
+in C:\wamp\www\ideareef\protected\controllers\CompetitionController.php (68)
+in C:\wamp\www\ideareef\index.php (13)
+2012/09/22 22:06:58 [warning] [application] Failed to set unsafe attribute "name" of "Competition".
+in C:\wamp\www\ideareef\protected\controllers\CompetitionController.php (177)
+in C:\wamp\www\ideareef\protected\controllers\CompetitionController.php (68)
+in C:\wamp\www\ideareef\index.php (13)
+2012/09/22 22:06:58 [warning] [application] Failed to set unsafe attribute "awardMonetary" of "Competition".
+in C:\wamp\www\ideareef\protected\controllers\CompetitionController.php (177)
+in C:\wamp\www\ideareef\protected\controllers\CompetitionController.php (68)
+in C:\wamp\www\ideareef\index.php (13)
+2012/09/22 22:08:56 [warning] [application] Failed to set unsafe attribute "name" of "Competition".
+in C:\wamp\www\ideareef\protected\controllers\CompetitionController.php (177)
+in C:\wamp\www\ideareef\protected\controllers\CompetitionController.php (68)
+in C:\wamp\www\ideareef\index.php (13)
+2012/09/22 22:08:56 [warning] [application] Failed to set unsafe attribute "awardMonetary" of "Competition".
+in C:\wamp\www\ideareef\protected\controllers\CompetitionController.php (177)
+in C:\wamp\www\ideareef\protected\controllers\CompetitionController.php (68)
+in C:\wamp\www\ideareef\index.php (13)
+2012/09/22 22:09:00 [warning] [application] Failed to set unsafe attribute "name" of "Competition".
+in C:\wamp\www\ideareef\protected\controllers\CompetitionController.php (177)
+in C:\wamp\www\ideareef\protected\controllers\CompetitionController.php (68)
+in C:\wamp\www\ideareef\index.php (13)
+2012/09/22 22:09:00 [warning] [application] Failed to set unsafe attribute "awardMonetary" of "Competition".
+in C:\wamp\www\ideareef\protected\controllers\CompetitionController.php (177)
+in C:\wamp\www\ideareef\protected\controllers\CompetitionController.php (68)
+in C:\wamp\www\ideareef\index.php (13)
+2012/09/22 22:09:26 [warning] [application] Failed to set unsafe attribute "name" of "Competition".
+in C:\wamp\www\ideareef\protected\controllers\CompetitionController.php (177)
+in C:\wamp\www\ideareef\protected\controllers\CompetitionController.php (68)
+in C:\wamp\www\ideareef\index.php (13)
+2012/09/22 22:09:26 [warning] [application] Failed to set unsafe attribute "awardMonetary" of "Competition".
+in C:\wamp\www\ideareef\protected\controllers\CompetitionController.php (177)
+in C:\wamp\www\ideareef\protected\controllers\CompetitionController.php (68)
+in C:\wamp\www\ideareef\index.php (13)
+2012/09/22 22:10:37 [warning] [application] Failed to set unsafe attribute "name" of "Competition".
+in C:\wamp\www\ideareef\protected\controllers\CompetitionController.php (177)
+in C:\wamp\www\ideareef\protected\controllers\CompetitionController.php (68)
+in C:\wamp\www\ideareef\index.php (13)
+2012/09/22 22:10:37 [warning] [application] Failed to set unsafe attribute "awardMonetary" of "Competition".
+in C:\wamp\www\ideareef\protected\controllers\CompetitionController.php (177)
+in C:\wamp\www\ideareef\protected\controllers\CompetitionController.php (68)
+in C:\wamp\www\ideareef\index.php (13)
+2012/09/22 22:10:39 [warning] [application] Failed to set unsafe attribute "name" of "Competition".
+in C:\wamp\www\ideareef\protected\controllers\CompetitionController.php (177)
+in C:\wamp\www\ideareef\protected\controllers\CompetitionController.php (68)
+in C:\wamp\www\ideareef\index.php (13)
+2012/09/22 22:10:39 [warning] [application] Failed to set unsafe attribute "awardMonetary" of "Competition".
+in C:\wamp\www\ideareef\protected\controllers\CompetitionController.php (177)
+in C:\wamp\www\ideareef\protected\controllers\CompetitionController.php (68)
+in C:\wamp\www\ideareef\index.php (13)
+2012/09/22 22:10:41 [warning] [application] Failed to set unsafe attribute "name" of "Competition".
+in C:\wamp\www\ideareef\protected\controllers\CompetitionController.php (177)
+in C:\wamp\www\ideareef\protected\controllers\CompetitionController.php (68)
+in C:\wamp\www\ideareef\index.php (13)
+2012/09/22 22:10:41 [warning] [application] Failed to set unsafe attribute "awardMonetary" of "Competition".
+in C:\wamp\www\ideareef\protected\controllers\CompetitionController.php (177)
+in C:\wamp\www\ideareef\protected\controllers\CompetitionController.php (68)
+in C:\wamp\www\ideareef\index.php (13)
+2012/09/22 22:10:41 [warning] [application] Failed to set unsafe attribute "name" of "Competition".
+in C:\wamp\www\ideareef\protected\controllers\CompetitionController.php (177)
+in C:\wamp\www\ideareef\protected\controllers\CompetitionController.php (68)
+in C:\wamp\www\ideareef\index.php (13)
+2012/09/22 22:10:41 [warning] [application] Failed to set unsafe attribute "awardMonetary" of "Competition".
+in C:\wamp\www\ideareef\protected\controllers\CompetitionController.php (177)
+in C:\wamp\www\ideareef\protected\controllers\CompetitionController.php (68)
+in C:\wamp\www\ideareef\index.php (13)
+2012/09/22 22:11:46 [warning] [application] Failed to set unsafe attribute "name" of "Competition".
+in C:\wamp\www\ideareef\protected\controllers\CompetitionController.php (177)
+in C:\wamp\www\ideareef\protected\controllers\CompetitionController.php (68)
+in C:\wamp\www\ideareef\index.php (13)
+2012/09/22 22:11:46 [warning] [application] Failed to set unsafe attribute "awardMonetary" of "Competition".
+in C:\wamp\www\ideareef\protected\controllers\CompetitionController.php (177)
+in C:\wamp\www\ideareef\protected\controllers\CompetitionController.php (68)
+in C:\wamp\www\ideareef\index.php (13)
+2012/09/22 22:11:53 [warning] [application] Failed to set unsafe attribute "name" of "Competition".
+in C:\wamp\www\ideareef\protected\controllers\CompetitionController.php (177)
+in C:\wamp\www\ideareef\protected\controllers\CompetitionController.php (68)
+in C:\wamp\www\ideareef\index.php (13)
+2012/09/22 22:11:53 [warning] [application] Failed to set unsafe attribute "awardMonetary" of "Competition".
+in C:\wamp\www\ideareef\protected\controllers\CompetitionController.php (177)
+in C:\wamp\www\ideareef\protected\controllers\CompetitionController.php (68)
+in C:\wamp\www\ideareef\index.php (13)
+2012/09/22 22:12:32 [warning] [application] Failed to set unsafe attribute "name" of "Competition".
+in C:\wamp\www\ideareef\protected\controllers\CompetitionController.php (177)
+in C:\wamp\www\ideareef\protected\controllers\CompetitionController.php (68)
+in C:\wamp\www\ideareef\index.php (13)
+2012/09/22 22:12:32 [warning] [application] Failed to set unsafe attribute "awardMonetary" of "Competition".
+in C:\wamp\www\ideareef\protected\controllers\CompetitionController.php (177)
+in C:\wamp\www\ideareef\protected\controllers\CompetitionController.php (68)
+in C:\wamp\www\ideareef\index.php (13)
+2012/09/22 22:12:34 [warning] [application] Failed to set unsafe attribute "name" of "Competition".
+in C:\wamp\www\ideareef\protected\controllers\CompetitionController.php (177)
+in C:\wamp\www\ideareef\protected\controllers\CompetitionController.php (68)
+in C:\wamp\www\ideareef\index.php (13)
+2012/09/22 22:12:34 [warning] [application] Failed to set unsafe attribute "awardMonetary" of "Competition".
+in C:\wamp\www\ideareef\protected\controllers\CompetitionController.php (177)
+in C:\wamp\www\ideareef\protected\controllers\CompetitionController.php (68)
+in C:\wamp\www\ideareef\index.php (13)
+2012/09/22 22:12:35 [warning] [application] Failed to set unsafe attribute "name" of "Competition".
+in C:\wamp\www\ideareef\protected\controllers\CompetitionController.php (177)
+in C:\wamp\www\ideareef\protected\controllers\CompetitionController.php (68)
+in C:\wamp\www\ideareef\index.php (13)
+2012/09/22 22:12:35 [warning] [application] Failed to set unsafe attribute "awardMonetary" of "Competition".
+in C:\wamp\www\ideareef\protected\controllers\CompetitionController.php (177)
+in C:\wamp\www\ideareef\protected\controllers\CompetitionController.php (68)
+in C:\wamp\www\ideareef\index.php (13)
+2012/09/22 22:12:36 [warning] [application] Failed to set unsafe attribute "name" of "Competition".
+in C:\wamp\www\ideareef\protected\controllers\CompetitionController.php (177)
+in C:\wamp\www\ideareef\protected\controllers\CompetitionController.php (68)
+in C:\wamp\www\ideareef\index.php (13)
+2012/09/22 22:12:36 [warning] [application] Failed to set unsafe attribute "awardMonetary" of "Competition".
+in C:\wamp\www\ideareef\protected\controllers\CompetitionController.php (177)
+in C:\wamp\www\ideareef\protected\controllers\CompetitionController.php (68)
+in C:\wamp\www\ideareef\index.php (13)
+2012/09/22 22:30:30 [error] [php] include(otherAward.php) [<a href='function.include'>function.include</a>]: failed to open stream: No such file or directory (C:\wamp\www\ideareef\framework\YiiBase.php:419)
+Stack trace:
+#0 C:\wamp\www\ideareef\framework\validators\CValidator.php(171): import()
+#1 C:\wamp\www\ideareef\framework\base\CModel.php(285): createValidator()
+#2 C:\wamp\www\ideareef\framework\base\CModel.php(259): Competition->createValidators()
+#3 C:\wamp\www\ideareef\framework\base\CModel.php(544): Competition->getValidators()
+#4 C:\wamp\www\ideareef\framework\base\CModel.php(466): Competition->getSafeAttributeNames()
+#5 C:\wamp\www\ideareef\framework\base\CComponent.php(153): Competition->setAttributes()
+#6 C:\wamp\www\ideareef\framework\db\ar\CActiveRecord.php(160): Competition->__set()
+#7 C:\wamp\www\ideareef\framework\web\widgets\CActiveForm.php(752): Competition->__set()
+#8 C:\wamp\www\ideareef\protected\controllers\CompetitionController.php(177): validate()
+#9 C:\wamp\www\ideareef\protected\controllers\CompetitionController.php(68): CompetitionController->performAjaxValidation()
+#10 C:\wamp\www\ideareef\framework\web\actions\CInlineAction.php(50): CompetitionController->actionCreate()
+#11 C:\wamp\www\ideareef\framework\web\CController.php(309): CInlineAction->runWithParams()
+#12 C:\wamp\www\ideareef\framework\web\filters\CFilterChain.php(134): CompetitionController->runAction()
+#13 C:\wamp\www\ideareef\framework\web\filters\CFilter.php(41): CFilterChain->run()
+#14 C:\wamp\www\ideareef\framework\web\CController.php(1146): CAccessControlFilter->filter()
+#15 C:\wamp\www\ideareef\framework\web\filters\CInlineFilter.php(59): CompetitionController->filterAccessControl()
+#16 C:\wamp\www\ideareef\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter()
+#17 C:\wamp\www\ideareef\framework\web\CController.php(292): CFilterChain->run()
+#18 C:\wamp\www\ideareef\framework\web\CController.php(266): CompetitionController->runActionWithFilters()
+#19 C:\wamp\www\ideareef\framework\web\CWebApplication.php(276): CompetitionController->run()
+#20 C:\wamp\www\ideareef\framework\web\CWebApplication.php(135): CWebApplication->runController()
+#21 C:\wamp\www\ideareef\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#22 C:\wamp\www\ideareef\index.php(13): CWebApplication->run()
+REQUEST_URI=/ideareef/competition/create
+in C:\wamp\www\ideareef\protected\controllers\CompetitionController.php (177)
+in C:\wamp\www\ideareef\protected\controllers\CompetitionController.php (68)
+in C:\wamp\www\ideareef\index.php (13)
+2012/09/22 22:30:40 [error] [php] include(otherAward.php) [<a href='function.include'>function.include</a>]: failed to open stream: No such file or directory (C:\wamp\www\ideareef\framework\YiiBase.php:419)
+Stack trace:
+#0 C:\wamp\www\ideareef\framework\validators\CValidator.php(171): import()
+#1 C:\wamp\www\ideareef\framework\base\CModel.php(285): createValidator()
+#2 C:\wamp\www\ideareef\framework\base\CModel.php(259): Competition->createValidators()
+#3 C:\wamp\www\ideareef\framework\base\CModel.php(544): Competition->getValidators()
+#4 C:\wamp\www\ideareef\framework\base\CModel.php(466): Competition->getSafeAttributeNames()
+#5 C:\wamp\www\ideareef\framework\base\CComponent.php(153): Competition->setAttributes()
+#6 C:\wamp\www\ideareef\framework\db\ar\CActiveRecord.php(160): Competition->__set()
+#7 C:\wamp\www\ideareef\framework\web\widgets\CActiveForm.php(752): Competition->__set()
+#8 C:\wamp\www\ideareef\protected\controllers\CompetitionController.php(177): validate()
+#9 C:\wamp\www\ideareef\protected\controllers\CompetitionController.php(68): CompetitionController->performAjaxValidation()
+#10 C:\wamp\www\ideareef\framework\web\actions\CInlineAction.php(50): CompetitionController->actionCreate()
+#11 C:\wamp\www\ideareef\framework\web\CController.php(309): CInlineAction->runWithParams()
+#12 C:\wamp\www\ideareef\framework\web\filters\CFilterChain.php(134): CompetitionController->runAction()
+#13 C:\wamp\www\ideareef\framework\web\filters\CFilter.php(41): CFilterChain->run()
+#14 C:\wamp\www\ideareef\framework\web\CController.php(1146): CAccessControlFilter->filter()
+#15 C:\wamp\www\ideareef\framework\web\filters\CInlineFilter.php(59): CompetitionController->filterAccessControl()
+#16 C:\wamp\www\ideareef\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter()
+#17 C:\wamp\www\ideareef\framework\web\CController.php(292): CFilterChain->run()
+#18 C:\wamp\www\ideareef\framework\web\CController.php(266): CompetitionController->runActionWithFilters()
+#19 C:\wamp\www\ideareef\framework\web\CWebApplication.php(276): CompetitionController->run()
+#20 C:\wamp\www\ideareef\framework\web\CWebApplication.php(135): CWebApplication->runController()
+#21 C:\wamp\www\ideareef\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#22 C:\wamp\www\ideareef\index.php(13): CWebApplication->run()
+REQUEST_URI=/ideareef/competition/create
+in C:\wamp\www\ideareef\protected\controllers\CompetitionController.php (177)
+in C:\wamp\www\ideareef\protected\controllers\CompetitionController.php (68)
+in C:\wamp\www\ideareef\index.php (13)
+2012/09/22 22:34:49 [warning] [application] Failed to set unsafe attribute "name" of "Competition".
+in C:\wamp\www\ideareef\protected\controllers\CompetitionController.php (72)
+in C:\wamp\www\ideareef\index.php (13)
+2012/09/22 22:34:49 [warning] [application] Failed to set unsafe attribute "awardMonetary" of "Competition".
+in C:\wamp\www\ideareef\protected\controllers\CompetitionController.php (72)
+in C:\wamp\www\ideareef\index.php (13)
+2012/09/22 22:34:49 [warning] [application] Failed to set unsafe attribute "otherAward" of "Competition".
+in C:\wamp\www\ideareef\protected\controllers\CompetitionController.php (72)
+in C:\wamp\www\ideareef\index.php (13)
+2012/09/22 22:35:45 [warning] [application] Failed to set unsafe attribute "awardMonetary" of "Competition".
+in C:\wamp\www\ideareef\protected\controllers\CompetitionController.php (72)
+in C:\wamp\www\ideareef\index.php (13)
+2012/09/22 22:35:45 [warning] [application] Failed to set unsafe attribute "otherAward" of "Competition".
+in C:\wamp\www\ideareef\protected\controllers\CompetitionController.php (72)
+in C:\wamp\www\ideareef\index.php (13)
+2012/09/22 22:36:02 [warning] [application] Failed to set unsafe attribute "awardMonetary" of "Competition".
+in C:\wamp\www\ideareef\protected\controllers\CompetitionController.php (177)
+in C:\wamp\www\ideareef\protected\controllers\CompetitionController.php (68)
+in C:\wamp\www\ideareef\index.php (13)
+2012/09/22 22:36:02 [warning] [application] Failed to set unsafe attribute "otherAward" of "Competition".
+in C:\wamp\www\ideareef\protected\controllers\CompetitionController.php (177)
+in C:\wamp\www\ideareef\protected\controllers\CompetitionController.php (68)
+in C:\wamp\www\ideareef\index.php (13)
+2012/09/22 22:37:01 [warning] [application] Failed to set unsafe attribute "awardMonetary" of "Competition".
+in C:\wamp\www\ideareef\protected\controllers\CompetitionController.php (178)
+in C:\wamp\www\ideareef\protected\controllers\CompetitionController.php (68)
+in C:\wamp\www\ideareef\index.php (13)
+2012/09/22 22:37:01 [warning] [application] Failed to set unsafe attribute "otherAward" of "Competition".
+in C:\wamp\www\ideareef\protected\controllers\CompetitionController.php (178)
+in C:\wamp\www\ideareef\protected\controllers\CompetitionController.php (68)
+in C:\wamp\www\ideareef\index.php (13)
+2012/09/22 22:37:04 [warning] [application] Failed to set unsafe attribute "awardMonetary" of "Competition".
+in C:\wamp\www\ideareef\protected\controllers\CompetitionController.php (73)
+in C:\wamp\www\ideareef\index.php (13)
+2012/09/22 22:37:04 [warning] [application] Failed to set unsafe attribute "otherAward" of "Competition".
+in C:\wamp\www\ideareef\protected\controllers\CompetitionController.php (73)
+in C:\wamp\www\ideareef\index.php (13)
+2012/09/22 22:37:15 [warning] [application] Failed to set unsafe attribute "awardMonetary" of "Competition".
+in C:\wamp\www\ideareef\protected\controllers\CompetitionController.php (178)
+in C:\wamp\www\ideareef\protected\controllers\CompetitionController.php (68)
+in C:\wamp\www\ideareef\index.php (13)
+2012/09/22 22:37:15 [warning] [application] Failed to set unsafe attribute "otherAward" of "Competition".
+in C:\wamp\www\ideareef\protected\controllers\CompetitionController.php (178)
+in C:\wamp\www\ideareef\protected\controllers\CompetitionController.php (68)
+in C:\wamp\www\ideareef\index.php (13)
+2012/09/22 22:41:24 [warning] [application] Failed to set unsafe attribute "otherAward" of "Competition".
+in C:\wamp\www\ideareef\protected\controllers\CompetitionController.php (79)
+in C:\wamp\www\ideareef\index.php (13)
+2012/09/22 22:41:37 [warning] [application] Failed to set unsafe attribute "otherAward" of "Competition".
+in C:\wamp\www\ideareef\protected\controllers\CompetitionController.php (184)
+in C:\wamp\www\ideareef\protected\controllers\CompetitionController.php (68)
+in C:\wamp\www\ideareef\index.php (13)
+2012/09/22 22:41:38 [warning] [application] Failed to set unsafe attribute "otherAward" of "Competition".
+in C:\wamp\www\ideareef\protected\controllers\CompetitionController.php (79)
+in C:\wamp\www\ideareef\index.php (13)
+2012/09/22 22:42:09 [warning] [application] Failed to set unsafe attribute "otherAward" of "Competition".
+in C:\wamp\www\ideareef\protected\controllers\CompetitionController.php (79)
+in C:\wamp\www\ideareef\index.php (13)
+2012/09/22 22:43:45 [warning] [application] Failed to set unsafe attribute "otherAward" of "Competition".
+in C:\wamp\www\ideareef\protected\controllers\CompetitionController.php (72)
+in C:\wamp\www\ideareef\index.php (13)
+2012/09/22 22:43:53 [warning] [application] Failed to set unsafe attribute "otherAward" of "Competition".
+in C:\wamp\www\ideareef\protected\controllers\CompetitionController.php (72)
+in C:\wamp\www\ideareef\index.php (13)
+2012/09/22 22:44:10 [warning] [application] Failed to set unsafe attribute "otherAward" of "Competition".
+in C:\wamp\www\ideareef\protected\controllers\CompetitionController.php (185)
+in C:\wamp\www\ideareef\protected\controllers\CompetitionController.php (68)
+in C:\wamp\www\ideareef\index.php (13)
+2012/09/22 22:44:13 [warning] [application] Failed to set unsafe attribute "otherAward" of "Competition".
+in C:\wamp\www\ideareef\protected\controllers\CompetitionController.php (72)
+in C:\wamp\www\ideareef\index.php (13)
+2012/09/22 22:44:13 [error] [exception.CException] exception 'CException' with message 'Property "Competition.awardMonetaryn" is not defined.' in C:\wamp\www\ideareef\framework\base\CComponent.php:174
+Stack trace:
+#0 C:\wamp\www\ideareef\framework\db\ar\CActiveRecord.php(160): CComponent->__set('awardMonetaryn', true)
+#1 C:\wamp\www\ideareef\protected\controllers\CompetitionController.php(78): CActiveRecord->__set('awardMonetaryn', true)
+#2 C:\wamp\www\ideareef\framework\web\actions\CInlineAction.php(50): CompetitionController->actionCreate()
+#3 C:\wamp\www\ideareef\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#4 C:\wamp\www\ideareef\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#5 C:\wamp\www\ideareef\framework\web\filters\CFilter.php(41): CFilterChain->run()
+#6 C:\wamp\www\ideareef\framework\web\CController.php(1146): CFilter->filter(Object(CFilterChain))
+#7 C:\wamp\www\ideareef\framework\web\filters\CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#8 C:\wamp\www\ideareef\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#9 C:\wamp\www\ideareef\framework\web\CController.php(292): CFilterChain->run()
+#10 C:\wamp\www\ideareef\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 C:\wamp\www\ideareef\framework\web\CWebApplication.php(276): CController->run('create')
+#12 C:\wamp\www\ideareef\framework\web\CWebApplication.php(135): CWebApplication->runController('competition/cre...')
+#13 C:\wamp\www\ideareef\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#14 C:\wamp\www\ideareef\index.php(13): CApplication->run()
+#15 {main}
+REQUEST_URI=/ideareef/competition/create
+HTTP_REFERER=http://localhost/ideareef/competition/create
+---
+2012/09/22 22:44:37 [warning] [application] Failed to set unsafe attribute "otherAward" of "Competition".
+in C:\wamp\www\ideareef\protected\controllers\CompetitionController.php (185)
+in C:\wamp\www\ideareef\protected\controllers\CompetitionController.php (68)
+in C:\wamp\www\ideareef\index.php (13)
+2012/09/22 22:44:40 [warning] [application] Failed to set unsafe attribute "otherAward" of "Competition".
+in C:\wamp\www\ideareef\protected\controllers\CompetitionController.php (72)
+in C:\wamp\www\ideareef\index.php (13)
+2012/09/22 22:45:56 [warning] [application] Failed to set unsafe attribute "otherAward" of "Competition".
+in C:\wamp\www\ideareef\protected\controllers\CompetitionController.php (72)
+in C:\wamp\www\ideareef\index.php (13)
+2012/09/22 22:47:10 [warning] [application] Failed to set unsafe attribute "otherAward" of "Competition".
+in C:\wamp\www\ideareef\protected\controllers\CompetitionController.php (72)
+in C:\wamp\www\ideareef\index.php (13)
+2012/09/22 22:48:26 [warning] [application] Failed to set unsafe attribute "otherAward" of "Competition".
+in C:\wamp\www\ideareef\protected\controllers\CompetitionController.php (73)
+in C:\wamp\www\ideareef\index.php (13)
+2012/09/22 22:48:58 [warning] [application] Failed to set unsafe attribute "otherAward" of "Competition".
+in C:\wamp\www\ideareef\protected\controllers\CompetitionController.php (73)
+in C:\wamp\www\ideareef\index.php (13)
+2012/09/22 22:53:23 [warning] [application] Failed to set unsafe attribute "otherAward" of "Competition".
+in C:\wamp\www\ideareef\protected\controllers\CompetitionController.php (73)
+in C:\wamp\www\ideareef\index.php (13)
+2012/09/22 22:53:29 [warning] [application] Failed to set unsafe attribute "otherAward" of "Competition".
+in C:\wamp\www\ideareef\protected\controllers\CompetitionController.php (184)
+in C:\wamp\www\ideareef\protected\controllers\CompetitionController.php (69)
+in C:\wamp\www\ideareef\index.php (13)
+2012/09/22 22:53:36 [warning] [application] Failed to set unsafe attribute "otherAward" of "Competition".
+in C:\wamp\www\ideareef\protected\controllers\CompetitionController.php (73)
+in C:\wamp\www\ideareef\index.php (13)
+2012/09/22 22:53:46 [warning] [application] Failed to set unsafe attribute "otherAward" of "Competition".
+in C:\wamp\www\ideareef\protected\controllers\CompetitionController.php (184)
+in C:\wamp\www\ideareef\protected\controllers\CompetitionController.php (69)
+in C:\wamp\www\ideareef\index.php (13)
+2012/09/22 22:53:53 [warning] [application] Failed to set unsafe attribute "otherAward" of "Competition".
+in C:\wamp\www\ideareef\protected\controllers\CompetitionController.php (73)
+in C:\wamp\www\ideareef\index.php (13)
+2012/09/22 22:57:14 [warning] [application] Failed to set unsafe attribute "otherAward" of "Competition".
+in C:\wamp\www\ideareef\protected\controllers\CompetitionController.php (73)
+in C:\wamp\www\ideareef\index.php (13)
