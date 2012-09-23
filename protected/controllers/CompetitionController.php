@@ -131,8 +131,16 @@ class CompetitionController extends Controller
 	public function actionIndex()
 	{
                 $this->layout = 'privateBusiness';
-                
-		$dataProvider=new CActiveDataProvider('Competition');
+                $businessId = Yii::app()->user->id;
+                $condition = 'businessId='.$businessId;
+		$dataProvider=new CActiveDataProvider('Competition',
+                        array(
+                            'criteria'=>array(
+                                                'condition'=>$condition,
+                                                'order'=>'createTime DESC',
+        )
+                    
+                ));
 		$this->render('index',array(
 			'dataProvider'=>$dataProvider,
 		));
