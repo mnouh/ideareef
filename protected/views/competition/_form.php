@@ -1,6 +1,19 @@
 <script type="text/javascript">
     $(document).ready(function(){
         $('textarea').autosize();
+        
+        var isMonetary = $('#Competition_awardMonetary');
+        
+        if(isMonetary.is(':checked')) {
+            
+            var amount = $('#Competition_amount');
+                var amountLabel = $('#Competition_amountLabel');
+                
+                amountLabel.css('visibility', 'visible');
+                amount.css('visibility', 'visible');  
+            
+        }
+        
         $('#Competition_awardMonetary').click(function(){
 
             var thisCheck = $(this);
@@ -35,6 +48,10 @@ $form = $this->beginWidget('CActiveForm', array(
         ));
 ?>
 
+<?php
+
+echo $form->errorSummary($model);
+?>
 <div class="formArea">
     <p><strong> <?php echo $form->labelEx($model, 'name'); ?> </strong></p>
     <p>
@@ -122,7 +139,7 @@ $form = $this->beginWidget('CActiveForm', array(
             <td><strong><?php echo $form->label($model, 'amount', array('id' => 'Competition_amountLabel', 'style' => 'visibility:hidden;')); ?> </strong></td>
             <td>
                 <?php echo $form->textField($model, 'amount', array('class' => 'inputBox', 'style' => 'visibility:hidden;')); ?>
-                <?php echo $form->error($model, 'amount'); ?>
+                <?php echo $form->error($model, 'amount', array('class' => 'formError')); ?>
             </td>
         </tr>
     </table>
@@ -139,7 +156,7 @@ $form = $this->beginWidget('CActiveForm', array(
                 <?php echo $form->checkBox($model, 'anonymous'); ?>
                 <?php echo $form->error($model, 'anonymous'); ?>
             </td>
-            <td>Anonymous hosting Competition (<a href="#">Remove name</a>) </td>
+            <td>Anonymous hosting Competition (<a>Remove name</a>) </td>
         </tr>
         <tr>
             <td> 

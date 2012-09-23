@@ -6,7 +6,6 @@
  * The followings are the available columns in table '{{competition}}':
  * @property integer $id
  * @property integer $businessId
- * @property integer $type
  * @property string $startDate
  * @property string $endDate
  * @property string $description
@@ -21,7 +20,6 @@
 class Competition extends CActiveRecord
 {
     
-        public $awardMonetary;
 	/**
 	 * Returns the static model of the specified AR class.
 	 * @param string $className active record class name.
@@ -48,14 +46,15 @@ class Competition extends CActiveRecord
 		// NOTE: you should only define rules for those attributes that
 		// will receive user inputs.
 		return array(
-			array('name, type, startDate, endDate, description, solutionDescription, publicVoting', 'required'),
-			array('type, anonymous, openSolutions, publicVoting, commentsEnabled, acceptMultipleSolutions', 'numerical', 'integerOnly'=>true),
+			array('name, startDate, endDate, description, solutionDescription, publicVoting', 'required', 'message' => '&#10006; &nbsp; A {attribute} is required.'),
+			array('anonymous, openSolutions, publicVoting, commentsEnabled, acceptMultipleSolutions', 'numerical', 'integerOnly'=>true),
 			array('amount', 'numerical'),
+                        //array('startDate, endDate', 'type', 'type' => 'date' ),
                         array('awardMonetary', 'in','range'=>array('0','1')),
                         array('amount', 'monetaryAward'),
 			// The following rule is used by search().
 			// Please remove those attributes that should not be searched.
-			array('type, startDate, endDate, description, solutionDescription, amount, anonymous, openSolutions, publicVoting, commentsEnabled, acceptMultipleSolutions', 'safe', 'on'=>'search'),
+			array('startDate, endDate, description, solutionDescription, amount, anonymous, openSolutions, publicVoting, commentsEnabled, acceptMultipleSolutions', 'safe', 'on'=>'search'),
 		);      
 	}
         
@@ -64,7 +63,7 @@ class Competition extends CActiveRecord
             if($this->awardMonetary == 1) {
                 
                 if($this->amount == NULL)
-                    $this->addError($this->amount, 'A dollar amount is required');
+                    $this->addError('amount', '&#10006; &nbsp; A dollar amount is required');
             }
         }
 
@@ -88,7 +87,6 @@ class Competition extends CActiveRecord
 			'id' => 'ID',
                         'name' => 'Competition Name',
 			'businessId' => 'Business',
-			'type' => 'Type',
 			'startDate' => 'Start Date',
 			'endDate' => 'End Date',
 			'description' => 'Description',
@@ -153,7 +151,6 @@ class Competition extends CActiveRecord
 
 		$criteria->compare('id',$this->id);
 		$criteria->compare('businessId',$this->businessId);
-		$criteria->compare('type',$this->type);
 		$criteria->compare('startDate',$this->startDate,true);
 		$criteria->compare('endDate',$this->endDate,true);
 		$criteria->compare('description',$this->description,true);

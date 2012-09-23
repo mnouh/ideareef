@@ -20,7 +20,6 @@ $this->menu=array(
 	'attributes'=>array(
 		'id',
 		'businessId',
-		'type',
 		'startDate',
 		'endDate',
 		'description',

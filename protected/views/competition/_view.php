@@ -6,11 +6,7 @@
 
 	<b><?php echo CHtml::encode($data->getAttributeLabel('businessId')); ?>:</b>
 	<?php echo CHtml::encode($data->businessId); ?>
-	<br />
-
-	<b><?php echo CHtml::encode($data->getAttributeLabel('type')); ?>:</b>
-	<?php echo CHtml::encode($data->type); ?>
-	<br />
+        <br />
 
 	<b><?php echo CHtml::encode($data->getAttributeLabel('startDate')); ?>:</b>
 	<?php echo CHtml::encode($data->startDate); ?>
