@@ -1,5 +1,5 @@
-  <div id="InnerContent">
-<div class="fL">
+<div id="InnerContent">
+    <div class="fL bigArea">
   <div class="bottomArea innerMargin">
     <div class="topmenu">
       <ul>
@@ -10,12 +10,9 @@
       </ul>
     </div>
     <div class="inside">
-      <div class="boxes">
+      <div class="boxes selBox">
         <input name="textfield2" type="text" class="inputBoxMid" value="Enter name or zip code or competition">
-		<div class="clear"></div>
-		</div>
-		<div class="boxes selBox">
-        <select name="select">
+		<select name="select">
           <option>Award Type</option>
         </select>
         <select name="select2">
@@ -24,11 +21,11 @@
         <select name="select3">
           <option>Time Remaining</option>
               </select>
-			</div>
-      </div>
-      <div class="boxes">
+		</div>
+		</div>
+    <div class="boxes">
         <div class="bottom">
-          <table cellspacing="0" cellpadding="0">
+          <table width="100%" cellpadding="0" cellspacing="0">
             <tr>
               <td><table width="100%" cellpadding="0" cellspacing="1" class="listTable extra">
                 <tr>
@@ -41,7 +38,7 @@
                   <td class="view"><p><span>1000</span> <strong>Points</strong></p>
                       <p><span>1</span> <strong>Badge</strong></p></td>
                   <td width="110" class="txtCenter"><h3 class="price">$10,000</h3>
-                      <div class="ticker"><img src="images/bar.png" alt="" width="20"></div>
+                      <div class="ticker"><img src="images/bar.png" alt="" width="40"></div>
                     1 Month remains </td>
                 </tr>
                 <tr>
@@ -75,7 +72,7 @@
               <td><table width="100%" cellpadding="0" cellspacing="1" class="listTable extra">
                 <tr>
                   <td class="imageBox"><img src="images/no-image-female.gif" alt=""></td>
-                  <td><a href="#">Weekly Shot Wheel Competition</a><br>
+                  <td><a href="#">Weekly Shot Wheel Competition of Binghamton Univesity</a> <br>
                       <strong>Tom and Marty's</strong> (Binghamton) <br>
                     10 Challengers - None of your network <br>
                     <em>Launced: 05/30/2012 <br>
@@ -196,4 +193,3 @@
 <div class="clear"></div>
 
   </div>
-  

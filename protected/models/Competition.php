@@ -129,6 +129,7 @@ class Competition extends CActiveRecord
             
             $this->businessId = Yii::app()->user->id;
             
+            $this->createTime = new CDbExpression('NOW()');
             
             
             
