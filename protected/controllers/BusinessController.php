@@ -28,7 +28,7 @@ class BusinessController extends Controller {
                 'users' => array('*'),
             ),
             array('allow', // allow authenticated user to perform 'create' and 'update' actions
-                'actions' => array('index', 'changeUsername', 'changepassword', 'create', 'update', 'pavilion', 'pavilionEdit', 'completeProfile', 'edittext', 'editAboutUs'),
+                'actions' => array('index', 'changeUsername', 'changepassword', 'create', 'update', 'pavilion', 'pavilionEdit', 'completeProfile', 'edittext', 'editAboutUs', 'competition'),
                 'users' => array('@'),
             ),
             /*array('allow', // allow admin user to perform 'admin' and 'delete' actions
@@ -73,9 +73,7 @@ class BusinessController extends Controller {
                
                 }
             }
-        }
-        
-        
+        }    
     }
     
     
@@ -241,6 +239,13 @@ class BusinessController extends Controller {
             
             }
             $this->render('pavilionEdit', array('model' => $model));
+        }
+    }
+    
+    public function actionCompetition() {
+        if(Yii::app()->user->isBusiness){
+            $model = Business::model()->findByPk(Yii::app()->user->id);
+            $this->render('competition', array('model' => $model));
         }
     }
     

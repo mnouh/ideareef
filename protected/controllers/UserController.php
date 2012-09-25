@@ -26,7 +26,7 @@ class UserController extends Controller {
                 'users' => array('*'),
             ),
             array('allow', // allow authenticated user to perform 'create' and 'update' actions
-                'actions' => array('index', 'changeName', 'changeUsername', 'changepassword', 'changeZipCode', 'create', 'update', 'completeProfile'),
+                'actions' => array('index', 'changeName', 'changeUsername', 'changepassword', 'changeZipCode', 'create', 'update', 'completeProfile', 'competition'),
                 'users' => array('@'),
             ),
             /*array('allow', // allow admin user to perform 'admin' and 'delete' actions
@@ -191,6 +191,13 @@ class UserController extends Controller {
     {
         $model = User::model()->findByPk(Yii::app()->user->id);
         $this->render('settings', array('model' => $model));
+        
+    }
+    
+    public function actionCompetition()
+    {
+        $model = User::model()->findByPk(Yii::app()->user->id);
+        $this->render('competition', array('model' => $model));
         
     }
     

@@ -133,6 +133,7 @@ class CompetitionController extends Controller
                 $this->layout = 'privateBusiness';
                 $businessId = Yii::app()->user->id;
                 $condition = 'businessId='.$businessId;
+                $model = Business::model()->findByPK(Yii::app()->user->id);
 		$dataProvider=new CActiveDataProvider('Competition',
                         array(
                             'criteria'=>array(
@@ -143,6 +144,7 @@ class CompetitionController extends Controller
                 ));
 		$this->render('index',array(
 			'dataProvider'=>$dataProvider,
+                        'model' => $model,
 		));
 	}
 
