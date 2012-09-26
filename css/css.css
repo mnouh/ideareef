@@ -140,7 +140,7 @@ border-radius:5px;
   right: 0px; 
   margin-top:52px;
   margin-right: 0px;
-  *margin-right: -1px;
+  margin-right: -1px;
   color:#111;
   font:12px Arial, sans-serif;
 }
@@ -162,7 +162,7 @@ border-radius:5px;
 }
 #signin_menu label.password { margin-top:4px; }
 
-.formError  { font-size:12px; color:#FF0000; text-align:left; margin-top:0px; }
+.formError  { font-size:14px; color:#FF0000; text-align:center; width:365px; margin:auto; margin-top:0px; }
 
 
 #signin_menu a {
@@ -290,7 +290,7 @@ border-radius:5px;
 #Content p.imgNxt { margin-bottom:0px; }
 #Content p.imgNxt img { width:50px; margin-right:1px; }
 #Content .noMargins { margin-bottom:0px !important; }	
-#Content .login .error { width:300px; margin:auto; text-align:left; background:url(../images/arrow-down.png) left top no-repeat;  }
+#Content .login .error { /*width:300px; margin:auto;*/ text-align:center;  }
 
 
 /*---InnerContent---*/

@@ -16,19 +16,19 @@ $form = $this->beginWidget('CActiveForm', array(
                 <p><strong>First Name </strong> <span class="errorTxt">*</span> </p>
                 <p>
                     <?php echo $form->textField($model, 'firstName', array('class' => 'inputBox')); ?>
-                    <?php echo $form->error($model, 'firstName'); ?>
+                    <?php echo $form->error($model, 'firstName', array('class' => 'formError')); ?>
                 </p>
 
                 <p><strong>Last Name </strong> <span class="errorTxt">*</span> </p>
                 <p>
                     <?php echo $form->textField($model, 'lastName', array('class' => 'inputBox')); ?>
-                    <?php echo $form->error($model, 'lastName'); ?>
+                    <?php echo $form->error($model, 'lastName', array('class' => 'formError')); ?>
                 </p>
 
                 <p><strong>Email</strong> <span class="errorTxt">*</span></p>
                 <p>
                     <?php echo $form->textField($model, 'email', array('class' => 'inputBox')); ?>
-                    <?php echo $form->error($model, 'email'); ?>
+                    <?php echo $form->error($model, 'email', array('class' => 'formError')); ?>
                 </p>
 
                 <p><strong>Password</strong>  <span class="errorTxt">*</span></p>

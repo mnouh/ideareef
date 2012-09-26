@@ -55,7 +55,7 @@
 					                <label for="remember">Remember me</label>
 					              </p>
 					              
-					              <p class="forgot"> <a href="#">Forgot your password?</a></p>
+					              <p class="forgot"> <a href="<?php echo $this->createUrl('account/recovery'); ?>">Forgot your password?</a></p>
           <?php echo CHtml::endForm();?>
     </fieldset>
   </div>

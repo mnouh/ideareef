@@ -30,7 +30,7 @@ $this->pageTitle = Yii::app()->name . ' - Login';
             <p>
 <?php echo CHtml::submitButton('Login', array('name' => 'Submit', 'class' => 'btn')); ?>
             </p>
-            <p><a href="#">Forgot Password</a> &nbsp;|&nbsp; <a href="#">Recover User e-mail</a></p>
+            <p><a href="<?php echo $this->createUrl('account/recovery'); ?>">Forgot Password</a> &nbsp;|&nbsp; <a href="#">Recover User e-mail</a></p>
             <p>
                 <?php echo $form->checkBox($model, 'rememberMe', array('class' => 'sync')); ?>
 <?php echo $form->label($model, 'rememberMe'); ?>

@@ -191,10 +191,23 @@ class AccountController extends Controller
         /**
          * Recover your account, password and etc. 
          */
-        public function actionRecover()
+        public function actionRecovery()
         {
             
-            $this->render('recover');
+            $model = new RecoveryForm;
+            
+
+        // if it is ajax validation request
+       $this->performAjaxValidation($model, 'account-recovery-form');
+
+		// collect user input data
+		if(isset($_POST['RecoveryForm']))
+		{
+			$model->attributes=$_POST['RecoveryForm'];
+                        
+                }
+            
+            $this->render('recovery', array('model' => $model));
             
         }
 
