@@ -127,15 +127,17 @@
             <div class="clear"></div>
         </div>
         <div class="bottomArea">
+            
             <div class="topmenu">
                 <ul>
-                    <li><a href="#" class="sel">My Solutions</a></li>
-                    <li><a href="#">Description</a></li>
-                    <li><a href="#">Award Details</a></li>
-                    <li><a href="#">Solutions</a></li>
-                    <li><a href="#">Friends</a></li>
+                    <li><a id="myHeader1" href="javascript:showonlyone('newboxes1');">My Solutions</a></li>
+                    <li><a id="myHeader2" href="javascript:showonlyone('newboxes2');">Description</a></li>
+                    <li><a id="myHeader3" href="javascript:showonlyone('newboxes3');">Award Details</a></li>
+                    <li><a id="myHeader3" href="javascript:showonlyone('newboxes4');">Solutions</a></li>
+                    <li><a id="myHeader3" href="javascript:showonlyone('newboxes5');">Friends</a></li>
                 </ul>
             </div>
+            
             <div class="topmenurightsm">
                 <ul>
                     <li><a href="#">Map</a></li>

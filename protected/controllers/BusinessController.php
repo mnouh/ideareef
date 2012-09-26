@@ -28,7 +28,7 @@ class BusinessController extends Controller {
                 'users' => array('*'),
             ),
             array('allow', // allow authenticated user to perform 'create' and 'update' actions
-                'actions' => array('index', 'changeUsername', 'changepassword', 'create', 'update', 'pavilion', 'pavilionEdit', 'completeProfile', 'edittext', 'editAboutUs', 'competition'),
+                'actions' => array('index', 'changeUsername', 'changepassword', 'create', 'update', 'pavilion', 'pavilionEdit', 'completeProfile', 'edittext', 'editAboutUs', 'competition', 'competitionDetail'),
                 'users' => array('@'),
             ),
             /*array('allow', // allow admin user to perform 'admin' and 'delete' actions
@@ -249,6 +249,27 @@ class BusinessController extends Controller {
         }
     }
     
+    
+    
+    public function actioncompetitionDetail($id) {
+        if(Yii::app()->user->isBusiness){
+            $model = Business::model()->findByPk(Yii::app()->user->id);
+            $this->render('competitionDetail', array('model' => $this->loadCompetitionModel($id)));
+        }
+    }
+    
+    /**
+	 * Returns the data model based on the primary key given in the GET variable.
+	 * If the data model is not found, an HTTP exception will be raised.
+	 * @param integer the ID of the model to be loaded
+	 */
+	public function loadCompetitionModel($id)
+	{
+		$model=Competition::model()->findByPk($id);
+		if($model===null)
+			throw new CHttpException(404,'The requested page does not exist.');
+		return $model;
+	}
      public function actioneditText() {
         if(Yii::app()->user->isBusiness){
             
