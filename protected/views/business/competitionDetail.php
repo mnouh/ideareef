@@ -14,10 +14,6 @@
             <div class="fRight">
                 <h2><a href="#">Chris Paquette</a></h2>
                 <p class="pav"><a href="#">Binghamton, NY</a></p>
-                <ul>
-                    <li><a href="#">View Profile </a> </li>
-                    <li><a href="#">View Stats </a>    </li>
-                </ul>
                 <div class="clear"></div>
             </div>
             <div class="clear"></div>

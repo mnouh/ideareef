@@ -8,10 +8,6 @@
  
  ?>
 
-<?php
-    echo $model->name;
-?>
-
 <div id="InnerContent">
     <div class="floatLeft">
         <div class="up">
@@ -27,10 +23,7 @@
             <div class="fRight">
                 <h2><a href="#">Chris Paquette</a></h2>
                 <p class="pav"><a href="#">Binghamton, NY</a></p>
-                <ul>
-                    <li><a href="#">View Profile </a> </li>
-                    <li><a href="#">View Stats </a>    </li>
-                </ul>
+                
                 <div class="clear"></div>
             </div>
             <div class="clear"></div>
@@ -126,7 +119,7 @@
                 <p><a href="#" class="post">Tom and Marty's Pub &amp; Restaurant</a><br>
                     123 State Street<br>
                     Binghamton, NY 13905</p>
-                <p><a href="#" class="smBlueBtn">Refer Friends </a></p>
+                <p><a href="#" class="smBlueBtn">Join Reef </a></p>
                 <div class="clear"></div>
             </div>
             <div class="rht">

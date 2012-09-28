@@ -30,7 +30,7 @@
     
       <ul>
         
-        <li><?php echo CHtml::link('About Us', Yii::app()->request->baseUrl.'/aboutus'); ?></li>
+       <li><?php echo CHtml::link('About Us', Yii::app()->request->baseUrl.'/aboutus'); ?></li>
       <li><?php echo CHtml::link('Business', Yii::app()->request->baseUrl.'/companies'); ?></li>
       <li><?php echo CHtml::link('Competitions', Yii::app()->request->baseUrl.'/account/competitions', array('class' => 'last')); ?></li>
       <li><?php echo CHtml::link('Join', Yii::app()->request->baseUrl.'/signup', array('class' => 'special')); ?></li>

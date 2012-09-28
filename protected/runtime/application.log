@@ -7142,3 +7142,809 @@ REQUEST_URI=/ideareef/business/competitionDetail/6
 in C:\wamp\www\ideareef\protected\views\business\competitionDetail.php (1)
 in C:\wamp\www\ideareef\protected\controllers\BusinessController.php (257)
 in C:\wamp\www\ideareef\index.php (13)
+2012/09/26 22:35:46 [warning] [application] Failed to set unsafe attribute "otherAward" of "Competition".
+in C:\wamp\www\ideareef\protected\controllers\CompetitionController.php (191)
+in C:\wamp\www\ideareef\protected\controllers\CompetitionController.php (69)
+in C:\wamp\www\ideareef\index.php (13)
+2012/09/26 23:27:51 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Your request is invalid.' in C:\wamp\www\ideareef\framework\web\CController.php:337
+Stack trace:
+#0 C:\wamp\www\ideareef\framework\web\CController.php(310): CController->invalidActionParams(Object(CInlineAction))
+#1 C:\wamp\www\ideareef\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#2 C:\wamp\www\ideareef\framework\web\filters\CFilter.php(41): CFilterChain->run()
+#3 C:\wamp\www\ideareef\framework\web\CController.php(1146): CFilter->filter(Object(CFilterChain))
+#4 C:\wamp\www\ideareef\framework\web\filters\CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#5 C:\wamp\www\ideareef\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#6 C:\wamp\www\ideareef\framework\web\CController.php(292): CFilterChain->run()
+#7 C:\wamp\www\ideareef\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 C:\wamp\www\ideareef\framework\web\CWebApplication.php(276): CController->run('view')
+#9 C:\wamp\www\ideareef\framework\web\CWebApplication.php(135): CWebApplication->runController('competition/vie...')
+#10 C:\wamp\www\ideareef\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#11 C:\wamp\www\ideareef\index.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/ideareef/competition/view
+---
+2012/09/26 23:30:31 [error] [php] Undefined variable: competition (C:\wamp\www\ideareef\protected\views\business\index.php:198)
+Stack trace:
+#0 C:\wamp\www\ideareef\framework\web\CController.php(870): BusinessController->renderFile()
+#1 C:\wamp\www\ideareef\framework\web\CController.php(783): BusinessController->renderPartial()
+#2 C:\wamp\www\ideareef\protected\controllers\BusinessController.php(47): BusinessController->render()
+#3 C:\wamp\www\ideareef\framework\web\actions\CInlineAction.php(50): BusinessController->actionIndex()
+#4 C:\wamp\www\ideareef\framework\web\CController.php(309): CInlineAction->runWithParams()
+#5 C:\wamp\www\ideareef\framework\web\filters\CFilterChain.php(134): BusinessController->runAction()
+#6 C:\wamp\www\ideareef\framework\web\filters\CFilter.php(41): CFilterChain->run()
+#7 C:\wamp\www\ideareef\framework\web\CController.php(1146): CAccessControlFilter->filter()
+#8 C:\wamp\www\ideareef\framework\web\filters\CInlineFilter.php(59): BusinessController->filterAccessControl()
+#9 C:\wamp\www\ideareef\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter()
+#10 C:\wamp\www\ideareef\framework\web\CController.php(292): CFilterChain->run()
+#11 C:\wamp\www\ideareef\framework\web\CController.php(266): BusinessController->runActionWithFilters()
+#12 C:\wamp\www\ideareef\framework\web\CWebApplication.php(276): BusinessController->run()
+#13 C:\wamp\www\ideareef\framework\web\CWebApplication.php(135): CWebApplication->runController()
+#14 C:\wamp\www\ideareef\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#15 C:\wamp\www\ideareef\index.php(13): CWebApplication->run()
+REQUEST_URI=/ideareef/business
+in C:\wamp\www\ideareef\protected\views\business\index.php (198)
+in C:\wamp\www\ideareef\protected\controllers\BusinessController.php (47)
+in C:\wamp\www\ideareef\index.php (13)
+2012/09/27 00:27:33 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "images".' in C:\wamp\www\ideareef\framework\web\CController.php:484
+Stack trace:
+#0 C:\wamp\www\ideareef\framework\web\CController.php(271): CController->missingAction('images')
+#1 C:\wamp\www\ideareef\framework\web\CWebApplication.php(276): CController->run('images')
+#2 C:\wamp\www\ideareef\framework\web\CWebApplication.php(135): CWebApplication->runController('account/images/...')
+#3 C:\wamp\www\ideareef\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#4 C:\wamp\www\ideareef\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/ideareef/account/images/no-image-female.gif
+HTTP_REFERER=http://localhost/ideareef/account/competitions
+---
+2012/09/27 00:27:33 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "images".' in C:\wamp\www\ideareef\framework\web\CController.php:484
+Stack trace:
+#0 C:\wamp\www\ideareef\framework\web\CController.php(271): CController->missingAction('images')
+#1 C:\wamp\www\ideareef\framework\web\CWebApplication.php(276): CController->run('images')
+#2 C:\wamp\www\ideareef\framework\web\CWebApplication.php(135): CWebApplication->runController('account/images/...')
+#3 C:\wamp\www\ideareef\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#4 C:\wamp\www\ideareef\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/ideareef/account/images/bar.png
+HTTP_REFERER=http://localhost/ideareef/account/competitions
+---
+2012/09/27 01:52:30 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Your request is invalid.' in C:\wamp\www\ideareef\framework\web\CController.php:337
+Stack trace:
+#0 C:\wamp\www\ideareef\framework\web\CController.php(310): CController->invalidActionParams(Object(CInlineAction))
+#1 C:\wamp\www\ideareef\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#2 C:\wamp\www\ideareef\framework\web\filters\CFilter.php(41): CFilterChain->run()
+#3 C:\wamp\www\ideareef\framework\web\CController.php(1146): CFilter->filter(Object(CFilterChain))
+#4 C:\wamp\www\ideareef\framework\web\filters\CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#5 C:\wamp\www\ideareef\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#6 C:\wamp\www\ideareef\framework\web\CController.php(292): CFilterChain->run()
+#7 C:\wamp\www\ideareef\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 C:\wamp\www\ideareef\framework\web\CWebApplication.php(276): CController->run('view')
+#9 C:\wamp\www\ideareef\framework\web\CWebApplication.php(135): CWebApplication->runController('competition/vie...')
+#10 C:\wamp\www\ideareef\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#11 C:\wamp\www\ideareef\index.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/ideareef/competition/view
+---
+2012/09/27 01:52:53 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Your request is invalid.' in C:\wamp\www\ideareef\framework\web\CController.php:337
+Stack trace:
+#0 C:\wamp\www\ideareef\framework\web\CController.php(310): CController->invalidActionParams(Object(CInlineAction))
+#1 C:\wamp\www\ideareef\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#2 C:\wamp\www\ideareef\framework\web\filters\CFilter.php(41): CFilterChain->run()
+#3 C:\wamp\www\ideareef\framework\web\CController.php(1146): CFilter->filter(Object(CFilterChain))
+#4 C:\wamp\www\ideareef\framework\web\filters\CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#5 C:\wamp\www\ideareef\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#6 C:\wamp\www\ideareef\framework\web\CController.php(292): CFilterChain->run()
+#7 C:\wamp\www\ideareef\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 C:\wamp\www\ideareef\framework\web\CWebApplication.php(276): CController->run('view')
+#9 C:\wamp\www\ideareef\framework\web\CWebApplication.php(135): CWebApplication->runController('competition/vie...')
+#10 C:\wamp\www\ideareef\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#11 C:\wamp\www\ideareef\index.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/ideareef/competition/view
+---
+2012/09/27 01:53:04 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Your request is invalid.' in C:\wamp\www\ideareef\framework\web\CController.php:337
+Stack trace:
+#0 C:\wamp\www\ideareef\framework\web\CController.php(310): CController->invalidActionParams(Object(CInlineAction))
+#1 C:\wamp\www\ideareef\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#2 C:\wamp\www\ideareef\framework\web\filters\CFilter.php(41): CFilterChain->run()
+#3 C:\wamp\www\ideareef\framework\web\CController.php(1146): CFilter->filter(Object(CFilterChain))
+#4 C:\wamp\www\ideareef\framework\web\filters\CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#5 C:\wamp\www\ideareef\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#6 C:\wamp\www\ideareef\framework\web\CController.php(292): CFilterChain->run()
+#7 C:\wamp\www\ideareef\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 C:\wamp\www\ideareef\framework\web\CWebApplication.php(276): CController->run('competitionDeta...')
+#9 C:\wamp\www\ideareef\framework\web\CWebApplication.php(135): CWebApplication->runController('business/compet...')
+#10 C:\wamp\www\ideareef\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#11 C:\wamp\www\ideareef\index.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/ideareef/business/competitionDetail
+---
+2012/09/27 01:54:56 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "lib/jquery.editinplace.js".' in C:\wamp\www\ideareef\framework\web\CWebApplication.php:280
+Stack trace:
+#0 C:\wamp\www\ideareef\framework\web\CWebApplication.php(135): CWebApplication->runController('lib/jquery.edit...')
+#1 C:\wamp\www\ideareef\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\wamp\www\ideareef\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/ideareef/lib/jquery.editinplace.js
+HTTP_REFERER=http://localhost/ideareef/business/pavilionEdit
+---
+2012/09/27 01:56:32 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "lib/jquery.editinplace.js".' in C:\wamp\www\ideareef\framework\web\CWebApplication.php:280
+Stack trace:
+#0 C:\wamp\www\ideareef\framework\web\CWebApplication.php(135): CWebApplication->runController('lib/jquery.edit...')
+#1 C:\wamp\www\ideareef\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\wamp\www\ideareef\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/ideareef/lib/jquery.editinplace.js
+HTTP_REFERER=http://localhost/ideareef/business/pavilionEdit
+---
+2012/09/27 01:57:22 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "lib/jquery.editinplace.js".' in C:\wamp\www\ideareef\framework\web\CWebApplication.php:280
+Stack trace:
+#0 C:\wamp\www\ideareef\framework\web\CWebApplication.php(135): CWebApplication->runController('lib/jquery.edit...')
+#1 C:\wamp\www\ideareef\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\wamp\www\ideareef\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/ideareef/lib/jquery.editinplace.js
+HTTP_REFERER=http://localhost/ideareef/business/pavilionEdit
+---
+2012/09/28 05:18:49 [warning] [application] Failed to set unsafe attribute "otherAward" of "Competition".
+in C:\wamp\www\ideareef\protected\controllers\CompetitionController.php (191)
+in C:\wamp\www\ideareef\protected\controllers\CompetitionController.php (69)
+in C:\wamp\www\ideareef\index.php (13)
+2012/09/28 05:18:50 [warning] [application] Failed to set unsafe attribute "otherAward" of "Competition".
+in C:\wamp\www\ideareef\protected\controllers\CompetitionController.php (191)
+in C:\wamp\www\ideareef\protected\controllers\CompetitionController.php (69)
+in C:\wamp\www\ideareef\index.php (13)
+2012/09/28 05:18:51 [warning] [application] Failed to set unsafe attribute "otherAward" of "Competition".
+in C:\wamp\www\ideareef\protected\controllers\CompetitionController.php (191)
+in C:\wamp\www\ideareef\protected\controllers\CompetitionController.php (69)
+in C:\wamp\www\ideareef\index.php (13)
+2012/09/28 05:19:02 [warning] [application] Failed to set unsafe attribute "otherAward" of "Competition".
+in C:\wamp\www\ideareef\protected\controllers\CompetitionController.php (191)
+in C:\wamp\www\ideareef\protected\controllers\CompetitionController.php (69)
+in C:\wamp\www\ideareef\index.php (13)
+2012/09/28 05:19:03 [warning] [application] Failed to set unsafe attribute "otherAward" of "Competition".
+in C:\wamp\www\ideareef\protected\controllers\CompetitionController.php (191)
+in C:\wamp\www\ideareef\protected\controllers\CompetitionController.php (69)
+in C:\wamp\www\ideareef\index.php (13)
+2012/09/28 05:19:31 [warning] [application] Failed to set unsafe attribute "otherAward" of "Competition".
+in C:\wamp\www\ideareef\protected\controllers\CompetitionController.php (191)
+in C:\wamp\www\ideareef\protected\controllers\CompetitionController.php (69)
+in C:\wamp\www\ideareef\index.php (13)
+2012/09/28 05:19:32 [warning] [application] Failed to set unsafe attribute "otherAward" of "Competition".
+in C:\wamp\www\ideareef\protected\controllers\CompetitionController.php (191)
+in C:\wamp\www\ideareef\protected\controllers\CompetitionController.php (69)
+in C:\wamp\www\ideareef\index.php (13)
+2012/09/28 05:19:33 [warning] [application] Failed to set unsafe attribute "otherAward" of "Competition".
+in C:\wamp\www\ideareef\protected\controllers\CompetitionController.php (191)
+in C:\wamp\www\ideareef\protected\controllers\CompetitionController.php (69)
+in C:\wamp\www\ideareef\index.php (13)
+2012/09/28 05:19:34 [warning] [application] Failed to set unsafe attribute "otherAward" of "Competition".
+in C:\wamp\www\ideareef\protected\controllers\CompetitionController.php (191)
+in C:\wamp\www\ideareef\protected\controllers\CompetitionController.php (69)
+in C:\wamp\www\ideareef\index.php (13)
+2012/09/28 05:19:35 [warning] [application] Failed to set unsafe attribute "otherAward" of "Competition".
+in C:\wamp\www\ideareef\protected\controllers\CompetitionController.php (191)
+in C:\wamp\www\ideareef\protected\controllers\CompetitionController.php (69)
+in C:\wamp\www\ideareef\index.php (13)
+2012/09/28 05:19:35 [warning] [application] Failed to set unsafe attribute "otherAward" of "Competition".
+in C:\wamp\www\ideareef\protected\controllers\CompetitionController.php (191)
+in C:\wamp\www\ideareef\protected\controllers\CompetitionController.php (69)
+in C:\wamp\www\ideareef\index.php (13)
+2012/09/28 05:20:17 [warning] [application] Failed to set unsafe attribute "otherAward" of "Competition".
+in C:\wamp\www\ideareef\protected\controllers\CompetitionController.php (191)
+in C:\wamp\www\ideareef\protected\controllers\CompetitionController.php (69)
+in C:\wamp\www\ideareef\index.php (13)
+2012/09/28 05:20:18 [warning] [application] Failed to set unsafe attribute "otherAward" of "Competition".
+in C:\wamp\www\ideareef\protected\controllers\CompetitionController.php (191)
+in C:\wamp\www\ideareef\protected\controllers\CompetitionController.php (69)
+in C:\wamp\www\ideareef\index.php (13)
+2012/09/28 05:27:03 [error] [php] Trying to get property of non-object (C:\wamp\www\ideareef\protected\views\user\completeProfile.php:2)
+Stack trace:
+#0 C:\wamp\www\ideareef\framework\web\CController.php(870): UserController->renderFile()
+#1 C:\wamp\www\ideareef\framework\web\CController.php(783): UserController->renderPartial()
+#2 C:\wamp\www\ideareef\protected\controllers\UserController.php(207): UserController->render()
+#3 C:\wamp\www\ideareef\framework\web\actions\CInlineAction.php(50): UserController->actionCompleteProfile()
+#4 C:\wamp\www\ideareef\framework\web\CController.php(309): CInlineAction->runWithParams()
+#5 C:\wamp\www\ideareef\framework\web\filters\CFilterChain.php(134): UserController->runAction()
+#6 C:\wamp\www\ideareef\framework\web\filters\CFilter.php(41): CFilterChain->run()
+#7 C:\wamp\www\ideareef\framework\web\CController.php(1146): CAccessControlFilter->filter()
+#8 C:\wamp\www\ideareef\framework\web\filters\CInlineFilter.php(59): UserController->filterAccessControl()
+#9 C:\wamp\www\ideareef\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter()
+#10 C:\wamp\www\ideareef\framework\web\CController.php(292): CFilterChain->run()
+#11 C:\wamp\www\ideareef\framework\web\CController.php(266): UserController->runActionWithFilters()
+#12 C:\wamp\www\ideareef\framework\web\CWebApplication.php(276): UserController->run()
+#13 C:\wamp\www\ideareef\framework\web\CWebApplication.php(135): CWebApplication->runController()
+#14 C:\wamp\www\ideareef\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#15 C:\wamp\www\ideareef\index.php(13): CWebApplication->run()
+REQUEST_URI=/ideareef/user/completeProfile
+in C:\wamp\www\ideareef\protected\views\user\completeProfile.php (2)
+in C:\wamp\www\ideareef\protected\controllers\UserController.php (207)
+in C:\wamp\www\ideareef\index.php (13)
+2012/09/28 05:27:50 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not authorized to perform this action.' in C:\wamp\www\ideareef\framework\web\auth\CAccessControlFilter.php:157
+Stack trace:
+#0 C:\wamp\www\ideareef\framework\web\auth\CAccessControlFilter.php(120): CAccessControlFilter->accessDenied(Object(WebUser), 'You are not aut...')
+#1 C:\wamp\www\ideareef\framework\web\filters\CFilter.php(39): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 C:\wamp\www\ideareef\framework\web\CController.php(1146): CFilter->filter(Object(CFilterChain))
+#3 C:\wamp\www\ideareef\framework\web\filters\CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#4 C:\wamp\www\ideareef\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#5 C:\wamp\www\ideareef\framework\web\CController.php(292): CFilterChain->run()
+#6 C:\wamp\www\ideareef\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 C:\wamp\www\ideareef\framework\web\CWebApplication.php(276): CController->run('view')
+#8 C:\wamp\www\ideareef\framework\web\CWebApplication.php(135): CWebApplication->runController('user/view')
+#9 C:\wamp\www\ideareef\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#10 C:\wamp\www\ideareef\index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/ideareef/user/
+---
+2012/09/28 05:27:55 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "index.phpo".' in C:\wamp\www\ideareef\framework\web\CController.php:484
+Stack trace:
+#0 C:\wamp\www\ideareef\framework\web\CController.php(271): CController->missingAction('index.phpo')
+#1 C:\wamp\www\ideareef\framework\web\CWebApplication.php(276): CController->run('index.phpo')
+#2 C:\wamp\www\ideareef\framework\web\CWebApplication.php(135): CWebApplication->runController('user/index.phpo')
+#3 C:\wamp\www\ideareef\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#4 C:\wamp\www\ideareef\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/ideareef/user/index.phpo
+---
+2012/09/28 05:27:57 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "index.php".' in C:\wamp\www\ideareef\framework\web\CController.php:484
+Stack trace:
+#0 C:\wamp\www\ideareef\framework\web\CController.php(271): CController->missingAction('index.php')
+#1 C:\wamp\www\ideareef\framework\web\CWebApplication.php(276): CController->run('index.php')
+#2 C:\wamp\www\ideareef\framework\web\CWebApplication.php(135): CWebApplication->runController('user/index.php')
+#3 C:\wamp\www\ideareef\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#4 C:\wamp\www\ideareef\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/ideareef/user/index.php
+---
+2012/09/28 05:28:06 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not authorized to perform this action.' in C:\wamp\www\ideareef\framework\web\auth\CAccessControlFilter.php:157
+Stack trace:
+#0 C:\wamp\www\ideareef\framework\web\auth\CAccessControlFilter.php(120): CAccessControlFilter->accessDenied(Object(WebUser), 'You are not aut...')
+#1 C:\wamp\www\ideareef\framework\web\filters\CFilter.php(39): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 C:\wamp\www\ideareef\framework\web\CController.php(1146): CFilter->filter(Object(CFilterChain))
+#3 C:\wamp\www\ideareef\framework\web\filters\CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#4 C:\wamp\www\ideareef\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#5 C:\wamp\www\ideareef\framework\web\CController.php(292): CFilterChain->run()
+#6 C:\wamp\www\ideareef\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 C:\wamp\www\ideareef\framework\web\CWebApplication.php(276): CController->run('view')
+#8 C:\wamp\www\ideareef\framework\web\CWebApplication.php(135): CWebApplication->runController('user/view')
+#9 C:\wamp\www\ideareef\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#10 C:\wamp\www\ideareef\index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/ideareef/user/view
+---
+2012/09/28 05:28:17 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not authorized to perform this action.' in C:\wamp\www\ideareef\framework\web\auth\CAccessControlFilter.php:157
+Stack trace:
+#0 C:\wamp\www\ideareef\framework\web\auth\CAccessControlFilter.php(120): CAccessControlFilter->accessDenied(Object(WebUser), 'You are not aut...')
+#1 C:\wamp\www\ideareef\framework\web\filters\CFilter.php(39): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 C:\wamp\www\ideareef\framework\web\CController.php(1146): CFilter->filter(Object(CFilterChain))
+#3 C:\wamp\www\ideareef\framework\web\filters\CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#4 C:\wamp\www\ideareef\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#5 C:\wamp\www\ideareef\framework\web\CController.php(292): CFilterChain->run()
+#6 C:\wamp\www\ideareef\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 C:\wamp\www\ideareef\framework\web\CWebApplication.php(276): CController->run('settings')
+#8 C:\wamp\www\ideareef\framework\web\CWebApplication.php(135): CWebApplication->runController('user/settings')
+#9 C:\wamp\www\ideareef\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#10 C:\wamp\www\ideareef\index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/ideareef/user/settings
+---
+2012/09/28 05:59:47 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "lib/jquery.editinplace.js".' in C:\wamp\www\ideareef\framework\web\CWebApplication.php:280
+Stack trace:
+#0 C:\wamp\www\ideareef\framework\web\CWebApplication.php(135): CWebApplication->runController('lib/jquery.edit...')
+#1 C:\wamp\www\ideareef\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\wamp\www\ideareef\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/ideareef/lib/jquery.editinplace.js
+HTTP_REFERER=http://localhost/ideareef/business/pavilionEdit
+---
+2012/09/28 20:35:32 [error] [php] PDO::__construct() [<a href='pdo.--construct'>pdo.--construct</a>]: [2002] A connection attempt failed because the connected party did not properly respond after a period of time, or established connecti (trying to connect via tcp://ideareef.com:3306) (C:\wamp\www\ideareef\framework\db\CDbConnection.php:422)
+Stack trace:
+#0 C:\wamp\www\ideareef\framework\db\CDbConnection.php(331): CDbConnection->open()
+#1 C:\wamp\www\ideareef\framework\db\CDbConnection.php(309): CDbConnection->setActive()
+#2 C:\wamp\www\ideareef\framework\base\CModule.php(388): CDbConnection->init()
+#3 C:\wamp\www\ideareef\framework\base\CApplication.php(431): CWebApplication->getComponent()
+#4 C:\wamp\www\ideareef\framework\db\ar\CActiveRecord.php(615): CWebApplication->getDb()
+#5 C:\wamp\www\ideareef\framework\db\ar\CActiveRecord.php(2263): User->getDbConnection()
+#6 C:\wamp\www\ideareef\framework\db\ar\CActiveRecord.php(379): CActiveRecordMetaData->__construct()
+#7 C:\wamp\www\ideareef\protected\models\User.php(35): model()
+#8 C:\wamp\www\ideareef\protected\components\UserIdentity.php(18): model()
+#9 C:\wamp\www\ideareef\protected\models\LoginForm.php(52): UserIdentity->authenticate()
+#10 C:\wamp\www\ideareef\framework\validators\CInlineValidator.php(43): LoginForm->authenticate()
+#11 C:\wamp\www\ideareef\framework\validators\CValidator.php(197): CInlineValidator->validateAttribute()
+#12 C:\wamp\www\ideareef\framework\base\CModel.php(158): CInlineValidator->validate()
+#13 C:\wamp\www\ideareef\framework\web\widgets\CActiveForm.php(753): LoginForm->validate()
+#14 C:\wamp\www\ideareef\protected\controllers\AccountController.php(233): validate()
+#15 C:\wamp\www\ideareef\protected\controllers\AccountController.php(110): AccountController->performAjaxValidation()
+#16 C:\wamp\www\ideareef\framework\web\actions\CInlineAction.php(50): AccountController->actionLogin()
+#17 C:\wamp\www\ideareef\framework\web\CController.php(309): CInlineAction->runWithParams()
+#18 C:\wamp\www\ideareef\framework\web\CController.php(287): AccountController->runAction()
+#19 C:\wamp\www\ideareef\framework\web\CController.php(266): AccountController->runActionWithFilters()
+#20 C:\wamp\www\ideareef\framework\web\CWebApplication.php(276): AccountController->run()
+#21 C:\wamp\www\ideareef\framework\web\CWebApplication.php(135): CWebApplication->runController()
+#22 C:\wamp\www\ideareef\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#23 C:\wamp\www\ideareef\index.php(13): CWebApplication->run()
+REQUEST_URI=/ideareef/account/login
+in C:\wamp\www\ideareef\protected\models\User.php (35)
+in C:\wamp\www\ideareef\protected\components\UserIdentity.php (18)
+in C:\wamp\www\ideareef\protected\models\LoginForm.php (52)
+2012/09/28 20:35:34 [error] [php] PDO::__construct() [<a href='pdo.--construct'>pdo.--construct</a>]: [2002] A connection attempt failed because the connected party did not properly respond after a period of time, or established connecti (trying to connect via tcp://ideareef.com:3306) (C:\wamp\www\ideareef\framework\db\CDbConnection.php:422)
+Stack trace:
+#0 C:\wamp\www\ideareef\framework\db\CDbConnection.php(331): CDbConnection->open()
+#1 C:\wamp\www\ideareef\framework\db\CDbConnection.php(309): CDbConnection->setActive()
+#2 C:\wamp\www\ideareef\framework\base\CModule.php(388): CDbConnection->init()
+#3 C:\wamp\www\ideareef\framework\base\CApplication.php(431): CWebApplication->getComponent()
+#4 C:\wamp\www\ideareef\framework\db\ar\CActiveRecord.php(615): CWebApplication->getDb()
+#5 C:\wamp\www\ideareef\framework\db\ar\CActiveRecord.php(2263): User->getDbConnection()
+#6 C:\wamp\www\ideareef\framework\db\ar\CActiveRecord.php(379): CActiveRecordMetaData->__construct()
+#7 C:\wamp\www\ideareef\protected\models\User.php(35): model()
+#8 C:\wamp\www\ideareef\protected\components\UserIdentity.php(18): model()
+#9 C:\wamp\www\ideareef\protected\models\LoginForm.php(52): UserIdentity->authenticate()
+#10 C:\wamp\www\ideareef\framework\validators\CInlineValidator.php(43): LoginForm->authenticate()
+#11 C:\wamp\www\ideareef\framework\validators\CValidator.php(197): CInlineValidator->validateAttribute()
+#12 C:\wamp\www\ideareef\framework\base\CModel.php(158): CInlineValidator->validate()
+#13 C:\wamp\www\ideareef\framework\web\widgets\CActiveForm.php(753): LoginForm->validate()
+#14 C:\wamp\www\ideareef\protected\controllers\AccountController.php(233): validate()
+#15 C:\wamp\www\ideareef\protected\controllers\AccountController.php(110): AccountController->performAjaxValidation()
+#16 C:\wamp\www\ideareef\framework\web\actions\CInlineAction.php(50): AccountController->actionLogin()
+#17 C:\wamp\www\ideareef\framework\web\CController.php(309): CInlineAction->runWithParams()
+#18 C:\wamp\www\ideareef\framework\web\CController.php(287): AccountController->runAction()
+#19 C:\wamp\www\ideareef\framework\web\CController.php(266): AccountController->runActionWithFilters()
+#20 C:\wamp\www\ideareef\framework\web\CWebApplication.php(276): AccountController->run()
+#21 C:\wamp\www\ideareef\framework\web\CWebApplication.php(135): CWebApplication->runController()
+#22 C:\wamp\www\ideareef\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#23 C:\wamp\www\ideareef\index.php(13): CWebApplication->run()
+REQUEST_URI=/ideareef/account/login
+in C:\wamp\www\ideareef\protected\models\User.php (35)
+in C:\wamp\www\ideareef\protected\components\UserIdentity.php (18)
+in C:\wamp\www\ideareef\protected\models\LoginForm.php (52)
+2012/09/28 20:35:37 [error] [php] PDO::__construct() [<a href='pdo.--construct'>pdo.--construct</a>]: [2002] A connection attempt failed because the connected party did not properly respond after a period of time, or established connecti (trying to connect via tcp://ideareef.com:3306) (C:\wamp\www\ideareef\framework\db\CDbConnection.php:422)
+Stack trace:
+#0 C:\wamp\www\ideareef\framework\db\CDbConnection.php(331): CDbConnection->open()
+#1 C:\wamp\www\ideareef\framework\db\CDbConnection.php(309): CDbConnection->setActive()
+#2 C:\wamp\www\ideareef\framework\base\CModule.php(388): CDbConnection->init()
+#3 C:\wamp\www\ideareef\framework\base\CApplication.php(431): CWebApplication->getComponent()
+#4 C:\wamp\www\ideareef\framework\db\ar\CActiveRecord.php(615): CWebApplication->getDb()
+#5 C:\wamp\www\ideareef\framework\db\ar\CActiveRecord.php(2263): User->getDbConnection()
+#6 C:\wamp\www\ideareef\framework\db\ar\CActiveRecord.php(379): CActiveRecordMetaData->__construct()
+#7 C:\wamp\www\ideareef\protected\models\User.php(35): model()
+#8 C:\wamp\www\ideareef\protected\components\UserIdentity.php(18): model()
+#9 C:\wamp\www\ideareef\protected\models\LoginForm.php(52): UserIdentity->authenticate()
+#10 C:\wamp\www\ideareef\framework\validators\CInlineValidator.php(43): LoginForm->authenticate()
+#11 C:\wamp\www\ideareef\framework\validators\CValidator.php(197): CInlineValidator->validateAttribute()
+#12 C:\wamp\www\ideareef\framework\base\CModel.php(158): CInlineValidator->validate()
+#13 C:\wamp\www\ideareef\framework\web\widgets\CActiveForm.php(753): LoginForm->validate()
+#14 C:\wamp\www\ideareef\protected\controllers\AccountController.php(233): validate()
+#15 C:\wamp\www\ideareef\protected\controllers\AccountController.php(110): AccountController->performAjaxValidation()
+#16 C:\wamp\www\ideareef\framework\web\actions\CInlineAction.php(50): AccountController->actionLogin()
+#17 C:\wamp\www\ideareef\framework\web\CController.php(309): CInlineAction->runWithParams()
+#18 C:\wamp\www\ideareef\framework\web\CController.php(287): AccountController->runAction()
+#19 C:\wamp\www\ideareef\framework\web\CController.php(266): AccountController->runActionWithFilters()
+#20 C:\wamp\www\ideareef\framework\web\CWebApplication.php(276): AccountController->run()
+#21 C:\wamp\www\ideareef\framework\web\CWebApplication.php(135): CWebApplication->runController()
+#22 C:\wamp\www\ideareef\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#23 C:\wamp\www\ideareef\index.php(13): CWebApplication->run()
+REQUEST_URI=/ideareef/account/login
+in C:\wamp\www\ideareef\protected\models\User.php (35)
+in C:\wamp\www\ideareef\protected\components\UserIdentity.php (18)
+in C:\wamp\www\ideareef\protected\models\LoginForm.php (52)
+2012/09/28 20:35:37 [error] [php] PDO::__construct() [<a href='pdo.--construct'>pdo.--construct</a>]: [2002] A connection attempt failed because the connected party did not properly respond after a period of time, or established connecti (trying to connect via tcp://ideareef.com:3306) (C:\wamp\www\ideareef\framework\db\CDbConnection.php:422)
+Stack trace:
+#0 C:\wamp\www\ideareef\framework\db\CDbConnection.php(331): CDbConnection->open()
+#1 C:\wamp\www\ideareef\framework\db\CDbConnection.php(309): CDbConnection->setActive()
+#2 C:\wamp\www\ideareef\framework\base\CModule.php(388): CDbConnection->init()
+#3 C:\wamp\www\ideareef\framework\base\CApplication.php(431): CWebApplication->getComponent()
+#4 C:\wamp\www\ideareef\framework\db\ar\CActiveRecord.php(615): CWebApplication->getDb()
+#5 C:\wamp\www\ideareef\framework\db\ar\CActiveRecord.php(2263): User->getDbConnection()
+#6 C:\wamp\www\ideareef\framework\db\ar\CActiveRecord.php(379): CActiveRecordMetaData->__construct()
+#7 C:\wamp\www\ideareef\protected\models\User.php(35): model()
+#8 C:\wamp\www\ideareef\protected\components\UserIdentity.php(18): model()
+#9 C:\wamp\www\ideareef\protected\models\LoginForm.php(52): UserIdentity->authenticate()
+#10 C:\wamp\www\ideareef\framework\validators\CInlineValidator.php(43): LoginForm->authenticate()
+#11 C:\wamp\www\ideareef\framework\validators\CValidator.php(197): CInlineValidator->validateAttribute()
+#12 C:\wamp\www\ideareef\framework\base\CModel.php(158): CInlineValidator->validate()
+#13 C:\wamp\www\ideareef\framework\web\widgets\CActiveForm.php(753): LoginForm->validate()
+#14 C:\wamp\www\ideareef\protected\controllers\AccountController.php(233): validate()
+#15 C:\wamp\www\ideareef\protected\controllers\AccountController.php(110): AccountController->performAjaxValidation()
+#16 C:\wamp\www\ideareef\framework\web\actions\CInlineAction.php(50): AccountController->actionLogin()
+#17 C:\wamp\www\ideareef\framework\web\CController.php(309): CInlineAction->runWithParams()
+#18 C:\wamp\www\ideareef\framework\web\CController.php(287): AccountController->runAction()
+#19 C:\wamp\www\ideareef\framework\web\CController.php(266): AccountController->runActionWithFilters()
+#20 C:\wamp\www\ideareef\framework\web\CWebApplication.php(276): AccountController->run()
+#21 C:\wamp\www\ideareef\framework\web\CWebApplication.php(135): CWebApplication->runController()
+#22 C:\wamp\www\ideareef\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#23 C:\wamp\www\ideareef\index.php(13): CWebApplication->run()
+REQUEST_URI=/ideareef/account/login
+in C:\wamp\www\ideareef\protected\models\User.php (35)
+in C:\wamp\www\ideareef\protected\components\UserIdentity.php (18)
+in C:\wamp\www\ideareef\protected\models\LoginForm.php (52)
+2012/09/28 20:35:38 [error] [php] PDO::__construct() [<a href='pdo.--construct'>pdo.--construct</a>]: [2002] A connection attempt failed because the connected party did not properly respond after a period of time, or established connecti (trying to connect via tcp://ideareef.com:3306) (C:\wamp\www\ideareef\framework\db\CDbConnection.php:422)
+Stack trace:
+#0 C:\wamp\www\ideareef\framework\db\CDbConnection.php(331): CDbConnection->open()
+#1 C:\wamp\www\ideareef\framework\db\CDbConnection.php(309): CDbConnection->setActive()
+#2 C:\wamp\www\ideareef\framework\base\CModule.php(388): CDbConnection->init()
+#3 C:\wamp\www\ideareef\framework\base\CApplication.php(431): CWebApplication->getComponent()
+#4 C:\wamp\www\ideareef\framework\db\ar\CActiveRecord.php(615): CWebApplication->getDb()
+#5 C:\wamp\www\ideareef\framework\db\ar\CActiveRecord.php(2263): User->getDbConnection()
+#6 C:\wamp\www\ideareef\framework\db\ar\CActiveRecord.php(379): CActiveRecordMetaData->__construct()
+#7 C:\wamp\www\ideareef\protected\models\User.php(35): model()
+#8 C:\wamp\www\ideareef\protected\components\UserIdentity.php(18): model()
+#9 C:\wamp\www\ideareef\protected\models\LoginForm.php(52): UserIdentity->authenticate()
+#10 C:\wamp\www\ideareef\framework\validators\CInlineValidator.php(43): LoginForm->authenticate()
+#11 C:\wamp\www\ideareef\framework\validators\CValidator.php(197): CInlineValidator->validateAttribute()
+#12 C:\wamp\www\ideareef\framework\base\CModel.php(158): CInlineValidator->validate()
+#13 C:\wamp\www\ideareef\framework\web\widgets\CActiveForm.php(753): LoginForm->validate()
+#14 C:\wamp\www\ideareef\protected\controllers\AccountController.php(233): validate()
+#15 C:\wamp\www\ideareef\protected\controllers\AccountController.php(110): AccountController->performAjaxValidation()
+#16 C:\wamp\www\ideareef\framework\web\actions\CInlineAction.php(50): AccountController->actionLogin()
+#17 C:\wamp\www\ideareef\framework\web\CController.php(309): CInlineAction->runWithParams()
+#18 C:\wamp\www\ideareef\framework\web\CController.php(287): AccountController->runAction()
+#19 C:\wamp\www\ideareef\framework\web\CController.php(266): AccountController->runActionWithFilters()
+#20 C:\wamp\www\ideareef\framework\web\CWebApplication.php(276): AccountController->run()
+#21 C:\wamp\www\ideareef\framework\web\CWebApplication.php(135): CWebApplication->runController()
+#22 C:\wamp\www\ideareef\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#23 C:\wamp\www\ideareef\index.php(13): CWebApplication->run()
+REQUEST_URI=/ideareef/account/login
+in C:\wamp\www\ideareef\protected\models\User.php (35)
+in C:\wamp\www\ideareef\protected\components\UserIdentity.php (18)
+in C:\wamp\www\ideareef\protected\models\LoginForm.php (52)
+2012/09/28 20:35:41 [error] [php] PDO::__construct() [<a href='pdo.--construct'>pdo.--construct</a>]: [2002] A connection attempt failed because the connected party did not properly respond after a period of time, or established connecti (trying to connect via tcp://ideareef.com:3306) (C:\wamp\www\ideareef\framework\db\CDbConnection.php:422)
+Stack trace:
+#0 C:\wamp\www\ideareef\framework\db\CDbConnection.php(331): CDbConnection->open()
+#1 C:\wamp\www\ideareef\framework\db\CDbConnection.php(309): CDbConnection->setActive()
+#2 C:\wamp\www\ideareef\framework\base\CModule.php(388): CDbConnection->init()
+#3 C:\wamp\www\ideareef\framework\base\CApplication.php(431): CWebApplication->getComponent()
+#4 C:\wamp\www\ideareef\framework\db\ar\CActiveRecord.php(615): CWebApplication->getDb()
+#5 C:\wamp\www\ideareef\framework\db\ar\CActiveRecord.php(2263): User->getDbConnection()
+#6 C:\wamp\www\ideareef\framework\db\ar\CActiveRecord.php(379): CActiveRecordMetaData->__construct()
+#7 C:\wamp\www\ideareef\protected\models\User.php(35): model()
+#8 C:\wamp\www\ideareef\protected\components\UserIdentity.php(18): model()
+#9 C:\wamp\www\ideareef\protected\models\LoginForm.php(52): UserIdentity->authenticate()
+#10 C:\wamp\www\ideareef\framework\validators\CInlineValidator.php(43): LoginForm->authenticate()
+#11 C:\wamp\www\ideareef\framework\validators\CValidator.php(197): CInlineValidator->validateAttribute()
+#12 C:\wamp\www\ideareef\framework\base\CModel.php(158): CInlineValidator->validate()
+#13 C:\wamp\www\ideareef\framework\web\widgets\CActiveForm.php(753): LoginForm->validate()
+#14 C:\wamp\www\ideareef\protected\controllers\AccountController.php(233): validate()
+#15 C:\wamp\www\ideareef\protected\controllers\AccountController.php(110): AccountController->performAjaxValidation()
+#16 C:\wamp\www\ideareef\framework\web\actions\CInlineAction.php(50): AccountController->actionLogin()
+#17 C:\wamp\www\ideareef\framework\web\CController.php(309): CInlineAction->runWithParams()
+#18 C:\wamp\www\ideareef\framework\web\CController.php(287): AccountController->runAction()
+#19 C:\wamp\www\ideareef\framework\web\CController.php(266): AccountController->runActionWithFilters()
+#20 C:\wamp\www\ideareef\framework\web\CWebApplication.php(276): AccountController->run()
+#21 C:\wamp\www\ideareef\framework\web\CWebApplication.php(135): CWebApplication->runController()
+#22 C:\wamp\www\ideareef\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#23 C:\wamp\www\ideareef\index.php(13): CWebApplication->run()
+REQUEST_URI=/ideareef/account/login
+in C:\wamp\www\ideareef\protected\models\User.php (35)
+in C:\wamp\www\ideareef\protected\components\UserIdentity.php (18)
+in C:\wamp\www\ideareef\protected\models\LoginForm.php (52)
+2012/09/28 20:35:53 [error] [php] PDO::__construct() [<a href='pdo.--construct'>pdo.--construct</a>]: [2002] A connection attempt failed because the connected party did not properly respond after a period of time, or established connecti (trying to connect via tcp://ideareef.com:3306) (C:\wamp\www\ideareef\framework\db\CDbConnection.php:422)
+Stack trace:
+#0 C:\wamp\www\ideareef\framework\db\CDbConnection.php(331): CDbConnection->open()
+#1 C:\wamp\www\ideareef\framework\db\CDbConnection.php(309): CDbConnection->setActive()
+#2 C:\wamp\www\ideareef\framework\base\CModule.php(388): CDbConnection->init()
+#3 C:\wamp\www\ideareef\framework\base\CApplication.php(431): CWebApplication->getComponent()
+#4 C:\wamp\www\ideareef\framework\db\ar\CActiveRecord.php(615): CWebApplication->getDb()
+#5 C:\wamp\www\ideareef\framework\db\ar\CActiveRecord.php(2263): User->getDbConnection()
+#6 C:\wamp\www\ideareef\framework\db\ar\CActiveRecord.php(379): CActiveRecordMetaData->__construct()
+#7 C:\wamp\www\ideareef\protected\models\User.php(35): model()
+#8 C:\wamp\www\ideareef\protected\components\UserIdentity.php(18): model()
+#9 C:\wamp\www\ideareef\protected\models\LoginForm.php(52): UserIdentity->authenticate()
+#10 C:\wamp\www\ideareef\framework\validators\CInlineValidator.php(43): LoginForm->authenticate()
+#11 C:\wamp\www\ideareef\framework\validators\CValidator.php(197): CInlineValidator->validateAttribute()
+#12 C:\wamp\www\ideareef\framework\base\CModel.php(158): CInlineValidator->validate()
+#13 C:\wamp\www\ideareef\framework\web\widgets\CActiveForm.php(753): LoginForm->validate()
+#14 C:\wamp\www\ideareef\protected\controllers\AccountController.php(233): validate()
+#15 C:\wamp\www\ideareef\protected\controllers\AccountController.php(110): AccountController->performAjaxValidation()
+#16 C:\wamp\www\ideareef\framework\web\actions\CInlineAction.php(50): AccountController->actionLogin()
+#17 C:\wamp\www\ideareef\framework\web\CController.php(309): CInlineAction->runWithParams()
+#18 C:\wamp\www\ideareef\framework\web\CController.php(287): AccountController->runAction()
+#19 C:\wamp\www\ideareef\framework\web\CController.php(266): AccountController->runActionWithFilters()
+#20 C:\wamp\www\ideareef\framework\web\CWebApplication.php(276): AccountController->run()
+#21 C:\wamp\www\ideareef\framework\web\CWebApplication.php(135): CWebApplication->runController()
+#22 C:\wamp\www\ideareef\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#23 C:\wamp\www\ideareef\index.php(13): CWebApplication->run()
+REQUEST_URI=/ideareef/account/login
+in C:\wamp\www\ideareef\protected\models\User.php (35)
+in C:\wamp\www\ideareef\protected\components\UserIdentity.php (18)
+in C:\wamp\www\ideareef\protected\models\LoginForm.php (52)
+2012/09/28 20:35:53 [error] [php] PDO::__construct() [<a href='pdo.--construct'>pdo.--construct</a>]: [2002] A connection attempt failed because the connected party did not properly respond after a period of time, or established connecti (trying to connect via tcp://ideareef.com:3306) (C:\wamp\www\ideareef\framework\db\CDbConnection.php:422)
+Stack trace:
+#0 C:\wamp\www\ideareef\framework\db\CDbConnection.php(331): CDbConnection->open()
+#1 C:\wamp\www\ideareef\framework\db\CDbConnection.php(309): CDbConnection->setActive()
+#2 C:\wamp\www\ideareef\framework\base\CModule.php(388): CDbConnection->init()
+#3 C:\wamp\www\ideareef\framework\base\CApplication.php(431): CWebApplication->getComponent()
+#4 C:\wamp\www\ideareef\framework\db\ar\CActiveRecord.php(615): CWebApplication->getDb()
+#5 C:\wamp\www\ideareef\framework\db\ar\CActiveRecord.php(2263): User->getDbConnection()
+#6 C:\wamp\www\ideareef\framework\db\ar\CActiveRecord.php(379): CActiveRecordMetaData->__construct()
+#7 C:\wamp\www\ideareef\protected\models\User.php(35): model()
+#8 C:\wamp\www\ideareef\protected\components\UserIdentity.php(18): model()
+#9 C:\wamp\www\ideareef\protected\models\LoginForm.php(52): UserIdentity->authenticate()
+#10 C:\wamp\www\ideareef\framework\validators\CInlineValidator.php(43): LoginForm->authenticate()
+#11 C:\wamp\www\ideareef\framework\validators\CValidator.php(197): CInlineValidator->validateAttribute()
+#12 C:\wamp\www\ideareef\framework\base\CModel.php(158): CInlineValidator->validate()
+#13 C:\wamp\www\ideareef\framework\web\widgets\CActiveForm.php(753): LoginForm->validate()
+#14 C:\wamp\www\ideareef\protected\controllers\AccountController.php(233): validate()
+#15 C:\wamp\www\ideareef\protected\controllers\AccountController.php(110): AccountController->performAjaxValidation()
+#16 C:\wamp\www\ideareef\framework\web\actions\CInlineAction.php(50): AccountController->actionLogin()
+#17 C:\wamp\www\ideareef\framework\web\CController.php(309): CInlineAction->runWithParams()
+#18 C:\wamp\www\ideareef\framework\web\CController.php(287): AccountController->runAction()
+#19 C:\wamp\www\ideareef\framework\web\CController.php(266): AccountController->runActionWithFilters()
+#20 C:\wamp\www\ideareef\framework\web\CWebApplication.php(276): AccountController->run()
+#21 C:\wamp\www\ideareef\framework\web\CWebApplication.php(135): CWebApplication->runController()
+#22 C:\wamp\www\ideareef\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#23 C:\wamp\www\ideareef\index.php(13): CWebApplication->run()
+REQUEST_URI=/ideareef/account/login
+in C:\wamp\www\ideareef\protected\models\User.php (35)
+in C:\wamp\www\ideareef\protected\components\UserIdentity.php (18)
+in C:\wamp\www\ideareef\protected\models\LoginForm.php (52)
+2012/09/28 20:36:09 [error] [php] PDO::__construct() [<a href='pdo.--construct'>pdo.--construct</a>]: [2002] A connection attempt failed because the connected party did not properly respond after a period of time, or established connecti (trying to connect via tcp://ideareef.com:3306) (C:\wamp\www\ideareef\framework\db\CDbConnection.php:422)
+Stack trace:
+#0 C:\wamp\www\ideareef\framework\db\CDbConnection.php(331): CDbConnection->open()
+#1 C:\wamp\www\ideareef\framework\db\CDbConnection.php(309): CDbConnection->setActive()
+#2 C:\wamp\www\ideareef\framework\base\CModule.php(388): CDbConnection->init()
+#3 C:\wamp\www\ideareef\framework\base\CApplication.php(431): CWebApplication->getComponent()
+#4 C:\wamp\www\ideareef\framework\db\ar\CActiveRecord.php(615): CWebApplication->getDb()
+#5 C:\wamp\www\ideareef\framework\db\ar\CActiveRecord.php(2263): User->getDbConnection()
+#6 C:\wamp\www\ideareef\framework\db\ar\CActiveRecord.php(379): CActiveRecordMetaData->__construct()
+#7 C:\wamp\www\ideareef\protected\models\User.php(35): model()
+#8 C:\wamp\www\ideareef\protected\components\UserIdentity.php(18): model()
+#9 C:\wamp\www\ideareef\protected\models\LoginForm.php(52): UserIdentity->authenticate()
+#10 C:\wamp\www\ideareef\framework\validators\CInlineValidator.php(43): LoginForm->authenticate()
+#11 C:\wamp\www\ideareef\framework\validators\CValidator.php(197): CInlineValidator->validateAttribute()
+#12 C:\wamp\www\ideareef\framework\base\CModel.php(158): CInlineValidator->validate()
+#13 C:\wamp\www\ideareef\protected\controllers\AccountController.php(117): LoginForm->validate()
+#14 C:\wamp\www\ideareef\framework\web\actions\CInlineAction.php(50): AccountController->actionLogin()
+#15 C:\wamp\www\ideareef\framework\web\CController.php(309): CInlineAction->runWithParams()
+#16 C:\wamp\www\ideareef\framework\web\CController.php(287): AccountController->runAction()
+#17 C:\wamp\www\ideareef\framework\web\CController.php(266): AccountController->runActionWithFilters()
+#18 C:\wamp\www\ideareef\framework\web\CWebApplication.php(276): AccountController->run()
+#19 C:\wamp\www\ideareef\framework\web\CWebApplication.php(135): CWebApplication->runController()
+#20 C:\wamp\www\ideareef\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#21 C:\wamp\www\ideareef\index.php(13): CWebApplication->run()
+REQUEST_URI=/ideareef/account/login
+in C:\wamp\www\ideareef\protected\models\User.php (35)
+in C:\wamp\www\ideareef\protected\components\UserIdentity.php (18)
+in C:\wamp\www\ideareef\protected\models\LoginForm.php (52)
+2012/09/28 20:45:06 [warning] [application] Failed to set unsafe attribute "otherAward" of "Competition".
+in C:\wamp\www\ideareef\protected\controllers\CompetitionController.php (191)
+in C:\wamp\www\ideareef\protected\controllers\CompetitionController.php (69)
+in C:\wamp\www\ideareef\index.php (13)
+2012/09/28 20:45:07 [warning] [application] Failed to set unsafe attribute "otherAward" of "Competition".
+in C:\wamp\www\ideareef\protected\controllers\CompetitionController.php (191)
+in C:\wamp\www\ideareef\protected\controllers\CompetitionController.php (69)
+in C:\wamp\www\ideareef\index.php (13)
+2012/09/28 20:47:49 [warning] [application] Failed to set unsafe attribute "otherAward" of "Competition".
+in C:\wamp\www\ideareef\protected\controllers\CompetitionController.php (191)
+in C:\wamp\www\ideareef\protected\controllers\CompetitionController.php (69)
+in C:\wamp\www\ideareef\index.php (13)
+2012/09/28 20:47:53 [warning] [application] Failed to set unsafe attribute "otherAward" of "Competition".
+in C:\wamp\www\ideareef\protected\controllers\CompetitionController.php (191)
+in C:\wamp\www\ideareef\protected\controllers\CompetitionController.php (69)
+in C:\wamp\www\ideareef\index.php (13)
+2012/09/28 20:47:56 [warning] [application] Failed to set unsafe attribute "otherAward" of "Competition".
+in C:\wamp\www\ideareef\protected\controllers\CompetitionController.php (191)
+in C:\wamp\www\ideareef\protected\controllers\CompetitionController.php (69)
+in C:\wamp\www\ideareef\index.php (13)
+2012/09/28 20:47:57 [warning] [application] Failed to set unsafe attribute "otherAward" of "Competition".
+in C:\wamp\www\ideareef\protected\controllers\CompetitionController.php (191)
+in C:\wamp\www\ideareef\protected\controllers\CompetitionController.php (69)
+in C:\wamp\www\ideareef\index.php (13)
+2012/09/28 21:13:28 [warning] [application] Failed to set unsafe attribute "otherAward" of "Competition".
+in C:\wamp\www\ideareef\protected\controllers\CompetitionController.php (191)
+in C:\wamp\www\ideareef\protected\controllers\CompetitionController.php (69)
+in C:\wamp\www\ideareef\index.php (13)
+2012/09/28 21:13:29 [warning] [application] Failed to set unsafe attribute "otherAward" of "Competition".
+in C:\wamp\www\ideareef\protected\controllers\CompetitionController.php (191)
+in C:\wamp\www\ideareef\protected\controllers\CompetitionController.php (69)
+in C:\wamp\www\ideareef\index.php (13)
+2012/09/28 21:13:31 [warning] [application] Failed to set unsafe attribute "otherAward" of "Competition".
+in C:\wamp\www\ideareef\protected\controllers\CompetitionController.php (191)
+in C:\wamp\www\ideareef\protected\controllers\CompetitionController.php (69)
+in C:\wamp\www\ideareef\index.php (13)
+2012/09/28 21:44:37 [error] [exception.CException] exception 'CException' with message 'Property "Competition.nonCaah" is not defined.' in C:\wamp\www\ideareef\framework\base\CComponent.php:131
+Stack trace:
+#0 C:\wamp\www\ideareef\framework\db\ar\CActiveRecord.php(144): CComponent->__get('nonCaah')
+#1 C:\wamp\www\ideareef\framework\web\helpers\CHtml.php(2044): CActiveRecord->__get('nonCaah')
+#2 C:\wamp\www\ideareef\framework\web\helpers\CHtml.php(1347): CHtml::resolveValue(Object(Competition), 'nonCaah')
+#3 C:\wamp\www\ideareef\framework\web\widgets\CActiveForm.php(665): CHtml::activeCheckBox(Object(Competition), 'nonCaah', Array)
+#4 C:\wamp\www\ideareef\protected\views\competition\_form.php(172): CActiveForm->checkBox(Object(Competition), 'nonCaah')
+#5 C:\wamp\www\ideareef\framework\web\CBaseController.php(127): require('C:\wamp\www\ide...')
+#6 C:\wamp\www\ideareef\framework\web\CBaseController.php(96): CBaseController->renderInternal('C:\wamp\www\ide...', Array, true)
+#7 C:\wamp\www\ideareef\framework\web\CController.php(870): CBaseController->renderFile('C:\wamp\www\ide...', Array, true)
+#8 C:\wamp\www\ideareef\protected\views\competition\create.php(138): CController->renderPartial('_form', Array)
+#9 C:\wamp\www\ideareef\framework\web\CBaseController.php(127): require('C:\wamp\www\ide...')
+#10 C:\wamp\www\ideareef\framework\web\CBaseController.php(96): CBaseController->renderInternal('C:\wamp\www\ide...', Array, true)
+#11 C:\wamp\www\ideareef\framework\web\CController.php(870): CBaseController->renderFile('C:\wamp\www\ide...', Array, true)
+#12 C:\wamp\www\ideareef\framework\web\CController.php(783): CController->renderPartial('create', Array, true)
+#13 C:\wamp\www\ideareef\protected\controllers\CompetitionController.php(81): CController->render('create', Array)
+#14 C:\wamp\www\ideareef\framework\web\actions\CInlineAction.php(50): CompetitionController->actionCreate()
+#15 C:\wamp\www\ideareef\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#16 C:\wamp\www\ideareef\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#17 C:\wamp\www\ideareef\framework\web\filters\CFilter.php(41): CFilterChain->run()
+#18 C:\wamp\www\ideareef\framework\web\CController.php(1146): CFilter->filter(Object(CFilterChain))
+#19 C:\wamp\www\ideareef\framework\web\filters\CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#20 C:\wamp\www\ideareef\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#21 C:\wamp\www\ideareef\framework\web\CController.php(292): CFilterChain->run()
+#22 C:\wamp\www\ideareef\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#23 C:\wamp\www\ideareef\framework\web\CWebApplication.php(276): CController->run('create')
+#24 C:\wamp\www\ideareef\framework\web\CWebApplication.php(135): CWebApplication->runController('competition/cre...')
+#25 C:\wamp\www\ideareef\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#26 C:\wamp\www\ideareef\index.php(13): CApplication->run()
+#27 {main}
+REQUEST_URI=/ideareef/competition/create
+---
+2012/09/28 21:45:26 [warning] [application] Failed to set unsafe attribute "nonCash" of "Competition".
+in C:\wamp\www\ideareef\protected\controllers\CompetitionController.php (191)
+in C:\wamp\www\ideareef\protected\controllers\CompetitionController.php (69)
+in C:\wamp\www\ideareef\index.php (13)
+2012/09/28 21:45:26 [warning] [application] Failed to set unsafe attribute "estimatedValue" of "Competition".
+in C:\wamp\www\ideareef\protected\controllers\CompetitionController.php (191)
+in C:\wamp\www\ideareef\protected\controllers\CompetitionController.php (69)
+in C:\wamp\www\ideareef\index.php (13)
+2012/09/28 21:45:26 [warning] [application] Failed to set unsafe attribute "otherAward" of "Competition".
+in C:\wamp\www\ideareef\protected\controllers\CompetitionController.php (191)
+in C:\wamp\www\ideareef\protected\controllers\CompetitionController.php (69)
+in C:\wamp\www\ideareef\index.php (13)
+2012/09/28 21:46:04 [warning] [application] Failed to set unsafe attribute "nonCash" of "Competition".
+in C:\wamp\www\ideareef\protected\controllers\CompetitionController.php (191)
+in C:\wamp\www\ideareef\protected\controllers\CompetitionController.php (69)
+in C:\wamp\www\ideareef\index.php (13)
+2012/09/28 21:46:04 [warning] [application] Failed to set unsafe attribute "estimatedValue" of "Competition".
+in C:\wamp\www\ideareef\protected\controllers\CompetitionController.php (191)
+in C:\wamp\www\ideareef\protected\controllers\CompetitionController.php (69)
+in C:\wamp\www\ideareef\index.php (13)
+2012/09/28 21:46:04 [warning] [application] Failed to set unsafe attribute "otherAward" of "Competition".
+in C:\wamp\www\ideareef\protected\controllers\CompetitionController.php (191)
+in C:\wamp\www\ideareef\protected\controllers\CompetitionController.php (69)
+in C:\wamp\www\ideareef\index.php (13)
+2012/09/28 21:49:23 [warning] [application] Failed to set unsafe attribute "nonCash" of "Competition".
+in C:\wamp\www\ideareef\protected\controllers\CompetitionController.php (191)
+in C:\wamp\www\ideareef\protected\controllers\CompetitionController.php (69)
+in C:\wamp\www\ideareef\index.php (13)
+2012/09/28 21:49:23 [warning] [application] Failed to set unsafe attribute "estimatedValue" of "Competition".
+in C:\wamp\www\ideareef\protected\controllers\CompetitionController.php (191)
+in C:\wamp\www\ideareef\protected\controllers\CompetitionController.php (69)
+in C:\wamp\www\ideareef\index.php (13)
+2012/09/28 21:49:23 [warning] [application] Failed to set unsafe attribute "otherAward" of "Competition".
+in C:\wamp\www\ideareef\protected\controllers\CompetitionController.php (191)
+in C:\wamp\www\ideareef\protected\controllers\CompetitionController.php (69)
+in C:\wamp\www\ideareef\index.php (13)
+2012/09/28 21:50:40 [warning] [application] Failed to set unsafe attribute "nonCash" of "Competition".
+in C:\wamp\www\ideareef\protected\controllers\CompetitionController.php (191)
+in C:\wamp\www\ideareef\protected\controllers\CompetitionController.php (69)
+in C:\wamp\www\ideareef\index.php (13)
+2012/09/28 21:50:40 [warning] [application] Failed to set unsafe attribute "estimatedValue" of "Competition".
+in C:\wamp\www\ideareef\protected\controllers\CompetitionController.php (191)
+in C:\wamp\www\ideareef\protected\controllers\CompetitionController.php (69)
+in C:\wamp\www\ideareef\index.php (13)
+2012/09/28 21:50:40 [warning] [application] Failed to set unsafe attribute "otherAward" of "Competition".
+in C:\wamp\www\ideareef\protected\controllers\CompetitionController.php (191)
+in C:\wamp\www\ideareef\protected\controllers\CompetitionController.php (69)
+in C:\wamp\www\ideareef\index.php (13)
+2012/09/28 21:50:42 [warning] [application] Failed to set unsafe attribute "nonCash" of "Competition".
+in C:\wamp\www\ideareef\protected\controllers\CompetitionController.php (191)
+in C:\wamp\www\ideareef\protected\controllers\CompetitionController.php (69)
+in C:\wamp\www\ideareef\index.php (13)
+2012/09/28 21:50:42 [warning] [application] Failed to set unsafe attribute "estimatedValue" of "Competition".
+in C:\wamp\www\ideareef\protected\controllers\CompetitionController.php (191)
+in C:\wamp\www\ideareef\protected\controllers\CompetitionController.php (69)
+in C:\wamp\www\ideareef\index.php (13)
+2012/09/28 21:50:42 [warning] [application] Failed to set unsafe attribute "otherAward" of "Competition".
+in C:\wamp\www\ideareef\protected\controllers\CompetitionController.php (191)
+in C:\wamp\www\ideareef\protected\controllers\CompetitionController.php (69)
+in C:\wamp\www\ideareef\index.php (13)
+2012/09/28 21:51:12 [warning] [application] Failed to set unsafe attribute "nonCash" of "Competition".
+in C:\wamp\www\ideareef\protected\controllers\CompetitionController.php (191)
+in C:\wamp\www\ideareef\protected\controllers\CompetitionController.php (69)
+in C:\wamp\www\ideareef\index.php (13)
+2012/09/28 21:51:12 [warning] [application] Failed to set unsafe attribute "estimatedValue" of "Competition".
+in C:\wamp\www\ideareef\protected\controllers\CompetitionController.php (191)
+in C:\wamp\www\ideareef\protected\controllers\CompetitionController.php (69)
+in C:\wamp\www\ideareef\index.php (13)
+2012/09/28 21:51:12 [warning] [application] Failed to set unsafe attribute "otherAward" of "Competition".
+in C:\wamp\www\ideareef\protected\controllers\CompetitionController.php (191)
+in C:\wamp\www\ideareef\protected\controllers\CompetitionController.php (69)
+in C:\wamp\www\ideareef\index.php (13)
+2012/09/28 21:51:22 [warning] [application] Failed to set unsafe attribute "nonCash" of "Competition".
+in C:\wamp\www\ideareef\protected\controllers\CompetitionController.php (191)
+in C:\wamp\www\ideareef\protected\controllers\CompetitionController.php (69)
+in C:\wamp\www\ideareef\index.php (13)
+2012/09/28 21:51:22 [warning] [application] Failed to set unsafe attribute "estimatedValue" of "Competition".
+in C:\wamp\www\ideareef\protected\controllers\CompetitionController.php (191)
+in C:\wamp\www\ideareef\protected\controllers\CompetitionController.php (69)
+in C:\wamp\www\ideareef\index.php (13)
+2012/09/28 21:51:22 [warning] [application] Failed to set unsafe attribute "otherAward" of "Competition".
+in C:\wamp\www\ideareef\protected\controllers\CompetitionController.php (191)
+in C:\wamp\www\ideareef\protected\controllers\CompetitionController.php (69)
+in C:\wamp\www\ideareef\index.php (13)
+2012/09/28 21:53:31 [warning] [application] Failed to set unsafe attribute "nonCash" of "Competition".
+in C:\wamp\www\ideareef\protected\controllers\CompetitionController.php (191)
+in C:\wamp\www\ideareef\protected\controllers\CompetitionController.php (69)
+in C:\wamp\www\ideareef\index.php (13)
+2012/09/28 21:53:31 [warning] [application] Failed to set unsafe attribute "estimatedValue" of "Competition".
+in C:\wamp\www\ideareef\protected\controllers\CompetitionController.php (191)
+in C:\wamp\www\ideareef\protected\controllers\CompetitionController.php (69)
+in C:\wamp\www\ideareef\index.php (13)
+2012/09/28 21:53:31 [warning] [application] Failed to set unsafe attribute "otherAward" of "Competition".
+in C:\wamp\www\ideareef\protected\controllers\CompetitionController.php (191)
+in C:\wamp\www\ideareef\protected\controllers\CompetitionController.php (69)
+in C:\wamp\www\ideareef\index.php (13)
+2012/09/28 22:09:20 [error] [exception.CException] exception 'CException' with message 'Property "Business.status" is not defined.' in C:\wamp\www\ideareef\framework\base\CComponent.php:131
+Stack trace:
+#0 C:\wamp\www\ideareef\framework\db\ar\CActiveRecord.php(144): CComponent->__get('status')
+#1 C:\wamp\www\ideareef\framework\web\helpers\CHtml.php(2044): CActiveRecord->__get('status')
+#2 C:\wamp\www\ideareef\framework\web\helpers\CHtml.php(1258): CHtml::resolveValue(Object(Business), 'status')
+#3 C:\wamp\www\ideareef\protected\views\business\index.php(108): CHtml::activeTextArea(Object(Business), 'status', Array)
+#4 C:\wamp\www\ideareef\framework\web\CBaseController.php(127): require('C:\wamp\www\ide...')
+#5 C:\wamp\www\ideareef\framework\web\CBaseController.php(96): CBaseController->renderInternal('C:\wamp\www\ide...', Array, true)
+#6 C:\wamp\www\ideareef\framework\web\CController.php(870): CBaseController->renderFile('C:\wamp\www\ide...', Array, true)
+#7 C:\wamp\www\ideareef\framework\web\CController.php(783): CController->renderPartial('index', Array, true)
+#8 C:\wamp\www\ideareef\protected\controllers\BusinessController.php(47): CController->render('index', Array)
+#9 C:\wamp\www\ideareef\framework\web\actions\CInlineAction.php(50): BusinessController->actionIndex()
+#10 C:\wamp\www\ideareef\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#11 C:\wamp\www\ideareef\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#12 C:\wamp\www\ideareef\framework\web\filters\CFilter.php(41): CFilterChain->run()
+#13 C:\wamp\www\ideareef\framework\web\CController.php(1146): CFilter->filter(Object(CFilterChain))
+#14 C:\wamp\www\ideareef\framework\web\filters\CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#15 C:\wamp\www\ideareef\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#16 C:\wamp\www\ideareef\framework\web\CController.php(292): CFilterChain->run()
+#17 C:\wamp\www\ideareef\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#18 C:\wamp\www\ideareef\framework\web\CWebApplication.php(276): CController->run('index')
+#19 C:\wamp\www\ideareef\framework\web\CWebApplication.php(135): CWebApplication->runController('business/index')
+#20 C:\wamp\www\ideareef\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#21 C:\wamp\www\ideareef\index.php(13): CApplication->run()
+#22 {main}
+REQUEST_URI=/ideareef/business/
+---
+2012/09/28 22:09:28 [error] [php] strpos() expects parameter 1 to be string, array given (C:\wamp\www\ideareef\framework\web\helpers\CHtml.php:1992)
+Stack trace:
+#0 C:\wamp\www\ideareef\framework\web\helpers\CHtml.php(1254): resolveNameID()
+#1 C:\wamp\www\ideareef\protected\views\business\index.php(108): activeTextArea()
+#2 C:\wamp\www\ideareef\framework\web\CBaseController.php(127): require()
+#3 C:\wamp\www\ideareef\framework\web\CBaseController.php(96): BusinessController->renderInternal()
+#4 C:\wamp\www\ideareef\framework\web\CController.php(870): BusinessController->renderFile()
+#5 C:\wamp\www\ideareef\framework\web\CController.php(783): BusinessController->renderPartial()
+#6 C:\wamp\www\ideareef\protected\controllers\BusinessController.php(47): BusinessController->render()
+#7 C:\wamp\www\ideareef\framework\web\actions\CInlineAction.php(50): BusinessController->actionIndex()
+#8 C:\wamp\www\ideareef\framework\web\CController.php(309): CInlineAction->runWithParams()
+#9 C:\wamp\www\ideareef\framework\web\filters\CFilterChain.php(134): BusinessController->runAction()
+#10 C:\wamp\www\ideareef\framework\web\filters\CFilter.php(41): CFilterChain->run()
+#11 C:\wamp\www\ideareef\framework\web\CController.php(1146): CAccessControlFilter->filter()
+#12 C:\wamp\www\ideareef\framework\web\filters\CInlineFilter.php(59): BusinessController->filterAccessControl()
+#13 C:\wamp\www\ideareef\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter()
+#14 C:\wamp\www\ideareef\framework\web\CController.php(292): CFilterChain->run()
+#15 C:\wamp\www\ideareef\framework\web\CController.php(266): BusinessController->runActionWithFilters()
+#16 C:\wamp\www\ideareef\framework\web\CWebApplication.php(276): BusinessController->run()
+#17 C:\wamp\www\ideareef\framework\web\CWebApplication.php(135): CWebApplication->runController()
+#18 C:\wamp\www\ideareef\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#19 C:\wamp\www\ideareef\index.php(13): CWebApplication->run()
+REQUEST_URI=/ideareef/business/
+in C:\wamp\www\ideareef\protected\views\business\index.php (108)
+in C:\wamp\www\ideareef\protected\controllers\BusinessController.php (47)
+in C:\wamp\www\ideareef\index.php (13)
+2012/09/28 22:12:08 [error] [exception.CException] exception 'CException' with message 'Property "Business.status" is not defined.' in C:\wamp\www\ideareef\framework\base\CComponent.php:131
+Stack trace:
+#0 C:\wamp\www\ideareef\framework\db\ar\CActiveRecord.php(144): CComponent->__get('status')
+#1 C:\wamp\www\ideareef\framework\web\helpers\CHtml.php(2044): CActiveRecord->__get('status')
+#2 C:\wamp\www\ideareef\framework\web\helpers\CHtml.php(1258): CHtml::resolveValue(Object(Business), 'status')
+#3 C:\wamp\www\ideareef\protected\views\business\index.php(108): CHtml::activeTextArea(Object(Business), 'status', Array)
+#4 C:\wamp\www\ideareef\framework\web\CBaseController.php(127): require('C:\wamp\www\ide...')
+#5 C:\wamp\www\ideareef\framework\web\CBaseController.php(96): CBaseController->renderInternal('C:\wamp\www\ide...', Array, true)
+#6 C:\wamp\www\ideareef\framework\web\CController.php(870): CBaseController->renderFile('C:\wamp\www\ide...', Array, true)
+#7 C:\wamp\www\ideareef\framework\web\CController.php(783): CController->renderPartial('index', Array, true)
+#8 C:\wamp\www\ideareef\protected\controllers\BusinessController.php(47): CController->render('index', Array)
+#9 C:\wamp\www\ideareef\framework\web\actions\CInlineAction.php(50): BusinessController->actionIndex()
+#10 C:\wamp\www\ideareef\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#11 C:\wamp\www\ideareef\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#12 C:\wamp\www\ideareef\framework\web\filters\CFilter.php(41): CFilterChain->run()
+#13 C:\wamp\www\ideareef\framework\web\CController.php(1146): CFilter->filter(Object(CFilterChain))
+#14 C:\wamp\www\ideareef\framework\web\filters\CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#15 C:\wamp\www\ideareef\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#16 C:\wamp\www\ideareef\framework\web\CController.php(292): CFilterChain->run()
+#17 C:\wamp\www\ideareef\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#18 C:\wamp\www\ideareef\framework\web\CWebApplication.php(276): CController->run('index')
+#19 C:\wamp\www\ideareef\framework\web\CWebApplication.php(135): CWebApplication->runController('business/index')
+#20 C:\wamp\www\ideareef\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#21 C:\wamp\www\ideareef\index.php(13): CApplication->run()
+#22 {main}
+REQUEST_URI=/ideareef/business/
+---

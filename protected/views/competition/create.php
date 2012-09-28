@@ -1,10 +1,9 @@
 <?php
-    Yii::app()->getClientScript()->registerCoreScript('jquery');
-         $baseUrl = Yii::app()->baseUrl;
- $cs = Yii::app()->getClientScript();
- $cs->registerScriptFile($baseUrl.'/js/jquery.autosize.js');
- 
- ?>
+Yii::app()->getClientScript()->registerCoreScript('jquery');
+$baseUrl = Yii::app()->baseUrl;
+$cs = Yii::app()->getClientScript();
+$cs->registerScriptFile($baseUrl . '/js/jquery.autosize.js');
+?>
 <div id="InnerContent">
     <div class="floatLeft">
         <div class="up">
@@ -20,10 +19,6 @@
             <div class="fRight">
                 <h2><a href="#">Chris Paquette</a></h2>
                 <p class="pav"><a href="#">Binghamton, NY</a></p>
-                <ul>
-                    <li><a href="#">View Profile </a> </li>
-                    <li><a href="#">View Stats </a>    </li>
-                </ul>
                 <div class="clear"></div>
             </div>
             <div class="clear"></div>
@@ -47,7 +42,7 @@
         </div>
         <div class="box">
             <div class="top">
-                <h2>Friends <a href="#">(2325)</a> </h2>
+                <h2>Supporters <a href="#">(2325)</a> </h2>
                 <div class="fR"><a href="#">View All</a></div>
                 <div class="clear"></div>
             </div>
@@ -73,12 +68,16 @@
         </div>
         <div class="box">
             <div class="top">
-                <h2>My Competitions <a href="#">(4)</a></h2>
+                <h2>Open Competitions <a href="#">(4)</a></h2>
                 <div class="fR"><a href="#">View All</a></div>
                 <div class="clear"></div>
             </div>
             <div class="profiles">
                 <ul>
+                    <li><a href="#"><img src="<?php echo Yii::app()->request->baseUrl; ?>/images/no-image-male.gif" alt=""></a></li>
+                    <li><a href="#"><img src="<?php echo Yii::app()->request->baseUrl; ?>/images/no-image-male.gif" alt=""></a></li>
+                    <li><a href="#"><img src="<?php echo Yii::app()->request->baseUrl; ?>/images/no-image-male.gif" alt=""></a></li>
+                    <li><a href="#"><img src="<?php echo Yii::app()->request->baseUrl; ?>/images/no-image-male.gif" alt=""></a></li>
                     <li><a href="#"><img src="<?php echo Yii::app()->request->baseUrl; ?>/images/no-image-male.gif" alt=""></a></li>
                     <li><a href="#"><img src="<?php echo Yii::app()->request->baseUrl; ?>/images/no-image-male.gif" alt=""></a></li>
                     <li><a href="#"><img src="<?php echo Yii::app()->request->baseUrl; ?>/images/no-image-male.gif" alt=""></a></li>
@@ -90,18 +89,12 @@
         </div>
         <div class="box">
             <div class="top">
-                <h2>Badges <a href="#">(10)</a></h2>
+                <h2>Open Surges <a href="#">(10)</a></h2>
                 <div class="fR"><a href="#">View All</a></div>
                 <div class="clear"></div>
             </div>
             <div class="profiles">
                 <ul>
-                    <li><a href="#"><img src="<?php echo Yii::app()->request->baseUrl; ?>/images/no-image-male.gif" alt=""></a></li>
-                    <li><a href="#"><img src="<?php echo Yii::app()->request->baseUrl; ?>/images/no-image-male.gif" alt=""></a></li>
-                    <li><a href="#"><img src="<?php echo Yii::app()->request->baseUrl; ?>/images/no-image-male.gif" alt=""></a></li>
-                    <li><a href="#"><img src="<?php echo Yii::app()->request->baseUrl; ?>/images/no-image-male.gif" alt=""></a></li>
-                    <li><a href="#"><img src="<?php echo Yii::app()->request->baseUrl; ?>/images/no-image-male.gif" alt=""></a></li>
-                    <li><a href="#"><img src="<?php echo Yii::app()->request->baseUrl; ?>/images/no-image-male.gif" alt=""></a></li>
                     <li><a href="#"><img src="<?php echo Yii::app()->request->baseUrl; ?>/images/no-image-male.gif" alt=""></a></li>
                     <li><a href="#"><img src="<?php echo Yii::app()->request->baseUrl; ?>/images/no-image-male.gif" alt=""></a></li>
                     <li><a href="#"><img src="<?php echo Yii::app()->request->baseUrl; ?>/images/no-image-male.gif" alt=""></a></li>
@@ -129,14 +122,30 @@
 
             <div class="clear"></div>
         </div>
+
         <div class="bottomArea">
+
             <div class="topmenu">
                 <ul>
-                    <li><a href="#" class="sel">Host a New Competition </a></li>
+                    <li><a id="myHeader1" href="javascript:showonlyone('newboxes1');">Competition</a></li>
+                    <li><a id="myHeader2" href="javascript:showonlyone('newboxes2');">Open Surge</a></li>
                 </ul>
             </div>
-            <div class="inside">
-               <?php echo $this->renderPartial('_form', array('model' => $model)); ?>
+
+            <div id="newboxes1" class="newboxes">
+                <div class="inside">
+                    <div class="inside">
+                        <?php echo $this->renderPartial('_form', array('model' => $model)); ?>
+                    </div>
+                </div>
+            </div>
+
+            <div id="newboxes2" class="newboxes" style="display:none;">
+                <div class="inside">
+                    <div class="inside">
+                        <?php echo $this->renderPartial('_formSurge', array('model' => $model)); ?>
+                    </div>
+                </div>
             </div>
         </div>
     </div>

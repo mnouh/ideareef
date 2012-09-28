@@ -1,12 +1,11 @@
 <script type="text/javascript">
     $(document).ready(function(){
         $('textarea').autosize();
-        
-        var isMonetary = $('#Competition_awardMonetary');
-        
+        //Checks if the Monetary Award option is selected
+        var isMonetary = $('#Competition_awardMonetary');  
         if(isMonetary.is(':checked')) {
             
-            var amount = $('#Competition_amount');
+                var amount = $('#Competition_amount');
                 var amountLabel = $('#Competition_amountLabel');
                 
                 amountLabel.css('visibility', 'visible');
@@ -37,6 +36,42 @@
 
             }    
         });
+    
+    var isNonCash = $('#Competition_awardMonetary');  
+        if(isNonCash.is(':checked')) {
+            
+                var estValue = $('#Competition_amount');
+                var estValueLabel = $('#Competition_amountLabel');
+                
+                estValueLabel.css('visibility', 'visible');
+                estValue.css('visibility', 'visible');  
+            
+        }
+    
+    
+$('#Competition_estValue').click(function(){
+
+            var thisCheck = $(this);
+            if(thisCheck.is(':checked')){
+                
+                var estValue = $('#Competition_estimateValue');
+                var estValueLabel = $('#Competition_estValueLabel');
+                
+                estValueLabel.css('visibility', 'visible');
+                estValue.css('visibility', 'visible');  
+                
+            }
+            else{
+                
+                var estValue = $('#Competition_estimateValue');
+                var estValueLabel = $('#Competition_estValue');
+                
+                estValueLabel.css('visibility', 'hidden');
+                estValue.css('visibility', 'hidden');  
+                
+
+            }    
+        });
     });
 </script>
 
@@ -61,7 +96,7 @@ echo $form->errorSummary($model);
 
     <div class="competitionDateArea">
         <div class="photo"></div>
-        <div class="middle"><a href="#" class="smBlueBtn">Upload Photo</a>
+        <div class="middle"><a href="#" class="smBlueBtn">Add Photo</a>
             <a href="#" class="smBlueBtn">Remove Photo </a>
         </div>
 
@@ -122,7 +157,7 @@ echo $form->errorSummary($model);
         <?php echo $form->error($model, 'description'); ?>
     </p>
 
-    <p><strong>Solution Requirements</strong></p>
+    <p><strong>Solution Requirements & Criteria</strong></p>
     <p>
         <?php echo $form->textArea($model, 'solutionDescription', array('class' => 'inputBoxBig')); ?>
         <?php echo $form->error($model, 'solutionDescription'); ?>
@@ -142,6 +177,21 @@ echo $form->errorSummary($model);
                 <?php echo $form->error($model, 'amount', array('class' => 'formError')); ?>
             </td>
         </tr>
+        
+        <tr>
+            <td><strong>Non-Cash Award?</strong></td>
+            <td>
+                <?php echo $form->checkBox($model, 'nonCash'); ?>
+                <?php echo $form->error($model, 'nonCash'); ?>
+            </td>
+            <td width="30">&nbsp;</td>
+            <td><strong><?php echo $form->label($model, 'estimatedValue', array('id' => 'Competition_estValue', 'style' => 'visibility:hidden;')); ?> </strong></td>
+            <td>
+                <?php echo $form->textField($model, 'estimatedValue', array('class' => 'inputBox', 'style' => 'visibility:hidden;')); ?>
+                <?php echo $form->error($model, 'estimatedValue', array('class' => 'formError')); ?>
+            </td>
+        </tr>
+        
     </table>
 
     <p><strong>Other Award Description</strong></p>
@@ -163,7 +213,7 @@ echo $form->errorSummary($model);
                 <?php echo $form->checkBox($model, 'openSolutions'); ?>
                 <?php echo $form->error($model, 'openSolutions'); ?>
             </td>
-            <td>Open solutions for public viewing </td>
+            <td>Solutions Hidden from Public </td>
         </tr>
         <tr>
             <td>&nbsp;</td>
