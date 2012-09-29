@@ -65,35 +65,46 @@
                 <div class="fR"><a href="#">View All</a></div>
                 <div class="clear"></div>
             </div>
-            <div class="profiles">
-                <ul>
-                    <li><a href="#"><img src="<?php echo Yii::app()->request->baseUrl; ?>/images/no-image-male.gif" alt=""></a></li>
-                    <li><a href="#"><img src="<?php echo Yii::app()->request->baseUrl; ?>/images/no-image-male.gif" alt=""></a></li>
-                    <li><a href="#"><img src="<?php echo Yii::app()->request->baseUrl; ?>/images/no-image-male.gif" alt=""></a></li>
-                    <li><a href="#"><img src="<?php echo Yii::app()->request->baseUrl; ?>/images/no-image-male.gif" alt=""></a></li>
-                    <li><a href="#"><img src="<?php echo Yii::app()->request->baseUrl; ?>/images/no-image-male.gif" alt=""></a></li>
-                    <li><a href="#"><img src="<?php echo Yii::app()->request->baseUrl; ?>/images/no-image-male.gif" alt=""></a></li>
-                    <li><a href="#"><img src="<?php echo Yii::app()->request->baseUrl; ?>/images/no-image-male.gif" alt=""></a></li>
-                    <li><a href="#"><img src="<?php echo Yii::app()->request->baseUrl; ?>/images/no-image-male.gif" alt=""></a></li>
-                </ul>
-                <div class="clear"></div>
+            <div class="contents">
+
+
+                <?php
+                $this->widget('zii.widgets.ClistView', array(
+                    'dataProvider' => $dataProvider,
+                    'itemView' => '_competitionSide',
+                    'sortableAttributes' => array(
+                        'endDate',
+                        'startDate'
+                        )));
+                ?>
             </div>
         </div>
+
         <div class="box">
             <div class="top">
                 <h2>Open Surges <a href="#">(10)</a></h2>
                 <div class="fR"><a href="#">View All</a></div>
                 <div class="clear"></div>
             </div>
-            <div class="profiles">
-                <ul>
-                    <li><a href="#"><img src="<?php echo Yii::app()->request->baseUrl; ?>/images/no-image-male.gif" alt=""></a></li>
-                    <li><a href="#"><img src="<?php echo Yii::app()->request->baseUrl; ?>/images/no-image-male.gif" alt=""></a></li>
-                    <li><a href="#"><img src="<?php echo Yii::app()->request->baseUrl; ?>/images/no-image-male.gif" alt=""></a></li>
-                    <li><a href="#"><img src="<?php echo Yii::app()->request->baseUrl; ?>/images/no-image-male.gif" alt=""></a></li>
+            <div class="contents">
 
-                </ul>
-                <div class="clear"></div>
+<?php
+foreach ($model->competitions as $competition) {
+    ?>
+
+
+                    <div class="items">
+                        <div class="fLeft"><img src="<?php echo Yii::app()->request->baseUrl; ?>/images/no-image-female.gif" alt=""></div>
+                        <div class="fRight">
+                            <h2><a href="#"><?php echo $competition->name; ?></a></h2>
+                            <b>Start Date: </b><?php echo $competition->startDate; ?> <br>
+                            <b>End Date: </b><?php echo $competition->endDate; ?>
+                        </div>
+                        <div class="clear"></div>
+                    </div>
+
+
+<?php } ?>
             </div>
         </div>
     </div>
@@ -102,11 +113,11 @@
         <div class="yellowNotif">A competition has closed! Award your winning customer <a href="#">now</a>
             <div class="close"><a href="#"><img src="<?php echo Yii::app()->request->baseUrl; ?>/images/close.png" alt="" width="15" height="15" border="0"></a></div>
         </div>
-        
+
         <p><strong>Share News with followers         </strong></p>
-      <p>
-       
-      </p>
+        <p>
+
+        </p>
 
         <div class="boxes">
             <div class="top">
@@ -115,54 +126,19 @@
                 <div class="clear"></div>
             </div>
             <div class="bottom">
-                <table width="100%" cellpadding="0" cellspacing="1" class="listTable">
-                    <tr>
-                        <td class="imageBox"><img src="<?php echo Yii::app()->request->baseUrl; ?>/images/no-image-female.gif" alt=""></td>
-                        <td class="desc"><a href="#">Taj Mahal Painting Competition</a> <br>
-                            Shahjahan Painters        <br>
-                            Agra, India</td>
-                        <td class="view"><span>143</span>
-                            <strong>Views</strong><br>
-                            (11 today) </td>
-                        <td class="subscription"><span>15</span>
-                            <strong>Subscriptions</strong><br>
-                            (6 today) </td>
-                        <td class="stats"><a href="#">Stats</a></td>
-                    </tr>
-                    <tr>
-                        <td class="imageBox"><img src="<?php echo Yii::app()->request->baseUrl; ?>/images/no-image-female.gif" alt=""></td>
-                        <td class="desc"><a href="#">Mt. Everest climbing competition</a> <br>
-                            Shahjahan Painters <br>
-                            Agra, India</td>
-                        <td class="view"><span>143</span> <strong>Views</strong><br>
-                            (11 today) </td>
-                        <td class="subscription"><span>15</span> <strong>Subscriptions</strong><br>
-                            (6 today) </td>
-                        <td class="stats"><a href="#">Stats</a></td>
-                    </tr>
-                    <tr>
-                        <td class="imageBox"><img src="<?php echo Yii::app()->request->baseUrl; ?>/images/no-image-female.gif" alt=""></td>
-                        <td class="desc"><a href="#">25 Meter Olympics Rapid Air Rifle Firing Competition</a> <br>
-                            Shahjahan Painters <br>
-                            Agra, India</td>
-                        <td class="view"><span>143</span> <strong>Views</strong><br>
-                            (11 today) </td>
-                        <td class="subscription"><span>15</span> <strong>Subscriptions</strong><br>
-                            (6 today) </td>
-                        <td class="stats"><a href="#">Stats</a></td>
-                    </tr>
-                    <tr>
-                        <td class="imageBox"><img src="<?php echo Yii::app()->request->baseUrl; ?>/images/no-image-female.gif" alt=""></td>
-                        <td class="desc"><a href="#">Weekly shot wheel competition</a> <br>
-                            Shahjahan Painters <br>
-                            Agra, India</td>
-                        <td class="view"><span>143</span> <strong>Views</strong><br>
-                            (11 today) </td>
-                        <td class="subscription"><span>15</span> <strong>Subscriptions</strong><br>
-                            (6 today) </td>
-                        <td class="stats"><a href="#">Stats</a></td>
-                    </tr>
-                </table>
+
+                <?php
+                $this->widget('zii.widgets.ClistView', array(
+                    'dataProvider' => $dataProvider,
+                    'itemView' => '_competitionCenter',
+                    'sortableAttributes' => array(
+                        'endDate',
+                        'startDate'
+                        )));
+                ?>    
+
+                <div class="clear"></div>
+
             </div>
         </div>
         <div class="boxes">
@@ -171,51 +147,32 @@
                 <div class="clear"></div>
             </div>
             <div class="bottom">
+<?php
+foreach ($model->competitions as $competition) {
+    ?>
+                    <tr>
+                        <td><table width="100%" cellpadding="0" cellspacing="1" class="listTable extra">
+                                <tr>
+                                    <td class="imageBox"><img src="<?php echo Yii::app()->request->baseUrl; ?>/images/no-image-female.gif" alt=""></td>
+                                    <td class ="listComp"><a href="<?php echo $this->createUrl('business/competitionDetail', array('id' => $competition->id)); ?>"><?php echo $competition->name . '<br>'; ?></a><br>
+                                        <strong><?php echo $model->name . '<br>'; ?></strong><br>
+                                        <b>Start Date: </b><?php echo $competition->startDate; ?> <br>
+                                        <b>End Date: </b><?php echo $competition->endDate; ?></td>
+                                    <td class="view">
+                                        <p><span>1000</span> <strong>Submissions</strong></p>
+                                    </td>
 
-
-                <table width="100%" cellpadding="0" cellspacing="1" class="listTable">
-                    <tr>
-                        <td class="imageBox"><img src="<?php echo Yii::app()->request->baseUrl; ?>/images/no-image-female.gif" alt=""></td>
-                        <td class="descSurge"><a href="#">Taj Mahal Painting Competition</a> <br>
-                            Shahjahan Painters        <br>
-                            Agra, India</td>
-                        <td class="stats"><a href="#">Stats</a></td>
+                                </tr>
+                                <tr>
+                                    <td class="imageBox">&nbsp;</td>
+                                    <td colspan="3" class="ex">
+                                        <a href="#" class="smBlueBtn">View Surge </a>
+                                        <a href="#" class="smBlueBtn">View Solutions</a>
+                                    </td>
+                                </tr>
+                            </table></td>
                     </tr>
-                    <tr>
-                        <td class="imageBox"><img src="<?php echo Yii::app()->request->baseUrl; ?>/images/no-image-female.gif" alt=""></td>
-                        <td class="desc"><a href="#">Mt. Everest climbing competition</a> <br>
-                            Shahjahan Painters <br>
-                            Agra, India</td>
-                        <td class="view"><span>143</span> <strong>Views</strong><br>
-                            (11 today) </td>
-                        <td class="subscription"><span>15</span> <strong>Subscriptions</strong><br>
-                            (6 today) </td>
-                        <td class="stats"><a href="#">Stats</a></td>
-                    </tr>
-                    <tr>
-                        <td class="imageBox"><img src="<?php echo Yii::app()->request->baseUrl; ?>/images/no-image-female.gif" alt=""></td>
-                        <td class="desc"><a href="#">25 Meter Olympics Rapid Air Rifle Firing Competition</a> <br>
-                            Shahjahan Painters <br>
-                            Agra, India</td>
-                        <td class="view"><span>143</span> <strong>Views</strong><br>
-                            (11 today) </td>
-                        <td class="subscription"><span>15</span> <strong>Subscriptions</strong><br>
-                            (6 today) </td>
-                        <td class="stats"><a href="#">Stats</a></td>
-                    </tr>
-                    <tr>
-                        <td class="imageBox"><img src="<?php echo Yii::app()->request->baseUrl; ?>/images/no-image-female.gif" alt=""></td>
-                        <td class="desc"><a href="#">Weekly shot wheel competition</a> <br>
-                            Shahjahan Painters <br>
-                            Agra, India</td>
-                        <td class="view"><span>143</span> <strong>Views</strong><br>
-                            (11 today) </td>
-                        <td class="subscription"><span>15</span> <strong>Subscriptions</strong><br>
-                            (6 today) </td>
-                        <td class="stats"><a href="#">Stats</a></td>
-                    </tr>
-                </table>
-
+<?php } ?>
 
                 <div class="clear"></div>
             </div>

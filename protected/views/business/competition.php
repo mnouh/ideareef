@@ -1,4 +1,4 @@
-<?php
+    <?php
 
 $this->menu = array(
     array('label' => 'Create Competition', 'url' => array('create')),
@@ -86,32 +86,9 @@ $this->menu = array(
                 <div class="clear"></div>
             </div>
         </div>
-        <div class="box">
-            <div class="top">
-                <h2>Badges <a href="#">(10)</a></h2>
-                <div class="fR"><a href="#">View All</a></div>
-                <div class="clear"></div>
-            </div>
-            <div class="profiles">
-                <ul>
-                    <li><a href="#"><img src="<?php echo Yii::app()->request->baseUrl; ?>/images/no-image-male.gif" alt=""></a></li>
-                    <li><a href="#"><img src="<?php echo Yii::app()->request->baseUrl; ?>/images/no-image-male.gif" alt=""></a></li>
-                    <li><a href="#"><img src="<?php echo Yii::app()->request->baseUrl; ?>/images/no-image-male.gif" alt=""></a></li>
-                    <li><a href="#"><img src="<?php echo Yii::app()->request->baseUrl; ?>/images/no-image-male.gif" alt=""></a></li>
-                    <li><a href="#"><img src="<?php echo Yii::app()->request->baseUrl; ?>/images/no-image-male.gif" alt=""></a></li>
-                    <li><a href="#"><img src="<?php echo Yii::app()->request->baseUrl; ?>/images/no-image-male.gif" alt=""></a></li>
-                    <li><a href="#"><img src="<?php echo Yii::app()->request->baseUrl; ?>/images/no-image-male.gif" alt=""></a></li>
-                    <li><a href="#"><img src="<?php echo Yii::app()->request->baseUrl; ?>/images/no-image-male.gif" alt=""></a></li>
-                    <li><a href="#"><img src="<?php echo Yii::app()->request->baseUrl; ?>/images/no-image-male.gif" alt=""></a></li>
-                    <li><a href="#"><img src="<?php echo Yii::app()->request->baseUrl; ?>/images/no-image-male.gif" alt=""></a></li>
-
-                </ul>
-                <div class="clear"></div>
-            </div>
-        </div>
+        
     </div>
     <div class="fL">
-        <div class="bottomArea innerMargin">
   
             <div class="inside">
                 <div class="boxes">
@@ -164,7 +141,6 @@ $this->menu = array(
                     <div class="clear"></div>
                 </div>
             </div>
-        </div>
 
     </div>
     <div class="floatRight">

@@ -65,52 +65,18 @@
                     <li><a href="#"><img src="<?php echo Yii::app()->request->baseUrl; ?>/images/no-image-male.gif" alt=""></a></li>
                     <li><a href="#"><img src="<?php echo Yii::app()->request->baseUrl; ?>/images/no-image-male.gif" alt=""></a></li>
                     <li><a href="#"><img src="<?php echo Yii::app()->request->baseUrl; ?>/images/no-image-male.gif" alt=""></a></li>
-
-
                 </ul>
                 <div class="clear"></div>
             </div>
         </div>
         <div class="box">
             <div class="top">
-                <h2>My Competitions <a href="#">(4)</a></h2>
+                <h2>Open Competitions <a href="#">(4)</a></h2>
                 <div class="fR"><a href="#">View All</a></div>
                 <div class="clear"></div>
             </div>
-            <div class="profiles">
-                <ul>
-                    <li><a href="#"><img src="<?php echo Yii::app()->request->baseUrl; ?>/images/no-image-male.gif" alt=""></a></li>
-                    <li><a href="#"><img src="<?php echo Yii::app()->request->baseUrl; ?>/images/no-image-male.gif" alt=""></a></li>
-                    <li><a href="#"><img src="<?php echo Yii::app()->request->baseUrl; ?>/images/no-image-male.gif" alt=""></a></li>
-                    <li><a href="#"><img src="<?php echo Yii::app()->request->baseUrl; ?>/images/no-image-male.gif" alt=""></a></li>
-
-                </ul>
-                <div class="clear"></div>
-            </div>
         </div>
-        <div class="box">
-            <div class="top">
-                <h2>Badges <a href="#">(10)</a></h2>
-                <div class="fR"><a href="#">View All</a></div>
-                <div class="clear"></div>
-            </div>
-            <div class="profiles">
-                <ul>
-                    <li><a href="#"><img src="<?php echo Yii::app()->request->baseUrl; ?>/images/no-image-male.gif" alt=""></a></li>
-                    <li><a href="#"><img src="<?php echo Yii::app()->request->baseUrl; ?>/images/no-image-male.gif" alt=""></a></li>
-                    <li><a href="#"><img src="<?php echo Yii::app()->request->baseUrl; ?>/images/no-image-male.gif" alt=""></a></li>
-                    <li><a href="#"><img src="<?php echo Yii::app()->request->baseUrl; ?>/images/no-image-male.gif" alt=""></a></li>
-                    <li><a href="#"><img src="<?php echo Yii::app()->request->baseUrl; ?>/images/no-image-male.gif" alt=""></a></li>
-                    <li><a href="#"><img src="<?php echo Yii::app()->request->baseUrl; ?>/images/no-image-male.gif" alt=""></a></li>
-                    <li><a href="#"><img src="<?php echo Yii::app()->request->baseUrl; ?>/images/no-image-male.gif" alt=""></a></li>
-                    <li><a href="#"><img src="<?php echo Yii::app()->request->baseUrl; ?>/images/no-image-male.gif" alt=""></a></li>
-                    <li><a href="#"><img src="<?php echo Yii::app()->request->baseUrl; ?>/images/no-image-male.gif" alt=""></a></li>
-                    <li><a href="#"><img src="<?php echo Yii::app()->request->baseUrl; ?>/images/no-image-male.gif" alt=""></a></li>
-
-                </ul>
-                <div class="clear"></div>
-            </div>
-        </div>
+        
     </div>
     <div class="fL">
         <div class="topArea">
@@ -191,7 +157,7 @@
                                     <strong>Tom and Marty's</strong> (Local) <br>
                                     <em>Launced: 05/30/2012 <br>
                                         Closing: 07/20/2012 </em></td>
-                                <td class="txtCenter"><a href="#" class="smbtn">View Competition Page </a>
+                                <td class="txtCenter"><a href="<?php echo $this->createUrl('competition'); ?>" class="smbtn">View Competition Page </a>
                                     <div class="clear"></div>
                                     <a href="#" class="smbtn">View Winning Solutions </a></td>
                             </tr>
