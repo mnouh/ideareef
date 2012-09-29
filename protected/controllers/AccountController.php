@@ -98,6 +98,8 @@ class AccountController extends Controller
 		}
 		$this->render('contact',array('model'=>$model));
 	}
+        
+        
 
 	/**
 	 * Displays the login page
@@ -219,55 +221,46 @@ class AccountController extends Controller
                                     $uniqueID = str_shuffle(uniqid());
                                     $uniqueID = $uniqueID.'_'.uniqid();
                                     $randomGenerated = '';
-    
-                                for ($i=0; $i<strlen($uniqueID); $i++) {  
-                                    $x = rand(0, 1);
-                                if($x == 0)
-                                    $randomGenerated = $randomGenerated.strtoupper($uniqueID[$i]);
-                                else 
-                                    $randomGenerated = $randomGenerated.$uniqueID[$i];    
-            
-                                } 
-                                    $business->verifyCode = $randomGenerated;
+                                    $business->verifyCode = $this->createVerificationCode();
                                     if($business->update())
                                         $this->sendAccountBusinessRecoveryConfirmation($business);
-                                    
-                                    
                                 }
-                                
                             }
-                            else {
-                                   $uniqueID = str_shuffle(uniqid());
-                                    $uniqueID = $uniqueID.'_'.uniqid();
-                                    $randomGenerated = '';
-    
-                                for ($i=0; $i<strlen($uniqueID); $i++) {  
-                                    $x = rand(0, 1);
-                                if($x == 0)
-                                    $randomGenerated = $randomGenerated.strtoupper($uniqueID[$i]);
-                                else 
-                                    $randomGenerated = $randomGenerated.$uniqueID[$i];    
-            
-                                }
-                                
-                                $user->verifyCode = $randomGenerated;
-                                
+                            else {  
+                                $user->verifyCode = $this->createVerificationCode();
                                 if($this->sendAccountUserRecoveryConfirmation($user));
-                                
                             }
                             
                             Yii::app()->user->setFlash('status','An email has been sent out with instructions on resetting your password.');
-                            
                         }
                         
-                        
+                        $this->renderPartial('recovery', array('model' => $model), false, true);
                 }
+                
+                else {
             
             $this->render('recovery', array('model' => $model));
+                }
             
         }
+        
+        public function createVerificationCode() {
+            $uniqueID = str_shuffle(uniqid());
+            $uniqueID = $uniqueID . '_' . uniqid();
+            $randomGenerated = '';
 
-	/**
+            for ($i = 0; $i < strlen($uniqueID); $i++) {
+                $x = rand(0, 1);
+                if ($x == 0)
+                    $randomGenerated = $randomGenerated . strtoupper($uniqueID[$i]);
+                else
+                    $randomGenerated = $randomGenerated . $uniqueID[$i];
+            }
+
+        return $randomGenerated;
+        }
+
+    /**
 	 * Logs out the current user and redirect to homepage.
 	 */
 	public function actionLogout()
