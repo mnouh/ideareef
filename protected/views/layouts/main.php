@@ -4,65 +4,67 @@
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 	<meta name="language" content="en" />
         
-        <link rel="stylesheet" type="text/css" href="<?php echo Yii::app()->request->baseUrl; ?>/css/css_public.css" />
+        <link rel="stylesheet" type="text/css" href="<?php echo Yii::app()->request->baseUrl; ?>/css/css.css" />
+        <link rel="shortcut icon" type="image/x-icon" href="<?php echo Yii::app()->request->baseUrl; ?>/images/favicon.ico"></link>
         <?php Yii::app()->clientScript->registerCoreScript('jquery'); ?>
         
+        <?php
+        /*
+         $baseUrl = Yii::app()->baseUrl; 
+ $cs = Yii::app()->getClientScript();
+ $cs->registerScriptFile($baseUrl.'/js/jquery.tools.min.js');
+ $cs->registerScriptFile($baseUrl.'/js/anylinkcssmenu.js');
+ $cs->registerScriptFile($baseUrl.'/js/inner.js');
+         * 
+         */
+        ?>
 
-	<!-- blueprint CSS framework -->
-	
 	<title><?php echo CHtml::encode($this->pageTitle); ?></title>
 </head>
-<body>
-<div id="Header">
+    
+    <body>
+<div id="Wrapper">
 <div class="holder">
-<h2 class="floatLeft"><a href="<?php echo Yii::app()->request->baseUrl; ?>">IdeaReef</a></h2>
-<div id="mainmenu">
-    <?php $this->widget('zii.widgets.CMenu',array(
-			'items'=>array(
-				array('label'=>'About', 'url'=>array('/account/page', 'view'=>'about')),
-				array('label'=>'Contact', 'url'=>array('/account/contact')),
-				array('label'=>'Login', 'url'=>array('/account/login'), 'visible'=>Yii::app()->user->isGuest),
-				array('label'=>'Logout ('.Yii::app()->user->name.')', 'url'=>array('/account/logout'), 'visible'=>!Yii::app()->user->isGuest),
-                                array('label'=>'Change Username', 'url'=>array('/user/changeUsername'), 'visible'=>!Yii::app()->user->isGuest),
-                                array('label'=>'User Settings', 'url'=>array('/user/settings'), 'visible'=>!Yii::app()->user->isGuest),
-                                array('label'=>'Change Password', 'url'=>array('/user/changePassword'), 'visible'=>!Yii::app()->user->isGuest),
-                                array('label'=>'Create Competition', 'url'=>array('/competition/create'), 'visible'=>!Yii::app()->user->isGuest),
-                                array('label'=>'Signup', 'url'=>array('/account/signup'), 'visible'=>Yii::app()->user->isGuest),
-                                array('label'=>'Home', 'url'=>array('/account/index')),
-			)
-		)); ?>
-</div>
+  <div id="Header">
+    <h1 class="logo"><a href="<?php echo Yii::app()->request->baseUrl; ?>">IdeaReef</a></h1>
+    <div class="floatRight">
+      <ul>
+        <li><a href="#"><?php echo CHtml::link('Home', Yii::app()->request->baseUrl.'/business'); ?></a></li>
+        <li><a href="#"><?php echo CHtml::link('Pavilion', Yii::app()->request->baseUrl.'/business/pavilion'); ?></a></li>
+        <li>
+            <?php echo CHtml::link('Treasurey <span>1</span>', Yii::app()->request->baseUrl.'/aboutus', array('class' => 'last')); ?>
+            
+        </li>
+		<li><a rel="submenu1" class="anchorclass settings" href="#">Settings</a>
+		
+<ul id="submenu1" class="anylinkcss">
+<li><a href="#">Account Settings</a></li>
+<li><a href="#">Settings Links</a></li>
+<li><a href="#" class="last">Other Settings</a></li>
 
-<div class="clear"></div>
-</div>
-</div>
-    <div id="space"></div>
-    <div id="banner-bg"></div>
-    
-<div id="HomeContent">    
-<div class="holder">    
-    
-    
-    
-    
-   <!-- mainmenu -->
+</ul>
 
-	<?php $this->widget('zii.widgets.CBreadcrumbs', array(
-		'links'=>$this->breadcrumbs,
-	)); ?><!-- breadcrumbs -->
+		</li>
+        <li>
+            <?php echo CHtml::link('Log Out', Yii::app()->request->baseUrl.'/logout', array('class' => 'special')); ?> </li>
+      </ul>
+      
+    </div>
+	<div class="search">
+	  <input name="textfield" type="text" class="inputBox">
+	</div>
+    <div class="clear"></div>
+  </div>
 
-	<?php echo $content; ?>
-        
-<div class="clear"></div>
+    
+    
+<?php echo $content; ?>
 </div>
 </div>
 <div id="Footer">
 <div class="holder">
-<div class="floatLeft">
-  <p class="bigTxt"><a href="#">About</a>    &nbsp;&nbsp;&nbsp;&nbsp;/&nbsp;&nbsp;&nbsp;&nbsp;     <a href="#">Blog</a>     &nbsp;&nbsp;&nbsp;&nbsp;/&nbsp;&nbsp;&nbsp;&nbsp;     <a href="#">Contact</a>     &nbsp;&nbsp;&nbsp;&nbsp;/&nbsp;&nbsp;&nbsp;&nbsp;     <a href="<?php echo Yii::app()->request->baseUrl.'/account/features/';?>">Features</a>     &nbsp;&nbsp;&nbsp;&nbsp;/&nbsp;&nbsp;&nbsp;&nbsp;     <a href="#">Privacy</a></p>
-  <p>Copyright &copy; 2012, Insite. All Rights Reserved.</p>
-  <p><a href="#"><img src="<?php echo Yii::app()->request->baseUrl; ?>/images/twitter.png" alt="" width="32" height="32" border="0" /></a><a href="#"><img src="<?php echo Yii::app()->request->baseUrl; ?>/images/facebook.png" alt="" width="32" height="32" border="0" /></a><a href="#"><img src="<?php echo Yii::app()->request->baseUrl; ?>/images/in.png" alt="" width="32" height="32" border="0" /></a><a href="#"><img src="<?php echo Yii::app()->request->baseUrl; ?>/images/gplus.png" alt="" width="50" height="32" border="0" /></a></p>
-</div>
+<div class="floatLeft">Copyright &copy; 2012 Idea Reef Inc. All Rights Reserved.</div>
+<div class="floatRight"><a href="#">Help</a>  |  <a href="#">Tell us to come!</a>  |  <a href="#">Partners</a>  |  <a href="#">About Us</a>  |  <a href="#">Contact Us</a></div>
 <div class="clear"></div>
 </div>
 </div>

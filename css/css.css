@@ -334,6 +334,51 @@ border-radius:5px;
 .lgbtnorange { text-shadow:#065383 1px 1px 1px; background:url(../images/orange-bg.png) left top repeat-x #FF8A00; color:#3E3E3E; text-decoration:none; font:bold 12px/28px Arial, Helvetica, sans-serif; -moz-border-radius:3px; border-radius:3px; -webkit-border-radius:3px;-khtml-border-radius:3px; border:1px solid #FE961B; padding:0px 10px; display:block; margin:0px; white-space:nowrap; text-shadow:#fbc27f 1px 1px 1px; text-align:center; }
 .tinyOrangeBtn { text-shadow:#065383 1px 1px 1px; margin-top:10px; background:url(../images/orange-bg.png) left top repeat-x #FF8A00; color:#3E3E3E;  text-decoration:none; font:bold 12px/14px Arial, Helvetica, sans-serif; padding:0px 10px; text-align:center; -moz-border-radius:3px; border-radius:3px; -webkit-border-radius:3px;-khtml-border-radius:3px; border:1px solid #FE961B; text-shadow:#fbc27f 1px 1px 1px; display:block; float:left; }
 
+/* Flash Status */
+
+div.flash-error, div.flash-notice, div.flash-success
+{
+	padding:.8em;
+	margin-bottom:1em;
+	border:2px solid #ddd;
+}
+
+div.flash-error
+{
+	background:#FBE3E4;
+	color:#8a1f11;
+	border-color:#FBC2C4;
+}
+
+div.flash-notice
+{
+	background:#FFF6BF;
+	color:#514721;
+	border-color:#FFD324;
+}
+
+div.flash-success
+{
+	background:#E6EFC2;
+	color:#264409;
+	border-color:#C6D880;
+}
+
+div.flash-error a
+{
+	color:#8a1f11;
+}
+
+div.flash-notice a
+{
+	color:#514721;
+}
+
+div.flash-success a
+{
+	color:#264409;
+}
+
 #InnerContent .floatLeft .mid { margin-bottom:15px; border:1px solid #D8E0E2; padding:2px 10px;-moz-box-shadow:inset 0 0 100px #ECF0F1; -webkit-box-shadow:inset 0 0 100px #ECF0F1; -khtml-box-shadow:inset 0 0 100px #ECF0F1; box-shadow:inset 0 0 100px #ECF0F1; -moz-border-radius:3px; border-radius:3px; -webkit-border-radius:3px;-khtml-border-radius:3px; color:#505050; }
 #InnerContent .floatLeft .mid .contents { margin-bottom:0px; border-bottom:1px solid #D8E0E2; line-height:30px; padding-left:3px; }
 #InnerContent .floatLeft .mid .last { border-bottom:0px; margin-bottom:0px; }
@@ -385,10 +430,10 @@ border-radius:5px;
 #InnerContent .fL .yellowNotif { background:#fff; margin-bottom:15px; padding:10px; position:relative; text-align:center;-moz-box-shadow:inset 0 0 100px #F7F39A; -webkit-box-shadow:inset 0 0 100px #F7F39A; -khtml-box-shadow:inset 0 0 100px #F7F39A; box-shadow:inset 0 0 100px #F7F39A;-moz-border-radius:3px; border-radius:3px; -webkit-border-radius:3px;-khtml-border-radius:3px; border:1px solid #E8E48C; color:#4E4E4E; font:normal 12px/28px Arial, Helvetica, sans-serif; }
 #InnerContent .fL .yellowNotif .close { position:absolute; width:15px; height:15px; top:3px; right:3px; line-height:15px; overflow:hidden; }
 #InnerContent .fL .yellowNotif a { color:#00618E; }
-#InnerContent .fL .blueNotif { background:#fff; margin-bottom:15px; padding:10px; position:relative; -moz-box-shadow:inset 0 0 100px #9DE7F9; -webkit-box-shadow:inset 0 0 100px #9DE7F9; -khtml-box-shadow:inset 0 0 100px #9DE7F9; box-shadow:inset 0 0 100px #9DE7F9;-moz-border-radius:3px; border-radius:3px; -webkit-border-radius:3px;-khtml-border-radius:3px; border:1px solid #9DE7F9;   }
-#InnerContent .fL .blueNotif a.smBlueBtn { margin:0px 10px; }
-#InnerContent .fL .blueNotif .fLeft { font:bold 12px/30px Arial, Helvetica, sans-serif; padding-left:10px; width:250px; text-shadow:#fff 1px 1px 1px; color:#007BB3; }
-#InnerContent .fL .blueNotif .fRight { white-space:nowrap; }
+.blueNotif { background:#fff; margin-bottom:15px; padding:10px; position:relative; -moz-box-shadow:inset 0 0 100px #9DE7F9; -webkit-box-shadow:inset 0 0 100px #9DE7F9; -khtml-box-shadow:inset 0 0 100px #9DE7F9; box-shadow:inset 0 0 100px #9DE7F9;-moz-border-radius:3px; border-radius:3px; -webkit-border-radius:3px;-khtml-border-radius:3px; border:1px solid #9DE7F9;   }
+.blueNotif a.smBlueBtn { margin:0px 10px; }
+.blueNotif .fLeft { font:bold 12px/30px Arial, Helvetica, sans-serif; padding-left:10px; width:250px; text-shadow:#fff 1px 1px 1px; color:#007BB3; }
+.blueNotif .fRight { white-space:nowrap; }
 #InnerContent .fL .boxes { margin-bottom:15px; -moz-border-radius:3px; border-radius:3px; -webkit-border-radius:3px;-khtml-border-radius:3px; padding-bottom:5px; overflow:hidden;  }
 #InnerContent .fL .boxes .top { background:#2BAFC9 url(../images/laderboard-top-bg.png) left top repeat-x; padding:0px 15px;  }
 #InnerContent .fL .boxes .top h2 { float:left; font:bold 16px/40px Arial, Helvetica, sans-serif; color:#01425B; text-shadow:#96DDEB 1px 1px 1px; display:block; }
