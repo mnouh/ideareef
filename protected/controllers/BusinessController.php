@@ -249,8 +249,6 @@ class BusinessController extends Controller {
         }
     }
     
-    
-    
     public function actioncompetitionDetail($id) {
         if(Yii::app()->user->isBusiness){
             $model = Business::model()->findByPk(Yii::app()->user->id);

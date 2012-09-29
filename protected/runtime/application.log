@@ -7948,3 +7948,84 @@ Stack trace:
 #22 {main}
 REQUEST_URI=/ideareef/business/
 ---
+2012/09/29 00:07:06 [error] [exception.CException] exception 'CException' with message 'Property "Business.status" is not defined.' in C:\wamp\www\ideareef\framework\base\CComponent.php:131
+Stack trace:
+#0 C:\wamp\www\ideareef\framework\db\ar\CActiveRecord.php(144): CComponent->__get('status')
+#1 C:\wamp\www\ideareef\framework\web\helpers\CHtml.php(2044): CActiveRecord->__get('status')
+#2 C:\wamp\www\ideareef\framework\web\helpers\CHtml.php(1258): CHtml::resolveValue(Object(Business), 'status')
+#3 C:\wamp\www\ideareef\protected\views\business\index.php(108): CHtml::activeTextArea(Object(Business), 'status', Array)
+#4 C:\wamp\www\ideareef\framework\web\CBaseController.php(127): require('C:\wamp\www\ide...')
+#5 C:\wamp\www\ideareef\framework\web\CBaseController.php(96): CBaseController->renderInternal('C:\wamp\www\ide...', Array, true)
+#6 C:\wamp\www\ideareef\framework\web\CController.php(870): CBaseController->renderFile('C:\wamp\www\ide...', Array, true)
+#7 C:\wamp\www\ideareef\framework\web\CController.php(783): CController->renderPartial('index', Array, true)
+#8 C:\wamp\www\ideareef\protected\controllers\BusinessController.php(47): CController->render('index', Array)
+#9 C:\wamp\www\ideareef\framework\web\actions\CInlineAction.php(50): BusinessController->actionIndex()
+#10 C:\wamp\www\ideareef\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#11 C:\wamp\www\ideareef\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#12 C:\wamp\www\ideareef\framework\web\filters\CFilter.php(41): CFilterChain->run()
+#13 C:\wamp\www\ideareef\framework\web\CController.php(1146): CFilter->filter(Object(CFilterChain))
+#14 C:\wamp\www\ideareef\framework\web\filters\CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#15 C:\wamp\www\ideareef\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#16 C:\wamp\www\ideareef\framework\web\CController.php(292): CFilterChain->run()
+#17 C:\wamp\www\ideareef\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#18 C:\wamp\www\ideareef\framework\web\CWebApplication.php(276): CController->run('index')
+#19 C:\wamp\www\ideareef\framework\web\CWebApplication.php(135): CWebApplication->runController('business/index')
+#20 C:\wamp\www\ideareef\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#21 C:\wamp\www\ideareef\index.php(13): CApplication->run()
+#22 {main}
+REQUEST_URI=/ideareef/business/
+---
+2012/09/29 00:07:53 [error] [exception.CException] exception 'CException' with message 'Property "Business.status" is not defined.' in C:\wamp\www\ideareef\framework\base\CComponent.php:131
+Stack trace:
+#0 C:\wamp\www\ideareef\framework\db\ar\CActiveRecord.php(144): CComponent->__get('status')
+#1 C:\wamp\www\ideareef\framework\web\helpers\CHtml.php(2044): CActiveRecord->__get('status')
+#2 C:\wamp\www\ideareef\framework\web\helpers\CHtml.php(1258): CHtml::resolveValue(Object(Business), 'status')
+#3 C:\wamp\www\ideareef\protected\views\business\index.php(108): CHtml::activeTextArea(Object(Business), 'status', Array)
+#4 C:\wamp\www\ideareef\framework\web\CBaseController.php(127): require('C:\wamp\www\ide...')
+#5 C:\wamp\www\ideareef\framework\web\CBaseController.php(96): CBaseController->renderInternal('C:\wamp\www\ide...', Array, true)
+#6 C:\wamp\www\ideareef\framework\web\CController.php(870): CBaseController->renderFile('C:\wamp\www\ide...', Array, true)
+#7 C:\wamp\www\ideareef\framework\web\CController.php(783): CController->renderPartial('index', Array, true)
+#8 C:\wamp\www\ideareef\protected\controllers\BusinessController.php(47): CController->render('index', Array)
+#9 C:\wamp\www\ideareef\framework\web\actions\CInlineAction.php(50): BusinessController->actionIndex()
+#10 C:\wamp\www\ideareef\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#11 C:\wamp\www\ideareef\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#12 C:\wamp\www\ideareef\framework\web\filters\CFilter.php(41): CFilterChain->run()
+#13 C:\wamp\www\ideareef\framework\web\CController.php(1146): CFilter->filter(Object(CFilterChain))
+#14 C:\wamp\www\ideareef\framework\web\filters\CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#15 C:\wamp\www\ideareef\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#16 C:\wamp\www\ideareef\framework\web\CController.php(292): CFilterChain->run()
+#17 C:\wamp\www\ideareef\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#18 C:\wamp\www\ideareef\framework\web\CWebApplication.php(276): CController->run('index')
+#19 C:\wamp\www\ideareef\framework\web\CWebApplication.php(135): CWebApplication->runController('business/index')
+#20 C:\wamp\www\ideareef\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#21 C:\wamp\www\ideareef\index.php(13): CApplication->run()
+#22 {main}
+REQUEST_URI=/ideareef/business/
+---
+2012/09/29 00:07:56 [error] [exception.CException] exception 'CException' with message 'Property "Business.status" is not defined.' in C:\wamp\www\ideareef\framework\base\CComponent.php:131
+Stack trace:
+#0 C:\wamp\www\ideareef\framework\db\ar\CActiveRecord.php(144): CComponent->__get('status')
+#1 C:\wamp\www\ideareef\framework\web\helpers\CHtml.php(2044): CActiveRecord->__get('status')
+#2 C:\wamp\www\ideareef\framework\web\helpers\CHtml.php(1258): CHtml::resolveValue(Object(Business), 'status')
+#3 C:\wamp\www\ideareef\protected\views\business\index.php(108): CHtml::activeTextArea(Object(Business), 'status', Array)
+#4 C:\wamp\www\ideareef\framework\web\CBaseController.php(127): require('C:\wamp\www\ide...')
+#5 C:\wamp\www\ideareef\framework\web\CBaseController.php(96): CBaseController->renderInternal('C:\wamp\www\ide...', Array, true)
+#6 C:\wamp\www\ideareef\framework\web\CController.php(870): CBaseController->renderFile('C:\wamp\www\ide...', Array, true)
+#7 C:\wamp\www\ideareef\framework\web\CController.php(783): CController->renderPartial('index', Array, true)
+#8 C:\wamp\www\ideareef\protected\controllers\BusinessController.php(47): CController->render('index', Array)
+#9 C:\wamp\www\ideareef\framework\web\actions\CInlineAction.php(50): BusinessController->actionIndex()
+#10 C:\wamp\www\ideareef\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#11 C:\wamp\www\ideareef\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#12 C:\wamp\www\ideareef\framework\web\filters\CFilter.php(41): CFilterChain->run()
+#13 C:\wamp\www\ideareef\framework\web\CController.php(1146): CFilter->filter(Object(CFilterChain))
+#14 C:\wamp\www\ideareef\framework\web\filters\CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#15 C:\wamp\www\ideareef\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#16 C:\wamp\www\ideareef\framework\web\CController.php(292): CFilterChain->run()
+#17 C:\wamp\www\ideareef\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#18 C:\wamp\www\ideareef\framework\web\CWebApplication.php(276): CController->run('index')
+#19 C:\wamp\www\ideareef\framework\web\CWebApplication.php(135): CWebApplication->runController('business/index')
+#20 C:\wamp\www\ideareef\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#21 C:\wamp\www\ideareef\index.php(13): CApplication->run()
+#22 {main}
+REQUEST_URI=/ideareef/business/
+---

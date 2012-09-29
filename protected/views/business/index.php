@@ -105,7 +105,7 @@
         
         <p><strong>Share News with followers         </strong></p>
       <p>
-        <?php echo CHtml::activeTextArea($model, 'status', array('rows'=>15, 'cols'=>5))?>
+       
       </p>
 
         <div class="boxes">
