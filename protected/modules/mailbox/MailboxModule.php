@@ -215,7 +215,7 @@ class MailboxModule extends CWebModule
 	/**
 	* @property boolean whether to enable debug mode.
 	*/
-	public $debug = true;
+	public $debug = false;
 	
 	public $defaultController = 'message';
 	private $_assetsUrl;

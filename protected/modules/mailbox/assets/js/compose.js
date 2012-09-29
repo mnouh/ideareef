@@ -27,7 +27,7 @@
 				//Wait for autocomplete to change value
 				setTimeout(function() {
 					form.submit();
-				}, 250 ); //Make sure delay is greater than 150 ms, as in autocomplete widget.
+				}, 150 ); //Make sure delay is greater than 150 ms, as in autocomplete widget.
 				event.preventDefault();
 			});
 
