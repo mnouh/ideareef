@@ -349,6 +349,16 @@ border-radius:5px;
 #InnerContent .floatLeft .box .profiles li { display:inline; }
 #InnerContent .floatLeft .box .profiles li a { display:block; border:0px; background:#fff; float:left; margin-right:3px; margin-bottom:3px; padding:3px; width:36px; height:36px; }
 #InnerContent .floatLeft .box .profiles li a img { width:36px; height:36px; }
+
+#InnerContent .floatLeft .box .contents { padding:10px; padding-top:0px; }
+#InnerContent .floatLeft .box .contents .items { padding:10px 3px; border-bottom:1px solid #D9E1E3; }
+#InnerContent .floatLeft .box .contents .last { border-bottom:0px; }
+#InnerContent .floatLeft .box .contents .items .fLeft { width:34px; height:34px; background:#fff; border:1px solid #D8E0E2; padding:3px; -moz-border-radius:3px; border-radius:3px; -webkit-border-radius:3px;-khtml-border-radius:3px; }
+#InnerContent .floatLeft .box .contents .items .fLeft img { width:34px; height:34px; }
+#InnerContent .floatLeft .box .contents .items .fRight { width:120px; line-height:16px; font-size:11px; }
+#InnerContent .floatLeft .box .contents .items .fRight a { color:#606566; text-decoration:none; }
+#InnerContent .floatLeft .box .contents .items .fRight h2 a { color:#0A68A3; font:bold 12px/18px Arial, Helvetica, sans-serif; text-decoration:none; }
+
 #InnerContent .fL { width:505px; }
 #InnerContent .bigArea { width:725px !important; }
 #InnerContent .floatRight { width:200px; }
@@ -399,6 +409,7 @@ border-radius:5px;
 #InnerContent .fL .boxes .bottom td.right { text-align:right; }
 #InnerContent .fL .boxes .bottom td.negetive { color:#FF0000; }
 #InnerContent .fL .boxes .listTable td { padding:8px 5px; vertical-align:top;-moz-border-radius:3px; border-radius:3px; -webkit-border-radius:3px;-khtml-border-radius:3px; border-bottom:1px solid #C7D1D3; }
+#InnerContent .fL .boxes .listTable td.listComp { width: 450px; padding:8px 5px; vertical-align:top;-moz-border-radius:3px; border-radius:3px; -webkit-border-radius:3px;-khtml-border-radius:3px; border-bottom:1px solid #C7D1D3; }
 #InnerContent .fL .boxes .bottom .listTable tr { background:#E5E3E3; }
 #InnerContent .fL .boxes .bottom .listTable tr:hover { background:#DEDCDC; }
 #InnerContent .fL .boxes .bottom .listTable tr.other:hover { background:#E5E3E3; }
