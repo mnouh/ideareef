@@ -44,7 +44,16 @@ class BusinessController extends Controller {
     public function actionIndex() {
         if(Yii::app()->user->isBusiness){
             $model = Business::model()->findByPk(Yii::app()->user->id);
-            $this->render('index', array('model' => $model));
+            $sort=new CSort();
+            $sort->attributes = array('*');
+            $dataProvider= new CActiveDataProvider('Competition', 
+                    array('criteria' => 
+                        array('condition'=>'businessId='.$model->id),
+                        'sort'=>$sort,
+                        'pagination' => array('pageSize' => 4)));
+          
+                    
+            $this->render('index', array('model' => $model, 'dataProvider' => $dataProvider));
         }
     }
     
@@ -218,7 +227,16 @@ class BusinessController extends Controller {
      public function actionPavilion() {
         if(Yii::app()->user->isBusiness){
             $model = Business::model()->findByPk(Yii::app()->user->id);
-            $this->render('pavilion', array('model' => $model));
+            
+            $sort=new CSort();
+            $sort->attributes = array('*');
+            $dataProvider= new CActiveDataProvider('Competition', 
+                    array('criteria' => 
+                        array('condition'=>'businessId='.$model->id),
+                        'sort'=>$sort,
+                        'pagination' => array('pageSize' => 4)));           
+            $this->render('pavilion', array('model' => $model, 'dataProvider' => $dataProvider));
+         
         }
     }
     

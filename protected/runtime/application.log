@@ -8029,3 +8029,469 @@ Stack trace:
 #22 {main}
 REQUEST_URI=/ideareef/business/
 ---
+2012/09/29 00:28:39 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not authorized to perform this action.' in C:\wamp\www\ideareef\framework\web\auth\CAccessControlFilter.php:157
+Stack trace:
+#0 C:\wamp\www\ideareef\framework\web\auth\CAccessControlFilter.php(120): CAccessControlFilter->accessDenied(Object(WebUser), 'You are not aut...')
+#1 C:\wamp\www\ideareef\framework\web\filters\CFilter.php(39): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 C:\wamp\www\ideareef\framework\web\CController.php(1146): CFilter->filter(Object(CFilterChain))
+#3 C:\wamp\www\ideareef\framework\web\filters\CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#4 C:\wamp\www\ideareef\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#5 C:\wamp\www\ideareef\framework\web\CController.php(292): CFilterChain->run()
+#6 C:\wamp\www\ideareef\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 C:\wamp\www\ideareef\framework\web\CWebApplication.php(276): CController->run('view')
+#8 C:\wamp\www\ideareef\framework\web\CWebApplication.php(135): CWebApplication->runController('user/view')
+#9 C:\wamp\www\ideareef\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#10 C:\wamp\www\ideareef\index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/ideareef/compe
+---
+2012/09/29 02:19:06 [error] [php] Undefined variable: dataProvider (C:\wamp\www\ideareef\protected\views\business\index.php:75)
+Stack trace:
+#0 C:\wamp\www\ideareef\framework\web\CController.php(870): BusinessController->renderFile()
+#1 C:\wamp\www\ideareef\framework\web\CController.php(783): BusinessController->renderPartial()
+#2 C:\wamp\www\ideareef\protected\controllers\BusinessController.php(56): BusinessController->render()
+#3 C:\wamp\www\ideareef\framework\web\actions\CInlineAction.php(50): BusinessController->actionIndex()
+#4 C:\wamp\www\ideareef\framework\web\CController.php(309): CInlineAction->runWithParams()
+#5 C:\wamp\www\ideareef\framework\web\filters\CFilterChain.php(134): BusinessController->runAction()
+#6 C:\wamp\www\ideareef\framework\web\filters\CFilter.php(41): CFilterChain->run()
+#7 C:\wamp\www\ideareef\framework\web\CController.php(1146): CAccessControlFilter->filter()
+#8 C:\wamp\www\ideareef\framework\web\filters\CInlineFilter.php(59): BusinessController->filterAccessControl()
+#9 C:\wamp\www\ideareef\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter()
+#10 C:\wamp\www\ideareef\framework\web\CController.php(292): CFilterChain->run()
+#11 C:\wamp\www\ideareef\framework\web\CController.php(266): BusinessController->runActionWithFilters()
+#12 C:\wamp\www\ideareef\framework\web\CWebApplication.php(276): BusinessController->run()
+#13 C:\wamp\www\ideareef\framework\web\CWebApplication.php(135): CWebApplication->runController()
+#14 C:\wamp\www\ideareef\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#15 C:\wamp\www\ideareef\index.php(13): CWebApplication->run()
+REQUEST_URI=/ideareef/business/
+in C:\wamp\www\ideareef\protected\views\business\index.php (75)
+in C:\wamp\www\ideareef\protected\controllers\BusinessController.php (56)
+in C:\wamp\www\ideareef\index.php (13)
+2012/09/29 02:28:45 [error] [php] Undefined variable: competition (C:\wamp\www\ideareef\protected\views\business\_competitionCenter.php:5)
+Stack trace:
+#0 C:\wamp\www\ideareef\framework\web\CController.php(870): BusinessController->renderFile()
+#1 C:\wamp\www\ideareef\framework\zii\widgets\CListView.php(242): BusinessController->renderPartial()
+#2 C:\wamp\www\ideareef\framework\zii\widgets\CBaseListView.php(158): CListView->renderItems()
+#3 unknown(0): CListView->renderSection()
+#4 C:\wamp\www\ideareef\framework\zii\widgets\CBaseListView.php(141): preg_replace_callback()
+#5 C:\wamp\www\ideareef\framework\zii\widgets\CBaseListView.php(126): CListView->renderContent()
+#6 C:\wamp\www\ideareef\framework\web\CBaseController.php(174): CListView->run()
+#7 C:\wamp\www\ideareef\protected\views\business\index.php(169): BusinessController->widget()
+#8 C:\wamp\www\ideareef\framework\web\CBaseController.php(127): require()
+#9 C:\wamp\www\ideareef\framework\web\CBaseController.php(96): BusinessController->renderInternal()
+#10 C:\wamp\www\ideareef\framework\web\CController.php(870): BusinessController->renderFile()
+#11 C:\wamp\www\ideareef\framework\web\CController.php(783): BusinessController->renderPartial()
+#12 C:\wamp\www\ideareef\protected\controllers\BusinessController.php(56): BusinessController->render()
+#13 C:\wamp\www\ideareef\framework\web\actions\CInlineAction.php(50): BusinessController->actionIndex()
+#14 C:\wamp\www\ideareef\framework\web\CController.php(309): CInlineAction->runWithParams()
+#15 C:\wamp\www\ideareef\framework\web\filters\CFilterChain.php(134): BusinessController->runAction()
+#16 C:\wamp\www\ideareef\framework\web\filters\CFilter.php(41): CFilterChain->run()
+#17 C:\wamp\www\ideareef\framework\web\CController.php(1146): CAccessControlFilter->filter()
+#18 C:\wamp\www\ideareef\framework\web\filters\CInlineFilter.php(59): BusinessController->filterAccessControl()
+#19 C:\wamp\www\ideareef\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter()
+#20 C:\wamp\www\ideareef\framework\web\CController.php(292): CFilterChain->run()
+#21 C:\wamp\www\ideareef\framework\web\CController.php(266): BusinessController->runActionWithFilters()
+#22 C:\wamp\www\ideareef\framework\web\CWebApplication.php(276): BusinessController->run()
+#23 C:\wamp\www\ideareef\framework\web\CWebApplication.php(135): CWebApplication->runController()
+#24 C:\wamp\www\ideareef\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#25 C:\wamp\www\ideareef\index.php(13): CWebApplication->run()
+REQUEST_URI=/ideareef/business/
+in C:\wamp\www\ideareef\protected\views\business\_competitionCenter.php (5)
+in C:\wamp\www\ideareef\protected\views\business\index.php (169)
+in C:\wamp\www\ideareef\protected\controllers\BusinessController.php (56)
+2012/09/29 02:29:10 [error] [php] Undefined variable: competition (C:\wamp\www\ideareef\protected\views\business\_competitionCenter.php:5)
+Stack trace:
+#0 C:\wamp\www\ideareef\framework\web\CController.php(870): BusinessController->renderFile()
+#1 C:\wamp\www\ideareef\framework\zii\widgets\CListView.php(242): BusinessController->renderPartial()
+#2 C:\wamp\www\ideareef\framework\zii\widgets\CBaseListView.php(158): CListView->renderItems()
+#3 unknown(0): CListView->renderSection()
+#4 C:\wamp\www\ideareef\framework\zii\widgets\CBaseListView.php(141): preg_replace_callback()
+#5 C:\wamp\www\ideareef\framework\zii\widgets\CBaseListView.php(126): CListView->renderContent()
+#6 C:\wamp\www\ideareef\framework\web\CBaseController.php(174): CListView->run()
+#7 C:\wamp\www\ideareef\protected\views\business\index.php(147): BusinessController->widget()
+#8 C:\wamp\www\ideareef\framework\web\CBaseController.php(127): require()
+#9 C:\wamp\www\ideareef\framework\web\CBaseController.php(96): BusinessController->renderInternal()
+#10 C:\wamp\www\ideareef\framework\web\CController.php(870): BusinessController->renderFile()
+#11 C:\wamp\www\ideareef\framework\web\CController.php(783): BusinessController->renderPartial()
+#12 C:\wamp\www\ideareef\protected\controllers\BusinessController.php(56): BusinessController->render()
+#13 C:\wamp\www\ideareef\framework\web\actions\CInlineAction.php(50): BusinessController->actionIndex()
+#14 C:\wamp\www\ideareef\framework\web\CController.php(309): CInlineAction->runWithParams()
+#15 C:\wamp\www\ideareef\framework\web\filters\CFilterChain.php(134): BusinessController->runAction()
+#16 C:\wamp\www\ideareef\framework\web\filters\CFilter.php(41): CFilterChain->run()
+#17 C:\wamp\www\ideareef\framework\web\CController.php(1146): CAccessControlFilter->filter()
+#18 C:\wamp\www\ideareef\framework\web\filters\CInlineFilter.php(59): BusinessController->filterAccessControl()
+#19 C:\wamp\www\ideareef\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter()
+#20 C:\wamp\www\ideareef\framework\web\CController.php(292): CFilterChain->run()
+#21 C:\wamp\www\ideareef\framework\web\CController.php(266): BusinessController->runActionWithFilters()
+#22 C:\wamp\www\ideareef\framework\web\CWebApplication.php(276): BusinessController->run()
+#23 C:\wamp\www\ideareef\framework\web\CWebApplication.php(135): CWebApplication->runController()
+#24 C:\wamp\www\ideareef\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#25 C:\wamp\www\ideareef\index.php(13): CWebApplication->run()
+REQUEST_URI=/ideareef/business/
+in C:\wamp\www\ideareef\protected\views\business\_competitionCenter.php (5)
+in C:\wamp\www\ideareef\protected\views\business\index.php (147)
+in C:\wamp\www\ideareef\protected\controllers\BusinessController.php (56)
+2012/09/29 02:29:34 [error] [php] Undefined variable: competition (C:\wamp\www\ideareef\protected\views\business\_competitionCenter.php:5)
+Stack trace:
+#0 C:\wamp\www\ideareef\framework\web\CController.php(870): BusinessController->renderFile()
+#1 C:\wamp\www\ideareef\framework\zii\widgets\CListView.php(242): BusinessController->renderPartial()
+#2 C:\wamp\www\ideareef\framework\zii\widgets\CBaseListView.php(158): CListView->renderItems()
+#3 unknown(0): CListView->renderSection()
+#4 C:\wamp\www\ideareef\framework\zii\widgets\CBaseListView.php(141): preg_replace_callback()
+#5 C:\wamp\www\ideareef\framework\zii\widgets\CBaseListView.php(126): CListView->renderContent()
+#6 C:\wamp\www\ideareef\framework\web\CBaseController.php(174): CListView->run()
+#7 C:\wamp\www\ideareef\protected\views\business\index.php(147): BusinessController->widget()
+#8 C:\wamp\www\ideareef\framework\web\CBaseController.php(127): require()
+#9 C:\wamp\www\ideareef\framework\web\CBaseController.php(96): BusinessController->renderInternal()
+#10 C:\wamp\www\ideareef\framework\web\CController.php(870): BusinessController->renderFile()
+#11 C:\wamp\www\ideareef\framework\web\CController.php(783): BusinessController->renderPartial()
+#12 C:\wamp\www\ideareef\protected\controllers\BusinessController.php(56): BusinessController->render()
+#13 C:\wamp\www\ideareef\framework\web\actions\CInlineAction.php(50): BusinessController->actionIndex()
+#14 C:\wamp\www\ideareef\framework\web\CController.php(309): CInlineAction->runWithParams()
+#15 C:\wamp\www\ideareef\framework\web\filters\CFilterChain.php(134): BusinessController->runAction()
+#16 C:\wamp\www\ideareef\framework\web\filters\CFilter.php(41): CFilterChain->run()
+#17 C:\wamp\www\ideareef\framework\web\CController.php(1146): CAccessControlFilter->filter()
+#18 C:\wamp\www\ideareef\framework\web\filters\CInlineFilter.php(59): BusinessController->filterAccessControl()
+#19 C:\wamp\www\ideareef\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter()
+#20 C:\wamp\www\ideareef\framework\web\CController.php(292): CFilterChain->run()
+#21 C:\wamp\www\ideareef\framework\web\CController.php(266): BusinessController->runActionWithFilters()
+#22 C:\wamp\www\ideareef\framework\web\CWebApplication.php(276): BusinessController->run()
+#23 C:\wamp\www\ideareef\framework\web\CWebApplication.php(135): CWebApplication->runController()
+#24 C:\wamp\www\ideareef\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#25 C:\wamp\www\ideareef\index.php(13): CWebApplication->run()
+REQUEST_URI=/ideareef/business/
+in C:\wamp\www\ideareef\protected\views\business\_competitionCenter.php (5)
+in C:\wamp\www\ideareef\protected\views\business\index.php (147)
+in C:\wamp\www\ideareef\protected\controllers\BusinessController.php (56)
+2012/09/29 02:29:52 [error] [php] Undefined variable: model (C:\wamp\www\ideareef\protected\views\business\_competitionCenter.php:6)
+Stack trace:
+#0 C:\wamp\www\ideareef\framework\web\CController.php(870): BusinessController->renderFile()
+#1 C:\wamp\www\ideareef\framework\zii\widgets\CListView.php(242): BusinessController->renderPartial()
+#2 C:\wamp\www\ideareef\framework\zii\widgets\CBaseListView.php(158): CListView->renderItems()
+#3 unknown(0): CListView->renderSection()
+#4 C:\wamp\www\ideareef\framework\zii\widgets\CBaseListView.php(141): preg_replace_callback()
+#5 C:\wamp\www\ideareef\framework\zii\widgets\CBaseListView.php(126): CListView->renderContent()
+#6 C:\wamp\www\ideareef\framework\web\CBaseController.php(174): CListView->run()
+#7 C:\wamp\www\ideareef\protected\views\business\index.php(147): BusinessController->widget()
+#8 C:\wamp\www\ideareef\framework\web\CBaseController.php(127): require()
+#9 C:\wamp\www\ideareef\framework\web\CBaseController.php(96): BusinessController->renderInternal()
+#10 C:\wamp\www\ideareef\framework\web\CController.php(870): BusinessController->renderFile()
+#11 C:\wamp\www\ideareef\framework\web\CController.php(783): BusinessController->renderPartial()
+#12 C:\wamp\www\ideareef\protected\controllers\BusinessController.php(56): BusinessController->render()
+#13 C:\wamp\www\ideareef\framework\web\actions\CInlineAction.php(50): BusinessController->actionIndex()
+#14 C:\wamp\www\ideareef\framework\web\CController.php(309): CInlineAction->runWithParams()
+#15 C:\wamp\www\ideareef\framework\web\filters\CFilterChain.php(134): BusinessController->runAction()
+#16 C:\wamp\www\ideareef\framework\web\filters\CFilter.php(41): CFilterChain->run()
+#17 C:\wamp\www\ideareef\framework\web\CController.php(1146): CAccessControlFilter->filter()
+#18 C:\wamp\www\ideareef\framework\web\filters\CInlineFilter.php(59): BusinessController->filterAccessControl()
+#19 C:\wamp\www\ideareef\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter()
+#20 C:\wamp\www\ideareef\framework\web\CController.php(292): CFilterChain->run()
+#21 C:\wamp\www\ideareef\framework\web\CController.php(266): BusinessController->runActionWithFilters()
+#22 C:\wamp\www\ideareef\framework\web\CWebApplication.php(276): BusinessController->run()
+#23 C:\wamp\www\ideareef\framework\web\CWebApplication.php(135): CWebApplication->runController()
+#24 C:\wamp\www\ideareef\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#25 C:\wamp\www\ideareef\index.php(13): CWebApplication->run()
+REQUEST_URI=/ideareef/business/
+in C:\wamp\www\ideareef\protected\views\business\_competitionCenter.php (6)
+in C:\wamp\www\ideareef\protected\views\business\index.php (147)
+in C:\wamp\www\ideareef\protected\controllers\BusinessController.php (56)
+2012/09/29 20:15:18 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not authorized to perform this action.' in C:\wamp\www\ideareef\framework\web\auth\CAccessControlFilter.php:157
+Stack trace:
+#0 C:\wamp\www\ideareef\framework\web\auth\CAccessControlFilter.php(120): CAccessControlFilter->accessDenied(Object(WebUser), 'You are not aut...')
+#1 C:\wamp\www\ideareef\framework\web\filters\CFilter.php(39): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 C:\wamp\www\ideareef\framework\web\CController.php(1146): CFilter->filter(Object(CFilterChain))
+#3 C:\wamp\www\ideareef\framework\web\filters\CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#4 C:\wamp\www\ideareef\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#5 C:\wamp\www\ideareef\framework\web\CController.php(292): CFilterChain->run()
+#6 C:\wamp\www\ideareef\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 C:\wamp\www\ideareef\framework\web\CWebApplication.php(276): CController->run('view')
+#8 C:\wamp\www\ideareef\framework\web\CWebApplication.php(135): CWebApplication->runController('user/view')
+#9 C:\wamp\www\ideareef\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#10 C:\wamp\www\ideareef\index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/ideareef/user/
+---
+2012/09/29 20:15:20 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not authorized to perform this action.' in C:\wamp\www\ideareef\framework\web\auth\CAccessControlFilter.php:157
+Stack trace:
+#0 C:\wamp\www\ideareef\framework\web\auth\CAccessControlFilter.php(120): CAccessControlFilter->accessDenied(Object(WebUser), 'You are not aut...')
+#1 C:\wamp\www\ideareef\framework\web\filters\CFilter.php(39): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 C:\wamp\www\ideareef\framework\web\CController.php(1146): CFilter->filter(Object(CFilterChain))
+#3 C:\wamp\www\ideareef\framework\web\filters\CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#4 C:\wamp\www\ideareef\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#5 C:\wamp\www\ideareef\framework\web\CController.php(292): CFilterChain->run()
+#6 C:\wamp\www\ideareef\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 C:\wamp\www\ideareef\framework\web\CWebApplication.php(276): CController->run('view')
+#8 C:\wamp\www\ideareef\framework\web\CWebApplication.php(135): CWebApplication->runController('user/view')
+#9 C:\wamp\www\ideareef\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#10 C:\wamp\www\ideareef\index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/ideareef/user
+---
+2012/09/29 20:16:15 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not authorized to perform this action.' in C:\wamp\www\ideareef\framework\web\auth\CAccessControlFilter.php:157
+Stack trace:
+#0 C:\wamp\www\ideareef\framework\web\auth\CAccessControlFilter.php(120): CAccessControlFilter->accessDenied(Object(WebUser), 'You are not aut...')
+#1 C:\wamp\www\ideareef\framework\web\filters\CFilter.php(39): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 C:\wamp\www\ideareef\framework\web\CController.php(1146): CFilter->filter(Object(CFilterChain))
+#3 C:\wamp\www\ideareef\framework\web\filters\CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#4 C:\wamp\www\ideareef\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#5 C:\wamp\www\ideareef\framework\web\CController.php(292): CFilterChain->run()
+#6 C:\wamp\www\ideareef\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 C:\wamp\www\ideareef\framework\web\CWebApplication.php(276): CController->run('view')
+#8 C:\wamp\www\ideareef\framework\web\CWebApplication.php(135): CWebApplication->runController('user/view')
+#9 C:\wamp\www\ideareef\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#10 C:\wamp\www\ideareef\index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/ideareef/user
+---
+2012/09/29 20:16:49 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "index.php".' in C:\wamp\www\ideareef\framework\web\CController.php:484
+Stack trace:
+#0 C:\wamp\www\ideareef\framework\web\CController.php(271): CController->missingAction('index.php')
+#1 C:\wamp\www\ideareef\framework\web\CWebApplication.php(276): CController->run('index.php')
+#2 C:\wamp\www\ideareef\framework\web\CWebApplication.php(135): CWebApplication->runController('user/index.php')
+#3 C:\wamp\www\ideareef\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#4 C:\wamp\www\ideareef\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/ideareef/user/index.php
+---
+2012/09/29 20:16:56 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not authorized to perform this action.' in C:\wamp\www\ideareef\framework\web\auth\CAccessControlFilter.php:157
+Stack trace:
+#0 C:\wamp\www\ideareef\framework\web\auth\CAccessControlFilter.php(120): CAccessControlFilter->accessDenied(Object(WebUser), 'You are not aut...')
+#1 C:\wamp\www\ideareef\framework\web\filters\CFilter.php(39): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 C:\wamp\www\ideareef\framework\web\CController.php(1146): CFilter->filter(Object(CFilterChain))
+#3 C:\wamp\www\ideareef\framework\web\filters\CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#4 C:\wamp\www\ideareef\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#5 C:\wamp\www\ideareef\framework\web\CController.php(292): CFilterChain->run()
+#6 C:\wamp\www\ideareef\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 C:\wamp\www\ideareef\framework\web\CWebApplication.php(276): CController->run('view')
+#8 C:\wamp\www\ideareef\framework\web\CWebApplication.php(135): CWebApplication->runController('user/view')
+#9 C:\wamp\www\ideareef\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#10 C:\wamp\www\ideareef\index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/ideareef/user
+---
+2012/09/29 20:18:20 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not authorized to perform this action.' in C:\wamp\www\ideareef\framework\web\auth\CAccessControlFilter.php:157
+Stack trace:
+#0 C:\wamp\www\ideareef\framework\web\auth\CAccessControlFilter.php(120): CAccessControlFilter->accessDenied(Object(WebUser), 'You are not aut...')
+#1 C:\wamp\www\ideareef\framework\web\filters\CFilter.php(39): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 C:\wamp\www\ideareef\framework\web\CController.php(1146): CFilter->filter(Object(CFilterChain))
+#3 C:\wamp\www\ideareef\framework\web\filters\CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#4 C:\wamp\www\ideareef\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#5 C:\wamp\www\ideareef\framework\web\CController.php(292): CFilterChain->run()
+#6 C:\wamp\www\ideareef\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 C:\wamp\www\ideareef\framework\web\CWebApplication.php(276): CController->run('view')
+#8 C:\wamp\www\ideareef\framework\web\CWebApplication.php(135): CWebApplication->runController('user/view')
+#9 C:\wamp\www\ideareef\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#10 C:\wamp\www\ideareef\index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/ideareef/user
+---
+2012/09/29 20:18:22 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not authorized to perform this action.' in C:\wamp\www\ideareef\framework\web\auth\CAccessControlFilter.php:157
+Stack trace:
+#0 C:\wamp\www\ideareef\framework\web\auth\CAccessControlFilter.php(120): CAccessControlFilter->accessDenied(Object(WebUser), 'You are not aut...')
+#1 C:\wamp\www\ideareef\framework\web\filters\CFilter.php(39): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 C:\wamp\www\ideareef\framework\web\CController.php(1146): CFilter->filter(Object(CFilterChain))
+#3 C:\wamp\www\ideareef\framework\web\filters\CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#4 C:\wamp\www\ideareef\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#5 C:\wamp\www\ideareef\framework\web\CController.php(292): CFilterChain->run()
+#6 C:\wamp\www\ideareef\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 C:\wamp\www\ideareef\framework\web\CWebApplication.php(276): CController->run('view')
+#8 C:\wamp\www\ideareef\framework\web\CWebApplication.php(135): CWebApplication->runController('user/view')
+#9 C:\wamp\www\ideareef\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#10 C:\wamp\www\ideareef\index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/ideareef/user
+---
+2012/09/29 20:18:26 [error] [php] Undefined variable: model (C:\wamp\www\ideareef\protected\controllers\UserController.php:212)
+Stack trace:
+#0 C:\wamp\www\ideareef\framework\web\filters\CFilterChain.php(134): UserController->runAction()
+#1 C:\wamp\www\ideareef\framework\web\filters\CFilter.php(41): CFilterChain->run()
+#2 C:\wamp\www\ideareef\framework\web\CController.php(1146): CAccessControlFilter->filter()
+#3 C:\wamp\www\ideareef\framework\web\filters\CInlineFilter.php(59): UserController->filterAccessControl()
+#4 C:\wamp\www\ideareef\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter()
+#5 C:\wamp\www\ideareef\framework\web\CController.php(292): CFilterChain->run()
+#6 C:\wamp\www\ideareef\framework\web\CController.php(266): UserController->runActionWithFilters()
+#7 C:\wamp\www\ideareef\framework\web\CWebApplication.php(276): UserController->run()
+#8 C:\wamp\www\ideareef\framework\web\CWebApplication.php(135): CWebApplication->runController()
+#9 C:\wamp\www\ideareef\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#10 C:\wamp\www\ideareef\index.php(13): CWebApplication->run()
+REQUEST_URI=/ideareef/user/index
+in C:\wamp\www\ideareef\protected\controllers\UserController.php (212)
+in C:\wamp\www\ideareef\index.php (13)
+2012/09/29 20:21:00 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "images".' in C:\wamp\www\ideareef\framework\web\CController.php:484
+Stack trace:
+#0 C:\wamp\www\ideareef\framework\web\CController.php(271): CController->missingAction('images')
+#1 C:\wamp\www\ideareef\framework\web\CWebApplication.php(276): CController->run('images')
+#2 C:\wamp\www\ideareef\framework\web\CWebApplication.php(135): CWebApplication->runController('user/images/pro...')
+#3 C:\wamp\www\ideareef\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#4 C:\wamp\www\ideareef\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/ideareef/user/images/profile-picture.jpg
+HTTP_REFERER=http://localhost/ideareef/user/index
+---
+2012/09/29 20:21:00 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "images".' in C:\wamp\www\ideareef\framework\web\CController.php:484
+Stack trace:
+#0 C:\wamp\www\ideareef\framework\web\CController.php(271): CController->missingAction('images')
+#1 C:\wamp\www\ideareef\framework\web\CWebApplication.php(276): CController->run('images')
+#2 C:\wamp\www\ideareef\framework\web\CWebApplication.php(135): CWebApplication->runController('user/images/bro...')
+#3 C:\wamp\www\ideareef\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#4 C:\wamp\www\ideareef\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/ideareef/user/images/bronze-profile.png
+HTTP_REFERER=http://localhost/ideareef/user/index
+---
+2012/09/29 20:21:00 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "images".' in C:\wamp\www\ideareef\framework\web\CController.php:484
+Stack trace:
+#0 C:\wamp\www\ideareef\framework\web\CController.php(271): CController->missingAction('images')
+#1 C:\wamp\www\ideareef\framework\web\CWebApplication.php(276): CController->run('images')
+#2 C:\wamp\www\ideareef\framework\web\CWebApplication.php(135): CWebApplication->runController('user/images/no-...')
+#3 C:\wamp\www\ideareef\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#4 C:\wamp\www\ideareef\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/ideareef/user/images/no-image-male.gif
+HTTP_REFERER=http://localhost/ideareef/user/index
+---
+2012/09/29 20:21:00 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "images".' in C:\wamp\www\ideareef\framework\web\CController.php:484
+Stack trace:
+#0 C:\wamp\www\ideareef\framework\web\CController.php(271): CController->missingAction('images')
+#1 C:\wamp\www\ideareef\framework\web\CWebApplication.php(276): CController->run('images')
+#2 C:\wamp\www\ideareef\framework\web\CWebApplication.php(135): CWebApplication->runController('user/images/no-...')
+#3 C:\wamp\www\ideareef\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#4 C:\wamp\www\ideareef\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/ideareef/user/images/no-image-female.gif
+HTTP_REFERER=http://localhost/ideareef/user/index
+---
+2012/09/29 20:21:00 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "images".' in C:\wamp\www\ideareef\framework\web\CController.php:484
+Stack trace:
+#0 C:\wamp\www\ideareef\framework\web\CController.php(271): CController->missingAction('images')
+#1 C:\wamp\www\ideareef\framework\web\CWebApplication.php(276): CController->run('images')
+#2 C:\wamp\www\ideareef\framework\web\CWebApplication.php(135): CWebApplication->runController('user/images/no-...')
+#3 C:\wamp\www\ideareef\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#4 C:\wamp\www\ideareef\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/ideareef/user/images/no-image.png
+HTTP_REFERER=http://localhost/ideareef/user/index
+---
+2012/09/29 20:28:20 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not authorized to perform this action.' in C:\wamp\www\ideareef\framework\web\auth\CAccessControlFilter.php:157
+Stack trace:
+#0 C:\wamp\www\ideareef\framework\web\auth\CAccessControlFilter.php(120): CAccessControlFilter->accessDenied(Object(WebUser), 'You are not aut...')
+#1 C:\wamp\www\ideareef\framework\web\filters\CFilter.php(39): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 C:\wamp\www\ideareef\framework\web\CController.php(1146): CFilter->filter(Object(CFilterChain))
+#3 C:\wamp\www\ideareef\framework\web\filters\CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#4 C:\wamp\www\ideareef\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#5 C:\wamp\www\ideareef\framework\web\CController.php(292): CFilterChain->run()
+#6 C:\wamp\www\ideareef\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 C:\wamp\www\ideareef\framework\web\CWebApplication.php(276): CController->run('view')
+#8 C:\wamp\www\ideareef\framework\web\CWebApplication.php(135): CWebApplication->runController('user/view')
+#9 C:\wamp\www\ideareef\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#10 C:\wamp\www\ideareef\index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/ideareef/user
+---
+2012/09/29 20:32:33 [error] [php] Undefined variable: dataProvider (C:\wamp\www\ideareef\protected\views\business\pavilion.php:77)
+Stack trace:
+#0 C:\wamp\www\ideareef\framework\web\CController.php(870): BusinessController->renderFile()
+#1 C:\wamp\www\ideareef\framework\web\CController.php(783): BusinessController->renderPartial()
+#2 C:\wamp\www\ideareef\protected\controllers\BusinessController.php(230): BusinessController->render()
+#3 C:\wamp\www\ideareef\framework\web\actions\CInlineAction.php(50): BusinessController->actionPavilion()
+#4 C:\wamp\www\ideareef\framework\web\CController.php(309): CInlineAction->runWithParams()
+#5 C:\wamp\www\ideareef\framework\web\filters\CFilterChain.php(134): BusinessController->runAction()
+#6 C:\wamp\www\ideareef\framework\web\filters\CFilter.php(41): CFilterChain->run()
+#7 C:\wamp\www\ideareef\framework\web\CController.php(1146): CAccessControlFilter->filter()
+#8 C:\wamp\www\ideareef\framework\web\filters\CInlineFilter.php(59): BusinessController->filterAccessControl()
+#9 C:\wamp\www\ideareef\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter()
+#10 C:\wamp\www\ideareef\framework\web\CController.php(292): CFilterChain->run()
+#11 C:\wamp\www\ideareef\framework\web\CController.php(266): BusinessController->runActionWithFilters()
+#12 C:\wamp\www\ideareef\framework\web\CWebApplication.php(276): BusinessController->run()
+#13 C:\wamp\www\ideareef\framework\web\CWebApplication.php(135): CWebApplication->runController()
+#14 C:\wamp\www\ideareef\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#15 C:\wamp\www\ideareef\index.php(13): CWebApplication->run()
+REQUEST_URI=/ideareef/business/pavilion
+in C:\wamp\www\ideareef\protected\views\business\pavilion.php (77)
+in C:\wamp\www\ideareef\protected\controllers\BusinessController.php (230)
+in C:\wamp\www\ideareef\index.php (13)
+2012/09/29 20:35:34 [warning] [application] Failed to set unsafe attribute "zipcode" of "User".
+in C:\wamp\www\ideareef\protected\controllers\UserController.php (223)
+in C:\wamp\www\ideareef\protected\controllers\UserController.php (74)
+in C:\wamp\www\ideareef\index.php (13)
+2012/09/29 20:35:35 [warning] [application] Failed to set unsafe attribute "zipcode" of "User".
+in C:\wamp\www\ideareef\protected\controllers\UserController.php (223)
+in C:\wamp\www\ideareef\protected\controllers\UserController.php (74)
+in C:\wamp\www\ideareef\index.php (13)
+2012/09/29 20:35:47 [warning] [application] Failed to set unsafe attribute "zipcode" of "User".
+in C:\wamp\www\ideareef\protected\controllers\UserController.php (223)
+in C:\wamp\www\ideareef\protected\controllers\UserController.php (74)
+in C:\wamp\www\ideareef\index.php (13)
+2012/09/29 20:35:53 [warning] [application] Failed to set unsafe attribute "zipcode" of "User".
+in C:\wamp\www\ideareef\protected\controllers\UserController.php (223)
+in C:\wamp\www\ideareef\protected\controllers\UserController.php (74)
+in C:\wamp\www\ideareef\index.php (13)
+2012/09/29 20:36:28 [warning] [application] Failed to set unsafe attribute "zipcode" of "User".
+in C:\wamp\www\ideareef\protected\controllers\UserController.php (223)
+in C:\wamp\www\ideareef\protected\controllers\UserController.php (74)
+in C:\wamp\www\ideareef\index.php (13)
+2012/09/29 20:36:30 [warning] [application] Failed to set unsafe attribute "zipcode" of "User".
+in C:\wamp\www\ideareef\protected\controllers\UserController.php (223)
+in C:\wamp\www\ideareef\protected\controllers\UserController.php (74)
+in C:\wamp\www\ideareef\index.php (13)
+2012/09/29 20:36:35 [warning] [application] Failed to set unsafe attribute "zipcode" of "User".
+in C:\wamp\www\ideareef\protected\controllers\UserController.php (223)
+in C:\wamp\www\ideareef\protected\controllers\UserController.php (74)
+in C:\wamp\www\ideareef\index.php (13)
+2012/09/29 20:36:39 [warning] [application] Failed to set unsafe attribute "zipcode" of "User".
+in C:\wamp\www\ideareef\protected\controllers\UserController.php (223)
+in C:\wamp\www\ideareef\protected\controllers\UserController.php (74)
+in C:\wamp\www\ideareef\index.php (13)
+2012/09/29 20:36:40 [warning] [application] Failed to set unsafe attribute "zipcode" of "User".
+in C:\wamp\www\ideareef\protected\controllers\UserController.php (223)
+in C:\wamp\www\ideareef\protected\controllers\UserController.php (74)
+in C:\wamp\www\ideareef\index.php (13)
+2012/09/29 20:36:40 [warning] [application] Failed to set unsafe attribute "zipcode" of "User".
+in C:\wamp\www\ideareef\protected\controllers\UserController.php (223)
+in C:\wamp\www\ideareef\protected\controllers\UserController.php (74)
+in C:\wamp\www\ideareef\index.php (13)
+2012/09/29 20:36:44 [warning] [application] Failed to set unsafe attribute "zipcode" of "User".
+in C:\wamp\www\ideareef\protected\controllers\UserController.php (223)
+in C:\wamp\www\ideareef\protected\controllers\UserController.php (74)
+in C:\wamp\www\ideareef\index.php (13)
+2012/09/29 20:36:45 [warning] [application] Failed to set unsafe attribute "zipcode" of "User".
+in C:\wamp\www\ideareef\protected\controllers\UserController.php (223)
+in C:\wamp\www\ideareef\protected\controllers\UserController.php (74)
+in C:\wamp\www\ideareef\index.php (13)
+2012/09/29 20:36:48 [warning] [application] Failed to set unsafe attribute "zipcode" of "User".
+in C:\wamp\www\ideareef\protected\controllers\UserController.php (223)
+in C:\wamp\www\ideareef\protected\controllers\UserController.php (74)
+in C:\wamp\www\ideareef\index.php (13)
+2012/09/29 20:36:49 [warning] [application] Failed to set unsafe attribute "zipcode" of "User".
+in C:\wamp\www\ideareef\protected\controllers\UserController.php (223)
+in C:\wamp\www\ideareef\protected\controllers\UserController.php (74)
+in C:\wamp\www\ideareef\index.php (13)
+2012/09/29 20:36:49 [warning] [application] Failed to set unsafe attribute "zipcode" of "User".
+in C:\wamp\www\ideareef\protected\controllers\UserController.php (223)
+in C:\wamp\www\ideareef\protected\controllers\UserController.php (74)
+in C:\wamp\www\ideareef\index.php (13)
+2012/09/29 20:36:50 [warning] [application] Failed to set unsafe attribute "zipcode" of "User".
+in C:\wamp\www\ideareef\protected\controllers\UserController.php (82)
+in C:\wamp\www\ideareef\index.php (13)
+2012/09/29 20:36:51 [warning] [application] Failed to set unsafe attribute "zipcode" of "User".
+in C:\wamp\www\ideareef\protected\controllers\UserController.php (223)
+in C:\wamp\www\ideareef\protected\controllers\UserController.php (74)
+in C:\wamp\www\ideareef\index.php (13)
+2012/09/29 20:37:45 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "mailbox".' in C:\wamp\www\ideareef\framework\web\CController.php:484
+Stack trace:
+#0 C:\wamp\www\ideareef\framework\web\CController.php(271): CController->missingAction('mailbox')
+#1 C:\wamp\www\ideareef\framework\web\CWebApplication.php(276): CController->run('mailbox')
+#2 C:\wamp\www\ideareef\framework\web\CWebApplication.php(135): CWebApplication->runController('user/mailbox/me...')
+#3 C:\wamp\www\ideareef\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#4 C:\wamp\www\ideareef\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/ideareef/user/mailbox/message
+---
+2012/09/29 20:37:52 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "mailbox/message".' in C:\wamp\www\ideareef\framework\web\CWebApplication.php:280
+Stack trace:
+#0 C:\wamp\www\ideareef\framework\web\CWebApplication.php(135): CWebApplication->runController('mailbox/message')
+#1 C:\wamp\www\ideareef\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\wamp\www\ideareef\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/ideareef/mailbox/message
+---
