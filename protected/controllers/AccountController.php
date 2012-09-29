@@ -205,6 +205,62 @@ class AccountController extends Controller
 		{
 			$model->attributes=$_POST['RecoveryForm'];
                         
+                        if($model->validate()) {
+                            
+                            $user = User::model()->find('LOWER(email)=?', array(strtolower($model->email)));
+                            
+                            if($user === null) {
+                                $business = Business::model()->find('LOWER(email)=?', array(strtolower($model->email)));
+                                
+                                if($business === null)
+                                    echo 'Test';
+                                else {
+                                    
+                                    $uniqueID = str_shuffle(uniqid());
+                                    $uniqueID = $uniqueID.'_'.uniqid();
+                                    $randomGenerated = '';
+    
+                                for ($i=0; $i<strlen($uniqueID); $i++) {  
+                                    $x = rand(0, 1);
+                                if($x == 0)
+                                    $randomGenerated = $randomGenerated.strtoupper($uniqueID[$i]);
+                                else 
+                                    $randomGenerated = $randomGenerated.$uniqueID[$i];    
+            
+                                } 
+                                    $business->verifyCode = $randomGenerated;
+                                    if($business->update())
+                                        $this->sendAccountBusinessRecoveryConfirmation($business);
+                                    
+                                    
+                                }
+                                
+                            }
+                            else {
+                                   $uniqueID = str_shuffle(uniqid());
+                                    $uniqueID = $uniqueID.'_'.uniqid();
+                                    $randomGenerated = '';
+    
+                                for ($i=0; $i<strlen($uniqueID); $i++) {  
+                                    $x = rand(0, 1);
+                                if($x == 0)
+                                    $randomGenerated = $randomGenerated.strtoupper($uniqueID[$i]);
+                                else 
+                                    $randomGenerated = $randomGenerated.$uniqueID[$i];    
+            
+                                }
+                                
+                                $user->verifyCode = $randomGenerated;
+                                
+                                if($this->sendAccountUserRecoveryConfirmation($user));
+                                
+                            }
+                            
+                            Yii::app()->user->setFlash('status','An email has been sent out with instructions on resetting your password.');
+                            
+                        }
+                        
+                        
                 }
             
             $this->render('recovery', array('model' => $model));
@@ -221,6 +277,39 @@ class AccountController extends Controller
 	}
         
         
+        /**
+     * This will email the user, the confirmation code.
+     * @param type $model 
+     */
+    protected function sendAccountBusinessRecoveryConfirmation(&$model) {
+
+        $recoveryEmail = New YiiMailMessage;
+        $recoveryEmail->view = 'accountBusinessRecovery';
+        $recoveryEmail->setBody(array('model' => $model), 'text/html');
+        $recoveryEmail->setFrom(array('no-reply@ideareef.com' => 'IdeaReef'));
+        $recoveryEmail->setSubject('Account Recovery- IdeaReef');
+        $recoveryEmail->addTo($model->email);
+        Yii::app()->mail->send($recoveryEmail);
+    }
+        
+    
+    
+    
+       /**
+     * This will email the user, the confirmation code.
+     * @param type $model 
+     */
+    protected function sendAccountUserRecoveryConfirmation(&$model) {
+
+        $recoveryEmail = New YiiMailMessage;
+        $recoveryEmail->view = 'accountUserRecovery';
+        $recoveryEmail->setBody(array('model' => $model), 'text/html');
+        $recoveryEmail->setFrom(array('no-reply@ideareef.com' => 'IdeaReef'));
+        $recoveryEmail->setSubject('Account Recovery- IdeaReef');
+        $recoveryEmail->addTo($model->email);
+        Yii::app()->mail->send($recoveryEmail);
+    }
+    
      
         /**
          * Custom function allow validation of forms. Pass the model and the form id and then

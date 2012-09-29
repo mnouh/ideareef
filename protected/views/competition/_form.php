@@ -37,11 +37,11 @@
             }    
         });
     
-    var isNonCash = $('#Competition_awardMonetary');  
+    var isNonCash = $('#Competition_nonCash');  
         if(isNonCash.is(':checked')) {
             
-                var estValue = $('#Competition_amount');
-                var estValueLabel = $('#Competition_amountLabel');
+                var estValue = $('#Competition_estimatedValue');
+                var estValueLabel = $('#Competition_estValue');
                 
                 estValueLabel.css('visibility', 'visible');
                 estValue.css('visibility', 'visible');  
@@ -49,13 +49,13 @@
         }
     
     
-$('#Competition_estValue').click(function(){
+$('#Competition_nonCash').click(function(){
 
             var thisCheck = $(this);
             if(thisCheck.is(':checked')){
                 
-                var estValue = $('#Competition_estimateValue');
-                var estValueLabel = $('#Competition_estValueLabel');
+                var estValue = $('#Competition_estimatedValue');
+                var estValueLabel = $('#Competition_estValue');
                 
                 estValueLabel.css('visibility', 'visible');
                 estValue.css('visibility', 'visible');  
@@ -63,7 +63,7 @@ $('#Competition_estValue').click(function(){
             }
             else{
                 
-                var estValue = $('#Competition_estimateValue');
+                var estValue = $('#Competition_estimatedValue');
                 var estValueLabel = $('#Competition_estValue');
                 
                 estValueLabel.css('visibility', 'hidden');

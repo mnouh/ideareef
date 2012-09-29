@@ -20,8 +20,26 @@ class RecoveryForm extends CFormModel
 		return array(
 			// username and password are required
 			array('email', 'required', 'message' => '<b>&#10006;</b> &nbsp; {attribute} is a required field.'),
+                        array('email', 'emailExist'),
 		);
 	}
+        
+        
+        public function emailExist($attributes, $params)
+        {
+            $user = User::model()->find('LOWER(email)=?', array(strtolower($this->email)));
+            $business = Business::model()->find('LOWER(email)=?', array(strtolower($this->email)));
+            
+            if(($user === null) && ($business === null))
+            {
+                $this->addError('email', '<b>&#10006;</b> &nbsp; We could not find that email.');
+                
+            }
+                
+            
+            
+        }
+        
 
 	/**
 	 * Declares attribute labels.
