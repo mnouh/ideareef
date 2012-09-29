@@ -2,6 +2,14 @@
 $this->pageTitle = Yii::app()->name . ' - Account Recovery';
 ?>
 
+<?php if(Yii::app()->user->hasFlash('status')): ?>
+
+<div class="flash-success">
+	<?php echo Yii::app()->user->getFlash('status'); ?>
+</div>
+
+<?php else: ?>
+
 <?php $form=$this->beginWidget('CActiveForm', array(
         'id'=>'account-recovery-form',
 	'enableAjaxValidation'=>true,
@@ -26,3 +34,5 @@ $this->pageTitle = Yii::app()->name . ' - Account Recovery';
     <div class="clear"></div>
 </div>
 <?php $this->endWidget(); ?>
+
+<?php endIf; ?>
