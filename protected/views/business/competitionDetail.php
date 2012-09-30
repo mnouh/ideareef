@@ -1,4 +1,13 @@
-<?php echo $model->id.'<br>'; echo $model->name;?>
+<script type="text/javascript">
+    jQuery(document).ready(function() {
+        jQuery(".all").hide();
+        //toggle the componenet with class msg_body
+        jQuery(".top").click(function()
+        {
+            jQuery(this).next(".all").slideToggle(500);
+        });
+    });
+</script>
 <div id="InnerContent">
     <div class="floatLeft">
         <div class="up">
