@@ -69,6 +69,7 @@ return array(
                                 'logout' => 'account/logout',
                                 'business' => 'business/index', 
                                 'business/<bizurl>'=>'business/view',
+                                'user' => 'user/index',
                                 '<username>'=>'user/view',
 			),
 		),

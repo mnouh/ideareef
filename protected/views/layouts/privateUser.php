@@ -8,13 +8,12 @@
         <link rel="shortcut icon" type="image/x-icon" href="<?php echo Yii::app()->request->baseUrl; ?>/images/favicon.ico"></link>
         <?php //Yii::app()->clientScript->registerCoreScript('jquery'); ?>
         <?php
-        /* $baseUrl = Yii::app()->baseUrl; 
+         $baseUrl = Yii::app()->baseUrl; 
  $cs = Yii::app()->getClientScript();
  $cs->registerScriptFile($baseUrl.'/js/jquery.tools.min.js');
  $cs->registerScriptFile($baseUrl.'/js/anylinkcssmenu.js');
  $cs->registerScriptFile($baseUrl.'/js/inner.js');
-         * 
-         */
+        
         ?>
 
 	<title><?php echo CHtml::encode($this->pageTitle); ?></title>

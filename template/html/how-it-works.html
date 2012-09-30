@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>IdeaReef</title>
+<script language="javascript" type="text/javascript">
+
+  function toggle1(){
+  	var signin_menu = document.getElementById('signin_menu')
+  	if (signin_menu.style.display == 'none') {
+  		signin_menu.style.display = 'block'
+  	} else {
+  		signin_menu.style.display = 'none'
+  	}
+  }
+  </script>
+  <script language="javascript" type="text/javascript">
+function showonlyone(thechosenone) {
+      var newboxes = document.getElementsByTagName("div");
+            for(var x=0; x<newboxes.length; x++) {
+                  name = newboxes[x].getAttribute("class");
+                  if (name == 'newboxes') {
+                        if (newboxes[x].id == thechosenone) {
+                        newboxes[x].style.display = 'block';
+                  }
+                  else {
+                        newboxes[x].style.display = 'none';
+                  }
+            }
+      }
+}
+</script>
+<link href="styles/css.css" rel="stylesheet" type="text/css" />
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
+<link rel="shortcut icon" type="image/x-icon" href="images/favicon.ico">
+</head>
+
+<body>
+<div id="Wrapper">
+<div class="holder">
+  <div id="Header">
+    <h1 class="logo"><a href="#">IdeaReef</a></h1>
+    <div class="floatRight">
+      <ul>
+        <li><a href="about-us.html">About Us</a></li>
+        <li><a href="companies.html">Companies</a></li>
+        <li><a href="competitions.html" class="last">Competitions</a></li>
+        <li><a href="sign-up.html" class="special">Join</a></li>
+        <li><a href="javascript: toggle1()" class="last loginBtn">Login</a></li>
+      </ul>
+      <fieldset id="signin_menu" style="display:none;">
+      <div class="arrow"></div>
+        <form action="" method="post">
+        <div style="margin:0;padding:0;display:inline"></div>
+        <label for="username"><strong>Username or email</strong></label>
+        <input id="user_email" name="user[email]" size="30" type="text">
+        <div class="error">* Wrong Username</div>
+          <label for="password"><strong>Password</strong></label>
+        <input id="user_password" name="user[password]" size="30" type="password">
+        <div class="error">* Password Mismatch</div>
+          <p class="remember">
+          <input name="submit" type="submit" id="signin_submit" tabindex="6" value="Sign in">
+          <input id="remember" name="remember_me" value="1" tabindex="7" type="checkbox">
+          <label for="remember">Remember me</label>
+        </p>
+          <p class="forgot"> <a href="#">Forgot your password?</a></p>
+        </form>
+        </fieldset>
+    </div>
+    <div class="clear"></div>
+  </div>
+  <div id="Content">
+
+      <h2>How It Works</h2>
+      <div class="testiPlate">        
+        <h3>What's a Reef?</h3>
+        <p>      A reef is a community  of customers centered around businesses to co-create and co-develop new  products and services.</p>
+      </div>
+	  <div class="blk">
+	  <div class="number">1</div>
+      <h6> Join Us!</h6>
+      <p> When you create your  profile you will automatically be assigned your hometown and school networks. </p>
+	  </div>
+	  <div class="blk">
+	  <div class="number">2</div>
+      <h6>Follow Your Favorite Companies and Friends</h6>
+      <p> The more reefs you  join, the more opportunities you will have to compete and refer your friends  for awards</p>
+	  </div>
+	  <div class="blk">
+	  <div class="number">3</div>
+      <h6>Get Active and Get Rewarded</h6>
+      <p>By solving competitions, voting  for your favorite ideas, and referring your friends to check out new  businesses, you receive badges that earn you more prizes and notoriety in your  school and community, as well as on IdeaReef world. </p>
+	  </div>
+	  <div class="blk">
+      <p><a href="#"><img src="images/sign-up-for-ideareef.png" alt="" width="297" height="62" border="0"></a><img src="images/its-free-to-join.png" alt="" width="258" height="62"></p>
+	  </div>
+  </div>
+</div>
+</div>
+<div id="Footer">
+<div class="holder">
+<div class="floatLeft">Copyright &copy; 2012 Idea Reef Inc. All Rights Reserved.</div>
+<div class="floatRight"><a href="#">Help</a> | <a href="#">Tell us to come!</a> | <a href="#">Partners</a> | <a href="#">About Us</a> | <a href="#">Companies</a></div>
+<div class="clear"></div>
+</div>
+</div>
+</body>
+</html>
