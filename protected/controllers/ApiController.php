@@ -45,8 +45,10 @@ class ApiController extends Controller
     public function actionLogIn()
     {
         //$this->_checkAuth();
-        $hello = "hello JSON message";
-        $this->_sendResponse(200, CJSON::encode($hello));
+        $email = $_POST["email"];
+        $password = $_POST["password"];
+        $params = array($email, $password);
+        $this->_sendResponse(200, CJSON::encode($params));
     }
     
     private function _checkAuth() {
