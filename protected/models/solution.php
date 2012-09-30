@@ -2,7 +2,7 @@
 
 /**
  * This is the model class for table "{{solution}}".
- *
+ * test
  * The followings are the available columns in table '{{solution}}':
  * @property integer $id
  * @property integer $competitionId
@@ -19,7 +19,8 @@ class Solution extends CActiveRecord
 	 */
 	public static function model($className=__CLASS__)
 	{
-		return parent::model($className);
+		
+           return parent::model($className);
 	}
 
 	/**
