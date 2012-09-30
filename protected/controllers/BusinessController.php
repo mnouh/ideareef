@@ -270,7 +270,15 @@ class BusinessController extends Controller {
     public function actioncompetitionDetail($id) {
         if(Yii::app()->user->isBusiness){
             $model = Business::model()->findByPk(Yii::app()->user->id);
-            $this->render('competitionDetail', array('model' => $this->loadCompetitionModel($id)));
+            $sort=new CSort();
+            $sort->attributes = array('*');
+            
+             $dataProvider= new CActiveDataProvider('Solution', 
+                    array('criteria' => 
+                        array('condition'=>'businessId='.$model->id.' and competitionId='.$id),
+                        'sort'=>$sort,
+                        'pagination' => array('pageSize' => 10)));
+            $this->render('competitionDetail', array('model' => $this->loadCompetitionModel($id), 'dataProvider' => $dataProvider));
         }
     }
     
@@ -282,6 +290,14 @@ class BusinessController extends Controller {
 	public function loadCompetitionModel($id)
 	{
 		$model=Competition::model()->findByPk($id);
+		if($model===null)
+			throw new CHttpException(404,'The requested page does not exist.');
+		return $model;
+	}
+        
+        public function loadSolutionModel($id)
+	{
+		$model=  Solution::model()->findByPk($id);
 		if($model===null)
 			throw new CHttpException(404,'The requested page does not exist.');
 		return $model;

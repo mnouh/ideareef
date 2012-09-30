@@ -75,6 +75,8 @@ class Competition extends CActiveRecord
 		// NOTE: you may need to adjust the relation name and the related
 		// class name for the relations automatically generated below.
 		return array(
+                     'solutions' => array(self::HAS_MANY,'Solution', 'competitionId'),
+                     'businessOwner' => array(self::BELONGS_TO,'Business', 'businessId'),  
 		);
 	}
 

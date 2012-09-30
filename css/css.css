@@ -436,7 +436,9 @@ div.flash-success a
 .blueNotif .fRight { white-space:nowrap; }
 #InnerContent .fL .boxes { margin-bottom:15px; -moz-border-radius:3px; border-radius:3px; -webkit-border-radius:3px;-khtml-border-radius:3px; padding-bottom:5px; overflow:hidden;  }
 #InnerContent .fL .boxes .top { background:#2BAFC9 url(../images/laderboard-top-bg.png) left top repeat-x; padding:0px 15px;  }
+
 #InnerContent .fL .boxes .top h2 { float:left; font:bold 16px/40px Arial, Helvetica, sans-serif; color:#01425B; text-shadow:#96DDEB 1px 1px 1px; display:block; }
+
 #InnerContent .fL .boxes .top .dots { float:left; width:20px; padding-top:10px; padding-left:10px; }
 #InnerContent .fL .boxes .top .fR { font-size:12px; line-height:40px; }
 #InnerContent .fL .boxes .top .fR a { color:#01425B; text-decoration:none; text-shadow:#80CBDC 1px 1px 1px; }
@@ -453,7 +455,7 @@ div.flash-success a
 #InnerContent .fL .boxes .bottom td.deep { background:#DAD9D9; color:#3E3E3E; }
 #InnerContent .fL .boxes .bottom td.right { text-align:right; }
 #InnerContent .fL .boxes .bottom td.negetive { color:#FF0000; }
-#InnerContent .fL .boxes .listTable td { padding:8px 5px; vertical-align:top;-moz-border-radius:3px; border-radius:3px; -webkit-border-radius:3px;-khtml-border-radius:3px; border-bottom:1px solid #C7D1D3; }
+#InnerContent .fL .boxes .listTable td { rows:"15"; padding:8px 5px; vertical-align:top;-moz-border-radius:3px; border-radius:3px; -webkit-border-radius:3px;-khtml-border-radius:3px; border-bottom:1px solid #C7D1D3; }
 #InnerContent .fL .boxes .listTable td.listComp { width: 450px; padding:8px 5px; vertical-align:top;-moz-border-radius:3px; border-radius:3px; -webkit-border-radius:3px;-khtml-border-radius:3px; border-bottom:1px solid #C7D1D3; }
 #InnerContent .fL .boxes .bottom .listTable tr { background:#E5E3E3; }
 #InnerContent .fL .boxes .bottom .listTable tr:hover { background:#DEDCDC; }
@@ -463,7 +465,7 @@ div.flash-success a
 #InnerContent .fL .boxes .listTable td.imageBox { width:48px; text-align:center; }
 #InnerContent .fL .boxes .bottom .listTable td.view { width:70px; text-align:center; }
 #InnerContent .fL .boxes .bottom .listTable td.view span, #InnerContent .fL .boxes .bottom .listTable td.subscription span { display:block; font-size:18px; color:#FF7133; }
-#InnerContent .fL .boxes .bottom .listTable td.subscription { width:100px; text-align:center; }
+#InnerContent .fL .boxes .bottom .listTable td.subscription { width:65px; text-align:center; }
 #InnerContent .fL .boxes .bottom .listTable td.stats { text-align:center; }
 #InnerContent .fL .boxes .bottom .listTable td a.smbtn { color:#111; font-size:11px; padding:4px 8px; line-height:20px; margin-bottom:5px; }
 #InnerContent .fL .boxes .listTable td.txtAreaRight p { margin-bottom:5px; }
