@@ -63,7 +63,7 @@ class BusinessController extends Controller {
         if(Yii::app()->user->isBusiness) {
             
             $model = Business::model()->findByPK(Yii::app()->user->id);
-            $this->render('complete-profile', array('model' => $model));
+            $this->render('completeProfile', array('model' => $model));
         }
         
     }

@@ -93,7 +93,7 @@ class UserController extends Controller {
                     if($login->login()) {
                         Yii::app()->user->setFlash('success', "Successfully Registered");
                     //Remember to Send Email Support.
-                       return $this->render('complete-profile', array('model' => $model));
+                       return $this->render('completeProfile', array('model' => $model));
                     }
                 }
                 
