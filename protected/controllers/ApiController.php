@@ -42,18 +42,21 @@ class ApiController extends Controller
     {
     }
     
-    public function actionLogIn()
-    {
-        //$this->_checkAuth();
+    public function actionLogIn() {
         $email = $_POST["email"];
         $password = $_POST["password"];
-        
+
         $_SERVER['HTTP_X_EMAIL'] = $_POST["email"];
         $_SERVER['HTTP_X_PASSWORD'] = $_POST["password"];
         $this->_checkAuth();
-        
+
         $params = array($email, $password);
         $this->_sendResponse(200, CJSON::encode($params));
+    }
+    
+    public function actionCompetitions() {
+        $competitions = Competition::model()->findAll();
+        $this->_sendResponse(200, CJSON::encode($competitions));
     }
     
     private function _checkAuth() {
