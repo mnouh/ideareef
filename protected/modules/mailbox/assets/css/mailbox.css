@@ -305,6 +305,7 @@ div.mailbox-loading  {
 	position:absolute;
 	overflow:hidden;
 }
+.txtArea { width:470px; min-height: 100px; -webkit-border-radius:5px; outline:none; -khtml-border-radius:5px; -moz-border-radius:5px; -ms-border-radius:5px; -o-border-radius:5px; border:1px solid #c4c4c4; background:#fff; font:normal 11px Arial, Helvetica, sans-serif; padding:5px; }
 /* not used 
 .mailbox-item-background{
 	position: absolute;

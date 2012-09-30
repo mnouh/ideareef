@@ -215,7 +215,7 @@ class MailboxModule extends CWebModule
 	/**
 	* @property boolean whether to enable debug mode.
 	*/
-	public $debug = true;
+	public $debug = false;
 	
 	public $defaultController = 'message';
 	private $_assetsUrl;
@@ -379,9 +379,9 @@ class MailboxModule extends CWebModule
 		$this->_cs = Yii::app()->getClientScript();
 		$this->_cs->registerCoreScript('jquery');
 		$this->_cs->registerCoreScript('jquery.ui');
-		$this->_cs->registerScriptFile($this->_assetsUrl.'/js/flash.js');
+		//$this->_cs->registerScriptFile($this->_assetsUrl.'/js/flash.js');
 		$this->_cs->registerScriptFile($this->_assetsUrl.'/js/jquery.colors.js');
-		$this->_cs->registerScriptFile($this->_assetsUrl.'/js/menu.js',CClientScript::POS_END);
+		$this->_cs->registerScriptFile($this->_assetsUrl.'/js/menu.js');
 		$this->_cs->registerScriptFile($this->_assetsUrl.'/js/jquery.qtip.min.js');
 		$this->_cs->registerCssFile($this->_assetsUrl. '/css/jquery.qtip.min.css'); 
 		$this->_cssCoreUrl = $this->_cs->getCoreScriptUrl();
@@ -412,8 +412,9 @@ class MailboxModule extends CWebModule
 		if( ($this->juiThemes=='basic' || $this->juiThemes=='widget') && $this->juiButtons)
 		{
 			$js = '$(".btn").button(); $(".btn-group").buttonset();';
-		}
+		
 		$this->_cs->registerScript('mailbox-buttons',$js,CClientScript::POS_READY);
+                }
 	}
 	
 	public function registerConfig($actionId)
