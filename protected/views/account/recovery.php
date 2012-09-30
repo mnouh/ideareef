@@ -27,6 +27,7 @@ $this->pageTitle = Yii::app()->name . ' - Account Recovery';
 
 </div>
             <?php endIf;?>
+        </div>
     <div class="login">
         <div class="inside">
             <h3>Email</h3>
@@ -45,7 +46,7 @@ $this->pageTitle = Yii::app()->name . ' - Account Recovery';
                                                 //'update'=>'#successMessage',
                                                 //'beforeSend' => 'function() {alert("testing");}',
                                                 //'validated' => 'function() {$("div#load").removeClass("loading");}',
-                                                'complete' => 'function() {$("div.login").slideUp();}',
+                                                //'complete' => 'function() {$("div.login").slideUp();}',
                                                 'type' => 'POST'
                                         ),
                                         array('class' => 'btn')
@@ -60,6 +61,5 @@ $this->pageTitle = Yii::app()->name . ' - Account Recovery';
         </div>
     </div>
     <div class="clear"></div>
-</div>
 </div>
 <?php $this->endWidget(); ?>
