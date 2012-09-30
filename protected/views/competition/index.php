@@ -170,7 +170,16 @@ $this->menu = array(
                                         </tr>
                                         <tr>
                                             <td class="imageBox">&nbsp;</td>
-                                            <td colspan="3" class="ex"><a href="#" class="smBlueBtn">Closed Solutions</a> <a href="#" class="smBlueBtn">View Pavillion</a> <a href="#" class="smBlueBtn">View Challanges</a> </td>
+                                            <td colspan="3" class="ex">
+                                                <?php 
+                                                if($competition->isClosed ==1) { 
+                                                    echo CHtml::link('Closed Solution', '#');
+                                                    } 
+                                                else { 
+                                                        echo CHtml::link('Submit Solution', $this->createUrl('user/competitionSub', array('id' => $competition->id)), array('class' => 'smBlueBtn')); 
+                                                        
+                                                        }
+                                                        ?> <a href="#" class="smBlueBtn">View Pavillion</a> <a href="#" class="smBlueBtn">View Challanges</a> </td>
                                         </tr>
                                     </table></td>
                             </tr>

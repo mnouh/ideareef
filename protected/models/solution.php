@@ -1,21 +1,21 @@
 <?php
 
 /**
- * This is the model class for table "{{centry}}".
+ * This is the model class for table "{{solution}}".
  *
- * The followings are the available columns in table '{{centry}}':
+ * The followings are the available columns in table '{{solution}}':
  * @property integer $id
  * @property integer $competitionId
  * @property integer $userId
  * @property integer $businessId
  * @property string $submit_time
  */
-class CEntry extends CActiveRecord
+class Solution extends CActiveRecord
 {
 	/**
 	 * Returns the static model of the specified AR class.
 	 * @param string $className active record class name.
-	 * @return CEntry the static model class
+	 * @return solution the static model class
 	 */
 	public static function model($className=__CLASS__)
 	{
@@ -27,7 +27,7 @@ class CEntry extends CActiveRecord
 	 */
 	public function tableName()
 	{
-		return '{{centry}}';
+		return '{{solution}}';
 	}
 
 	/**
@@ -54,6 +54,8 @@ class CEntry extends CActiveRecord
 		// NOTE: you may need to adjust the relation name and the related
 		// class name for the relations automatically generated below.
 		return array(
+                    'competition' => array(self::BELONGS_TO,'Competition', 'competitionId'),
+                    'userSubmit'=> array(self::BELONGS_TO,'User', 'userId'),
 		);
 	}
 

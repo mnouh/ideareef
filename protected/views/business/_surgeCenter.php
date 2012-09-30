@@ -3,15 +3,17 @@
                 <td class="imageBox"><img src="<?php echo Yii::app()->request->baseUrl; ?>/images/no-image-female.gif" alt=""></td>
                 <td class ="listComp"><a href="<?php echo $this->createUrl('business/competitionDetail', array('id' => $data->id)); ?>"><?php echo $data->name . '<br>'; ?></a><br>
                     
-                    <b>Start Date: </b><?php echo $data->startDate; ?> <br>
-                    <b>End Date: </b><?php echo $data->endDate; ?></td>
+                   (surge/idea title) by (name of user)
+                   (title/topic of surge contest)
+                    
                 <td class="view">
-                    <p><span>1000</span> <strong>Submissions</strong></p>
+                    <p><span>1000</span> <strong>Votes</strong></p>
+                    <p>Viral Icon</p>
                 </td>
 
             </tr>
             <tr>
                 <td class="imageBox">&nbsp;</td>
-                <td colspan="3" class="ex"><a href="#" class="smBlueBtn">View Competition</a> <a href="#" class="smBlueBtn">View Solutions</a> </td>
+                <td colspan="3" class="ex"><a href="#" class="smBlueBtn">View Surge</a> <a href="#" class="smBlueBtn">View Solutions</a> </td>
             </tr>
         </table>

@@ -8495,3 +8495,1713 @@ Stack trace:
 #3 {main}
 REQUEST_URI=/ideareef/mailbox/message
 ---
+2012/09/29 22:08:41 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "images".' in C:\wamp\www\ideareef\framework\web\CController.php:484
+Stack trace:
+#0 C:\wamp\www\ideareef\framework\web\CController.php(271): CController->missingAction('images')
+#1 C:\wamp\www\ideareef\framework\web\CWebApplication.php(276): CController->run('images')
+#2 C:\wamp\www\ideareef\framework\web\CWebApplication.php(135): CWebApplication->runController('business/images...')
+#3 C:\wamp\www\ideareef\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#4 C:\wamp\www\ideareef\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/ideareef/business/images/no-image-male.gif
+HTTP_REFERER=http://localhost/ideareef/business/competition
+---
+2012/09/29 22:08:41 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "images".' in C:\wamp\www\ideareef\framework\web\CController.php:484
+Stack trace:
+#0 C:\wamp\www\ideareef\framework\web\CController.php(271): CController->missingAction('images')
+#1 C:\wamp\www\ideareef\framework\web\CWebApplication.php(276): CController->run('images')
+#2 C:\wamp\www\ideareef\framework\web\CWebApplication.php(135): CWebApplication->runController('business/images...')
+#3 C:\wamp\www\ideareef\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#4 C:\wamp\www\ideareef\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/ideareef/business/images/bar.png
+HTTP_REFERER=http://localhost/ideareef/business/competition
+---
+2012/09/29 22:08:41 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "images".' in C:\wamp\www\ideareef\framework\web\CController.php:484
+Stack trace:
+#0 C:\wamp\www\ideareef\framework\web\CController.php(271): CController->missingAction('images')
+#1 C:\wamp\www\ideareef\framework\web\CWebApplication.php(276): CController->run('images')
+#2 C:\wamp\www\ideareef\framework\web\CWebApplication.php(135): CWebApplication->runController('business/images...')
+#3 C:\wamp\www\ideareef\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#4 C:\wamp\www\ideareef\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/ideareef/business/images/res.png
+HTTP_REFERER=http://localhost/ideareef/business/competition
+---
+2012/09/29 22:08:41 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "images".' in C:\wamp\www\ideareef\framework\web\CController.php:484
+Stack trace:
+#0 C:\wamp\www\ideareef\framework\web\CController.php(271): CController->missingAction('images')
+#1 C:\wamp\www\ideareef\framework\web\CWebApplication.php(276): CController->run('images')
+#2 C:\wamp\www\ideareef\framework\web\CWebApplication.php(135): CWebApplication->runController('business/images...')
+#3 C:\wamp\www\ideareef\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#4 C:\wamp\www\ideareef\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/ideareef/business/images/bronze-profile.png
+HTTP_REFERER=http://localhost/ideareef/business/competition
+---
+2012/09/29 22:08:41 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "images".' in C:\wamp\www\ideareef\framework\web\CController.php:484
+Stack trace:
+#0 C:\wamp\www\ideareef\framework\web\CController.php(271): CController->missingAction('images')
+#1 C:\wamp\www\ideareef\framework\web\CWebApplication.php(276): CController->run('images')
+#2 C:\wamp\www\ideareef\framework\web\CWebApplication.php(135): CWebApplication->runController('business/images...')
+#3 C:\wamp\www\ideareef\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#4 C:\wamp\www\ideareef\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/ideareef/business/images/red-badge.png
+HTTP_REFERER=http://localhost/ideareef/business/competition
+---
+2012/09/29 22:08:41 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "images".' in C:\wamp\www\ideareef\framework\web\CController.php:484
+Stack trace:
+#0 C:\wamp\www\ideareef\framework\web\CController.php(271): CController->missingAction('images')
+#1 C:\wamp\www\ideareef\framework\web\CWebApplication.php(276): CController->run('images')
+#2 C:\wamp\www\ideareef\framework\web\CWebApplication.php(135): CWebApplication->runController('business/images...')
+#3 C:\wamp\www\ideareef\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#4 C:\wamp\www\ideareef\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/ideareef/business/images/profile-picture.jpg
+HTTP_REFERER=http://localhost/ideareef/business/competition
+---
+2012/09/29 22:08:41 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "images".' in C:\wamp\www\ideareef\framework\web\CController.php:484
+Stack trace:
+#0 C:\wamp\www\ideareef\framework\web\CController.php(271): CController->missingAction('images')
+#1 C:\wamp\www\ideareef\framework\web\CWebApplication.php(276): CController->run('images')
+#2 C:\wamp\www\ideareef\framework\web\CWebApplication.php(135): CWebApplication->runController('business/images...')
+#3 C:\wamp\www\ideareef\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#4 C:\wamp\www\ideareef\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/ideareef/business/images/no-image-female.gif
+HTTP_REFERER=http://localhost/ideareef/business/competition
+---
+2012/09/29 22:09:50 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Your request is invalid.' in C:\wamp\www\ideareef\framework\web\CController.php:337
+Stack trace:
+#0 C:\wamp\www\ideareef\framework\web\CController.php(310): CController->invalidActionParams(Object(CInlineAction))
+#1 C:\wamp\www\ideareef\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#2 C:\wamp\www\ideareef\framework\web\filters\CFilter.php(41): CFilterChain->run()
+#3 C:\wamp\www\ideareef\framework\web\CController.php(1146): CFilter->filter(Object(CFilterChain))
+#4 C:\wamp\www\ideareef\framework\web\filters\CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#5 C:\wamp\www\ideareef\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#6 C:\wamp\www\ideareef\framework\web\CController.php(292): CFilterChain->run()
+#7 C:\wamp\www\ideareef\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 C:\wamp\www\ideareef\framework\web\CWebApplication.php(276): CController->run('view')
+#9 C:\wamp\www\ideareef\framework\web\CWebApplication.php(135): CWebApplication->runController('competition/vie...')
+#10 C:\wamp\www\ideareef\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#11 C:\wamp\www\ideareef\index.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/ideareef/competition/view
+---
+2012/09/29 22:10:32 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Your request is invalid.' in C:\wamp\www\ideareef\framework\web\CController.php:337
+Stack trace:
+#0 C:\wamp\www\ideareef\framework\web\CController.php(310): CController->invalidActionParams(Object(CInlineAction))
+#1 C:\wamp\www\ideareef\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#2 C:\wamp\www\ideareef\framework\web\filters\CFilter.php(41): CFilterChain->run()
+#3 C:\wamp\www\ideareef\framework\web\CController.php(1146): CFilter->filter(Object(CFilterChain))
+#4 C:\wamp\www\ideareef\framework\web\filters\CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#5 C:\wamp\www\ideareef\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#6 C:\wamp\www\ideareef\framework\web\CController.php(292): CFilterChain->run()
+#7 C:\wamp\www\ideareef\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 C:\wamp\www\ideareef\framework\web\CWebApplication.php(276): CController->run('view')
+#9 C:\wamp\www\ideareef\framework\web\CWebApplication.php(135): CWebApplication->runController('competition/vie...')
+#10 C:\wamp\www\ideareef\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#11 C:\wamp\www\ideareef\index.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/ideareef/competition/view
+---
+2012/09/29 22:10:54 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "view".' in C:\wamp\www\ideareef\framework\web\CController.php:484
+Stack trace:
+#0 C:\wamp\www\ideareef\framework\web\CController.php(271): CController->missingAction('view')
+#1 C:\wamp\www\ideareef\framework\web\CWebApplication.php(276): CController->run('view')
+#2 C:\wamp\www\ideareef\framework\web\CWebApplication.php(135): CWebApplication->runController('business/view')
+#3 C:\wamp\www\ideareef\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#4 C:\wamp\www\ideareef\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/ideareef/business/view
+---
+2012/09/29 22:10:57 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "view".' in C:\wamp\www\ideareef\framework\web\CController.php:484
+Stack trace:
+#0 C:\wamp\www\ideareef\framework\web\CController.php(271): CController->missingAction('view')
+#1 C:\wamp\www\ideareef\framework\web\CWebApplication.php(276): CController->run('view')
+#2 C:\wamp\www\ideareef\framework\web\CWebApplication.php(135): CWebApplication->runController('business/view')
+#3 C:\wamp\www\ideareef\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#4 C:\wamp\www\ideareef\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/ideareef/business/view/8
+---
+2012/09/29 22:10:59 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "view".' in C:\wamp\www\ideareef\framework\web\CController.php:484
+Stack trace:
+#0 C:\wamp\www\ideareef\framework\web\CController.php(271): CController->missingAction('view')
+#1 C:\wamp\www\ideareef\framework\web\CWebApplication.php(276): CController->run('view')
+#2 C:\wamp\www\ideareef\framework\web\CWebApplication.php(135): CWebApplication->runController('business/view')
+#3 C:\wamp\www\ideareef\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#4 C:\wamp\www\ideareef\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/ideareef/business/view/2
+---
+2012/09/29 23:24:46 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not authorized to perform this action.' in C:\wamp\www\ideareef\framework\web\auth\CAccessControlFilter.php:157
+Stack trace:
+#0 C:\wamp\www\ideareef\framework\web\auth\CAccessControlFilter.php(120): CAccessControlFilter->accessDenied(Object(WebUser), 'You are not aut...')
+#1 C:\wamp\www\ideareef\framework\web\filters\CFilter.php(39): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 C:\wamp\www\ideareef\framework\web\CController.php(1146): CFilter->filter(Object(CFilterChain))
+#3 C:\wamp\www\ideareef\framework\web\filters\CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#4 C:\wamp\www\ideareef\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#5 C:\wamp\www\ideareef\framework\web\CController.php(292): CFilterChain->run()
+#6 C:\wamp\www\ideareef\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 C:\wamp\www\ideareef\framework\web\CWebApplication.php(276): CController->run('view')
+#8 C:\wamp\www\ideareef\framework\web\CWebApplication.php(135): CWebApplication->runController('user/view')
+#9 C:\wamp\www\ideareef\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#10 C:\wamp\www\ideareef\index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/ideareef/user
+---
+2012/09/29 23:30:36 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "images".' in C:\wamp\www\ideareef\framework\web\CController.php:484
+Stack trace:
+#0 C:\wamp\www\ideareef\framework\web\CController.php(271): CController->missingAction('images')
+#1 C:\wamp\www\ideareef\framework\web\CWebApplication.php(276): CController->run('images')
+#2 C:\wamp\www\ideareef\framework\web\CWebApplication.php(135): CWebApplication->runController('user/images/bro...')
+#3 C:\wamp\www\ideareef\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#4 C:\wamp\www\ideareef\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/ideareef/user/images/bronze-profile.png
+HTTP_REFERER=http://localhost/ideareef/user/competitionSub
+---
+2012/09/29 23:30:36 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "images".' in C:\wamp\www\ideareef\framework\web\CController.php:484
+Stack trace:
+#0 C:\wamp\www\ideareef\framework\web\CController.php(271): CController->missingAction('images')
+#1 C:\wamp\www\ideareef\framework\web\CWebApplication.php(276): CController->run('images')
+#2 C:\wamp\www\ideareef\framework\web\CWebApplication.php(135): CWebApplication->runController('user/images/pro...')
+#3 C:\wamp\www\ideareef\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#4 C:\wamp\www\ideareef\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/ideareef/user/images/profile-picture.jpg
+HTTP_REFERER=http://localhost/ideareef/user/competitionSub
+---
+2012/09/29 23:30:36 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "images".' in C:\wamp\www\ideareef\framework\web\CController.php:484
+Stack trace:
+#0 C:\wamp\www\ideareef\framework\web\CController.php(271): CController->missingAction('images')
+#1 C:\wamp\www\ideareef\framework\web\CWebApplication.php(276): CController->run('images')
+#2 C:\wamp\www\ideareef\framework\web\CWebApplication.php(135): CWebApplication->runController('user/images/red...')
+#3 C:\wamp\www\ideareef\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#4 C:\wamp\www\ideareef\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/ideareef/user/images/red-badge.png
+HTTP_REFERER=http://localhost/ideareef/user/competitionSub
+---
+2012/09/29 23:30:36 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "images".' in C:\wamp\www\ideareef\framework\web\CController.php:484
+Stack trace:
+#0 C:\wamp\www\ideareef\framework\web\CController.php(271): CController->missingAction('images')
+#1 C:\wamp\www\ideareef\framework\web\CWebApplication.php(276): CController->run('images')
+#2 C:\wamp\www\ideareef\framework\web\CWebApplication.php(135): CWebApplication->runController('user/images/no-...')
+#3 C:\wamp\www\ideareef\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#4 C:\wamp\www\ideareef\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/ideareef/user/images/no-image-male.gif
+HTTP_REFERER=http://localhost/ideareef/user/competitionSub
+---
+2012/09/29 23:30:36 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "images".' in C:\wamp\www\ideareef\framework\web\CController.php:484
+Stack trace:
+#0 C:\wamp\www\ideareef\framework\web\CController.php(271): CController->missingAction('images')
+#1 C:\wamp\www\ideareef\framework\web\CWebApplication.php(276): CController->run('images')
+#2 C:\wamp\www\ideareef\framework\web\CWebApplication.php(135): CWebApplication->runController('user/images/bar...')
+#3 C:\wamp\www\ideareef\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#4 C:\wamp\www\ideareef\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/ideareef/user/images/bar.png
+HTTP_REFERER=http://localhost/ideareef/user/competitionSub
+---
+2012/09/29 23:30:36 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "images".' in C:\wamp\www\ideareef\framework\web\CController.php:484
+Stack trace:
+#0 C:\wamp\www\ideareef\framework\web\CController.php(271): CController->missingAction('images')
+#1 C:\wamp\www\ideareef\framework\web\CWebApplication.php(276): CController->run('images')
+#2 C:\wamp\www\ideareef\framework\web\CWebApplication.php(135): CWebApplication->runController('user/images/res...')
+#3 C:\wamp\www\ideareef\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#4 C:\wamp\www\ideareef\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/ideareef/user/images/res.png
+HTTP_REFERER=http://localhost/ideareef/user/competitionSub
+---
+2012/09/29 23:30:36 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "images".' in C:\wamp\www\ideareef\framework\web\CController.php:484
+Stack trace:
+#0 C:\wamp\www\ideareef\framework\web\CController.php(271): CController->missingAction('images')
+#1 C:\wamp\www\ideareef\framework\web\CWebApplication.php(276): CController->run('images')
+#2 C:\wamp\www\ideareef\framework\web\CWebApplication.php(135): CWebApplication->runController('user/images/no-...')
+#3 C:\wamp\www\ideareef\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#4 C:\wamp\www\ideareef\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/ideareef/user/images/no-image-female.gif
+HTTP_REFERER=http://localhost/ideareef/user/competitionSub
+---
+2012/09/29 23:44:46 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "images".' in C:\wamp\www\ideareef\framework\web\CController.php:484
+Stack trace:
+#0 C:\wamp\www\ideareef\framework\web\CController.php(271): CController->missingAction('images')
+#1 C:\wamp\www\ideareef\framework\web\CWebApplication.php(276): CController->run('images')
+#2 C:\wamp\www\ideareef\framework\web\CWebApplication.php(135): CWebApplication->runController('user/images/fac...')
+#3 C:\wamp\www\ideareef\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#4 C:\wamp\www\ideareef\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/ideareef/user/images/facebook.png
+HTTP_REFERER=http://localhost/ideareef/user/competitionSub
+---
+2012/09/29 23:44:46 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "images".' in C:\wamp\www\ideareef\framework\web\CController.php:484
+Stack trace:
+#0 C:\wamp\www\ideareef\framework\web\CController.php(271): CController->missingAction('images')
+#1 C:\wamp\www\ideareef\framework\web\CWebApplication.php(276): CController->run('images')
+#2 C:\wamp\www\ideareef\framework\web\CWebApplication.php(135): CWebApplication->runController('user/images/twi...')
+#3 C:\wamp\www\ideareef\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#4 C:\wamp\www\ideareef\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/ideareef/user/images/twitter.png
+HTTP_REFERER=http://localhost/ideareef/user/competitionSub
+---
+2012/09/29 23:44:46 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "images".' in C:\wamp\www\ideareef\framework\web\CController.php:484
+Stack trace:
+#0 C:\wamp\www\ideareef\framework\web\CController.php(271): CController->missingAction('images')
+#1 C:\wamp\www\ideareef\framework\web\CWebApplication.php(276): CController->run('images')
+#2 C:\wamp\www\ideareef\framework\web\CWebApplication.php(135): CWebApplication->runController('user/images/no-...')
+#3 C:\wamp\www\ideareef\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#4 C:\wamp\www\ideareef\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/ideareef/user/images/no-image.png
+HTTP_REFERER=http://localhost/ideareef/user/competitionSub
+---
+2012/09/29 23:44:46 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "images".' in C:\wamp\www\ideareef\framework\web\CController.php:484
+Stack trace:
+#0 C:\wamp\www\ideareef\framework\web\CController.php(271): CController->missingAction('images')
+#1 C:\wamp\www\ideareef\framework\web\CWebApplication.php(276): CController->run('images')
+#2 C:\wamp\www\ideareef\framework\web\CWebApplication.php(135): CWebApplication->runController('user/images/mes...')
+#3 C:\wamp\www\ideareef\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#4 C:\wamp\www\ideareef\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/ideareef/user/images/messages.png
+HTTP_REFERER=http://localhost/ideareef/user/competitionSub
+---
+2012/09/29 23:46:05 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "images".' in C:\wamp\www\ideareef\framework\web\CController.php:484
+Stack trace:
+#0 C:\wamp\www\ideareef\framework\web\CController.php(271): CController->missingAction('images')
+#1 C:\wamp\www\ideareef\framework\web\CWebApplication.php(276): CController->run('images')
+#2 C:\wamp\www\ideareef\framework\web\CWebApplication.php(135): CWebApplication->runController('user/images/no-...')
+#3 C:\wamp\www\ideareef\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#4 C:\wamp\www\ideareef\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/ideareef/user/images/no-image.png
+HTTP_REFERER=http://localhost/ideareef/user/competitionSub
+---
+2012/09/29 23:46:05 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "images".' in C:\wamp\www\ideareef\framework\web\CController.php:484
+Stack trace:
+#0 C:\wamp\www\ideareef\framework\web\CController.php(271): CController->missingAction('images')
+#1 C:\wamp\www\ideareef\framework\web\CWebApplication.php(276): CController->run('images')
+#2 C:\wamp\www\ideareef\framework\web\CWebApplication.php(135): CWebApplication->runController('user/images/fac...')
+#3 C:\wamp\www\ideareef\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#4 C:\wamp\www\ideareef\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/ideareef/user/images/facebook.png
+HTTP_REFERER=http://localhost/ideareef/user/competitionSub
+---
+2012/09/29 23:46:05 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "images".' in C:\wamp\www\ideareef\framework\web\CController.php:484
+Stack trace:
+#0 C:\wamp\www\ideareef\framework\web\CController.php(271): CController->missingAction('images')
+#1 C:\wamp\www\ideareef\framework\web\CWebApplication.php(276): CController->run('images')
+#2 C:\wamp\www\ideareef\framework\web\CWebApplication.php(135): CWebApplication->runController('user/images/mes...')
+#3 C:\wamp\www\ideareef\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#4 C:\wamp\www\ideareef\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/ideareef/user/images/messages.png
+HTTP_REFERER=http://localhost/ideareef/user/competitionSub
+---
+2012/09/29 23:46:05 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "images".' in C:\wamp\www\ideareef\framework\web\CController.php:484
+Stack trace:
+#0 C:\wamp\www\ideareef\framework\web\CController.php(271): CController->missingAction('images')
+#1 C:\wamp\www\ideareef\framework\web\CWebApplication.php(276): CController->run('images')
+#2 C:\wamp\www\ideareef\framework\web\CWebApplication.php(135): CWebApplication->runController('user/images/twi...')
+#3 C:\wamp\www\ideareef\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#4 C:\wamp\www\ideareef\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/ideareef/user/images/twitter.png
+HTTP_REFERER=http://localhost/ideareef/user/competitionSub
+---
+2012/09/29 23:48:09 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "images".' in C:\wamp\www\ideareef\framework\web\CController.php:484
+Stack trace:
+#0 C:\wamp\www\ideareef\framework\web\CController.php(271): CController->missingAction('images')
+#1 C:\wamp\www\ideareef\framework\web\CWebApplication.php(276): CController->run('images')
+#2 C:\wamp\www\ideareef\framework\web\CWebApplication.php(135): CWebApplication->runController('user/images/red...')
+#3 C:\wamp\www\ideareef\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#4 C:\wamp\www\ideareef\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/ideareef/user/images/red-badge.png
+HTTP_REFERER=http://localhost/ideareef/user/competitionSub
+---
+2012/09/29 23:48:09 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "images".' in C:\wamp\www\ideareef\framework\web\CController.php:484
+Stack trace:
+#0 C:\wamp\www\ideareef\framework\web\CController.php(271): CController->missingAction('images')
+#1 C:\wamp\www\ideareef\framework\web\CWebApplication.php(276): CController->run('images')
+#2 C:\wamp\www\ideareef\framework\web\CWebApplication.php(135): CWebApplication->runController('user/images/mes...')
+#3 C:\wamp\www\ideareef\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#4 C:\wamp\www\ideareef\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/ideareef/user/images/messages.png
+HTTP_REFERER=http://localhost/ideareef/user/competitionSub
+---
+2012/09/29 23:48:09 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "images".' in C:\wamp\www\ideareef\framework\web\CController.php:484
+Stack trace:
+#0 C:\wamp\www\ideareef\framework\web\CController.php(271): CController->missingAction('images')
+#1 C:\wamp\www\ideareef\framework\web\CWebApplication.php(276): CController->run('images')
+#2 C:\wamp\www\ideareef\framework\web\CWebApplication.php(135): CWebApplication->runController('user/images/no-...')
+#3 C:\wamp\www\ideareef\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#4 C:\wamp\www\ideareef\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/ideareef/user/images/no-image.png
+HTTP_REFERER=http://localhost/ideareef/user/competitionSub
+---
+2012/09/29 23:48:09 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "images".' in C:\wamp\www\ideareef\framework\web\CController.php:484
+Stack trace:
+#0 C:\wamp\www\ideareef\framework\web\CController.php(271): CController->missingAction('images')
+#1 C:\wamp\www\ideareef\framework\web\CWebApplication.php(276): CController->run('images')
+#2 C:\wamp\www\ideareef\framework\web\CWebApplication.php(135): CWebApplication->runController('user/images/twi...')
+#3 C:\wamp\www\ideareef\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#4 C:\wamp\www\ideareef\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/ideareef/user/images/twitter.png
+HTTP_REFERER=http://localhost/ideareef/user/competitionSub
+---
+2012/09/29 23:48:09 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "images".' in C:\wamp\www\ideareef\framework\web\CController.php:484
+Stack trace:
+#0 C:\wamp\www\ideareef\framework\web\CController.php(271): CController->missingAction('images')
+#1 C:\wamp\www\ideareef\framework\web\CWebApplication.php(276): CController->run('images')
+#2 C:\wamp\www\ideareef\framework\web\CWebApplication.php(135): CWebApplication->runController('user/images/fac...')
+#3 C:\wamp\www\ideareef\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#4 C:\wamp\www\ideareef\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/ideareef/user/images/facebook.png
+HTTP_REFERER=http://localhost/ideareef/user/competitionSub
+---
+2012/09/29 23:48:09 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "images".' in C:\wamp\www\ideareef\framework\web\CController.php:484
+Stack trace:
+#0 C:\wamp\www\ideareef\framework\web\CController.php(271): CController->missingAction('images')
+#1 C:\wamp\www\ideareef\framework\web\CWebApplication.php(276): CController->run('images')
+#2 C:\wamp\www\ideareef\framework\web\CWebApplication.php(135): CWebApplication->runController('user/images/no-...')
+#3 C:\wamp\www\ideareef\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#4 C:\wamp\www\ideareef\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/ideareef/user/images/no-image-female.gif
+HTTP_REFERER=http://localhost/ideareef/user/competitionSub
+---
+2012/09/29 23:48:36 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "images".' in C:\wamp\www\ideareef\framework\web\CController.php:484
+Stack trace:
+#0 C:\wamp\www\ideareef\framework\web\CController.php(271): CController->missingAction('images')
+#1 C:\wamp\www\ideareef\framework\web\CWebApplication.php(276): CController->run('images')
+#2 C:\wamp\www\ideareef\framework\web\CWebApplication.php(135): CWebApplication->runController('user/images/fac...')
+#3 C:\wamp\www\ideareef\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#4 C:\wamp\www\ideareef\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/ideareef/user/images/facebook.png
+HTTP_REFERER=http://localhost/ideareef/user/competitionSub
+---
+2012/09/29 23:48:36 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "images".' in C:\wamp\www\ideareef\framework\web\CController.php:484
+Stack trace:
+#0 C:\wamp\www\ideareef\framework\web\CController.php(271): CController->missingAction('images')
+#1 C:\wamp\www\ideareef\framework\web\CWebApplication.php(276): CController->run('images')
+#2 C:\wamp\www\ideareef\framework\web\CWebApplication.php(135): CWebApplication->runController('user/images/twi...')
+#3 C:\wamp\www\ideareef\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#4 C:\wamp\www\ideareef\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/ideareef/user/images/twitter.png
+HTTP_REFERER=http://localhost/ideareef/user/competitionSub
+---
+2012/09/29 23:48:36 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "images".' in C:\wamp\www\ideareef\framework\web\CController.php:484
+Stack trace:
+#0 C:\wamp\www\ideareef\framework\web\CController.php(271): CController->missingAction('images')
+#1 C:\wamp\www\ideareef\framework\web\CWebApplication.php(276): CController->run('images')
+#2 C:\wamp\www\ideareef\framework\web\CWebApplication.php(135): CWebApplication->runController('user/images/mes...')
+#3 C:\wamp\www\ideareef\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#4 C:\wamp\www\ideareef\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/ideareef/user/images/messages.png
+HTTP_REFERER=http://localhost/ideareef/user/competitionSub
+---
+2012/09/29 23:48:36 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "images".' in C:\wamp\www\ideareef\framework\web\CController.php:484
+Stack trace:
+#0 C:\wamp\www\ideareef\framework\web\CController.php(271): CController->missingAction('images')
+#1 C:\wamp\www\ideareef\framework\web\CWebApplication.php(276): CController->run('images')
+#2 C:\wamp\www\ideareef\framework\web\CWebApplication.php(135): CWebApplication->runController('user/images/no-...')
+#3 C:\wamp\www\ideareef\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#4 C:\wamp\www\ideareef\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/ideareef/user/images/no-image-female.gif
+HTTP_REFERER=http://localhost/ideareef/user/competitionSub
+---
+2012/09/29 23:48:36 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "images".' in C:\wamp\www\ideareef\framework\web\CController.php:484
+Stack trace:
+#0 C:\wamp\www\ideareef\framework\web\CController.php(271): CController->missingAction('images')
+#1 C:\wamp\www\ideareef\framework\web\CWebApplication.php(276): CController->run('images')
+#2 C:\wamp\www\ideareef\framework\web\CWebApplication.php(135): CWebApplication->runController('user/images/red...')
+#3 C:\wamp\www\ideareef\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#4 C:\wamp\www\ideareef\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/ideareef/user/images/red-badge.png
+HTTP_REFERER=http://localhost/ideareef/user/competitionSub
+---
+2012/09/29 23:48:36 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "images".' in C:\wamp\www\ideareef\framework\web\CController.php:484
+Stack trace:
+#0 C:\wamp\www\ideareef\framework\web\CController.php(271): CController->missingAction('images')
+#1 C:\wamp\www\ideareef\framework\web\CWebApplication.php(276): CController->run('images')
+#2 C:\wamp\www\ideareef\framework\web\CWebApplication.php(135): CWebApplication->runController('user/images/no-...')
+#3 C:\wamp\www\ideareef\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#4 C:\wamp\www\ideareef\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/ideareef/user/images/no-image.png
+HTTP_REFERER=http://localhost/ideareef/user/competitionSub
+---
+2012/09/29 23:48:58 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "ideareef/images/no-image-male.gif".' in C:\wamp\www\ideareef\framework\web\CWebApplication.php:280
+Stack trace:
+#0 C:\wamp\www\ideareef\framework\web\CWebApplication.php(135): CWebApplication->runController('ideareef/images...')
+#1 C:\wamp\www\ideareef\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\wamp\www\ideareef\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/ideareef//ideareef/images/no-image-male.gif
+HTTP_REFERER=http://localhost/ideareef/user/competitionSub
+---
+2012/09/29 23:48:58 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "ideareef/images/res.png".' in C:\wamp\www\ideareef\framework\web\CWebApplication.php:280
+Stack trace:
+#0 C:\wamp\www\ideareef\framework\web\CWebApplication.php(135): CWebApplication->runController('ideareef/images...')
+#1 C:\wamp\www\ideareef\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\wamp\www\ideareef\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/ideareef//ideareef/images/res.png
+HTTP_REFERER=http://localhost/ideareef/user/competitionSub
+---
+2012/09/29 23:48:58 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "ideareef/images/red-badge.png".' in C:\wamp\www\ideareef\framework\web\CWebApplication.php:280
+Stack trace:
+#0 C:\wamp\www\ideareef\framework\web\CWebApplication.php(135): CWebApplication->runController('ideareef/images...')
+#1 C:\wamp\www\ideareef\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\wamp\www\ideareef\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/ideareef//ideareef/images/red-badge.png
+HTTP_REFERER=http://localhost/ideareef/user/competitionSub
+---
+2012/09/29 23:48:58 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "ideareef/images/bar.png".' in C:\wamp\www\ideareef\framework\web\CWebApplication.php:280
+Stack trace:
+#0 C:\wamp\www\ideareef\framework\web\CWebApplication.php(135): CWebApplication->runController('ideareef/images...')
+#1 C:\wamp\www\ideareef\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\wamp\www\ideareef\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/ideareef//ideareef/images/bar.png
+HTTP_REFERER=http://localhost/ideareef/user/competitionSub
+---
+2012/09/29 23:48:58 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "ideareef/images/bronze-profile.png".' in C:\wamp\www\ideareef\framework\web\CWebApplication.php:280
+Stack trace:
+#0 C:\wamp\www\ideareef\framework\web\CWebApplication.php(135): CWebApplication->runController('ideareef/images...')
+#1 C:\wamp\www\ideareef\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\wamp\www\ideareef\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/ideareef//ideareef/images/bronze-profile.png
+HTTP_REFERER=http://localhost/ideareef/user/competitionSub
+---
+2012/09/29 23:48:58 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "ideareef/images/profile-picture.jpg".' in C:\wamp\www\ideareef\framework\web\CWebApplication.php:280
+Stack trace:
+#0 C:\wamp\www\ideareef\framework\web\CWebApplication.php(135): CWebApplication->runController('ideareef/images...')
+#1 C:\wamp\www\ideareef\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\wamp\www\ideareef\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/ideareef//ideareef/images/profile-picture.jpg
+HTTP_REFERER=http://localhost/ideareef/user/competitionSub
+---
+2012/09/29 23:48:58 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "ideareef/images/no-image-female.gif".' in C:\wamp\www\ideareef\framework\web\CWebApplication.php:280
+Stack trace:
+#0 C:\wamp\www\ideareef\framework\web\CWebApplication.php(135): CWebApplication->runController('ideareef/images...')
+#1 C:\wamp\www\ideareef\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\wamp\www\ideareef\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/ideareef//ideareef/images/no-image-female.gif
+HTTP_REFERER=http://localhost/ideareef/user/competitionSub
+---
+2012/09/29 23:51:00 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "ideareef/images/red-badge.png".' in C:\wamp\www\ideareef\framework\web\CWebApplication.php:280
+Stack trace:
+#0 C:\wamp\www\ideareef\framework\web\CWebApplication.php(135): CWebApplication->runController('ideareef/images...')
+#1 C:\wamp\www\ideareef\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\wamp\www\ideareef\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/ideareef//ideareef/images/red-badge.png
+HTTP_REFERER=http://localhost/ideareef/user/competitionSub
+---
+2012/09/29 23:51:00 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "ideareef/images/profile-picture.jpg".' in C:\wamp\www\ideareef\framework\web\CWebApplication.php:280
+Stack trace:
+#0 C:\wamp\www\ideareef\framework\web\CWebApplication.php(135): CWebApplication->runController('ideareef/images...')
+#1 C:\wamp\www\ideareef\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\wamp\www\ideareef\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/ideareef//ideareef/images/profile-picture.jpg
+HTTP_REFERER=http://localhost/ideareef/user/competitionSub
+---
+2012/09/29 23:51:00 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "ideareef/images/bronze-profile.png".' in C:\wamp\www\ideareef\framework\web\CWebApplication.php:280
+Stack trace:
+#0 C:\wamp\www\ideareef\framework\web\CWebApplication.php(135): CWebApplication->runController('ideareef/images...')
+#1 C:\wamp\www\ideareef\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\wamp\www\ideareef\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/ideareef//ideareef/images/bronze-profile.png
+HTTP_REFERER=http://localhost/ideareef/user/competitionSub
+---
+2012/09/29 23:51:00 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "ideareef/images/no-image-male.gif".' in C:\wamp\www\ideareef\framework\web\CWebApplication.php:280
+Stack trace:
+#0 C:\wamp\www\ideareef\framework\web\CWebApplication.php(135): CWebApplication->runController('ideareef/images...')
+#1 C:\wamp\www\ideareef\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\wamp\www\ideareef\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/ideareef//ideareef/images/no-image-male.gif
+HTTP_REFERER=http://localhost/ideareef/user/competitionSub
+---
+2012/09/29 23:51:00 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "ideareef/images/bar.png".' in C:\wamp\www\ideareef\framework\web\CWebApplication.php:280
+Stack trace:
+#0 C:\wamp\www\ideareef\framework\web\CWebApplication.php(135): CWebApplication->runController('ideareef/images...')
+#1 C:\wamp\www\ideareef\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\wamp\www\ideareef\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/ideareef//ideareef/images/bar.png
+HTTP_REFERER=http://localhost/ideareef/user/competitionSub
+---
+2012/09/29 23:51:00 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "ideareef/images/res.png".' in C:\wamp\www\ideareef\framework\web\CWebApplication.php:280
+Stack trace:
+#0 C:\wamp\www\ideareef\framework\web\CWebApplication.php(135): CWebApplication->runController('ideareef/images...')
+#1 C:\wamp\www\ideareef\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\wamp\www\ideareef\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/ideareef//ideareef/images/res.png
+HTTP_REFERER=http://localhost/ideareef/user/competitionSub
+---
+2012/09/29 23:51:00 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "ideareef/images/no-image-female.gif".' in C:\wamp\www\ideareef\framework\web\CWebApplication.php:280
+Stack trace:
+#0 C:\wamp\www\ideareef\framework\web\CWebApplication.php(135): CWebApplication->runController('ideareef/images...')
+#1 C:\wamp\www\ideareef\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\wamp\www\ideareef\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/ideareef//ideareef/images/no-image-female.gif
+HTTP_REFERER=http://localhost/ideareef/user/competitionSub
+---
+2012/09/29 23:51:28 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "ideareef/images/no-image-male.gif".' in C:\wamp\www\ideareef\framework\web\CWebApplication.php:280
+Stack trace:
+#0 C:\wamp\www\ideareef\framework\web\CWebApplication.php(135): CWebApplication->runController('ideareef/images...')
+#1 C:\wamp\www\ideareef\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\wamp\www\ideareef\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/ideareef//ideareef/images/no-image-male.gif
+HTTP_REFERER=http://localhost/ideareef/user/competitionSub
+---
+2012/09/29 23:51:28 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "ideareef/images/res.png".' in C:\wamp\www\ideareef\framework\web\CWebApplication.php:280
+Stack trace:
+#0 C:\wamp\www\ideareef\framework\web\CWebApplication.php(135): CWebApplication->runController('ideareef/images...')
+#1 C:\wamp\www\ideareef\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\wamp\www\ideareef\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/ideareef//ideareef/images/res.png
+HTTP_REFERER=http://localhost/ideareef/user/competitionSub
+---
+2012/09/29 23:51:28 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "ideareef/images/profile-picture.jpg".' in C:\wamp\www\ideareef\framework\web\CWebApplication.php:280
+Stack trace:
+#0 C:\wamp\www\ideareef\framework\web\CWebApplication.php(135): CWebApplication->runController('ideareef/images...')
+#1 C:\wamp\www\ideareef\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\wamp\www\ideareef\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/ideareef//ideareef/images/profile-picture.jpg
+HTTP_REFERER=http://localhost/ideareef/user/competitionSub
+---
+2012/09/29 23:51:28 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "ideareef/images/red-badge.png".' in C:\wamp\www\ideareef\framework\web\CWebApplication.php:280
+Stack trace:
+#0 C:\wamp\www\ideareef\framework\web\CWebApplication.php(135): CWebApplication->runController('ideareef/images...')
+#1 C:\wamp\www\ideareef\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\wamp\www\ideareef\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/ideareef//ideareef/images/red-badge.png
+HTTP_REFERER=http://localhost/ideareef/user/competitionSub
+---
+2012/09/29 23:51:28 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "ideareef/images/bar.png".' in C:\wamp\www\ideareef\framework\web\CWebApplication.php:280
+Stack trace:
+#0 C:\wamp\www\ideareef\framework\web\CWebApplication.php(135): CWebApplication->runController('ideareef/images...')
+#1 C:\wamp\www\ideareef\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\wamp\www\ideareef\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/ideareef//ideareef/images/bar.png
+HTTP_REFERER=http://localhost/ideareef/user/competitionSub
+---
+2012/09/29 23:51:28 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "ideareef/images/bronze-profile.png".' in C:\wamp\www\ideareef\framework\web\CWebApplication.php:280
+Stack trace:
+#0 C:\wamp\www\ideareef\framework\web\CWebApplication.php(135): CWebApplication->runController('ideareef/images...')
+#1 C:\wamp\www\ideareef\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\wamp\www\ideareef\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/ideareef//ideareef/images/bronze-profile.png
+HTTP_REFERER=http://localhost/ideareef/user/competitionSub
+---
+2012/09/29 23:51:28 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "ideareef/images/no-image-female.gif".' in C:\wamp\www\ideareef\framework\web\CWebApplication.php:280
+Stack trace:
+#0 C:\wamp\www\ideareef\framework\web\CWebApplication.php(135): CWebApplication->runController('ideareef/images...')
+#1 C:\wamp\www\ideareef\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\wamp\www\ideareef\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/ideareef//ideareef/images/no-image-female.gif
+HTTP_REFERER=http://localhost/ideareef/user/competitionSub
+---
+2012/09/29 23:51:41 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "ideareef/images/no-image-male.gif".' in C:\wamp\www\ideareef\framework\web\CWebApplication.php:280
+Stack trace:
+#0 C:\wamp\www\ideareef\framework\web\CWebApplication.php(135): CWebApplication->runController('ideareef/images...')
+#1 C:\wamp\www\ideareef\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\wamp\www\ideareef\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/ideareef//ideareef/images/no-image-male.gif
+HTTP_REFERER=http://localhost/ideareef/user/competitionSub
+---
+2012/09/29 23:51:41 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "ideareef/images/profile-picture.jpg".' in C:\wamp\www\ideareef\framework\web\CWebApplication.php:280
+Stack trace:
+#0 C:\wamp\www\ideareef\framework\web\CWebApplication.php(135): CWebApplication->runController('ideareef/images...')
+#1 C:\wamp\www\ideareef\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\wamp\www\ideareef\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/ideareef//ideareef/images/profile-picture.jpg
+HTTP_REFERER=http://localhost/ideareef/user/competitionSub
+---
+2012/09/29 23:51:41 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "ideareef/images/bronze-profile.png".' in C:\wamp\www\ideareef\framework\web\CWebApplication.php:280
+Stack trace:
+#0 C:\wamp\www\ideareef\framework\web\CWebApplication.php(135): CWebApplication->runController('ideareef/images...')
+#1 C:\wamp\www\ideareef\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\wamp\www\ideareef\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/ideareef//ideareef/images/bronze-profile.png
+HTTP_REFERER=http://localhost/ideareef/user/competitionSub
+---
+2012/09/29 23:51:41 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "ideareef/images/res.png".' in C:\wamp\www\ideareef\framework\web\CWebApplication.php:280
+Stack trace:
+#0 C:\wamp\www\ideareef\framework\web\CWebApplication.php(135): CWebApplication->runController('ideareef/images...')
+#1 C:\wamp\www\ideareef\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\wamp\www\ideareef\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/ideareef//ideareef/images/res.png
+HTTP_REFERER=http://localhost/ideareef/user/competitionSub
+---
+2012/09/29 23:51:41 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "ideareef/images/red-badge.png".' in C:\wamp\www\ideareef\framework\web\CWebApplication.php:280
+Stack trace:
+#0 C:\wamp\www\ideareef\framework\web\CWebApplication.php(135): CWebApplication->runController('ideareef/images...')
+#1 C:\wamp\www\ideareef\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\wamp\www\ideareef\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/ideareef//ideareef/images/red-badge.png
+HTTP_REFERER=http://localhost/ideareef/user/competitionSub
+---
+2012/09/29 23:51:41 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "ideareef/images/bar.png".' in C:\wamp\www\ideareef\framework\web\CWebApplication.php:280
+Stack trace:
+#0 C:\wamp\www\ideareef\framework\web\CWebApplication.php(135): CWebApplication->runController('ideareef/images...')
+#1 C:\wamp\www\ideareef\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\wamp\www\ideareef\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/ideareef//ideareef/images/bar.png
+HTTP_REFERER=http://localhost/ideareef/user/competitionSub
+---
+2012/09/29 23:51:41 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "ideareef/images/no-image-female.gif".' in C:\wamp\www\ideareef\framework\web\CWebApplication.php:280
+Stack trace:
+#0 C:\wamp\www\ideareef\framework\web\CWebApplication.php(135): CWebApplication->runController('ideareef/images...')
+#1 C:\wamp\www\ideareef\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\wamp\www\ideareef\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/ideareef//ideareef/images/no-image-female.gif
+HTTP_REFERER=http://localhost/ideareef/user/competitionSub
+---
+2012/09/29 23:52:14 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "ideareef/images/red-badge.png".' in C:\wamp\www\ideareef\framework\web\CWebApplication.php:280
+Stack trace:
+#0 C:\wamp\www\ideareef\framework\web\CWebApplication.php(135): CWebApplication->runController('ideareef/images...')
+#1 C:\wamp\www\ideareef\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\wamp\www\ideareef\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/ideareef//ideareef/images/red-badge.png
+HTTP_REFERER=http://localhost/ideareef/user/competitionSub
+---
+2012/09/29 23:52:14 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "ideareef/images/no-image-male.gif".' in C:\wamp\www\ideareef\framework\web\CWebApplication.php:280
+Stack trace:
+#0 C:\wamp\www\ideareef\framework\web\CWebApplication.php(135): CWebApplication->runController('ideareef/images...')
+#1 C:\wamp\www\ideareef\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\wamp\www\ideareef\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/ideareef//ideareef/images/no-image-male.gif
+HTTP_REFERER=http://localhost/ideareef/user/competitionSub
+---
+2012/09/29 23:52:14 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "ideareef/images/profile-picture.jpg".' in C:\wamp\www\ideareef\framework\web\CWebApplication.php:280
+Stack trace:
+#0 C:\wamp\www\ideareef\framework\web\CWebApplication.php(135): CWebApplication->runController('ideareef/images...')
+#1 C:\wamp\www\ideareef\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\wamp\www\ideareef\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/ideareef//ideareef/images/profile-picture.jpg
+HTTP_REFERER=http://localhost/ideareef/user/competitionSub
+---
+2012/09/29 23:52:14 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "ideareef/images/bar.png".' in C:\wamp\www\ideareef\framework\web\CWebApplication.php:280
+Stack trace:
+#0 C:\wamp\www\ideareef\framework\web\CWebApplication.php(135): CWebApplication->runController('ideareef/images...')
+#1 C:\wamp\www\ideareef\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\wamp\www\ideareef\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/ideareef//ideareef/images/bar.png
+HTTP_REFERER=http://localhost/ideareef/user/competitionSub
+---
+2012/09/29 23:52:14 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "ideareef/images/res.png".' in C:\wamp\www\ideareef\framework\web\CWebApplication.php:280
+Stack trace:
+#0 C:\wamp\www\ideareef\framework\web\CWebApplication.php(135): CWebApplication->runController('ideareef/images...')
+#1 C:\wamp\www\ideareef\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\wamp\www\ideareef\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/ideareef//ideareef/images/res.png
+HTTP_REFERER=http://localhost/ideareef/user/competitionSub
+---
+2012/09/29 23:52:14 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "ideareef/images/bronze-profile.png".' in C:\wamp\www\ideareef\framework\web\CWebApplication.php:280
+Stack trace:
+#0 C:\wamp\www\ideareef\framework\web\CWebApplication.php(135): CWebApplication->runController('ideareef/images...')
+#1 C:\wamp\www\ideareef\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\wamp\www\ideareef\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/ideareef//ideareef/images/bronze-profile.png
+HTTP_REFERER=http://localhost/ideareef/user/competitionSub
+---
+2012/09/29 23:52:14 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "ideareef/images/no-image-female.gif".' in C:\wamp\www\ideareef\framework\web\CWebApplication.php:280
+Stack trace:
+#0 C:\wamp\www\ideareef\framework\web\CWebApplication.php(135): CWebApplication->runController('ideareef/images...')
+#1 C:\wamp\www\ideareef\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\wamp\www\ideareef\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/ideareef//ideareef/images/no-image-female.gif
+HTTP_REFERER=http://localhost/ideareef/user/competitionSub
+---
+2012/09/29 23:52:29 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "ideareef//ideareef//ideareef//ideareef//ideareef/images/profile-picture.jpg".' in C:\wamp\www\ideareef\framework\web\CWebApplication.php:280
+Stack trace:
+#0 C:\wamp\www\ideareef\framework\web\CWebApplication.php(135): CWebApplication->runController('ideareef//idear...')
+#1 C:\wamp\www\ideareef\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\wamp\www\ideareef\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/ideareef//ideareef//ideareef//ideareef//ideareef//ideareef/images/profile-picture.jpg
+HTTP_REFERER=http://localhost/ideareef/user/competitionSub
+---
+2012/09/29 23:52:29 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "ideareef//ideareef//ideareef//ideareef//ideareef/images/bronze-profile.png".' in C:\wamp\www\ideareef\framework\web\CWebApplication.php:280
+Stack trace:
+#0 C:\wamp\www\ideareef\framework\web\CWebApplication.php(135): CWebApplication->runController('ideareef//idear...')
+#1 C:\wamp\www\ideareef\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\wamp\www\ideareef\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/ideareef//ideareef//ideareef//ideareef//ideareef//ideareef/images/bronze-profile.png
+HTTP_REFERER=http://localhost/ideareef/user/competitionSub
+---
+2012/09/29 23:52:29 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "ideareef//ideareef//ideareef//ideareef//ideareef/images/no-image-male.gif".' in C:\wamp\www\ideareef\framework\web\CWebApplication.php:280
+Stack trace:
+#0 C:\wamp\www\ideareef\framework\web\CWebApplication.php(135): CWebApplication->runController('ideareef//idear...')
+#1 C:\wamp\www\ideareef\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\wamp\www\ideareef\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/ideareef//ideareef//ideareef//ideareef//ideareef//ideareef/images/no-image-male.gif
+HTTP_REFERER=http://localhost/ideareef/user/competitionSub
+---
+2012/09/29 23:52:29 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "ideareef//ideareef//ideareef//ideareef//ideareef/images/res.png".' in C:\wamp\www\ideareef\framework\web\CWebApplication.php:280
+Stack trace:
+#0 C:\wamp\www\ideareef\framework\web\CWebApplication.php(135): CWebApplication->runController('ideareef//idear...')
+#1 C:\wamp\www\ideareef\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\wamp\www\ideareef\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/ideareef//ideareef//ideareef//ideareef//ideareef//ideareef/images/res.png
+HTTP_REFERER=http://localhost/ideareef/user/competitionSub
+---
+2012/09/29 23:52:29 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "ideareef//ideareef//ideareef//ideareef//ideareef/images/red-badge.png".' in C:\wamp\www\ideareef\framework\web\CWebApplication.php:280
+Stack trace:
+#0 C:\wamp\www\ideareef\framework\web\CWebApplication.php(135): CWebApplication->runController('ideareef//idear...')
+#1 C:\wamp\www\ideareef\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\wamp\www\ideareef\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/ideareef//ideareef//ideareef//ideareef//ideareef//ideareef/images/red-badge.png
+HTTP_REFERER=http://localhost/ideareef/user/competitionSub
+---
+2012/09/29 23:52:29 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "ideareef//ideareef//ideareef//ideareef//ideareef/images/bar.png".' in C:\wamp\www\ideareef\framework\web\CWebApplication.php:280
+Stack trace:
+#0 C:\wamp\www\ideareef\framework\web\CWebApplication.php(135): CWebApplication->runController('ideareef//idear...')
+#1 C:\wamp\www\ideareef\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\wamp\www\ideareef\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/ideareef//ideareef//ideareef//ideareef//ideareef//ideareef/images/bar.png
+HTTP_REFERER=http://localhost/ideareef/user/competitionSub
+---
+2012/09/29 23:52:29 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "ideareef//ideareef//ideareef//ideareef/images/no-image.png".' in C:\wamp\www\ideareef\framework\web\CWebApplication.php:280
+Stack trace:
+#0 C:\wamp\www\ideareef\framework\web\CWebApplication.php(135): CWebApplication->runController('ideareef//idear...')
+#1 C:\wamp\www\ideareef\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\wamp\www\ideareef\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/ideareef//ideareef//ideareef//ideareef//ideareef/images/no-image.png
+HTTP_REFERER=http://localhost/ideareef/user/competitionSub
+---
+2012/09/29 23:52:29 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "ideareef//ideareef//ideareef//ideareef/images/messages.png".' in C:\wamp\www\ideareef\framework\web\CWebApplication.php:280
+Stack trace:
+#0 C:\wamp\www\ideareef\framework\web\CWebApplication.php(135): CWebApplication->runController('ideareef//idear...')
+#1 C:\wamp\www\ideareef\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\wamp\www\ideareef\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/ideareef//ideareef//ideareef//ideareef//ideareef/images/messages.png
+HTTP_REFERER=http://localhost/ideareef/user/competitionSub
+---
+2012/09/29 23:52:29 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "ideareef//ideareef//ideareef//ideareef/images/facebook.png".' in C:\wamp\www\ideareef\framework\web\CWebApplication.php:280
+Stack trace:
+#0 C:\wamp\www\ideareef\framework\web\CWebApplication.php(135): CWebApplication->runController('ideareef//idear...')
+#1 C:\wamp\www\ideareef\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\wamp\www\ideareef\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/ideareef//ideareef//ideareef//ideareef//ideareef/images/facebook.png
+HTTP_REFERER=http://localhost/ideareef/user/competitionSub
+---
+2012/09/29 23:52:29 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "ideareef//ideareef//ideareef//ideareef/images/no-image-female.gif".' in C:\wamp\www\ideareef\framework\web\CWebApplication.php:280
+Stack trace:
+#0 C:\wamp\www\ideareef\framework\web\CWebApplication.php(135): CWebApplication->runController('ideareef//idear...')
+#1 C:\wamp\www\ideareef\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\wamp\www\ideareef\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/ideareef//ideareef//ideareef//ideareef//ideareef/images/no-image-female.gif
+HTTP_REFERER=http://localhost/ideareef/user/competitionSub
+---
+2012/09/29 23:52:29 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "ideareef//ideareef//ideareef//ideareef/images/twitter.png".' in C:\wamp\www\ideareef\framework\web\CWebApplication.php:280
+Stack trace:
+#0 C:\wamp\www\ideareef\framework\web\CWebApplication.php(135): CWebApplication->runController('ideareef//idear...')
+#1 C:\wamp\www\ideareef\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\wamp\www\ideareef\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/ideareef//ideareef//ideareef//ideareef//ideareef/images/twitter.png
+HTTP_REFERER=http://localhost/ideareef/user/competitionSub
+---
+2012/09/29 23:52:29 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "ideareef//ideareef//ideareef//ideareef/images/red-badge.png".' in C:\wamp\www\ideareef\framework\web\CWebApplication.php:280
+Stack trace:
+#0 C:\wamp\www\ideareef\framework\web\CWebApplication.php(135): CWebApplication->runController('ideareef//idear...')
+#1 C:\wamp\www\ideareef\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\wamp\www\ideareef\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/ideareef//ideareef//ideareef//ideareef//ideareef/images/red-badge.png
+HTTP_REFERER=http://localhost/ideareef/user/competitionSub
+---
+2012/09/29 23:52:29 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "ideareef//ideareef//ideareef//ideareef//ideareef/images/no-image-female.gif".' in C:\wamp\www\ideareef\framework\web\CWebApplication.php:280
+Stack trace:
+#0 C:\wamp\www\ideareef\framework\web\CWebApplication.php(135): CWebApplication->runController('ideareef//idear...')
+#1 C:\wamp\www\ideareef\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\wamp\www\ideareef\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/ideareef//ideareef//ideareef//ideareef//ideareef//ideareef/images/no-image-female.gif
+HTTP_REFERER=http://localhost/ideareef/user/competitionSub
+---
+2012/09/29 23:53:01 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "images".' in C:\wamp\www\ideareef\framework\web\CController.php:484
+Stack trace:
+#0 C:\wamp\www\ideareef\framework\web\CController.php(271): CController->missingAction('images')
+#1 C:\wamp\www\ideareef\framework\web\CWebApplication.php(276): CController->run('images')
+#2 C:\wamp\www\ideareef\framework\web\CWebApplication.php(135): CWebApplication->runController('user/images/no-...')
+#3 C:\wamp\www\ideareef\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#4 C:\wamp\www\ideareef\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/ideareef/user/images/no-image.png
+HTTP_REFERER=http://localhost/ideareef/user/competitionSub
+---
+2012/09/29 23:53:01 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "images".' in C:\wamp\www\ideareef\framework\web\CController.php:484
+Stack trace:
+#0 C:\wamp\www\ideareef\framework\web\CController.php(271): CController->missingAction('images')
+#1 C:\wamp\www\ideareef\framework\web\CWebApplication.php(276): CController->run('images')
+#2 C:\wamp\www\ideareef\framework\web\CWebApplication.php(135): CWebApplication->runController('user/images/fac...')
+#3 C:\wamp\www\ideareef\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#4 C:\wamp\www\ideareef\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/ideareef/user/images/facebook.png
+HTTP_REFERER=http://localhost/ideareef/user/competitionSub
+---
+2012/09/29 23:53:01 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "images".' in C:\wamp\www\ideareef\framework\web\CController.php:484
+Stack trace:
+#0 C:\wamp\www\ideareef\framework\web\CController.php(271): CController->missingAction('images')
+#1 C:\wamp\www\ideareef\framework\web\CWebApplication.php(276): CController->run('images')
+#2 C:\wamp\www\ideareef\framework\web\CWebApplication.php(135): CWebApplication->runController('user/images/twi...')
+#3 C:\wamp\www\ideareef\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#4 C:\wamp\www\ideareef\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/ideareef/user/images/twitter.png
+HTTP_REFERER=http://localhost/ideareef/user/competitionSub
+---
+2012/09/29 23:53:01 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "images".' in C:\wamp\www\ideareef\framework\web\CController.php:484
+Stack trace:
+#0 C:\wamp\www\ideareef\framework\web\CController.php(271): CController->missingAction('images')
+#1 C:\wamp\www\ideareef\framework\web\CWebApplication.php(276): CController->run('images')
+#2 C:\wamp\www\ideareef\framework\web\CWebApplication.php(135): CWebApplication->runController('user/images/red...')
+#3 C:\wamp\www\ideareef\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#4 C:\wamp\www\ideareef\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/ideareef/user/images/red-badge.png
+HTTP_REFERER=http://localhost/ideareef/user/competitionSub
+---
+2012/09/29 23:53:01 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "images".' in C:\wamp\www\ideareef\framework\web\CController.php:484
+Stack trace:
+#0 C:\wamp\www\ideareef\framework\web\CController.php(271): CController->missingAction('images')
+#1 C:\wamp\www\ideareef\framework\web\CWebApplication.php(276): CController->run('images')
+#2 C:\wamp\www\ideareef\framework\web\CWebApplication.php(135): CWebApplication->runController('user/images/mes...')
+#3 C:\wamp\www\ideareef\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#4 C:\wamp\www\ideareef\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/ideareef/user/images/messages.png
+HTTP_REFERER=http://localhost/ideareef/user/competitionSub
+---
+2012/09/29 23:53:01 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "images".' in C:\wamp\www\ideareef\framework\web\CController.php:484
+Stack trace:
+#0 C:\wamp\www\ideareef\framework\web\CController.php(271): CController->missingAction('images')
+#1 C:\wamp\www\ideareef\framework\web\CWebApplication.php(276): CController->run('images')
+#2 C:\wamp\www\ideareef\framework\web\CWebApplication.php(135): CWebApplication->runController('user/images/no-...')
+#3 C:\wamp\www\ideareef\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#4 C:\wamp\www\ideareef\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/ideareef/user/images/no-image-female.gif
+HTTP_REFERER=http://localhost/ideareef/user/competitionSub
+---
+2012/09/30 00:53:02 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not authorized to perform this action.' in C:\wamp\www\ideareef\framework\web\auth\CAccessControlFilter.php:157
+Stack trace:
+#0 C:\wamp\www\ideareef\framework\web\auth\CAccessControlFilter.php(120): CAccessControlFilter->accessDenied(Object(WebUser), 'You are not aut...')
+#1 C:\wamp\www\ideareef\framework\web\filters\CFilter.php(39): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 C:\wamp\www\ideareef\framework\web\CController.php(1146): CFilter->filter(Object(CFilterChain))
+#3 C:\wamp\www\ideareef\framework\web\filters\CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#4 C:\wamp\www\ideareef\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#5 C:\wamp\www\ideareef\framework\web\CController.php(292): CFilterChain->run()
+#6 C:\wamp\www\ideareef\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 C:\wamp\www\ideareef\framework\web\CWebApplication.php(276): CController->run('view')
+#8 C:\wamp\www\ideareef\framework\web\CWebApplication.php(135): CWebApplication->runController('user/view')
+#9 C:\wamp\www\ideareef\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#10 C:\wamp\www\ideareef\index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/ideareef/user
+---
+2012/09/30 19:00:25 [error] [php] Undefined variable: form (C:\wamp\www\ideareef\protected\views\user\competitionSub.php:404)
+Stack trace:
+#0 C:\wamp\www\ideareef\framework\web\CController.php(870): UserController->renderFile()
+#1 C:\wamp\www\ideareef\framework\web\CController.php(783): UserController->renderPartial()
+#2 C:\wamp\www\ideareef\protected\controllers\UserController.php(214): UserController->render()
+#3 C:\wamp\www\ideareef\framework\web\actions\CInlineAction.php(50): UserController->actionCompetitionSub()
+#4 C:\wamp\www\ideareef\framework\web\CController.php(309): CInlineAction->runWithParams()
+#5 C:\wamp\www\ideareef\framework\web\filters\CFilterChain.php(134): UserController->runAction()
+#6 C:\wamp\www\ideareef\framework\web\filters\CFilter.php(41): CFilterChain->run()
+#7 C:\wamp\www\ideareef\framework\web\CController.php(1146): CAccessControlFilter->filter()
+#8 C:\wamp\www\ideareef\framework\web\filters\CInlineFilter.php(59): UserController->filterAccessControl()
+#9 C:\wamp\www\ideareef\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter()
+#10 C:\wamp\www\ideareef\framework\web\CController.php(292): CFilterChain->run()
+#11 C:\wamp\www\ideareef\framework\web\CController.php(266): UserController->runActionWithFilters()
+#12 C:\wamp\www\ideareef\framework\web\CWebApplication.php(276): UserController->run()
+#13 C:\wamp\www\ideareef\framework\web\CWebApplication.php(135): CWebApplication->runController()
+#14 C:\wamp\www\ideareef\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#15 C:\wamp\www\ideareef\index.php(13): CWebApplication->run()
+REQUEST_URI=/ideareef/user/competitionSub
+in C:\wamp\www\ideareef\protected\views\user\competitionSub.php (404)
+in C:\wamp\www\ideareef\protected\controllers\UserController.php (214)
+in C:\wamp\www\ideareef\index.php (13)
+2012/09/30 19:02:49 [error] [exception.CException] exception 'CException' with message 'UserController cannot find the requested view "_solutionForm".' in C:\wamp\www\ideareef\framework\web\CController.php:879
+Stack trace:
+#0 C:\wamp\www\ideareef\protected\views\user\competitionSub.php(397): CController->renderPartial('_solutionForm', Array)
+#1 C:\wamp\www\ideareef\framework\web\CBaseController.php(127): require('C:\wamp\www\ide...')
+#2 C:\wamp\www\ideareef\framework\web\CBaseController.php(96): CBaseController->renderInternal('C:\wamp\www\ide...', Array, true)
+#3 C:\wamp\www\ideareef\framework\web\CController.php(870): CBaseController->renderFile('C:\wamp\www\ide...', Array, true)
+#4 C:\wamp\www\ideareef\framework\web\CController.php(783): CController->renderPartial('competitionSub', Array, true)
+#5 C:\wamp\www\ideareef\protected\controllers\UserController.php(214): CController->render('competitionSub', Array)
+#6 C:\wamp\www\ideareef\framework\web\actions\CInlineAction.php(50): UserController->actionCompetitionSub()
+#7 C:\wamp\www\ideareef\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#8 C:\wamp\www\ideareef\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#9 C:\wamp\www\ideareef\framework\web\filters\CFilter.php(41): CFilterChain->run()
+#10 C:\wamp\www\ideareef\framework\web\CController.php(1146): CFilter->filter(Object(CFilterChain))
+#11 C:\wamp\www\ideareef\framework\web\filters\CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#12 C:\wamp\www\ideareef\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#13 C:\wamp\www\ideareef\framework\web\CController.php(292): CFilterChain->run()
+#14 C:\wamp\www\ideareef\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#15 C:\wamp\www\ideareef\framework\web\CWebApplication.php(276): CController->run('competitionSub')
+#16 C:\wamp\www\ideareef\framework\web\CWebApplication.php(135): CWebApplication->runController('user/competitio...')
+#17 C:\wamp\www\ideareef\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#18 C:\wamp\www\ideareef\index.php(13): CApplication->run()
+#19 {main}
+REQUEST_URI=/ideareef/user/competitionSub
+---
+2012/09/30 19:05:10 [error] [exception.CException] exception 'CException' with message 'UserController cannot find the requested view "_solutionForm".' in C:\wamp\www\ideareef\framework\web\CController.php:879
+Stack trace:
+#0 C:\wamp\www\ideareef\protected\views\user\competitionSub.php(398): CController->renderPartial('_solutionForm', Array)
+#1 C:\wamp\www\ideareef\framework\web\CBaseController.php(127): require('C:\wamp\www\ide...')
+#2 C:\wamp\www\ideareef\framework\web\CBaseController.php(96): CBaseController->renderInternal('C:\wamp\www\ide...', Array, true)
+#3 C:\wamp\www\ideareef\framework\web\CController.php(870): CBaseController->renderFile('C:\wamp\www\ide...', Array, true)
+#4 C:\wamp\www\ideareef\framework\web\CController.php(783): CController->renderPartial('competitionSub', Array, true)
+#5 C:\wamp\www\ideareef\protected\controllers\UserController.php(214): CController->render('competitionSub', Array)
+#6 C:\wamp\www\ideareef\framework\web\actions\CInlineAction.php(50): UserController->actionCompetitionSub()
+#7 C:\wamp\www\ideareef\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#8 C:\wamp\www\ideareef\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#9 C:\wamp\www\ideareef\framework\web\filters\CFilter.php(41): CFilterChain->run()
+#10 C:\wamp\www\ideareef\framework\web\CController.php(1146): CFilter->filter(Object(CFilterChain))
+#11 C:\wamp\www\ideareef\framework\web\filters\CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#12 C:\wamp\www\ideareef\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#13 C:\wamp\www\ideareef\framework\web\CController.php(292): CFilterChain->run()
+#14 C:\wamp\www\ideareef\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#15 C:\wamp\www\ideareef\framework\web\CWebApplication.php(276): CController->run('competitionSub')
+#16 C:\wamp\www\ideareef\framework\web\CWebApplication.php(135): CWebApplication->runController('user/competitio...')
+#17 C:\wamp\www\ideareef\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#18 C:\wamp\www\ideareef\index.php(13): CApplication->run()
+#19 {main}
+REQUEST_URI=/ideareef/user/competitionSub
+---
+2012/09/30 19:06:51 [error] [exception.CException] exception 'CException' with message 'UserController cannot find the requested view "_solutionForm".' in C:\wamp\www\ideareef\framework\web\CController.php:879
+Stack trace:
+#0 C:\wamp\www\ideareef\protected\views\user\competitionSub.php(398): CController->renderPartial('_solutionForm', Array)
+#1 C:\wamp\www\ideareef\framework\web\CBaseController.php(127): require('C:\wamp\www\ide...')
+#2 C:\wamp\www\ideareef\framework\web\CBaseController.php(96): CBaseController->renderInternal('C:\wamp\www\ide...', Array, true)
+#3 C:\wamp\www\ideareef\framework\web\CController.php(870): CBaseController->renderFile('C:\wamp\www\ide...', Array, true)
+#4 C:\wamp\www\ideareef\framework\web\CController.php(783): CController->renderPartial('competitionSub', Array, true)
+#5 C:\wamp\www\ideareef\protected\controllers\UserController.php(214): CController->render('competitionSub', Array)
+#6 C:\wamp\www\ideareef\framework\web\actions\CInlineAction.php(50): UserController->actionCompetitionSub()
+#7 C:\wamp\www\ideareef\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#8 C:\wamp\www\ideareef\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#9 C:\wamp\www\ideareef\framework\web\filters\CFilter.php(41): CFilterChain->run()
+#10 C:\wamp\www\ideareef\framework\web\CController.php(1146): CFilter->filter(Object(CFilterChain))
+#11 C:\wamp\www\ideareef\framework\web\filters\CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#12 C:\wamp\www\ideareef\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#13 C:\wamp\www\ideareef\framework\web\CController.php(292): CFilterChain->run()
+#14 C:\wamp\www\ideareef\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#15 C:\wamp\www\ideareef\framework\web\CWebApplication.php(276): CController->run('competitionSub')
+#16 C:\wamp\www\ideareef\framework\web\CWebApplication.php(135): CWebApplication->runController('user/competitio...')
+#17 C:\wamp\www\ideareef\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#18 C:\wamp\www\ideareef\index.php(13): CApplication->run()
+#19 {main}
+REQUEST_URI=/ideareef/user/competitionSub
+---
+2012/09/30 19:06:54 [error] [exception.CException] exception 'CException' with message 'UserController cannot find the requested view "_solutionForm".' in C:\wamp\www\ideareef\framework\web\CController.php:879
+Stack trace:
+#0 C:\wamp\www\ideareef\protected\views\user\competitionSub.php(398): CController->renderPartial('_solutionForm', Array)
+#1 C:\wamp\www\ideareef\framework\web\CBaseController.php(127): require('C:\wamp\www\ide...')
+#2 C:\wamp\www\ideareef\framework\web\CBaseController.php(96): CBaseController->renderInternal('C:\wamp\www\ide...', Array, true)
+#3 C:\wamp\www\ideareef\framework\web\CController.php(870): CBaseController->renderFile('C:\wamp\www\ide...', Array, true)
+#4 C:\wamp\www\ideareef\framework\web\CController.php(783): CController->renderPartial('competitionSub', Array, true)
+#5 C:\wamp\www\ideareef\protected\controllers\UserController.php(214): CController->render('competitionSub', Array)
+#6 C:\wamp\www\ideareef\framework\web\actions\CInlineAction.php(50): UserController->actionCompetitionSub()
+#7 C:\wamp\www\ideareef\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#8 C:\wamp\www\ideareef\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#9 C:\wamp\www\ideareef\framework\web\filters\CFilter.php(41): CFilterChain->run()
+#10 C:\wamp\www\ideareef\framework\web\CController.php(1146): CFilter->filter(Object(CFilterChain))
+#11 C:\wamp\www\ideareef\framework\web\filters\CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#12 C:\wamp\www\ideareef\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#13 C:\wamp\www\ideareef\framework\web\CController.php(292): CFilterChain->run()
+#14 C:\wamp\www\ideareef\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#15 C:\wamp\www\ideareef\framework\web\CWebApplication.php(276): CController->run('competitionSub')
+#16 C:\wamp\www\ideareef\framework\web\CWebApplication.php(135): CWebApplication->runController('user/competitio...')
+#17 C:\wamp\www\ideareef\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#18 C:\wamp\www\ideareef\index.php(13): CApplication->run()
+#19 {main}
+REQUEST_URI=/ideareef/user/competitionSub
+---
+2012/09/30 19:11:43 [error] [exception.CException] exception 'CException' with message 'Property "User.description" is not defined.' in C:\wamp\www\ideareef\framework\base\CComponent.php:131
+Stack trace:
+#0 C:\wamp\www\ideareef\framework\db\ar\CActiveRecord.php(144): CComponent->__get('description')
+#1 C:\wamp\www\ideareef\framework\web\helpers\CHtml.php(2044): CActiveRecord->__get('description')
+#2 C:\wamp\www\ideareef\framework\web\helpers\CHtml.php(1258): CHtml::resolveValue(Object(User), 'description')
+#3 C:\wamp\www\ideareef\framework\web\widgets\CActiveForm.php(620): CHtml::activeTextArea(Object(User), 'description', Array)
+#4 C:\wamp\www\ideareef\protected\views\user\_solutionForm.php(16): CActiveForm->textArea(Object(User), 'description', Array)
+#5 C:\wamp\www\ideareef\framework\web\CBaseController.php(127): require('C:\wamp\www\ide...')
+#6 C:\wamp\www\ideareef\framework\web\CBaseController.php(96): CBaseController->renderInternal('C:\wamp\www\ide...', Array, true)
+#7 C:\wamp\www\ideareef\framework\web\CController.php(870): CBaseController->renderFile('C:\wamp\www\ide...', Array, true)
+#8 C:\wamp\www\ideareef\protected\views\user\competitionSub.php(398): CController->renderPartial('_solutionForm', Array)
+#9 C:\wamp\www\ideareef\framework\web\CBaseController.php(127): require('C:\wamp\www\ide...')
+#10 C:\wamp\www\ideareef\framework\web\CBaseController.php(96): CBaseController->renderInternal('C:\wamp\www\ide...', Array, true)
+#11 C:\wamp\www\ideareef\framework\web\CController.php(870): CBaseController->renderFile('C:\wamp\www\ide...', Array, true)
+#12 C:\wamp\www\ideareef\framework\web\CController.php(783): CController->renderPartial('competitionSub', Array, true)
+#13 C:\wamp\www\ideareef\protected\controllers\UserController.php(214): CController->render('competitionSub', Array)
+#14 C:\wamp\www\ideareef\framework\web\actions\CInlineAction.php(50): UserController->actionCompetitionSub()
+#15 C:\wamp\www\ideareef\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#16 C:\wamp\www\ideareef\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#17 C:\wamp\www\ideareef\framework\web\filters\CFilter.php(41): CFilterChain->run()
+#18 C:\wamp\www\ideareef\framework\web\CController.php(1146): CFilter->filter(Object(CFilterChain))
+#19 C:\wamp\www\ideareef\framework\web\filters\CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#20 C:\wamp\www\ideareef\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#21 C:\wamp\www\ideareef\framework\web\CController.php(292): CFilterChain->run()
+#22 C:\wamp\www\ideareef\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#23 C:\wamp\www\ideareef\framework\web\CWebApplication.php(276): CController->run('competitionSub')
+#24 C:\wamp\www\ideareef\framework\web\CWebApplication.php(135): CWebApplication->runController('user/competitio...')
+#25 C:\wamp\www\ideareef\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#26 C:\wamp\www\ideareef\index.php(13): CApplication->run()
+#27 {main}
+REQUEST_URI=/ideareef/user/competitionSub
+---
+2012/09/30 19:13:47 [error] [exception.CException] exception 'CException' with message 'Property "User.description" is not defined.' in C:\wamp\www\ideareef\framework\base\CComponent.php:131
+Stack trace:
+#0 C:\wamp\www\ideareef\framework\db\ar\CActiveRecord.php(144): CComponent->__get('description')
+#1 C:\wamp\www\ideareef\framework\web\helpers\CHtml.php(2044): CActiveRecord->__get('description')
+#2 C:\wamp\www\ideareef\framework\web\helpers\CHtml.php(1258): CHtml::resolveValue(Object(User), 'description')
+#3 C:\wamp\www\ideareef\framework\web\widgets\CActiveForm.php(620): CHtml::activeTextArea(Object(User), 'description', Array)
+#4 C:\wamp\www\ideareef\protected\views\user\_solutionForm.php(16): CActiveForm->textArea(Object(User), 'description', Array)
+#5 C:\wamp\www\ideareef\framework\web\CBaseController.php(127): require('C:\wamp\www\ide...')
+#6 C:\wamp\www\ideareef\framework\web\CBaseController.php(96): CBaseController->renderInternal('C:\wamp\www\ide...', Array, true)
+#7 C:\wamp\www\ideareef\framework\web\CController.php(870): CBaseController->renderFile('C:\wamp\www\ide...', Array, true)
+#8 C:\wamp\www\ideareef\protected\views\user\competitionSub.php(398): CController->renderPartial('_solutionForm', Array)
+#9 C:\wamp\www\ideareef\framework\web\CBaseController.php(127): require('C:\wamp\www\ide...')
+#10 C:\wamp\www\ideareef\framework\web\CBaseController.php(96): CBaseController->renderInternal('C:\wamp\www\ide...', Array, true)
+#11 C:\wamp\www\ideareef\framework\web\CController.php(870): CBaseController->renderFile('C:\wamp\www\ide...', Array, true)
+#12 C:\wamp\www\ideareef\framework\web\CController.php(783): CController->renderPartial('competitionSub', Array, true)
+#13 C:\wamp\www\ideareef\protected\controllers\UserController.php(214): CController->render('competitionSub', Array)
+#14 C:\wamp\www\ideareef\framework\web\actions\CInlineAction.php(50): UserController->actionCompetitionSub()
+#15 C:\wamp\www\ideareef\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#16 C:\wamp\www\ideareef\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#17 C:\wamp\www\ideareef\framework\web\filters\CFilter.php(41): CFilterChain->run()
+#18 C:\wamp\www\ideareef\framework\web\CController.php(1146): CFilter->filter(Object(CFilterChain))
+#19 C:\wamp\www\ideareef\framework\web\filters\CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#20 C:\wamp\www\ideareef\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#21 C:\wamp\www\ideareef\framework\web\CController.php(292): CFilterChain->run()
+#22 C:\wamp\www\ideareef\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#23 C:\wamp\www\ideareef\framework\web\CWebApplication.php(276): CController->run('competitionSub')
+#24 C:\wamp\www\ideareef\framework\web\CWebApplication.php(135): CWebApplication->runController('user/competitio...')
+#25 C:\wamp\www\ideareef\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#26 C:\wamp\www\ideareef\index.php(13): CApplication->run()
+#27 {main}
+REQUEST_URI=/ideareef/user/competitionSub
+---
+2012/09/30 19:52:38 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "competitions".' in C:\wamp\www\ideareef\framework\web\CController.php:484
+Stack trace:
+#0 C:\wamp\www\ideareef\framework\web\CController.php(271): CController->missingAction('competitions')
+#1 C:\wamp\www\ideareef\framework\web\CWebApplication.php(276): CController->run('competitions')
+#2 C:\wamp\www\ideareef\framework\web\CWebApplication.php(135): CWebApplication->runController('user/competitio...')
+#3 C:\wamp\www\ideareef\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#4 C:\wamp\www\ideareef\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/ideareef/user/competitions
+---
+2012/09/30 20:25:10 [error] [exception.CException] exception 'CException' with message 'Property "Competition.bussinessOwner" is not defined.' in C:\wamp\www\ideareef\framework\base\CComponent.php:131
+Stack trace:
+#0 C:\wamp\www\ideareef\framework\db\ar\CActiveRecord.php(144): CComponent->__get('bussinessOwner')
+#1 C:\wamp\www\ideareef\protected\views\user\competitionSub.php(127): CActiveRecord->__get('bussinessOwner')
+#2 C:\wamp\www\ideareef\framework\web\CBaseController.php(127): require('C:\wamp\www\ide...')
+#3 C:\wamp\www\ideareef\framework\web\CBaseController.php(96): CBaseController->renderInternal('C:\wamp\www\ide...', Array, true)
+#4 C:\wamp\www\ideareef\framework\web\CController.php(870): CBaseController->renderFile('C:\wamp\www\ide...', Array, true)
+#5 C:\wamp\www\ideareef\framework\web\CController.php(783): CController->renderPartial('competitionSub', Array, true)
+#6 C:\wamp\www\ideareef\protected\controllers\UserController.php(227): CController->render('competitionSub', Array)
+#7 [internal function]: UserController->actionCompetitionSub('6')
+#8 C:\wamp\www\ideareef\framework\web\actions\CAction.php(107): ReflectionMethod->invokeArgs(Object(UserController), Array)
+#9 C:\wamp\www\ideareef\framework\web\actions\CInlineAction.php(48): CAction->runWithParamsInternal(Object(UserController), Object(ReflectionMethod), Array)
+#10 C:\wamp\www\ideareef\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#11 C:\wamp\www\ideareef\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#12 C:\wamp\www\ideareef\framework\web\filters\CFilter.php(41): CFilterChain->run()
+#13 C:\wamp\www\ideareef\framework\web\CController.php(1146): CFilter->filter(Object(CFilterChain))
+#14 C:\wamp\www\ideareef\framework\web\filters\CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#15 C:\wamp\www\ideareef\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#16 C:\wamp\www\ideareef\framework\web\CController.php(292): CFilterChain->run()
+#17 C:\wamp\www\ideareef\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#18 C:\wamp\www\ideareef\framework\web\CWebApplication.php(276): CController->run('competitionSub')
+#19 C:\wamp\www\ideareef\framework\web\CWebApplication.php(135): CWebApplication->runController('user/competitio...')
+#20 C:\wamp\www\ideareef\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#21 C:\wamp\www\ideareef\index.php(13): CApplication->run()
+#22 {main}
+REQUEST_URI=/ideareef/user/competitionSub/6
+HTTP_REFERER=http://localhost/ideareef/competition
+---
+2012/09/30 20:29:32 [error] [php] PDO::__construct() [<a href='pdo.--construct'>pdo.--construct</a>]: [2002] A connection attempt failed because the connected party did not properly respond after a period of time, or established connecti (trying to connect via tcp://ideareef.com:3306) (C:\wamp\www\ideareef\framework\db\CDbConnection.php:422)
+Stack trace:
+#0 C:\wamp\www\ideareef\framework\db\CDbConnection.php(331): CDbConnection->open()
+#1 C:\wamp\www\ideareef\framework\db\CDbConnection.php(309): CDbConnection->setActive()
+#2 C:\wamp\www\ideareef\framework\base\CModule.php(388): CDbConnection->init()
+#3 C:\wamp\www\ideareef\framework\base\CApplication.php(431): CWebApplication->getComponent()
+#4 C:\wamp\www\ideareef\framework\db\ar\CActiveRecord.php(615): CWebApplication->getDb()
+#5 C:\wamp\www\ideareef\framework\db\ar\CActiveRecord.php(2263): User->getDbConnection()
+#6 C:\wamp\www\ideareef\framework\db\ar\CActiveRecord.php(379): CActiveRecordMetaData->__construct()
+#7 C:\wamp\www\ideareef\protected\models\User.php(35): model()
+#8 C:\wamp\www\ideareef\protected\controllers\UserController.php(226): model()
+#9 unknown(0): UserController->actionCompetitionSub()
+#10 C:\wamp\www\ideareef\framework\web\actions\CAction.php(107): ReflectionMethod->invokeArgs()
+#11 C:\wamp\www\ideareef\framework\web\actions\CInlineAction.php(48): CInlineAction->runWithParamsInternal()
+#12 C:\wamp\www\ideareef\framework\web\CController.php(309): CInlineAction->runWithParams()
+#13 C:\wamp\www\ideareef\framework\web\filters\CFilterChain.php(134): UserController->runAction()
+#14 C:\wamp\www\ideareef\framework\web\filters\CFilter.php(41): CFilterChain->run()
+#15 C:\wamp\www\ideareef\framework\web\CController.php(1146): CAccessControlFilter->filter()
+#16 C:\wamp\www\ideareef\framework\web\filters\CInlineFilter.php(59): UserController->filterAccessControl()
+#17 C:\wamp\www\ideareef\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter()
+#18 C:\wamp\www\ideareef\framework\web\CController.php(292): CFilterChain->run()
+#19 C:\wamp\www\ideareef\framework\web\CController.php(266): UserController->runActionWithFilters()
+#20 C:\wamp\www\ideareef\framework\web\CWebApplication.php(276): UserController->run()
+#21 C:\wamp\www\ideareef\framework\web\CWebApplication.php(135): CWebApplication->runController()
+#22 C:\wamp\www\ideareef\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#23 C:\wamp\www\ideareef\index.php(13): CWebApplication->run()
+REQUEST_URI=/ideareef/user/competitionSub/6
+in C:\wamp\www\ideareef\protected\models\User.php (35)
+in C:\wamp\www\ideareef\protected\controllers\UserController.php (226)
+in C:\wamp\www\ideareef\index.php (13)
+2012/09/30 20:34:26 [error] [exception.CException] exception 'CException' with message 'Property "User.description" is not defined.' in C:\wamp\www\ideareef\framework\base\CComponent.php:131
+Stack trace:
+#0 C:\wamp\www\ideareef\framework\db\ar\CActiveRecord.php(144): CComponent->__get('description')
+#1 C:\wamp\www\ideareef\framework\web\helpers\CHtml.php(2044): CActiveRecord->__get('description')
+#2 C:\wamp\www\ideareef\framework\web\helpers\CHtml.php(1258): CHtml::resolveValue(Object(User), 'description')
+#3 C:\wamp\www\ideareef\framework\web\widgets\CActiveForm.php(620): CHtml::activeTextArea(Object(User), 'description', Array)
+#4 C:\wamp\www\ideareef\protected\views\user\_solutionForm.php(16): CActiveForm->textArea(Object(User), 'description', Array)
+#5 C:\wamp\www\ideareef\framework\web\CBaseController.php(127): require('C:\wamp\www\ide...')
+#6 C:\wamp\www\ideareef\framework\web\CBaseController.php(96): CBaseController->renderInternal('C:\wamp\www\ide...', Array, true)
+#7 C:\wamp\www\ideareef\framework\web\CController.php(870): CBaseController->renderFile('C:\wamp\www\ide...', Array, true)
+#8 C:\wamp\www\ideareef\protected\views\user\competitionSub.php(388): CController->renderPartial('_solutionForm', Array)
+#9 C:\wamp\www\ideareef\framework\web\CBaseController.php(127): require('C:\wamp\www\ide...')
+#10 C:\wamp\www\ideareef\framework\web\CBaseController.php(96): CBaseController->renderInternal('C:\wamp\www\ide...', Array, true)
+#11 C:\wamp\www\ideareef\framework\web\CController.php(870): CBaseController->renderFile('C:\wamp\www\ide...', Array, true)
+#12 C:\wamp\www\ideareef\framework\web\CController.php(783): CController->renderPartial('competitionSub', Array, true)
+#13 C:\wamp\www\ideareef\protected\controllers\UserController.php(227): CController->render('competitionSub', Array)
+#14 [internal function]: UserController->actionCompetitionSub('6')
+#15 C:\wamp\www\ideareef\framework\web\actions\CAction.php(107): ReflectionMethod->invokeArgs(Object(UserController), Array)
+#16 C:\wamp\www\ideareef\framework\web\actions\CInlineAction.php(48): CAction->runWithParamsInternal(Object(UserController), Object(ReflectionMethod), Array)
+#17 C:\wamp\www\ideareef\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#18 C:\wamp\www\ideareef\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#19 C:\wamp\www\ideareef\framework\web\filters\CFilter.php(41): CFilterChain->run()
+#20 C:\wamp\www\ideareef\framework\web\CController.php(1146): CFilter->filter(Object(CFilterChain))
+#21 C:\wamp\www\ideareef\framework\web\filters\CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#22 C:\wamp\www\ideareef\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#23 C:\wamp\www\ideareef\framework\web\CController.php(292): CFilterChain->run()
+#24 C:\wamp\www\ideareef\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#25 C:\wamp\www\ideareef\framework\web\CWebApplication.php(276): CController->run('competitionSub')
+#26 C:\wamp\www\ideareef\framework\web\CWebApplication.php(135): CWebApplication->runController('user/competitio...')
+#27 C:\wamp\www\ideareef\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#28 C:\wamp\www\ideareef\index.php(13): CApplication->run()
+#29 {main}
+REQUEST_URI=/ideareef/user/competitionSub/6
+HTTP_REFERER=http://localhost/ideareef/competition
+---
+2012/09/30 20:34:59 [error] [php] Undefined variable: solution (C:\wamp\www\ideareef\protected\views\user\_solutionForm.php:16)
+Stack trace:
+#0 C:\wamp\www\ideareef\framework\web\CController.php(870): UserController->renderFile()
+#1 C:\wamp\www\ideareef\protected\views\user\competitionSub.php(388): UserController->renderPartial()
+#2 C:\wamp\www\ideareef\framework\web\CBaseController.php(127): require()
+#3 C:\wamp\www\ideareef\framework\web\CBaseController.php(96): UserController->renderInternal()
+#4 C:\wamp\www\ideareef\framework\web\CController.php(870): UserController->renderFile()
+#5 C:\wamp\www\ideareef\framework\web\CController.php(783): UserController->renderPartial()
+#6 C:\wamp\www\ideareef\protected\controllers\UserController.php(227): UserController->render()
+#7 unknown(0): UserController->actionCompetitionSub()
+#8 C:\wamp\www\ideareef\framework\web\actions\CAction.php(107): ReflectionMethod->invokeArgs()
+#9 C:\wamp\www\ideareef\framework\web\actions\CInlineAction.php(48): CInlineAction->runWithParamsInternal()
+#10 C:\wamp\www\ideareef\framework\web\CController.php(309): CInlineAction->runWithParams()
+#11 C:\wamp\www\ideareef\framework\web\filters\CFilterChain.php(134): UserController->runAction()
+#12 C:\wamp\www\ideareef\framework\web\filters\CFilter.php(41): CFilterChain->run()
+#13 C:\wamp\www\ideareef\framework\web\CController.php(1146): CAccessControlFilter->filter()
+#14 C:\wamp\www\ideareef\framework\web\filters\CInlineFilter.php(59): UserController->filterAccessControl()
+#15 C:\wamp\www\ideareef\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter()
+#16 C:\wamp\www\ideareef\framework\web\CController.php(292): CFilterChain->run()
+#17 C:\wamp\www\ideareef\framework\web\CController.php(266): UserController->runActionWithFilters()
+#18 C:\wamp\www\ideareef\framework\web\CWebApplication.php(276): UserController->run()
+#19 C:\wamp\www\ideareef\framework\web\CWebApplication.php(135): CWebApplication->runController()
+#20 C:\wamp\www\ideareef\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#21 C:\wamp\www\ideareef\index.php(13): CWebApplication->run()
+REQUEST_URI=/ideareef/user/competitionSub/6
+in C:\wamp\www\ideareef\protected\views\user\_solutionForm.php (16)
+in C:\wamp\www\ideareef\protected\views\user\competitionSub.php (388)
+in C:\wamp\www\ideareef\protected\controllers\UserController.php (227)
+2012/09/30 20:35:16 [error] [php] Undefined variable: Solution (C:\wamp\www\ideareef\protected\views\user\_solutionForm.php:16)
+Stack trace:
+#0 C:\wamp\www\ideareef\framework\web\CController.php(870): UserController->renderFile()
+#1 C:\wamp\www\ideareef\protected\views\user\competitionSub.php(388): UserController->renderPartial()
+#2 C:\wamp\www\ideareef\framework\web\CBaseController.php(127): require()
+#3 C:\wamp\www\ideareef\framework\web\CBaseController.php(96): UserController->renderInternal()
+#4 C:\wamp\www\ideareef\framework\web\CController.php(870): UserController->renderFile()
+#5 C:\wamp\www\ideareef\framework\web\CController.php(783): UserController->renderPartial()
+#6 C:\wamp\www\ideareef\protected\controllers\UserController.php(227): UserController->render()
+#7 unknown(0): UserController->actionCompetitionSub()
+#8 C:\wamp\www\ideareef\framework\web\actions\CAction.php(107): ReflectionMethod->invokeArgs()
+#9 C:\wamp\www\ideareef\framework\web\actions\CInlineAction.php(48): CInlineAction->runWithParamsInternal()
+#10 C:\wamp\www\ideareef\framework\web\CController.php(309): CInlineAction->runWithParams()
+#11 C:\wamp\www\ideareef\framework\web\filters\CFilterChain.php(134): UserController->runAction()
+#12 C:\wamp\www\ideareef\framework\web\filters\CFilter.php(41): CFilterChain->run()
+#13 C:\wamp\www\ideareef\framework\web\CController.php(1146): CAccessControlFilter->filter()
+#14 C:\wamp\www\ideareef\framework\web\filters\CInlineFilter.php(59): UserController->filterAccessControl()
+#15 C:\wamp\www\ideareef\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter()
+#16 C:\wamp\www\ideareef\framework\web\CController.php(292): CFilterChain->run()
+#17 C:\wamp\www\ideareef\framework\web\CController.php(266): UserController->runActionWithFilters()
+#18 C:\wamp\www\ideareef\framework\web\CWebApplication.php(276): UserController->run()
+#19 C:\wamp\www\ideareef\framework\web\CWebApplication.php(135): CWebApplication->runController()
+#20 C:\wamp\www\ideareef\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#21 C:\wamp\www\ideareef\index.php(13): CWebApplication->run()
+REQUEST_URI=/ideareef/user/competitionSub/6
+in C:\wamp\www\ideareef\protected\views\user\_solutionForm.php (16)
+in C:\wamp\www\ideareef\protected\views\user\competitionSub.php (388)
+in C:\wamp\www\ideareef\protected\controllers\UserController.php (227)
+2012/09/30 20:37:53 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The requested page does not exist.' in C:\wamp\www\ideareef\protected\controllers\UserController.php:228
+Stack trace:
+#0 C:\wamp\www\ideareef\protected\controllers\UserController.php(235): UserController->loadSolutionModel('6')
+#1 [internal function]: UserController->actionCompetitionSub('6')
+#2 C:\wamp\www\ideareef\framework\web\actions\CAction.php(107): ReflectionMethod->invokeArgs(Object(UserController), Array)
+#3 C:\wamp\www\ideareef\framework\web\actions\CInlineAction.php(48): CAction->runWithParamsInternal(Object(UserController), Object(ReflectionMethod), Array)
+#4 C:\wamp\www\ideareef\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#5 C:\wamp\www\ideareef\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#6 C:\wamp\www\ideareef\framework\web\filters\CFilter.php(41): CFilterChain->run()
+#7 C:\wamp\www\ideareef\framework\web\CController.php(1146): CFilter->filter(Object(CFilterChain))
+#8 C:\wamp\www\ideareef\framework\web\filters\CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#9 C:\wamp\www\ideareef\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#10 C:\wamp\www\ideareef\framework\web\CController.php(292): CFilterChain->run()
+#11 C:\wamp\www\ideareef\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 C:\wamp\www\ideareef\framework\web\CWebApplication.php(276): CController->run('competitionSub')
+#13 C:\wamp\www\ideareef\framework\web\CWebApplication.php(135): CWebApplication->runController('user/competitio...')
+#14 C:\wamp\www\ideareef\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#15 C:\wamp\www\ideareef\index.php(13): CApplication->run()
+#16 {main}
+REQUEST_URI=/ideareef/user/competitionSub/6
+HTTP_REFERER=http://localhost/ideareef/competition
+---
+2012/09/30 20:38:10 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Your request is invalid.' in C:\wamp\www\ideareef\framework\web\CController.php:337
+Stack trace:
+#0 C:\wamp\www\ideareef\framework\web\CController.php(310): CController->invalidActionParams(Object(CInlineAction))
+#1 C:\wamp\www\ideareef\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#2 C:\wamp\www\ideareef\framework\web\filters\CFilter.php(41): CFilterChain->run()
+#3 C:\wamp\www\ideareef\framework\web\CController.php(1146): CFilter->filter(Object(CFilterChain))
+#4 C:\wamp\www\ideareef\framework\web\filters\CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#5 C:\wamp\www\ideareef\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#6 C:\wamp\www\ideareef\framework\web\CController.php(292): CFilterChain->run()
+#7 C:\wamp\www\ideareef\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 C:\wamp\www\ideareef\framework\web\CWebApplication.php(276): CController->run('competitionSub')
+#9 C:\wamp\www\ideareef\framework\web\CWebApplication.php(135): CWebApplication->runController('user/competitio...')
+#10 C:\wamp\www\ideareef\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#11 C:\wamp\www\ideareef\index.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/ideareef/user/competitionSub
+---
+2012/09/30 20:38:21 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The requested page does not exist.' in C:\wamp\www\ideareef\protected\controllers\UserController.php:228
+Stack trace:
+#0 C:\wamp\www\ideareef\protected\controllers\UserController.php(235): UserController->loadSolutionModel('6')
+#1 [internal function]: UserController->actionCompetitionSub('6')
+#2 C:\wamp\www\ideareef\framework\web\actions\CAction.php(107): ReflectionMethod->invokeArgs(Object(UserController), Array)
+#3 C:\wamp\www\ideareef\framework\web\actions\CInlineAction.php(48): CAction->runWithParamsInternal(Object(UserController), Object(ReflectionMethod), Array)
+#4 C:\wamp\www\ideareef\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#5 C:\wamp\www\ideareef\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#6 C:\wamp\www\ideareef\framework\web\filters\CFilter.php(41): CFilterChain->run()
+#7 C:\wamp\www\ideareef\framework\web\CController.php(1146): CFilter->filter(Object(CFilterChain))
+#8 C:\wamp\www\ideareef\framework\web\filters\CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#9 C:\wamp\www\ideareef\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#10 C:\wamp\www\ideareef\framework\web\CController.php(292): CFilterChain->run()
+#11 C:\wamp\www\ideareef\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 C:\wamp\www\ideareef\framework\web\CWebApplication.php(276): CController->run('competitionSub')
+#13 C:\wamp\www\ideareef\framework\web\CWebApplication.php(135): CWebApplication->runController('user/competitio...')
+#14 C:\wamp\www\ideareef\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#15 C:\wamp\www\ideareef\index.php(13): CApplication->run()
+#16 {main}
+REQUEST_URI=/ideareef/user/competitionSub/6
+---
+2012/09/30 20:38:25 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The requested page does not exist.' in C:\wamp\www\ideareef\protected\controllers\UserController.php:228
+Stack trace:
+#0 C:\wamp\www\ideareef\protected\controllers\UserController.php(235): UserController->loadSolutionModel('1')
+#1 [internal function]: UserController->actionCompetitionSub('1')
+#2 C:\wamp\www\ideareef\framework\web\actions\CAction.php(107): ReflectionMethod->invokeArgs(Object(UserController), Array)
+#3 C:\wamp\www\ideareef\framework\web\actions\CInlineAction.php(48): CAction->runWithParamsInternal(Object(UserController), Object(ReflectionMethod), Array)
+#4 C:\wamp\www\ideareef\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#5 C:\wamp\www\ideareef\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#6 C:\wamp\www\ideareef\framework\web\filters\CFilter.php(41): CFilterChain->run()
+#7 C:\wamp\www\ideareef\framework\web\CController.php(1146): CFilter->filter(Object(CFilterChain))
+#8 C:\wamp\www\ideareef\framework\web\filters\CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#9 C:\wamp\www\ideareef\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#10 C:\wamp\www\ideareef\framework\web\CController.php(292): CFilterChain->run()
+#11 C:\wamp\www\ideareef\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 C:\wamp\www\ideareef\framework\web\CWebApplication.php(276): CController->run('competitionSub')
+#13 C:\wamp\www\ideareef\framework\web\CWebApplication.php(135): CWebApplication->runController('user/competitio...')
+#14 C:\wamp\www\ideareef\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#15 C:\wamp\www\ideareef\index.php(13): CApplication->run()
+#16 {main}
+REQUEST_URI=/ideareef/user/competitionSub/1
+---
+2012/09/30 20:38:28 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The requested page does not exist.' in C:\wamp\www\ideareef\protected\controllers\UserController.php:228
+Stack trace:
+#0 C:\wamp\www\ideareef\protected\controllers\UserController.php(235): UserController->loadSolutionModel('7')
+#1 [internal function]: UserController->actionCompetitionSub('7')
+#2 C:\wamp\www\ideareef\framework\web\actions\CAction.php(107): ReflectionMethod->invokeArgs(Object(UserController), Array)
+#3 C:\wamp\www\ideareef\framework\web\actions\CInlineAction.php(48): CAction->runWithParamsInternal(Object(UserController), Object(ReflectionMethod), Array)
+#4 C:\wamp\www\ideareef\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#5 C:\wamp\www\ideareef\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#6 C:\wamp\www\ideareef\framework\web\filters\CFilter.php(41): CFilterChain->run()
+#7 C:\wamp\www\ideareef\framework\web\CController.php(1146): CFilter->filter(Object(CFilterChain))
+#8 C:\wamp\www\ideareef\framework\web\filters\CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#9 C:\wamp\www\ideareef\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#10 C:\wamp\www\ideareef\framework\web\CController.php(292): CFilterChain->run()
+#11 C:\wamp\www\ideareef\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 C:\wamp\www\ideareef\framework\web\CWebApplication.php(276): CController->run('competitionSub')
+#13 C:\wamp\www\ideareef\framework\web\CWebApplication.php(135): CWebApplication->runController('user/competitio...')
+#14 C:\wamp\www\ideareef\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#15 C:\wamp\www\ideareef\index.php(13): CApplication->run()
+#16 {main}
+REQUEST_URI=/ideareef/user/competitionSub/7
+---
+2012/09/30 20:39:35 [error] [php] Undefined variable: Solution (C:\wamp\www\ideareef\protected\views\user\_solutionForm.php:16)
+Stack trace:
+#0 C:\wamp\www\ideareef\framework\web\CController.php(870): UserController->renderFile()
+#1 C:\wamp\www\ideareef\protected\views\user\competitionSub.php(388): UserController->renderPartial()
+#2 C:\wamp\www\ideareef\framework\web\CBaseController.php(127): require()
+#3 C:\wamp\www\ideareef\framework\web\CBaseController.php(96): UserController->renderInternal()
+#4 C:\wamp\www\ideareef\framework\web\CController.php(870): UserController->renderFile()
+#5 C:\wamp\www\ideareef\framework\web\CController.php(783): UserController->renderPartial()
+#6 C:\wamp\www\ideareef\protected\controllers\UserController.php(235): UserController->render()
+#7 unknown(0): UserController->actionCompetitionSub()
+#8 C:\wamp\www\ideareef\framework\web\actions\CAction.php(107): ReflectionMethod->invokeArgs()
+#9 C:\wamp\www\ideareef\framework\web\actions\CInlineAction.php(48): CInlineAction->runWithParamsInternal()
+#10 C:\wamp\www\ideareef\framework\web\CController.php(309): CInlineAction->runWithParams()
+#11 C:\wamp\www\ideareef\framework\web\filters\CFilterChain.php(134): UserController->runAction()
+#12 C:\wamp\www\ideareef\framework\web\filters\CFilter.php(41): CFilterChain->run()
+#13 C:\wamp\www\ideareef\framework\web\CController.php(1146): CAccessControlFilter->filter()
+#14 C:\wamp\www\ideareef\framework\web\filters\CInlineFilter.php(59): UserController->filterAccessControl()
+#15 C:\wamp\www\ideareef\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter()
+#16 C:\wamp\www\ideareef\framework\web\CController.php(292): CFilterChain->run()
+#17 C:\wamp\www\ideareef\framework\web\CController.php(266): UserController->runActionWithFilters()
+#18 C:\wamp\www\ideareef\framework\web\CWebApplication.php(276): UserController->run()
+#19 C:\wamp\www\ideareef\framework\web\CWebApplication.php(135): CWebApplication->runController()
+#20 C:\wamp\www\ideareef\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#21 C:\wamp\www\ideareef\index.php(13): CWebApplication->run()
+REQUEST_URI=/ideareef/user/competitionSub/7
+in C:\wamp\www\ideareef\protected\views\user\_solutionForm.php (16)
+in C:\wamp\www\ideareef\protected\views\user\competitionSub.php (388)
+in C:\wamp\www\ideareef\protected\controllers\UserController.php (235)
+2012/09/30 20:45:23 [error] [php] Undefined variable: Solution (C:\wamp\www\ideareef\protected\views\user\_solutionForm.php:16)
+Stack trace:
+#0 C:\wamp\www\ideareef\framework\web\CController.php(870): UserController->renderFile()
+#1 C:\wamp\www\ideareef\protected\views\user\competitionSub.php(388): UserController->renderPartial()
+#2 C:\wamp\www\ideareef\framework\web\CBaseController.php(127): require()
+#3 C:\wamp\www\ideareef\framework\web\CBaseController.php(96): UserController->renderInternal()
+#4 C:\wamp\www\ideareef\framework\web\CController.php(870): UserController->renderFile()
+#5 C:\wamp\www\ideareef\framework\web\CController.php(783): UserController->renderPartial()
+#6 C:\wamp\www\ideareef\protected\controllers\UserController.php(235): UserController->render()
+#7 unknown(0): UserController->actionCompetitionSub()
+#8 C:\wamp\www\ideareef\framework\web\actions\CAction.php(107): ReflectionMethod->invokeArgs()
+#9 C:\wamp\www\ideareef\framework\web\actions\CInlineAction.php(48): CInlineAction->runWithParamsInternal()
+#10 C:\wamp\www\ideareef\framework\web\CController.php(309): CInlineAction->runWithParams()
+#11 C:\wamp\www\ideareef\framework\web\filters\CFilterChain.php(134): UserController->runAction()
+#12 C:\wamp\www\ideareef\framework\web\filters\CFilter.php(41): CFilterChain->run()
+#13 C:\wamp\www\ideareef\framework\web\CController.php(1146): CAccessControlFilter->filter()
+#14 C:\wamp\www\ideareef\framework\web\filters\CInlineFilter.php(59): UserController->filterAccessControl()
+#15 C:\wamp\www\ideareef\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter()
+#16 C:\wamp\www\ideareef\framework\web\CController.php(292): CFilterChain->run()
+#17 C:\wamp\www\ideareef\framework\web\CController.php(266): UserController->runActionWithFilters()
+#18 C:\wamp\www\ideareef\framework\web\CWebApplication.php(276): UserController->run()
+#19 C:\wamp\www\ideareef\framework\web\CWebApplication.php(135): CWebApplication->runController()
+#20 C:\wamp\www\ideareef\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#21 C:\wamp\www\ideareef\index.php(13): CWebApplication->run()
+REQUEST_URI=/ideareef/user/competitionSub/7
+in C:\wamp\www\ideareef\protected\views\user\_solutionForm.php (16)
+in C:\wamp\www\ideareef\protected\views\user\competitionSub.php (388)
+in C:\wamp\www\ideareef\protected\controllers\UserController.php (235)
+2012/09/30 20:47:05 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The requested page does not exist.' in C:\wamp\www\ideareef\protected\controllers\UserController.php:228
+Stack trace:
+#0 C:\wamp\www\ideareef\protected\controllers\UserController.php(235): UserController->loadSolutionModel('7')
+#1 [internal function]: UserController->actionCompetitionSub('7')
+#2 C:\wamp\www\ideareef\framework\web\actions\CAction.php(107): ReflectionMethod->invokeArgs(Object(UserController), Array)
+#3 C:\wamp\www\ideareef\framework\web\actions\CInlineAction.php(48): CAction->runWithParamsInternal(Object(UserController), Object(ReflectionMethod), Array)
+#4 C:\wamp\www\ideareef\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#5 C:\wamp\www\ideareef\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#6 C:\wamp\www\ideareef\framework\web\filters\CFilter.php(41): CFilterChain->run()
+#7 C:\wamp\www\ideareef\framework\web\CController.php(1146): CFilter->filter(Object(CFilterChain))
+#8 C:\wamp\www\ideareef\framework\web\filters\CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#9 C:\wamp\www\ideareef\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#10 C:\wamp\www\ideareef\framework\web\CController.php(292): CFilterChain->run()
+#11 C:\wamp\www\ideareef\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 C:\wamp\www\ideareef\framework\web\CWebApplication.php(276): CController->run('competitionSub')
+#13 C:\wamp\www\ideareef\framework\web\CWebApplication.php(135): CWebApplication->runController('user/competitio...')
+#14 C:\wamp\www\ideareef\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#15 C:\wamp\www\ideareef\index.php(13): CApplication->run()
+#16 {main}
+REQUEST_URI=/ideareef/user/competitionSub/7
+---
+2012/09/30 20:47:35 [error] [php] Undefined variable: Solution (C:\wamp\www\ideareef\protected\views\user\_solutionForm.php:16)
+Stack trace:
+#0 C:\wamp\www\ideareef\framework\web\CController.php(870): UserController->renderFile()
+#1 C:\wamp\www\ideareef\protected\views\user\competitionSub.php(388): UserController->renderPartial()
+#2 C:\wamp\www\ideareef\framework\web\CBaseController.php(127): require()
+#3 C:\wamp\www\ideareef\framework\web\CBaseController.php(96): UserController->renderInternal()
+#4 C:\wamp\www\ideareef\framework\web\CController.php(870): UserController->renderFile()
+#5 C:\wamp\www\ideareef\framework\web\CController.php(783): UserController->renderPartial()
+#6 C:\wamp\www\ideareef\protected\controllers\UserController.php(235): UserController->render()
+#7 unknown(0): UserController->actionCompetitionSub()
+#8 C:\wamp\www\ideareef\framework\web\actions\CAction.php(107): ReflectionMethod->invokeArgs()
+#9 C:\wamp\www\ideareef\framework\web\actions\CInlineAction.php(48): CInlineAction->runWithParamsInternal()
+#10 C:\wamp\www\ideareef\framework\web\CController.php(309): CInlineAction->runWithParams()
+#11 C:\wamp\www\ideareef\framework\web\filters\CFilterChain.php(134): UserController->runAction()
+#12 C:\wamp\www\ideareef\framework\web\filters\CFilter.php(41): CFilterChain->run()
+#13 C:\wamp\www\ideareef\framework\web\CController.php(1146): CAccessControlFilter->filter()
+#14 C:\wamp\www\ideareef\framework\web\filters\CInlineFilter.php(59): UserController->filterAccessControl()
+#15 C:\wamp\www\ideareef\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter()
+#16 C:\wamp\www\ideareef\framework\web\CController.php(292): CFilterChain->run()
+#17 C:\wamp\www\ideareef\framework\web\CController.php(266): UserController->runActionWithFilters()
+#18 C:\wamp\www\ideareef\framework\web\CWebApplication.php(276): UserController->run()
+#19 C:\wamp\www\ideareef\framework\web\CWebApplication.php(135): CWebApplication->runController()
+#20 C:\wamp\www\ideareef\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#21 C:\wamp\www\ideareef\index.php(13): CWebApplication->run()
+REQUEST_URI=/ideareef/user/competitionSub/7
+in C:\wamp\www\ideareef\protected\views\user\_solutionForm.php (16)
+in C:\wamp\www\ideareef\protected\views\user\competitionSub.php (388)
+in C:\wamp\www\ideareef\protected\controllers\UserController.php (235)
+2012/09/30 20:48:22 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The requested page does not exist.' in C:\wamp\www\ideareef\protected\controllers\UserController.php:228
+Stack trace:
+#0 C:\wamp\www\ideareef\protected\controllers\UserController.php(235): UserController->loadSolutionModel('7')
+#1 [internal function]: UserController->actionCompetitionSub('7')
+#2 C:\wamp\www\ideareef\framework\web\actions\CAction.php(107): ReflectionMethod->invokeArgs(Object(UserController), Array)
+#3 C:\wamp\www\ideareef\framework\web\actions\CInlineAction.php(48): CAction->runWithParamsInternal(Object(UserController), Object(ReflectionMethod), Array)
+#4 C:\wamp\www\ideareef\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#5 C:\wamp\www\ideareef\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#6 C:\wamp\www\ideareef\framework\web\filters\CFilter.php(41): CFilterChain->run()
+#7 C:\wamp\www\ideareef\framework\web\CController.php(1146): CFilter->filter(Object(CFilterChain))
+#8 C:\wamp\www\ideareef\framework\web\filters\CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#9 C:\wamp\www\ideareef\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#10 C:\wamp\www\ideareef\framework\web\CController.php(292): CFilterChain->run()
+#11 C:\wamp\www\ideareef\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 C:\wamp\www\ideareef\framework\web\CWebApplication.php(276): CController->run('competitionSub')
+#13 C:\wamp\www\ideareef\framework\web\CWebApplication.php(135): CWebApplication->runController('user/competitio...')
+#14 C:\wamp\www\ideareef\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#15 C:\wamp\www\ideareef\index.php(13): CApplication->run()
+#16 {main}
+REQUEST_URI=/ideareef/user/competitionSub/7
+---
+2012/09/30 20:51:55 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Your request is invalid.' in C:\wamp\www\ideareef\framework\web\CController.php:337
+Stack trace:
+#0 C:\wamp\www\ideareef\framework\web\CController.php(310): CController->invalidActionParams(Object(CInlineAction))
+#1 C:\wamp\www\ideareef\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#2 C:\wamp\www\ideareef\framework\web\filters\CFilter.php(41): CFilterChain->run()
+#3 C:\wamp\www\ideareef\framework\web\CController.php(1146): CFilter->filter(Object(CFilterChain))
+#4 C:\wamp\www\ideareef\framework\web\filters\CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#5 C:\wamp\www\ideareef\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#6 C:\wamp\www\ideareef\framework\web\CController.php(292): CFilterChain->run()
+#7 C:\wamp\www\ideareef\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 C:\wamp\www\ideareef\framework\web\CWebApplication.php(276): CController->run('competitionDeta...')
+#9 C:\wamp\www\ideareef\framework\web\CWebApplication.php(135): CWebApplication->runController('business/compet...')
+#10 C:\wamp\www\ideareef\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#11 C:\wamp\www\ideareef\index.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/ideareef/business/competitionDetail
+---
+2012/09/30 20:52:30 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Your request is invalid.' in C:\wamp\www\ideareef\framework\web\CController.php:337
+Stack trace:
+#0 C:\wamp\www\ideareef\framework\web\CController.php(310): CController->invalidActionParams(Object(CInlineAction))
+#1 C:\wamp\www\ideareef\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#2 C:\wamp\www\ideareef\framework\web\filters\CFilter.php(41): CFilterChain->run()
+#3 C:\wamp\www\ideareef\framework\web\CController.php(1146): CFilter->filter(Object(CFilterChain))
+#4 C:\wamp\www\ideareef\framework\web\filters\CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#5 C:\wamp\www\ideareef\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#6 C:\wamp\www\ideareef\framework\web\CController.php(292): CFilterChain->run()
+#7 C:\wamp\www\ideareef\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 C:\wamp\www\ideareef\framework\web\CWebApplication.php(276): CController->run('competitionDeta...')
+#9 C:\wamp\www\ideareef\framework\web\CWebApplication.php(135): CWebApplication->runController('business/compet...')
+#10 C:\wamp\www\ideareef\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#11 C:\wamp\www\ideareef\index.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/ideareef/business/competitionDetail
+---
+2012/09/30 20:59:28 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Your request is invalid.' in C:\wamp\www\ideareef\framework\web\CController.php:337
+Stack trace:
+#0 C:\wamp\www\ideareef\framework\web\CController.php(310): CController->invalidActionParams(Object(CInlineAction))
+#1 C:\wamp\www\ideareef\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#2 C:\wamp\www\ideareef\framework\web\filters\CFilter.php(41): CFilterChain->run()
+#3 C:\wamp\www\ideareef\framework\web\CController.php(1146): CFilter->filter(Object(CFilterChain))
+#4 C:\wamp\www\ideareef\framework\web\filters\CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#5 C:\wamp\www\ideareef\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#6 C:\wamp\www\ideareef\framework\web\CController.php(292): CFilterChain->run()
+#7 C:\wamp\www\ideareef\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 C:\wamp\www\ideareef\framework\web\CWebApplication.php(276): CController->run('competitionSub')
+#9 C:\wamp\www\ideareef\framework\web\CWebApplication.php(135): CWebApplication->runController('user/competitio...')
+#10 C:\wamp\www\ideareef\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#11 C:\wamp\www\ideareef\index.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/ideareef/user/competitionSub
+---
+2012/09/30 20:59:56 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "competition3".' in C:\wamp\www\ideareef\framework\web\CController.php:484
+Stack trace:
+#0 C:\wamp\www\ideareef\framework\web\CController.php(271): CController->missingAction('competition3')
+#1 C:\wamp\www\ideareef\framework\web\CWebApplication.php(276): CController->run('competition3')
+#2 C:\wamp\www\ideareef\framework\web\CWebApplication.php(135): CWebApplication->runController('business/compet...')
+#3 C:\wamp\www\ideareef\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#4 C:\wamp\www\ideareef\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/ideareef/business/competition3
+---
+2012/09/30 20:59:59 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "competition3".' in C:\wamp\www\ideareef\framework\web\CController.php:484
+Stack trace:
+#0 C:\wamp\www\ideareef\framework\web\CController.php(271): CController->missingAction('competition3')
+#1 C:\wamp\www\ideareef\framework\web\CWebApplication.php(276): CController->run('competition3')
+#2 C:\wamp\www\ideareef\framework\web\CWebApplication.php(135): CWebApplication->runController('business/compet...')
+#3 C:\wamp\www\ideareef\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#4 C:\wamp\www\ideareef\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/ideareef/business/competition3/3
+---
+2012/09/30 21:15:48 [error] [php] Undefined variable: solutions (C:\wamp\www\ideareef\protected\views\user\_solutionForm.php:16)
+Stack trace:
+#0 C:\wamp\www\ideareef\framework\web\CController.php(870): UserController->renderFile()
+#1 C:\wamp\www\ideareef\protected\views\user\competitionSub.php(388): UserController->renderPartial()
+#2 C:\wamp\www\ideareef\framework\web\CBaseController.php(127): require()
+#3 C:\wamp\www\ideareef\framework\web\CBaseController.php(96): UserController->renderInternal()
+#4 C:\wamp\www\ideareef\framework\web\CController.php(870): UserController->renderFile()
+#5 C:\wamp\www\ideareef\framework\web\CController.php(783): UserController->renderPartial()
+#6 C:\wamp\www\ideareef\protected\controllers\UserController.php(235): UserController->render()
+#7 unknown(0): UserController->actionCompetitionSub()
+#8 C:\wamp\www\ideareef\framework\web\actions\CAction.php(107): ReflectionMethod->invokeArgs()
+#9 C:\wamp\www\ideareef\framework\web\actions\CInlineAction.php(48): CInlineAction->runWithParamsInternal()
+#10 C:\wamp\www\ideareef\framework\web\CController.php(309): CInlineAction->runWithParams()
+#11 C:\wamp\www\ideareef\framework\web\filters\CFilterChain.php(134): UserController->runAction()
+#12 C:\wamp\www\ideareef\framework\web\filters\CFilter.php(41): CFilterChain->run()
+#13 C:\wamp\www\ideareef\framework\web\CController.php(1146): CAccessControlFilter->filter()
+#14 C:\wamp\www\ideareef\framework\web\filters\CInlineFilter.php(59): UserController->filterAccessControl()
+#15 C:\wamp\www\ideareef\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter()
+#16 C:\wamp\www\ideareef\framework\web\CController.php(292): CFilterChain->run()
+#17 C:\wamp\www\ideareef\framework\web\CController.php(266): UserController->runActionWithFilters()
+#18 C:\wamp\www\ideareef\framework\web\CWebApplication.php(276): UserController->run()
+#19 C:\wamp\www\ideareef\framework\web\CWebApplication.php(135): CWebApplication->runController()
+#20 C:\wamp\www\ideareef\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#21 C:\wamp\www\ideareef\index.php(13): CWebApplication->run()
+REQUEST_URI=/ideareef/user/competitionSub/7
+in C:\wamp\www\ideareef\protected\views\user\_solutionForm.php (16)
+in C:\wamp\www\ideareef\protected\views\user\competitionSub.php (388)
+in C:\wamp\www\ideareef\protected\controllers\UserController.php (235)
+2012/09/30 21:16:26 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The requested page does not exist.' in C:\wamp\www\ideareef\protected\controllers\UserController.php:228
+Stack trace:
+#0 C:\wamp\www\ideareef\protected\controllers\UserController.php(235): UserController->loadSolutionModel('7')
+#1 [internal function]: UserController->actionCompetitionSub('7')
+#2 C:\wamp\www\ideareef\framework\web\actions\CAction.php(107): ReflectionMethod->invokeArgs(Object(UserController), Array)
+#3 C:\wamp\www\ideareef\framework\web\actions\CInlineAction.php(48): CAction->runWithParamsInternal(Object(UserController), Object(ReflectionMethod), Array)
+#4 C:\wamp\www\ideareef\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#5 C:\wamp\www\ideareef\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#6 C:\wamp\www\ideareef\framework\web\filters\CFilter.php(41): CFilterChain->run()
+#7 C:\wamp\www\ideareef\framework\web\CController.php(1146): CFilter->filter(Object(CFilterChain))
+#8 C:\wamp\www\ideareef\framework\web\filters\CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#9 C:\wamp\www\ideareef\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#10 C:\wamp\www\ideareef\framework\web\CController.php(292): CFilterChain->run()
+#11 C:\wamp\www\ideareef\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 C:\wamp\www\ideareef\framework\web\CWebApplication.php(276): CController->run('competitionSub')
+#13 C:\wamp\www\ideareef\framework\web\CWebApplication.php(135): CWebApplication->runController('user/competitio...')
+#14 C:\wamp\www\ideareef\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#15 C:\wamp\www\ideareef\index.php(13): CApplication->run()
+#16 {main}
+REQUEST_URI=/ideareef/user/competitionSub/7
+---
+2012/09/30 21:59:27 [error] [php] Undefined variable: sort (C:\wamp\www\ideareef\protected\controllers\BusinessController.php:276)
+Stack trace:
+#0 C:\wamp\www\ideareef\framework\web\actions\CInlineAction.php(48): CInlineAction->runWithParamsInternal()
+#1 C:\wamp\www\ideareef\framework\web\CController.php(309): CInlineAction->runWithParams()
+#2 C:\wamp\www\ideareef\framework\web\filters\CFilterChain.php(134): BusinessController->runAction()
+#3 C:\wamp\www\ideareef\framework\web\filters\CFilter.php(41): CFilterChain->run()
+#4 C:\wamp\www\ideareef\framework\web\CController.php(1146): CAccessControlFilter->filter()
+#5 C:\wamp\www\ideareef\framework\web\filters\CInlineFilter.php(59): BusinessController->filterAccessControl()
+#6 C:\wamp\www\ideareef\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter()
+#7 C:\wamp\www\ideareef\framework\web\CController.php(292): CFilterChain->run()
+#8 C:\wamp\www\ideareef\framework\web\CController.php(266): BusinessController->runActionWithFilters()
+#9 C:\wamp\www\ideareef\framework\web\CWebApplication.php(276): BusinessController->run()
+#10 C:\wamp\www\ideareef\framework\web\CWebApplication.php(135): CWebApplication->runController()
+#11 C:\wamp\www\ideareef\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#12 C:\wamp\www\ideareef\index.php(13): CWebApplication->run()
+REQUEST_URI=/ideareef/business/competitionDetail/6
+in C:\wamp\www\ideareef\protected\controllers\BusinessController.php (276)
+in C:\wamp\www\ideareef\index.php (13)
+2012/09/30 21:59:29 [error] [php] Undefined variable: sort (C:\wamp\www\ideareef\protected\controllers\BusinessController.php:276)
+Stack trace:
+#0 C:\wamp\www\ideareef\framework\web\actions\CInlineAction.php(48): CInlineAction->runWithParamsInternal()
+#1 C:\wamp\www\ideareef\framework\web\CController.php(309): CInlineAction->runWithParams()
+#2 C:\wamp\www\ideareef\framework\web\filters\CFilterChain.php(134): BusinessController->runAction()
+#3 C:\wamp\www\ideareef\framework\web\filters\CFilter.php(41): CFilterChain->run()
+#4 C:\wamp\www\ideareef\framework\web\CController.php(1146): CAccessControlFilter->filter()
+#5 C:\wamp\www\ideareef\framework\web\filters\CInlineFilter.php(59): BusinessController->filterAccessControl()
+#6 C:\wamp\www\ideareef\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter()
+#7 C:\wamp\www\ideareef\framework\web\CController.php(292): CFilterChain->run()
+#8 C:\wamp\www\ideareef\framework\web\CController.php(266): BusinessController->runActionWithFilters()
+#9 C:\wamp\www\ideareef\framework\web\CWebApplication.php(276): BusinessController->run()
+#10 C:\wamp\www\ideareef\framework\web\CWebApplication.php(135): CWebApplication->runController()
+#11 C:\wamp\www\ideareef\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#12 C:\wamp\www\ideareef\index.php(13): CWebApplication->run()
+REQUEST_URI=/ideareef/business/competitionDetail/6
+in C:\wamp\www\ideareef\protected\controllers\BusinessController.php (276)
+in C:\wamp\www\ideareef\index.php (13)
+2012/09/30 22:01:18 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Your request is invalid.' in C:\wamp\www\ideareef\framework\web\CController.php:337
+Stack trace:
+#0 C:\wamp\www\ideareef\framework\web\CController.php(310): CController->invalidActionParams(Object(CInlineAction))
+#1 C:\wamp\www\ideareef\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#2 C:\wamp\www\ideareef\framework\web\filters\CFilter.php(41): CFilterChain->run()
+#3 C:\wamp\www\ideareef\framework\web\CController.php(1146): CFilter->filter(Object(CFilterChain))
+#4 C:\wamp\www\ideareef\framework\web\filters\CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#5 C:\wamp\www\ideareef\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#6 C:\wamp\www\ideareef\framework\web\CController.php(292): CFilterChain->run()
+#7 C:\wamp\www\ideareef\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 C:\wamp\www\ideareef\framework\web\CWebApplication.php(276): CController->run('competitionDeta...')
+#9 C:\wamp\www\ideareef\framework\web\CWebApplication.php(135): CWebApplication->runController('business/compet...')
+#10 C:\wamp\www\ideareef\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#11 C:\wamp\www\ideareef\index.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/ideareef/business/competitionDetail/
+---

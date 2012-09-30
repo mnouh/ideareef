@@ -26,7 +26,7 @@ class UserController extends Controller {
                 'users' => array('*'),
             ),
             array('allow', // allow authenticated user to perform 'create' and 'update' actions
-                'actions' => array('index', 'changeName', 'changeUsername', 'changepassword', 'changeZipCode', 'create', 'update', 'completeProfile', 'competition'),
+                'actions' => array('index', 'changeName', 'changeUsername', 'changepassword', 'changeZipCode', 'create', 'update', 'completeProfile', 'competition', 'competitionSub'),
                 'users' => array('@'),
             ),
             /*array('allow', // allow admin user to perform 'admin' and 'delete' actions
@@ -205,6 +205,34 @@ class UserController extends Controller {
         
             $model = User::model()->findByPk(Yii::app()->user->id);
             $this->render('completeProfile', array('model' => $model));
+        
+    }
+    
+    /**
+	 * Returns the data model based on the primary key given in the GET variable.
+	 * If the data model is not found, an HTTP exception will be raised.
+	 * @param integer the ID of the model to be loaded
+	 */
+	public function loadCompetitionModel($id)
+	{
+		$model=Competition::model()->findByPk($id);
+		if($model===null)
+			throw new CHttpException(404,'The requested page does not exist.');
+		return $model;
+	}
+    
+        public function loadSolutionModel($id)
+	{
+		$model=Solution::model()->findByPk($id);
+		if($model===null)
+			throw new CHttpException(404,'The requested page does not exist.');
+		return $model;
+	}
+        
+    public function actionCompetitionSub($id) {
+        
+            $model = User::model()->findByPk(Yii::app()->user->id);
+            $this->render('competitionSub', array('model' => $model, 'competition' => $this->loadCompetitionModel($id)));
         
     }
 

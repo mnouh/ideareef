@@ -75,6 +75,17 @@
                 <div class="fR"><a href="#">View All</a></div>
                 <div class="clear"></div>
             </div>
+            <div class="contents">
+            <?php
+        $this->widget('zii.widgets.ClistView', array(
+          'dataProvider' => $dataProvider,
+        'itemView' => '_competitionSide',
+        'sortableAttributes' => array(
+          'endDate',
+        'startDate'
+         )));
+        ?>
+            </div>
         </div>
         
     </div>
@@ -103,12 +114,6 @@
                     <li><a id="myHeader2" href="javascript:showonlyone('newboxes2');">Recent Activity</a></li>
                     <li><a id="myHeader3" href="javascript:showonlyone('newboxes3');">Information</a></li>
                     <li><a id="myHeader3" href="javascript:showonlyone('newboxes4');">Statistics</a></li>
-                </ul>
-            </div>
-
-            <div class="topmenuright">
-                <ul>
-                    <li><a href="#">View on Map</a></li>
                 </ul>
             </div>
 
@@ -150,42 +155,47 @@
                         <div class="clear"></div>
                     </div>
                     <div class="bottom">
-                        <table width="100%" cellpadding="0" cellspacing="1" class="listTable">
-                            <tr>
-                                <td class="imageBox"><img src="<?php echo Yii::app()->request->baseUrl; ?>/images/no-image-female.gif" alt=""></td>
-                                <td><a href="#">Weekly Shot Wheel Competition</a><br>
-                                    <strong>Tom and Marty's</strong> (Local) <br>
-                                    <em>Launced: 05/30/2012 <br>
-                                        Closing: 07/20/2012 </em></td>
-                                <td class="txtCenter"><a href="<?php echo $this->createUrl('competition'); ?>" class="smbtn">View Competition Page </a>
-                                    <div class="clear"></div>
-                                    <a href="#" class="smbtn">View Winning Solutions </a></td>
-                            </tr>
-                            <tr>
-                                <td class="imageBox"><img src="<?php echo Yii::app()->request->baseUrl; ?>/images/no-image-female.gif" alt=""></td>
-                                <td><a href="#">Weekly Shot Wheel Competition</a><br>
-                                    <strong>Tom and Marty's</strong> (Local) <br>
-                                    <em>Launced: 05/30/2012 <br>
-                                        Closing: 07/20/2012 </em></td>
-                                <td class="txtCenter"><a href="#" class="smbtn">View Competition Page </a>
-                                    <div class="clear"></div>
-                                </td>
-                            </tr>
-                        </table>
-                        <div class="clear"></div>
-                    </div>
+
+                <?php
+                $this->widget('zii.widgets.ClistView', array(
+                    'dataProvider' => $dataProvider,
+                    'itemView' => '_competitionCenter',
+                    'sortableAttributes' => array(
+                        'endDate',
+                        'startDate'
+                        )));
+                ?>    
+
+                <div class="clear"></div>
+
+            </div>
                 </div>
 
                 <div class="boxes">
                     <div class="top">
-                        <h2>Idea Campaign</h2>
+                        <h2>Open Surges</h2>
                         <div class="fR"><a href="#">View All</a></div>
                         <div class="clear"></div>
                     </div>
+                    <div class="bottom">
+
+                <?php
+                $this->widget('zii.widgets.ClistView', array(
+                    'dataProvider' => $dataProvider,
+                    'itemView' => '_surgeCenter',
+                    'sortableAttributes' => array(
+                        'endDate',
+                        'startDate'
+                        )));
+                ?>    
+
+                <div class="clear"></div>
+
+            </div>
                 </div>
             </div>
 
-            <div id="newboxes2"class="newboxes"  style="display:none;">
+            <div id="newboxes2" class="newboxes"  style="display:none;">
                 <div class="inside">
                     <div class="boxes">
                         <div class="top">
