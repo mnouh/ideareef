@@ -47,26 +47,31 @@ class ApiController extends Controller
         //$this->_checkAuth();
         $email = $_POST["email"];
         $password = $_POST["password"];
+        
+        $_SERVER['HTTP_X_EMAIL'] = $_POST["email"];
+        $_SERVER['HTTP_X_PASSWORD'] = $_POST["password"];
+        $this->_checkAuth();
+        
         $params = array($email, $password);
         $this->_sendResponse(200, CJSON::encode($params));
     }
     
     private function _checkAuth() {
         // Check if we have the USERNAME and PASSWORD HTTP headers set?
-        if (!(isset($_SERVER['HTTP_X_USERNAME']) and isset($_SERVER['HTTP_X_PASSWORD']))) {
+        if (!(isset($_SERVER['HTTP_X_EMAIL']) and isset($_SERVER['HTTP_X_PASSWORD']))) {
             // Error: Unauthorized
             $this->_sendResponse(401);
         }
-        $username = $_SERVER['HTTP_X_USERNAME'];
+        $email = $_SERVER['HTTP_X_EMAIL'];
         $password = $_SERVER['HTTP_X_PASSWORD'];
         // Find the user
-        $user = User::model()->find('LOWER(username)=?', array(strtolower($username)));
+        $user = User::model()->find('LOWER(email)=?', array(strtolower($email)));
         if ($user === null) {
             // Error: Unauthorized
-            $this->_sendResponse(401, 'Error: User Name is invalid');
+            $this->_sendResponse(401, 'Error: Email is invalid');
         } else if (!$user->validatePassword($password)) {
             // Error: Unauthorized
-            $this->_sendResponse(401, 'Error: User Password is invalid');
+            $this->_sendResponse(401, 'Error: Password is invalid');
         }
     }
     
