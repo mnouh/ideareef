@@ -2,6 +2,7 @@
 
 jQuery(function($) {
 	$(document).ready(function() {
+            
 		/*$('.mailbox-item').hover(function() {
 			// Check if it should be persistent (can set to a normal bool if you like!)
 			ajaxGrowl('test1','delete');

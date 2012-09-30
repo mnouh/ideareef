@@ -22,7 +22,7 @@ class UserController extends Controller {
         return array(
             
             array('allow', // allow all users to perform 'index' and 'view' actions
-                'actions' => array('signup'),
+                'actions' => array('signup', 'signup2'),
                 'users' => array('*'),
             ),
             array('allow', // allow authenticated user to perform 'create' and 'update' actions
@@ -83,9 +83,18 @@ class UserController extends Controller {
 
             if ($model->validate()) {
                 
+                $tempPassword = $model->password;
                 if($model->save())
                 {
-                    Yii::app()->user->setFlash('success', "Successfully Registered");
+                    $login = new LoginForm;
+                    $login->email = $model->email;
+                    $login->password = $tempPassword;
+                    
+                    if($login->login()) {
+                        Yii::app()->user->setFlash('success', "Successfully Registered");
+                    //Remember to Send Email Support.
+                       return $this->render('complete-profile', array('model' => $model));
+                    }
                 }
                 
             }
@@ -187,6 +196,49 @@ class UserController extends Controller {
         $this->renderPartial('changeName', array('model' => $model), false, false);
     }
     
+    
+    public function actionSignUp2()
+    {
+        
+        $model = new User;
+        $model->setScenario('signup');
+        
+        $this->performAjaxValidation($model, 'signup-form');
+        
+        if(isset($_POST['User'])){
+            
+            $model->attributes = $_POST['User'];
+            
+            if($model->validate() && $model->save())
+            {
+                
+                echo "You've registered";
+                
+            }
+            
+        }
+        
+        $user = User::model()->findByPk('1');
+        
+        
+        echo $user->firstName.'<br>';
+        echo $user->lastName.'<br>';
+        
+        $user->firstName = "Josh";
+        
+        $user->update();
+        echo 'After Update<br>';
+        echo $user->firstName;
+        
+        
+       
+        
+        
+        $this->render('signup2', array('model' => $model));
+        
+    }
+    
+    
     public function actionSettings()
     {
         $model = User::model()->findByPk(Yii::app()->user->id);
@@ -204,7 +256,7 @@ class UserController extends Controller {
     public function actionCompleteProfile() {
         
             $model = User::model()->findByPk(Yii::app()->user->id);
-            $this->render('completeProfile', array('model' => $model));
+            $this->render('complete-profile', array('model' => $model));
         
     }
 
@@ -224,6 +276,24 @@ class UserController extends Controller {
             Yii::app()->end();
         }
     }
+    
+    
+    /**
+     * This will email the user, the confirmation code.
+     * @param type $model 
+     */
+    protected function sendSignUpConfirmation(&$model) {
+
+        $signUpEmail = New YiiMailMessage;
+        $signUpEmail->view = 'userSignup';
+        $signUpEmail->setBody(array('model' => $model), 'text/html');
+        $signUpEmail->setFrom(array('welcome@ideareef.com' => 'IdeaReef'));
+        $signUpEmail->setSubject('Welcome - IdeaReef');
+        $signUpEmail->addTo($model->email);
+        Yii::app()->mail->send($signUpEmail);
+    }
+    
+    
 
     // Uncomment the following methods and override them if needed
     /*

@@ -57,7 +57,7 @@ $form=$this->beginWidget('CActiveForm', array(
 			</div>
 		</div>
 		<div class="mailbox-textarea-wrap">
-		<?php echo $form->textArea($msg,'text',array('cols'=>50,'rows'=>7, 'class'=>'mailbox-message-input','style'=>'width:100%;','placeholder'=>'Enter message here...')); ?>
+		<?php echo $form->textArea($msg,'text',array('cols'=>50,'rows'=>7, 'class'=>'txtArea','style'=>'width:100%;','placeholder'=>'Enter message here...')); ?>
 		<?php echo $form->error($msg,'text'); ?>
 		</div>
 		<div>

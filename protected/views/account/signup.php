@@ -61,6 +61,8 @@ $this->pageTitle = Yii::app()->name . ' - Sign Up';
       ?>
                                             
                                             
+                                            
+                                            
                                     </li>
                                         <li class="other">&larr; Be sure to select the correct account type		      </li>
                                     </ul>

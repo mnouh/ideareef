@@ -66,7 +66,7 @@ class MessageController extends Controller
 		$this->module->registerConfig($this->getAction()->getId());
 		
 		$this->module->getClientScript()->registerScriptFile($this->module->getAssetsUrl().'/js/jquery.colors.js');
-		$this->module->getClientScript()->registerScriptFile($this->module->getAssetsUrl().'/js/mailbox.js');
+		$this->module->getClientScript()->registerScriptFile($this->module->getAssetsUrl().'/js/mailbox.js',CClientScript::POS_END);
 		if(isset($_POST['convs']))
 		{
 			$this->buttonAction('sent');
@@ -85,7 +85,7 @@ class MessageController extends Controller
 		$this->module->registerConfig($this->getAction()->getId());
 		
 		$this->module->getClientScript()->registerScriptFile($this->module->getAssetsUrl().'/js/jquery.colors.js');
-		$this->module->getClientScript()->registerScriptFile($this->module->getAssetsUrl().'/js/mailbox.js');
+		$this->module->getClientScript()->registerScriptFile($this->module->getAssetsUrl().'/js/mailbox.js',CClientScript::POS_END);
 		if(isset($_POST['convs']))
 		{
 			$this->buttonAction('trash','trash');
