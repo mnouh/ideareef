@@ -19,19 +19,16 @@
             <div class="clear"></div>
         </div>
         <div class="mid">
+            <!--INSERT TOOLTIPS-->
             <div class="contents">
-                <div class="fLeft">My Network  Rank:</div>
-                <div class="fRight">1/1035</div>
+                <div class="fLeft">Page Views:</div>
+                <div class="fRight"><?php echo $model->views; ?></div>
                 <div class="clear"></div>
             </div>
-            <div class="contents">
-                <div class="fLeft">Binghamton Rank:</div>
-                <div class="fRight">1/5</div>
-                <div class="clear"></div>
-            </div>
+            
             <div class="contents last">
-                <div class="fLeft">Current Competitions:</div>
-                <div class="fRight">10</div>
+                <div class="fLeft">New Supporters:</div>
+                <div class="fRight"><?php echo $model->newSupporters;?></div>
                 <div class="clear"></div>
             </div>
         </div>
@@ -59,7 +56,7 @@
                 <div class="clear"></div>
             </div>
         </div>
-        <div class="box">
+        <!--<div class="box">
             <div class="top">
                 <h2>Open Competitions <a href="#">(4)</a></h2>
                 <div class="fR"><a href="#">View All</a></div>
@@ -68,15 +65,15 @@
             <div class="contents">
 
 
-                <?php
-                $this->widget('zii.widgets.ClistView', array(
-                    'dataProvider' => $dataProvider,
-                    'itemView' => '_competitionSide',
-                    'sortableAttributes' => array(
-                        'endDate',
-                        'startDate'
-                        )));
-                ?>
+        <?php
+        //$this->widget('zii.widgets.ClistView', array(
+        //  'dataProvider' => $dataProvider,
+        //'itemView' => '_competitionSide',
+        //'sortableAttributes' => array(
+        //  'endDate',
+        //'startDate'
+        // )));
+        ?>
             </div>
         </div>
 
@@ -88,25 +85,8 @@
             </div>
             <div class="contents">
 
-<?php
-foreach ($model->competitions as $competition) {
-    ?>
-
-
-                    <div class="items">
-                        <div class="fLeft"><img src="<?php echo Yii::app()->request->baseUrl; ?>/images/no-image-female.gif" alt=""></div>
-                        <div class="fRight">
-                            <h2><a href="#"><?php echo $competition->name; ?></a></h2>
-                            <b>Start Date: </b><?php echo $competition->startDate; ?> <br>
-                            <b>End Date: </b><?php echo $competition->endDate; ?>
-                        </div>
-                        <div class="clear"></div>
-                    </div>
-
-
-<?php } ?>
             </div>
-        </div>
+        </div>-->
     </div>
 
     <div class="fL">
@@ -147,34 +127,19 @@ foreach ($model->competitions as $competition) {
                 <div class="clear"></div>
             </div>
             <div class="bottom">
-<?php
-foreach ($model->competitions as $competition) {
-    ?>
-                    <tr>
-                        <td><table width="100%" cellpadding="0" cellspacing="1" class="listTable extra">
-                                <tr>
-                                    <td class="imageBox"><img src="<?php echo Yii::app()->request->baseUrl; ?>/images/no-image-female.gif" alt=""></td>
-                                    <td class ="listComp"><a href="<?php echo $this->createUrl('business/competitionDetail', array('id' => $competition->id)); ?>"><?php echo $competition->name . '<br>'; ?></a><br>
-                                        <strong><?php echo $model->name . '<br>'; ?></strong><br>
-                                        <b>Start Date: </b><?php echo $competition->startDate; ?> <br>
-                                        <b>End Date: </b><?php echo $competition->endDate; ?></td>
-                                    <td class="view">
-                                        <p><span>1000</span> <strong>Submissions</strong></p>
-                                    </td>
 
-                                </tr>
-                                <tr>
-                                    <td class="imageBox">&nbsp;</td>
-                                    <td colspan="3" class="ex">
-                                        <a href="#" class="smBlueBtn">View Surge </a>
-                                        <a href="#" class="smBlueBtn">View Solutions</a>
-                                    </td>
-                                </tr>
-                            </table></td>
-                    </tr>
-<?php } ?>
+                <?php
+                $this->widget('zii.widgets.ClistView', array(
+                    'dataProvider' => $dataProvider,
+                    'itemView' => '_surgeCenter',
+                    'sortableAttributes' => array(
+                        'endDate',
+                        'startDate'
+                        )));
+                ?>    
 
                 <div class="clear"></div>
+
             </div>
         </div>
     </div>
