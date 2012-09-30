@@ -36,7 +36,7 @@ class MessageController extends Controller
 	{
 		$this->module->registerConfig($this->getAction()->getId());
 		$cs =& $this->module->getClientScript();
-		$cs->registerScriptFile($this->module->getAssetsUrl().'/js/mailbox.js',CClientScript::POS_END);
+		$cs->registerScriptFile($this->module->getAssetsUrl().'/js/mailbox.js');
 		//$js = '$("#mailbox-list").yiiMailboxList('.$this->module->getOptions().');console.log(1)';
 
 		//$cs->registerScript('mailbox-js',$js,CClientScript::POS_READY);
@@ -66,7 +66,7 @@ class MessageController extends Controller
 		$this->module->registerConfig($this->getAction()->getId());
 		
 		$this->module->getClientScript()->registerScriptFile($this->module->getAssetsUrl().'/js/jquery.colors.js');
-		$this->module->getClientScript()->registerScriptFile($this->module->getAssetsUrl().'/js/mailbox.js',CClientScript::POS_END);
+		$this->module->getClientScript()->registerScriptFile($this->module->getAssetsUrl().'/js/mailbox.js');
 		if(isset($_POST['convs']))
 		{
 			$this->buttonAction('sent');
@@ -85,7 +85,7 @@ class MessageController extends Controller
 		$this->module->registerConfig($this->getAction()->getId());
 		
 		$this->module->getClientScript()->registerScriptFile($this->module->getAssetsUrl().'/js/jquery.colors.js');
-		$this->module->getClientScript()->registerScriptFile($this->module->getAssetsUrl().'/js/mailbox.js',CClientScript::POS_END);
+		$this->module->getClientScript()->registerScriptFile($this->module->getAssetsUrl().'/js/mailbox.js');
 		if(isset($_POST['convs']))
 		{
 			$this->buttonAction('trash','trash');

@@ -17,7 +17,7 @@
 				.val( value )
 				.addClass( "ui-state-default" )
 				.autocomplete({
-					delay: 0,
+					delay: 50,
 					minLength: 0,
 					source: function( request, response ) {
 						var matcher = new RegExp( $.ui.autocomplete.escapeRegex(request.term), "i" );
