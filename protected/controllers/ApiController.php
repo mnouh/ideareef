@@ -55,8 +55,15 @@ class ApiController extends Controller
     }
     
     public function actionCompetitions() {
-        $competitions = Competition::model()->findAll();
-        $this->_sendResponse(200, CJSON::encode($competitions));
+        $criteria = new CDbCriteria;
+        $criteria->limit = $_POST("limit");
+        
+        $descending = $_POST("order");
+        if ($descending == 0) $criteria->order = 't.createTime ASC';
+        else $criteria->order = 't.createTime DESC';
+        
+        $competition = Competition::model()->findAll($criteria);
+        $this->_sendResponse(200, CJSON::encode($competition));
     }
     
     private function _checkAuth() {
