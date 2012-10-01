@@ -60,7 +60,7 @@ return array(
                                 array('api/delete', 'pattern' => 'api/<model:\w+>/<id:\d+>', 'verb' => 'DELETE'),
                                 array('api/create', 'pattern' => 'api/<model:\w+>', 'verb' => 'POST'),
                                 array('api/login', 'pattern' => 'api/<model:\w+>', 'verb' => 'POST'),
-                                array('api/competitions', 'pattern' => 'api/<model:\w+>', 'verb' => 'GET'),
+                                array('api/competitions', 'pattern' => 'api/<model:\w+>', 'verb' => 'POST'),
                                 '<controller:\w+>/<action:\w+>'=>'<controller>/<action>',
                                 'aboutus' => 'account/aboutus',
                                 'companies' => 'account/business',

@@ -9,12 +9,13 @@ $form = $this->beginWidget('CActiveForm', array(
     <div class="formArea">
         <p><strong>Submission Name </strong></p>
         <p>
-            <input name="textfield2" type="text" class="inputBoxBig">
+        <?php echo $form->textField($solution, 'name', array('class' => 'inputBoxBigSubmit')); ?>
+        <?php echo $form->error($solution, 'name'); ?>
         </p>
         <p><strong>Submission Details </strong></p>
         <p>
-        <?php //echo $form->textArea($model, $solutions->description, array('class' => 'inputBoxBig')); ?>
-        <?php //echo $form->error($model, $solutions->description); ?>
+        <?php echo $form->textArea($solution, 'description', array('class' => 'inputBoxBigSubmit')); ?>
+        <?php echo $form->error($solution, 'description'); ?>
     </p>
         <p><strong>Supporting Documents &amp; media </strong></p>
 

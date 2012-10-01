@@ -5,16 +5,6 @@ $cs = Yii::app()->getClientScript();
 $cs->registerScriptFile($baseUrl . '/js/jquery.autosize.js');
 ?>
 
-<script type="text/javascript">
-    jQuery(document).ready(function() {
-        jQuery(".all").hide();
-        //toggle the componenet with class msg_body
-        jQuery(".top").click(function()
-        {
-            jQuery(this).next(".all").slideToggle(500);
-        });
-    });
-</script>
 
 <div id="InnerContent">
     <div class="floatLeft">
@@ -123,7 +113,7 @@ $cs->registerScriptFile($baseUrl . '/js/jquery.autosize.js');
         <div class="topArea">
             <div class="lft"><img src="<?php echo Yii::app()->request->baseUrl; ?>/images/res.png" alt="" width="200" height="200"></div>
             <div class="mid">
-                <p><a href="#" class="post"><?php echo $competition->name;?></a><br>
+                <p><a href="#" class="post"><?php echo $competition->name; ?></a><br>
                     <strong>Tom &amp; Marty's Pub</strong>, 
                     Binghamton, NY 13905<br>
                     355 Challanges - 303 in your Network<br>
@@ -144,320 +134,137 @@ $cs->registerScriptFile($baseUrl . '/js/jquery.autosize.js');
             <div class="topmenu">
                 <ul>
 
-                    <li><a id="myHeader1" href="javascript:showonlyone('newboxes1');">My Solutions</a></li>
+                    <li><?php
+echo CHtml::ajaxLink(
+        'My Solutions', array('user/mySolutions'), array('success' => 'js:function(data) {
+                                                    jQuery("div#currentTab").html(data);}',
+    //'update'=>'#successMessage',
+    //'beforeSend' => 'function() {alert("testing");}',
+    //'validated' => 'function() {$("div#load").removeClass("loading");}',
+    //'complete' => 'function() {$("div#load").removeClass("loading");}',
+    'type' => 'POST'
+        )
+);
+?></li>
                     <li><a id="myHeader2" href="javascript:showonlyone('newboxes2');">Description</a></li>
                     <li><a id="myHeader3" href="javascript:showonlyone('newboxes3');">Award Details</a></li>
-                    <li><a id="myHeader4" href="javascript:showonlyone('newboxes4');">Solutions</a></li>
-                    <li><a id="myHeader5" href="javascript:showonlyone('newboxes5');">Friends</a></li>
+                    <li><?php
+                        echo CHtml::ajaxLink(
+                                'Submit Solution', array('user/submitSolution'), array('success' => 'js:function(data) {
+                                                    jQuery("div#currentTab").html(data);}',
+                            //'update'=>'#successMessage',
+                            //'beforeSend' => 'function() {alert("testing");}',
+                            //'validated' => 'function() {$("div#load").removeClass("loading");}',
+                            //'complete' => 'function() {$("div#load").removeClass("loading");}',
+                            'type' => 'POST'
+                                )
+                        );
+?></li>
+
                 </ul>
             </div>
-            <div id="newboxes1" class="newboxes">
-
-                <div class="inside">
-                    <div class="boxes">
-                        <div class="top">
-                            <h2>Buttery Nipple Shot  </h2>
-                            <div class="clear"></div>
+            <div id="currentTab">
+                        <?php $this->renderPartial('_mySolutions', true, false); ?>
+                <div id="newboxes2" class="newboxes"  style="display:none;">
+                    <div class="inside">
+                        <div class="boxes">
+                            <h3>Descriptions</h3>
+                            <p><?php echo $competition->description; ?></p>
+                            <h3>Specification</h3>
+                            <ul class="inContent">
+                                <li><?php echo $competition->solutionDescription; ?></li>
+                            </ul>
                         </div>
-                        <div class="all">
-                            <div class="bottom">
-                                <div class="clear">
-                                    <table width="100%" cellpadding="0" cellspacing="1" class="listTable">
-                                        <tr>
-                                            <td class="imageBox"><img src="<?php echo Yii::app()->request->baseUrl; ?>/images/no-image.png" alt=""></td>
-                                            <td>
-                                                <strong>Description:</strong> <br>
-                                                1/2 Shot of Buttery Shot <br>
-                                                1/2 Shot of Nipple Shot <br>
-                                                1/2 Shot of Nipple Shot <br>
-                                                1/2 Shot of Nipple Shot <br>
-                                                1/2 Shot of Nipple Shot <br>
-                                                <a href="#">Read more</a>
-                                            </td>
-                                            <td class="subscription"><span>153</span> <strong>Votes</strong><br>
-                                                (+10 today) </td>
-                                        </tr>
-                                    </table>
-                                </div>
-                            </div>
-
-                            <div class="boxes">
-                                <div class="bottom">
-                                    <div class="clear">
-                                        <table width="100%" cellpadding="0" cellspacing="1" class="smTable">
-                                            <tr>
-                                                <td class="paddL deep"><strong>User <br>                
-                                                    </strong></td>
-                                                <td class="paddL">Chris Paquette </td>
-                                            </tr>
-                                            <tr>
-                                                <td width="150" class="paddL deep"><strong>Network</strong></td>
-                                                <td class="paddL">Binghamton University </td>
-                                            </tr>
-                                            <tr>
-                                                <td class="paddL deep"><strong>Supporting
-                                                        Documents</strong></td>
-                                                <td class="paddL">&lt;none&gt;</td>
-                                            </tr>
-                                            <tr>
-                                                <td class="paddL deep"><strong>Supporting Media </strong></td>
-                                                <td class="paddL">&lt;none&gt;</td>
-                                            </tr>
-                                        </table>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="boxes">
-                                <div class="bottom"><a href="#" class="smBlueBtn">Generate a link to share with friends </a><div class="fLt"><a href="#"><img src="<?php echo Yii::app()->request->baseUrl; ?>/images/twitter.png" alt="" border="0"></a></div>
-                                    <div class="fLt"><a href="#"><img src="<?php echo Yii::app()->request->baseUrl; ?>/images/facebook.png" alt="" border="0"></a></div>
-                                    <div class="fLt"><a href="#"><img src="<?php echo Yii::app()->request->baseUrl; ?>/images/messages.png" alt="" width="30" height="30" border="0"></a></div>
-                                    <div class="clear"></div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="clear"></div>
-               
-                
-                
-                    <div class="boxes">
-                        <div class="top">
-                            <h2>Buttery Nipple Shot Test 2</h2>
-                            <div class="clear"></div>
-                        </div>
-                        <div class="all">
-                            <div class="bottom">
-                                <div class="clear">
-                                    <table width="100%" cellpadding="0" cellspacing="1" class="listTable">
-                                        <tr>
-                                            <td class="imageBox"><img src="<?php echo Yii::app()->request->baseUrl; ?>/images/no-image.png" alt=""></td>
-                                            <td>
-                                                <strong>Description:</strong> <br>
-                                                1/2 Shot of Buttery Shot <br>
-                                                1/2 Shot of Nipple Shot <br>
-                                                1/2 Shot of Nipple Shot <br>
-                                                1/2 Shot of Nipple Shot <br>
-                                                1/2 Shot of Nipple Shot <br>
-                                                <a href="#">Read more</a>
-                                            </td>
-                                            <td class="subscription"><span>153</span> <strong>Votes</strong><br>
-                                                (+10 today) </td>
-                                        </tr>
-                                    </table>
-                                </div>
-                            </div>
-
-                            <div class="boxes">
-                                <div class="bottom">
-                                    <div class="clear">
-                                        <table width="100%" cellpadding="0" cellspacing="1" class="smTable">
-                                            <tr>
-                                                <td class="paddL deep"><strong>User <br>                
-                                                    </strong></td>
-                                                <td class="paddL">Chris Paquette </td>
-                                            </tr>
-                                            <tr>
-                                                <td width="150" class="paddL deep"><strong>Network</strong></td>
-                                                <td class="paddL">Binghamton University </td>
-                                            </tr>
-                                            <tr>
-                                                <td class="paddL deep"><strong>Supporting
-                                                        Documents</strong></td>
-                                                <td class="paddL">&lt;none&gt;</td>
-                                            </tr>
-                                            <tr>
-                                                <td class="paddL deep"><strong>Supporting Media </strong></td>
-                                                <td class="paddL">&lt;none&gt;</td>
-                                            </tr>
-                                        </table>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="boxes">
-                                <div class="bottom"><a href="#" class="smBlueBtn">Generate a link to share with friends </a><div class="fLt"><a href="#"><img src="<?php echo Yii::app()->request->baseUrl; ?>/images/twitter.png" alt="" border="0"></a></div>
-                                    <div class="fLt"><a href="#"><img src="<?php echo Yii::app()->request->baseUrl; ?>/images/facebook.png" alt="" border="0"></a></div>
-                                    <div class="fLt"><a href="#"><img src="<?php echo Yii::app()->request->baseUrl; ?>/images/messages.png" alt="" width="30" height="30" border="0"></a></div>
-                                    <div class="clear"></div>
-                                </div>
-                            </div>
-                    </div>
-                    <div class="clear"></div> 
-                    </div>
-                    
-                    <div class="boxes">
-                        <div class="top">
-                          <h2>Buttery Nipple Shot Test 3</h2> 
-                          <div class="clear"></div>
-                        </div>
-                        <div class="all">
-                            <div class="bottom">
-                                <div class="clear">
-                                    <table width="100%" cellpadding="0" cellspacing="1" class="listTable">
-                                        <tr>
-                                            <td class="imageBox"><img src="<?php echo Yii::app()->request->baseUrl; ?>/images/no-image.png" alt=""></td>
-                                            <td>
-                                                <strong>Description:</strong> <br>
-                                                1/2 Shot of Buttery Shot <br>
-                                                1/2 Shot of Nipple Shot <br>
-                                                1/2 Shot of Nipple Shot <br>
-                                                1/2 Shot of Nipple Shot <br>
-                                                1/2 Shot of Nipple Shot <br>
-                                                <a href="#">Read more</a>
-                                            </td>
-                                            <td class="subscription"><span>153</span> <strong>Votes</strong><br>
-                                                (+10 today) </td>
-                                        </tr>
-                                    </table>
-                                </div>
-                            </div>
-
-                            <div class="boxes">
-                                <div class="bottom">
-                                    <div class="clear">
-                                        <table width="100%" cellpadding="0" cellspacing="1" class="smTable">
-                                            <tr>
-                                                <td class="paddL deep"><strong>User <br>                
-                                                    </strong></td>
-                                                <td class="paddL">Chris Paquette </td>
-                                            </tr>
-                                            <tr>
-                                                <td width="150" class="paddL deep"><strong>Network</strong></td>
-                                                <td class="paddL">Binghamton University </td>
-                                            </tr>
-                                            <tr>
-                                                <td class="paddL deep"><strong>Supporting
-                                                        Documents</strong></td>
-                                                <td class="paddL">&lt;none&gt;</td>
-                                            </tr>
-                                            <tr>
-                                                <td class="paddL deep"><strong>Supporting Media </strong></td>
-                                                <td class="paddL">&lt;none&gt;</td>
-                                            </tr>
-                                        </table>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="boxes">
-                                <div class="bottom"><a href="#" class="smBlueBtn">Generate a link to share with friends </a><div class="fLt"><a href="#"><img src="<?php echo Yii::app()->request->baseUrl; ?>/images/twitter.png" alt="" border="0"></a></div>
-                                    <div class="fLt"><a href="#"><img src="<?php echo Yii::app()->request->baseUrl; ?>/images/facebook.png" alt="" border="0"></a></div>
-                                    <div class="fLt"><a href="#"><img src="<?php echo Yii::app()->request->baseUrl; ?>/images/messages.png" alt="" width="30" height="30" border="0"></a></div>
-                                    <div class="clear"></div>
-                                </div>
-                            </div>
-                    </div>
-                    <div class="clear"></div> 
-                    </div>
-            </div>
-                
-            </div>
-            <div id="newboxes2" class="newboxes"  style="display:none;">
-                <div class="inside">
-                    <div class="boxes">
-                        <h3>Descriptions</h3>
-                        <p><?php echo $competition->description;?></p>
-                        <h3>Specification</h3>
-                        <ul class="inContent">
-                           <li><?php echo $competition->solutionDescription;?></li>
-                        </ul>
                     </div>
                 </div>
-            </div>
 
-            <div id="newboxes3" class="newboxes"  style="display:none;">
-                <div class="inside">
-                    <div class="boxes">
-                        <div class="bottom">
-                            <h6>Free Round of Drinks</h6>
-                            <p> Curabitur in enim vel nisl tincidunt tempus ut dapibus lacus. Vivamus venenatis libero sed massa bibendum aliquam. Fusce id dictum eros. Ut dignissim dolor nec lacus lobortis at bibendum felis tempus. Cras vitae diam ac nibh iaculis hendrerit. Nunc luctus nibh ac lorem commodo volutpat. In ipsum purus, vulputate ac vehicula vel, tristique in nisi. Proin aliquet tellus eu diam auctor mollis. Nam eget aliquet leo. </p>
+                <div id="newboxes3" class="newboxes"  style="display:none;">
+                    <div class="inside">
+                        <div class="boxes">
+                            <div class="bottom">
+                                <h6>Free Round of Drinks</h6>
+                                <p> Curabitur in enim vel nisl tincidunt tempus ut dapibus lacus. Vivamus venenatis libero sed massa bibendum aliquam. Fusce id dictum eros. Ut dignissim dolor nec lacus lobortis at bibendum felis tempus. Cras vitae diam ac nibh iaculis hendrerit. Nunc luctus nibh ac lorem commodo volutpat. In ipsum purus, vulputate ac vehicula vel, tristique in nisi. Proin aliquet tellus eu diam auctor mollis. Nam eget aliquet leo. </p>
 
-                            <p><img src="<?php echo Yii::app()->request->baseUrl; ?>/images/red-badge.png" alt="" width="48" height="48"></p>
+                                <p><img src="<?php echo Yii::app()->request->baseUrl; ?>/images/red-badge.png" alt="" width="48" height="48"></p>
+                            </div>
                         </div>
+                        <p class="txtCenter"><strong>Still have questions? </strong></p>
+                        <p class="txtCenter"><a href="#" class="smBlueBtn" style="float:none; width:88px; margin:auto;">Message Host </a></p>
+                        <div class="clear"></div>
                     </div>
-                    <p class="txtCenter"><strong>Still have questions? </strong></p>
-                    <p class="txtCenter"><a href="#" class="smBlueBtn" style="float:none; width:88px; margin:auto;">Message Host </a></p>
-                    <div class="clear"></div>
                 </div>
-            </div>
 
-            <div id="newboxes4" class="newboxes"  style="display:none;">
-                <div class="inside">
-                    
-                        <?php echo $this->renderPartial('_solutionForm', array('model' => $model)); ?>
-                    
-                </div>
-            </div>
-            
-            <div id="newboxes5" class="newboxes"  style="display:none;">
-                <div class="inside">
-                    <div class="boxes">
-                        <div class="bottom">
-                            <table width="100%" cellpadding="0" cellspacing="1" class="listTable">
-                                <tr>
-                                    <td class="imageBox"><img src="<?php echo Yii::app()->request->baseUrl; ?>/images/no-image-female.gif" alt=""></td>
-                                    <td class="txtAreaRight"><h3><a href="#">Mohamed Nouh </a><a href="#"></a></h3>
-                                        <p><strong>Da Green Jelly Eye Monster</strong></p>
-                                        <p class="smlTxt"><a href="#">Solutions</a><a href="#">Comments (10)</a><a href="#">Vote</a><a href="#">Go Message</a>
-                                        <div class="clear"></div>
-                                        </p></td>
-                                    <td class="txtCenter"><a href="#">186 Votes</a><br>
-                                        (+13 tday)<br>
-                                        <em>4th Place </em></td>
-                                </tr>
-                                <tr>
-                                    <td class="imageBox"><img src="<?php echo Yii::app()->request->baseUrl; ?>/images/no-image-female.gif" alt=""></td>
-                                    <td class="txtAreaRight"><h3><a href="#">Mohamed Nouh </a><a href="#"></a></h3>
-                                        <p><strong>Da Green Jelly Eye Monster</strong></p>
-                                        <p class="smlTxt"><a href="#">Solutions</a><a href="#">Comments (10)</a><a href="#">Vote</a><a href="#">Go Message</a>
-                                        <div class="clear"></div>
-                                        </p></td>
-                                    <td class="txtCenter"><a href="#">186 Votes</a><br>
-                                        (+13 tday)<br>
-                                        <em>4th Place </em></td>
-                                </tr>
-                                <tr>
-                                    <td class="imageBox"><img src="<?php echo Yii::app()->request->baseUrl; ?>/images/no-image-female.gif" alt=""></td>
-                                    <td class="txtAreaRight"><h3><a href="#">Mohamed Nouh </a><a href="#"></a></h3>
-                                        <p><strong>Da Green Jelly Eye Monster</strong></p>
-                                        <p class="smlTxt"><a href="#">Solutions</a><a href="#">Comments (10)</a><a href="#">Vote</a><a href="#">Go Message</a>
-                                        <div class="clear"></div>
-                                        </p></td>
-                                    <td class="txtCenter"><a href="#">186 Votes</a><br>
-                                        (+13 tday)<br>
-                                        <em>4th Place </em></td>
-                                </tr>
-                                <tr>
-                                    <td class="imageBox"><img src="<?php echo Yii::app()->request->baseUrl; ?>/images/no-image-female.gif" alt=""></td>
-                                    <td class="txtAreaRight"><h3><a href="#">Mohamed Nouh </a><a href="#"></a></h3>
-                                        <p><strong>Da Green Jelly Eye Monster</strong></p>
-                                        <p class="smlTxt"><a href="#">Solutions</a><a href="#">Comments (10)</a><a href="#">Vote</a><a href="#">Go Message</a>
-                                        <div class="clear"></div>
-                                        </p></td>
-                                    <td class="txtCenter"><a href="#">186 Votes</a><br>
-                                        (+13 tday)<br>
-                                        <em>4th Place </em></td>
-                                </tr>
-                                <tr>
-                                    <td class="imageBox"><img src="<?php echo Yii::app()->request->baseUrl; ?>/images/no-image-female.gif" alt=""></td>
-                                    <td class="txtAreaRight"><h3><a href="#">Mohamed Nouh </a><a href="#"></a></h3>
-                                        <p><strong>Da Green Jelly Eye Monster</strong></p>
-                                        <p class="smlTxt"><a href="#">Solutions</a><a href="#">Comments (10)</a><a href="#">Vote</a><a href="#">Go Message</a>
-                                        <div class="clear"></div>
-                                        </p></td>
-                                    <td class="txtCenter"><a href="#">186 Votes</a><br>
-                                        (+13 tday)<br>
-                                        <em>4th Place </em></td>
-                                </tr>
-                            </table>
-                            <div class="clear"></div>
+
+
+                <div id="newboxes5" class="newboxes"  style="display:none;">
+                    <div class="inside">
+                        <div class="boxes">
+                            <div class="bottom">
+                                <table width="100%" cellpadding="0" cellspacing="1" class="listTable">
+                                    <tr>
+                                        <td class="imageBox"><img src="<?php echo Yii::app()->request->baseUrl; ?>/images/no-image-female.gif" alt=""></td>
+                                        <td class="txtAreaRight"><h3><a href="#">Mohamed Nouh </a><a href="#"></a></h3>
+                                            <p><strong>Da Green Jelly Eye Monster</strong></p>
+                                            <p class="smlTxt"><a href="#">Solutions</a><a href="#">Comments (10)</a><a href="#">Vote</a><a href="#">Go Message</a>
+                                            <div class="clear"></div>
+                                            </p></td>
+                                        <td class="txtCenter"><a href="#">186 Votes</a><br>
+                                            (+13 tday)<br>
+                                            <em>4th Place </em></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="imageBox"><img src="<?php echo Yii::app()->request->baseUrl; ?>/images/no-image-female.gif" alt=""></td>
+                                        <td class="txtAreaRight"><h3><a href="#">Mohamed Nouh </a><a href="#"></a></h3>
+                                            <p><strong>Da Green Jelly Eye Monster</strong></p>
+                                            <p class="smlTxt"><a href="#">Solutions</a><a href="#">Comments (10)</a><a href="#">Vote</a><a href="#">Go Message</a>
+                                            <div class="clear"></div>
+                                            </p></td>
+                                        <td class="txtCenter"><a href="#">186 Votes</a><br>
+                                            (+13 tday)<br>
+                                            <em>4th Place </em></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="imageBox"><img src="<?php echo Yii::app()->request->baseUrl; ?>/images/no-image-female.gif" alt=""></td>
+                                        <td class="txtAreaRight"><h3><a href="#">Mohamed Nouh </a><a href="#"></a></h3>
+                                            <p><strong>Da Green Jelly Eye Monster</strong></p>
+                                            <p class="smlTxt"><a href="#">Solutions</a><a href="#">Comments (10)</a><a href="#">Vote</a><a href="#">Go Message</a>
+                                            <div class="clear"></div>
+                                            </p></td>
+                                        <td class="txtCenter"><a href="#">186 Votes</a><br>
+                                            (+13 tday)<br>
+                                            <em>4th Place </em></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="imageBox"><img src="<?php echo Yii::app()->request->baseUrl; ?>/images/no-image-female.gif" alt=""></td>
+                                        <td class="txtAreaRight"><h3><a href="#">Mohamed Nouh </a><a href="#"></a></h3>
+                                            <p><strong>Da Green Jelly Eye Monster</strong></p>
+                                            <p class="smlTxt"><a href="#">Solutions</a><a href="#">Comments (10)</a><a href="#">Vote</a><a href="#">Go Message</a>
+                                            <div class="clear"></div>
+                                            </p></td>
+                                        <td class="txtCenter"><a href="#">186 Votes</a><br>
+                                            (+13 tday)<br>
+                                            <em>4th Place </em></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="imageBox"><img src="<?php echo Yii::app()->request->baseUrl; ?>/images/no-image-female.gif" alt=""></td>
+                                        <td class="txtAreaRight"><h3><a href="#">Mohamed Nouh </a><a href="#"></a></h3>
+                                            <p><strong>Da Green Jelly Eye Monster</strong></p>
+                                            <p class="smlTxt"><a href="#">Solutions</a><a href="#">Comments (10)</a><a href="#">Vote</a><a href="#">Go Message</a>
+                                            <div class="clear"></div>
+                                            </p></td>
+                                        <td class="txtCenter"><a href="#">186 Votes</a><br>
+                                            (+13 tday)<br>
+                                            <em>4th Place </em></td>
+                                    </tr>
+                                </table>
+                                <div class="clear"></div>
+                            </div>
                         </div>
-                    </div>
 
-                    <p class="txtCenter"><strong>Refer the winner and you can win up to 10% of Award and Points!</strong></p>
-                    <p class="txtCenter"><a href="#" class="smBlueBtn" style="float:none; width:88px; margin:auto;">Refer a friend</a></p>
-                    <div class="clear"></div>
+                        <p class="txtCenter"><strong>Refer the winner and you can win up to 10% of Award and Points!</strong></p>
+                        <p class="txtCenter"><a href="#" class="smBlueBtn" style="float:none; width:88px; margin:auto;">Refer a friend</a></p>
+                        <div class="clear"></div>
+                    </div>
                 </div>
             </div>
         </div>
