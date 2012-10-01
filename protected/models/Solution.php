@@ -38,11 +38,11 @@ class Solution extends CActiveRecord
 		// NOTE: you should only define rules for those attributes that
 		// will receive user inputs.
 		return array(
-			array('id, competitionId, userId, businessId, submitTime', 'required'),
-			array('id, competitionId, userId, businessId', 'numerical', 'integerOnly'=>true),
+			array('name, description', 'required'),
+			//array('id, competitionId, userId, businessId', 'numerical', 'integerOnly'=>true),
 			// The following rule is used by search().
 			// Please remove those attributes that should not be searched.
-			array('id, competitionId, userId, businessId, submitTime', 'safe', 'on'=>'search'),
+			array('name, description', 'safe', 'on'=>'search'),
 		);
 	}
 

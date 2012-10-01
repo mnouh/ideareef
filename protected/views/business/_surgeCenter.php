@@ -12,8 +12,4 @@
                 </td>
 
             </tr>
-            <tr>
-                <td class="imageBox">&nbsp;</td>
-                <td colspan="3" class="ex"><a href="#" class="smBlueBtn">View Surge</a> <a href="#" class="smBlueBtn">View Solutions</a> </td>
-            </tr>
         </table>

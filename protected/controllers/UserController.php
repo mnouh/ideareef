@@ -26,7 +26,7 @@ class UserController extends Controller {
                 'users' => array('*'),
             ),
             array('allow', // allow authenticated user to perform 'create' and 'update' actions
-                'actions' => array('index', 'changeName', 'changeUsername', 'changepassword', 'changeZipCode', 'create', 'update', 'completeProfile', 'competition', 'competitionSub'),
+                'actions' => array('index', 'changeName', 'changeUsername', 'changepassword', 'mySolutions', 'changeZipCode', 'submitSolution' ,'create', 'update', 'completeProfile', 'competition', 'competitionSub'),
                 'users' => array('@'),
             ),
             /*array('allow', // allow admin user to perform 'admin' and 'delete' actions
@@ -291,12 +291,39 @@ class UserController extends Controller {
 	}
         
     public function actionCompetitionSub($id) {
-        
+            
             $model = User::model()->findByPk(Yii::app()->user->id);
             $this->render('competitionSub', array('model' => $model, 'competition' => $this->loadCompetitionModel($id)));
         
     }
-
+    
+    public function actionSubmitSolution()    
+    {
+        $solution = new Solution;
+        
+        $this->performAjaxValidation($solution, 'solution-form');
+        
+        if(isset($_POST['Solution'])){
+            
+            $solution->attributes = $_POST['Solution'];
+            
+            if($solution->validate() && $solution->save()) {
+                
+                
+            }
+            }
+        
+        
+        $this->renderPartial('_solutionForm', array('solution' => $solution), false, true);
+    
+           // $this->render('_solutionForm', array('solution' => $solution));
+    }
+    
+    public function actionMySolutions()
+    {
+        
+        $this->renderPartial('_mySolutions', true, false);
+    }
     public function actionIndex() {
         $this->render('index');
     }
