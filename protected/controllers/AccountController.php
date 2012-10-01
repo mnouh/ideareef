@@ -214,35 +214,101 @@ class AccountController extends Controller
                             if($user === null) {
                                 $business = Business::model()->find('LOWER(email)=?', array(strtolower($model->email)));
                                 
-                                if($business === null)
-                                    echo 'Test';
-                                else {
-                                    
-                                    $uniqueID = str_shuffle(uniqid());
-                                    $uniqueID = $uniqueID.'_'.uniqid();
-                                    $randomGenerated = '';
+                                if($business != null)
                                     $business->verifyCode = $this->createVerificationCode();
-                                    if($business->update())
-                                        $this->sendAccountBusinessRecoveryConfirmation($business);
-                                }
+                                        if($business->update())
+                                            $this->sendAccountBusinessRecoveryConfirmation($business);    
                             }
                             else {  
                                 $user->verifyCode = $this->createVerificationCode();
-                                if($this->sendAccountUserRecoveryConfirmation($user));
+                                    if($user->update())
+                                        $x = "test"; //$this->sendAccountUserRecoveryConfirmation($user);
+                                        
                             }
                             
                             Yii::app()->user->setFlash('status','An email has been sent out with instructions on resetting your password.');
+                        
+                            $model->setScenario('verify');
+                            //$this->redirect('account/verify-code');
+                        return $this->render('verify-code', array('model' => $model));
                         }
                         
-                        $this->renderPartial('recovery', array('model' => $model), false, true);
-                }
+                }    
+                    $this->render('recovery', array('model' => $model));
                 
-                else {
+                
             
-            $this->render('recovery', array('model' => $model));
-                }
+                
             
         }
+        
+        
+        public function actionVerifyCode()
+        {
+            $model = new RecoveryForm('verify');
+            
+        // if it is ajax validation request
+       $this->performAjaxValidation($model, 'account-recovery-step-two-form');
+        
+            // collect user input data
+		if(isset($_POST['RecoveryForm']))
+		{
+			$model->attributes=$_POST['RecoveryForm'];
+                        
+                        if($model->validate()) {
+                            
+                            echo "Model Validated Succesfully";
+                            $user = User::model()->find('LOWER(email)=?', array(strtolower($model->email)));
+                            
+                            if($user != null)
+                            {
+                                
+                                echo 'Database Verification Code: '.$user->verifyCode.'<br>';
+                                echo 'User Input: '.$model->verifyCode.'<br>';
+                                
+                                if($user->verifyCode == $model->verifyCode)
+                                {
+                                    
+                                    
+                                    
+                                    return $this->renderPartial('recovery-change-password', false, true);
+                                }
+                                
+                                echo "Bad Verification Code";
+                                
+                            }
+                            
+                            
+                        }
+                }
+                else {
+            $this->render('verify-code', array('model' => $model));
+                }
+        }
+        
+        public function actionRecoveryChangePassword()    
+        {
+        
+            $model = new RecoveryChangePasswordForm;
+            
+        // if it is ajax validation request
+       $this->performAjaxValidation($model, 'recovery-change-password-form');
+        
+            // collect user input data
+		if(isset($_POST['RecoveryChangePasswordForm']))
+		{
+			$model->attributes=$_POST['RecoveryChangePasswordForm'];
+                        
+                        if($model->validate()) {
+                            
+                        }
+                }
+                            
+            
+            $this->render('recovery-change-password', array('model' => $model));
+            
+        }
+        
         
         public function createVerificationCode() {
             $uniqueID = str_shuffle(uniqid());

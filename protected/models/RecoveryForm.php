@@ -8,6 +8,7 @@
 class RecoveryForm extends CFormModel
 {
 	public $email;
+        public $verifyCode;
 	
 
 	/**
@@ -21,6 +22,7 @@ class RecoveryForm extends CFormModel
 			// username and password are required
 			array('email', 'required', 'message' => '<b>&#10006;</b> &nbsp; {attribute} is a required field.'),
                         array('email', 'emailExist'),
+                        array('verifyCode', 'required', 'on' => 'verify')
 		);
 	}
         
@@ -47,7 +49,7 @@ class RecoveryForm extends CFormModel
 	public function attributeLabels()
 	{
 		return array(
-			//'rememberMe'=>' Remember me next time',
+			'verifyCode'=>'Verification Code',
 		);
 	}
 }
