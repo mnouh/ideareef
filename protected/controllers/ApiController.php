@@ -42,18 +42,27 @@ class ApiController extends Controller
     {
     }
     
-    public function actionLogIn()
-    {
-        //$this->_checkAuth();
+    public function actionLogIn() {
         $email = $_POST["email"];
         $password = $_POST["password"];
-        
+
         $_SERVER['HTTP_X_EMAIL'] = $_POST["email"];
         $_SERVER['HTTP_X_PASSWORD'] = $_POST["password"];
         $this->_checkAuth();
-        
+
         $params = array($email, $password);
         $this->_sendResponse(200, CJSON::encode($params));
+    }
+    
+    public function actionCompetitions() {
+        $criteria = new CDbCriteria;
+        $criteria->limit = $_POST["limit"];
+        
+        if ($_POST["order"] == 0) $criteria->order = 't.createTime ASC';
+        else $criteria->order = 't.createTime DESC';
+        
+        $competition = Competition::model()->findAll($criteria);
+        $this->_sendResponse(200, CJSON::encode($competition));
     }
     
     private function _checkAuth() {
