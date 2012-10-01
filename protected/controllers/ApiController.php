@@ -56,10 +56,9 @@ class ApiController extends Controller
     
     public function actionCompetitions() {
         $criteria = new CDbCriteria;
-        $criteria->limit = $_POST("limit");
+        $criteria->limit = $_POST["limit"];
         
-        $descending = $_POST("order");
-        if ($descending == 0) $criteria->order = 't.createTime ASC';
+        if ($_POST["order"] == 0) $criteria->order = 't.createTime ASC';
         else $criteria->order = 't.createTime DESC';
         
         $competition = Competition::model()->findAll($criteria);
