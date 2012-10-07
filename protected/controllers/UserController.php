@@ -253,7 +253,7 @@ class UserController extends Controller {
             if(isset($_POST['id']) && isset($_POST['value']) && !empty($_POST['value']))
             {
                 if($_POST['id'] == 'aboutme') {    
-                    $aboutUs = $_POST['value'];
+                    $aboutMe = $_POST['value'];
                     $model = User::model()->findByPk(Yii::app()->user->id);
                     $model->aboutMe = $aboutMe;
                 if($model->update())

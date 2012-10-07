@@ -234,7 +234,7 @@
           <div class="fR"><a href="#">Edit</a></div>
           <div class="clear"></div>
         </div>
-      <div class ="aboutme" id="aboutme">
+      
         <div class="bottom">
           <table width="100%" cellpadding="0" cellspacing="1" class="listTable">
             <tr>
