@@ -26,7 +26,7 @@ class UserController extends Controller {
                 'users' => array('*'),
             ),
             array('allow', // allow authenticated user to perform 'create' and 'update' actions
-                'actions' => array('index', 'changeName', 'changeUsername', 'changepassword', 'mySolutions', 'changeZipCode', 'submitSolution' ,'create', 'update', 'completeProfile', 'competition', 'competitionSub'),
+                'actions' => array('index', 'changeName', 'changeUsername', 'changepassword', 'profile', 'mySolutions', 'changeZipCode', 'submitSolution' ,'create', 'update', 'completeProfile', 'competition', 'competitionSub'),
                 'users' => array('@'),
             ),
             /*array('allow', // allow admin user to perform 'admin' and 'delete' actions
@@ -239,11 +239,11 @@ class UserController extends Controller {
     }
     
     
-    public function actionProfileEdit()    
+    public function actionProfile()    
     {
         
         
-        $this->render('profileEdit');
+        $this->render('profile');
         
     }
     

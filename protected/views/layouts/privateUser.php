@@ -26,8 +26,8 @@ $cs->registerScriptFile($baseUrl.'/js/inner.js');
     <h1 class="logo"><a href="<?php echo Yii::app()->request->baseUrl; ?>">IdeaReef</a></h1>
     <div class="floatRight">
       <ul>
-        <li><?php echo CHtml::link('Home', Yii::app()->request->baseUrl.'/business'); ?></li>
-        <li><?php echo CHtml::link('Pavilion', Yii::app()->request->baseUrl.'/business/pavilion'); ?></li>
+        <li><?php echo CHtml::link('Home', Yii::app()->request->baseUrl.'/user'); ?></li>
+        <li><?php echo CHtml::link('Profile', Yii::app()->request->baseUrl.'/user/profile'); ?></li>
         <li>
             <?php echo CHtml::link('Treasurey <span>1</span>', Yii::app()->request->baseUrl.'/aboutus', array('class' => 'last')); ?>
             

@@ -7,8 +7,8 @@
 <div class="pavillion-home"><a href="#">2</a></div>
   <div class="clear"></div>
 </div>
-<div class="fLeft"><img src="images/profile-picture.jpg" alt="" width="200" height="200" class="profile">
-<div class="type"><img src="images/bronze-profile.png"></div>
+<div class="fLeft"><img src="<?php echo Yii::app()->request->baseUrl; ?>/images/profile-picture.jpg" alt="" width="200" height="200" class="profile">
+<div class="type"><img src="<?php echo Yii::app()->request->baseUrl; ?>/images/bronze-profile.png"></div>
 </div>
 <div class="fRight">
   <h2><a href="#">Chris Paquette</a></h2>
@@ -47,18 +47,18 @@
   </div>
   <div class="profiles">
     <ul>
-      <li><a href="#"><img src="images/no-image-male.gif" alt=""></a></li>
-      <li><a href="#"><img src="images/no-image-male.gif" alt=""></a></li>
-      <li><a href="#"><img src="images/no-image-male.gif" alt=""></a></li>
-      <li><a href="#"><img src="images/no-image-male.gif" alt=""></a></li>
-      <li><a href="#"><img src="images/no-image-male.gif" alt=""></a></li>
-      <li><a href="#"><img src="images/no-image-male.gif" alt=""></a></li>
-      <li><a href="#"><img src="images/no-image-male.gif" alt=""></a></li>
-      <li><a href="#"><img src="images/no-image-male.gif" alt=""></a></li>
-      <li><a href="#"><img src="images/no-image-male.gif" alt=""></a></li>
-      <li><a href="#"><img src="images/no-image-male.gif" alt=""></a></li>
-      <li><a href="#"><img src="images/no-image-male.gif" alt=""></a></li>
-      <li><a href="#"><img src="images/no-image-male.gif" alt=""></a></li>
+      <li><a href="#"><img src="<?php echo Yii::app()->request->baseUrl; ?>/images/no-image-male.gif" alt=""></a></li>
+      <li><a href="#"><img src="<?php echo Yii::app()->request->baseUrl; ?>/images/no-image-male.gif" alt=""></a></li>
+      <li><a href="#"><img src="<?php echo Yii::app()->request->baseUrl; ?>/images/no-image-male.gif" alt=""></a></li>
+      <li><a href="#"><img src="<?php echo Yii::app()->request->baseUrl; ?>/images/no-image-male.gif" alt=""></a></li>
+      <li><a href="#"><img src="<?php echo Yii::app()->request->baseUrl; ?>/images/no-image-male.gif" alt=""></a></li>
+      <li><a href="#"><img src="<?php echo Yii::app()->request->baseUrl; ?>/images/no-image-male.gif" alt=""></a></li>
+      <li><a href="#"><img src="<?php echo Yii::app()->request->baseUrl; ?>/images/no-image-male.gif" alt=""></a></li>
+      <li><a href="#"><img src="<?php echo Yii::app()->request->baseUrl; ?>/images/no-image-male.gif" alt=""></a></li>
+      <li><a href="#"><img src="<?php echo Yii::app()->request->baseUrl; ?>/images/no-image-male.gif" alt=""></a></li>
+      <li><a href="#"><img src="<?php echo Yii::app()->request->baseUrl; ?>/images/no-image-male.gif" alt=""></a></li>
+      <li><a href="#"><img src="<?php echo Yii::app()->request->baseUrl; ?>/images/no-image-male.gif" alt=""></a></li>
+      <li><a href="#"><img src="<?php echo Yii::app()->request->baseUrl; ?>/images/no-image-male.gif" alt=""></a></li>
 	  
       
     </ul>
@@ -73,10 +73,10 @@
   </div>
   <div class="profiles">
     <ul>
-      <li><a href="#"><img src="images/no-image-male.gif" alt=""></a></li>
-      <li><a href="#"><img src="images/no-image-male.gif" alt=""></a></li>
-      <li><a href="#"><img src="images/no-image-male.gif" alt=""></a></li>
-      <li><a href="#"><img src="images/no-image-male.gif" alt=""></a></li>
+      <li><a href="#"><img src="<?php echo Yii::app()->request->baseUrl; ?>/images/no-image-male.gif" alt=""></a></li>
+      <li><a href="#"><img src="<?php echo Yii::app()->request->baseUrl; ?>/images/no-image-male.gif" alt=""></a></li>
+      <li><a href="#"><img src="<?php echo Yii::app()->request->baseUrl; ?>/images/no-image-male.gif" alt=""></a></li>
+      <li><a href="#"><img src="<?php echo Yii::app()->request->baseUrl; ?>/images/no-image-male.gif" alt=""></a></li>
       
     </ul>
     <div class="clear"></div>
@@ -90,16 +90,16 @@
   </div>
   <div class="profiles">
     <ul>
-      <li><a href="#"><img src="images/no-image-male.gif" alt=""></a></li>
-      <li><a href="#"><img src="images/no-image-male.gif" alt=""></a></li>
-      <li><a href="#"><img src="images/no-image-male.gif" alt=""></a></li>
-      <li><a href="#"><img src="images/no-image-male.gif" alt=""></a></li>
-      <li><a href="#"><img src="images/no-image-male.gif" alt=""></a></li>
-      <li><a href="#"><img src="images/no-image-male.gif" alt=""></a></li>
-      <li><a href="#"><img src="images/no-image-male.gif" alt=""></a></li>
-      <li><a href="#"><img src="images/no-image-male.gif" alt=""></a></li>
-      <li><a href="#"><img src="images/no-image-male.gif" alt=""></a></li>
-      <li><a href="#"><img src="images/no-image-male.gif" alt=""></a></li>
+      <li><a href="#"><img src="<?php echo Yii::app()->request->baseUrl; ?>/images/no-image-male.gif" alt=""></a></li>
+      <li><a href="#"><img src="<?php echo Yii::app()->request->baseUrl; ?>/images/no-image-male.gif" alt=""></a></li>
+      <li><a href="#"><img src="<?php echo Yii::app()->request->baseUrl; ?>/images/no-image-male.gif" alt=""></a></li>
+      <li><a href="#"><img src="<?php echo Yii::app()->request->baseUrl; ?>/images/no-image-male.gif" alt=""></a></li>
+      <li><a href="#"><img src="<?php echo Yii::app()->request->baseUrl; ?>/images/no-image-male.gif" alt=""></a></li>
+      <li><a href="#"><img src="<?php echo Yii::app()->request->baseUrl; ?>/images/no-image-male.gif" alt=""></a></li>
+      <li><a href="#"><img src="<?php echo Yii::app()->request->baseUrl; ?>/images/no-image-male.gif" alt=""></a></li>
+      <li><a href="#"><img src="<?php echo Yii::app()->request->baseUrl; ?>/images/no-image-male.gif" alt=""></a></li>
+      <li><a href="#"><img src="<?php echo Yii::app()->request->baseUrl; ?>/images/no-image-male.gif" alt=""></a></li>
+      <li><a href="#"><img src="<?php echo Yii::app()->request->baseUrl; ?>/images/no-image-male.gif" alt=""></a></li>
       
     </ul>
     <div class="clear"></div>
@@ -109,7 +109,7 @@
 <div class="fL">
   <div class="topArea">
     <div class="rht">
-      <p><img src="images/verified.png" alt="" width="32" height="32" class="verified"><img src="images/yellow-badge.png" alt="" width="48" height="48"></p>
+      <p><img src="<?php echo Yii::app()->request->baseUrl; ?>/images/verified.png" alt="" width="32" height="32" class="verified"><img src="<?php echo Yii::app()->request->baseUrl; ?>/images/yellow-badge.png" alt="" width="48" height="48"></p>
       </div>
     <div class="midArea"> <a href="#" class="smBlueBtn">Go Message</a> <a href="#" class="smBlueBtn">Add friend</a> <a href="#" class="smBlueBtn">Follow</a> 
       <div class="clear"></div>
@@ -125,11 +125,11 @@
     </div>
     <div class="inside">
 	<div class="boxes">
-	  <div class="apContainer"><img src="images/no-image.png"></div>
-	  <div class="apContainer"><img src="images/no-image.png"></div>
-	  <div class="apContainer"><img src="images/no-image.png"></div>
-	  <div class="apContainer"><img src="images/no-image.png"></div>
-	  <div class="apContainer"><img src="images/no-image.png"></div>
+	  <div class="apContainer"><img src="<?php echo Yii::app()->request->baseUrl; ?>/images/no-image.png"></div>
+	  <div class="apContainer"><img src="<?php echo Yii::app()->request->baseUrl; ?>/images/no-image.png"></div>
+	  <div class="apContainer"><img src="<?php echo Yii::app()->request->baseUrl; ?>/images/no-image.png"></div>
+	  <div class="apContainer"><img src="<?php echo Yii::app()->request->baseUrl; ?>/images/no-image.png"></div>
+	  <div class="apContainer"><img src="<?php echo Yii::app()->request->baseUrl; ?>/images/no-image.png"></div>
 	  <div class="clear"></div>
 	  <div style="padding-top:10px;"><a href="#" class="smBlueBtn">Edit photos</a>
 	  <div class="clear"></div>
@@ -298,7 +298,7 @@
   </div>
   <div class="contents">
   <div class="items">
-  <div class="fLeft"><img src="images/no-image-female.gif" alt=""></div>
+  <div class="fLeft"><img src="<?php echo Yii::app()->request->baseUrl; ?>/images/no-image-female.gif" alt=""></div>
   <div class="fRight">
     <h2><a href="#">Tom and Marty's</a></h2>
     <p><a href="#">Weekly Short Wheel Competion </a></p>
@@ -306,7 +306,7 @@
   <div class="clear"></div>
   </div>
   <div class="items">
-    <div class="fLeft"><img src="images/no-image-female.gif" alt=""></div>
+    <div class="fLeft"><img src="<?php echo Yii::app()->request->baseUrl; ?>/images/no-image-female.gif" alt=""></div>
     <div class="fRight">
       <h2><a href="#">Tom and Marty's</a></h2>
       <p><a href="#">Weekly Short Wheel Competion </a></p>
@@ -314,7 +314,7 @@
     <div class="clear"></div>
   </div>
   <div class="items">
-    <div class="fLeft"><img src="images/no-image-female.gif" alt=""></div>
+    <div class="fLeft"><img src="<?php echo Yii::app()->request->baseUrl; ?>/images/no-image-female.gif" alt=""></div>
     <div class="fRight">
       <h2><a href="#">Tom and Marty's</a></h2>
       <p><a href="#">Weekly Short Wheel Competion </a></p>
@@ -322,7 +322,7 @@
     <div class="clear"></div>
   </div>
   <div class="items">
-    <div class="fLeft"><img src="images/no-image-female.gif" alt=""></div>
+    <div class="fLeft"><img src="<?php echo Yii::app()->request->baseUrl; ?>/images/no-image-female.gif" alt=""></div>
     <div class="fRight">
       <h2><a href="#">Tom and Marty's</a></h2>
       <p><a href="#">Weekly Short Wheel Competion </a></p>
@@ -330,7 +330,7 @@
     <div class="clear"></div>
   </div>
   <div class="items last">
-    <div class="fLeft"><img src="images/no-image-female.gif" alt=""></div>
+    <div class="fLeft"><img src="<?php echo Yii::app()->request->baseUrl; ?>/images/no-image-female.gif" alt=""></div>
     <div class="fRight">
       <h2><a href="#">Tom and Marty's</a></h2>
       <p><a href="#">Weekly Short Wheel Competion </a></p>
