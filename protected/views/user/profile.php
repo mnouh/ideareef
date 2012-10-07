@@ -156,6 +156,7 @@
                         echo $model->city;
                       ?> 
                   </b>
+                  <br>
                   <b class="currentState" id="currentState" style="display: inline"> 
                       <?php 
                         echo $model->state;

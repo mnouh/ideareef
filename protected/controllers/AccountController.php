@@ -190,6 +190,18 @@ class AccountController extends Controller
             $this->render('settings');
         }
         
+        public function actionEmailRecovery()
+        {
+            
+            $this->render('emailrecovery');
+        }
+        
+        public function actionRecover()
+        {
+            
+            
+        }
+        
         /**
          * Recover your account, password and etc. 
          */
@@ -222,7 +234,7 @@ class AccountController extends Controller
                             else {  
                                 $user->verifyCode = $this->createVerificationCode();
                                     if($user->update())
-                                        $x = "test"; //$this->sendAccountUserRecoveryConfirmation($user);
+                                        $this->sendAccountUserRecoveryConfirmation($user);
                                         
                             }
                             
@@ -231,7 +243,7 @@ class AccountController extends Controller
                             $model->setScenario('verify');
                             //$this->redirect('account/verify-code');
                         
-                            $this->redirect(array('account/verifyCode'), array('model' => $model));
+                            $this->redirect(array('account/emailrecovery'), array('model' => $model));
                         }
                         
                 }    
@@ -258,7 +270,7 @@ class AccountController extends Controller
                         
                         if($model->validate()) {
                             
-                            echo "Model Validated Succesfully";
+                            //echo "Model Validated Succesfully";
                             $user = User::model()->find('LOWER(email)=?', array(strtolower($model->email)));
                             
                             if($user != null)
@@ -272,10 +284,10 @@ class AccountController extends Controller
                                     
                                     echo "Verified Thanks!";
                                     
-                                    $this->redirect(array('account/RecoveryChangePassword'));
+                                    $this->renderPartial('recovery-change-password', false, true);
                                 }
-                                
-                                echo "Bad Verification Code";
+                                else 
+                                    echo "Bad Verification Code";
                                 
                             }
                             
@@ -291,7 +303,7 @@ class AccountController extends Controller
         {
         
             $model = new RecoveryChangePasswordForm;
-            
+            /*
         // if it is ajax validation request
        $this->performAjaxValidation($model, 'recovery-change-password-form');
         
@@ -304,7 +316,7 @@ class AccountController extends Controller
                             
                         }
                 }
-                            
+              */              
             
             $this->render('recovery-change-password', array('model' => $model));
             
