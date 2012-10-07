@@ -26,7 +26,7 @@ class UserController extends Controller {
                 'users' => array('*'),
             ),
             array('allow', // allow authenticated user to perform 'create' and 'update' actions
-                'actions' => array('index', 'changeName', 'changeUsername', 'changepassword', 'profile', 'mySolutions', 'changeZipCode', 'submitSolution' ,'create', 'update', 'completeProfile', 'competition', 'competitionSub'),
+                'actions' => array('index', 'changeName', 'changeUsername', 'changepassword', 'profile', 'editAboutMe', 'mySolutions', 'changeZipCode', 'submitSolution' ,'create', 'update', 'completeProfile', 'competition', 'competitionSub'),
                 'users' => array('@'),
             ),
             /*array('allow', // allow admin user to perform 'admin' and 'delete' actions
@@ -242,9 +242,26 @@ class UserController extends Controller {
     public function actionProfile()    
     {
         
+        $model = User::model()->findByPk(Yii::app()->user->id);
+        $this->render('profile', array('model' => $model));
         
-        $this->render('profile');
-        
+    }
+    
+    public function actionEditAboutMe()
+    {
+        if(!Yii::app()->user->isBusiness) {
+            if(isset($_POST['id']) && isset($_POST['value']) && !empty($_POST['value']))
+            {
+                if($_POST['id'] == 'aboutme') {    
+                    $aboutUs = $_POST['value'];
+                    $model = User::model()->findByPk(Yii::app()->user->id);
+                    $model->aboutMe = $aboutMe;
+                if($model->update())
+                    echo $model->aboutMe;
+               
+                }
+            }
+        }    
     }
     
     

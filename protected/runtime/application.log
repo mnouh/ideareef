@@ -10915,3 +10915,308 @@ Stack trace:
 #21 {main}
 REQUEST_URI=/ideareef/user/competitionSub/7
 ---
+2012/10/07 18:42:24 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "images".' in C:\wamp\www\ideareef\framework\web\CController.php:484
+Stack trace:
+#0 C:\wamp\www\ideareef\framework\web\CController.php(271): CController->missingAction('images')
+#1 C:\wamp\www\ideareef\framework\web\CWebApplication.php(276): CController->run('images')
+#2 C:\wamp\www\ideareef\framework\web\CWebApplication.php(135): CWebApplication->runController('account/images/...')
+#3 C:\wamp\www\ideareef\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#4 C:\wamp\www\ideareef\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/ideareef/account/images/no-image-female.gif
+HTTP_REFERER=http://localhost/ideareef/account/competitions
+---
+2012/10/07 18:42:24 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "images".' in C:\wamp\www\ideareef\framework\web\CController.php:484
+Stack trace:
+#0 C:\wamp\www\ideareef\framework\web\CController.php(271): CController->missingAction('images')
+#1 C:\wamp\www\ideareef\framework\web\CWebApplication.php(276): CController->run('images')
+#2 C:\wamp\www\ideareef\framework\web\CWebApplication.php(135): CWebApplication->runController('account/images/...')
+#3 C:\wamp\www\ideareef\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#4 C:\wamp\www\ideareef\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/ideareef/account/images/bar.png
+HTTP_REFERER=http://localhost/ideareef/account/competitions
+---
+2012/10/07 19:15:52 [warning] [application] Failed to set unsafe attribute "zipcode" of "User".
+in C:\wamp\www\ideareef\protected\controllers\AccountController.php (381)
+in C:\wamp\www\ideareef\protected\controllers\AccountController.php (162)
+in C:\wamp\www\ideareef\index.php (13)
+2012/10/07 19:15:54 [warning] [application] Failed to set unsafe attribute "zipcode" of "User".
+in C:\wamp\www\ideareef\protected\controllers\AccountController.php (381)
+in C:\wamp\www\ideareef\protected\controllers\AccountController.php (162)
+in C:\wamp\www\ideareef\index.php (13)
+2012/10/07 19:15:58 [warning] [application] Failed to set unsafe attribute "zipcode" of "User".
+in C:\wamp\www\ideareef\protected\controllers\AccountController.php (381)
+in C:\wamp\www\ideareef\protected\controllers\AccountController.php (162)
+in C:\wamp\www\ideareef\index.php (13)
+2012/10/07 19:16:01 [warning] [application] Failed to set unsafe attribute "zipcode" of "User".
+in C:\wamp\www\ideareef\protected\controllers\AccountController.php (381)
+in C:\wamp\www\ideareef\protected\controllers\AccountController.php (162)
+in C:\wamp\www\ideareef\index.php (13)
+2012/10/07 19:16:04 [warning] [application] Failed to set unsafe attribute "zipcode" of "User".
+in C:\wamp\www\ideareef\protected\controllers\AccountController.php (381)
+in C:\wamp\www\ideareef\protected\controllers\AccountController.php (162)
+in C:\wamp\www\ideareef\index.php (13)
+2012/10/07 19:16:07 [warning] [application] Failed to set unsafe attribute "zipcode" of "User".
+in C:\wamp\www\ideareef\protected\controllers\AccountController.php (381)
+in C:\wamp\www\ideareef\protected\controllers\AccountController.php (162)
+in C:\wamp\www\ideareef\index.php (13)
+2012/10/07 19:16:07 [warning] [application] Failed to set unsafe attribute "zipcode" of "User".
+in C:\wamp\www\ideareef\protected\controllers\AccountController.php (170)
+in C:\wamp\www\ideareef\index.php (13)
+2012/10/07 19:16:19 [error] [exception.CException] exception 'CException' with message 'UserController cannot find the requested view "complete-profile".' in C:\wamp\www\ideareef\framework\web\CController.php:879
+Stack trace:
+#0 C:\wamp\www\ideareef\framework\web\CController.php(783): CController->renderPartial('complete-profil...', Array, true)
+#1 C:\wamp\www\ideareef\protected\controllers\UserController.php(268): CController->render('complete-profil...', Array)
+#2 C:\wamp\www\ideareef\framework\web\actions\CInlineAction.php(50): UserController->actionCompleteProfile()
+#3 C:\wamp\www\ideareef\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#4 C:\wamp\www\ideareef\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#5 C:\wamp\www\ideareef\framework\web\filters\CFilter.php(41): CFilterChain->run()
+#6 C:\wamp\www\ideareef\framework\web\CController.php(1146): CFilter->filter(Object(CFilterChain))
+#7 C:\wamp\www\ideareef\framework\web\filters\CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#8 C:\wamp\www\ideareef\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#9 C:\wamp\www\ideareef\framework\web\CController.php(292): CFilterChain->run()
+#10 C:\wamp\www\ideareef\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 C:\wamp\www\ideareef\framework\web\CWebApplication.php(276): CController->run('completeProfile')
+#12 C:\wamp\www\ideareef\framework\web\CWebApplication.php(135): CWebApplication->runController('user/completePr...')
+#13 C:\wamp\www\ideareef\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#14 C:\wamp\www\ideareef\index.php(13): CApplication->run()
+#15 {main}
+REQUEST_URI=/ideareef/user/completeProfile
+HTTP_REFERER=http://localhost/ideareef/signup
+---
+2012/10/07 19:17:38 [error] [exception.CException] exception 'CException' with message 'UserController cannot find the requested view "complete-profile".' in C:\wamp\www\ideareef\framework\web\CController.php:879
+Stack trace:
+#0 C:\wamp\www\ideareef\framework\web\CController.php(783): CController->renderPartial('complete-profil...', Array, true)
+#1 C:\wamp\www\ideareef\protected\controllers\UserController.php(268): CController->render('complete-profil...', Array)
+#2 C:\wamp\www\ideareef\framework\web\actions\CInlineAction.php(50): UserController->actionCompleteProfile()
+#3 C:\wamp\www\ideareef\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#4 C:\wamp\www\ideareef\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#5 C:\wamp\www\ideareef\framework\web\filters\CFilter.php(41): CFilterChain->run()
+#6 C:\wamp\www\ideareef\framework\web\CController.php(1146): CFilter->filter(Object(CFilterChain))
+#7 C:\wamp\www\ideareef\framework\web\filters\CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#8 C:\wamp\www\ideareef\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#9 C:\wamp\www\ideareef\framework\web\CController.php(292): CFilterChain->run()
+#10 C:\wamp\www\ideareef\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 C:\wamp\www\ideareef\framework\web\CWebApplication.php(276): CController->run('completeProfile')
+#12 C:\wamp\www\ideareef\framework\web\CWebApplication.php(135): CWebApplication->runController('user/completePr...')
+#13 C:\wamp\www\ideareef\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#14 C:\wamp\www\ideareef\index.php(13): CApplication->run()
+#15 {main}
+REQUEST_URI=/ideareef/user/completeProfile
+HTTP_REFERER=http://localhost/ideareef/
+---
+2012/10/07 19:23:48 [error] [exception.CException] exception 'CException' with message 'UserController cannot find the requested view "complete-profile".' in C:\wamp\www\ideareef\framework\web\CController.php:879
+Stack trace:
+#0 C:\wamp\www\ideareef\framework\web\CController.php(783): CController->renderPartial('complete-profil...', Array, true)
+#1 C:\wamp\www\ideareef\protected\controllers\UserController.php(268): CController->render('complete-profil...', Array)
+#2 C:\wamp\www\ideareef\framework\web\actions\CInlineAction.php(50): UserController->actionCompleteProfile()
+#3 C:\wamp\www\ideareef\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#4 C:\wamp\www\ideareef\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#5 C:\wamp\www\ideareef\framework\web\filters\CFilter.php(41): CFilterChain->run()
+#6 C:\wamp\www\ideareef\framework\web\CController.php(1146): CFilter->filter(Object(CFilterChain))
+#7 C:\wamp\www\ideareef\framework\web\filters\CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#8 C:\wamp\www\ideareef\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#9 C:\wamp\www\ideareef\framework\web\CController.php(292): CFilterChain->run()
+#10 C:\wamp\www\ideareef\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 C:\wamp\www\ideareef\framework\web\CWebApplication.php(276): CController->run('completeProfile')
+#12 C:\wamp\www\ideareef\framework\web\CWebApplication.php(135): CWebApplication->runController('user/completePr...')
+#13 C:\wamp\www\ideareef\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#14 C:\wamp\www\ideareef\index.php(13): CApplication->run()
+#15 {main}
+REQUEST_URI=/ideareef/user/completeProfile
+HTTP_REFERER=http://localhost/ideareef/aboutus
+---
+2012/10/07 19:25:33 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "protected/views/user/images/profile-picture.jpg".' in C:\wamp\www\ideareef\framework\web\CWebApplication.php:280
+Stack trace:
+#0 C:\wamp\www\ideareef\framework\web\CWebApplication.php(135): CWebApplication->runController('protected/views...')
+#1 C:\wamp\www\ideareef\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\wamp\www\ideareef\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/ideareef/protected/views/user/images/profile-picture.jpg
+HTTP_REFERER=http://localhost/ideareef/protected/views/user/profileEdit.php
+---
+2012/10/07 19:25:33 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "protected/views/user/images/bronze-profile.png".' in C:\wamp\www\ideareef\framework\web\CWebApplication.php:280
+Stack trace:
+#0 C:\wamp\www\ideareef\framework\web\CWebApplication.php(135): CWebApplication->runController('protected/views...')
+#1 C:\wamp\www\ideareef\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\wamp\www\ideareef\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/ideareef/protected/views/user/images/bronze-profile.png
+HTTP_REFERER=http://localhost/ideareef/protected/views/user/profileEdit.php
+---
+2012/10/07 19:25:33 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "protected/views/user/images/no-image-male.gif".' in C:\wamp\www\ideareef\framework\web\CWebApplication.php:280
+Stack trace:
+#0 C:\wamp\www\ideareef\framework\web\CWebApplication.php(135): CWebApplication->runController('protected/views...')
+#1 C:\wamp\www\ideareef\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\wamp\www\ideareef\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/ideareef/protected/views/user/images/no-image-male.gif
+HTTP_REFERER=http://localhost/ideareef/protected/views/user/profileEdit.php
+---
+2012/10/07 19:25:33 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "protected/views/user/images/no-image.png".' in C:\wamp\www\ideareef\framework\web\CWebApplication.php:280
+Stack trace:
+#0 C:\wamp\www\ideareef\framework\web\CWebApplication.php(135): CWebApplication->runController('protected/views...')
+#1 C:\wamp\www\ideareef\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\wamp\www\ideareef\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/ideareef/protected/views/user/images/no-image.png
+HTTP_REFERER=http://localhost/ideareef/protected/views/user/profileEdit.php
+---
+2012/10/07 19:25:33 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "protected/views/user/images/verified.png".' in C:\wamp\www\ideareef\framework\web\CWebApplication.php:280
+Stack trace:
+#0 C:\wamp\www\ideareef\framework\web\CWebApplication.php(135): CWebApplication->runController('protected/views...')
+#1 C:\wamp\www\ideareef\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\wamp\www\ideareef\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/ideareef/protected/views/user/images/verified.png
+HTTP_REFERER=http://localhost/ideareef/protected/views/user/profileEdit.php
+---
+2012/10/07 19:25:33 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "protected/views/user/images/yellow-badge.png".' in C:\wamp\www\ideareef\framework\web\CWebApplication.php:280
+Stack trace:
+#0 C:\wamp\www\ideareef\framework\web\CWebApplication.php(135): CWebApplication->runController('protected/views...')
+#1 C:\wamp\www\ideareef\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\wamp\www\ideareef\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/ideareef/protected/views/user/images/yellow-badge.png
+HTTP_REFERER=http://localhost/ideareef/protected/views/user/profileEdit.php
+---
+2012/10/07 19:25:33 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "protected/views/user/images/no-image-female.gif".' in C:\wamp\www\ideareef\framework\web\CWebApplication.php:280
+Stack trace:
+#0 C:\wamp\www\ideareef\framework\web\CWebApplication.php(135): CWebApplication->runController('protected/views...')
+#1 C:\wamp\www\ideareef\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\wamp\www\ideareef\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/ideareef/protected/views/user/images/no-image-female.gif
+HTTP_REFERER=http://localhost/ideareef/protected/views/user/profileEdit.php
+---
+2012/10/07 19:25:41 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "protected/views/user/images/no-image.png".' in C:\wamp\www\ideareef\framework\web\CWebApplication.php:280
+Stack trace:
+#0 C:\wamp\www\ideareef\framework\web\CWebApplication.php(135): CWebApplication->runController('protected/views...')
+#1 C:\wamp\www\ideareef\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\wamp\www\ideareef\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/ideareef/protected/views/user/images/no-image.png
+HTTP_REFERER=http://localhost/ideareef/protected/views/user/profileEdit.php
+---
+2012/10/07 19:25:48 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not authorized to perform this action.' in C:\wamp\www\ideareef\framework\web\auth\CAccessControlFilter.php:157
+Stack trace:
+#0 C:\wamp\www\ideareef\framework\web\auth\CAccessControlFilter.php(120): CAccessControlFilter->accessDenied(Object(WebUser), 'You are not aut...')
+#1 C:\wamp\www\ideareef\framework\web\filters\CFilter.php(39): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 C:\wamp\www\ideareef\framework\web\CController.php(1146): CFilter->filter(Object(CFilterChain))
+#3 C:\wamp\www\ideareef\framework\web\filters\CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#4 C:\wamp\www\ideareef\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#5 C:\wamp\www\ideareef\framework\web\CController.php(292): CFilterChain->run()
+#6 C:\wamp\www\ideareef\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 C:\wamp\www\ideareef\framework\web\CWebApplication.php(276): CController->run('view')
+#8 C:\wamp\www\ideareef\framework\web\CWebApplication.php(135): CWebApplication->runController('user/view')
+#9 C:\wamp\www\ideareef\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#10 C:\wamp\www\ideareef\index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/ideareef/profileEdit.php
+---
+2012/10/07 19:37:00 [error] [exception.CException] exception 'CException' with message 'UserController cannot find the requested view "complete-profile".' in C:\wamp\www\ideareef\framework\web\CController.php:879
+Stack trace:
+#0 C:\wamp\www\ideareef\framework\web\CController.php(783): CController->renderPartial('complete-profil...', Array, true)
+#1 C:\wamp\www\ideareef\protected\controllers\UserController.php(268): CController->render('complete-profil...', Array)
+#2 C:\wamp\www\ideareef\framework\web\actions\CInlineAction.php(50): UserController->actionCompleteProfile()
+#3 C:\wamp\www\ideareef\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#4 C:\wamp\www\ideareef\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#5 C:\wamp\www\ideareef\framework\web\filters\CFilter.php(41): CFilterChain->run()
+#6 C:\wamp\www\ideareef\framework\web\CController.php(1146): CFilter->filter(Object(CFilterChain))
+#7 C:\wamp\www\ideareef\framework\web\filters\CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#8 C:\wamp\www\ideareef\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#9 C:\wamp\www\ideareef\framework\web\CController.php(292): CFilterChain->run()
+#10 C:\wamp\www\ideareef\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 C:\wamp\www\ideareef\framework\web\CWebApplication.php(276): CController->run('completeProfile')
+#12 C:\wamp\www\ideareef\framework\web\CWebApplication.php(135): CWebApplication->runController('user/completePr...')
+#13 C:\wamp\www\ideareef\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#14 C:\wamp\www\ideareef\index.php(13): CApplication->run()
+#15 {main}
+REQUEST_URI=/ideareef/user/completeProfile
+HTTP_REFERER=http://localhost/ideareef/signup
+---
+2012/10/07 19:40:38 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "profileEdit.php".' in C:\wamp\www\ideareef\framework\web\CController.php:484
+Stack trace:
+#0 C:\wamp\www\ideareef\framework\web\CController.php(271): CController->missingAction('profileEdit.php')
+#1 C:\wamp\www\ideareef\framework\web\CWebApplication.php(276): CController->run('profileEdit.php')
+#2 C:\wamp\www\ideareef\framework\web\CWebApplication.php(135): CWebApplication->runController('user/profileEdi...')
+#3 C:\wamp\www\ideareef\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#4 C:\wamp\www\ideareef\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/ideareef/user/profileEdit.php
+---
+2012/10/07 19:40:42 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not authorized to perform this action.' in C:\wamp\www\ideareef\framework\web\auth\CAccessControlFilter.php:157
+Stack trace:
+#0 C:\wamp\www\ideareef\framework\web\auth\CAccessControlFilter.php(120): CAccessControlFilter->accessDenied(Object(WebUser), 'You are not aut...')
+#1 C:\wamp\www\ideareef\framework\web\filters\CFilter.php(39): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 C:\wamp\www\ideareef\framework\web\CController.php(1146): CFilter->filter(Object(CFilterChain))
+#3 C:\wamp\www\ideareef\framework\web\filters\CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#4 C:\wamp\www\ideareef\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#5 C:\wamp\www\ideareef\framework\web\CController.php(292): CFilterChain->run()
+#6 C:\wamp\www\ideareef\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 C:\wamp\www\ideareef\framework\web\CWebApplication.php(276): CController->run('profileEdit')
+#8 C:\wamp\www\ideareef\framework\web\CWebApplication.php(135): CWebApplication->runController('user/profileEdi...')
+#9 C:\wamp\www\ideareef\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#10 C:\wamp\www\ideareef\index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/ideareef/user/profileEdit
+---
+2012/10/07 19:41:15 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not authorized to perform this action.' in C:\wamp\www\ideareef\framework\web\auth\CAccessControlFilter.php:157
+Stack trace:
+#0 C:\wamp\www\ideareef\framework\web\auth\CAccessControlFilter.php(120): CAccessControlFilter->accessDenied(Object(WebUser), 'You are not aut...')
+#1 C:\wamp\www\ideareef\framework\web\filters\CFilter.php(39): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 C:\wamp\www\ideareef\framework\web\CController.php(1146): CFilter->filter(Object(CFilterChain))
+#3 C:\wamp\www\ideareef\framework\web\filters\CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#4 C:\wamp\www\ideareef\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#5 C:\wamp\www\ideareef\framework\web\CController.php(292): CFilterChain->run()
+#6 C:\wamp\www\ideareef\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 C:\wamp\www\ideareef\framework\web\CWebApplication.php(276): CController->run('ProfileEdit')
+#8 C:\wamp\www\ideareef\framework\web\CWebApplication.php(135): CWebApplication->runController('user/ProfileEdi...')
+#9 C:\wamp\www\ideareef\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#10 C:\wamp\www\ideareef\index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/ideareef/user/ProfileEdit
+---
+2012/10/07 19:59:05 [error] [exception.CException] exception 'CException' with message 'Property "User.aboutMe" is not defined.' in C:\wamp\www\ideareef\framework\base\CComponent.php:131
+Stack trace:
+#0 C:\wamp\www\ideareef\framework\db\ar\CActiveRecord.php(144): CComponent->__get('aboutMe')
+#1 C:\wamp\www\ideareef\protected\views\user\profile.php(282): CActiveRecord->__get('aboutMe')
+#2 C:\wamp\www\ideareef\framework\web\CBaseController.php(127): require('C:\wamp\www\ide...')
+#3 C:\wamp\www\ideareef\framework\web\CBaseController.php(96): CBaseController->renderInternal('C:\wamp\www\ide...', Array, true)
+#4 C:\wamp\www\ideareef\framework\web\CController.php(870): CBaseController->renderFile('C:\wamp\www\ide...', Array, true)
+#5 C:\wamp\www\ideareef\framework\web\CController.php(783): CController->renderPartial('profile', Array, true)
+#6 C:\wamp\www\ideareef\protected\controllers\UserController.php(246): CController->render('profile', Array)
+#7 C:\wamp\www\ideareef\framework\web\actions\CInlineAction.php(50): UserController->actionProfile()
+#8 C:\wamp\www\ideareef\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#9 C:\wamp\www\ideareef\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#10 C:\wamp\www\ideareef\framework\web\filters\CFilter.php(41): CFilterChain->run()
+#11 C:\wamp\www\ideareef\framework\web\CController.php(1146): CFilter->filter(Object(CFilterChain))
+#12 C:\wamp\www\ideareef\framework\web\filters\CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#13 C:\wamp\www\ideareef\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#14 C:\wamp\www\ideareef\framework\web\CController.php(292): CFilterChain->run()
+#15 C:\wamp\www\ideareef\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#16 C:\wamp\www\ideareef\framework\web\CWebApplication.php(276): CController->run('profile')
+#17 C:\wamp\www\ideareef\framework\web\CWebApplication.php(135): CWebApplication->runController('user/profile')
+#18 C:\wamp\www\ideareef\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#19 C:\wamp\www\ideareef\index.php(13): CApplication->run()
+#20 {main}
+REQUEST_URI=/ideareef/user/profile
+HTTP_REFERER=http://localhost/ideareef/user/completeProfile
+---
+2012/10/07 20:06:16 [error] [php] Undefined variable: aboutMe (C:\wamp\www\ideareef\protected\controllers\UserController.php:258)
+Stack trace:
+#0 C:\wamp\www\ideareef\framework\web\filters\CFilterChain.php(134): UserController->runAction()
+#1 C:\wamp\www\ideareef\framework\web\filters\CFilter.php(41): CFilterChain->run()
+#2 C:\wamp\www\ideareef\framework\web\CController.php(1146): CAccessControlFilter->filter()
+#3 C:\wamp\www\ideareef\framework\web\filters\CInlineFilter.php(59): UserController->filterAccessControl()
+#4 C:\wamp\www\ideareef\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter()
+#5 C:\wamp\www\ideareef\framework\web\CController.php(292): CFilterChain->run()
+#6 C:\wamp\www\ideareef\framework\web\CController.php(266): UserController->runActionWithFilters()
+#7 C:\wamp\www\ideareef\framework\web\CWebApplication.php(276): UserController->run()
+#8 C:\wamp\www\ideareef\framework\web\CWebApplication.php(135): CWebApplication->runController()
+#9 C:\wamp\www\ideareef\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#10 C:\wamp\www\ideareef\index.php(13): CWebApplication->run()
+REQUEST_URI=/ideareef/user/editAboutMe
+in C:\wamp\www\ideareef\protected\controllers\UserController.php (258)
+in C:\wamp\www\ideareef\index.php (13)

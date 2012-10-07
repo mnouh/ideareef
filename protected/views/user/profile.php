@@ -1,3 +1,12 @@
+<?php
+    Yii::app()->getClientScript()->registerCoreScript('jquery');
+    Yii::app()->getClientScript()->registerCoreScript('jquery.ui');
+         $baseUrl = Yii::app()->baseUrl;
+ $cs = Yii::app()->getClientScript();
+ $cs->registerScriptFile($baseUrl.'/js/jquery.jeditable.js');
+ $cs->registerScriptFile($baseUrl.'/js/userProfileInfo.js');
+ 
+ ?>
 <div id="InnerContent">
 <div class="floatLeft">
 <div class="up">
@@ -225,10 +234,11 @@
           <div class="fR"><a href="#">Edit</a></div>
           <div class="clear"></div>
         </div>
+      <div class ="aboutme" id="aboutme">
         <div class="bottom">
           <table width="100%" cellpadding="0" cellspacing="1" class="listTable">
             <tr>
-              <td> Integer vitae lacus urna. Donec pretium, nisl a posuere placerat, nulla orci luctus nunc, vitae aliquam sapien urna vel nibh. Curabitur semper condimentum mi eget sagittis. Ut non erat eros, in tincidunt velit. Quisque ut ultricies tortor. Cras nec eros orci, eu sagittis leo. Aliquam erat volutpat. </td>
+              <td> <div class="aboutme" id="aboutme"> <?php echo $model->aboutMe; ?> </div> </td>
             </tr>
           </table>
         </div>
@@ -269,7 +279,7 @@
         <div class="bottom">
           <table width="100%" cellpadding="0" cellspacing="1" class="listTable">
             <tr>
-              <td>Pellentesque elementum metus mi, a cursus dui. Donec vel posuere tortor. Donec vitae augue elit. Quisque bibendum libero vitae dui posuere hendrerit. Nullam at erat vel odio hendrerit feugiat sit amet placerat enim. Sed at eros sed nisi adipiscing vestibulum. Quisque a mi est, vitae venenatis sem. Ut rutrum condimentum nulla quis posuere. Vivamus quam nisl, ultricies feugiat iaculis a, bibendum a justo. In eu metus ultricies ante imperdiet dapibus. </td>
+              <td>em. Ut rutrum condimentum nulla quis posuere. Vivamus quam nisl, ultricies feugiat iaculis a, bibendum a justo. In eu metus ultricies ante imperdiet dapibus. </td>
             </tr>
           </table>
         </div>
