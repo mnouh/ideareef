@@ -26,7 +26,7 @@ class UserController extends Controller {
                 'users' => array('*'),
             ),
             array('allow', // allow authenticated user to perform 'create' and 'update' actions
-                'actions' => array('index', 'changeName', 'changeUsername', 'changepassword', 'profile', 'editAboutMe', 'mySolutions', 'changeZipCode', 'submitSolution' ,'create', 'update', 'completeProfile', 'competition', 'competitionSub'),
+                'actions' => array('index', 'changeName', 'changeUsername', 'changepassword', 'profile', 'editAboutMe', 'editCurrentCity', 'editCurrentState', 'mySolutions', 'changeZipCode', 'submitSolution' ,'create', 'update', 'completeProfile', 'competition', 'competitionSub'),
                 'users' => array('@'),
             ),
             /*array('allow', // allow admin user to perform 'admin' and 'delete' actions
@@ -253,11 +253,45 @@ class UserController extends Controller {
             if(isset($_POST['id']) && isset($_POST['value']) && !empty($_POST['value']))
             {
                 if($_POST['id'] == 'aboutme') {    
-                    $aboutUs = $_POST['value'];
+                    $aboutMe = $_POST['value'];
                     $model = User::model()->findByPk(Yii::app()->user->id);
                     $model->aboutMe = $aboutMe;
                 if($model->update())
                     echo $model->aboutMe;
+               
+                }
+            }
+        }    
+    }
+    
+    public function actionEditCurrentCity()
+    {
+        if(!Yii::app()->user->isBusiness) {
+            if(isset($_POST['id']) && isset($_POST['value']) && !empty($_POST['value']))
+            {
+                if($_POST['id'] == 'currentCity') {    
+                    $currentCity = $_POST['value'];
+                    $model = User::model()->findByPk(Yii::app()->user->id);
+                    $model->city = $currentCity;
+                if($model->update())
+                    echo $model->city;
+               
+                }
+            }
+        }    
+    }
+    
+    public function actionEditCurrentState()
+    {
+        if(!Yii::app()->user->isBusiness) {
+            if(isset($_POST['id']) && isset($_POST['value']) && !empty($_POST['value']))
+            {
+                if($_POST['id'] == 'currentState') {    
+                    $currentState = $_POST['value'];
+                    $model = User::model()->findByPk(Yii::app()->user->id);
+                    $model->state = $currentState;
+                if($model->update())
+                    echo $model->state;
                
                 }
             }
