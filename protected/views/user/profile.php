@@ -150,7 +150,18 @@
             <tr>
               <td width="100" class="paddL"><strong>Lives in                 <br>
               </strong></td>
-              <td>Binghamton, NY</td>
+              <td>
+                  <b class="currentCity" id="currentCity" style="display: inline"> 
+                      <?php 
+                        echo $model->city;
+                      ?> 
+                  </b>
+                  <b class="currentState" id="currentState" style="display: inline"> 
+                      <?php 
+                        echo $model->state;
+                      ?> 
+                  </b>
+              </td>
             </tr>
             <tr>
               <td class="paddL"><strong>From </strong></td>
@@ -234,7 +245,6 @@
           <div class="fR"><a href="#">Edit</a></div>
           <div class="clear"></div>
         </div>
-      
         <div class="bottom">
           <table width="100%" cellpadding="0" cellspacing="1" class="listTable">
             <tr>
@@ -243,6 +253,7 @@
           </table>
         </div>
       </div>
+         
       <div class="boxes">
         <div class="top">
           <h2>Skills &amp; Expertise </h2>
@@ -355,3 +366,4 @@
 </div>
 <div class="clear"></div>
   </div>
+
