@@ -50,7 +50,7 @@ $this->pageTitle = Yii::app()->name . ' - Account Recovery';
             <p>
                 <?php 
               echo CHtml::ajaxSubmitButton(
-                                        'Retrieve',
+                                        'Verify',
                                         array('account/verifyCode'),
                                         array(
                                                 'success'=>'js:function(data) {

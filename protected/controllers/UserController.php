@@ -265,7 +265,7 @@ class UserController extends Controller {
     public function actionCompleteProfile() {
         
             $model = User::model()->findByPk(Yii::app()->user->id);
-            $this->render('complete-profile', array('model' => $model));
+            $this->render('completeProfile', array('model' => $model));
         
     }
     

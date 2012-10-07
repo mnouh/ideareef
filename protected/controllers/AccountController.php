@@ -230,7 +230,8 @@ class AccountController extends Controller
                         
                             $model->setScenario('verify');
                             //$this->redirect('account/verify-code');
-                        return $this->render('verify-code', array('model' => $model));
+                        
+                            $this->redirect(array('account/verifyCode'), array('model' => $model));
                         }
                         
                 }    
@@ -269,9 +270,9 @@ class AccountController extends Controller
                                 if($user->verifyCode == $model->verifyCode)
                                 {
                                     
+                                    echo "Verified Thanks!";
                                     
-                                    
-                                    return $this->renderPartial('recovery-change-password', false, true);
+                                    $this->redirect(array('account/RecoveryChangePassword'));
                                 }
                                 
                                 echo "Bad Verification Code";
