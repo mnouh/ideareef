@@ -26,7 +26,7 @@ class UserController extends Controller {
                 'users' => array('*'),
             ),
             array('allow', // allow authenticated user to perform 'create' and 'update' actions
-                'actions' => array('index', 'changeName', 'changeUsername', 'changepassword', 'profile', 'editAboutMe', 'editCurrentCity', 'editCurrentState', 'mySolutions', 'changeZipCode', 'submitSolution' ,'create', 'update', 'completeProfile', 'competition', 'competitionSub'),
+                'actions' => array('index', 'changeName', 'changeUsername', 'changepassword', 'profile', 'editAboutMe', 'editCurrentCity', 'editCurrentState', 'mySolutions', 'changeZipCode', 'submitSolution' ,'create', 'update', 'completeProfile', 'competition', 'competitionSub', 'description', 'awardDetails'),
                 'users' => array('@'),
             ),
             /*array('allow', // allow admin user to perform 'admin' and 'delete' actions
@@ -375,6 +375,21 @@ class UserController extends Controller {
         
         $this->renderPartial('_mySolutions', true, false);
     }
+    
+    public function actionDescription()
+    {
+        
+        $this->renderPartial('_description', true, false);
+    }
+    
+    
+    public function actionAwardDetails()
+    {
+        
+        $this->renderPartial('_awardDetails', true, false);
+    }
+    
+    
     public function actionIndex() {
         $this->render('index');
     }

@@ -133,22 +133,56 @@ $cs->registerScriptFile($baseUrl . '/js/jquery.autosize.js');
         <div class="bottomArea">
             <div class="topmenu">
                 <ul>
-
-                    <li><?php
-echo CHtml::ajaxLink(
-        'My Solutions', array('user/mySolutions'), array('success' => 'js:function(data) {
+                    <li>
+                        <?php
+                        echo CHtml::ajaxLink(
+                                'My Solutions', array('user/mySolutions'), array('success' => 'js:function(data) {
                                                     jQuery("div#currentTab").html(data);}',
-    //'update'=>'#successMessage',
-    //'beforeSend' => 'function() {alert("testing");}',
-    //'validated' => 'function() {$("div#load").removeClass("loading");}',
-    //'complete' => 'function() {$("div#load").removeClass("loading");}',
-    'type' => 'POST'
-        )
-);
-?></li>
-                    <li><a id="myHeader2" href="javascript:showonlyone('newboxes2');">Description</a></li>
-                    <li><a id="myHeader3" href="javascript:showonlyone('newboxes3');">Award Details</a></li>
-                    <li><?php
+                            //'update'=>'#successMessage',
+                            //'beforeSend' => 'function() {alert("testing");}',
+                            //'validated' => 'function() {$("div#load").removeClass("loading");}',
+                            //'complete' => 'function() {$("div#load").removeClass("loading");}',
+                            'type' => 'POST'
+                                )
+                        );
+                        ?>
+                    </li>
+
+
+                    <li>
+                        <?php
+                        echo CHtml::ajaxLink(
+                                'Description', array('user/description'), array('success' => 'js:function(data) {
+                                                    jQuery("div#currentTab").html(data);}',
+                            //'update'=>'#successMessage',
+                            //'beforeSend' => 'function() {alert("testing");}',
+                            //'validated' => 'function() {$("div#load").removeClass("loading");}',
+                            //'complete' => 'function() {$("div#load").removeClass("loading");}',
+                            'type' => 'POST'
+                                )
+                        );
+                        ?>
+                    </li>
+
+
+                    <li>
+                        <?php
+                        echo CHtml::ajaxLink(
+                                'Award Details', array('user/awardDetails'), array('success' => 'js:function(data) {
+                                                    jQuery("div#currentTab").html(data);}',
+                            //'update'=>'#successMessage',
+                            //'beforeSend' => 'function() {alert("testing");}',
+                            //'validated' => 'function() {$("div#load").removeClass("loading");}',
+                            //'complete' => 'function() {$("div#load").removeClass("loading");}',
+                            'type' => 'POST'
+                                )
+                        );
+                        ?>
+                    </li>
+
+
+                    <li>
+                        <?php
                         echo CHtml::ajaxLink(
                                 'Submit Solution', array('user/submitSolution'), array('success' => 'js:function(data) {
                                                     jQuery("div#currentTab").html(data);}',
@@ -159,42 +193,12 @@ echo CHtml::ajaxLink(
                             'type' => 'POST'
                                 )
                         );
-?></li>
-
+                        ?>
+                    </li>
                 </ul>
             </div>
             <div id="currentTab">
-                        <?php $this->renderPartial('_mySolutions', true, false); ?>
-                <div id="newboxes2" class="newboxes"  style="display:none;">
-                    <div class="inside">
-                        <div class="boxes">
-                            <h3>Descriptions</h3>
-                            <p><?php echo $competition->description; ?></p>
-                            <h3>Specification</h3>
-                            <ul class="inContent">
-                                <li><?php echo $competition->solutionDescription; ?></li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-
-                <div id="newboxes3" class="newboxes"  style="display:none;">
-                    <div class="inside">
-                        <div class="boxes">
-                            <div class="bottom">
-                                <h6>Free Round of Drinks</h6>
-                                <p> Curabitur in enim vel nisl tincidunt tempus ut dapibus lacus. Vivamus venenatis libero sed massa bibendum aliquam. Fusce id dictum eros. Ut dignissim dolor nec lacus lobortis at bibendum felis tempus. Cras vitae diam ac nibh iaculis hendrerit. Nunc luctus nibh ac lorem commodo volutpat. In ipsum purus, vulputate ac vehicula vel, tristique in nisi. Proin aliquet tellus eu diam auctor mollis. Nam eget aliquet leo. </p>
-
-                                <p><img src="<?php echo Yii::app()->request->baseUrl; ?>/images/red-badge.png" alt="" width="48" height="48"></p>
-                            </div>
-                        </div>
-                        <p class="txtCenter"><strong>Still have questions? </strong></p>
-                        <p class="txtCenter"><a href="#" class="smBlueBtn" style="float:none; width:88px; margin:auto;">Message Host </a></p>
-                        <div class="clear"></div>
-                    </div>
-                </div>
-
-
+                <?php $this->renderPartial('_mySolutions', true, false); ?>
 
                 <div id="newboxes5" class="newboxes"  style="display:none;">
                     <div class="inside">

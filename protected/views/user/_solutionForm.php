@@ -5,7 +5,9 @@ $form = $this->beginWidget('CActiveForm', array(
         ));
 ?>
 
-
+<div class="newboxes">
+    <div class="inside">
+        <div class="boxes">
     <div class="formArea">
         <p><strong>Submission Name </strong></p>
         <p>
@@ -48,5 +50,7 @@ $form = $this->beginWidget('CActiveForm', array(
         <input name="Submit" type="submit" class="smBlueBtn" value="Submit Idea">
         <div class="clear"></div>
     </div>
-
+        </div>
+    </div>
+</div>
 <?php $this->endWidget(); ?>
