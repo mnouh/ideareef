@@ -6,7 +6,7 @@
                     <b>Start Date: </b><?php echo $data->startDate; ?> <br>
                     <b>End Date: </b><?php echo $data->endDate; ?></td>
                 <td class="view">
-                    <p><span>1000</span> <strong>Submissions</strong></p>
+                    <p><span><?php echo $data->solutionCount; ?></span> <strong>Submissions</strong></p>
                 </td>
 
             </tr>

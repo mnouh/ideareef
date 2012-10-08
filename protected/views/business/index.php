@@ -130,10 +130,9 @@
 
                 <?php
                 $this->widget('zii.widgets.ClistView', array(
-                    'dataProvider' => $dataProvider,
+                    'surgeDataProvider' => $surgeDataProvider,
                     'itemView' => '_surgeCenter',
                     'sortableAttributes' => array(
-                        'endDate',
                         'startDate'
                         )));
                 ?>    

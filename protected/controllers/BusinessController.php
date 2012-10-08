@@ -51,9 +51,14 @@ class BusinessController extends Controller {
                         array('condition'=>'businessId='.$model->id),
                         'sort'=>$sort,
                         'pagination' => array('pageSize' => 4)));
-          
+            
+            $surgeDataProvider= new CActiveDataProvider('Surge',
+                    array('criteria' => 
+                        array('condition'=>'businessId='.$model->id),
+                        'sort'=>$sort,
+                        'pagination' => array('pageSize' => 4)));
                     
-            $this->render('index', array('model' => $model, 'dataProvider' => $dataProvider));
+            $this->render('index', array('model' => $model, 'dataProvider' => $dataProvider, 'surgeDataProvider' => $surgeDataProvider));
         }
     }
     
