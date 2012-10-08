@@ -156,8 +156,6 @@ class AccountController extends Controller
             $model = new User('signup');
             
             
-            
-            
         // Uncomment the following line if AJAX validation is needed
         $this->performAjaxValidation($model, 'user-form');
 
@@ -199,6 +197,30 @@ class AccountController extends Controller
         public function actionRecover()
         {
             
+            if (isset($_GET['memberId']) && isset($_GET['tok']) && isset($_GET['status'])) {
+            $memberId = $_GET['memberId'];
+            $token = $_GET['tok'];
+            $status = $_GET['status'];
+            if (!empty($memberId) && !empty($token) && !empty($status)) {
+
+                if ($status == 'user') {
+                    $user = User::model()->findByPk($memberId);
+                    if ($user != null && $user->verifyCode == $token) {   
+                        $this->redirect(array('account/RecoveryChangePassword'));
+                    }
+                } elseif ($status == 'business') {
+                    $business = Business::model()->findByPk($memberId);
+                    
+                    if($business != null && $business->verifyCode == $token)
+                    {
+                        $this->redirect(array('account/RecoveryChangePassword'));
+                    }
+                    
+                } else {
+                    throw new CHttpException(404, 'The requested page does not exist.');
+                }
+            }
+        }
             
         }
         
@@ -226,13 +248,16 @@ class AccountController extends Controller
                             if($user === null) {
                                 $business = Business::model()->find('LOWER(email)=?', array(strtolower($model->email)));
                                 
-                                if($business != null)
+                                if($business != null) {
                                     $business->verifyCode = $this->createVerificationCode();
+                                    $business->verifyCodeDate = new CDbExpression('NOW()');
+                                }
                                         if($business->update())
                                             $this->sendAccountBusinessRecoveryConfirmation($business);    
                             }
                             else {  
                                 $user->verifyCode = $this->createVerificationCode();
+                                $user->verifyCodeDate = new CDbExpression('NOW()');
                                     if($user->update())
                                         $this->sendAccountUserRecoveryConfirmation($user);
                                         

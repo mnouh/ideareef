@@ -10,7 +10,7 @@
      <p>
          Changing your password is simple. Please use the link within 24 hours.
         
-         <a href="http://localhost/~mnouh/ideareef/account/recover/?memberId=<?php echo $model->id; ?>&tok=<?php echo $model->verifyCode;?>">http://www.ideareef.com/account/recover/?memberId=<?php echo $model->id; ?>&tok=<?php echo $model->verifyCode;?></a>
+         <a href="http://localhost/~mnouh/ideareef/account/recover/?memberId=<?php echo $model->id; ?>&status=user&tok=<?php echo $model->verifyCode;?>">http://www.ideareef.com/account/recover/?memberId=<?php echo $model->id; ?>&tok=<?php echo $model->verifyCode;?></a>
      </p>
     
     

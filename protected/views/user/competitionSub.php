@@ -152,7 +152,7 @@ $cs->registerScriptFile($baseUrl . '/js/jquery.autosize.js');
                     <li>
                         <?php
                         echo CHtml::ajaxLink(
-                                'Description', array('user/description'), array('success' => 'js:function(data) {
+                                'Description', array('user/description', 'id' => $competition->id), array('success' => 'js:function(data) {
                                                     jQuery("div#currentTab").html(data);}',
                             //'update'=>'#successMessage',
                             //'beforeSend' => 'function() {alert("testing");}',
@@ -168,7 +168,7 @@ $cs->registerScriptFile($baseUrl . '/js/jquery.autosize.js');
                     <li>
                         <?php
                         echo CHtml::ajaxLink(
-                                'Award Details', array('user/awardDetails'), array('success' => 'js:function(data) {
+                                'Award Details', array('user/awardDetails', 'id' => $competition->id), array('success' => 'js:function(data) {
                                                     jQuery("div#currentTab").html(data);}',
                             //'update'=>'#successMessage',
                             //'beforeSend' => 'function() {alert("testing");}',

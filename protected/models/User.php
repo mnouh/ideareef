@@ -199,6 +199,21 @@ class User extends CActiveRecord
         
         
     }
+    
+    public function checkVerificationCode(&$token)
+    {
+        $status = false;
+        if($this->verifyCode == $token) {
+            
+            $currentDate = new CDbExpression('NOW()');
+            if($currentDate <= $this->verifyCodeDate)
+                $status = true;
+            
+        }
+        
+        return $status;
+        
+    }
 
     /**
      * Generates the password hash.
@@ -254,6 +269,7 @@ class User extends CActiveRecord
             } 
             $this->lookup = $str1;
             $this->joinedDate = new CDbExpression('NOW()');
+            $this->verifyCodeDate = new CDbExpression('NOW()');
             
             
             

@@ -376,17 +376,18 @@ class UserController extends Controller {
         $this->renderPartial('_mySolutions', true, false);
     }
     
-    public function actionDescription()
+    public function actionDescription($id)
     {
-        
-        $this->renderPartial('_description', true, false);
+        echo "Testing";
+        $model = User::model()->findByPk(Yii::app()->user->id);
+        $this->renderPartial('_description', array('model' => $model, 'competition' => $this->loadCompetitionModel($id)), false, true);
     }
     
     
-    public function actionAwardDetails()
+    public function actionAwardDetails($id)
     {
-        
-        $this->renderPartial('_awardDetails', true, false);
+        $model = User::model()->findByPk(Yii::app()->user->id);
+        $this->renderPartial('_awardDetails', array('model' => $model, 'competition' => $this->loadCompetitionModel($id)),false, true);
     }
     
     
