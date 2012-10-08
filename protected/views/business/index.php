@@ -115,7 +115,7 @@
                         'endDate',
                         'startDate'
                         )));
-                ?>    
+                ?>
 
                 <div class="clear"></div>
 
@@ -130,7 +130,7 @@
 
                 <?php
                 $this->widget('zii.widgets.ClistView', array(
-                    'surgeDataProvider' => $surgeDataProvider,
+                    'dataProvider' => $surgeDataProvider,
                     'itemView' => '_surgeCenter',
                     'sortableAttributes' => array(
                         'startDate'
