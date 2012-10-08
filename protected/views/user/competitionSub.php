@@ -5,7 +5,6 @@ $cs = Yii::app()->getClientScript();
 $cs->registerScriptFile($baseUrl . '/js/jquery.autosize.js');
 ?>
 
-
 <div id="InnerContent">
     <div class="floatLeft">
         <div class="up">
@@ -136,7 +135,7 @@ $cs->registerScriptFile($baseUrl . '/js/jquery.autosize.js');
                     <li>
                         <?php
                         echo CHtml::ajaxLink(
-                                'My Solutions', array('user/mySolutions'), array('success' => 'js:function(data) {
+                                'My Solutions', array('user/mySolutions', 'id' => $competition->id), array('success' => 'js:function(data) {
                                                     jQuery("div#currentTab").html(data);}',
                             //'update'=>'#successMessage',
                             //'beforeSend' => 'function() {alert("testing");}',
@@ -198,7 +197,8 @@ $cs->registerScriptFile($baseUrl . '/js/jquery.autosize.js');
                 </ul>
             </div>
             <div id="currentTab">
-                <?php $this->renderPartial('_mySolutions', true, false); ?>
+                
+                <?php $this->renderPartial('_mySolutions', array('mySolutions' => $mySolutions), false, true); ?>
 
                 <div id="newboxes5" class="newboxes"  style="display:none;">
                     <div class="inside">

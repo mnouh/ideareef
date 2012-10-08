@@ -8,6 +8,17 @@
         });
     });
 </script>
+
+<?php
+
+foreach($mySolutions as $solution)
+{
+    
+    echo $solution->name;
+}
+
+?>
+
 <div id="newboxes1" class="newboxes">
 
                 <div class="inside">

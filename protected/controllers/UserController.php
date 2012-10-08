@@ -344,7 +344,15 @@ class UserController extends Controller {
     public function actionCompetitionSub($id) {
             
             $model = User::model()->findByPk(Yii::app()->user->id);
-            $this->render('competitionSub', array('model' => $model, 'competition' => $this->loadCompetitionModel($id)));
+            $mySolutions = Solution::model()->findAll(array(
+                    'select' => '*',
+                    'condition' => 'userId=:userId AND competitionId =:competitionId',
+                    'params' => array(':userId' => $model->id, ':competitionId' => $id),
+                        ));
+            
+            //
+            ////$model->solutions->with('.id')->findByPk($id);
+            $this->render('competitionSub', array('model' => $model, 'mySolutions' => $mySolutions, 'competition' => $this->loadCompetitionModel($id)));
         
     }
     
@@ -370,10 +378,17 @@ class UserController extends Controller {
            // $this->render('_solutionForm', array('solution' => $solution));
     }
     
-    public function actionMySolutions()
+    public function actionMySolutions($id)
     {
         
-        $this->renderPartial('_mySolutions', true, false);
+        $model = User::model()->findByPk(Yii::app()->user->id);
+        $mySolutions = Solution::model()->findAll(array(
+                    'select' => '*',
+                    'condition' => 'userId=:userId AND competitionId =:competitionId',
+                    'params' => array(':userId' => $model->id, ':competitionId' => $id),
+                        ));
+        
+        $this->renderPartial('_mySolutions', array('mySolutions' => $mySolutions), false, true);
     }
     
     public function actionDescription($id)
