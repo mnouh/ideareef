@@ -378,7 +378,6 @@ class UserController extends Controller {
     
     public function actionDescription($id)
     {
-        echo "Testing";
         $model = User::model()->findByPk(Yii::app()->user->id);
         $this->renderPartial('_description', array('model' => $model, 'competition' => $this->loadCompetitionModel($id)), false, true);
     }
