@@ -1,0 +1,1 @@
+<?php echo Yii::app()->s3upload->Form('', 'userProfileImages', '#', 10000); ?>

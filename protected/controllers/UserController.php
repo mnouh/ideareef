@@ -26,7 +26,7 @@ class UserController extends Controller {
                 'users' => array('*'),
             ),
             array('allow', // allow authenticated user to perform 'create' and 'update' actions
-                'actions' => array('index', 'changeName', 'changeUsername', 'changepassword', 'profile', 'editAboutMe', 'editCurrentCity', 'editCurrentState', 'mySolutions', 'changeZipCode', 'submitSolution' ,'create', 'update', 'completeProfile', 'competition', 'competitionSub', 'description', 'awardDetails'),
+                'actions' => array('index', 'changeName', 'upload', 'changeUsername', 'changepassword', 'profile', 'editAboutMe', 'editCurrentCity', 'editCurrentState', 'mySolutions', 'changeZipCode', 'submitSolution' ,'create', 'update', 'completeProfile', 'competition', 'competitionSub', 'description', 'awardDetails'),
                 'users' => array('@'),
             ),
             /*array('allow', // allow admin user to perform 'admin' and 'delete' actions
@@ -436,6 +436,18 @@ class UserController extends Controller {
         $signUpEmail->setSubject('Welcome - IdeaReef');
         $signUpEmail->addTo($model->email);
         Yii::app()->mail->send($signUpEmail);
+    }
+    
+    public function actionUpload()
+    {
+        
+        if (isset($_GET['key']))
+        {
+            echo $_GET['key'];
+            
+        }
+        
+        $this->render('upload');
     }
     
     

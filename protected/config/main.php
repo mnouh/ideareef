@@ -46,6 +46,25 @@ return array(
 			'allowAutoLogin'=>true,
                         'class'=>'WebUser',
 		),
+        
+                'file'=>array(
+                        'class'=>'application.extensions.file.CFile',
+                ),
+            
+            
+                's3upload' => array(
+                            'class'=>'ext.s3upload.CS3Upload',
+                            'aKey'=>'AKIAJ4XVAQWX3SVEAOOQ', 
+                            'sKey'=>'bJX5NWKXPqd2mpibP5BQtoG/g9nhcolNBCS1ms1m',
+                            'bucket' =>'ideareef',
+                ),
+            
+                's3' => array(
+                             'class'=>'ES3',
+                             'aKey'=>'AKIAJ4XVAQWX3SVEAOOQ', 
+                             'sKey'=>'bJX5NWKXPqd2mpibP5BQtoG/g9nhcolNBCS1ms1m',
+                ),
+                
 		// uncomment the following to enable URLs in path-format
 		
 		'urlManager'=>array(
@@ -117,11 +136,11 @@ return array(
 					'levels'=>'error, warning',
 				),
 				// uncomment the following to show log messages on web pages
-				/*
+				
 				array(
 					'class'=>'CWebLogRoute',
 				),
-				*/
+				
 			),
 		),
 	),
