@@ -29,6 +29,7 @@ class AccountController extends Controller
 	 */
 	public function actionIndex()
 	{
+            $this->layout = 'index';
 		// renders the view file 'protected/views/site/index.php'
 		// using the default layout 'protected/views/layouts/main.php'
 		$this->render('index');
@@ -58,6 +59,7 @@ class AccountController extends Controller
         
         public function actionCompetitions()
 	{
+            //$this->layout='privateUser';
 		// renders the view file 'protected/views/site/index.php'
 		// using the default layout 'protected/views/layouts/main.php'
 		$this->render('competitions');
@@ -196,7 +198,7 @@ class AccountController extends Controller
         
         public function actionRecover()
         {
-            
+    
             if (isset($_GET['memberId']) && isset($_GET['tok']) && isset($_GET['status'])) {
             $memberId = $_GET['memberId'];
             $token = $_GET['tok'];
@@ -205,14 +207,18 @@ class AccountController extends Controller
 
                 if ($status == 'user') {
                     $user = User::model()->findByPk($memberId);
-                    if ($user != null && $user->verifyCode == $token) {   
+                    if ($user != null && $user->isVerificationCodeValid($token)) {
+                        Yii::app()->user->setState('accountType', 'user');
+                        Yii::app()->user->setState('memberId', $user->id);
                         $this->redirect(array('account/RecoveryChangePassword'));
                     }
                 } elseif ($status == 'business') {
                     $business = Business::model()->findByPk($memberId);
                     
-                    if($business != null && $business->verifyCode == $token)
+                    if($business != null && $business->isVerificationCodeValid($token))
                     {
+                        Yii::app()->user->setState('accountType', 'business');
+                        Yii::app()->user->setState('memberId', $business->id);
                         $this->redirect(array('account/RecoveryChangePassword'));
                     }
                     
@@ -221,6 +227,10 @@ class AccountController extends Controller
                 }
             }
         }
+        
+            
+        
+        
             
         }
         
@@ -326,24 +336,86 @@ class AccountController extends Controller
         
         public function actionRecoveryChangePassword()    
         {
-        
             $model = new RecoveryChangePasswordForm;
-            /*
-        // if it is ajax validation request
-       $this->performAjaxValidation($model, 'recovery-change-password-form');
+            $this->performAjaxValidation($model, 'recovery-change-password-form');
         
-            // collect user input data
+            
+            $memberId = Yii::app()->user->getState('memberId');
+            $accountType = Yii::app()->user->getState('accountType');
+            
+            if(isset($memberId) && isset($accountType)) {
+                
+                if(!empty($memberId) && !empty($accountType)) {
+              
 		if(isset($_POST['RecoveryChangePasswordForm']))
 		{
 			$model->attributes=$_POST['RecoveryChangePasswordForm'];
                         
                         if($model->validate()) {
                             
+                            if($accountType == 'user') {
+                                
+                                $user = User::model()->findByPk($memberId);
+                                if($user === null)
+                                    throw new CHttpException(404, 'The requested page does not exist.');
+                                else {
+                                    
+                                    if($user->changePasswordRecovery($model->password) && $user->update()) {
+                                        
+                                        $loginUser = new LoginForm;
+                                        $loginUser->password = $model->password;
+                                        $loginUser->email = $user->email;
+                                        if($loginUser->validate() && $loginUser->login())
+                                        {
+                                            Yii::app()->user->setState('accountType', null);
+                                            Yii::app()->user->setState('memberId', null);
+                                            $this->redirect(array('user/'));
+                                            
+                                        }
+                                    }
+                                        
+                                }
+                                
+                            }
+                            elseif($accountType == 'business') {
+                                
+                                $business = Business::model()->findByPk($memberId);
+                                if($business === null)
+                                    throw new CHttpException(404, 'The requested page does not exist.');
+                                else {
+                                    
+                                    if($business->changePasswordRecovery($model->password) && $business->update()) {
+                                        
+                                        $loginUser = new LoginForm;
+                                        $loginUser->password = $model->password;
+                                        $loginUser->email = $business->email;
+                                        if($loginUser->validate() && $loginUser->login())
+                                        {
+                                            Yii::app()->user->setState('accountType', null);
+                                            Yii::app()->user->setState('memberId', null);
+                                            $this->redirect(array('business/'));
+                                            
+                                        }
+                                    }
+                                        
+                                }
+                                
+                            }
+                            else {
+                                throw new CHttpException(404, 'The requested page does not exist.');
+                                
+                            }
+                            
                         }
                 }
-              */              
+                           
             
-            $this->render('recovery-change-password', array('model' => $model));
+                $this->render('recovery-change-password', array('model' => $model));
+                
+            
+                }
+            
+            }
             
         }
         

@@ -1,7 +1,7 @@
 <body style="background-color:#D8F2F8;">
 <div style="font-family:Arial, Helvetica, sans-serif; font-size:12px; line-height:18px; border:9px solid #0086AD;-moz-border-radius:9px; -webkit-border-radius:9px; width:600px; margin:auto; background:#fff; position:relative;">
 <div style="padding:10px;">
-<div style="text-align:center !important; padding:10px 0px;"><img src="<?php echo Yii::app()->baseUrl; ?>/images/logo.png" alt="" width="261" height="54" /></div>
+<div style="text-align:center !important; padding:10px 0px;"><img src="http://www.ideareef.com/images/logo.png" alt="" width="261" height="54" /></div>
 <div style="background-color:#BD1E26; color:#fff; font-family:Georgia, 'Times New Roman', Times, serif; font-size:24px; line-height:28px; padding:10px; text-align:center !important; -moz-border-radius:5px; -webkit-border-radius:5px; position:absolute; top:91px; left:-20px; width:620px;">Account Recovery</div>
 <div style="padding:15px; padding-top:60px; padding-bottom:0px;">
   

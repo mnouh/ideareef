@@ -20,8 +20,8 @@ class RecoveryChangePasswordForm extends CFormModel
 	{
 		return array(
 			// username and password are required
-			array('password, changePassword', 'required', 'message' => '<b>&#10006;</b> &nbsp; {attribute} is a required field.'),
-                        array('confirmPassword', 'compare', 'compareAttribute'=>'password', 'on' => 'signup'),
+			array('password, confirmPassword', 'required', 'message' => '<b>&#10006;</b> &nbsp; {attribute} is a required field.'),
+                        array('confirmPassword', 'compare', 'compareAttribute'=>'password'),
 		);
 	}
         

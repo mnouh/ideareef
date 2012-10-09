@@ -29,7 +29,7 @@
             <tr>
               <td><table width="100%" cellpadding="0" cellspacing="1" class="listTable extra">
                 <tr>
-                  <td class="imageBox"><img src="images/no-image-female.gif" alt=""></td>
+                  <td class="imageBox"><img src="<?php echo Yii::app()->request->baseUrl; ?>/images/no-image-female.gif" alt=""></td>
                   <td><a href="#">Weekly Shot Wheel Competition</a><br>
                       <strong>Tom and Marty's</strong> (Binghamton) <br>
                     10 Challengers - None of your network <br>
@@ -38,7 +38,7 @@
                   <td class="view"><p><span>1000</span> <strong>Points</strong></p>
                       <p><span>1</span> <strong>Badge</strong></p></td>
                   <td width="110" class="txtCenter"><h3 class="price">$10,000</h3>
-                      <div class="ticker"><img src="images/bar.png" alt="" width="40"></div>
+                      <div class="ticker"><img src="<?php echo Yii::app()->request->baseUrl; ?>/images/bar.png" alt="" width="40"></div>
                     1 Month remains </td>
                 </tr>
                 <tr>
@@ -50,7 +50,7 @@
             <tr>
               <td><table width="100%" cellpadding="0" cellspacing="1" class="listTable extra">
                 <tr>
-                  <td class="imageBox"><img src="images/no-image-female.gif" alt=""></td>
+                  <td class="imageBox"><img src="<?php echo Yii::app()->request->baseUrl; ?>/images/no-image-female.gif" alt=""></td>
                   <td><a href="#">Weekly Shot Wheel Competition</a><br>
                       <strong>Tom and Marty's</strong> (Binghamton) <br>
                     10 Challengers - None of your network <br>
@@ -59,7 +59,7 @@
                   <td class="view"><p><span>1000</span> <strong>Points</strong></p>
                       <p><span>1</span> <strong>Badge</strong></p></td>
                   <td width="110" class="txtCenter"><h3 class="price">$10,000</h3>
-                      <div class="ticker"><img src="images/bar.png" alt="" width="20"></div>
+                      <div class="ticker"><img src="<?php echo Yii::app()->request->baseUrl; ?>/images/bar.png" alt="" width="20"></div>
                     1 Month remains </td>
                 </tr>
                 <tr>
@@ -71,7 +71,7 @@
             <tr>
               <td><table width="100%" cellpadding="0" cellspacing="1" class="listTable extra">
                 <tr>
-                  <td class="imageBox"><img src="images/no-image-female.gif" alt=""></td>
+                  <td class="imageBox"><img src="<?php echo Yii::app()->request->baseUrl; ?>/images/no-image-female.gif" alt=""></td>
                   <td><a href="#">Weekly Shot Wheel Competition of Binghamton Univesity</a> <br>
                       <strong>Tom and Marty's</strong> (Binghamton) <br>
                     10 Challengers - None of your network <br>
@@ -80,7 +80,7 @@
                   <td class="view"><p><span>1000</span> <strong>Points</strong></p>
                       <p><span>1</span> <strong>Badge</strong></p></td>
                   <td width="110" class="txtCenter"><h3 class="price">$10,000</h3>
-                      <div class="ticker"><img src="images/bar.png" alt="" width="20"></div>
+                      <div class="ticker"><img src="<?php echo Yii::app()->request->baseUrl; ?>/images/bar.png" alt="" width="20"></div>
                     1 Month remains </td>
                 </tr>
                 <tr>
@@ -92,7 +92,7 @@
             <tr>
               <td><table width="100%" cellpadding="0" cellspacing="1" class="listTable extra">
                 <tr>
-                  <td class="imageBox"><img src="images/no-image-female.gif" alt=""></td>
+                  <td class="imageBox"><img src="<?php echo Yii::app()->request->baseUrl; ?>/images/no-image-female.gif" alt=""></td>
                   <td><a href="#">Weekly Shot Wheel Competition</a><br>
                       <strong>Tom and Marty's</strong> (Binghamton) <br>
                     10 Challengers - None of your network <br>
@@ -101,7 +101,7 @@
                   <td class="view"><p><span>1000</span> <strong>Points</strong></p>
                       <p><span>1</span> <strong>Badge</strong></p></td>
                   <td width="110" class="txtCenter"><h3 class="price">$10,000</h3>
-                      <div class="ticker"><img src="images/bar.png" alt="" width="20"></div>
+                      <div class="ticker"><img src="<?php echo Yii::app()->request->baseUrl; ?>/images/bar.png" alt="" width="20"></div>
                     1 Month remains </td>
                 </tr>
                 <tr>
@@ -113,7 +113,7 @@
             <tr>
               <td><table width="100%" cellpadding="0" cellspacing="1" class="listTable extra">
                 <tr>
-                  <td class="imageBox"><img src="images/no-image-female.gif" alt=""></td>
+                  <td class="imageBox"><img src="<?php echo Yii::app()->request->baseUrl; ?>/images/no-image-female.gif" alt=""></td>
                   <td><a href="#">Weekly Shot Wheel Competition</a><br>
                       <strong>Tom and Marty's</strong> (Binghamton) <br>
                     10 Challengers - None of your network <br>
@@ -122,7 +122,7 @@
                   <td class="view"><p><span>1000</span> <strong>Points</strong></p>
                       <p><span>1</span> <strong>Badge</strong></p></td>
                   <td width="110" class="txtCenter"><h3 class="price">$10,000</h3>
-                      <div class="ticker"><img src="images/bar.png" alt="" width="20"></div>
+                      <div class="ticker"><img src="<?php echo Yii::app()->request->baseUrl; ?>/images/bar.png" alt="" width="20"></div>
                     1 Month remains </td>
                 </tr>
                 <tr>
@@ -145,7 +145,7 @@
   </div>
   <div class="contents">
   <div class="items">
-  <div class="fLeft"><img src="images/no-image-female.gif" alt=""></div>
+  <div class="fLeft"><img src="<?php echo Yii::app()->request->baseUrl; ?>/images/no-image-female.gif" alt=""></div>
   <div class="fRight">
     <h2><a href="#">Tom and Marty's</a></h2>
     <p><a href="#">Weekly Short Wheel Competion </a></p>
@@ -153,7 +153,7 @@
   <div class="clear"></div>
   </div>
   <div class="items">
-    <div class="fLeft"><img src="images/no-image-female.gif" alt=""></div>
+    <div class="fLeft"><img src="<?php echo Yii::app()->request->baseUrl; ?>/images/no-image-female.gif" alt=""></div>
     <div class="fRight">
       <h2><a href="#">Tom and Marty's</a></h2>
       <p><a href="#">Weekly Short Wheel Competion </a></p>
@@ -161,7 +161,7 @@
     <div class="clear"></div>
   </div>
   <div class="items">
-    <div class="fLeft"><img src="images/no-image-female.gif" alt=""></div>
+    <div class="fLeft"><img src="<?php echo Yii::app()->request->baseUrl; ?>/images/no-image-female.gif" alt=""></div>
     <div class="fRight">
       <h2><a href="#">Tom and Marty's</a></h2>
       <p><a href="#">Weekly Short Wheel Competion </a></p>
@@ -169,7 +169,7 @@
     <div class="clear"></div>
   </div>
   <div class="items">
-    <div class="fLeft"><img src="images/no-image-female.gif" alt=""></div>
+    <div class="fLeft"><img src="<?php echo Yii::app()->request->baseUrl; ?>/images/no-image-female.gif" alt=""></div>
     <div class="fRight">
       <h2><a href="#">Tom and Marty's</a></h2>
       <p><a href="#">Weekly Short Wheel Competion </a></p>
@@ -177,7 +177,7 @@
     <div class="clear"></div>
   </div>
   <div class="items last">
-    <div class="fLeft"><img src="images/no-image-female.gif" alt=""></div>
+    <div class="fLeft"><img src="<?php echo Yii::app()->request->baseUrl; ?>/images/no-image-female.gif" alt=""></div>
     <div class="fRight">
       <h2><a href="#">Tom and Marty's</a></h2>
       <p><a href="#">Weekly Short Wheel Competion </a></p>

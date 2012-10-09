@@ -20,7 +20,7 @@
     
     <body>
 <div id="Wrapper">
-<div class="holder">
+<div class="HomeHolder">
 <div id="Header">
   <h1 class="logo"><a href="<?php echo Yii::app()->request->baseUrl; ?>"IdeaReef</a></h1>
   <?php

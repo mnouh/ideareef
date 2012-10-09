@@ -97,6 +97,26 @@ class Business extends CActiveRecord
     public function validatePassword($password) {
         return $this->hashPassword($password, $this->salt) === $this->password;
     }
+    
+    /**
+     * Generated a random Verification Hash Code
+     * @return string 
+     */
+    public function createVerificationCode() {
+            $uniqueID = str_shuffle(uniqid());
+            $uniqueID = $uniqueID . '_' . uniqid();
+            $randomGenerated = '';
+
+            for ($i = 0; $i < strlen($uniqueID); $i++) {
+                $x = rand(0, 1);
+                if ($x == 0)
+                    $randomGenerated = $randomGenerated . strtoupper($uniqueID[$i]);
+                else
+                    $randomGenerated = $randomGenerated . $uniqueID[$i];
+            }
+
+        return $randomGenerated;
+    }
 
 
     /**
@@ -186,6 +206,43 @@ class Business extends CActiveRecord
 
 
         return parent::beforeSave();
+    }
+    
+    public function changePasswordRecovery(&$newPassword) {
+     
+        
+            $this->salt = $this->generateSalt();
+            $this->password = $this->hashPassword($newPassword, $this->salt);
+            $this->verifyCode = $this->createVerificationCode();
+            $this->verifyCodeDate = new CDbExpression('NOW()');
+            return true;
+        
+    }
+    
+    
+    /**
+     * Pass in the verification code token, then check if the expiration
+     * date has past for the verification code. Expiration Date is 24 hours
+     * after verification code was created.
+     * @param type $token
+     * @return boolean 
+     */
+    public function isVerificationCodeValid(&$token)
+    {
+        $status = false;
+        if($this->verifyCode == $token) {
+            
+                        $currentDateTime = date("Y-m-d, H:i:s");
+                        $verifyCodeCreated = strtotime($this->verifyCodeDate);
+                        $verifyCodeExpires = strtotime('+1 day', $verifyCodeCreated);
+                        $currentDateTime = strtotime($currentDateTime);
+                        
+                        if($currentDateTime <= $verifyCodeExpires)
+                            $status = true;
+        }
+        
+        return $status;
+        
     }
         
         

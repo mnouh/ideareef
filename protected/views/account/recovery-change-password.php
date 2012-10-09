@@ -18,7 +18,7 @@ $this->pageTitle = Yii::app()->name . ' - Change Password Recovery';
 )); ?>
 
 <div id="status" class="blueNotif" style="margin:auto; width:500px;">
-    <div>Now its time to change your password! Please a tough one. 
+    <div>Now its time to change your password! Please pick a tough one. 
     <div id="close" class="close" style="cursor:pointer; float:right"><img src="<?php echo Yii::app()->baseUrl; ?>/images/close.png" alt="" width="15" height="15" border="0"></div>
     </div>
 </div>
