@@ -94,11 +94,8 @@
             <div class="close"><a href="#"><img src="<?php echo Yii::app()->request->baseUrl; ?>/images/close.png" alt="" width="15" height="15" border="0"></a></div>
         </div>
 
-        <p><strong>Share News with followers         </strong></p>
-        <p>
-
-        </p>
-
+        <p><strong>Share News with followers</strong></p>
+        
         <div class="boxes">
             <div class="top">
                 <h2>Your Open Competitions</h2>
@@ -144,11 +141,15 @@
     </div>
     <div class="floatRight">
         <div>
-            <a href="#" class="smBlueBtnHost">Launch a New Competition</a>
+            
+            <?php echo CHtml::link('Launch a New Competition',array('competition/create'), array('class'=>'smBlueBtnHost')); ?>
+            
         </div>
         <div class="clear" style="padding:2px;"></div>
         <div>
-            <a href="#" class="smBlueBtnHost">Launch a New Storm</a>
+            
+            <?php echo CHtml::link('Launch a New Surge',array('competition/create'), array('class'=>'smBlueBtnHost')); ?>
+            
         </div>
         <div class="clear" style="padding:2px;"></div>
         <div class="box">

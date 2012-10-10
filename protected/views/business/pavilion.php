@@ -298,7 +298,7 @@
                         <div class="bottom">
                             <table width="100%" cellpadding="0" cellspacing="1" class="listTable">
                                 <tr class="other">
-                                    <td class="txtCenter"><a href="#"><img src="<?php echo Yii::app()->request->baseUrl; ?>/images/red-badge.png" alt="" width="48" height="48"></a></td>
+                                    <td class="txtCenter"><img src="<?php echo Yii::app()->request->baseUrl; ?>/images/red-badge.png" alt="" width="48" height="48"></td>
                                     <td class="txtCenter"><img src="<?php echo Yii::app()->request->baseUrl; ?>/images/green-badge.png" alt="" width="48" height="48"></td>
                                     <td class="txtCenter"><img src="<?php echo Yii::app()->request->baseUrl; ?>/images/blue-badge.png" alt="" width="48" height="48"></td>
                                     <td class="txtCenter"><img src="<?php echo Yii::app()->request->baseUrl; ?>/images/pink-badge.png" alt="" width="48" height="48"></td>

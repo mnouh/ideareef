@@ -270,7 +270,11 @@ echo $form->errorSummary($model);
 
     <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi turpis nisi, sodales ut ornare non, dictum feugiat sapien. Vestibulum cursus vehicula mattis. Integer iaculis convallis massa, non elementum felis mattis ut. Phasellus porttitor, nibh eget eleifend dapibus, turpis leo condimentum dolor, vel feugiat elit risus eget neque.   </p>
     <p>&nbsp;</p>
+    
+    
     <input name="Submit" type="submit" class="smBlueBtn" value="Host Now"> 
+
+    
     <div class="clear"></div> 
 
 </div>
