@@ -24,11 +24,11 @@ class BusinessController extends Controller {
         return array(
             
             array('allow', // allow all users to perform 'index' and 'view' actions
-                'actions' => array('signup'),
+                'actions' => array('signup', 'pavilion'),
                 'users' => array('*'),
             ),
             array('allow', // allow authenticated user to perform 'create' and 'update' actions
-                'actions' => array('index', 'changeUsername', 'changepassword', 'create', 'update', 'pavilion', 'pavilionEdit', 'completeProfile', 'edittext', 'editAboutUs', 'competition', 'competitionDetail'),
+                'actions' => array('index', 'changeUsername', 'changepassword', 'create', 'update', 'pavilionEdit', 'completeProfile', 'edittext', 'editAboutUs', 'competition', 'competitionDetail'),
                 'users' => array('@'),
             ),
             /*array('allow', // allow admin user to perform 'admin' and 'delete' actions
@@ -229,10 +229,17 @@ class BusinessController extends Controller {
     }
 
     
-     public function actionPavilion() {
-        if(Yii::app()->user->isBusiness){
-            $model = Business::model()->findByPk(Yii::app()->user->id);
-            
+     public function actionPavilion($id) {
+         
+         
+         $model = Business::model()->findByPK($id);
+         if($model === null){
+                throw new CException('404', 'Could not find the page requested');
+         }
+         
+         else {
+             
+             if(!Yii::app()->user->isGuest && (Yii::app()->user->isBusiness && (Yii::app()->user->id == $model->id))) {
             $sort=new CSort();
             $sort->attributes = array('*');
             $dataProvider= new CActiveDataProvider('Competition', 
@@ -240,10 +247,32 @@ class BusinessController extends Controller {
                         array('condition'=>'businessId='.$model->id),
                         'sort'=>$sort,
                         'pagination' => array('pageSize' => 4)));           
+            $this->render('pavilionEdit', array('model' => $model, 'dataProvider' => $dataProvider));
+            }
+            
+            else {
+                if(!Yii::app()->user->isGuest && Yii::app()->user->isBusiness) $this->layout = 'privateUser';
+                elseif(!Yii::app()->user->isGuest && Yii::app()->user->isBusiness) $this->layout = 'privateBusiness';
+                else $this->layout = 'public';
+            $sort=new CSort();
+            $sort->attributes = array('*');
+            $dataProvider= new CActiveDataProvider('Competition',
+                    array('criteria' => 
+                        array('condition'=>'businessId='.$model->id),
+                        'sort'=>$sort,
+                        'pagination' => array('pageSize' => 4)));           
             $this->render('pavilion', array('model' => $model, 'dataProvider' => $dataProvider));
+            }
+             
+             
+         }
          
+         
+         
+         
+        
         }
-    }
+    
     
     public function actionPavilionEdit() {
         if(Yii::app()->user->isBusiness){

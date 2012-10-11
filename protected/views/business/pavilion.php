@@ -93,7 +93,7 @@
         <div class="topArea">
             <div class="lft"><img src="<?php echo Yii::app()->request->baseUrl; ?>/images/res.png" alt="" width="200" height="200"></div>
             <div class="mid"> 
-                <p><a href="#" class="post">Tom and Marty's Pub &amp; Restaurant</a><br>
+                <p><a href="#" class="post"><?php echo $model->name; ?></a><br>
                     123 State Street<br>
                     Binghamton, NY 13905</p>
                 <p><a href="#" class="smBlueBtn">Join Reef </a></p>
@@ -110,7 +110,7 @@
         <div class="bottomArea">
             <div class="topmenu">
                 <ul>
-                    <li><a id="myHeader1" href="javascript:showonlyone('newboxes1');">Pavilion</a></li>
+                    <li><a id="myHeader1" href="javascript:showonlyone('newboxes1');">Profile</a></li>
                     <li><a id="myHeader2" href="javascript:showonlyone('newboxes2');">Recent Activity</a></li>
                     <li><a id="myHeader3" href="javascript:showonlyone('newboxes3');">Information</a></li>
                     <li><a id="myHeader3" href="javascript:showonlyone('newboxes4');">Statistics</a></li>

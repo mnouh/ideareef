@@ -25,7 +25,7 @@
                     <div class="floatRight">
                         <ul>
                             <li><a href="#"><?php echo CHtml::link('Home', Yii::app()->request->baseUrl . '/business'); ?></a></li>
-                            <li><a href="#"><?php echo CHtml::link('Pavilion', Yii::app()->request->baseUrl . '/business/pavilion'); ?></a></li>
+                            <li><a href="#"><?php echo CHtml::link('Profile', Yii::app()->request->baseUrl . '/business/pavilion'); ?></a></li>
                             <li>
 <?php echo CHtml::link('Treasurey <span>1</span>', Yii::app()->request->baseUrl . '/aboutus', array('class' => 'last')); ?>
 
