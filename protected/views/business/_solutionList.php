@@ -6,7 +6,7 @@
             <td class="txtAreaRight"><p><a href="#"><?php echo $data->name;?> </a> by <a href="#"><?php echo $data->userSubmit->firstName . " " . $data->userSubmit->lastName;?></a> (Binghamton)</p>
                 </td>
             <td class="subscription">
-                <span>153</span> <strong>Votes</strong><br>(+10 today) 
+                <span><?php echo $data->vote;?></span> <strong>Votes</strong><br>(+10 today) 
             </td>
         </tr>
     </table>

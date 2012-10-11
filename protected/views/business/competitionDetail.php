@@ -93,7 +93,7 @@
         <div class="topArea">
             <div class="lft"><img src="<?php echo Yii::app()->request->baseUrl; ?>/images/res.png" alt="" width="200" height="200"></div>
             <div class="mid">
-                <p><a href="#" class="post"><?php echo $model->name;?></a><br>
+                <p><?php echo $model->name;?><br>
                     <strong>Tom &amp; Marty's Pub</strong>, 
                     Binghamton, NY 13905<br>
                     355 Challanges - 303 in your Network<br>

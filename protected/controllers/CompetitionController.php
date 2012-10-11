@@ -73,7 +73,7 @@ class CompetitionController extends Controller
 			$model->attributes=$_POST['Competition'];
                         
 			if($model->save())
-				$this->redirect(array('view','id'=>$model->id));
+				$this->redirect(array('business/competitionDetail','id'=>$model->id));
 		}
 
 		$this->render('create',array(
