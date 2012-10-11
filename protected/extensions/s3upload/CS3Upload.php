@@ -34,8 +34,8 @@ class CS3Upload  extends CApplicationComponent
 		}
                 
                 
-		$params = Yii::app()->s3->getHttpUploadPostParams($bucket, $uri, S3::ACL_PRIVATE, 3600, $maxFileSize, $redirect);
-
+		$params = Yii::app()->s3->call(getHttpUploadPostParams($bucket, $uri, S3::ACL_PRIVATE, 3600, $maxFileSize, $redirect));
+                
 		return '<form action="https://'.$bucket.'.s3.amazonaws.com/" method="post" enctype="multipart/form-data">
 				  <input type="hidden" name="key" value="'.$params->key.'">
 				  <input type="hidden" name="AWSAccessKeyId" value="'.$params->AWSAccessKeyId.'">
