@@ -20,9 +20,22 @@
 <div class="type"><img src="<?php echo Yii::app()->request->baseUrl; ?>/images/bronze-profile.png"></div>
 </div>
 <div class="fRight">
-  <h2><a href="#">Chris Paquette</a></h2>
-  <p class="pav"><a href="#"><strong>Cornell University</strong> (Edit) <br>
-    Binghamton, NY</a></p>
+  <h2><a href="#"><?php echo $model->firstName.' '.$model->lastName ?></a></h2>
+  <p class="pav"><a href="#">
+          <strong> 
+              <?php if($model->university != null)
+                    { 
+                        echo $model->university;
+                    }
+                    else
+                    {
+                        echo "Enter a school"; 
+                    }
+              ?>
+          </strong> (Edit) <br>
+    Binghamton, NY <br>
+    
+    Date Joined: <?php echo date("m.d.y", strtotime($model->joinedDate)); ?> </a></p>
   <ul>
     <li><a href="#">Edit Profile </a> </li>
     <li></li>
