@@ -36,6 +36,12 @@ class AccountController extends Controller
                 
 	}
         
+        public function actionUpdate()
+        {
+            
+            $this->render('update');
+        }
+        
         
         /**
 	 * This is the default 'index' action that is invoked

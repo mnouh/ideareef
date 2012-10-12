@@ -82,6 +82,7 @@ return array(
                                 array('api/competitions', 'pattern' => 'api/<model:\w+>', 'verb' => 'POST'),
                                 '<controller:\w+>/<action:\w+>'=>'<controller>/<action>',
                                 'aboutus' => 'account/aboutus',
+                                'update' => 'account/update',
                                 'companies' => 'account/business',
                                 'competition' => 'competition/index',
                                 'login' => 'account/login',
