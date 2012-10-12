@@ -1,6 +1,6 @@
 $(document).ready(function() {
 
-     $('.aboutus').editable('http://localhost/~mnouh/ideareef/business/editAboutUs', { 
+     $('.aboutus').editable('http://www.beta.ideareef.com/business/editAboutUs', { 
          type      : 'textarea',
          rows      : '10',
          cols      : '60',
@@ -10,7 +10,7 @@ $(document).ready(function() {
          indicator : '<center><img src="../images/ajax-loader.gif"></center>',
          tooltip   : 'Click to edit...'
      });
-     $('.currentCity').editable('http://localhost/~mnouh/ideareef/business/editAboutUs', { 
+     $('.currentCity').editable('http://www.ideareef.com/business/editAboutUs', { 
          type      : 'textarea',
          rows      : '10',
          cols      : '60',
@@ -20,7 +20,7 @@ $(document).ready(function() {
          indicator : '<center><img src="../images/ajax-loader.gif"></center>',
          tooltip   : 'Click to edit...'
      });
-     $('.currentCity').editable('http://localhost/~mnouh/ideareef/business/editAboutUs', { 
+     $('.currentCity').editable('http://www.beta.ideareef.com/business/editAboutUs', { 
          type      : 'textarea',
          rows      : '10',
          cols      : '60',

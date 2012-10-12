@@ -1,6 +1,6 @@
 $(document).ready(function() {
 
-     $('.aboutme').editable('http://localhost/ideareef/user/editAboutMe', { 
+     $('.aboutme').editable('http://www.ideareef.com/user/editAboutMe', { 
          type      : 'textarea',
          rows      : '10',
          cols      : '60',
@@ -10,13 +10,13 @@ $(document).ready(function() {
          indicator : '<center><img src="../images/ajax-loader.gif"></center>',
          tooltip   : 'Click to edit...'
      });
-     $('.currentCity').editable('http://localhost/ideareef/user/editCurrentCity', { 
+     $('.currentCity').editable('http://www.beta.ideareef.com/user/editCurrentCity', { 
          type      : 'text',
          //cssclass  : 'txtArea',
          indicator : '<center><img src="../images/ajax-loader.gif"></center>',
          tooltip   : 'Add a city'
      });
-     $('.currentState').editable('http://localhost/ideareef/user/editCurrentState', { 
+     $('.currentState').editable('http://www.beta.ideareef.com/user/editCurrentState', { 
          type      : 'text',
          //cssclass  : 'txtArea',
          indicator : '<center><img src="../images/ajax-loader.gif"></center>',
