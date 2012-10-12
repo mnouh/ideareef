@@ -38,7 +38,7 @@ class AccountController extends Controller
         
         public function actionUpdate()
         {
-            
+            echo "Testing";
             $this->render('update');
         }
         
