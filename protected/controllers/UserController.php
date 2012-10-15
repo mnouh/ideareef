@@ -26,7 +26,7 @@ class UserController extends Controller {
                 'users' => array('*'),
             ),
             array('allow', // allow authenticated user to perform 'create' and 'update' actions
-                'actions' => array('index', 'changeName', 'upload', 'changeUsername', 'changepassword', 'profile', 'editAboutMe', 'editCurrentCity', 'editCurrentState', 'mySolutions', 'changeZipCode', 'submitSolution' ,'create', 'update', 'completeProfile', 'competition', 'competitionSub', 'description', 'awardDetails'),
+                'actions' => array('index', 'changeName', 'upload', 'changeUsername','AjaxChangeUsername', 'changepassword', 'profile', 'editAboutMe', 'editCurrentCity', 'editCurrentState', 'mySolutions', 'changeZipCode', 'submitSolution' ,'create', 'update', 'completeProfile', 'competition', 'competitionSub', 'description', 'awardDetails'),
                 'users' => array('@'),
             ),
             /*array('allow', // allow admin user to perform 'admin' and 'delete' actions
@@ -43,7 +43,6 @@ class UserController extends Controller {
      * Change username.
      */
     public function actionChangeUsername() {
-      
       $model = User::model()->findByPk(Yii::app()->user->id);
       $profileLink = Yii::app()->params['siteUrl'].'/'.$model->username;
       $model->profileUser = $model->username;
@@ -53,7 +52,6 @@ class UserController extends Controller {
 
       if (isset($_POST['User'])) {
         $model->attributes = $_POST['User'];
-
         if ($model->validate()) {
             $model->username = $model->profileUser;
             if($model->update()) {
@@ -64,6 +62,33 @@ class UserController extends Controller {
 
       $this->renderPartial('changeUsername', array('model' => $model, 'profileLink' => $profileLink), false, true);
     }
+    
+    
+    /**
+     * Change username.
+     */
+    public function actionAjaxChangeUsername() {
+        
+      $model = User::model()->findByPk(Yii::app()->user->id);
+      $profileLink = Yii::app()->params['siteUrl'].'/'.$model->username;
+      $model->profileUser = $model->username;
+      $model->setScenario('changeUsername');
+
+      $this->performAjaxValidation($model, 'changeUsername-form');
+
+      if (isset($_POST['User'])) {
+        $model->attributes = $_POST['User'];
+        if ($model->validate()) {
+            $model->username = $model->profileUser;
+            if($model->update()) {
+          Yii::app()->user->setFlash('success', "Successfully updated username.");
+        }
+        }
+      }
+
+      $this->renderPartial('changeUsername', array('model' => $model, 'profileLink' => $profileLink), false, true);
+    }
+    
     
     public function actionSignUp()
     {
@@ -316,7 +341,9 @@ class UserController extends Controller {
     public function actionCompleteProfile() {
         
             $model = User::model()->findByPk(Yii::app()->user->id);
-            $this->render('completeProfile', array('model' => $model));
+            $profileLink = Yii::app()->params['siteUrl'].'/'.$model->username;
+            $model->profileUser = $model->username;
+            $this->render('completeProfile', array('model' => $model, 'profileLink' => $profileLink));
         
     }
     

@@ -5,10 +5,17 @@
       <div class="floatLeft">
         <div class="inside">
           <div class="bottom">
-            <div class="bk">
+            <div class="bk" id="step1">
               <div class="fLeft">
                 <h6>Lets begin by building your IdeaReef Profile </h6>
-                Completing your profile will earn you your first badge. </div>
+                <div id="data">
+              <?php
+              
+              $this->renderPartial('changeUsername', array('model' => $model, 'profileLink' => $profileLink));
+              
+              ?>
+                  </div>
+              </div>
               <div class="fRight">
                 <input name="Submit" type="submit" class="smBlueBtn" value="Edit my Pavillion">
               </div>

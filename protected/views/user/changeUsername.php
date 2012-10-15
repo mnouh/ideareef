@@ -9,7 +9,6 @@
 
 </script>
 
-            <h2><?php echo $this->id . '/' . $this->action->id; ?></h2>
 
             <?php if (Yii::app()->user->hasFlash('success')): ?>
 
@@ -29,7 +28,7 @@
 
                     <div>
                         <?php echo $form->label($model, 'profileUser'); ?>
-    <?php echo $form->textField($model, 'profileUser', array('class' => 'sync')); ?>
+    <?php echo $form->textField($model, 'profileUser', array('class' => 'inputBox')); ?>
     <?php echo $form->error($model, 'profileUser', array('class' => 'error')); ?>
                         <div id="profileLink">
         <?php
@@ -40,7 +39,19 @@
                     </div>
 
                     <div>
-    <?php echo CHtml::submitButton('Update Username', array('name' => 'Submit', 'class' => 'btn primary')); ?>
+    <?php echo CHtml::ajaxSubmitButton ("Update Username",
+                              CController::createUrl('user/ajaxChangeUsername'), 
+                              array(
+                                    'data'=>'js:jQuery(this).parents("form").serialize()+"&isAjaxRequest=1"',               
+                                    'success'=>
+                                    'function(data){
+                                     $("#data").html(data);
+                                     $("#step1").slideUp();
+                                     return false;
+                                     }'    
+ 
+                ), array('class' => 'smBlueBtn'));
+                ?>
                     </div>
 
                     <!-- form -->
