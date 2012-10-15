@@ -10,7 +10,7 @@ $(document).ready(function() {
          indicator : '<center><img src="../images/ajax-loader.gif"></center>',
          tooltip   : 'Click to edit...'
      });
-     $('.currentCity').editable('http://www.ideareef.com/business/editAboutUs', { 
+     $('.currentCity').editable('http://www.beta.ideareef.com/business/editAboutUs', { 
          type      : 'textarea',
          rows      : '10',
          cols      : '60',

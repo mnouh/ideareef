@@ -68,7 +68,7 @@ class UserController extends Controller {
      * Change username.
      */
     public function actionAjaxChangeUsername() {
-        
+      $status = 'Mohamed';  
       $model = User::model()->findByPk(Yii::app()->user->id);
       $profileLink = Yii::app()->params['siteUrl'].'/'.$model->username;
       $model->profileUser = $model->username;
@@ -86,7 +86,7 @@ class UserController extends Controller {
         }
       }
 
-      $this->renderPartial('changeUsername', array('model' => $model, 'profileLink' => $profileLink), false, true);
+      $this->renderPartial('changeUsername', array('model' => $model, 'profileLink' => $profileLink, 'status' => $status), false, true);
     }
     
     

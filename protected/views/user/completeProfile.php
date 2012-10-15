@@ -5,12 +5,12 @@
       <div class="floatLeft">
         <div class="inside">
           <div class="bottom">
-            <div class="bk" id="step1">
+            <?php if($model->username === null) { ?>
+              <div class="bk" id="step1">
               <div class="fLeft">
                 <h6>Lets begin by building your IdeaReef Profile </h6>
                 <div id="data">
               <?php
-              
               $this->renderPartial('changeUsername', array('model' => $model, 'profileLink' => $profileLink));
               
               ?>
@@ -21,6 +21,7 @@
               </div>
               <div class="clear"></div>
             </div>
+              <?php } ?>
             <div class="bk">
               <div class="fLeft" style="width:400px;">
                 <h6>Next, let's find your friends and favorite companies </h6>
