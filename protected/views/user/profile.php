@@ -16,7 +16,7 @@
 <div class="pavillion-home"><a href="#">2</a></div>
   <div class="clear"></div>
 </div>
-<div class="fLeft"><img src="<?php echo Yii::app()->request->baseUrl; ?>/images/profile-picture.jpg" alt="" width="200" height="200" class="profile">
+<div class="fLeft"><img src="<?php echo Yii::app()->request->baseUrl; ?>/images/no-image-male.gif" alt="" width="200" height="200" class="profile">
 <div class="type"><img src="<?php echo Yii::app()->request->baseUrl; ?>/images/bronze-profile.png"></div>
 </div>
 <div class="fRight">
@@ -35,7 +35,7 @@
           </strong> (Edit) <br>
     Binghamton, NY <br>
     
-    Date Joined: <?php echo date("m.d.y", strtotime($model->joinedDate)); ?> </a></p>
+    <strong>Date Joined:</strong> <?php echo date("m-d-Y", strtotime($model->joinedDate)); ?> </a></p>
   <ul>
     <li><a href="#">Edit Profile </a> </li>
     <li></li>
@@ -158,23 +158,31 @@
 	  </div>
 	  </div>
       <div class="boxes">
+          <div class="top">
+          <h2>Basic Info</h2>
+		  <div class="fR"><a href="#">Edit</a></div>
+          <div class="clear"></div>
+        </div>
         <div class="bottom">
           <table width="100%" cellpadding="0" cellspacing="1" class="listTable">
             <tr>
               <td width="100" class="paddL"><strong>Lives in                 <br>
               </strong></td>
               <td>
-                  <b class="currentCity" id="currentCity" style="display: inline"> 
+                  <div class="currentCity" id="currentCity" style="display: inline"> 
                       <?php 
                         echo $model->city;
-                      ?> 
-                  </b>
-                  <br>
-                  <b class="currentState" id="currentState" style="display: inline"> 
+                      ?>
+                  </div>
+                  <?php 
+                    if ($model->city != NULL && $model->state != NULL)
+                        echo ',';
+                  ?>
+                  <div class="currentState" id="currentState" style="display: inline"> 
                       <?php 
                         echo $model->state;
                       ?> 
-                  </b>
+                  </div>
               </td>
             </tr>
             <tr>
