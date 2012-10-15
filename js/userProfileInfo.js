@@ -10,17 +10,19 @@ $(document).ready(function() {
          indicator : '<center><img src="../images/ajax-loader.gif"></center>',
          tooltip   : 'Click to edit...'
      });
-     $('.currentCity').editable('http://www.beta.ideareef.com/user/editCurrentCity', { 
+     $('.currentCity').editable('http://www.ideareef.com/user/editCurrentCity', { 
          type      : 'text',
-         //cssclass  : 'txtArea',
-         indicator : '<center><img src="../images/ajax-loader.gif"></center>',
-         tooltip   : 'Add a city'
+         indicator : '<img src="../images/ajax-loader.gif">',
+         tooltip   : 'Add a city',
+         style  : "inherit",
+         width : '50'
      });
-     $('.currentState').editable('http://www.beta.ideareef.com/user/editCurrentState', { 
+     $('.currentState').editable('http://www.ideareef.com/user/editCurrentState', { 
          type      : 'text',
-         //cssclass  : 'txtArea',
-         indicator : '<center><img src="../images/ajax-loader.gif"></center>',
-         tooltip   : 'Add a state'
+         indicator : '<img src="../images/ajax-loader.gif">',
+         tooltip   : 'Add a state',
+         style  : "inherit",
+         width : '50'
      });
      
  });

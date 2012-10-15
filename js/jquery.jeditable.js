@@ -367,7 +367,7 @@
                 if (settings.loadurl) {
                     var t = setTimeout(function() {
                         input.disabled = true;
-                        content.apply(form, [settings.loadtext, settings, self]);
+                        content.apply(form, [$.trim(input_content), settings, self]);
                     }, 100);
 
                     var loaddata = {};
@@ -396,7 +396,8 @@
                 } else {
                     input_content = self.revert; 
                 }
-                content.apply(form, [input_content, settings, self]);
+                content.apply(form, [$.trim(input_content), settings, self]);
+
 
                 input.attr('name', settings.name);
         

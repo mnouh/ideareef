@@ -29,6 +29,12 @@ $form = $this->beginWidget('CActiveForm', array(
                 <p>
                     <?php echo $form->textField($model, 'email', array('class' => 'inputBox')); ?>
                     <?php echo $form->error($model, 'email', array('class' => 'formError')); ?>
+                </p>                
+                
+                <p><strong>Gender</strong> <span class="errorTxt">*</span></p>
+                <p>
+                    <?php echo $form->dropDownList($model,'gender', array('1'=>'Male','2'=>'Female'), array('options' => array('1'=>array('selected'=>true)))); ?>
+                    <!-- <?php echo $form->error($model, 'gender', array('class' => 'formError')); ?> -->
                 </p>
 
                 <p><strong>Password</strong>  <span class="errorTxt">*</span></p>
