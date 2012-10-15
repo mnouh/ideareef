@@ -21,7 +21,7 @@
         <div id="Wrapper">
             <div class="holder">
                 <div id="Header">
-                    <h1 class="logo"><a href="<?php echo Yii::app()->request->baseUrl; ?>">IdeaReef</a></h1>
+                    <h1 class="logo"><a href="<?php echo Yii::app()->baseUrl; ?>">IdeaReef</a></h1>
                     <div class="floatRight">
                         <ul>
                             <li><a href="#"><?php echo CHtml::link('Home', Yii::app()->request->baseUrl . '/business'); ?></a></li>
