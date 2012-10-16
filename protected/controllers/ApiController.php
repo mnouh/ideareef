@@ -62,10 +62,8 @@ class ApiController extends Controller
         else $criteria->order = 't.createTime DESC';
         
         $competition = Competition::model()->findAll($criteria);
-        
-        
-        
-        $this->_sendResponse(200, CJSON::encode($competition->businessOwner));
+
+        $this->_sendResponse(200, CJSON::encode($competition));
     }
     
     private function _checkAuth() {
