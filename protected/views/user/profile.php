@@ -204,7 +204,7 @@
           </table>
         </div>
       </div>
-      <div class="boxes">
+      <!--<div class="boxes">
         <div class="top">
           <h2>Education</h2>
 		  <div class="fR"><a href="#">Edit</a></div>
@@ -260,7 +260,7 @@
             </tr>
           </table>
         </div>
-      </div>
+      </div>-->
       <div class="boxes">
         <div class="top">
           <h2>About Me </h2>
@@ -276,7 +276,7 @@
         </div>
       </div>
          
-      <div class="boxes">
+      <!--<div class="boxes">
         <div class="top">
           <h2>Skills &amp; Expertise </h2>
           <div class="fR"><a href="#">Edit</a></div>
@@ -302,7 +302,7 @@
             </tr>
           </table>
         </div>
-      </div>
+      </div>-->
       <div class="boxes">
         <div class="top">
           <h2>Contact Me </h2>
@@ -317,7 +317,7 @@
           </table>
         </div>
       </div>
-      <div class="boxes">
+      <!--<div class="boxes">
         <div class="top">
           <h2>Publications</h2>
           <div class="fR"><a href="#">Edit</a></div>
@@ -330,7 +330,7 @@
             </tr>
           </table>
         </div>
-      </div>
+      </div>-->
     </div>
   </div>
 </div>
