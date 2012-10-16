@@ -115,7 +115,7 @@ return array(
 		// uncomment the following to use a MySQL database
 		
 		'db'=>array(
-			'connectionString' => 'mysql:host=ideareef.com;dbname=main_ideareef',
+			'connectionString' => 'mysql:host=54.243.253.143;dbname=main_ideareef',
 			'emulatePrepare' => true,
 			'username' => 'main',
 			'password' => 'chief4625',

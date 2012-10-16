@@ -1,12 +1,11 @@
 <?php
-    Yii::app()->getClientScript()->registerCoreScript('jquery');
-    Yii::app()->getClientScript()->registerCoreScript('jquery.ui');
-         $baseUrl = Yii::app()->baseUrl;
- $cs = Yii::app()->getClientScript();
- $cs->registerScriptFile($baseUrl.'/js/jquery.jeditable.js');
- $cs->registerScriptFile($baseUrl.'/js/businessInfo.js');
- 
- ?>
+Yii::app()->getClientScript()->registerCoreScript('jquery');
+Yii::app()->getClientScript()->registerCoreScript('jquery.ui');
+$baseUrl = Yii::app()->baseUrl;
+$cs = Yii::app()->getClientScript();
+$cs->registerScriptFile($baseUrl . '/js/jquery.jeditable.js');
+$cs->registerScriptFile($baseUrl . '/js/businessInfo.js');
+?>
 
 <div id="InnerContent">
     <div class="floatLeft">
@@ -23,7 +22,7 @@
             <div class="fRight">
                 <h2><a href="#">Chris Paquette</a></h2>
                 <p class="pav"><a href="#">Binghamton, NY</a></p>
-                
+
                 <div class="clear"></div>
             </div>
             <div class="clear"></div>
@@ -76,18 +75,18 @@
                 <div class="clear"></div>
             </div>
             <div class="contents">
-            <?php
-        $this->widget('zii.widgets.ClistView', array(
-          'dataProvider' => $dataProvider,
-        'itemView' => '_competitionSide',
-        'sortableAttributes' => array(
-          'endDate',
-        'startDate'
-         )));
-        ?>
+                <?php
+                $this->widget('zii.widgets.ClistView', array(
+                    'dataProvider' => $dataProvider,
+                    'itemView' => '_competitionSide',
+                    'sortableAttributes' => array(
+                        'endDate',
+                        'startDate'
+                        )));
+                ?>
             </div>
         </div>
-        
+
     </div>
     <div class="fL">
         <div class="topArea">
@@ -110,113 +109,57 @@
         <div class="bottomArea">
             <div class="topmenu">
                 <ul>
-                    <li><a id="myHeader1" href="javascript:showonlyone('newboxes1');">Profile</a></li>
+
+
+                    <li>
+                        <?php
+                        echo CHtml::ajaxLink(
+                                'Profile', array('business/profile', 'id' => $model->id), array('success' => 'js:function(data) {
+                                                    jQuery("div#currentTab").html(data);}',
+                            //'update'=>'#successMessage',
+                            //'beforeSend' => 'function() {alert("testing");}',
+                            //'validated' => 'function() {$("div#load").removeClass("loading");}',
+                            //'complete' => 'function() {$("div#load").removeClass("loading");}',
+                            'type' => 'POST'
+                                )
+                        );
+                        ?>
+                    </li>
+
                     <li><a id="myHeader2" href="javascript:showonlyone('newboxes2');">Recent Activity</a></li>
                     <li><a id="myHeader3" href="javascript:showonlyone('newboxes3');">Information</a></li>
                     <li><a id="myHeader3" href="javascript:showonlyone('newboxes4');">Statistics</a></li>
                 </ul>
             </div>
-
-            <div id="newboxes1" class="newboxes">
-                <div class="inside">
-                    <h3>Friends that Follow </h3>
-                    <div class="friendsFollow">
-                        <div class="box"><img src="<?php echo Yii::app()->request->baseUrl; ?>/images/no-image-female.gif" alt=""></div>
-                        <div class="box"><img src="<?php echo Yii::app()->request->baseUrl; ?>/images/no-image-female.gif" alt=""></div>
-                        <div class="box"><img src="<?php echo Yii::app()->request->baseUrl; ?>/images/no-image-female.gif" alt=""></div>
-                        <div class="box"><img src="<?php echo Yii::app()->request->baseUrl; ?>/images/no-image-female.gif" alt=""></div>
-                        <div class="box"><img src="<?php echo Yii::app()->request->baseUrl; ?>/images/no-image-female.gif" alt=""></div>
-                        <div class="box"><img src="<?php echo Yii::app()->request->baseUrl; ?>/images/no-image-female.gif" alt=""></div>
-                        <div class="box"><img src="<?php echo Yii::app()->request->baseUrl; ?>/images/no-image-female.gif" alt=""></div>
-                        <div class="box"><img src="<?php echo Yii::app()->request->baseUrl; ?>/images/no-image-female.gif" alt=""></div>
-                        <div class="box"><img src="<?php echo Yii::app()->request->baseUrl; ?>/images/no-image-female.gif" alt=""></div>
-                        <div class="box"><img src="<?php echo Yii::app()->request->baseUrl; ?>/images/no-image-female.gif" alt=""></div>
-                        <div class="box"><img src="<?php echo Yii::app()->request->baseUrl; ?>/images/no-image-female.gif" alt=""></div>
-                        <div class="box"><img src="<?php echo Yii::app()->request->baseUrl; ?>/images/no-image-female.gif" alt=""></div>
-                        <div class="box"><img src="<?php echo Yii::app()->request->baseUrl; ?>/images/no-image-female.gif" alt=""></div>
-                        <div class="box"><img src="<?php echo Yii::app()->request->baseUrl; ?>/images/no-image-female.gif" alt=""></div>
-                        <div class="box"><img src="<?php echo Yii::app()->request->baseUrl; ?>/images/no-image-female.gif" alt=""></div>
-                        <div class="box"><img src="<?php echo Yii::app()->request->baseUrl; ?>/images/no-image-female.gif" alt=""></div>
-                        <div class="box"><img src="<?php echo Yii::app()->request->baseUrl; ?>/images/no-image-female.gif" alt=""></div>
-                        <div class="box"><img src="<?php echo Yii::app()->request->baseUrl; ?>/images/no-image-female.gif" alt=""></div>
-                        <div class="box"><img src="<?php echo Yii::app()->request->baseUrl; ?>/images/no-image-female.gif" alt=""></div>
-                        <div class="box"><img src="<?php echo Yii::app()->request->baseUrl; ?>/images/no-image-female.gif" alt=""></div>
-                        <div class="box"><img src="<?php echo Yii::app()->request->baseUrl; ?>/images/no-image-male.gif" alt=""></div>
-                        <div class="box"><img src="<?php echo Yii::app()->request->baseUrl; ?>/images/no-image-female.gif" alt=""></div>
-                        <div class="clear"></div>
-                    </div>
-                </div>
-
-                <div class="boxes">
-                    <div class="top">
-                        <h2>Competitions</h2>
-                        <div class="number">3145</div>
-                        <div class="fR"><a href="#">View All</a></div>
-                        <div class="clear"></div>
-                    </div>
-                    <div class="bottom">
-
-                <?php
-                $this->widget('zii.widgets.ClistView', array(
-                    'dataProvider' => $dataProvider,
-                    'itemView' => '_competitionCenter',
-                    'sortableAttributes' => array(
-                        'endDate',
-                        'startDate'
-                        )));
-                ?>    
-
-                <div class="clear"></div>
-
-            </div>
-                </div>
-
-                <div class="boxes">
-                    <div class="top">
-                        <h2>Open Surges</h2>
-                        <div class="fR"><a href="#">View All</a></div>
-                        <div class="clear"></div>
-                    </div>
-                    <div class="bottom">
-
-                <?php
-                $this->widget('zii.widgets.ClistView', array(
-                    'dataProvider' => $dataProvider,
-                    'itemView' => '_surgeCenter',
-                    'sortableAttributes' => array(
-                        'endDate',
-                        'startDate'
-                        )));
-                ?>    
-
-                <div class="clear"></div>
-
-            </div>
-                </div>
-            </div>
-
-            <div id="newboxes2" class="newboxes"  style="display:none;">
-                <div class="inside">
-                    <div class="boxes">
-                        <div class="top">
-                            <h2>Recent Activity</h2>
-                            <div class="fR"><a href="#">View All</a></div>
-                            <div class="clear"></div>
-                        </div>
-                        <div class="bottom">
-                            <table width="100%" cellpadding="0" cellspacing="1" class="listTable">
-                                <tr>
-                                    <td class="imageBox"><img src="<?php echo Yii::app()->request->baseUrl; ?>/images/no-image-female.gif" alt=""></td>
-                                    <td><a href="#">Tom and Marty's</a> is hosting a new competition titled <a href="#">Weekly Shot Wheel Competition</a><br>
-                                        <em>Friday at 3:30PM</em></td>
-                                </tr>
-                            </table>
-                            <div class="clear"></div>
+            <?php $this->renderPartial('_profile', array('model' => $model, 'dataProvider' => $dataProvider), false, true); ?>
+            <div id="currentTab">
+                
+                
+                
+                
+                
+                <div id="newboxes2" class="newboxes"  style="display:none;">
+                    <div class="inside">
+                        <div class="boxes">
+                            <div class="top">
+                                <h2>Recent Activity</h2>
+                                <div class="fR"><a href="#">View All</a></div>
+                                <div class="clear"></div>
+                            </div>
+                            <div class="bottom">
+                                <table width="100%" cellpadding="0" cellspacing="1" class="listTable">
+                                    <tr>
+                                        <td class="imageBox"><img src="<?php echo Yii::app()->request->baseUrl; ?>/images/no-image-female.gif" alt=""></td>
+                                        <td><a href="#">Tom and Marty's</a> is hosting a new competition titled <a href="#">Weekly Shot Wheel Competition</a><br>
+                                            <em>Friday at 3:30PM</em></td>
+                                    </tr>
+                                </table>
+                                <div class="clear"></div>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
-
 
 
             <div id="newboxes3"class="newboxes"  style="display:none;">
@@ -231,8 +174,8 @@
                     </div>
                     <div class="boxes">
                         <h3>About Us </h3>
-                        <div class="aboutus" id ="aboutus"> <?php echo $model->aboutUs;?> </div>
-                        
+                        <div class="aboutus" id ="aboutus"> <?php echo $model->aboutUs; ?> </div>
+
 
                     </div>
 
@@ -271,7 +214,7 @@
                                 <tr>
                                     <td><a href="#">Bartender</a></td>
                                     <td><strong>Tom and Marty's</strong> (Local) <br>
-                                        <em>Launced: 05/30/2012 <br>
+                                        <em>Launched: 05/30/2012 <br>
                                             Closing: 07/20/2012 </em></td>
                                     <td class="txtCenter"><a href="#" class="smbtn">View More Info </a>
                                         <div class="clear"></div>

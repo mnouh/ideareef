@@ -28,7 +28,7 @@ class BusinessController extends Controller {
                 'users' => array('*'),
             ),
             array('allow', // allow authenticated user to perform 'create' and 'update' actions
-                'actions' => array('index', 'changeUsername', 'changepassword', 'create', 'update', 'pavilionEdit', 'completeProfile', 'edittext', 'editAboutUs', 'competition', 'competitionDetail'),
+                'actions' => array('index', 'changeUsername', 'changepassword', 'create', 'update', 'pavilionEdit', 'completeProfile', 'edittext', 'editAboutUs', 'competition', 'competitionDetail', 'profile'),
                 'users' => array('@'),
             ),
             /*array('allow', // allow admin user to perform 'admin' and 'delete' actions
@@ -264,13 +264,8 @@ class BusinessController extends Controller {
             $this->render('pavilion', array('model' => $model, 'dataProvider' => $dataProvider));
             }
              
-             
          }
          
-         
-         
-         
-        
         }
     
     
@@ -301,6 +296,20 @@ class BusinessController extends Controller {
         }
     }
     
+    public function actionProfile($id) {
+        if(Yii::app()->user->isBusiness){
+            $model = Business::model()->findByPk($id);
+            $sort=new CSort();
+            $sort->attributes = array('*');
+            $dataProvider= new CActiveDataProvider('Competition', 
+                    array('criteria' => 
+                        array('condition'=>'businessId='.$model->id),
+                        'sort'=>$sort,
+                        'pagination' => array('pageSize' => 4)));   
+            $this->renderPartial('_profile', array('model' => $model, 'dataProvider' => $dataProvider), false, true);
+        }
+    }
+     
     public function actioncompetitionDetail($id) {
         if(Yii::app()->user->isBusiness){
             $model = Business::model()->findByPk(Yii::app()->user->id);
@@ -315,7 +324,6 @@ class BusinessController extends Controller {
             $this->render('competitionDetail', array('model' => $this->loadCompetitionModel($id), 'dataProvider' => $dataProvider));
         }
     }
-    
     
     /**
 	 * Returns the data model based on the primary key given in the GET variable.
