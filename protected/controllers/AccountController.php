@@ -155,10 +155,10 @@ class AccountController extends Controller
         public function actionSignUp()
         {
             
-            $model = new User('signup');
+            $model = new User();
+            $model->setScenario('signup');
             
-            
-        // Uncomment the following line if AJAX validation is needed
+             // Uncomment the following line if AJAX validation is needed
         $this->performAjaxValidation($model, 'user-form');
 
         /*
@@ -171,9 +171,17 @@ class AccountController extends Controller
 
             if ($model->validate()) {
                 
+                $tempPassword = $model->password;
                 if($model->save())
                 {
-                    Yii::app()->user->setFlash('success', "Successfully Registered");
+                    $login = new LoginForm;
+                    $login->email = $model->email;
+                    $login->password = $tempPassword;
+                    
+                    if($login->login()) {
+                    //Remember to Send Email Support.t46
+                       $this->redirect(array('user/completeProfile'));
+                    }
                 }
                 
             }
