@@ -28,7 +28,7 @@ class BusinessController extends Controller {
                 'users' => array('*'),
             ),
             array('allow', // allow authenticated user to perform 'create' and 'update' actions
-                'actions' => array('index', 'changeUsername', 'changepassword', 'create', 'update', 'pavilionEdit', 'completeProfile', 'edittext', 'editAboutUs', 'competition', 'competitionDetail', 'profile'),
+                'actions' => array('index', 'changeUsername', 'changepassword', 'create', 'update', 'pavilionEdit', 'completeProfile', 'edittext', 'editAboutUs', 'competition', 'competitionDetail', 'profile', 'recentActivity','information','statistics'),
                 'users' => array('@'),
             ),
             /*array('allow', // allow admin user to perform 'admin' and 'delete' actions
@@ -239,7 +239,7 @@ class BusinessController extends Controller {
          
          else {
              
-             if(!Yii::app()->user->isGuest && (Yii::app()->user->isBusiness && (Yii::app()->user->id == $model->id))) {
+            if(!Yii::app()->user->isGuest && (Yii::app()->user->isBusiness && (Yii::app()->user->id == $model->id))) {
             $sort=new CSort();
             $sort->attributes = array('*');
             $dataProvider= new CActiveDataProvider('Competition', 
@@ -268,27 +268,6 @@ class BusinessController extends Controller {
          
         }
     
-    
-    public function actionPavilionEdit() {
-        if(Yii::app()->user->isBusiness){
-            
-            $model = Business::model()->findByPk(Yii::app()->user->id);
-            $model->setScenario('pavilionEdit');
-            $this->performAjaxValidation($model, 'pavilionEdit-form');
-            
-            if (isset($_POST['Business'])) {
-            $model->attributes = $_POST['Business'];
-
-            if ($model->validate()) {
-                if($model->update())
-                    Yii::app()->user->setFlash('success', "Information Successfully Changed");
-                }
-            
-            }
-            $this->render('pavilionEdit', array('model' => $model));
-        }
-    }
-    
     public function actionCompetition() {
         if(Yii::app()->user->isBusiness){
             $model = Business::model()->findByPk(Yii::app()->user->id);
@@ -309,7 +288,50 @@ class BusinessController extends Controller {
             $this->renderPartial('_profile', array('model' => $model, 'dataProvider' => $dataProvider), false, true);
         }
     }
-     
+    
+    public function actionrecentActivity() {
+        if(Yii::app()->user->isBusiness){
+            $model = Business::model()->findByPk(Yii::app()->user->id);
+           
+            $sort=new CSort();
+            $sort->attributes = array('*');
+            $dataProvider= new CActiveDataProvider('Competition', 
+                    array('criteria' => 
+                        array('condition'=>'businessId='.$model->id),
+                        'sort'=>$sort,
+                        'pagination' => array('pageSize' => 4)));   
+            $this->renderPartial('_recentActivity', array('model' => $model), false, true);
+        }
+    }
+    
+    public function actionInformation($id) {
+        if(Yii::app()->user->isBusiness){
+            $model = Business::model()->findByPk($id);
+            $sort=new CSort();
+            $sort->attributes = array('*');
+            $dataProvider= new CActiveDataProvider('Competition', 
+                    array('criteria' => 
+                        array('condition'=>'businessId='.$model->id),
+                        'sort'=>$sort,
+                        'pagination' => array('pageSize' => 4)));   
+            $this->renderPartial('_information', array('model' => $model, 'dataProvider' => $dataProvider, 'editable' => $this->checkEditable($id)), false, true);
+        }
+    }
+    
+    public function actionStatistics($id) {
+        if(Yii::app()->user->isBusiness){
+            $model = Business::model()->findByPk($id);
+            $sort=new CSort();
+            $sort->attributes = array('*');
+            $dataProvider= new CActiveDataProvider('Competition', 
+                    array('criteria' => 
+                        array('condition'=>'businessId='.$model->id),
+                        'sort'=>$sort,
+                        'pagination' => array('pageSize' => 4)));   
+            $this->renderPartial('_statistics', array('model' => $model, 'dataProvider' => $dataProvider), false, true);
+        }
+    }
+    
     public function actioncompetitionDetail($id) {
         if(Yii::app()->user->isBusiness){
             $model = Business::model()->findByPk(Yii::app()->user->id);
@@ -363,6 +385,18 @@ class BusinessController extends Controller {
         }
     }
     
+    public function checkEditable($id){
+        $status;
+        if(!Yii::app()->user->isGuest && (Yii::app()->user->isBusiness && (Yii::app()->user->id == $id))) {
+            $status = true;
+        }
+        else {
+            
+            $status = false;
+        }
+        
+        return $status;
+    }
     
     /**
      * This will email the user, the confirmation code.
