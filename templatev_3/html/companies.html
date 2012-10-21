@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>IdeaReef</title>
+<script language="javascript" type="text/javascript">
+
+  function toggle1(){
+  	var signin_menu = document.getElementById('signin_menu')
+  	if (signin_menu.style.display == 'none') {
+  		signin_menu.style.display = 'block'
+  	} else {
+  		signin_menu.style.display = 'none'
+  	}
+  }
+  </script>
+  <script language="javascript" type="text/javascript">
+function showonlyone(thechosenone) {
+      var newboxes = document.getElementsByTagName("div");
+            for(var x=0; x<newboxes.length; x++) {
+                  name = newboxes[x].getAttribute("class");
+                  if (name == 'newboxes') {
+                        if (newboxes[x].id == thechosenone) {
+                        newboxes[x].style.display = 'block';
+                  }
+                  else {
+                        newboxes[x].style.display = 'none';
+                  }
+            }
+      }
+}
+</script>
+<link href="styles/css.css" rel="stylesheet" type="text/css" />
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
+<link rel="shortcut icon" type="image/x-icon" href="images/favicon.ico">
+</head>
+
+<body>
+<div id="Wrapper">
+<div class="holder">
+  <div id="Header">
+    <h1 class="logo"><a href="#">IdeaReef</a></h1>
+    <div class="floatRight">
+      <ul>
+        <li><a href="about-us.html">About Us</a></li>
+        <li><a href="companies.html">Companies</a></li>
+        <li><a href="competitions.html" class="last">Competitions</a></li>
+        <li><a href="sign-up.html" class="special">Join</a></li>
+        <li><a href="javascript: toggle1()" class="last loginBtn">Login</a></li>
+      </ul>
+      <fieldset id="signin_menu" style="display:none;">
+      <div class="arrow"></div>
+        <form action="" method="post">
+        <div style="margin:0;padding:0;display:inline"></div>
+        <label for="username"><strong>Username or email</strong></label>
+        <input id="user_email" name="user[email]" size="30" type="text">
+        <div class="error">* Wrong Username</div>
+          <label for="password"><strong>Password</strong></label>
+        <input id="user_password" name="user[password]" size="30" type="password">
+        <div class="error">* Password Mismatch</div>
+          <p class="remember">
+          <input name="submit" type="submit" id="signin_submit" tabindex="6" value="Sign in">
+          <input id="remember" name="remember_me" value="1" tabindex="7" type="checkbox">
+          <label for="remember">Remember me</label>
+        </p>
+          <p class="forgot"> <a href="#">Forgot your password?</a></p>
+        </form>
+        </fieldset>
+    </div>
+    <div class="clear"></div>
+  </div>
+  <div id="Content">
+    <h2>Empower Your Business</h2>
+    <h4>Start engaging your  customers by building your reef today! Host competitions and award them for  their ideas and loyalty.</h4>
+	<div class="blk">
+	<div class="pts"></div>
+    <h6>Host Competitions</h6>
+    <p> Competitions engage your  customers by letting them co-create and co-develop new products and services  that they want to pay for. You can even let them vote as a community on what  ideas they like best. The uses for competitions are limited only by your  creativity, so use them to evaluate new potential hires, marketing, and  customer feedback. </p>
+    <p class="testi"><em>&quot;I use  competitions to let my customers decide as a group what drink specials I should  offer on certain nights. The 'wow-factor' of letting them help me make  decisions like that has definitely transformed my bar into a local hotspot that  is known for being customer-oriented!&quot; </em><br>
+      <strong>-Larry, Owner of Tom &amp; Marty's  Pub</strong></p>
+        <p class="testi"><em>&quot;The local  bookstore I own hosted a competition that asked students that type of  promotional events they like to see. Just by hosting a competition, we saw  nearly triple the amount of new customers at our store as compared to other  marketing media. Best of all, it was beyond easy to create and run the whole  thing!&quot; </em><br>
+          <strong>-John, Owner of RiverRead Books</strong></p>
+		  </div>
+		  <div class="blk">
+		  <div class="pts"></div>
+        <h6>&quot;Pay Only for  Sales&quot; Viral Network Marketing</h6>
+        <p> We all know  word-of-mouth advertising is the most effective way to get new customers into  your store. Our Viral Network Marketing (VNM) lets you pay your loyal customers  to refer their others to buy at your store instead of throwing money away with  ineffective marketing campaigns. NVM lets your business pay their loyal  customers only when a saleis made by a friend who they referred, meaning you  can gauge and track your expenditures and create flexible discount structure to  award both the referrer and the referee.</p>
+        <p class="testi"><em>&quot;As a new lawyer  in town, I was struggling to get new clients. I used the NVM system to reward  my loyal clients for referring new clients to use my services. The new clients  were given a discount, my old clients were paid, and it all cost less than any  other type of marketing platform. Since then, my practice has boomed and I  started to turn away new clients!&quot;</em><br> 
+          <strong>- John, HHK Law</strong></p>
+        <p class="testi"><em>&quot;When my heating  oil service company started selling alarm systems, we use the VNM system to pay  our existing customers to spread the word for us. In no time my company became  the local market leader in alarm systems. It was a no-brainer...word-of-mouth  advertising works!&quot; </em><br>
+          <strong>-Bill, Meenan Oil Co.</strong></p>
+		  </div>
+		  <div class="blk">
+		  <div class="pts"></div>
+        <h6>Recruit New Talent</h6>
+        <p> Competitions can also  be used as a more effective and reliable way to evaluate new candidates for  positions in your company. Simply host a competition that asks candidates to  solve a unique or frequent problem at your company and make the award a job or  internship!</p>
+		</div>
+		<div class="blk">
+		<div class="pts"></div>
+        <h6>The Social Platform  for Customer Relationship Building</h6>
+        <p> When your company  joins IdeaReef, you get their own personalized URL to your unique profile,  called a &quot;Pavilion&quot;. On your pavilion, your company can post links to  media, pictures, and stay connected to their customers through competitions and  Stream updates.</p></div>
+		<div class="blk">
+		
+        <p>More sales and loyal  customers starts here...</p>
+        <p><a href="#"><img src="images/sign-up-for-ideareef.png" alt="" width="297" height="62" border="0"></a><img src="images/its-free-to-join.png" alt="" width="258" height="62"></p>
+		</div>
+  </div></div>
+</div>
+<div id="Footer">
+<div class="holder">
+<div class="floatLeft">Copyright &copy; 2012 Idea Reef Inc. All Rights Reserved.</div>
+<div class="floatRight"><a href="#">Help</a> | <a href="#">Tell us to come!</a> | <a href="#">Partners</a> | <a href="#">About Us</a> | <a href="#">Companies</a></div>
+<div class="clear"></div>
+</div>
+</div>
+</body>
+</html>

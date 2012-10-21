@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>IdeaReef</title>
+<script language="javascript" type="text/javascript">
+
+  function toggle1(){
+  	var signin_menu = document.getElementById('signin_menu')
+  	if (signin_menu.style.display == 'none') {
+  		signin_menu.style.display = 'block'
+  	} else {
+  		signin_menu.style.display = 'none'
+  	}
+  }
+  </script>
+  <script language="javascript" type="text/javascript">
+function showonlyone(thechosenone) {
+      var newboxes = document.getElementsByTagName("div");
+            for(var x=0; x<newboxes.length; x++) {
+                  name = newboxes[x].getAttribute("class");
+                  if (name == 'newboxes') {
+                        if (newboxes[x].id == thechosenone) {
+                        newboxes[x].style.display = 'block';
+                  }
+                  else {
+                        newboxes[x].style.display = 'none';
+                  }
+            }
+      }
+}
+</script>
+<link href="styles/css.css" rel="stylesheet" type="text/css" />
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
+<link rel="shortcut icon" type="image/x-icon" href="images/favicon.ico">
+</head>
+
+<body>
+<div id="Wrapper">
+<div class="holder">
+  <div id="Header">
+    <h1 class="logo"><a href="#">IdeaReef</a></h1>
+    <div class="floatRight">
+      <ul>
+        <li><a href="about-us.html">About Us</a></li>
+        <li><a href="companies.html">Companies</a></li>
+        <li><a href="competitions.html" class="last">Competitions</a></li>
+        <li><a href="sign-up.html" class="special">Join</a></li>
+        <li><a href="javascript: toggle1()" class="last loginBtn">Login</a></li>
+      </ul>
+      <fieldset id="signin_menu" style="display:none;">
+      <div class="arrow"></div>
+        <form action="" method="post">
+        <div style="margin:0;padding:0;display:inline"></div>
+        <label for="username"><strong>Username or email</strong></label>
+        <input id="user_email" name="user[email]" size="30" type="text">
+        <div class="error">* Wrong Username</div>
+          <label for="password"><strong>Password</strong></label>
+        <input id="user_password" name="user[password]" size="30" type="password">
+        <div class="error">* Password Mismatch</div>
+          <p class="remember">
+          <input name="submit" type="submit" id="signin_submit" tabindex="6" value="Sign in">
+          <input id="remember" name="remember_me" value="1" tabindex="7" type="checkbox">
+          <label for="remember">Remember me</label>
+        </p>
+          <p class="forgot"> <a href="#">Forgot your password?</a></p>
+        </form>
+        </fieldset>
+    </div>
+    <div class="clear"></div>
+  </div>
+  <div id="Content">
+
+  <div class="areaTop">
+    <h2 class="txtCenter">Empowering Businesses and Communities with Ideas &amp; Networks </h2>
+	<div class="floatLeft">
+	<div class="blocks solve">
+	  <h4>Solve Competitions</h4>
+	  <p> Solve competitions and  vote for your favorite ideas in competition hosted by the businesses you love.  Showcase your skills, earn badges, and compete with other users from your  school and around the world.</p>
+	  </div>
+	  <div class="blocks refer">
+	  <h4>Refer Friends</h4>
+	  <p> Tell your friends to  check out your favorite bars, restaurants and other stores to earn money every  time they buy there.</p>
+	  </div>
+	  <div class="blocks reward">
+	  <h4>Get Rewarded</h4>
+	  <p> Earn cash, discounts,  free prizes, even jobs and internships just by posting your ideas and using  your network. Get recognized by your university and your community for your  great ideas!</p>
+	  </div>
+	  <div class="blocks school">
+	  <h4>Compete for your  School and Hometown</h4>
+	  <p> Every time you win,  your school and hometown win too. Schools and cities will be able to compare  and compete how active their members are in their local and national  communities. </p>
+	  </div>
+	  </div>
+  <div class="floatRight">
+  <div>
+  <div class="testiText">
+  With IdeaReef I  earned money by referring my friends to check out my favorite bar in downtown Binghamton</div>
+  <div class="testiname"> <strong>Chris</strong>, BU Senior '12</div>
+  </div>
+  <div>
+    <p><a href="#" class="smBlueBtn">Sign up for ideareef </a>      </p>
+    <p class="txtCenter"><a href="#">Learn how it works?  </a></p>
+  </div>
+  </div>
+  <div class="clear"></div>
+  </div>
+  <div class="inside">
+    <div class="top">
+	
+         
+                   
+              
+         
+               
+             
+		 
+		 
+      <ul>
+        <li><a id="myHeader1" href="javascript:showonlyone('newboxes1');">The Reef Team </a></li>
+        <li><a id="myHeader2" href="javascript:showonlyone('newboxes2');" >Contact Us </a></li>
+        </ul>
+	  <div class="clear"></div>
+      </div>
+	  <div id="newboxes1" class="newboxes">
+    <div class="bottom">
+	  <h2>The Reef Team</h2>
+	  <div>
+      <div class="names">
+        <div class="fL"><img src="images/no-image-male.gif" width="140" height="140"></div>
+    <div class="fR">
+      <h2>Chis Praquette</h2>
+      <p><strong>Co-Founder, CEO</strong></p>
+      <p>Cris has been the CEO of IdeaReef  since July, 2012</p>
+      <p><strong>Email:</strong> <a href="mailto:chis@ideareef.com">chis@ideareef.com </a><br>
+        <strong>Phone:</strong> +1 800 900 1000 </p>
+    </div>
+    <div class="clear"></div>
+    </div>
+    <div class="names">
+      <div class="fL"><img src="images/no-image-male.gif" width="140" height="140"></div>
+      <div class="fR">
+        <h2>Mohamed Nouh </h2>
+        <p><strong>Co-Founder, CTO</strong></p>
+        <p>Cris has been the CTO of IdeaReef  since July, 2012</p>
+        <p><strong>Email:</strong> <a href="mailto:mo@ideareef.com">mo@ideareef.com </a><br>
+          <strong>Phone:</strong> +1 800 900 1000 </p>
+      </div>
+      <div class="clear"></div>
+    </div>
+    <div class="names">
+      <div class="fL"><img src="images/no-image-male.gif" width="140" height="140"></div>
+      <div class="fR">
+        <h2>George Murphy </h2>
+        <p><strong>Co-Founder, Local Marketing Director </strong></p>
+        <p>Cris has been the CFO of IdeaReef  since July, 2012</p>
+        <p><strong>Email:</strong> <a href="mailto:george@ideareef.com">george@ideareef.com </a><br>
+          <strong>Phone:</strong> +1 800 900 1000 </p>
+      </div>
+      <div class="clear"></div>
+    </div>
+	</div>
+    </div>
+	</div>
+	<div id="newboxes2"class="newboxes"  style="display:none;">
+	<div class="bottom">
+	<h2>Contact Us</h2>
+      <div class="boxLeft">
+        <h3>Help with your account (access, change of password etc.)</h3>
+          <p> Please visit <a href="http://www.ideareef.com/help">ideareef.com/help</a> or 
+            mail us at <a href="mailto:help@ideareef.com">help@ideareef.com</a></p>
+          <h3>Payment Support</h3>
+          <p> <a href="mailto:payment@ideareef.com">payment@ideareef.com</a></p>
+          <h3>Technical Support</h3>
+          <p> <a href="mailto:support@ideareef.com">support@ideareef.com</a></p>
+          <h3>Sales</h3>
+          <p> <a href="mailto:sales@ideareef.com">sales@ideareef.com</a></p>
+          <h3>Partnership Inquiries</h3>
+          <p> <a href="mailto:partner@ideareef.com">partner@ideareef.com</a></p>
+          <h3>Press &amp; Media Inquiries</h3>
+          <p> <a href="mailto:media@ideareef.com">media@ideareef.com</a></p>
+          <div class="clear"></div>
+        </div>
+        <div class="boxRight">
+          <div class="up"><img src="images/map.jpg" alt="" width="200" height="200"></div>
+		  <div>
+		    <h3>Current Locations</h3>
+              <p>Binghamton, NY<br>
+                Ithaca, NY<br>
+            Syracure, NY        </p></div>
+          </div>
+        <div class="clear"></div>
+      </div>
+	  </div>
+  </div>
+  <div class="clear"></div>
+</div>
+</div>
+</div>
+<div id="Footer">
+<div class="holder">
+<div class="floatLeft">Copyright &copy; 2012 Idea Reef Inc. All Rights Reserved.</div>
+<div class="floatRight"><a href="#">Help</a> | <a href="#">Tell us to come!</a> | <a href="#">Partners</a> | <a href="#">About Us</a> | <a href="#">Companies</a></div>
+<div class="clear"></div>
+</div>
+</div>
+</body>
+</html>

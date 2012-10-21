@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>IdeaReef</title>
+<script language="javascript" type="text/javascript">
+
+  function toggle1(){
+  	var signin_menu = document.getElementById('signin_menu')
+  	if (signin_menu.style.display == 'none') {
+  		signin_menu.style.display = 'block'
+  	} else {
+  		signin_menu.style.display = 'none'
+  	}
+  }
+  </script>
+  <script language="javascript" type="text/javascript">
+function showonlyone(thechosenone) {
+      var newboxes = document.getElementsByTagName("div");
+            for(var x=0; x<newboxes.length; x++) {
+                  name = newboxes[x].getAttribute("class");
+                  if (name == 'newboxes') {
+                        if (newboxes[x].id == thechosenone) {
+                        newboxes[x].style.display = 'block';
+                  }
+                  else {
+                        newboxes[x].style.display = 'none';
+                  }
+            }
+      }
+}
+</script>
+<link href="styles/css.css" rel="stylesheet" type="text/css" />
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type" /><link rel="shortcut icon" type="image/x-icon" href="images/favicon.ico">
+</head>
+
+<body>
+<div id="Wrapper">
+<div class="holder">
+  <div id="Header">
+    <h1 class="logo"><a href="#">IdeaReef</a></h1>
+    <div class="floatRight">
+      <ul>
+        <li><a href="about-us.html">About Us</a></li>
+        <li><a href="companies.html">Companies</a></li>
+        <li><a href="competitions.html" class="last">Competitions</a></li>
+        <li><a href="sign-up.html" class="special">Join</a></li>
+        <li><a href="javascript: toggle1()" class="last loginBtn">Login</a></li>
+      </ul>
+      <fieldset id="signin_menu" style="display:none;">
+      <div class="arrow"></div>
+        <form action="" method="post">
+        <div style="margin:0;padding:0;display:inline"></div>
+        <label for="username"><strong>Username or email</strong></label>
+        <input id="user_email" name="user[email]" size="30" type="text">
+        <div class="error">* Wrong Username</div>
+          <label for="password"><strong>Password</strong></label>
+        <input id="user_password" name="user[password]" size="30" type="password">
+        <div class="error">* Password Mismatch</div>
+          <p class="remember">
+          <input name="submit" type="submit" id="signin_submit" tabindex="6" value="Sign in">
+          <input id="remember" name="remember_me" value="1" tabindex="7" type="checkbox">
+          <label for="remember">Remember me</label>
+        </p>
+          <p class="forgot"> <a href="#">Forgot your password?</a></p>
+        </form>
+        </fieldset>
+    </div>
+    <div class="clear"></div>
+  </div>
+  <div id="Content">
+
+      <h2>Join IdeaReef for Free!</h2>
+      <h4>it's quick and simple  and gives you access to your favourite companies and friends </h4>
+      <div class="bottom">
+        <div class="floatLeft">
+		<div class="inside">
+		<div class="top">
+		  <ul>
+		    <li><a href="#">User</a></li>
+		    <li><a href="#" class="sel">Business
+		      </a></li>
+			  <li class="other">&larr; Be sure to select the correct account type		      </li>
+		    </ul>
+			<div class="clear"></div>
+		  </div>
+        <div class="bottom">
+          <div class="boxLeft"> 
+		  <div class="fLeft">
+		    <p><strong>Company Name </strong>  <span class="errorTxt">*</span> </p>
+		    <p class="noMargins">
+		      <input name="textfield" type="text" class="inputBox"><div class="error">* Error Text </div>
+		      </p>
+		    <p><strong>Email</strong>  <span class="errorTxt">*</span></p>
+		    <p class="noMargins">
+		      <input name="textfield2" type="text" class="inputBox"><div class="error">* Error Text </div>
+		    </p>
+		    <p><strong>Password</strong>  <span class="errorTxt">*</span></p>
+		    <p class="noMargins">
+		      <input name="textfield3" type="text" class="inputBox"><div class="error">* Error Text </div>
+            </p>
+		    <p><strong>Type of Business </strong> <span class="errorTxt">*</span></p>
+		    <p class="noMargins">
+		      <select name="select" class="inputBox">
+		        <option>Type of Business</option>
+		        </select><div class="error">* Error Text </div>
+		    </p>
+		    <p><strong>Zip Code </strong><span class="errorTxt">*</span></p>
+		    <p class="noMargins">
+              <input name="textfield32" type="text" class="inputBox"><div class="error">* Error Text </div>
+            </p>
+		    
+		    <p>
+		      <input name="Submit2" type="submit" class="blueButton" value="Join!">
+		      </p>
+		  </div>
+		  <div class="fRight">
+		    <p>space for more things </p>
+		    </div>
+		  <div class="clear"></div>
+			<div>
+			  <p>By Clicking the &quot;Join!&quot;, you agree to our  <a href="#">privacy policy</a> </p>
+			</div>
+          </div>
+          <div class="clear"></div>
+        </div>
+      </div>
+		</div>
+  <div class="floatRight">
+  <div>
+  <div class="testiText">
+  With IdeaReef I  earned money by referring my friends to check out my favorite bar in downtown Binghamton</div>
+  <div class="testiname"> <strong>Chris</strong>, BU Senior '12</div>
+  </div>
+  <div>
+    <p><a href="#" class="smBlueBtn">Sign up for ideareef </a>      </p>
+    <p class="txtCenter"><a href="#">Learn how it works?  </a></p>
+  </div>
+  </div>
+  <div class="clear"></div>
+  </div>
+  </div></div>
+</div>
+<div id="Footer">
+<div class="holder">
+<div class="floatLeft">Copyright &copy; 2012 Idea Reef Inc. All Rights Reserved.</div>
+<div class="floatRight"><a href="#">Help</a> | <a href="#">Tell us to come!</a> | <a href="#">Partners</a> | <a href="#">About Us</a> | <a href="#">Companies</a></div>
+<div class="clear"></div>
+</div>
+</div>
+</body>
+</html>
