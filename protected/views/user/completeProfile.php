@@ -6,7 +6,7 @@
         <div class="inside">
           <div class="bottom">
             <?php if($model->username === null) { ?>
-              <div class="bk" id="step1">
+              <div class="bk" id="usernameChange">
               <div class="fLeft">
                 <h6>Lets begin by building your IdeaReef Profile </h6>
                 <div id="data">

@@ -59,7 +59,7 @@ class User extends CActiveRecord
                         array('profileUser', 'checkUserName', 'on' => 'changeUsername'),
                         array('zipcode', 'required', 'on' => 'changeZipCode'),
                         array('zipcode', 'length', 'min' => 5, 'on' => 'changeZipCode'),
-                        array('oldPassword, newPassword, confirmPassword', 'required', 'on' =>'changePassword'),
+                        array('oldPassword, newPassword, confirmPassword', 'required', 'message' => '<b>&#10006;</b> &nbsp; {attribute} cannot be blank.', 'on' =>'changePassword'),
                         array('firstName, lastName', 'required', 'on' => 'changeName'),
                         //array('password, newPassword','ext.validators.EPasswordStrength', 'min'=>7),
                         array('confirmPassword', 'compare', 'compareAttribute'=>'newPassword', 'on' => 'changePassword'),
@@ -79,6 +79,8 @@ class User extends CActiveRecord
 		// class name for the relations automatically generated below.
 		return array(
                     'solutions' => array(self::HAS_MANY,'Solution', 'userId'),
+                    'passwordChanged' => array(self::HAS_MANY,'PasswordChanged', 'userId'),
+                    'lastPasswordChanged' => array(self::HAS_ONE,'PasswordChanged', 'userId', 'order' => 'lastPasswordChanged.dateChanged DESC'),
 		);
 	}
 

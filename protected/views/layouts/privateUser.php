@@ -35,7 +35,7 @@ $cs->registerScriptFile($baseUrl.'/js/inner.js');
 		<li><a rel="submenu1" class="anchorclass settings" href="#">Settings</a>
 		
 <ul id="submenu1" class="anylinkcss">
-<li><a href="#">Account Settings</a></li>
+<li><?php echo CHtml::link('Account Settings', $this->createUrl('user/settings')); ?></li>
 <li><a href="#">Settings Links</a></li>
 <li><a href="#" class="last">Other Settings</a></li>
 

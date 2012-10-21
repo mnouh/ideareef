@@ -26,7 +26,7 @@ class UserController extends Controller {
                 'users' => array('*'),
             ),
             array('allow', // allow authenticated user to perform 'create' and 'update' actions
-                'actions' => array('index', 'changeName', 'upload', 'changeUsername','AjaxChangeUsername', 'changepassword', 'profile', 'editAboutMe', 'editCurrentCity', 'editCurrentState', 'mySolutions', 'changeZipCode', 'submitSolution' ,'create', 'update', 'completeProfile', 'competition', 'competitionSub', 'description', 'awardDetails'),
+                'actions' => array('index', 'changeName', 'upload', 'settings', 'changeUsername','AjaxChangeUsername', 'changepassword', 'profile', 'editAboutMe', 'editCurrentCity', 'editCurrentState', 'mySolutions', 'changeZipCode', 'submitSolution' ,'create', 'update', 'completeProfile', 'competition', 'competitionSub', 'description', 'awardDetails'),
                 'users' => array('@'),
             ),
             /*array('allow', // allow admin user to perform 'admin' and 'delete' actions
@@ -65,7 +65,7 @@ class UserController extends Controller {
     
     
     /**
-     * Change username.
+     * Change username. This is used on the completeProfilePage
      */
     public function actionAjaxChangeUsername() {
       $status = 'Mohamed';  
@@ -82,6 +82,9 @@ class UserController extends Controller {
             $model->username = $model->profileUser;
             if($model->update()) {
           Yii::app()->user->setFlash('success', "Successfully updated username.");
+          
+          
+            echo '<script type="text/javascript">$("#usernameChange").slideUp();</script>';
         }
         }
       }
@@ -173,7 +176,7 @@ class UserController extends Controller {
 
         $model = User::model()->findByPk(Yii::app()->user->id);
         $model->setScenario('changePassword');
-        
+        $status = false;
         
          $this->performAjaxValidation($model, 'changepassword-form');
 
@@ -184,18 +187,24 @@ class UserController extends Controller {
                 
                 if($model->changePassword())
                 {
-                    if($model->update())
+                    $changedPassword = new PasswordChanged();
+                    $changedPassword->userId = $model->id;
+                    $changedPassword->dateChanged = new CDbExpression('NOW()');
+                    $changedPassword->ipAddress = CHttpRequest::getUserHostAddress();
+                    if($model->update() && $changedPassword->save()) {
                         Yii::app()->user->setFlash('success', "Successfully Changed Password");
+                        $status = true;
+                        
+                    }
                         
                 }
                 
             }
             
             }
-        
-        
 
-        $this->renderPartial('changePassword', array('model' => $model), false, true);
+        if($status == false)
+            $this->renderPartial('changePassword', array('model' => $model), false, true);
     }
     
     
@@ -327,6 +336,7 @@ class UserController extends Controller {
     public function actionSettings()
     {
         $model = User::model()->findByPk(Yii::app()->user->id);
+        
         $this->render('settings', array('model' => $model));
         
     }

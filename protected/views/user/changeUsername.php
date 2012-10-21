@@ -47,7 +47,7 @@
                                     'success'=>
                                     'function(data){
                                      $("#data").html(data);
-                                     $("#step1").slideUp();
+                                     
                                      return false;
                                      }'    
  
