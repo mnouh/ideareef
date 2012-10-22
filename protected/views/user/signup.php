@@ -60,7 +60,7 @@ $form = $this->beginWidget('CActiveForm', array(
                 </p>
             </div>
             <div class="fRight">
-                <p>space for more things </p>
+                <p>test</p>
             </div>
             <div class="clear"></div>
             <div>
