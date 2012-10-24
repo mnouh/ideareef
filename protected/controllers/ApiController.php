@@ -32,6 +32,7 @@ class ApiController extends Controller
     
     public function actionCreate()
     {
+        
     }
     
     public function actionUpdate()
@@ -43,6 +44,8 @@ class ApiController extends Controller
     }
     
     public function actionLogIn() {
+        
+        if(isset($_POST['email']) && isset($_POST['password'])) {
         $email = $_POST["email"];
         $password = $_POST["password"];
 
@@ -52,6 +55,11 @@ class ApiController extends Controller
 
         $params = array($email, $password);
         $this->_sendResponse(200, CJSON::encode($params));
+        }
+        else {
+            
+            $this->_sendResponse(401, "The post variables are not set");
+        }
     }
     
     public function actionCompetitions() {
