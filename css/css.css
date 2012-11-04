@@ -1,6 +1,6 @@
 /*---Common---*/
 * { padding:0px; margin:0px; }
-body { font:normal 12px/18px Arial, Helvetica, sans-serif; color:#8D8D8D; background:url(http://launchrock.com/images/back.jpg) }
+body { font:normal 12px/18px Arial, Helvetica, sans-serif; color:#8D8D8D; background:url(http://launchrock.com/images/back.jpg) no-repeat }
 .floatLeft, .fL, .fLeft { float:left; }
 .floatRight, .fR, .fRight { float:right; }
 .clear { clear:both; display:block; }
