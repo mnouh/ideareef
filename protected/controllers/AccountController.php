@@ -29,10 +29,34 @@ class AccountController extends Controller
 	 */
 	public function actionIndex()
 	{
-            $this->layout = 'index';
+            $this->layout = 'main';
+            
+            $model = new LearnMore;
+            
+            $this->performAjaxValidation($model, 'learnmore-form');
+
+        /*
+          if(!$model->hasErrors('firstName')) {
+          Yii::app()->user->setFlash('success','<b>&#10004;</b> &nbsp First name looks great!');
+          }
+         */
+        if (isset($_POST['LearnMore'])) {
+            $model->attributes = $_POST['LearnMore'];
+
+            if ($model->validate()) {
+                
+                if($model->save())
+                {
+                    
+                    
+                }
+                
+            }
+            
+            }
 		// renders the view file 'protected/views/site/index.php'
 		// using the default layout 'protected/views/layouts/main.php'
-		$this->render('index');
+		$this->render('index', array('model' => $model));
                 
 	}
         

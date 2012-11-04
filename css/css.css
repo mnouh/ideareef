@@ -1,15 +1,20 @@
 /*---Common---*/
 * { padding:0px; margin:0px; }
-body { font:normal 12px/18px Arial, Helvetica, sans-serif; color:#8D8D8D; background:#D9E1E3; }
+body { font:normal 12px/18px Arial, Helvetica, sans-serif; color:#8D8D8D; background:url(http://launchrock.com/images/back.jpg) }
 .floatLeft, .fL, .fLeft { float:left; }
 .floatRight, .fR, .fRight { float:right; }
 .clear { clear:both; display:block; }
-#Wrapper { border-top:3px solid #0086AD; background:#fff url(../images/main-bg.gif) left top repeat-x; padding-bottom:50px; }
+/*#Wrapper { border-top:3px solid #0086AD; background:#fff url(../images/main-bg.gif) left top repeat-x; padding-bottom:50px; }*/
 .HomeHolder { width:895px; margin:auto; }
 .holder { width:945px; margin:auto; }
 a { color:#11ABDC; text-decoration:underline; }
 a:hover { text-decoration:none; }
 img { border:0px; }
+
+h3.fancy {
+font-size: 20px;
+text-shadow: 0 2px 2px black;
+}
 
 /*---Header---*/
 #Header { height:114px; position:relative; }
@@ -250,7 +255,24 @@ border-radius:5px;
 #Content .inside .bottom .boxRight h3 { color:#0A68A3; }
 #Content .inside .bottom .boxRight p { margin-bottom:0px; }
 #Content .inside .bottom .boxRight .down a { text-shadow:#065383 1px 1px 1px; color:#fff; background:url(../images/blue-bg.png) left top repeat-x #0A68A3; text-decoration:none; font:bold 12px/20px Arial, Helvetica, sans-serif;  width:120px; text-align:center; -moz-border-radius:3px; border-radius:3px; -webkit-border-radius:3px;-khtml-border-radius:3px; border:1px solid #0A68A3; margin:5px auto; display:block; }
-#Content .login { width:500px; margin:auto; padding:20px;  -moz-border-radius:3px; border-radius:3px; -webkit-border-radius:3px;-khtml-border-radius:3px; border:1px solid #D9E1E3; background:#fff; -moz-box-shadow:inset 0 0 100px #D9E1E3; -webkit-box-shadow:inset 0 0 100px #D9E1E3; -khtml-box-shadow:inset 0 0 100px #D9E1E3; box-shadow:inset 0 0 100px #D9E1E3; }
+#Content .login { background: url(http://launchrock.com/images/boxtile.png) repeat; border: 1px solid rgba(90,90,90,0.7);
+	padding: 0;
+	position: relative;
+	margin: 0 auto 40px auto;
+	width: 396px;
+	height: auto;
+	min-height: 380px;
+	box-shadow: 0 3px 5px rgba(0,0,0,0.5);
+	border-radius:4px; }
+
+#boxlogo {
+position: absolute;
+top: 0;
+left: 0;
+width: 376px;
+height: 200px;
+}
+
 #Content  p { margin-bottom:20px; }
 #Content  h3 { font:bold 14px/24px Arial, Helvetica, sans-serif; color:#6A7476; margin-bottom:5px; }
 #Content  h4 { font:normal 20px/26px Arial, Helvetica, sans-serif; color:#6A6A6A; margin-bottom:15px; }
@@ -261,7 +283,7 @@ border-radius:5px;
 #Content .login .inside p { margin-bottom:20px; font:normal 12px/18px Arial, Helvetica, sans-serif; }
 #Content .login .inside a { font-weight:bold; text-decoration:none; }
 #Content .login .inside a:hover { text-decoration:underline; }
-#Content .login h3 { font:normal 21px/24px Arial, Helvetica, sans-serif; color:#44BDD2; margin-bottom:10px; }
+#Content .login h3 { font:normal 21px/24px Arial, Helvetica, sans-serif; color:#44; margin-bottom:10px; }
 #Content .login .inputBox { background:#D9E1E3; font:normal 18px Arial, Helvetica, sans-serif; border:0px; -moz-border-radius:3px; border-radius:3px; -webkit-border-radius:3px;-khtml-border-radius:3px; border:0px; padding:8px 10px; width:350px;-webkit-box-shadow:2px 2px 20px 2px #C0C7C9 inset;-moz-box-shadow:2px 2px 20px 2px #C0C7C9 inset;-khtml-box-shadow:2px 2px 20px 2px #C0C7C9 inset; text-align:center; }
 #Content .login .btn { text-shadow:#065383 1px 1px 1px; color:#fff; background:url(../images/blue-bg.png) left top repeat-x #0A68A3; text-decoration:none; font:normal 22px/36px Arial, Helvetica, sans-serif;  width:120px; text-align:center; -moz-border-radius:3px; border-radius:3px; -webkit-border-radius:3px;-khtml-border-radius:3px; border:1px solid #0A68A3; margin:5px auto; display:block; }
 #Content .txtCenter { text-align:center; }
@@ -331,7 +353,7 @@ border-radius:5px;
 #InnerContent .smBlueBtnHost { text-shadow:#065383 1px 1px 1px; color:#fff; background:url(../images/blue-bg.png) left top repeat-x #0A68A3; text-decoration:none; font:bold 12px/28px Arial, Helvetica, sans-serif; padding:0px 10px; text-align:center; -moz-border-radius:3px; border-radius:3px; -webkit-border-radius:3px;-khtml-border-radius:3px; border:1px solid #0A68A3; display:block; float:left; width:177px; }
 
 .tinyBlueBtn { text-shadow:#065383 1px 1px 1px; color:#fff; margin-right: 20px; margin-top:10px; background:url(../images/blue-bg.png) left top repeat-x #0A68A3; text-decoration:none; font:bold 12px/14px Arial, Helvetica, sans-serif; padding:0px 10px; text-align:center; -moz-border-radius:3px; border-radius:3px; -webkit-border-radius:3px;-khtml-border-radius:3px; border:1px solid #0A68A3; display:block; float:left; }
-.lgbtnorange { text-shadow:#065383 1px 1px 1px; background:url(../images/orange-bg.png) left top repeat-x #FF8A00; color:#3E3E3E; text-decoration:none; font:bold 12px/28px Arial, Helvetica, sans-serif; -moz-border-radius:3px; border-radius:3px; -webkit-border-radius:3px;-khtml-border-radius:3px; border:1px solid #FE961B; padding:0px 10px; display:block; margin:0px; white-space:nowrap; text-shadow:#fbc27f 1px 1px 1px; text-align:center; }
+.lgbtnorange { text-shadow:#065383 1px 1px 1px; background:url(../images/orange-bg.png) left top repeat-x #FF8A00; color:#3E3E3E; text-decoration:none; font:bold 16px/28px Arial, Helvetica, sans-serif; -moz-border-radius:3px; border-radius:3px; -webkit-border-radius:3px;-khtml-border-radius:3px; border:1px solid #FE961B; padding:0px 10px; display:block; margin:0px; white-space:nowrap; text-shadow:#fbc27f 1px 1px 1px; text-align:center; }
 .tinyOrangeBtn { text-shadow:#065383 1px 1px 1px; margin-top:10px; background:url(../images/orange-bg.png) left top repeat-x #FF8A00; color:#3E3E3E;  text-decoration:none; font:bold 12px/14px Arial, Helvetica, sans-serif; padding:0px 10px; text-align:center; -moz-border-radius:3px; border-radius:3px; -webkit-border-radius:3px;-khtml-border-radius:3px; border:1px solid #FE961B; text-shadow:#fbc27f 1px 1px 1px; display:block; float:left; }
 
 /* Flash Status */
